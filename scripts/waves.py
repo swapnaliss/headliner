@@ -192,7 +192,8 @@ def main() -> None:
     branch = sh(["git", "branch", "--show-current"])[1]
     if branch != "main":
         global_h.append(f"not on main (on {branch!r})")
-    if sh(["docker", "info", "--format", "{{.ServerVersion}}"])[0] != 0:
+    # Headliner uses managed Postgres and no containers: only require Docker when a compose file exists.
+    if (Path("docker-compose.yml").exists() or Path("compose.yaml").exists()) and sh(["docker", "info", "--format", "{{.ServerVersion}}"])[0] != 0:
         global_h.append("docker is not running")
     branches = sh(["git", "branch", "-a", "--format=%(refname:short)"])[1].splitlines()
 
