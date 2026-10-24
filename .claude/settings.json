@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(**/.env)",
+      "Read(**/.env.local)",
+      "Read(~/.config/qloo/**)",
+      "Edit(.env)",
+      "Edit(.env.local)",
+      "Bash(cat .env)",
+      "Bash(cat .env.local)",
+      "Bash(cat ~/.config/qloo/key)",
+      "Bash(grep * .env)",
+      "Bash(grep * .env.local)"
+    ]
+  }
+}

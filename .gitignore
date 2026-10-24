@@ -1,0 +1,31 @@
+# secrets and local refs
+.env*
+!.env.example
+.dev-refs.md
+.kickoff-state.md
+.prp/
+.claude/worktrees/
+*.pem
+*.key
+credentials*.json
+
+# private from day one
+docs/research/
+docs/outreach/
+docs/recon/
+.review/
+
+# build output and deps
+node_modules/
+.next/
+out/
+dist/
+coverage/
+*.tsbuildinfo
+.vercel/
+.DS_Store
+
+# large data and rendered media
+*.mp4
+*.mov
+data/raw/
