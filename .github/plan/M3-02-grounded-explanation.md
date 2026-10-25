@@ -5,7 +5,7 @@ labels: ["agent", "backend"]
 blocked_by: ["M2-GATE"]
 estimate: "3h"
 resources: ["LLM"]
-needs: []
+needs: [P-05]
 ---
 
 ## Context

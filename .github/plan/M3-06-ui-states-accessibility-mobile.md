@@ -5,7 +5,7 @@ labels: ["frontend"]
 blocked_by: ["M2-GATE"]
 estimate: "4h"
 resources: []
-needs: []
+needs: [P-11]
 ---
 
 ## Context

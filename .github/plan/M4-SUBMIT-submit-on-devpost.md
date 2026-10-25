@@ -5,7 +5,7 @@ labels: ["owner", "critical"]
 blocked_by: ["M4-GATE"]
 estimate: "1h"
 resources: []
-needs: []
+needs: [P-01, P-06, P-16]
 ---
 
 ## Context

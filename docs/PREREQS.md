@@ -1,0 +1,25 @@
+# Prerequisites
+
+Generated from `.github/plan/prereqs.json` by `scripts/check-prereqs.py --render`. Edit the JSON, not this file.
+Values are never recorded here: only where each one lives.
+
+| id | what | kind | needed by | who | how | lands in | status |
+|---|---|---|---|---|---|---|---|
+| P-01 | GitHub CLI authenticated with repo and workflow scopes | credential | M0-01, M4-SUBMIT | owner | gh auth login; gh auth refresh -h github.com -s workflow | gh keyring | ok |
+| P-02 | Qloo hackathon API key available to the project (never printed) | credential | M0-02, M0-04, M0-GATE, M1-01, M1-03, M1-05, M1-GATE, M2-06, M3-04, M3-GATE | owner | copy the key into .env as QLOO_API_KEY (the key you received by email; keep ~/.config/qloo/key as a private backup) | .env QLOO_API_KEY; Vercel env QLOO_API_KEY (see P-12) | MISSING |
+| P-03 | Hosting account (Vercel) signed in, project created for Headliner | account | M0-01, M1-05 | owner | vercel.com sign-up with GitHub; install the Vercel CLI (npm i -g vercel) and run vercel login; create the project from the GitHub repo | Vercel account; .vercel/ (gitignored) | MISSING |
+| P-04 | Neon Postgres database and connection string | credential | M0-05, M0-GATE, M1-03, M1-05, M1-GATE, M2-06 | owner | neon.tech sign-up; create project headliner; copy the pooled connection string into .env as DATABASE_URL and into the Vercel project's environment | .env DATABASE_URL; Vercel env DATABASE_URL (see P-12) | MISSING |
+| P-05 | LLM API key (Anthropic per the current spec) with a spend limit of 5 USD | credential | M3-01, M3-02, M3-GATE | owner | console.anthropic.com -> API Keys; set a spend limit of 5 USD under Plans & Billing; copy into .env as ANTHROPIC_API_KEY (production copy: see P-13) | .env ANTHROPIC_API_KEY; Vercel env ANTHROPIC_API_KEY | MISSING |
+| P-06 | Joined the hackathon on Devpost | account | M4-SUBMIT | owner | qloo.devpost.com -> Join hackathon | Devpost account | MISSING |
+| P-07 | Joined the Qloo Discord and posted the organiser questions | decision | M1-01 | owner | discord.gg/rF9PKsD5Q7 -> #api-help; post the text drafted by M0-04 | - | optional |
+| P-08 | Budget ceiling of 6 USD approved | decision | M0-GATE | owner | approve docs/budget.md | docs/budget.md | ok |
+| P-09 | Node.js 24 or newer and npm 11 or newer | tool | M0-01 | owner | install Node 24 LTS (nodejs.org or nvm install 24); npm ships with it | PATH | ok |
+| P-10 | gitleaks CLI installed locally (gate commands run it; CI uses the action) | tool | M1-01, M1-GATE, M4-03, M4-GATE | owner | sudo apt install gitleaks, or download a release binary from github.com/gitleaks/gitleaks/releases into ~/.local/bin | PATH | MISSING |
+| P-11 | Playwright Chromium and its system libraries | tool | M1-05, M3-06, M3-GATE | owner | after M0-01 installs dependencies: npx playwright install --with-deps chromium (the --with-deps step needs sudo) | ~/.cache/ms-playwright | MISSING |
+| P-12 | Vercel project environment holds QLOO_API_KEY, DATABASE_URL and BUDGET_SALT for production | console | M1-05, M1-GATE, M2-GATE | owner | Vercel dashboard -> project headliner -> Settings -> Environment Variables -> add QLOO_API_KEY, DATABASE_URL and BUDGET_SALT (a long random string you generate) for Production; DEMO_MODE=fixtures stays on Preview. Or: vercel env add <NAME> production | Vercel env (Production) | MISSING |
+| P-13 | Vercel production environment holds ANTHROPIC_API_KEY | console | M3-GATE | owner | Vercel dashboard -> project headliner -> Settings -> Environment Variables -> add ANTHROPIC_API_KEY for Production (same key as P-05, which has the 5 USD cap). Or: vercel env add ANTHROPIC_API_KEY production | Vercel env (Production) | MISSING |
+| P-14 | Throwaway Neon branch for the budget tests (TEST_DATABASE_URL) | credential | M2-05 | owner | Neon console -> project headliner -> Branches -> Create branch (name test) -> Connection details -> copy the pooled string into .env as TEST_DATABASE_URL | .env TEST_DATABASE_URL | MISSING |
+| P-15 | External uptime monitor on the demo URL with an email alert | console | M3-05 | owner | uptimerobot.com (or betterstack.com) free sign-up -> Add monitor -> HTTP(s) -> URL <demo URL>/api/health -> alert contact: your email. Record only the monitor name in docs/runbook.md | monitor account (no secret in the repo) | MISSING |
+| P-16 | Owner approves making the repo public (recorded on the M4-SUBMIT issue) | decision | M4-SUBMIT | owner | comment approval on the M4-SUBMIT issue after M4-GATE passes | M4-SUBMIT issue comment | MISSING |
+| P-17 | Screen recorder and a place to host the optional demo video | tool | M4-02 | owner | any recorder (OBS, or the OS one); upload to YouTube as unlisted; link goes on the M4-02 issue only. Skip if no video | - | optional |
+| P-18 | Standing approvals decided by the owner (merge green PRs, Vercel deploys, live Qloo calls within quota, npm installs from lockfile) | decision | M0-GATE | owner | answer the standing-approvals question on the M0-00 issue | M0-00 issue; CLAUDE.md; .claude/settings.json | ok |

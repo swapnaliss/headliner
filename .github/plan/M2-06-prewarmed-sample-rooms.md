@@ -5,7 +5,7 @@ labels: ["backend", "frontend"]
 blocked_by: ["M2-01", "M2-03", "M1-GATE"]
 estimate: "1.5h"
 resources: ["QLOO", "DEPLOY"]
-needs: []
+needs: [P-02, P-04]
 ---
 
 ## Context

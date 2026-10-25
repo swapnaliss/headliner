@@ -5,7 +5,7 @@ labels: ["eval", "backend"]
 blocked_by: ["M2-GATE"]
 estimate: "3h"
 resources: ["QLOO"]
-needs: []
+needs: [P-02]
 ---
 
 ## Context

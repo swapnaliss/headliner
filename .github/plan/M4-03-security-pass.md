@@ -5,7 +5,7 @@ labels: ["security"]
 blocked_by: ["M3-GATE"]
 estimate: "1.5h"
 resources: []
-needs: []
+needs: [P-10]
 ---
 
 ## Context
