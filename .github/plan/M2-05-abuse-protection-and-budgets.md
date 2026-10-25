@@ -5,7 +5,7 @@ labels: ["backend", "security"]
 blocked_by: ["M1-GATE"]
 estimate: "3h"
 resources: []
-needs: []
+needs: [P-14]
 ---
 
 ## Context

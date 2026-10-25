@@ -13,6 +13,16 @@
       "Bash(cat ~/.config/qloo/key)",
       "Bash(grep * .env)",
       "Bash(grep * .env.local)"
+    ],
+    "allow": [
+      "Bash(gh pr merge:*)",
+      "Bash(vercel deploy:*)",
+      "Bash(vercel whoami)",
+      "Bash(vercel env ls:*)",
+      "Bash(vercel ls:*)",
+      "Bash(vercel inspect:*)",
+      "WebFetch(domain:hackathon.api.qloo.com)",
+      "Bash(npm ci)"
     ]
   }
 }

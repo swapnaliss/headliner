@@ -5,7 +5,7 @@ labels: ["frontend", "critical"]
 blocked_by: ["M1-03", "M1-04", "M0-GATE"]
 estimate: "4h"
 resources: ["DEPLOY"]
-needs: []
+needs: [P-02, P-03, P-04, P-11, P-12]
 ---
 
 ## Context

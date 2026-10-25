@@ -5,7 +5,7 @@ labels: ["recon", "backend", "blocker-risk"]
 blocked_by: ["M0-01"]
 estimate: "3h"
 resources: ["QLOO"]
-needs: []
+needs: [P-02]
 ---
 
 ## Context

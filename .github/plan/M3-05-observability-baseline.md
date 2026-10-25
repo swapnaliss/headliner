@@ -5,7 +5,7 @@ labels: ["infra", "backend"]
 blocked_by: ["M2-GATE"]
 estimate: "1h"
 resources: ["DEPLOY"]
-needs: []
+needs: [P-15]
 ---
 
 ## Context

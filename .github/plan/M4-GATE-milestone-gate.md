@@ -5,7 +5,7 @@ labels: ["gate"]
 blocked_by: ["M4-CLEANUP", "M4-01", "M4-02", "M4-03"]
 estimate: "1h"
 resources: []
-needs: []
+needs: [P-10]
 ---
 
 ## Context

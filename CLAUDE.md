@@ -40,7 +40,7 @@ Build to `docs/design/`. Every `frontend` ticket passes the `ui-reviewer` agent.
 No claim in README or UI without a measured source in the repo. Report measured numbers with their sample.
 
 ## Standing approvals
-Filled by `M0-00` after the owner confirms. Proposed: merge green PRs; Vercel preview and production deploys; live Qloo calls within hackathon quota; npm installs from the lockfile.
+Approved by the owner on 2026-10-25 (M0-00): merge green PRs (squash, this repo, CI green); Vercel preview and production deploys of this project; live Qloo calls within hackathon quota; npm installs from the lockfile (`npm ci`). Allow rules are in `.claude/settings.json`. Anything else still asks.
 
 ## STRICT RULE: `.env`
 Never read, print, cat, grep, or paste `.env` values or `~/.config/qloo/key`. Check presence with `python3 scripts/check-prereqs.py`. Credential locations are in `.dev-refs.md`.

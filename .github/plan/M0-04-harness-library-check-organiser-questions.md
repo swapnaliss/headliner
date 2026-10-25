@@ -5,7 +5,7 @@ labels: ["recon", "owner"]
 blocked_by: []
 estimate: "1.5h"
 resources: []
-needs: []
+needs: [P-02]
 ---
 
 ## Context

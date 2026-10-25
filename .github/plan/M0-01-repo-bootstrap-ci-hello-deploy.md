@@ -5,7 +5,7 @@ labels: ["infra", "backend", "critical"]
 blocked_by: ["M0-00"]
 estimate: "3h"
 resources: ["DEPLOY"]
-needs: []
+needs: [P-01, P-03, P-09]
 ---
 
 ## Context

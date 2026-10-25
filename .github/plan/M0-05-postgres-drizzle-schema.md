@@ -5,7 +5,7 @@ labels: ["backend", "infra"]
 blocked_by: ["M0-01"]
 estimate: "2h"
 resources: ["DEPLOY"]
-needs: []
+needs: [P-04]
 ---
 
 ## Context

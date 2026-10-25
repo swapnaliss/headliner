@@ -39,7 +39,7 @@ See [docs/architecture.md](docs/architecture.md).
 Exact versions are re-verified in M0-01 before the lockfile is committed.
 
 ## 5. Services and spend
-Vercel free, Neon free, Qloo hackathon key (free), Anthropic API (capped at $15), GitHub free. Total budget ceiling $20. `M0-00` writes `docs/budget.md`.
+Vercel free, Neon free, Qloo hackathon key (free), LLM API (Anthropic per spec, provider under owner review; capped at $5), GitHub free. Total budget ceiling $6. `M0-00` writes `docs/budget.md`.
 
 ## 6. Data model
 See [docs/architecture.md](docs/architecture.md).
