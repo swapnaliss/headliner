@@ -57,6 +57,8 @@ export const OverlapTagSchema = z.object({
   tagId: z.string().min(1),
   name: z.string().min(1),
   score: z.number().min(0).max(1),
+  /** Crowd acts matched to this tag; absent on slates stored before M2-02. */
+  coveredCrowdActs: z.number().int().min(0).optional(),
 });
 
 export const FitValueSchema = z.object({

@@ -31,6 +31,10 @@ function resultNamed(slate: Slate, name: string): ActResult {
   return found;
 }
 
+function rowsCovered(d: { sharedTastes: readonly { covered: number | null }[] }): boolean {
+  return d.sharedTastes.every((t) => t.covered !== null && t.covered >= 1);
+}
+
 function detailOf(slate: Slate, name: string) {
   const detail = buildActDetail(slate, resultNamed(slate, name).act.qlooEntityId);
   if (!detail) throw new Error("no detail");
@@ -46,11 +50,12 @@ describe("shared tastes equal the recorded compare fixture", () => {
       render(<ActDetailView detail={detail} />);
       const toggle = screen.queryByRole("button", { name: /^Show all/ });
       if (toggle) fireEvent.click(toggle);
-      const table = screen.getByRole("table");
-      const rows = Array.from(table.querySelectorAll("tbody tr")).map((tr) => [tr.querySelector("th")?.textContent ?? "", tr.querySelector("td")?.textContent ?? ""]);
+      const table = screen.getByRole("table", { name: /^Tags that Qloo finds/ });
+      const rows = Array.from(table.querySelectorAll("tbody tr")).map((tr) => [tr.querySelector("th")?.textContent ?? "", tr.querySelector("td")?.textContent ?? "", tr.querySelectorAll("td")[1]?.textContent ?? ""]);
       expect(rows.length).toBe(detail.sharedTastes.length);
       expect(rows.length).toBeGreaterThan(0);
-      for (const [tagName, score] of rows) {
+      for (const [tagName, score, covered] of rows) {
+        expect(covered).toMatch(/^[1-6] of 6$/);
         const matches = recorded.filter((t) => t.name === tagName).map((t) => t.query.score.toFixed(2));
         expect(matches, `tag ${tagName}`).toContain(score);
       }
@@ -102,10 +107,11 @@ describe("every rendered number maps to evidence", () => {
     expect(compare?.responseDigest).toMatch(/^[a-f0-9]{64}$/);
     const searches = detail.evidence.filter((e) => e.endpoint === "/search");
     expect(searches.length).toBe(7);
+    expect(rowsCovered(detail)).toBe(true);
     expect(searches.every((e) => e.supports.includes("Qloo popularity rank"))).toBe(true);
     const { container } = render(<ActDetailView detail={detail} />);
     expect(screen.getByRole("heading", { level: 2, name: "Evidence trail (8 calls)" })).toBeTruthy();
-    expect(container.querySelectorAll("li.ev-row").length).toBe(8);
+    expect(container.querySelectorAll("tr.ev-row").length).toBe(8);
     expect(container.textContent).toContain("Request headers, including the API key, are never stored or shown.");
   });
 
@@ -142,7 +148,7 @@ describe("an act with no data", () => {
     expect(screen.getByText("Not ranked")).toBeTruthy();
     expect(screen.queryByTestId("fit-value")).toBeNull();
     expect(container.textContent).not.toMatch(/of 100/);
-    expect(container.querySelector("table")).toBeNull();
+    expect(screen.queryByRole("region", { name: "Shared tastes table" })).toBeNull();
     expect(screen.getByText("Fit unavailable")).toBeTruthy();
     expect(screen.getByRole("heading", { level: 2, name: /^Evidence trail \(\d+ calls?\)$/ })).toBeTruthy();
     expect(detail.evidence.every((e) => e.supports.length === 0)).toBe(true);

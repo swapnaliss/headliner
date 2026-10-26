@@ -35,7 +35,7 @@ function EvidenceLinks({ indexes }: { indexes: readonly number[] }) {
 function FitTile({ detail }: { detail: ActDetail }) {
   const { fit } = detail;
   return (
-    <section className="panel" aria-labelledby="fit-tile">
+    <div className="panel">
       <h2 id="fit-tile" className="tile-title">
         Fit
       </h2>
@@ -63,14 +63,14 @@ function FitTile({ detail }: { detail: ActDetail }) {
           <p>{detail.fitUnavailableReason}</p>
         </>
       )}
-    </section>
+    </div>
   );
 }
 
 function StandingTile({ detail }: { detail: ActDetail }) {
   const s = detail.standing;
   return (
-    <section className="panel" aria-labelledby="standing-tile">
+    <div className="panel">
       <h2 id="standing-tile" className="tile-title">
         {COPY.standingCaption}
       </h2>
@@ -103,13 +103,13 @@ function StandingTile({ detail }: { detail: ActDetail }) {
           </p>
         </>
       )}
-    </section>
+    </div>
   );
 }
 
 function CaveatsTile({ detail }: { detail: ActDetail }) {
   return (
-    <section className="panel" aria-labelledby="caveats-tile">
+    <div className="panel">
       <h2 id="caveats-tile" className="tile-title">
         Caveats
       </h2>
@@ -133,7 +133,7 @@ function CaveatsTile({ detail }: { detail: ActDetail }) {
           ))}
         </ul>
       )}
-    </section>
+    </div>
   );
 }
 
@@ -208,41 +208,41 @@ function StandingSection({ detail }: { detail: ActDetail }) {
   );
 }
 
+/** "2026-10-26T12:33:32.533Z" -> "2026-10-26 12:33 +00:00" (UTC). Falls back to the stored text. */
+function fetchedLabel(iso: string): string {
+  const m = /^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2})/.exec(iso);
+  return m ? `${m[1]} ${m[2]} +00:00` : iso;
+}
+
 function EvidenceRow({ ev }: { ev: DetailEvidence }) {
   const text = evidenceRequestText(ev);
   return (
-    <li id={`ev-${ev.index}`} tabIndex={-1} className="ev-row">
-      <h3 className="ev-title">
-        <span>Evidence {ev.index}: </span>
-        <span className="mono">GET {ev.endpoint}</span>
-      </h3>
-      <dl className="ev-facts">
-        <div>
-          <dt>Fetched</dt>
-          <dd>
-            <time dateTime={ev.fetchedAt}>{ev.fetchedAt}</time>
-          </dd>
-        </div>
-        <div>
-          <dt>Status</dt>
-          <dd>{ev.status === "ok" ? "OK" : "Failed"}</dd>
-        </div>
-        <div>
-          <dt>Supports</dt>
-          <dd>{ev.supports.length > 0 ? ev.supports.join(", ") : "Context only"}</dd>
-        </div>
-      </dl>
-      <p className="linked-note">Linked from above</p>
-      <details className="evidence">
-        <summary>Show parameters and digest</summary>
-        <div className="stack-sm">
-          <pre className="mono ev-text" tabIndex={0} aria-label={`Evidence ${ev.index} request, redacted`}>
-            {text}
-          </pre>
-          <CopyButton text={text} label={`Copy request ${ev.index}`} />
-        </div>
-      </details>
-    </li>
+    <tr id={`ev-${ev.index}`} tabIndex={-1} className="ev-row">
+      <th scope="row" data-label="Evidence">
+        {ev.index}
+        <span className="sr-only"> of the evidence trail</span>
+        <span className="linked-note">Linked from above</span>
+      </th>
+      <td data-label="Endpoint" className="mono">
+        GET {ev.endpoint}
+      </td>
+      <td data-label="Fetched">
+        <time dateTime={ev.fetchedAt}>{fetchedLabel(ev.fetchedAt)}</time>
+        {ev.status === "ok" ? null : <span> (Failed)</span>}
+      </td>
+      <td data-label="Supports">{ev.supports.length > 0 ? ev.supports.join(", ") : "Context only"}</td>
+      <td data-label="Parameters (redacted) and response digest">
+        <details className="evidence">
+          <summary>Show parameters and digest</summary>
+          <div className="stack-sm">
+            <pre className="mono ev-text" tabIndex={0} aria-label={`Evidence ${ev.index} request, redacted`}>
+              {text}
+            </pre>
+            <CopyButton text={text} label={`Copy request ${ev.index}`} />
+          </div>
+        </details>
+      </td>
+    </tr>
   );
 }
 
@@ -257,11 +257,23 @@ function EvidenceTrail({ evidence }: { evidence: readonly DetailEvidence[] }) {
       {n === 0 ? (
         <p>No Qloo call produced usable data for this act.</p>
       ) : (
-        <ol className="ev-list" aria-label="Evidence trail">
-          {evidence.map((ev) => (
-            <EvidenceRow key={ev.index} ev={ev} />
-          ))}
-        </ol>
+        <table className="ev-table">
+          <caption className="sr-only">Qloo calls behind the numbers on this page</caption>
+          <thead>
+            <tr>
+              <th scope="col">Evidence</th>
+              <th scope="col">Endpoint</th>
+              <th scope="col">Fetched</th>
+              <th scope="col">Supports</th>
+              <th scope="col">Parameters (redacted) and response digest</th>
+            </tr>
+          </thead>
+          <tbody>
+            {evidence.map((ev) => (
+              <EvidenceRow key={ev.index} ev={ev} />
+            ))}
+          </tbody>
+        </table>
       )}
       <p className="field-hint">Request headers, including the API key, are never stored or shown.</p>
     </section>
@@ -316,15 +328,20 @@ export function ActDetailView({ detail }: { detail: ActDetail }) {
         <WhyFit detail={detail} />
 
         {detail.sharedTastes.length > 0 ? (
-          <section className="stack-sm" aria-labelledby="tastes-heading">
+          <section className="stack-sm wide-7" aria-labelledby="tastes-heading">
             <h2 id="tastes-heading">Shared tastes ({detail.sharedTastes.length})</h2>
-            <SharedTastes rows={detail.sharedTastes} />
+            <SharedTastes rows={detail.sharedTastes} crowdTotal={detail.crowdCount} />
             {detail.fit ? <EvidenceLinks indexes={detail.fit.evidenceIndexes} /> : null}
           </section>
         ) : detail.fit === null ? (
           <section className="stack-sm" aria-labelledby="tastes-heading">
             <h2 id="tastes-heading">Shared tastes</h2>
-            <EmptyState compact level={3} title="No shared tastes found" reason="Qloo returned no tags shared between this act's audience and your crowd." />
+            <p className="note" data-tone="neutral">
+              <Icon name="unavailable" />
+              <span>
+                <strong>No shared tastes found.</strong> Qloo returned no tags shared between this act&apos;s audience and your crowd.
+              </span>
+            </p>
           </section>
         ) : null}
 
@@ -337,14 +354,14 @@ export function ActDetailView({ detail }: { detail: ActDetail }) {
         <nav aria-label="Other acts" className="prev-next">
           {detail.previous ? (
             <a href={href(detail.previous.entityId)} aria-label={`Previous act: ${isolate(detail.previous.name)}`}>
-              Previous act: <bdi className="entity">{detail.previous.name}</bdi>
+              Previous act:{" "}<bdi className="entity">{detail.previous.name}</bdi>
             </a>
           ) : (
             <span />
           )}
           {detail.next ? (
             <a href={href(detail.next.entityId)} aria-label={`Next act: ${isolate(detail.next.name)}`}>
-              Next act: <bdi className="entity">{detail.next.name}</bdi>
+              Next act:{" "}<bdi className="entity">{detail.next.name}</bdi>
             </a>
           ) : null}
         </nav>

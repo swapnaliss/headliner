@@ -117,7 +117,7 @@ for (const scheme of ["light", "dark"] as const) {
       const created = await request.post("/api/slates", { data: { city: "Berlin", crowdActs: CROWD, candidateActs: CANDIDATES } });
       const { id } = (await created.json()) as { id: string };
       await page.goto(`/slates/${id}`);
-      await page.locator("details.evidence summary").first().click();
+      // The Evidence trail moved to the act detail page (M2-02); its axe run is in act-detail.spec.ts.
       const slate = await new AxeBuilder({ page }).analyze();
       const blocking = [...home.violations, ...slate.violations].filter((v) => v.impact === "serious" || v.impact === "critical");
       expect(blocking.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(" ")).join(" | ")}`)).toEqual([]);

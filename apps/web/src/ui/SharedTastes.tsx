@@ -7,16 +7,18 @@ export interface TasteRow {
   tagId: string;
   name: string;
   score: number;
+  covered: number | null;
   evidenceIndexes: readonly number[];
 }
 
 const FIRST = 10;
 
 /** Shared tastes table: the first 10 tags, then "Show all n". Tag names are Qloo text: plain text only. */
-export function SharedTastes({ rows }: { rows: readonly TasteRow[] }) {
+export function SharedTastes({ rows, crowdTotal }: { rows: readonly TasteRow[]; crowdTotal: number }) {
   const [all, setAll] = useState(false);
   const shown = all ? rows : rows.slice(0, FIRST);
   const more = rows.length > FIRST;
+  const showCovered = rows.every((r) => r.covered !== null);
   return (
     <div className="stack-sm" id="tastes">
       <div className="table-wrap" role="region" aria-label="Shared tastes table" tabIndex={0}>
@@ -30,6 +32,11 @@ export function SharedTastes({ rows }: { rows: readonly TasteRow[] }) {
               <th scope="col" className="num">
                 Score
               </th>
+              {showCovered ? (
+                <th scope="col" className="num">
+                  Crowd acts covered
+                </th>
+              ) : null}
             </tr>
           </thead>
           <tbody>
@@ -41,6 +48,11 @@ export function SharedTastes({ rows }: { rows: readonly TasteRow[] }) {
                   </bdi>
                 </th>
                 <td className="num">{row.score.toFixed(2)}</td>
+                {showCovered ? (
+                  <td className="num">
+                    {row.covered} of {crowdTotal}
+                  </td>
+                ) : null}
               </tr>
             ))}
           </tbody>

@@ -43,7 +43,7 @@ export interface ActDetail {
   /** Why there is no Fit (core wording), when there is none. */
   readonly fitUnavailableReason: string | null;
   readonly whyFit: { readonly sharedTags: number; readonly topTags: readonly string[] } | null;
-  readonly sharedTastes: readonly { readonly tagId: string; readonly name: string; readonly score: number; readonly evidenceIndexes: readonly number[] }[];
+  readonly sharedTastes: readonly { readonly tagId: string; readonly name: string; readonly score: number; readonly covered: number | null; readonly evidenceIndexes: readonly number[] }[];
   readonly standing: {
     readonly caption: "Qloo popularity rank";
     readonly label: NonNullable<ActResult["standing"]>["label"];
@@ -104,7 +104,7 @@ export function buildActDetail(slate: Slate, actId: string): ActDetail | null {
 
   const fitIdx = result.fit ? indexes(result.fit.evidenceRefs) : [];
   const fit = result.fit && fitIdx.length > 0 ? { value: result.fit.value, sharedTags: result.fit.sharedTags, evidenceIndexes: fitIdx } : null;
-  const sharedTastes = fit ? result.overlapTags.map((t) => ({ tagId: t.tagId, name: t.name, score: t.score, evidenceIndexes: fitIdx })) : [];
+  const sharedTastes = fit ? result.overlapTags.map((t) => ({ tagId: t.tagId, name: t.name, score: t.score, covered: t.coveredCrowdActs ?? null, evidenceIndexes: fitIdx })) : [];
   if (fit) {
     mark(fitIdx, "Fit");
     if (sharedTastes.length > 0) mark(fitIdx, "Shared tastes");
