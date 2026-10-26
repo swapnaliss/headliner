@@ -2,7 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
-  transpilePackages: ["@headliner/slates"],
+  transpilePackages: ["@headliner/slates", "@headliner/core", "@headliner/qloo"],
+  // The recorded Qloo responses are read from disk at runtime in DEMO_MODE=fixtures.
+  outputFileTracingIncludes: { "/api/slates": ["../../fixtures/qloo/**"] },
 };
 
 export default nextConfig;

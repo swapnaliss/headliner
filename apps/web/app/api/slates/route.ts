@@ -1,0 +1,43 @@
+import { CreateSlateRequestSchema } from "@headliner/core";
+import { getRuntime } from "../../../src/config";
+import { ApiError, errorResponse, logFailure } from "../../../src/errors";
+import { createSlate } from "../../../src/pipeline/createSlate";
+
+export const dynamic = "force-dynamic";
+/** ADR 0004: the whole run is one request; a cold 6x12 slate needs several seconds of Qloo time. */
+export const maxDuration = 60;
+
+const MAX_BODY_BYTES = 16 * 1024;
+
+/** Schema paths only (for example `crowdActs.2`): input values are never echoed back. */
+function invalidDetail(paths: readonly (readonly PropertyKey[])[]): string {
+  const fields = [...new Set(paths.map((p) => p.map(String).join(".") || "body"))].slice(0, 5);
+  return `Check: ${fields.join(", ")}.`;
+}
+
+export async function POST(request: Request): Promise<Response> {
+  let raw: string;
+  try {
+    raw = await request.text();
+  } catch {
+    return errorResponse("invalid_input");
+  }
+  if (raw.length > MAX_BODY_BYTES) return errorResponse("invalid_input", "Check: body.");
+
+  let json: unknown;
+  try {
+    json = JSON.parse(raw);
+  } catch {
+    return errorResponse("invalid_input", "Check: body.");
+  }
+  const parsed = CreateSlateRequestSchema.safeParse(json);
+  if (!parsed.success) return errorResponse("invalid_input", invalidDetail(parsed.error.issues.map((i) => i.path)));
+
+  try {
+    const outcome = await createSlate(parsed.data, getRuntime());
+    return Response.json(outcome, { headers: { "cache-control": "no-store" } });
+  } catch (e) {
+    logFailure("create_slate_failed", e);
+    return e instanceof ApiError ? errorResponse(e.code) : errorResponse("internal_error");
+  }
+}
