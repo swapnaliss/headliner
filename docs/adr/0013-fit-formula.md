@@ -32,6 +32,8 @@ Input: heatmap cells `results.heatmap[].query.affinity_rank` (0..1). Cell count 
 ### 4. Ranking
 Candidates are ordered by Fit descending, then name, then entity id (code-unit order, locale-independent). Ties get distinct, stable positions. Candidates with no Fit follow all scored ones in the same order. A repeated entity id (case-insensitive) is kept once.
 
+Display constants (M1-05): `FIT_CLOSE_SPREAD_POINTS = 5` (when best minus worst Fit among scored acts is below 5 points the slate says neighbouring ranks are close; the recorded 2.5-point spread is only an example) and `STANDING_SIMILAR_BAND_POINTS = 5` (the band in section 2, already in code). Both live in `packages/core`.
+
 ### 5. Edge cases (each has a named test in `packages/core/test/`)
 | Case | Behaviour |
 |---|---|
