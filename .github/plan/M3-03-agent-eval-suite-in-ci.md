@@ -47,9 +47,9 @@ Rubric: Technological Implementation. The architecture claims prompt injection i
 ## Validation Gate
 
 ```bash
-env -u ANTHROPIC_API_KEY -u QLOO_API_KEY DEMO_MODE=fixtures npm run eval:agent
+env -u OPENAI_API_KEY -u QLOO_API_KEY DEMO_MODE=fixtures npm run eval:agent
 OUT="${TMPDIR:-/tmp}/m3-03-report.json"
-env -u ANTHROPIC_API_KEY DEMO_MODE=fixtures npm run eval:agent -- --json > "$OUT"
+env -u OPENAI_API_KEY DEMO_MODE=fixtures npm run eval:agent -- --json > "$OUT"
 jq -e '.groundTruth>=10 and .injections>=12 and .toolFailures>=6 and .failed==0' "$OUT"
 grep -c 'filter.type=' evals/agent/injections.json
 grep -ci 'ignore instructions' evals/agent/injections.json

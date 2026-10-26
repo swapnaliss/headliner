@@ -13,7 +13,7 @@ SRV=""
 cleanup() { [ -n "$SRV" ] && kill -- "-$SRV" 2>/dev/null || true; rm -rf "$TMP"; }  # stop the whole group: killing npm alone leaves next-server (BL-01 6410492710)
 trap cleanup EXIT
 
-unset QLOO_API_KEY ANTHROPIC_API_KEY DATABASE_URL
+unset QLOO_API_KEY OPENAI_API_KEY DATABASE_URL
 export DEMO_MODE=fixtures
 
 npm run build -w apps/web >"$TMP/build.log" 2>&1 || { tail -30 "$TMP/build.log"; echo "demo-mode-smoke: build failed" >&2; exit 1; }

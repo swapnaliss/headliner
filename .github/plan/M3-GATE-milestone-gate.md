@@ -28,7 +28,7 @@ M3 adds the agent edges and the proof. This gate confirms the intake loop and gr
 
 ## Acceptance Criteria
 
-- [ ] `env -u ANTHROPIC_API_KEY -u QLOO_API_KEY DEMO_MODE=fixtures` full run: lint, typecheck, tests, `npm run eval:agent`, `npm run proof`, a11y suite all exit 0.
+- [ ] `env -u OPENAI_API_KEY -u QLOO_API_KEY DEMO_MODE=fixtures` full run: lint, typecheck, tests, `npm run eval:agent`, `npm run proof`, a11y suite all exit 0.
 - [ ] CI is green on the default branch with the eval job required.
 - [ ] Production slate run completes end to end with the intake sentence and shows the explanation; the deterministic fallback is demonstrated by running with the LLM budget forced to zero.
 - [ ] `docs/evidence/{home-city-check.md,fit-sanity.md,agent-evals.md,ui-review-m3.md}` exist and are non-empty.
@@ -44,7 +44,7 @@ M3 adds the agent edges and the proof. This gate confirms the intake loop and gr
 ## Validation Gate
 
 ```bash
-env -u ANTHROPIC_API_KEY -u QLOO_API_KEY DEMO_MODE=fixtures bash -c '
+env -u OPENAI_API_KEY -u QLOO_API_KEY DEMO_MODE=fixtures bash -c '
   npm ci && npm run lint && npm run typecheck && npm test &&
   npm run eval:agent && npm run proof &&
   npx playwright test apps/web/tests/a11y apps/web/tests/keyboard --reporter=line'

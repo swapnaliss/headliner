@@ -15,7 +15,7 @@ Rubric: Technological Implementation and Quality of the Idea. Stage 1 asks for a
 ## Scope
 
 - `packages/agent/src/intake/` (module `agent`, ADR 0001), with `runIntake(input: string, deps): Promise<IntakeResult>`.
-- Bounded loop of at most 3 steps (hard constant `MAX_INTAKE_STEPS = 3`). Each step is one model turn using the Anthropic SDK with read-only tools: `propose_matches(name)` (calls the existing Qloo adapter `/search` through the cache, returns candidate `{entity_id, name, popularity}` only) and `ask_clarification(question)` (allowed once per intake). No write tools, no network tool other than the adapter.
+- Bounded loop of at most 3 steps (hard constant `MAX_INTAKE_STEPS = 3`). Each step is one model turn using the OpenAI SDK (`openai`, pinned in `PROJECT.md` §4) through a thin `LlmProvider` interface, with read-only tools: `propose_matches(name)` (calls the existing Qloo adapter `/search` through the cache, returns candidate `{entity_id, name, popularity}` only) and `ask_clarification(question)` (allowed once per intake). No write tools, no network tool other than the adapter.
 - Output validated by a zod schema `IntakeResultSchema` shared with `docs`/ADR 0003 contracts: `{ room: { city, crowdActs[] (max 6) , candidateActs[] (max 12) }, cities: string[] (max 5), clarification?: string, steps: number }`. Invalid output is retried within the step budget, then returns a typed `intake_failed` result.
 - Input guardrails before any model call: length cap 500 chars, strip control characters, reject empty, act and city names capped at 80 chars, counts capped at 6 crowd, 12 candidates, 5 cities. Text from the user is placed in a delimited data block, never in the system prompt.
 - Caps: per-run token ceiling and per-run spend ceiling constants; the per-IP and global LLM budgets from M2-05 are checked before each model turn; at the ceiling the loop stops and returns `mode: "deterministic"` so the form stays usable (ADR 0008).
@@ -64,6 +64,6 @@ jq -e '.room.city and (.room.crowdActs|length<=6) and (.steps<=3)' "$OUT"
 
 ## Handoff
 
-- M3-02 reuses the guardrail helpers and the Anthropic client wrapper.
+- M3-02 reuses the guardrail helpers and the `LlmProvider` client wrapper.
 - M3-03 replays `fixtures/agent/intake/` traces and adds injection and tool-failure cases against `runIntake`.
 - M4-01 documents the loop in the README architecture section.

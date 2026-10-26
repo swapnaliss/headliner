@@ -35,7 +35,7 @@ Any Qloo call (M1-01), the HTTP route (M1-03), nearby-city fetching (M2-03), LLM
 - [ ] A property-style test shows `computeFit` is deterministic and order-independent for permuted tag lists.
 - [ ] A test shows `rankActs` is stable and puts `no-data` acts last.
 - [ ] A test shows `computeCityStrength` sets `thin` true for 14 cells and false for 15.
-- [ ] An import-boundary check (ESLint `no-restricted-imports` or a test scanning imports) proves `packages/core` imports only `zod` and itself, and has no reference to `fetch`, `process`, `fs`, `next` or `@anthropic-ai`.
+- [ ] An import-boundary check (ESLint `no-restricted-imports` or a test scanning imports) proves `packages/core` imports only `zod` and itself, and has no reference to `fetch`, `process`, `fs`, `next` or `openai`.
 - [ ] A grep test proves no string in `packages/core/src` contains "forecast", "turnout" or "will sell".
 - [ ] Package coverage for `packages/core` is reported and every exported function has at least one test.
 
@@ -50,13 +50,13 @@ Any Qloo call (M1-01), the HTTP route (M1-03), nearby-city fetching (M2-03), LLM
 ```bash
 set -euo pipefail
 export TMPDIR="${TMPDIR:-/tmp}"
-unset QLOO_API_KEY ANTHROPIC_API_KEY DATABASE_URL
+unset QLOO_API_KEY OPENAI_API_KEY DATABASE_URL
 npm ci
 npm run typecheck -w packages/core
 npm run lint
 npm test -w packages/core -- --coverage --reporter=dot
 ! grep -rniE "forecast|turnout|will sell" packages/core/src
-! grep -rnE "from ['\"](fs|node:fs|next|@anthropic-ai|pg|drizzle)" packages/core/src
+! grep -rnE "from ['\"](fs|node:fs|next|openai|pg|drizzle)" packages/core/src
 ```
 
 ## Handoff

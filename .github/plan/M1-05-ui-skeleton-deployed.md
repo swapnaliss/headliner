@@ -53,7 +53,7 @@ Match confirmation UI (M2-01), act detail and evidence panel (M2-02), city stren
 ```bash
 set -euo pipefail
 export TMPDIR="${TMPDIR:-/tmp}"
-unset QLOO_API_KEY ANTHROPIC_API_KEY DATABASE_URL
+unset QLOO_API_KEY OPENAI_API_KEY DATABASE_URL
 export DEMO_MODE=fixtures
 npm ci
 npm run typecheck && npm run lint

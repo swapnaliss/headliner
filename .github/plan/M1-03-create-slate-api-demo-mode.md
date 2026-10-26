@@ -18,7 +18,7 @@ Rubric: Technological Implementation (multi-endpoint chain, evidence) and the ha
 2. **Pipeline (ADR 0004).** `apps/web/src/pipeline/createSlate.ts`: resolve every crowd and candidate name through `search` (top candidate plus confidence, ambiguous results flagged for M2-01) with concurrency from the adapter; for each resolved candidate call `compareAudiences(crowdIds, [candidateId])`; score with `core`; build `ActResult` with `Evidence[]`; rank. A failed act becomes a `no-data` result with a caveat; the run still returns (partial results kept, ADR 0007). Runs within a request-bounded budget and never fans out beyond the adapter's cap.
 3. **Run state.** Return `status: "done"` or `"awaiting_confirmation"` per the state machine in docs/architecture.md §2; in this ticket ambiguity is reported, the confirmation UI is M2-01.
 4. **Persistence.** In live mode the Slate is stored in `slates` (M0-05) with a nanoid(21) id and returned as `{id, slate}`. In fixtures mode the Slate is returned and held in an in-memory store.
-5. **DEMO_MODE=fixtures (ADR 0011).** One server-side config module `apps/web/src/config.ts` reads `DEMO_MODE`; when `fixtures` it wires `FixtureTransport` and the in-memory `CacheStore`, requires no `DATABASE_URL`, `QLOO_API_KEY` or `ANTHROPIC_API_KEY`, and makes zero outbound network calls. An act name with no recorded fixture returns an honest `no-data` result, not an error. `GET /api/health` reports the mode.
+5. **DEMO_MODE=fixtures (ADR 0011).** One server-side config module `apps/web/src/config.ts` reads `DEMO_MODE`; when `fixtures` it wires `FixtureTransport` and the in-memory `CacheStore`, requires no `DATABASE_URL`, `QLOO_API_KEY` or `OPENAI_API_KEY`, and makes zero outbound network calls. An act name with no recorded fixture returns an honest `no-data` result, not an error. `GET /api/health` reports the mode.
 6. **Safe errors.** Upstream error details never reach the client; the route returns generic codes (`upstream_unavailable`, `invalid_input`, `rate_limited`).
 7. **README.** Add the exact clean-clone command sequence for `DEMO_MODE=fixtures` to README (the run path created in M0-01).
 
@@ -48,7 +48,7 @@ UI (M1-05), confirmation flow UI (M2-01), per-IP budgets (M2-05), LLM intake and
 ```bash
 set -euo pipefail
 export TMPDIR="${TMPDIR:-/tmp}"
-unset QLOO_API_KEY ANTHROPIC_API_KEY DATABASE_URL
+unset QLOO_API_KEY OPENAI_API_KEY DATABASE_URL
 export DEMO_MODE=fixtures
 npm ci
 npm run typecheck && npm run lint

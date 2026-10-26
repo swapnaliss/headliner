@@ -24,7 +24,7 @@ afterEach(() => {
 describe("POST /api/slates in fixtures mode with no keys", () => {
   it("returns 200 with ranked results, fit, overlap tags, standing, caveats and evidence per number", async () => {
     vi.stubEnv("QLOO_API_KEY", "");
-    vi.stubEnv("ANTHROPIC_API_KEY", "");
+    vi.stubEnv("OPENAI_API_KEY", "");
     vi.stubEnv("DATABASE_URL", "");
     vi.stubEnv("DEMO_MODE", "fixtures");
     setRuntimeForTests(undefined); // build the real fixtures runtime from the (empty) environment

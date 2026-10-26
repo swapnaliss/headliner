@@ -34,12 +34,12 @@ See [docs/architecture.md](docs/architecture.md).
 | TypeScript | 5.9.3 (2025-09-30), fallback taken from 7.0.2 | types; typescript-eslint 8.72.0 does not support 7.x, see `docs/evidence/versions.md` |
 | zod | 4.6.7 (2026-10-12) | shared schemas |
 | drizzle-orm | 0.45.4 (2026-10-08) | migrations and queries |
-| @anthropic-ai/sdk | 1.3.0 (2026-10-23) | intake and explanation |
+| openai | 7.43.0 (published 2026-10-22; checked 2026-10-26 with `npm view openai version time --json`; not installed until M3-01) | intake and explanation, behind a thin provider interface; model chosen by the owner (`LLM_MODEL`) |
 | vitest | 5.0.5 (2026-10-15) | tests |
 Exact versions are re-verified in M0-01 before the lockfile is committed.
 
 ## 5. Services and spend
-Vercel free, Neon free, Qloo hackathon key (free), LLM API (Anthropic per spec, provider under owner review; capped at $5), GitHub free. Total budget ceiling $6. `M0-00` writes `docs/budget.md`.
+Vercel free, Neon free, Qloo hackathon key (free), LLM API (OpenAI, owner decision 2026-10-26; 5 USD provider-side hard limit), GitHub free. Total budget ceiling $6. `M0-00` writes `docs/budget.md`.
 
 ## 6. Data model
 See [docs/architecture.md](docs/architecture.md).
@@ -67,7 +67,7 @@ Real: Qloo hackathon API responses, resolved entity names. Synthetic: none in th
 | Qloo quota or latency unknown | slow or failing demo | M0-02 measures; cache; concurrency cap; stale-cache banner |
 | REST vs harness "supported surface" | Stage 1 reading | README states approach; Discord question; M0-04 library check |
 | Fit formula quality | weak Tech/Idea score | M0-03 spike and ADR; Fit sanity test |
-| LLM key or cost | agent layer blocked, spend | owner key in first hour; spend cap; deterministic mode |
+| LLM key or cost (OpenAI) | agent layer blocked, spend | owner `OPENAI_API_KEY` with a 5 USD project budget limit in the first hour; app-side spend cap; deterministic mode |
 | Public demo abuse | quota or cost burn | per-IP and global budgets; caps; pre-warmed samples |
 | New dependency releases | lost hours | pin; 30-minute fallback; smoke deploy first |
 | Qloo keys die after judging | demo breaks Nov 5+ | DEMO_MODE=fixtures fallback |
