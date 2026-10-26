@@ -61,7 +61,7 @@ The specs name fields from the architecture's domain model (`docs/architecture.m
 | `Act` | `qlooEntityId`, `name`, `matchConfidence` (single-confirmed or chosen-by-user) |
 | `ActResult` | `act`, `rank`, `fit` (value 0..100 to 1 decimal, or `unavailable` reason: no-shared-tags, too-few-shared-tags, unresolved-entity, candidate-in-crowd), `overlapTags[]` (`label`, `score`, `coveredCrowdActs`), `standing` (label above, similar, below; candidatePercentile; crowdMedian; crowdSample; or `unavailable` reason), `cityStrengths[]` (city, meanAffinityRank, cellCount, thinData, or unavailable zero-cells), `caveats[]`, `evidence[]` |
 | `Evidence` | `endpoint`, `redactedParams`, `responseDigest`, `fetchedAt`, `supports[]`, `cached` (never headers); numbers point to evidence through `evidenceIds` on `fit`, `standing` and `cityStrengths[]` |
-| Core constants | `FIT_MIN_SHARED_TAGS` (3), `THIN_CELLS` (15), `STANDING_BAND_POINTS` (5), `FIT_CLOSE_SPREAD_POINTS` (5, close-values note; the recorded sample's three acts span 2.5 points, docs/adr/0013-fit-formula.md) |
+| Core constants | In ADR 0013 today: `FIT_MIN_SHARED_TAGS` (3), thin data under 15 cells, the 5-point standing band. Design proposals to add to core and ADR 0013: `STANDING_BAND_POINTS` (5, as a named constant) and `FIT_CLOSE_SPREAD_POINTS` (5, close-values note). The recorded 2.5-point spread of three acts (ADR 0013) is only an example of a small spread, not the source of the threshold. |
 
 ## Measured facts the design is built to
 

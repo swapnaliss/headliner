@@ -90,7 +90,7 @@ A removable or selectable pill showing one act name (typed crowd and candidate a
 |---|---|
 | Element and role | `<li>` in a `<ul aria-label="Crowd acts">`; the remove control is a `<button>`. The chip text is not interactive. |
 | Props | `name: string` (plain text), `status: "typed" \| "matched" \| "needs-choice" \| "no-match"`, `onRemove?`, `onEdit?` |
-| Spacing | chips in a list have 8px gap in both directions; each remove button's 44px hit area does not overlap its neighbours (row gap of 8px, chips wrap at 360px) |
+| Spacing | chips in a list have a 12px gap in both directions (row gap 12px, so remove-button hit areas never overlap); below 768px each chip row is at least 44px tall; chips wrap at 360px |
 | Look | `--radius-pill`, `--neutral-bg`, 1px `--border-control`; the status icon and word sit inside the chip ("Matched", "Needs choice", "No match"); name `--text-base`, truncated at 24ch with the full name in the accessible name. |
 | Remove button | 44px target (the visible chip stays 32px tall; the hit area extends). Accessible name: "Remove {name} from crowd acts" (or "candidate acts"). After removal focus moves to the next chip, or to the add field if none remain, and a live region says "{name} removed. {n} crowd acts left." |
 | Accessible name | "{name}, {status text}" |

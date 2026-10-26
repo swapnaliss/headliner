@@ -16,7 +16,7 @@ Users: the venue talent buyer weighing one booking (desk or phone), a promoter o
 
 Landmarks: `header` (name + Banner), `main`, `footer`. Headings: h1 is the full act name; h2 "Why this Fit", "Shared tastes", "Qloo popularity rank", "Other cities compared", "Evidence trail"; h3 inside Evidence rows is the endpoint. A small "On this page" list of anchor links appears under the h1 on desktop only; on mobile the page is short enough to scroll.
 
-Content hierarchy: (1) which act and where it ranks, (2) Fit and standing side by side, (3) caveats, (4) why, (5) shared tastes, (6) other cities compared, (7) Evidence trail. Caveats come before the explanation so a limit is read before a number is trusted.
+Content hierarchy: (1) which act and where it ranks, (2) Fit and standing side by side, (3) caveats, (4) why, (5) shared tastes, (6) Qloo popularity rank section, (7) other cities compared, (8) Evidence trail. Caveats come before the explanation so a limit is read before a number is trusted.
 
 ### Mobile 360px
 
@@ -71,7 +71,7 @@ One column. The wireframe shows the top-ranked act of the recorded sample slate 
 | Qloo, not a measure of change or     |
 | room size.                           |
 +--------------------------------------+
-| Other cities compared                        |  h2
+| Other cities compared                |  h2
 | Mean affinity rank, with the number  |
 | of cells behind it. ...              |
 | Cities compared: your venue's city   |
@@ -176,7 +176,7 @@ Hatch pattern `/` in a bar marks thin data; it is a second cue next to the word 
 | Banner | "Audience-taste fit is aggregate affinity, not a ticket forecast. It compares the tastes of each act's audience with your regular crowd, using Qloo data. It says nothing about sales, attendance or any individual." |
 | Back / prev / next | "Back to the slate" ; "Previous act: {name}" ; "Next act: {name}" |
 | Rank line | "Rank {r} of {n}" ; unranked "Not ranked" |
-| Fit tile | label "Fit" ; caption "Audience-taste fit, 0 to 100." ; link "See evidence: {n}" ; when `Slate.fitSpread` is below `FIT_CLOSE_SPREAD_POINTS` (5 points; the recorded sample's three acts span 2.5 points, ADR 0013): "On this slate Fit values span {x} points, so neighbouring ranks are close." with the DerivedCaption "Derived from the Fit and Qloo popularity rank values above." and a "See evidence" link |
+| Fit tile | label "Fit" ; caption "Audience-taste fit, 0 to 100." ; link "See evidence: {n}" ; when `Slate.fitSpread` is below `FIT_CLOSE_SPREAD_POINTS` (5 points, a design proposal to be added to core and ADR 0013; the recorded sample's 2.5-point spread is only an example): "On this slate Fit values span {x} points, so neighbouring ranks are close." with the DerivedCaption "Derived from the Fit and Qloo popularity rank values above." and a "See evidence" link |
 | Standing tile | label "Qloo popularity rank" ; labels "Above crowd median" / "Similar to crowd median" / "Below crowd median" ; values "{candidate} of 100 vs crowd median {median}" ; scale note "Higher is better known on Qloo." ; band note "Similar means within 5 percentile points of the crowd median (exactly 5 is similar). For example 100.0 against 99.5 is Similar." |
 | Caveats tile | heading "Caveats" ; empty: "No caveats recorded for this act." (still shown, so absence is explicit) |
 | Why this Fit | "{name} shares {n} tags with your crowd. The three with the highest Qloo scores are {t1}, {t2} and {t3}. Fit is the mean of the Qloo scores of those shared tags. Do not read a difference of a point or two as meaningful." |
@@ -245,7 +245,7 @@ Logical names; the M1-02 zod schema is the source of truth.
 | Caveats tile and sentences | `ActResult.caveats[]` (`code`, `label`, `detail`) |
 | Other cities compared | `ActResult.cityStrengths[]` (`city`, `meanAffinityRank` to 3 decimals, `cellCount`, `thinData` where `cellCount < 15`, or `unavailable: zero-cells`), filled lazily by the city-strength request (up to 5 heatmap calls, ADR 0004); `isVenueCity` derived by comparing with `Slate.room.city`; the city list itself comes from the slate (ADR 0004: up to 5 per act), not from geography |
 | Cities progress | per-request progress of the lazy loader |
-| Close-values note | `Slate.fitSpread` against the core constant `FIT_CLOSE_SPREAD_POINTS` (5) |
+| Close-values note | `Slate.fitSpread` against the proposed core constant `FIT_CLOSE_SPREAD_POINTS` (5; to be added to core and ADR 0013) |
 | Evidence trail | `ActResult.evidence[]` (`endpoint`, `redactedParams`, `responseDigest`, `fetchedAt`), plus a `supports` list and `cached` flag per item; no headers exist in the model |
 | "See evidence" links | `ActResult.fit.evidenceIds`, `standing.evidenceIds`, `cityStrengths[].evidenceIds` (indexes into `evidence[]`) |
 | Banner | static copy |

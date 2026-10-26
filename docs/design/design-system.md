@@ -93,6 +93,10 @@ Table format read by `scripts/check-contrast.mjs`: columns `Pair`, `Foreground`,
 | light: link on sunken | `#0B5CAD` | `#F0EEE8` | 4.5 | 5.74 |
 | light: text-muted on accent-tint | `#55524D` | `#E3EEF1` | 4.5 | 6.57 |
 | light: focus ring on error-bg | `#0A5FD0` | `#FBE5E2` | 3 | 4.88 |
+| light: focus ring on neutral-bg | `#0A5FD0` | `#EAE8E1` | 3 | 4.81 |
+| light: focus ring on caution-bg | `#0A5FD0` | `#FFF0CF` | 3 | 5.22 |
+| light: focus ring on info-bg | `#0A5FD0` | `#E2EEFA` | 3 | 5.01 |
+| light: focus ring on ok-bg | `#0A5FD0` | `#E3F3E7` | 3 | 5.12 |
 | light: bar value text on surface | `#1C1B1A` | `#FFFFFF` | 4.5 | 17.19 |
 | light: progress fill (info) on track | `#0B4F8A` | `#DDD9CF` | 3 | 5.96 |
 
@@ -144,6 +148,10 @@ Table format read by `scripts/check-contrast.mjs`: columns `Pair`, `Foreground`,
 | dark: link on sunken | `#7FB6F0` | `#0E0D0C` | 4.5 | 9.10 |
 | dark: text-muted on accent-tint | `#B0ABA2` | `#1B2F36` | 4.5 | 6.10 |
 | dark: focus ring on error-bg | `#8DBDF5` | `#401614` | 3 | 7.99 |
+| dark: focus ring on neutral-bg | `#8DBDF5` | `#2C2A27` | 3 | 7.31 |
+| dark: focus ring on caution-bg | `#8DBDF5` | `#3A2A0A` | 3 | 7.08 |
+| dark: focus ring on info-bg | `#8DBDF5` | `#122A40` | 3 | 7.49 |
+| dark: focus ring on ok-bg | `#8DBDF5` | `#15301C` | 3 | 7.29 |
 | dark: bar value text on surface | `#ECE9E3` | `#1D1C1A` | 4.5 | 14.05 |
 | dark: progress fill (info) on track | `#A3CFF7` | `#3D3B37` | 3 | 6.82 |
 
@@ -276,7 +284,7 @@ The standing glyph is a position relative to a line, not an arrow, and uses the 
 
 ## 8. Data marks
 
-- **Fit** is a number with one decimal, never a bar, ring, star rating or percentage sign. A bar from 0 to 100 would put every act at roughly 60 and invite the reading "60% match". Rank is shown beside it. A spread below the single close-values constant `FIT_CLOSE_SPREAD_POINTS` (5 points, chosen from the recorded sample where three acts span 2.5 points; docs/adr/0013-fit-formula.md) triggers the same note on the slate and the act detail screens.
+- **Fit** is a number with one decimal, never a bar, ring, star rating or percentage sign. A bar from 0 to 100 would put every act at roughly 60 and invite the reading "60% match". Rank is shown beside it. A spread below the single close-values constant `FIT_CLOSE_SPREAD_POINTS` (5 points, a design proposal to be added to core and ADR 0013; the recorded sample's three acts span 2.5 points, which is only an example) triggers the same note on the slate and the act detail screens.
 - **Three different scales, never mixed.** Fit is 0 to 100 (mean Qloo tag score). Qloo popularity rank is a 0 to 100 percentile of how well known an act is on Qloo, printed "{value} of 100" with "higher is better known on Qloo". Mean affinity rank is 0 to 1, the average of Qloo's per-cell `affinity_rank` for a city, and has nothing to do with the other two. Positions in an ordered list (rank 1, 2, 3) are called "Fit position" or "Popularity position" where two orders are compared.
 - **Mean affinity rank** (0 to 1) is a horizontal bar on a track with the number printed at the end (3 decimals) and the cell count printed beside it. A bar is allowed here because mean affinity rank is a bounded rank. The bar has a text value so it is never read by shape alone. Thin-data cities use a diagonal-hatch fill (SVG pattern, 4px) in the caution colours and the ThinDataBadge; the hatch is a second cue besides the colour and the badge.
 - Tag scores in shared tastes are printed as numbers with two decimals; no bar.

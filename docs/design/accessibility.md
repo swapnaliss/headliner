@@ -63,7 +63,7 @@ How to use it: each item has an ID, a check, how to test it, and the screens it 
 |---|---|---|---|
 | T-01 | Every focusable element shows the 3px `--focus` ring with 2px offset; no element removes the outline without replacement. | Tab through every screen | all |
 | T-02 | Focus is never hidden behind sticky UI; headings and targets set `scroll-margin-block`. | Tab to elements near the sticky aside | M, S |
-| T-03 | Target size: at least 44 by 44 CSS px below 768px and for coarse pointers; at least 32 by 32 on desktop; never below 24 by 24 (WCAG 2.5.8). Adjacent targets are at least 8px apart. | Measure in devtools; includes chip remove buttons and "Change" | all |
+| T-03 | Target size: at least 44 by 44 CSS px below 768px and for coarse pointers; at least 32 by 32 on desktop; never below 24 by 24 (WCAG 2.5.8). Adjacent targets are at least 8px apart. | Measure in devtools; includes chip remove buttons (chip rows have a 12px gap or 44px row height) and \"Change\" | all |
 | T-04 | Controls are not operated by hover alone; nothing important appears only on hover or pointer drag. | Use touch emulation | all |
 
 ## 6. Motion, zoom, reflow and text

@@ -79,7 +79,7 @@ The sentence disclosure, when open, shows a labelled multi-line field (3 rows) a
 
 ### Desktop 1280px
 
-Content width 1280px including 32px gutters; 12 columns. Two columns: the form takes columns 1 to 7; an aside on columns 9 to 12 (sticky only at 1280px and above, when it is shorter than the viewport and the viewport is at least 700px tall; static at 1024px; below the form at 768px; at 1440px the layout stays 1280px wide and centred) holds "How it works" and "What you will get". The h1 and lead span columns 1 to 8. Sample button sits beside the lead. The two act lists sit side by side inside the form (columns 1 to 3.5 and 3.5 to 7 would be too narrow for chips), so they stay stacked within the form column, with the add fields at 100% of the column.
+Content width 1280px including 32px gutters; 12 columns. Two columns: the form takes columns 1 to 7; an aside on columns 9 to 12 (sticky only at 1280px and above, when it is shorter than the viewport and the viewport is at least 700px tall; static at 1024px; below the form at 768px; at 1440px the layout stays 1280px wide and centred) holds "How it works" and "What you will get". The h1 and lead span columns 1 to 8. Sample button sits beside the lead. The two act lists are stacked in the form column, with the add fields at 100% of the column.
 
 ```
 +--------------------------------------------------------------------------------------+

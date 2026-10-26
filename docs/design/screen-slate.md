@@ -58,7 +58,7 @@ The wireframe shows the three acts recorded for the sample room (ADR 0013); tag 
 | | (o-) Below crowd median          | |
 | | 86.4 of 100 vs crowd median 99.5 | |
 | | Higher is better known on Qloo. | |
-| | Open details    Evidence (3)     | |
+| | Open details  Evidence (3 calls) | |
 | +----------------------------------+ |
 | | [2]  Radiohead                   | |
 | | Fit 59.5                         | |
@@ -66,8 +66,8 @@ The wireframe shows the three acts recorded for the sample room (ADR 0013); tag 
 | | See all 86 shared tastes ...     | |
 | | Qloo popularity rank             | |
 | | (-o-) Similar to crowd median    | |
-| | 100.0 of 100 vs crowd median 99.5       | |
-| | Open details    Evidence (3)     | |
+| | 100.0 of 100 vs median 99.5      | |
+| | Open details  Evidence (3 calls) | |
 | +----------------------------------+ |
 | | [3]  Khruangbin ... Fit 58.1 ... | |
 | +----------------------------------+ |
@@ -116,8 +116,8 @@ Standing glyph in the wireframe `(o-)`, `(-o-)`: a short horizontal median line 
 | +----------------------------------------------------+ | Reality   1       3         |
 | | [1] Reality Club         | Qloo popularity rank    | | Radiohead 2       1         |
 | |     Fit 60.6             | (o-) Below crowd median | | Khruangbin 3      2         |
-| |     [tag][tag][tag][+68] | 86.4 vs crowd median    | |                             |
-| |     Open details  Evidence (3)  99.5               | | Share this slate            |
+| |     [tag][tag][tag]      | 86.4 of 100 vs median   | |                             |
+| |     Open details  Evidence (3 calls)  See all 71   | | Share this slate            |
 | +----------------------------------------------------+ | [ link          ] [Copy]    |
 | | [2] Radiohead ...                                  | |                             |
 | +----------------------------------------------------+ | Room used                   |
@@ -144,7 +144,7 @@ At 768px (tablet) the aside drops below the list, as on mobile, and cards show t
 | Loading (scoring) | h1 and room summary appear immediately. A ProgressStatus: "Scoring {n} acts: {done} of {n} done." with a `<progress>`; below it a plain list of acts with a word status each ("Queued", "Scoring", "Done", "No data", with the matching icon); then {n} SkeletonCards. Ranks are not shown until every act has finished, so the order never reshuffles | `role="status"` region updates at most every 2 seconds and always at completion. Skeleton list is `aria-hidden`; list container `aria-busy="true"` until done. Reduced motion: skeletons are static; the progress text and bar still update |
 | Loading, slow | After 20 seconds the status line adds "Still working. {s} seconds so far. Qloo requests that are not saved yet take longer." | The elapsed seconds are visible but not announced each second; the slow notice is announced once. Skeleton cards stay in place until results or an error arrive |
 | Done | Ranked cards replace skeletons. Status line: "Slate ready: {r} acts ranked." | Announced once. Focus is not moved if the user is reading; if focus was on the progress region it moves to the h2 "Ranked acts" |
-| Done, close values | Slate-level note "Fit values span {x} points. Treat neighbouring ranks as close." shown when the spread between best and worst Fit is below the single core constant `FIT_CLOSE_SPREAD_POINTS` (5 points, chosen from the recorded sample where three acts span 2.5 points; docs/adr/0013-fit-formula.md). The same constant drives the note on the act detail page. The note carries the DerivedCaption | Tied-looking pairs get the "Same Fit" line |
+| Done, close values | Slate-level note "Fit values span {x} points. Treat neighbouring ranks as close." shown when the spread between best and worst Fit is below the single proposed core constant `FIT_CLOSE_SPREAD_POINTS` (5 points, a design proposal to be added to core and ADR 0013; the recorded sample's three acts span 2.5 points, which is only an example). The same constant drives the note on the act detail page. The note carries the DerivedCaption | Tied-looking pairs get the "Same Fit" line |
 | Partial (some acts have no data) | Ranked list for the acts that scored; "Not ranked ({n})" group below; slate note "{n} of {total} acts could not be scored. They are listed below with the reason." | Caveat chip "No data" on each; button "Try this act again" per act |
 | No data (single act) | Compact EmptyState in the card: title "No data for {name}", reason "Qloo returned nothing usable for this act, so no Fit or Qloo popularity rank is shown." | Never a 0, never hidden. Announced inside the status region when the slate completes |
 | Fit unavailable (with other data) | In the Fit slot: neutral chip "Fit unavailable" and the reason (see Copy). Standing may still show | Card sits in "Not ranked" |
@@ -243,7 +243,7 @@ Logical names from the architecture (`Slate`, `ActResult`, `Evidence`); the zod 
 | Caveat chips | `ActResult.caveats[]` (`code`, `label`) |
 | Evidence link and call count | `ActResult.evidence[]` (`endpoint`, `redactedParams`, `responseDigest`, `fetchedAt`), count = length |
 | Comparison table | `Slate.popularityOrder[]` (act ids ordered by candidate percentile) joined with `ActResult.rank`; both are positions derived by code from Fit and popularity values, not new measurements |
-| Close-values constant | `FIT_CLOSE_SPREAD_POINTS` in core (5), compared with `Slate.fitSpread` |
+| Close-values constant | `FIT_CLOSE_SPREAD_POINTS` (design proposal, 5; to be added to core and ADR 0013), compared with `Slate.fitSpread` |
 | Stale-cache notice | `Slate.generatedAt` and a cache-served flag on evidence |
 | Share link and expiry | `Slate.id`, `Slate.expiresAt` (30 days, ADR 0002) |
 | Banner, demo mode chip | static copy; server config flag |
