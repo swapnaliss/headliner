@@ -50,7 +50,7 @@ REPO_URL="$(git remote get-url origin)"
 WORK="$(mktemp -d "$TMPDIR/m1-gate.XXXXXX")"
 git clone --depth 1 "$REPO_URL" "$WORK/clone"
 cd "$WORK/clone"
-env -u QLOO_API_KEY -u ANTHROPIC_API_KEY -u DATABASE_URL DEMO_MODE=fixtures bash -c '
+env -u QLOO_API_KEY -u OPENAI_API_KEY -u DATABASE_URL DEMO_MODE=fixtures bash -c '
   set -euo pipefail
   npm ci
   npm run typecheck && npm run lint

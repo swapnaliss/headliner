@@ -47,7 +47,7 @@ Rubric: Technological Implementation and Design. A booker needs the "why" in wor
 
 ```bash
 export DEMO_MODE=fixtures
-unset ANTHROPIC_API_KEY
+unset OPENAI_API_KEY
 npm run lint && npm run typecheck
 npm test -- packages/agent/src/explain
 OUT="${TMPDIR:-/tmp}/m3-02.json"

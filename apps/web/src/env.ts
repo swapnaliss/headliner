@@ -7,7 +7,7 @@ const liveSchema = z.object({
   QLOO_API_KEY: z.string().min(1),
   QLOO_BASE_URL: z.url().default("https://hackathon.api.qloo.com"),
   DATABASE_URL: z.string().min(1),
-  ANTHROPIC_API_KEY: z.string().min(1).optional(),
+  OPENAI_API_KEY: z.string().min(1).optional(),
 });
 
 const fixturesSchema = z.object({
@@ -23,7 +23,7 @@ export type Env =
       qlooApiKey: string;
       qlooBaseUrl: string;
       databaseUrl: string;
-      anthropicApiKey: string | undefined;
+      openaiApiKey: string | undefined;
     };
 
 /** Absent or unrecognised DEMO_MODE means fixtures: the zero-key path must always work. */
@@ -47,13 +47,13 @@ export function loadEnv(source: Record<string, string | undefined> = process.env
     QLOO_API_KEY: source["QLOO_API_KEY"],
     QLOO_BASE_URL: source["QLOO_BASE_URL"] || undefined,
     DATABASE_URL: source["DATABASE_URL"],
-    ANTHROPIC_API_KEY: source["ANTHROPIC_API_KEY"] || undefined,
+    OPENAI_API_KEY: source["OPENAI_API_KEY"] || undefined,
   });
   return {
     mode: "live",
     qlooApiKey: live.QLOO_API_KEY,
     qlooBaseUrl: live.QLOO_BASE_URL,
     databaseUrl: live.DATABASE_URL,
-    anthropicApiKey: live.ANTHROPIC_API_KEY,
+    openaiApiKey: live.OPENAI_API_KEY,
   };
 }

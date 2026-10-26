@@ -27,9 +27,11 @@ describe("room rules mirror the shared request schema", () => {
 
   it("validates a draft with specific messages and names only what is missing", () => {
     expect(validateDraft({ city: "", crowd: ["a"], candidates: [] }).map((p) => p.field)).toEqual(["city-field", "crowd-input", "candidate-input"]);
-    expect(validateDraft({ city: "Berlin", crowd: ["a", "b", "c"], candidates: ["x"] })).toEqual([]);
-    expect(disabledReason({ city: "", crowd: [], candidates: [] })).toBe("Add a city, at least 3 crowd acts and at least 1 candidate act to continue.");
-    expect(disabledReason({ city: "Berlin", crowd: ["a"], candidates: ["x"] })).toBe("Add 2 more crowd acts to continue.");
-    expect(disabledReason({ city: "Berlin", crowd: ["a", "b", "c"], candidates: ["x"] })).toBeNull();
+    expect(validateDraft({ city: "Berlin", crowd: ["a", "b", "c"], candidates: ["x", "y", "z"] })).toEqual([]);
+    expect(validateDraft({ city: "Berlin", crowd: ["a", "b", "c"], candidates: ["x", "y"] }).map((p) => p.message)).toEqual(["Add at least 3 candidate acts. You have 2."]);
+    expect(disabledReason({ city: "Berlin", crowd: ["a", "b", "c"], candidates: ["x"] })).toBe("Add 2 more candidate acts to continue.");
+    expect(disabledReason({ city: "", crowd: [], candidates: [] })).toBe("Add a city, at least 3 crowd acts and at least 3 candidate acts to continue.");
+    expect(disabledReason({ city: "Berlin", crowd: ["a"], candidates: ["x", "y", "z"] })).toBe("Add 2 more crowd acts to continue.");
+    expect(disabledReason({ city: "Berlin", crowd: ["a", "b", "c"], candidates: ["x", "y", "z"] })).toBeNull();
   });
 });

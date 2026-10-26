@@ -62,8 +62,8 @@ Verified 2026-10-24 (commands in `.kickoff-state.md`):
 - Missing: pnpm (not needed, npm workspaces), any hosting CLI (vercel, flyctl, etc.), gitleaks (install or use the CI action).
 - Qloo hackathon key: received; local copy outside the repo at `~/.config/qloo/key` (mode 600). Works against `https://hackathon.api.qloo.com`. Quota and rate limits not published: ask in Discord #api-help.
 - `@qloo/qloo-harness` 0.1.26 on npm (kit minimum 0.1.26).
-- Owner-only, not yet done: hosting account (Vercel) sign-in, Neon account and database, Anthropic API key with a spend cap, Devpost "Join hackathon", Discord join and posts, final Devpost submit.
-- Budget ceiling proposed: $20 total (LLM capped at $15; Vercel and Neon free tiers).
+- Owner-only, not yet done: hosting account (Vercel) sign-in, Neon account and database, Anthropic API key with a spend cap (superseded 2026-10-26: OpenAI project key with a 5 USD budget limit), Devpost "Join hackathon", Discord join and posts, final Devpost submit.
+- Budget ceiling proposed: $20 total (LLM capped at $15; Vercel and Neon free tiers). Superseded: the total budget is 6 USD with a 5 USD provider-side LLM limit (docs/budget.md).
 - Env names later tickets expect (M0-00 must inventory them): HEADLINER_PROD_URL (M0-01, M0-05, M0-GATE), PROD_URL (M2-GATE), DEMO_URL (M3-05, M3-GATE), TEST_DATABASE_URL (M2-05, a throwaway Neon branch), LLM_MODEL and budget variables listed in `.env.example`.
 - Standing approvals proposed: merge green PRs; Vercel preview and production deploys of this project; live Qloo calls within quota; npm installs from the lockfile.
 

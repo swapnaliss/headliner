@@ -11,7 +11,7 @@ An agent that ranks an independent venue's candidate acts and shows, with checka
 `/status`, `/start <ticket>`, `/start-milestone <n>`, `/gate`, `/backlog`. Run `python3 scripts/waves.py <n>` before `/start-milestone`. `gh` runs outside the sandbox.
 
 ## Stack
-TypeScript, Next.js, zod, Drizzle on Postgres (Neon), Vitest, Anthropic SDK for intake and explanation. Versions in `PROJECT.md` §4.
+TypeScript, Next.js, zod, Drizzle on Postgres (Neon), Vitest, OpenAI SDK for intake and explanation (behind a thin provider interface, ADR 0009 update 2026-10-26). Versions in `PROJECT.md` §4.
 
 ## Disqualifying hackathon rules
 Live hosted demo free and unrestricted for judges (no login or CAPTCHA wall); public repo with an OSS licence visible in About; original work; no personal data sent to Qloo; hackathon key only against `hackathon.api.qloo.com` and never in client code, repo, logs, screenshots or recordings.

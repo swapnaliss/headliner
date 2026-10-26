@@ -47,7 +47,7 @@ Headliner is an agent that ranks the acts an independent venue is considering an
 ```
 Browser ──HTTPS──► Next.js app (serverless)
                      ├─ core: Fit, standing, city strength, caveats (pure)
-                     ├─ agent: intake (<=3 steps) + templated explanation ──► Anthropic API  [untrusted text in, schema-validated out]
+                     ├─ agent: intake (<=3 steps) + templated explanation ──► OpenAI API     [untrusted text in, schema-validated out]
                      ├─ qloo adapter (timeout, 1 retry, shape assertions) ──► hackathon.api.qloo.com  [X-Api-Key stays server-side]
                      └─ Postgres: qloo_cache, slates (30-day TTL), budgets
 ```

@@ -9,7 +9,7 @@ import { z } from "zod";
 export const MAX_NAME_LENGTH = 80;
 export const MIN_CROWD_ACTS = 3;
 export const MAX_CROWD_ACTS = 6;
-export const MIN_CANDIDATE_ACTS = 1;
+export const MIN_CANDIDATE_ACTS = 3;
 export const MAX_CANDIDATE_ACTS = 12;
 
 const FORBIDDEN = /[\p{Cc}\p{Zl}\p{Zp}]/u;

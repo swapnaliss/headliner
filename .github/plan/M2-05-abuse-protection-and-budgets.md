@@ -10,7 +10,7 @@ needs: [P-14]
 
 ## Context
 
-The demo must be free and unrestricted for judges (no login, no CAPTCHA) yet cannot let a stranger burn the Qloo quota or the $15 LLM cap (risk register, R6, R8). ADR 0008: per-IP daily budgets in Postgres using the platform client IP header, a global daily ceiling that fails closed to deterministic mode, input caps. In-memory limits do not work on serverless.
+The demo must be free and unrestricted for judges (no login, no CAPTCHA) yet cannot let a stranger burn the Qloo quota or the 5 USD LLM cap (risk register, R6, R8). ADR 0008: per-IP daily budgets in Postgres using the platform client IP header, a global daily ceiling that fails closed to deterministic mode, input caps. In-memory limits do not work on serverless.
 
 ## Scope
 

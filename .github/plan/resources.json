@@ -6,6 +6,6 @@
   },
   "budgeted": {
     "QLOO": "Hackathon API quota (unknown until M0-02). Workers use recorded fixtures and spend live calls only to prove an AC.",
-    "LLM": "Anthropic API spend, capped at $15 in total for the project."
+    "LLM": "OpenAI API spend, capped at 5 USD provider-side (total project budget 6 USD)."
   }
 }

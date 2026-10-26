@@ -20,8 +20,8 @@ describe("packages/core boundary", () => {
     expect(offenders).toEqual([]);
   });
 
-  it("has no reference to fetch, process, fs, next, the Anthropic SDK, the clock or randomness", () => {
-    const forbidden = /\bfetch\s*\(|\bprocess\.|\brequire\s*\(|["'](?:node:)?fs["']|["']next["']|@anthropic-ai|Date\.now|new Date\(|Math\.random/;
+  it("has no reference to fetch, process, fs, next, the Anthropic or OpenAI SDK, the clock or randomness", () => {
+    const forbidden = /\bfetch\s*\(|\bprocess\.|\brequire\s*\(|["'](?:node:)?fs["']|["']next["']|@anthropic-ai|["']openai["']|Date\.now|new Date\(|Math\.random/;
     for (const file of files) expect(read(file), file).not.toMatch(forbidden);
   });
 

@@ -339,7 +339,7 @@ a {
 .btn[aria-disabled="true"] {
   background: var(--sunken);
   color: var(--text-muted);
-  border: 1px dashed var(--border-control);
+  border: 1px solid var(--border-control);
   cursor: not-allowed;
   text-decoration: none;
 }

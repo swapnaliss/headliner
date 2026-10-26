@@ -32,7 +32,7 @@ describe("RoomForm", () => {
     expect(button.getAttribute("aria-disabled")).toBe("true");
     expect(button.hasAttribute("disabled")).toBe(false);
     const reasonId = button.getAttribute("aria-describedby");
-    expect(document.getElementById(reasonId ?? "")?.textContent).toBe("Add a city, at least 3 crowd acts and at least 1 candidate act to continue.");
+    expect(document.getElementById(reasonId ?? "")?.textContent).toBe("Add a city, at least 3 crowd acts and at least 3 candidate acts to continue.");
   });
 
   it("adds with Enter, shows counters, removes with a labelled button and announces it", () => {

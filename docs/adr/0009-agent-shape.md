@@ -13,3 +13,6 @@ LLM planner choosing and ranking (non-deterministic, unverifiable).
 
 ## Consequences / cost to reverse
 Medium.
+
+## Update 2026-10-26
+Owner decision: the LLM provider is OpenAI, not Anthropic, because of cost (BL-01, owner ticket M3-01). The decision above is unchanged: scoring is code, the LLM never computes or invents a number, input to the model is structured fields only, output is schema-validated and grounding-checked, and a deterministic template fallback is used whenever the model is unavailable, over budget or ungrounded. What changes: the SDK is `openai` (version in `PROJECT.md` §4), the secret is `OPENAI_API_KEY`, and the model is set by `LLM_MODEL`, which the owner picks against OpenAI's current pricing page before M3-01 (no model or price is recorded here). The total budget stays 6 USD with a 5 USD provider-side hard limit. The LLM stays behind a thin provider interface in the `agent` module (one `complete`-style function taking structured input and a zod output schema), so the provider can change again without touching the pipeline, the guardrails or the fallback; cost to reverse stays medium to low.

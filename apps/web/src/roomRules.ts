@@ -93,8 +93,7 @@ export function validateDraft(draft: RoomDraft): FieldProblem[] {
     problems.push({ field: "crowd-input", message: `Add at least ${MIN_CROWD_ACTS} crowd acts. You have ${countWord(draft.crowd.length)}.` });
   }
   if (draft.candidates.length < MIN_CANDIDATE_ACTS) {
-    const noun = MIN_CANDIDATE_ACTS === 1 ? "candidate act" : "candidate acts";
-    problems.push({ field: "candidate-input", message: `Add at least ${MIN_CANDIDATE_ACTS} ${noun}. You have ${countWord(draft.candidates.length)}.` });
+    problems.push({ field: "candidate-input", message: `Add at least ${MIN_CANDIDATE_ACTS} candidate acts. You have ${countWord(draft.candidates.length)}.` });
   }
   return problems;
 }
@@ -107,7 +106,7 @@ export function disabledReason(draft: RoomDraft): string | null {
   if (crowdLeft > 0) missing.push(draft.crowd.length === 0 ? `at least ${MIN_CROWD_ACTS} crowd acts` : `${crowdLeft} more crowd ${crowdLeft === 1 ? "act" : "acts"}`);
   const candLeft = MIN_CANDIDATE_ACTS - draft.candidates.length;
   if (candLeft > 0) {
-    missing.push(draft.candidates.length === 0 ? `at least ${MIN_CANDIDATE_ACTS} candidate ${MIN_CANDIDATE_ACTS === 1 ? "act" : "acts"}` : `${candLeft} more candidate ${candLeft === 1 ? "act" : "acts"}`);
+    missing.push(draft.candidates.length === 0 ? `at least ${MIN_CANDIDATE_ACTS} candidate acts` : `${candLeft} more candidate ${candLeft === 1 ? "act" : "acts"}`);
   }
   if (missing.length === 0) return null;
   const joined = missing.length === 1 ? missing[0] : `${missing.slice(0, -1).join(", ")} and ${missing[missing.length - 1]}`;

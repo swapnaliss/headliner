@@ -8,6 +8,11 @@ describe("env", () => {
   it("treats DATABASE_URL as optional in fixtures mode", () => {
     expect(loadEnv({ DEMO_MODE: "fixtures", DATABASE_URL: "d" })).toEqual({ mode: "fixtures", databaseUrl: "d" });
   });
+  it("reads the optional LLM key as OPENAI_API_KEY and ignores the old Anthropic name", () => {
+    const env = loadEnv({ DEMO_MODE: "live", QLOO_API_KEY: "k", DATABASE_URL: "d", OPENAI_API_KEY: "o", ANTHROPIC_API_KEY: "a" });
+    expect(env).toMatchObject({ openaiApiKey: "o" });
+    expect(loadEnv({ DEMO_MODE: "live", QLOO_API_KEY: "k", DATABASE_URL: "d" })).toMatchObject({ openaiApiKey: undefined });
+  });
   it("defaults to fixtures when DEMO_MODE is absent or unknown", () => {
     expect(demoMode({})).toBe("fixtures");
     expect(demoMode({ DEMO_MODE: "weird" })).toBe("fixtures");

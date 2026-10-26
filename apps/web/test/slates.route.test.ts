@@ -24,7 +24,7 @@ afterEach(() => {
 describe("POST /api/slates in fixtures mode with no keys", () => {
   it("returns 200 with ranked results, fit, overlap tags, standing, caveats and evidence per number", async () => {
     vi.stubEnv("QLOO_API_KEY", "");
-    vi.stubEnv("ANTHROPIC_API_KEY", "");
+    vi.stubEnv("OPENAI_API_KEY", "");
     vi.stubEnv("DATABASE_URL", "");
     vi.stubEnv("DEMO_MODE", "fixtures");
     setRuntimeForTests(undefined); // build the real fixtures runtime from the (empty) environment
@@ -88,6 +88,8 @@ describe("input limits are enforced before the adapter", () => {
     ["7 crowd acts", { ...ROOM, crowdActs: names(7) }],
     ["2 crowd acts", { ...ROOM, crowdActs: names(2) }],
     ["no candidates", { ...ROOM, candidateActs: [] }],
+    ["1 candidate", { ...ROOM, candidateActs: names(1) }],
+    ["2 candidates", { ...ROOM, candidateActs: names(2) }],
     ["81-character name", { ...ROOM, candidateActs: ["x".repeat(81)] }],
     ["81-character city", { ...ROOM, city: "c".repeat(81) }],
     ["empty city", { ...ROOM, city: "" }],
