@@ -66,3 +66,46 @@ export function buildCaveats(input: CaveatInput): Caveat[] {
   }
   return caveats;
 }
+
+/** The caveat codes the act detail shows (M2-02). Each has fixed plain-text wording. */
+export const CAVEAT_CODES = ["no_data", "low_match_confidence", "thin_city_data", "standing_not_capacity"] as const;
+export type CaveatCode = (typeof CAVEAT_CODES)[number];
+
+/**
+ * Fixed templates. `no_data` has several causes (no shared tags, an upstream gap, popularity missing),
+ * so its sentence is the core wording already attached to the caveat; the others never vary.
+ */
+export const CAVEAT_TEMPLATES: Readonly<Record<Exclude<CaveatCode, "no_data">, string>> = {
+  low_match_confidence: CAVEAT_WORDING["low-match-confidence"],
+  thin_city_data: CAVEAT_WORDING["thin-data"],
+  standing_not_capacity: "Qloo popularity rank is a standing on Qloo, not a measure of change over time or room size.",
+};
+
+export interface DetailCaveat {
+  readonly code: CaveatCode;
+  readonly message: string;
+  /** Untrusted text (a city string). Render as plain text. */
+  readonly subject?: string;
+}
+
+const CODE_OF: Readonly<Record<Caveat["type"], CaveatCode>> = {
+  "thin-data": "thin_city_data",
+  "no-data": "no_data",
+  "low-match-confidence": "low_match_confidence",
+  "standing-unavailable": "no_data",
+  "single-tag-overlap": "no_data",
+};
+
+/**
+ * Caveats for the act detail: each stored caveat mapped to its code, plus `standing_not_capacity`
+ * whenever a Qloo popularity rank is shown (it is a standing, never a capacity claim).
+ */
+export function detailCaveats(result: { readonly caveats: readonly Caveat[]; readonly standing: unknown }): DetailCaveat[] {
+  const out: DetailCaveat[] = result.caveats.map((c) => {
+    const code = CODE_OF[c.type];
+    const message = code === "no_data" ? c.message : CAVEAT_TEMPLATES[code];
+    return c.subject !== undefined ? { code, message, subject: c.subject } : { code, message };
+  });
+  if (result.standing) out.push({ code: "standing_not_capacity", message: CAVEAT_TEMPLATES.standing_not_capacity });
+  return out;
+}

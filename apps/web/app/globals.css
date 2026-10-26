@@ -755,3 +755,122 @@ th.num {
 table {
   min-inline-size: 17rem;
 }
+
+/* Act detail (M2-02) */
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-6);
+  font-size: var(--text-sm);
+}
+.card-links a,
+.back-link,
+.prev-next a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: var(--target);
+}
+.tiles {
+  display: grid;
+  gap: var(--space-5);
+}
+.tile-title {
+  font-size: var(--text-md);
+}
+.fit-value-lg {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: 1.1;
+}
+.on-page {
+  display: none;
+  font-size: var(--text-sm);
+}
+.on-page ul {
+  display: flex;
+  gap: var(--space-5);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.prev-next {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+.ev-list {
+  display: grid;
+  gap: var(--space-4);
+  padding: 0;
+  list-style: none;
+}
+.ev-row {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-2);
+  padding: var(--space-4) var(--space-5);
+  display: grid;
+  gap: var(--space-3);
+}
+.ev-row:target {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.ev-title {
+  font-size: var(--text-base);
+  overflow-wrap: anywhere;
+}
+.ev-facts {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  font-size: var(--text-sm);
+}
+.ev-facts div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+.ev-facts dt {
+  font-weight: 600;
+}
+.ev-facts dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.ev-text {
+  background: var(--sunken);
+  border-radius: var(--radius-1);
+  padding: var(--space-3) var(--space-4);
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.linked-note {
+  display: none;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+.ev-row:target .linked-note {
+  display: block;
+}
+.copy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+.evidence > .stack-sm {
+  margin-block-start: var(--space-3);
+}
+@media (min-width: 768px) {
+  .tiles {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+  }
+  .on-page {
+    display: flex;
+    gap: var(--space-4);
+  }
+}

@@ -3,7 +3,7 @@
  * code. Upstream detail (Qloo bodies, stack traces, request URLs, the credential) never reaches
  * the client, so nothing here accepts free text from a caught error.
  */
-export const ERROR_CODES = ["invalid_input", "rate_limited", "upstream_unavailable", "internal_error"] as const;
+export const ERROR_CODES = ["invalid_input", "rate_limited", "upstream_unavailable", "internal_error", "not_found"] as const;
 export type ErrorCode = (typeof ERROR_CODES)[number];
 
 const STATUS: Readonly<Record<ErrorCode, number>> = {
@@ -11,6 +11,7 @@ const STATUS: Readonly<Record<ErrorCode, number>> = {
   rate_limited: 429,
   upstream_unavailable: 503,
   internal_error: 500,
+  not_found: 404,
 };
 
 const MESSAGE: Readonly<Record<ErrorCode, string>> = {
@@ -18,6 +19,7 @@ const MESSAGE: Readonly<Record<ErrorCode, string>> = {
   rate_limited: "Too many requests to the data provider. Try again in a minute.",
   upstream_unavailable: "The data provider is unavailable. Try again shortly.",
   internal_error: "Something went wrong on our side.",
+  not_found: "This slate or act was not found.",
 };
 
 export class ApiError extends Error {

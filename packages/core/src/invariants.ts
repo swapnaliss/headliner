@@ -26,5 +26,7 @@ export function assertEveryNumberHasEvidence(actResult: ActResult): void {
     throw new EvidenceInvariantError(`overlap tags for "${name}" have no fit and therefore no evidence reference`);
   }
   if (actResult.standing) check("standing", actResult.standing.evidenceRefs);
+  const explanation = actResult.standingExplanation;
+  if (explanation) check("standing explanation", [explanation.candidateEvidenceRef, ...explanation.crowdEvidenceRefs]);
   for (const strength of actResult.cityStrengths) check(`city strength (${strength.city})`, strength.evidenceRefs);
 }

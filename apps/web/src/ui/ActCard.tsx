@@ -82,10 +82,12 @@ export interface ActCardProps {
   /** Total ranked acts, for "Rank 2 of 3". */
   rankedCount: number;
   tiedWithPrevious?: boolean;
+  /** Path of this act's detail page (M2-02). When set, the card links to it and to its Evidence trail. */
+  detailHref?: string;
 }
 
 /** One candidate act on the slate: `<li><article>`; the act name is plain text in an `<h3>`. */
-export function ActCard({ result, rankedCount, tiedWithPrevious = false }: ActCardProps) {
+export function ActCard({ result, rankedCount, tiedWithPrevious = false, detailHref }: ActCardProps) {
   const { act } = result;
   const headingId = `act-${act.qlooEntityId.replace(/[^A-Za-z0-9_-]/g, "_")}-name`;
   const noData = result.status === "no-data" || result.fit === null;
@@ -160,7 +162,25 @@ export function ActCard({ result, rankedCount, tiedWithPrevious = false }: ActCa
         )}
 
         <CaveatList caveats={result.caveats} />
-        {result.evidence.length > 0 ? <EvidenceDisclosure name={act.name} evidence={result.evidence} /> : null}
+        {detailHref ? (
+          <p className="card-links">
+            <a href={detailHref} aria-label={`Open details for ${isolate(act.name)}`}>
+              Open details
+            </a>
+            {result.overlapTags.length > shown.length ? (
+              <a href={`${detailHref}#tastes`} aria-label={`See all ${result.overlapTags.length} shared tastes for ${isolate(act.name)}`}>
+                See all {result.overlapTags.length} shared tastes
+              </a>
+            ) : null}
+            {result.evidence.length > 0 ? (
+              <a href={`${detailHref}#evidence`} aria-label={`Evidence for ${isolate(act.name)}, ${result.evidence.length} ${plural(result.evidence.length, "call", "calls")}`}>
+                Evidence ({result.evidence.length} {plural(result.evidence.length, "call", "calls")})
+              </a>
+            ) : null}
+          </p>
+        ) : result.evidence.length > 0 ? (
+          <EvidenceDisclosure name={act.name} evidence={result.evidence} />
+        ) : null}
       </article>
     </li>
   );
