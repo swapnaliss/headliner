@@ -57,15 +57,21 @@ export function buildRuntime(source: Record<string, string | undefined> = proces
   };
 }
 
-let current: Runtime | undefined;
+/**
+ * Per-process singleton, so the in-memory cache and store persist across requests. Held on
+ * `globalThis` because Next bundles route handlers and pages separately: a module-level variable
+ * would give the slate page a different (empty) store from the one the API route saved into.
+ */
+const RUNTIME_KEY = Symbol.for("headliner.runtime");
+type RuntimeHolder = { [RUNTIME_KEY]?: Runtime | undefined };
 
-/** Per-process singleton, so the in-memory cache and store persist across requests. */
 export function getRuntime(): Runtime {
-  current ??= buildRuntime();
-  return current;
+  const holder = globalThis as RuntimeHolder;
+  holder[RUNTIME_KEY] ??= buildRuntime();
+  return holder[RUNTIME_KEY];
 }
 
 /** Test seam: install a runtime (or clear it with undefined). */
 export function setRuntimeForTests(runtime: Runtime | undefined): void {
-  current = runtime;
+  (globalThis as RuntimeHolder)[RUNTIME_KEY] = runtime;
 }

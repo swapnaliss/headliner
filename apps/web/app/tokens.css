@@ -1,0 +1,91 @@
+/* Design tokens: the single block from docs/design/design-system.md section 9. A test keeps this file equal to that block. */
+:root {
+  color-scheme: light dark;
+
+  /* colour: semantic, light then dark */
+  --canvas: light-dark(#FAF9F6, #141311);
+  --surface: light-dark(#FFFFFF, #1D1C1A);
+  --sunken: light-dark(#F0EEE8, #0E0D0C);
+  --text: light-dark(#1C1B1A, #ECE9E3);
+  --text-muted: light-dark(#55524D, #B0ABA2);
+  --link: light-dark(#0B5CAD, #7FB6F0);
+  --accent: light-dark(#1F4E5F, #8EC5D4);
+  --accent-hover: light-dark(#173B48, #A9D5E1);
+  --on-accent: light-dark(#FFFFFF, #0F2630);
+  --accent-tint: light-dark(#E3EEF1, #1B2F36);
+  --focus: light-dark(#0A5FD0, #8DBDF5);
+  --border-control: light-dark(#6B675F, #8A857B);
+  --border-subtle: light-dark(#D8D4CA, #33312E);
+  --track: light-dark(#DDD9CF, #3D3B37);
+  --banner-bg: light-dark(#FFF4D6, #3A2F10);
+  --banner-fg: light-dark(#3A2D00, #FBE9B5);
+  --banner-border: light-dark(#7A5A00, #C9A23A);
+  --ok-bg: light-dark(#E3F3E7, #15301C);
+  --ok-fg: light-dark(#14532D, #A5E0B2);
+  --caution-bg: light-dark(#FFF0CF, #3A2A0A);
+  --caution-fg: light-dark(#6B4200, #F3C873);
+  --error-bg: light-dark(#FBE5E2, #401614);
+  --error-fg: light-dark(#8F1D1D, #FFB3AC);
+  --info-bg: light-dark(#E2EEFA, #122A40);
+  --info-fg: light-dark(#0B4F8A, #A3CFF7);
+  --neutral-bg: light-dark(#EAE8E1, #2C2A27);
+  --neutral-fg: light-dark(#45423D, #D2CEC5);
+
+  /* type */
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  --text-xs: 0.8125rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.375rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.25rem;
+
+  /* space */
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 8px;
+  --space-4: 12px;
+  --space-5: 16px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 48px;
+  --space-9: 64px;
+
+  /* shape */
+  --radius-1: 4px;
+  --radius-2: 8px;
+  --radius-pill: 999px;
+  --shadow-1: light-dark(0 1px 2px rgb(0 0 0 / 0.08), 0 0 0 1px var(--border-control));
+  --shadow-2-dark: 0 4px 16px rgb(0 0 0 / 0.5);
+  --shadow-2-light: 0 4px 16px rgb(0 0 0 / 0.16);
+  --shadow-2: light-dark(var(--shadow-2-light), var(--shadow-2-dark));
+
+  /* motion */
+  --motion-fast: 100ms;
+  --motion-base: 200ms;
+  --motion-slow: 300ms;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+
+  /* target size: 44px on small screens and coarse pointers, 32px otherwise */
+  --target: 44px;
+
+  /* layout */
+  --content-max: 80rem;
+  --gutter: 16px;
+}
+
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
+
+@media (min-width: 768px) { :root { --gutter: 24px; } }
+@media (min-width: 768px) and (pointer: fine) { :root { --target: 32px; } }
+@media (min-width: 1280px) { :root { --gutter: 32px; } }
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --motion-fast: 0.01ms; --motion-base: 0.01ms; --motion-slow: 0.01ms; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: inherit; }
