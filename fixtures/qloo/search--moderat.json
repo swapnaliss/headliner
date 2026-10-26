@@ -1,0 +1,1112 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Moderat",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T06:08:43.032Z",
+  "latencyMs": 334,
+  "body": {
+    "results": [
+      {
+        "name": "Moderat",
+        "entity_id": "36254E3F-20E4-4151-AC61-D753CA41F34A",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "moderat.band"
+            },
+            "instagram": {
+              "id": "moderat"
+            },
+            "lastfm": {
+              "id": "moderat",
+              "listeners": 683990,
+              "scrobbles": 29909335
+            },
+            "musicbrainz": {
+              "id": "7754905b-8bf7-48e2-935a-03d566fec464"
+            },
+            "spotify": {
+              "id": "2exkZbmNqMKnT8LRWuxWgy"
+            },
+            "twitter": {
+              "id": "moderatofficial"
+            },
+            "wikidata": {
+              "id": "q523627"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/36254E3F-20E4-4151-AC61-D753CA41F34A-420x-auto.jpg"
+          },
+          "short_description": "Moderat is a German electronic music supergroup known for blending techno, ambient, and IDM styles."
+        },
+        "popularity": 0.9966060638775214,
+        "disambiguation": "Moderat",
+        "tags": [
+          {
+            "name": "Glitch",
+            "tag_id": "urn:tag:genre:glitch",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:glitch"
+          },
+          {
+            "name": "Techno",
+            "tag_id": "urn:tag:genre:techno",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:techno"
+          },
+          {
+            "name": "Idm",
+            "tag_id": "urn:tag:genre:idm",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:idm"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:electronic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronic"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:audience:qloo:electronic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:electronic"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:music:qloo:atmospheric",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:atmospheric"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Rhythmic",
+            "tag_id": "urn:tag:music:qloo:rhythmic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:rhythmic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:music:qloo:experimental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:experimental"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Immersive",
+            "tag_id": "urn:tag:style:qloo:immersive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:immersive"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Visual",
+            "tag_id": "urn:tag:style:qloo:visual",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:visual"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:characteristic:qloo:atmospheric",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:atmospheric"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:characteristic:qloo:experimental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:experimental"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:characteristic:qloo:melodic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:melodic"
+          },
+          {
+            "name": "Rhythmic",
+            "tag_id": "urn:tag:characteristic:qloo:rhythmic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:rhythmic"
+          },
+          {
+            "name": "Berlin-Techno",
+            "tag_id": "urn:tag:style:qloo:berlin_techno",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:berlin_techno"
+          },
+          {
+            "name": "Ambient-Idm",
+            "tag_id": "urn:tag:style:qloo:ambient_idm",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:ambient_idm"
+          },
+          {
+            "name": "Experimental-Electropop",
+            "tag_id": "urn:tag:style:qloo:experimental_electropop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental_electropop"
+          },
+          {
+            "name": "Downtempo-Techno",
+            "tag_id": "urn:tag:style:qloo:downtempo_techno",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:downtempo_techno"
+          },
+          {
+            "name": "Atmospheric-Electronica",
+            "tag_id": "urn:tag:style:qloo:atmospheric_electronica",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:atmospheric_electronica"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:influence:qloo:electronic",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:electronic"
+          },
+          {
+            "name": "Techno",
+            "tag_id": "urn:tag:influence:qloo:techno",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:techno"
+          },
+          {
+            "name": "IDM",
+            "tag_id": "urn:tag:influence:qloo:idm",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:idm"
+          },
+          {
+            "name": "Ambient",
+            "tag_id": "urn:tag:influence:qloo:ambient",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:ambient"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:influence:qloo:experimental",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:experimental"
+          },
+          {
+            "name": "Kraftwerk",
+            "tag_id": "urn:tag:influenced_by:qloo:kraftwerk",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:kraftwerk"
+          },
+          {
+            "name": "Brian Eno",
+            "tag_id": "urn:tag:influenced_by:qloo:brian_eno",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:brian_eno"
+          },
+          {
+            "name": "Aphex Twin",
+            "tag_id": "urn:tag:influenced_by:qloo:aphex_twin",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:aphex_twin"
+          },
+          {
+            "name": "Underworld",
+            "tag_id": "urn:tag:influenced_by:qloo:underworld",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:underworld"
+          },
+          {
+            "name": "The Chemical Brothers",
+            "tag_id": "urn:tag:influenced_by:qloo:the_chemical_brothers",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:the_chemical_brothers"
+          },
+          {
+            "name": "Synthesizer",
+            "tag_id": "urn:tag:instrument:qloo:synthesizer",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizer"
+          },
+          {
+            "name": "Drum Machine",
+            "tag_id": "urn:tag:instrument:qloo:drum_machine",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drum_machine"
+          },
+          {
+            "name": "Sampler",
+            "tag_id": "urn:tag:instrument:qloo:sampler",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:sampler"
+          },
+          {
+            "name": "Sequencer",
+            "tag_id": "urn:tag:instrument:qloo:sequencer",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:sequencer"
+          },
+          {
+            "name": "Computer",
+            "tag_id": "urn:tag:instrument:qloo:computer",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:computer"
+          },
+          {
+            "name": "Technology",
+            "tag_id": "urn:tag:theme:qloo:technology",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:technology"
+          },
+          {
+            "name": "Human Emotion",
+            "tag_id": "urn:tag:theme:qloo:human_emotion",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:human_emotion"
+          },
+          {
+            "name": "Isolation",
+            "tag_id": "urn:tag:theme:qloo:isolation",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:isolation"
+          },
+          {
+            "name": "Existentialism",
+            "tag_id": "urn:tag:theme:qloo:existentialism",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:existentialism"
+          },
+          {
+            "name": "Urban Life",
+            "tag_id": "urn:tag:theme:qloo:urban_life",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:urban_life"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:qloo:electronic",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:electronic"
+          },
+          {
+            "name": "Techno",
+            "tag_id": "urn:tag:genre:qloo:techno",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:techno"
+          },
+          {
+            "name": "Ambient",
+            "tag_id": "urn:tag:genre:qloo:ambient",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:ambient"
+          },
+          {
+            "name": "IDM",
+            "tag_id": "urn:tag:genre:qloo:idm",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:idm"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:subgenre:qloo:experimental",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:experimental"
+          },
+          {
+            "name": "Downtempo",
+            "tag_id": "urn:tag:subgenre:qloo:downtempo",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:downtempo"
+          },
+          {
+            "name": "Electropop",
+            "tag_id": "urn:tag:subgenre:qloo:electropop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:electropop"
+          }
+        ]
+      },
+      {
+        "name": "Moderatto",
+        "entity_id": "0C682F74-5857-4969-9C4C-5B7DBA01EBB6",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "moderattomusic"
+            },
+            "instagram": {
+              "id": "moderattomx"
+            },
+            "lastfm": {
+              "id": "moderatto",
+              "listeners": 135818,
+              "scrobbles": 1839274
+            },
+            "musicbrainz": {
+              "id": "967a94ea-64a9-44b8-8e17-daa29141c548"
+            },
+            "spotify": {
+              "id": "5XsWrYhwadPBjW20qYbdZg"
+            },
+            "twitter": {
+              "id": "moderatto"
+            },
+            "wikidata": {
+              "id": "q3317859"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/0C682F74-5857-4969-9C4C-5B7DBA01EBB6-420x-auto.jpg"
+          },
+          "short_description": "Moderatto is a Mexican glam metal and rock band known for their humorous and theatrical style."
+        },
+        "popularity": 0.9561655943942701,
+        "disambiguation": "Moderatto",
+        "tags": [
+          {
+            "name": "Brutal Death Metal",
+            "tag_id": "urn:tag:genre:brutal_death_metal",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:brutal_death_metal"
+          },
+          {
+            "name": "Rock",
+            "tag_id": "urn:tag:genre:rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rock"
+          },
+          {
+            "name": "Metal",
+            "tag_id": "urn:tag:genre:metal",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:metal"
+          },
+          {
+            "name": "Rock En Espanol",
+            "tag_id": "urn:tag:genre:rock_en_espanol",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rock_en_espanol"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:audience:qloo:energetic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:energetic"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Fun-loving",
+            "tag_id": "urn:tag:audience:qloo:fun_loving",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:fun_loving"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Catchy",
+            "tag_id": "urn:tag:music:qloo:catchy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:catchy"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:music:qloo:energetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:energetic"
+          },
+          {
+            "name": "Theatrical",
+            "tag_id": "urn:tag:music:qloo:theatrical",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:theatrical"
+          },
+          {
+            "name": "Humorous",
+            "tag_id": "urn:tag:music:qloo:humorous",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:humorous"
+          },
+          {
+            "name": "Glamorous",
+            "tag_id": "urn:tag:music:qloo:glamorous",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:glamorous"
+          },
+          {
+            "name": "Theatrical",
+            "tag_id": "urn:tag:style:qloo:theatrical",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:theatrical"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Flamboyant",
+            "tag_id": "urn:tag:style:qloo:flamboyant",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:flamboyant"
+          },
+          {
+            "name": "Playful",
+            "tag_id": "urn:tag:style:qloo:playful",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:playful"
+          },
+          {
+            "name": "Humorous",
+            "tag_id": "urn:tag:characteristic:qloo:humorous",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:humorous"
+          },
+          {
+            "name": "Theatrical",
+            "tag_id": "urn:tag:characteristic:qloo:theatrical",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:theatrical"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Flamboyant",
+            "tag_id": "urn:tag:characteristic:qloo:flamboyant",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:flamboyant"
+          },
+          {
+            "name": "Catchy",
+            "tag_id": "urn:tag:characteristic:qloo:catchy",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:catchy"
+          },
+          {
+            "name": "Glam Metal",
+            "tag_id": "urn:tag:style:qloo:glam_metal",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:glam_metal"
+          },
+          {
+            "name": "Latin Rock",
+            "tag_id": "urn:tag:style:qloo:latin_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:latin_rock"
+          },
+          {
+            "name": "Pop Rock",
+            "tag_id": "urn:tag:style:qloo:pop_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:pop_rock"
+          },
+          {
+            "name": "Hard Rock",
+            "tag_id": "urn:tag:style:qloo:hard_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:hard_rock"
+          },
+          {
+            "name": "Satirical",
+            "tag_id": "urn:tag:style:qloo:satirical",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:satirical"
+          },
+          {
+            "name": "Latin Rock",
+            "tag_id": "urn:tag:influence:qloo:latin_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:latin_rock"
+          },
+          {
+            "name": "Glam Metal Revival",
+            "tag_id": "urn:tag:influence:qloo:glam_metal_revival",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:glam_metal_revival"
+          },
+          {
+            "name": "Mötley Crüe",
+            "tag_id": "urn:tag:influenced_by:qloo:motley_crue",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:motley_crue"
+          },
+          {
+            "name": "Poison",
+            "tag_id": "urn:tag:influenced_by:qloo:poison",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:poison"
+          },
+          {
+            "name": "Twisted Sister",
+            "tag_id": "urn:tag:influenced_by:qloo:twisted_sister",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:twisted_sister"
+          },
+          {
+            "name": "KISS",
+            "tag_id": "urn:tag:influenced_by:qloo:kiss",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:kiss"
+          },
+          {
+            "name": "Def Leppard",
+            "tag_id": "urn:tag:influenced_by:qloo:def_leppard",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:def_leppard"
+          },
+          {
+            "name": "Electric Guitar",
+            "tag_id": "urn:tag:instrument:qloo:electric_guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:electric_guitar"
+          },
+          {
+            "name": "Bass Guitar",
+            "tag_id": "urn:tag:instrument:qloo:bass_guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:bass_guitar"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Keyboards",
+            "tag_id": "urn:tag:instrument:qloo:keyboards",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:keyboards"
+          },
+          {
+            "name": "Humor",
+            "tag_id": "urn:tag:theme:qloo:humor",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:humor"
+          },
+          {
+            "name": "Satire",
+            "tag_id": "urn:tag:theme:qloo:satire",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:satire"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Party",
+            "tag_id": "urn:tag:theme:qloo:party",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:party"
+          },
+          {
+            "name": "Rock Lifestyle",
+            "tag_id": "urn:tag:theme:qloo:rock_lifestyle",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:rock_lifestyle"
+          },
+          {
+            "name": "Glam Metal",
+            "tag_id": "urn:tag:genre:qloo:glam_metal",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:glam_metal"
+          },
+          {
+            "name": "Rock",
+            "tag_id": "urn:tag:genre:qloo:rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:rock"
+          },
+          {
+            "name": "Pop Rock",
+            "tag_id": "urn:tag:genre:qloo:pop_rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:pop_rock"
+          },
+          {
+            "name": "Hard Rock",
+            "tag_id": "urn:tag:subgenre:qloo:hard_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:hard_rock"
+          },
+          {
+            "name": "Heavy Metal",
+            "tag_id": "urn:tag:subgenre:qloo:heavy_metal",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:heavy_metal"
+          },
+          {
+            "name": "Glam Rock",
+            "tag_id": "urn:tag:subgenre:qloo:glam_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:glam_rock"
+          }
+        ]
+      },
+      {
+        "name": "Moderator",
+        "entity_id": "E316FB3B-506A-40AF-AC2C-D51CA8147A90",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "instagram": {
+              "id": "moderatormusic"
+            },
+            "lastfm": {
+              "id": "moderator",
+              "listeners": 204271,
+              "scrobbles": 2131552
+            },
+            "musicbrainz": {
+              "id": "ca021a3e-be81-499b-b225-3c77cf944aea"
+            },
+            "spotify": {
+              "id": "6fynenqBn7lrlAgVCw5YnB"
+            },
+            "twitter": {
+              "id": "moderatormusic"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/E316FB3B-506A-40AF-AC2C-D51CA8147A90-420x-auto.jpg"
+          },
+          "short_description": ""
+        },
+        "popularity": 0.9291254373150793,
+        "disambiguation": "Moderator",
+        "tags": [
+          {
+            "name": "Jazz Hop",
+            "tag_id": "urn:tag:genre:jazz_hop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:jazz_hop"
+          },
+          {
+            "name": "Hip - Hop",
+            "tag_id": "urn:tag:genre:hip_hop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:hip_hop"
+          },
+          {
+            "name": "Instrumental Hip Hop",
+            "tag_id": "urn:tag:genre:instrumental_hip_hop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:instrumental_hip_hop"
+          },
+          {
+            "name": "Trip - Hop",
+            "tag_id": "urn:tag:genre:trip_hop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:trip_hop"
+          }
+        ]
+      },
+      {
+        "name": "Moderat Likvidation",
+        "entity_id": "39D30FD4-83DB-4096-98A4-044E1B2DB72A",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "moderat%20likvidation",
+              "listeners": 6026,
+              "scrobbles": 152793
+            },
+            "musicbrainz": {
+              "id": "80c1dd6c-2e2b-4edf-a56b-2d8ad8c54b99"
+            },
+            "spotify": {},
+            "wikidata": {
+              "id": "q3859938"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/39D30FD4-83DB-4096-98A4-044E1B2DB72A-420x-auto.jpg"
+          },
+          "short_description": "Swedish hardcore punk band known for their aggressive style and influential role in the punk scene."
+        },
+        "popularity": 0.8036105272746288,
+        "disambiguation": "Moderat Likvidation",
+        "tags": [
+          {
+            "name": "D Beat",
+            "tag_id": "urn:tag:genre:d_beat",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:d_beat"
+          },
+          {
+            "name": "Punk",
+            "tag_id": "urn:tag:genre:punk",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:punk"
+          },
+          {
+            "name": "Raw Punk",
+            "tag_id": "urn:tag:genre:raw_punk",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:raw_punk"
+          },
+          {
+            "name": "Rebellious",
+            "tag_id": "urn:tag:audience:qloo:rebellious",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:rebellious"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:audience:qloo:energetic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:energetic"
+          },
+          {
+            "name": "Aggressive",
+            "tag_id": "urn:tag:music:qloo:aggressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:aggressive"
+          },
+          {
+            "name": "Raw",
+            "tag_id": "urn:tag:music:qloo:raw",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:raw"
+          },
+          {
+            "name": "Fast-Paced",
+            "tag_id": "urn:tag:music:qloo:fast_paced",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:fast_paced"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:music:qloo:energetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:energetic"
+          },
+          {
+            "name": "Political",
+            "tag_id": "urn:tag:music:qloo:political",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:political"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Raw",
+            "tag_id": "urn:tag:style:qloo:raw",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:raw"
+          },
+          {
+            "name": "Aggressive",
+            "tag_id": "urn:tag:style:qloo:aggressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:aggressive"
+          },
+          {
+            "name": "Uncompromising",
+            "tag_id": "urn:tag:style:qloo:uncompromising",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:uncompromising"
+          },
+          {
+            "name": "Aggressive",
+            "tag_id": "urn:tag:characteristic:qloo:aggressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:aggressive"
+          },
+          {
+            "name": "Raw",
+            "tag_id": "urn:tag:characteristic:qloo:raw",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:raw"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Influential",
+            "tag_id": "urn:tag:characteristic:qloo:influential",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:influential"
+          },
+          {
+            "name": "Political",
+            "tag_id": "urn:tag:characteristic:qloo:political",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:political"
+          },
+          {
+            "name": "Swedish Hardcore",
+            "tag_id": "urn:tag:style:qloo:swedish_hardcore",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:swedish_hardcore"
+          },
+          {
+            "name": "Political Punk",
+            "tag_id": "urn:tag:style:qloo:political_punk",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:political_punk"
+          },
+          {
+            "name": "Raw Hardcore",
+            "tag_id": "urn:tag:style:qloo:raw_hardcore",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:raw_hardcore"
+          },
+          {
+            "name": "Fast Hardcore",
+            "tag_id": "urn:tag:style:qloo:fast_hardcore",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:fast_hardcore"
+          },
+          {
+            "name": "Aggressive Punk",
+            "tag_id": "urn:tag:style:qloo:aggressive_punk",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:aggressive_punk"
+          },
+          {
+            "name": "Hardcore Punk",
+            "tag_id": "urn:tag:influence:qloo:hardcore_punk",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:hardcore_punk"
+          },
+          {
+            "name": "Swedish Punk",
+            "tag_id": "urn:tag:influence:qloo:swedish_punk",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:swedish_punk"
+          },
+          {
+            "name": "Crust Punk",
+            "tag_id": "urn:tag:influence:qloo:crust_punk",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:crust_punk"
+          },
+          {
+            "name": "Black Flag",
+            "tag_id": "urn:tag:influenced_by:qloo:black_flag",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:black_flag"
+          },
+          {
+            "name": "Discharge",
+            "tag_id": "urn:tag:influenced_by:qloo:discharge",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:discharge"
+          },
+          {
+            "name": "The Exploited",
+            "tag_id": "urn:tag:influenced_by:qloo:the_exploited",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:the_exploited"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Bass",
+            "tag_id": "urn:tag:instrument:qloo:bass",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:bass"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Politics",
+            "tag_id": "urn:tag:theme:qloo:politics",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:politics"
+          },
+          {
+            "name": "Social Issues",
+            "tag_id": "urn:tag:theme:qloo:social_issues",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:social_issues"
+          },
+          {
+            "name": "Youth Rebellion",
+            "tag_id": "urn:tag:theme:qloo:youth_rebellion",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:youth_rebellion"
+          },
+          {
+            "name": "Anti-Establishment",
+            "tag_id": "urn:tag:theme:qloo:anti_establishment",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:anti_establishment"
+          },
+          {
+            "name": "Punk Rock",
+            "tag_id": "urn:tag:genre:qloo:punk_rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:punk_rock"
+          },
+          {
+            "name": "Hardcore Punk",
+            "tag_id": "urn:tag:genre:qloo:hardcore_punk",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hardcore_punk"
+          },
+          {
+            "name": "Swedish Punk",
+            "tag_id": "urn:tag:subgenre:qloo:swedish_punk",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:swedish_punk"
+          }
+        ]
+      },
+      {
+        "name": "Moderato",
+        "entity_id": "D9F71D0F-190C-4E51-BDC8-DF6BDC73D57F",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "moderato",
+              "listeners": 8675,
+              "scrobbles": 39209
+            },
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/D9F71D0F-190C-4E51-BDC8-DF6BDC73D57F-420x-auto.jpg"
+          },
+          "short_description": "None"
+        },
+        "popularity": 0.7814487316597563,
+        "disambiguation": "Moderato"
+      }
+    ]
+  }
+}

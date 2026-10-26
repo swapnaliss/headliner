@@ -1,0 +1,20 @@
+{
+  "endpoint": "/v2/trending",
+  "params": {
+    "filter.end_date": "2026-10-24",
+    "filter.start_date": "2026-07-24",
+    "filter.type": "urn:entity:artist",
+    "take": "10"
+  },
+  "status": 400,
+  "recordedAt": "2026-10-26T06:09:30.415Z",
+  "latencyMs": 1572,
+  "body": {
+    "errors": [
+      {
+        "message": "signal.interests.entities is required",
+        "path": "signal.interests.entities.ids"
+      }
+    ]
+  }
+}

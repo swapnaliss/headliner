@@ -1,0 +1,49 @@
+{
+  "endpoint": "/v2/insights",
+  "params": {
+    "filter.location.query": "Tromsø",
+    "filter.type": "urn:heatmap",
+    "signal.interests.entities": "DB342083-22F9-4B2D-B6F4-414AAF35F217"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T06:09:26.612Z",
+  "latencyMs": 508,
+  "body": {
+    "success": true,
+    "results": {
+      "heatmap": [
+        {
+          "location": {
+            "latitude": 69.65057,
+            "longitude": 18.95691,
+            "geohash": "ukmkpr"
+          },
+          "query": {
+            "affinity": 0,
+            "affinity_rank": 0.877365,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.877365,
+            "entity_artist_affinity": 0
+          }
+        }
+      ]
+    },
+    "query": {
+      "localities": {
+        "filter": [
+          {
+            "entity_id": "D0BAF7EC-8EC7-4563-BE9C-935EA45ABECE",
+            "name": "Tromsø",
+            "subtype": "urn:entity:locality",
+            "location": {
+              "lat": 69.74471220752484,
+              "lon": 18.623383846887965
+            },
+            "popularity": 0.9873897,
+            "disambiguation": "Tromsø, Troms, Northern Norway, Norway"
+          }
+        ]
+      }
+    }
+  }
+}

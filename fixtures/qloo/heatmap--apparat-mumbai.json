@@ -1,0 +1,175 @@
+{
+  "endpoint": "/v2/insights",
+  "params": {
+    "filter.location.query": "Mumbai",
+    "filter.type": "urn:heatmap",
+    "signal.interests.entities": "DB342083-22F9-4B2D-B6F4-414AAF35F217"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T06:09:24.775Z",
+  "latencyMs": 591,
+  "body": {
+    "success": true,
+    "results": {
+      "heatmap": [
+        {
+          "location": {
+            "latitude": 19.06334,
+            "longitude": 72.87575,
+            "geohash": "te7u6q6"
+          },
+          "query": {
+            "affinity": 1,
+            "affinity_rank": 0.795943,
+            "popularity": 1,
+            "entity_artist_affinity_rank": 0.795943,
+            "entity_artist_affinity": 1
+          }
+        },
+        {
+          "location": {
+            "latitude": 19.214401,
+            "longitude": 72.849655,
+            "geohash": "te7v39z"
+          },
+          "query": {
+            "affinity": 0.8888888888888888,
+            "affinity_rank": 0.707617,
+            "popularity": 0.8888888888888888,
+            "entity_artist_affinity_rank": 0.707617,
+            "entity_artist_affinity": 0.8888888888888888
+          }
+        },
+        {
+          "location": {
+            "latitude": 18.93013,
+            "longitude": 72.83043,
+            "geohash": "te7g9q1"
+          },
+          "query": {
+            "affinity": 0.7777777777777778,
+            "affinity_rank": 0.677105,
+            "popularity": 0.7777777777777778,
+            "entity_artist_affinity_rank": 0.677105,
+            "entity_artist_affinity": 0.7777777777777778
+          }
+        },
+        {
+          "location": {
+            "latitude": 19.075699,
+            "longitude": 72.87712,
+            "geohash": "te7ud2e"
+          },
+          "query": {
+            "affinity": 0.6666666666666666,
+            "affinity_rank": 0.581818,
+            "popularity": 0.6666666666666666,
+            "entity_artist_affinity_rank": 0.581818,
+            "entity_artist_affinity": 0.6666666666666666
+          }
+        },
+        {
+          "location": {
+            "latitude": 18.92189,
+            "longitude": 72.833176,
+            "geohash": "te7g9ke"
+          },
+          "query": {
+            "affinity": 0.5555555555555556,
+            "affinity_rank": 0.493787,
+            "popularity": 0.4444444444444444,
+            "entity_artist_affinity_rank": 0.493787,
+            "entity_artist_affinity": 0.5555555555555556
+          }
+        },
+        {
+          "location": {
+            "latitude": 18.998795,
+            "longitude": 72.83043,
+            "geohash": "te7u169"
+          },
+          "query": {
+            "affinity": 0.4444444444444444,
+            "affinity_rank": 0.477946,
+            "popularity": 0.5555555555555556,
+            "entity_artist_affinity_rank": 0.477946,
+            "entity_artist_affinity": 0.4444444444444444
+          }
+        },
+        {
+          "location": {
+            "latitude": 18.975449,
+            "longitude": 72.82631,
+            "geohash": "te7gcnq"
+          },
+          "query": {
+            "affinity": 0.3333333333333333,
+            "affinity_rank": 0.469673,
+            "popularity": 0.3333333333333333,
+            "entity_artist_affinity_rank": 0.469673,
+            "entity_artist_affinity": 0.3333333333333333
+          }
+        },
+        {
+          "location": {
+            "latitude": 18.952103,
+            "longitude": 72.83043,
+            "geohash": "te7gc61"
+          },
+          "query": {
+            "affinity": 0.2222222222222222,
+            "affinity_rank": 0.443858,
+            "popularity": 0.2222222222222222,
+            "entity_artist_affinity_rank": 0.443858,
+            "entity_artist_affinity": 0.2222222222222222
+          }
+        },
+        {
+          "location": {
+            "latitude": 19.052353,
+            "longitude": 72.824936,
+            "geohash": "te7u3hm"
+          },
+          "query": {
+            "affinity": 0.1111111111111111,
+            "affinity_rank": 0.381368,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.381368,
+            "entity_artist_affinity": 0.1111111111111111
+          }
+        },
+        {
+          "location": {
+            "latitude": 18.960342,
+            "longitude": 72.81944,
+            "geohash": "te7gc59"
+          },
+          "query": {
+            "affinity": 0,
+            "affinity_rank": 0.299264,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.299264,
+            "entity_artist_affinity": 0
+          }
+        }
+      ]
+    },
+    "query": {
+      "localities": {
+        "filter": [
+          {
+            "entity_id": "341FE4F4-6424-438B-A509-8CE5FD5CE26D",
+            "name": "Mumbai",
+            "subtype": "urn:entity:locality",
+            "location": {
+              "lat": 19.1187716324791,
+              "lon": 72.8708401818423
+            },
+            "popularity": 0.9998751,
+            "disambiguation": "Mumbai, Mumbai, Maharashtra, India"
+          }
+        ]
+      }
+    }
+  }
+}

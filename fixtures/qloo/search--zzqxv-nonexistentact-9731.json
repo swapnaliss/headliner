@@ -1,0 +1,14 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Zzqxv Nonexistentact 9731",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T06:08:47.803Z",
+  "latencyMs": 339,
+  "body": {
+    "results": []
+  }
+}

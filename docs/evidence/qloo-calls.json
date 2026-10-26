@@ -1,0 +1,261 @@
+[
+  {
+    "file": "search--apparat.json",
+    "status": 200,
+    "latencyMs": 1634,
+    "bytes": 23948,
+    "at": "2026-10-26T06:08:47.804Z"
+  },
+  {
+    "file": "search--moderat.json",
+    "status": 200,
+    "latencyMs": 334,
+    "bytes": 23825,
+    "at": "2026-10-26T06:08:47.805Z"
+  },
+  {
+    "file": "search--modeselektor.json",
+    "status": 200,
+    "latencyMs": 334,
+    "bytes": 9126,
+    "at": "2026-10-26T06:08:47.805Z"
+  },
+  {
+    "file": "search--hundreds.json",
+    "status": 200,
+    "latencyMs": 379,
+    "bytes": 34361,
+    "at": "2026-10-26T06:08:47.805Z"
+  },
+  {
+    "file": "search--brandt-brauer-frick.json",
+    "status": 200,
+    "latencyMs": 334,
+    "bytes": 22037,
+    "at": "2026-10-26T06:08:47.805Z"
+  },
+  {
+    "file": "search--boys-noize.json",
+    "status": 200,
+    "latencyMs": 362,
+    "bytes": 35578,
+    "at": "2026-10-26T06:08:47.805Z"
+  },
+  {
+    "file": "search--khruangbin.json",
+    "status": 200,
+    "latencyMs": 314,
+    "bytes": 8181,
+    "at": "2026-10-26T06:08:47.805Z"
+  },
+  {
+    "file": "search--radiohead.json",
+    "status": 200,
+    "latencyMs": 317,
+    "bytes": 10391,
+    "at": "2026-10-26T06:08:47.805Z"
+  },
+  {
+    "file": "search--reality-club.json",
+    "status": 200,
+    "latencyMs": 340,
+    "bytes": 37827,
+    "at": "2026-10-26T06:08:47.805Z"
+  },
+  {
+    "file": "search--hindia.json",
+    "status": 200,
+    "latencyMs": 349,
+    "bytes": 6447,
+    "at": "2026-10-26T06:08:47.805Z"
+  },
+  {
+    "file": "search--odunsi-the-engine.json",
+    "status": 200,
+    "latencyMs": 324,
+    "bytes": 29625,
+    "at": "2026-10-26T06:08:47.805Z"
+  },
+  {
+    "file": "search--amaarae.json",
+    "status": 200,
+    "latencyMs": 325,
+    "bytes": 7264,
+    "at": "2026-10-26T06:08:47.805Z"
+  },
+  {
+    "file": "search--phoenix.json",
+    "status": 200,
+    "latencyMs": 360,
+    "bytes": 33826,
+    "at": "2026-10-26T06:08:47.805Z"
+  },
+  {
+    "file": "search--sigur-ro-s.json",
+    "status": 200,
+    "latencyMs": 336,
+    "bytes": 16235,
+    "at": "2026-10-26T06:08:47.805Z"
+  },
+  {
+    "file": "search--bjo-rk.json",
+    "status": 200,
+    "latencyMs": 319,
+    "bytes": 10468,
+    "at": "2026-10-26T06:08:47.805Z"
+  },
+  {
+    "file": "search--zzqxv-nonexistentact-9731.json",
+    "status": 200,
+    "latencyMs": 339,
+    "bytes": 14,
+    "at": "2026-10-26T06:08:47.805Z"
+  },
+  {
+    "file": "insights--apparat.json",
+    "status": 200,
+    "latencyMs": 4952,
+    "bytes": 103119,
+    "at": "2026-10-26T06:09:15.424Z"
+  },
+  {
+    "file": "insights--moderat.json",
+    "status": 200,
+    "latencyMs": 3309,
+    "bytes": 94495,
+    "at": "2026-10-26T06:09:15.424Z"
+  },
+  {
+    "file": "insights--modeselektor.json",
+    "status": 200,
+    "latencyMs": 3420,
+    "bytes": 89929,
+    "at": "2026-10-26T06:09:15.424Z"
+  },
+  {
+    "file": "compare--single-apparat-vs-khruangbin.json",
+    "status": 200,
+    "latencyMs": 1631,
+    "bytes": 29992,
+    "at": "2026-10-26T06:09:18.822Z"
+  },
+  {
+    "file": "compare--list6-crowd-vs-khruangbin.json",
+    "status": 200,
+    "latencyMs": 388,
+    "bytes": 142562,
+    "at": "2026-10-26T06:09:18.822Z"
+  },
+  {
+    "file": "compare--list6-crowd-vs-radiohead.json",
+    "status": 200,
+    "latencyMs": 355,
+    "bytes": 222396,
+    "at": "2026-10-26T06:09:18.822Z"
+  },
+  {
+    "file": "compare--list6-crowd-vs-reality-club.json",
+    "status": 200,
+    "latencyMs": 360,
+    "bytes": 146960,
+    "at": "2026-10-26T06:09:18.822Z"
+  },
+  {
+    "file": "compare--list6-crowd-vs-list2-cands.json",
+    "status": 200,
+    "latencyMs": 394,
+    "bytes": 372102,
+    "at": "2026-10-26T06:09:18.822Z"
+  },
+  {
+    "file": "heatmap--apparat-berlin.json",
+    "status": 200,
+    "latencyMs": 1989,
+    "bytes": 75639,
+    "at": "2026-10-26T06:09:28.633Z"
+  },
+  {
+    "file": "heatmap--apparat-leipzig.json",
+    "status": 200,
+    "latencyMs": 698,
+    "bytes": 10084,
+    "at": "2026-10-26T06:09:28.633Z"
+  },
+  {
+    "file": "heatmap--apparat-lagos.json",
+    "status": 200,
+    "latencyMs": 507,
+    "bytes": 501,
+    "at": "2026-10-26T06:09:28.633Z"
+  },
+  {
+    "file": "heatmap--apparat-jakarta.json",
+    "status": 200,
+    "latencyMs": 1894,
+    "bytes": 3442,
+    "at": "2026-10-26T06:09:28.633Z"
+  },
+  {
+    "file": "heatmap--apparat-mumbai.json",
+    "status": 200,
+    "latencyMs": 591,
+    "bytes": 2764,
+    "at": "2026-10-26T06:09:28.633Z"
+  },
+  {
+    "file": "heatmap--apparat-london.json",
+    "status": 200,
+    "latencyMs": 710,
+    "bytes": 104934,
+    "at": "2026-10-26T06:09:28.633Z"
+  },
+  {
+    "file": "heatmap--apparat-reykjavik.json",
+    "status": 200,
+    "latencyMs": 602,
+    "bytes": 6146,
+    "at": "2026-10-26T06:09:28.633Z"
+  },
+  {
+    "file": "heatmap--apparat-tromsø.json",
+    "status": 200,
+    "latencyMs": 508,
+    "bytes": 526,
+    "at": "2026-10-26T06:09:28.633Z"
+  },
+  {
+    "file": "heatmap--reality-club-jakarta.json",
+    "status": 200,
+    "latencyMs": 877,
+    "bytes": 176698,
+    "at": "2026-10-26T06:09:28.633Z"
+  },
+  {
+    "file": "heatmap--odunsi-the-engine-lagos.json",
+    "status": 200,
+    "latencyMs": 1126,
+    "bytes": 366755,
+    "at": "2026-10-26T06:09:28.633Z"
+  },
+  {
+    "file": "trending--artist-no-signal.json",
+    "status": 400,
+    "latencyMs": 1572,
+    "bytes": 103,
+    "at": "2026-10-26T06:09:31.935Z"
+  },
+  {
+    "file": "trending--artist-signal-apparat.json",
+    "status": 200,
+    "latencyMs": 1515,
+    "bytes": 56,
+    "at": "2026-10-26T06:09:31.935Z"
+  },
+  {
+    "file": "invalid--bogus-parameter.json",
+    "status": 200,
+    "latencyMs": 4702,
+    "bytes": 50832,
+    "at": "2026-10-26T06:09:36.885Z"
+  }
+]

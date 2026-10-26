@@ -1,0 +1,344 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Amaarae",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T06:08:46.438Z",
+  "latencyMs": 325,
+  "body": {
+    "results": [
+      {
+        "name": "amaarae",
+        "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "instagram": {
+              "id": "amaarae"
+            },
+            "lastfm": {
+              "id": "amaarae",
+              "listeners": 777794,
+              "scrobbles": 22678702
+            },
+            "musicbrainz": {
+              "id": "29fab96f-c3a2-4251-80f6-7ccda50da706"
+            },
+            "spotify": {
+              "id": "21UPYSRWFKwtqvSAnFnSvS"
+            },
+            "twitter": {
+              "id": "amaarae"
+            },
+            "wikidata": {
+              "id": "q72516952"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/7274E19C-539B-449E-97C1-1C60B2218099-420x-auto.jpg"
+          },
+          "short_description": "Amaarae is a Ghanaian-American singer, songwriter, and producer known for her eclectic blend of alternative R&B and Afrobeat."
+        },
+        "popularity": 0.9602983694937097,
+        "disambiguation": "amaarae",
+        "tags": [
+          {
+            "name": "Alternative Rnb",
+            "tag_id": "urn:tag:genre:alternative_rnb",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:alternative_rnb"
+          },
+          {
+            "name": "Rhythm & Blues",
+            "tag_id": "urn:tag:genre:rhythm_blues",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rhythm_blues"
+          },
+          {
+            "name": "Ghana",
+            "tag_id": "urn:tag:genre:ghana",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:ghana"
+          },
+          {
+            "name": "Afrobeats",
+            "tag_id": "urn:tag:genre:afrobeats",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:afrobeats"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Diverse",
+            "tag_id": "urn:tag:audience:qloo:diverse",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:diverse"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Open-minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:music:qloo:eclectic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:eclectic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:music:qloo:experimental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:experimental"
+          },
+          {
+            "name": "Smooth",
+            "tag_id": "urn:tag:music:qloo:smooth",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:smooth"
+          },
+          {
+            "name": "Bold",
+            "tag_id": "urn:tag:music:qloo:bold",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:bold"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Bold",
+            "tag_id": "urn:tag:style:qloo:bold",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:bold"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:characteristic:qloo:eclectic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:eclectic"
+          },
+          {
+            "name": "Bold",
+            "tag_id": "urn:tag:characteristic:qloo:bold",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:bold"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:characteristic:qloo:expressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:expressive"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:characteristic:qloo:experimental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:experimental"
+          },
+          {
+            "name": "Alternative R&B",
+            "tag_id": "urn:tag:style:qloo:alternative_r_b",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:alternative_r_b"
+          },
+          {
+            "name": "Afrobeat Fusion",
+            "tag_id": "urn:tag:style:qloo:afrobeat_fusion",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:afrobeat_fusion"
+          },
+          {
+            "name": "Experimental Pop",
+            "tag_id": "urn:tag:style:qloo:experimental_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental_pop"
+          },
+          {
+            "name": "Soulful Electronica",
+            "tag_id": "urn:tag:style:qloo:soulful_electronica",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:soulful_electronica"
+          },
+          {
+            "name": "Genre-Bending",
+            "tag_id": "urn:tag:style:qloo:genre_bending",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:genre_bending"
+          },
+          {
+            "name": "Alternative R&B",
+            "tag_id": "urn:tag:influence:qloo:alternative_r_b",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:alternative_r_b"
+          },
+          {
+            "name": "Afrobeat",
+            "tag_id": "urn:tag:influence:qloo:afrobeat",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:afrobeat"
+          },
+          {
+            "name": "Experimental Pop",
+            "tag_id": "urn:tag:influence:qloo:experimental_pop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:experimental_pop"
+          },
+          {
+            "name": "Fela Kuti",
+            "tag_id": "urn:tag:influenced_by:qloo:fela_kuti",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:fela_kuti"
+          },
+          {
+            "name": "Erykah Badu",
+            "tag_id": "urn:tag:influenced_by:qloo:erykah_badu",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:erykah_badu"
+          },
+          {
+            "name": "Prince",
+            "tag_id": "urn:tag:influenced_by:qloo:prince",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:prince"
+          },
+          {
+            "name": "Beyoncé",
+            "tag_id": "urn:tag:influenced_by:qloo:beyonce",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:beyonce"
+          },
+          {
+            "name": "Santigold",
+            "tag_id": "urn:tag:influenced_by:qloo:santigold",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:santigold"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Keyboard",
+            "tag_id": "urn:tag:instrument:qloo:keyboard",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:keyboard"
+          },
+          {
+            "name": "Synthesizer",
+            "tag_id": "urn:tag:instrument:qloo:synthesizer",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizer"
+          },
+          {
+            "name": "Identity",
+            "tag_id": "urn:tag:theme:qloo:identity",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:identity"
+          },
+          {
+            "name": "Sexuality",
+            "tag_id": "urn:tag:theme:qloo:sexuality",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:sexuality"
+          },
+          {
+            "name": "Empowerment",
+            "tag_id": "urn:tag:theme:qloo:empowerment",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:empowerment"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Freedom",
+            "tag_id": "urn:tag:theme:qloo:freedom",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:freedom"
+          },
+          {
+            "name": "Alternative R&B",
+            "tag_id": "urn:tag:genre:qloo:alternative_r_b",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:alternative_r_b"
+          },
+          {
+            "name": "Afrobeat",
+            "tag_id": "urn:tag:genre:qloo:afrobeat",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:afrobeat"
+          },
+          {
+            "name": "Pop",
+            "tag_id": "urn:tag:genre:qloo:pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:pop"
+          },
+          {
+            "name": "Soul",
+            "tag_id": "urn:tag:subgenre:qloo:soul",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:soul"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:subgenre:qloo:electronic",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:electronic"
+          }
+        ]
+      }
+    ]
+  }
+}

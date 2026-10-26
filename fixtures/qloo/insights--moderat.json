@@ -1,0 +1,4554 @@
+{
+  "endpoint": "/v2/insights",
+  "params": {
+    "filter.type": "urn:entity:artist",
+    "signal.interests.entities": "36254E3F-20E4-4151-AC61-D753CA41F34A",
+    "take": "10"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T06:09:11.986Z",
+  "latencyMs": 3309,
+  "body": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "name": "Apparat",
+          "entity_id": "DB342083-22F9-4B2D-B6F4-414AAF35F217",
+          "type": "urn:entity",
+          "subtype": "urn:entity:artist",
+          "properties": {
+            "akas": [
+              {
+                "value": "Apparat",
+                "languages": [
+                  "pt_pt",
+                  "pl",
+                  "pt",
+                  "tr"
+                ]
+              },
+              {
+                "value": "阿帕拉特",
+                "languages": [
+                  "zh"
+                ]
+              },
+              {
+                "value": "アパラット",
+                "languages": [
+                  "ja"
+                ]
+              }
+            ],
+            "image": {
+              "url": "https://images.qloo.com/i/DB342083-22F9-4B2D-B6F4-414AAF35F217-420x-auto.jpg"
+            },
+            "vocals": "Apparat's music occasionally features his own vocals, which are typically soft, emotive, and integrated into the electronic soundscapes, adding a human element to his productions.",
+            "aliases": [
+              "Sascha Ring"
+            ],
+            "members": [],
+            "is_group": false,
+            "biography": "Sascha Ring, known professionally as Apparat, began his music career in the late 1990s in Berlin, Germany. He quickly gained recognition for his unique approach to electronic music, combining elements of ambient, IDM, and techno. Over the years, Apparat has released multiple critically acclaimed albums and EPs, establishing himself as a prominent figure in the electronic music scene. He is also known for his collaboration with the electronic duo Modeselektor, forming the group Moderat, which has further expanded his influence and reach. His work is characterized by its emotional depth and innovative sound design.",
+            "known_for": "Apparat is known for his emotive and atmospheric electronic music that blends experimental and accessible elements, as well as his innovative production techniques and collaborations.",
+            "start_year": 1999,
+            "description": "Apparat, the stage name of Sascha Ring, is a German electronic musician and producer renowned for his blend of electronic, ambient, and IDM styles. His music often features lush soundscapes, intricate rhythms, and emotive melodies, bridging the gap between experimental electronic music and more accessible techno and downtempo sounds. He has released several albums and collaborated with other artists, notably forming the duo Moderat with Modeselektor.",
+            "instruments": [
+              "Synthesizer",
+              "Drum Machine",
+              "Sampler",
+              "Vocals"
+            ],
+            "collaborators": [
+              "Modeselektor",
+              "Ellen Allien",
+              "Soap&Skin"
+            ],
+            "date_of_birth": "1978-06-27",
+            "influenced_by": [
+              "Kraftwerk",
+              "Brian Eno",
+              "Aphex Twin",
+              "Autechre"
+            ],
+            "notable_songs": [
+              "Goodbye",
+              "Arcadia",
+              "Black Water",
+              "Ash/Black Veil",
+              "Holdon"
+            ],
+            "lyrical_themes": [
+              "Emotions",
+              "Isolation",
+              "Technology",
+              "Human Experience"
+            ],
+            "place_of_birth": "Quedlinburg, Sachsen-Anhalt, Ger",
+            "primary_genres": [
+              "Electronic",
+              "Ambient",
+              "IDM",
+              "Techno"
+            ],
+            "characteristics": [
+              "Atmospheric",
+              "Emotive",
+              "Experimental",
+              "Intricate",
+              "Melodic"
+            ],
+            "cultural_impact": "Apparat has significantly influenced the electronic music scene, particularly in blending emotive and experimental elements with techno and ambient music, inspiring a generation of electronic musicians and producers. His work with Moderat has also brought electronic music to wider audiences and critical acclaim.",
+            "obscurity_scale": [
+              "3"
+            ],
+            "secondary_genres": [
+              "Experimental",
+              "Downtempo",
+              "Trip Hop"
+            ],
+            "associated_brands": [],
+            "genres_influenced": [
+              "Ambient Techno",
+              "IDM",
+              "Experimental Electronic"
+            ],
+            "performance_style": "Apparat's live performances are known for their immersive and intimate atmosphere, often combining live instrumentation with electronic elements to create a dynamic and emotive experience.",
+            "artists_influenced": [
+              "Moderate electronic artists influenced by Apparat include Jon Hopkins, Nils Frahm, and Christian Löffler."
+            ],
+            "short_descriptions": [
+              {
+                "value": "Apparat est le nom de scène de Sascha Ring, musicien et producteur allemand reconnu pour sa musique électronique atmosphérique et émotive.",
+                "languages": [
+                  "fr"
+                ]
+              },
+              {
+                "value": "Apparat ist das Pseudonym von Sascha Ring, einem deutschen Musiker und Produzenten, der für seine atmosphärische und gefühlvolle elektronische Musik bekannt ist.",
+                "languages": [
+                  "de"
+                ]
+              },
+              {
+                "value": "Apparat es el nombre artístico de Sascha Ring, músico y productor alemán conocido por su música electrónica atmosférica y emotiva.",
+                "languages": [
+                  "es"
+                ]
+              },
+              {
+                "value": "Apparat is the stage name of Sascha Ring, a German electronic musician and producer known for his atmospheric and emotive electronic music.",
+                "languages": [
+                  "en"
+                ]
+              }
+            ],
+            "adjectives_for_fans": [
+              "Dedicated",
+              "Eclectic",
+              "Open-Minded",
+              "Appreciative",
+              "Passionate"
+            ],
+            "adjectives_for_music": [
+              "Atmospheric",
+              "Emotive",
+              "Experimental",
+              "Melodic",
+              "Intricate"
+            ],
+            "lyrical_themes_description": "Apparat's lyrics often explore themes of emotional introspection, human connection, isolation, and the interplay between technology and human experience, reflecting a deep and thoughtful approach to songwriting within electronic music.",
+            "adjectives_for_performance_style": [
+              "Intimate",
+              "Immersive",
+              "Expressive"
+            ],
+            "creative_and_specific_adjectives_for_music": [
+              "Ambient Techno",
+              "Emotive IDM",
+              "Experimental Downtempo",
+              "Melodic Electronica",
+              "Atmospheric Soundscape"
+            ]
+          },
+          "popularity": 0.9968084200040632,
+          "tags": [
+            {
+              "id": "urn:tag:audience:qloo:eclectic",
+              "name": "Eclectic",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:techno",
+              "name": "Techno",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:intimate",
+              "name": "Intimate",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:emotive",
+              "name": "Emotive",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:brian_eno",
+              "name": "Brian Eno",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:synthesizer",
+              "name": "Synthesizer",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:passionate",
+              "name": "Passionate",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:melodic_electronica",
+              "name": "Melodic Electronica",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:ambient_techno",
+              "name": "Ambient Techno",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:sampler",
+              "name": "Sampler",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:experimental_downtempo",
+              "name": "Experimental Downtempo",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:idm",
+              "name": "IDM",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:kraftwerk",
+              "name": "Kraftwerk",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:theme:qloo:emotions",
+              "name": "Emotions",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:dedicated",
+              "name": "Dedicated",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:drum_machine",
+              "name": "Drum Machine",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:appreciative",
+              "name": "Appreciative",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:immersive",
+              "name": "Immersive",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:idm",
+              "name": "Idm",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:theme:qloo:isolation",
+              "name": "Isolation",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:idm",
+              "name": "IDM",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:autechre",
+              "name": "Autechre",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:electronica",
+              "name": "Electronica",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:genre:qloo:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:ambient",
+              "name": "Ambient",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:open_minded",
+              "name": "Open-Minded",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:melodic",
+              "name": "Melodic",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:human_experience",
+              "name": "Human Experience",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:downtempo",
+              "name": "Downtempo",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:technology",
+              "name": "Technology",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:trip_hop",
+              "name": "Trip Hop",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:melodic",
+              "name": "Melodic",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:obscurity:qloo:3",
+              "name": "3",
+              "type": "urn:tag:obscurity:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:vocals",
+              "name": "Vocals",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:ambient",
+              "name": "Ambient",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:influence:qloo:experimental_electronic",
+              "name": "Experimental Electronic",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:intricate",
+              "name": "Intricate",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:aphex_twin",
+              "name": "Aphex Twin",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:atmospheric_soundscape",
+              "name": "Atmospheric Soundscape",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:ambient_techno",
+              "name": "Ambient Techno",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:expressive",
+              "name": "Expressive",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:emotive_idm",
+              "name": "Emotive IDM",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:emotive",
+              "name": "Emotive",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:intricate",
+              "name": "Intricate",
+              "type": "urn:tag:music:qloo"
+            }
+          ],
+          "query": {
+            "affinity": 0.95295652357112,
+            "measurements": {
+              "audience_growth": 0
+            }
+          },
+          "disambiguation": "Apparat",
+          "external": {
+            "imdb": [
+              {
+                "id": "nm4300479"
+              },
+              {
+                "id": "nm2925247"
+              }
+            ],
+            "lastfm": [
+              {
+                "id": "apparat",
+                "listeners": 763352,
+                "scrobbles": 22884525
+              }
+            ],
+            "spotify": [
+              {
+                "id": "40Ojab0UtVQFjA76qXr8Ot",
+                "verified": true,
+                "followers": 313196,
+                "last_release": 2020,
+                "first_release": 2001,
+                "monthly_listeners": 845660
+              }
+            ],
+            "twitter": [
+              {
+                "id": "apparatofficial"
+              }
+            ],
+            "facebook": [
+              {
+                "id": "apparat.official"
+              }
+            ],
+            "wikidata": [
+              {
+                "id": "q620679"
+              }
+            ],
+            "instagram": [
+              {
+                "id": "apparat3000"
+              }
+            ],
+            "musicbrainz": [
+              {
+                "id": "dc3dbfc1-f1f1-49c6-9d7c-425fabf3ae12",
+                "artist_type": "Person"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Trentemøller",
+          "entity_id": "E843B224-9E81-44BA-9F84-28DF1C29543B",
+          "type": "urn:entity",
+          "subtype": "urn:entity:artist",
+          "properties": {
+            "vocals": "Primarily instrumental and producer-led; frequently features guest vocalists (female and male) whose performances are mixed into Trentemøller's moody, reverb-heavy, intimate arrangements rather than foregrounded as pop-style lead vocals.",
+            "aliases": [
+              "Anders Trentemøller",
+              "Businessman",
+              "Run Jeremy"
+            ],
+            "members": [
+              "None"
+            ],
+            "is_group": false,
+            "biography": "Anders Trentemøller began performing in 1997 as part of Trigbag, one of Denmark's early live-house acts. After Trigbag disbanded in 2000, he returned to solo production and released The Trentemøller EP in 2003, earning national recognition (including the Danish DJ Awards for “Le Champagne”). Releases on Audiomatique and Poker Flat through the mid-2000s — plus high-profile remixes and an acclaimed Essential Mix — propelled him to international attention. His debut double-album The Last Resort (2006) won widespread critical praise; he continued evolving toward song-based, midtempo and cinematic work with Into The Great Wide Yonder (2010) and Lost (2013). Trentemøller balances club-oriented singles with full-band live shows and guest vocalists, running his In My Room imprint and maintaining an influential presence in European electronic music.",
+            "known_for": "Creating atmospheric, cinematic electronic productions that blend minimal techno, ambient textures and song-based arrangements; acclaimed remixes and immersive live shows.",
+            "start_year": 1997,
+            "voice_type": [
+              null
+            ],
+            "description": "Anders Trentemøller is a Danish electronic music producer and multi-instrumentalist from Copenhagen. Emerging in the late 1990s with the live-house act Trigbag, he later established himself as a solo producer with acclaimed EPs on labels like Naked Music, Audiomatique and Poker Flat. Trentemøller's work blends minimal techno, ambient and indie songwriting into atmospheric, cinematic compositions; he is also a sought-after remixer and has collaborated with numerous vocalists and producers. Notable albums include The Last Resort (2006), Into The Great Wide Yonder (2010), Lost (2013) and Fixion (2016).",
+            "instruments": [
+              "Guitar",
+              "Synthesizer",
+              "Piano",
+              "Bass",
+              "Drum Programming",
+              "Electronics"
+            ],
+            "collaborators": [
+              "Ane Trolle",
+              "Richard Davis",
+              "Jana Hunter",
+              "Marie Fisker",
+              "Low",
+              "DJ Buda",
+              "DJ T.O.M."
+            ],
+            "influenced_by": [
+              "Brian Eno",
+              "Kraftwerk",
+              "Aphex Twin",
+              "Boards Of Canada",
+              "Joy Division"
+            ],
+            "notable_songs": [
+              "Le Champagne",
+              "Work In Progress",
+              "Moan",
+              "Always Something Better",
+              "Dubby Games"
+            ],
+            "lyrical_themes": [
+              "Melancholy",
+              "Isolation",
+              "Night",
+              "Memory",
+              "Longing",
+              "Dreamlike Imagery"
+            ],
+            "primary_genres": [
+              "Electronic",
+              "Techno",
+              "Electronica",
+              "Minimal",
+              "Ambient",
+              "Downtempo"
+            ],
+            "characteristics": [
+              "Atmospheric",
+              "Cinematic",
+              "Moody",
+              "Melancholic",
+              "Textured",
+              "Hypnotic",
+              "Minimal",
+              "Detailed",
+              "Immersive"
+            ],
+            "cultural_impact": "Trentemøller helped bridge minimal/techno dance culture and song-oriented, cinematic electronic music in Europe, influencing a generation of producers who blend club aesthetics with indie songwriting; his remixes and albums received critical accolades and established Denmark as a notable presence in modern electronic music.",
+            "obscurity_scale": [
+              "4"
+            ],
+            "complexity_scale": [
+              "7"
+            ],
+            "secondary_genres": [
+              "Indie Electronic",
+              "IDM",
+              "Synthpop",
+              "Post-Rock",
+              "Trip-Hop"
+            ],
+            "associated_brands": [
+              "Poker Flat",
+              "Naked Music",
+              "Audiomatique",
+              "In My Room"
+            ],
+            "genres_influenced": [
+              "Downtempo",
+              "Indie Electronic",
+              "Cinematic Electronic",
+              "Minimal Techno"
+            ],
+            "performance_style": "Combines live instrumentation (guitar, keys, drums) and electronics with guest vocalists on stage; performances are arranged to emphasize atmosphere and cinematic flow rather than purely dancefloor-oriented DJ routines.",
+            "artists_influenced": [],
+            "short_descriptions": [
+              {
+                "value": "Danish electronic music producer and multi-instrumentalist known for atmospheric, cinematic, and moody electronic productions.",
+                "languages": [
+                  "en"
+                ]
+              },
+              {
+                "value": "Productor y multiinstrumentista electrónico danés, conocido por sus producciones atmosféricas, cinematográficas y melancólicas.",
+                "languages": [
+                  "es"
+                ]
+              },
+              {
+                "value": "Dänischer Produzent und Multiinstrumentalist der elektronischen Musik, bekannt für atmosphärische, cineastische und melancholische Klänge.",
+                "languages": [
+                  "de"
+                ]
+              },
+              {
+                "value": "Producteur et multi-instrumentiste électronique danois, réputé pour ses productions atmosphériques, cinématographiques et mélancoliques.",
+                "languages": [
+                  "fr"
+                ]
+              }
+            ],
+            "adjectives_for_fans": [
+              "Dedicated",
+              "Eclectic",
+              "Discerning",
+              "Introspective",
+              "Loyal"
+            ],
+            "adjectives_for_music": [
+              "Atmospheric",
+              "Cinematic",
+              "Moody",
+              "Melancholic",
+              "Textured",
+              "Hypnotic",
+              "Minimal",
+              "Detailed"
+            ],
+            "lyrical_themes_description": "When Trentemøller uses vocals and lyrics, they tend to explore introspective, melancholic themes — memory, loneliness, longing and nocturnal moods — framed within cinematic, atmospheric soundscapes rather than direct narrative songwriting.",
+            "adjectives_for_performance_style": [
+              "Immersive",
+              "Intimate",
+              "Precise",
+              "Cinematic",
+              "Dynamic"
+            ],
+            "creative_and_specific_adjectives_for_music": [
+              "Cinematic Downtempo",
+              "Minimal Techno",
+              "Indie Electronic",
+              "Dark Ambient Pop",
+              "Post-Industrial Electronica"
+            ],
+            "image": {
+              "url": "https://images.qloo.com/i/E843B224-9E81-44BA-9F84-28DF1C29543B-420x-auto.jpg"
+            }
+          },
+          "popularity": 0.9967232238234736,
+          "tags": [
+            {
+              "id": "urn:tag:subgenre:qloo:indie_electronic",
+              "name": "Indie Electronic",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:cinematic_techno",
+              "name": "Cinematic Techno",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:downtempo",
+              "name": "Downtempo",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:minimal",
+              "name": "Minimal",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:expressive",
+              "name": "Expressive",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:danish",
+              "name": "Danish",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:genre:qloo:ambient",
+              "name": "Ambient",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:innovative",
+              "name": "Innovative",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:melancholic_downtempo",
+              "name": "Melancholic Downtempo",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:kraftwerk",
+              "name": "Kraftwerk",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:dedicated",
+              "name": "Dedicated",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:cinematic",
+              "name": "Cinematic",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:electronica",
+              "name": "Electronica",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:house",
+              "name": "House",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:appreciative",
+              "name": "Appreciative",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:textured",
+              "name": "Textured",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:textured_indie_electronic",
+              "name": "Textured Indie Electronic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:audience:qloo:introspective",
+              "name": "Introspective",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:melancholic",
+              "name": "Melancholic",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:melancholy",
+              "name": "Melancholy",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:ambient_electronica",
+              "name": "Ambient Electronica",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:piano",
+              "name": "Piano",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:synthesizer",
+              "name": "Synthesizer",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:indie_electronic",
+              "name": "Indie Electronic",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:new_order",
+              "name": "New Order",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:depeche_mode",
+              "name": "Depeche Mode",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:guitar",
+              "name": "Guitar",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:dynamic",
+              "name": "Dynamic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:introspection",
+              "name": "Introspection",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:cinematic",
+              "name": "Cinematic",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:techno",
+              "name": "Techno",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:downtempo",
+              "name": "Downtempo",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:melancholic",
+              "name": "Melancholic",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:organic_synth_based",
+              "name": "Organic Synth-Based",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:emotional_depth",
+              "name": "Emotional Depth",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:eclectic",
+              "name": "Eclectic",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:minimal",
+              "name": "Minimal",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:influence:qloo:ambient_techno",
+              "name": "Ambient Techno",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:brian_eno",
+              "name": "Brian Eno",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:bass",
+              "name": "Bass",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:obscurity:qloo:4",
+              "name": "4",
+              "type": "urn:tag:obscurity:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:urban_life",
+              "name": "Urban Life",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:drums",
+              "name": "Drums",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:immersive",
+              "name": "Immersive",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:discerning",
+              "name": "Discerning",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:loyal",
+              "name": "Loyal",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:moody",
+              "name": "Moody",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:textured",
+              "name": "Textured",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:hypnotic",
+              "name": "Hypnotic",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:minimal",
+              "name": "Minimal",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:detailed",
+              "name": "Detailed",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:intimate",
+              "name": "Intimate",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:precise",
+              "name": "Precise",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:cinematic",
+              "name": "Cinematic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:moody",
+              "name": "Moody",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:hypnotic",
+              "name": "Hypnotic",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:minimal",
+              "name": "Minimal",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:detailed",
+              "name": "Detailed",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:immersive",
+              "name": "Immersive",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:complexity_scale:qloo:7",
+              "name": "7",
+              "type": "urn:tag:complexity_scale:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:cinematic_downtempo",
+              "name": "Cinematic Downtempo",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:minimal_techno",
+              "name": "Minimal Techno",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:indie_electronic",
+              "name": "Indie Electronic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:dark_ambient_pop",
+              "name": "Dark Ambient Pop",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:post_industrial_electronica",
+              "name": "Post-Industrial Electronica",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:cinematic_electronic",
+              "name": "Cinematic Electronic",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:minimal_techno",
+              "name": "Minimal Techno",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:aphex_twin",
+              "name": "Aphex Twin",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:boards_of_canada",
+              "name": "Boards Of Canada",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:joy_division",
+              "name": "Joy Division",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:drum_programming",
+              "name": "Drum Programming",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:electronics",
+              "name": "Electronics",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:isolation",
+              "name": "Isolation",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:night",
+              "name": "Night",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:memory",
+              "name": "Memory",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:longing",
+              "name": "Longing",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:dreamlike_imagery",
+              "name": "Dreamlike Imagery",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:electronica",
+              "name": "Electronica",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:minimal",
+              "name": "Minimal",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:idm",
+              "name": "IDM",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:synthpop",
+              "name": "Synthpop",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:post_rock",
+              "name": "Post-Rock",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:trip_hop",
+              "name": "Trip-Hop",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "type": "urn:tag:voice_type:qloo"
+            }
+          ],
+          "query": {
+            "affinity": 0.9526202405856737,
+            "measurements": {
+              "audience_growth": 0
+            }
+          },
+          "disambiguation": "Trentemøller",
+          "external": {
+            "lastfm": [
+              {
+                "id": "trentem%C3%B8ller",
+                "listeners": 756767,
+                "scrobbles": 21481127
+              }
+            ],
+            "spotify": [
+              {
+                "id": "4O71i7ke5iIBX6RNSFoZbS",
+                "verified": true,
+                "followers": 300520,
+                "monthly_listeners": 488247
+              }
+            ],
+            "twitter": [
+              {
+                "id": "trentemoeller"
+              }
+            ],
+            "facebook": [
+              {
+                "id": "trentemoller"
+              }
+            ],
+            "wikidata": [
+              {
+                "id": "q359835"
+              }
+            ],
+            "instagram": [
+              {
+                "id": "trentemoeller"
+              }
+            ],
+            "musicbrainz": [
+              {
+                "id": "95e9aba6-f85c-48a0-9ec9-395d4f0e3875",
+                "artist_type": "Person"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Modeselektor",
+          "entity_id": "2E869AD9-26C3-42BC-BEDF-8C20FA178765",
+          "type": "urn:entity",
+          "subtype": "urn:entity:artist",
+          "properties": {
+            "image": {
+              "url": "https://images.qloo.com/i/2E869AD9-26C3-42BC-BEDF-8C20FA178765-420x-auto.jpg"
+            },
+            "aliases": [],
+            "members": [
+              "Gernot Bronsert",
+              "Sebastian Szary"
+            ],
+            "is_group": true,
+            "biography": "Modeselektor was formed in Berlin, Germany, by Gernot Bronsert and Sebastian Szary. Both members had backgrounds in electronic music production and shared a passion for pushing the boundaries of techno and electronic music. They gained recognition in the early 2000s for their unique sound that combined glitchy textures, heavy basslines, and diverse rhythmic patterns. Over the years, they have released several albums and EPs, collaborated with artists like Apparat, and contributed significantly to the electronic music community through their label and live performances.",
+            "known_for": "Known for their eclectic and experimental approach to electronic and techno music, blending various styles and innovative production techniques.",
+            "start_year": 1996,
+            "description": "Modeselektor is a German electronic music duo formed by Gernot Bronsert and Sebastian Szary. They are known for blending various electronic music styles including techno, glitch, IDM, and experimental sounds, often incorporating elements of house, hip hop, and bass music. Their music is characterized by its eclecticism, innovative production techniques, and energetic beats. They have collaborated with a range of artists and are influential in the electronic music scene, particularly in Germany and internationally.",
+            "instruments": [
+              "Synthesizers",
+              "Drum Machines",
+              "Samplers",
+              "Sequencers"
+            ],
+            "collaborators": [
+              "Apparat",
+              "Thom Yorke",
+              "Siriusmo",
+              "Busdriver"
+            ],
+            "influenced_by": [
+              "Aphex Twin",
+              "Autechre",
+              "The Prodigy",
+              "Daft Punk"
+            ],
+            "notable_songs": [
+              "Blue Clouds",
+              "The White Flash",
+              "Who",
+              "Evil Twin",
+              "Shipwreck"
+            ],
+            "lyrical_themes": [
+              "Technology",
+              "Urban Life",
+              "Abstract Concepts"
+            ],
+            "primary_genres": [
+              "Electronic",
+              "Techno",
+              "Glitch",
+              "IDM",
+              "Experimental"
+            ],
+            "characteristics": [
+              "Eclectic",
+              "Experimental",
+              "Innovative",
+              "Energetic",
+              "Dynamic"
+            ],
+            "cultural_impact": "Modeselektor has had a significant impact on the electronic music scene, particularly in Germany, influencing the development of experimental techno and glitch music. They have helped popularize a more eclectic and genre-blending approach to electronic music and have contributed to the global recognition of Berlin as a hub for innovative electronic music.",
+            "obscurity_scale": [
+              "4"
+            ],
+            "secondary_genres": [
+              "House",
+              "Hip Hop",
+              "Bass Music"
+            ],
+            "associated_brands": [
+              "Monkeytown Records"
+            ],
+            "genres_influenced": [
+              "Glitch",
+              "Experimental Electronic",
+              "Techno",
+              "IDM"
+            ],
+            "performance_style": "Modeselektor's performance style is energetic and dynamic, often incorporating live electronic manipulation and engaging visuals, creating an immersive experience for the audience.",
+            "artists_influenced": [
+              "Siriusmo",
+              "Moderat",
+              "Kiasmos"
+            ],
+            "short_descriptions": [
+              {
+                "value": "Modeselektor es un dúo alemán de música electrónica conocido por su enfoque ecléctico y experimental del techno y la electrónica.",
+                "languages": [
+                  "es"
+                ]
+              },
+              {
+                "value": "Modeselektor is a German electronic music duo known for their eclectic and experimental approach to techno and electronic music.",
+                "languages": [
+                  "en"
+                ]
+              },
+              {
+                "value": "Modeselektor est un duo allemand de musique électronique reconnu pour son approche éclectique et expérimentale du techno et de l'électronique.",
+                "languages": [
+                  "fr"
+                ]
+              },
+              {
+                "value": "Modeselektor ist ein deutsches Elektronik-Duo, bekannt für seinen eklektischen und experimentellen Ansatz in Techno und elektronischer Musik.",
+                "languages": [
+                  "de"
+                ]
+              }
+            ],
+            "adjectives_for_fans": [
+              "Eclectic",
+              "Open-Minded",
+              "Experimental",
+              "Energetic"
+            ],
+            "adjectives_for_music": [
+              "Eclectic",
+              "Experimental",
+              "Innovative",
+              "Energetic",
+              "Dynamic"
+            ],
+            "lyrical_themes_description": "Modeselektor's lyrics and themes often explore technology, urban life, and abstract or experimental concepts, reflecting their electronic and avant-garde musical style.",
+            "adjectives_for_performance_style": [
+              "Energetic",
+              "Dynamic",
+              "Engaging",
+              "Innovative"
+            ],
+            "creative_and_specific_adjectives_for_music": [
+              "Glitchy",
+              "Bass-Heavy",
+              "Techno-Infused",
+              "Experimental",
+              "Avant-Garde"
+            ]
+          },
+          "popularity": 0.9945343373375538,
+          "tags": [
+            {
+              "id": "urn:tag:influence:qloo:idm",
+              "name": "IDM",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:daft_punk",
+              "name": "Daft Punk",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:samplers",
+              "name": "Samplers",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:technology",
+              "name": "Technology",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:synthesizers",
+              "name": "Synthesizers",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:drum_machines",
+              "name": "Drum Machines",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:urban_life",
+              "name": "Urban Life",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:eclectic",
+              "name": "Eclectic",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:bpitch_control",
+              "name": "Bpitch Control",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:style:qloo:innovative",
+              "name": "Innovative",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:obscurity:qloo:4",
+              "name": "4",
+              "type": "urn:tag:obscurity:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:innovative",
+              "name": "Innovative",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:idm",
+              "name": "Idm",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:the_prodigy",
+              "name": "The Prodigy",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:electro",
+              "name": "Electro",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:artist:qloo:dynamic",
+              "name": "Dynamic",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:autechre",
+              "name": "Autechre",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:techno",
+              "name": "Techno",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:house",
+              "name": "House",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:engaging",
+              "name": "Engaging",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:aphex_twin",
+              "name": "Aphex Twin",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:techno",
+              "name": "Techno",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:abstract_concepts",
+              "name": "Abstract Concepts",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:glitch",
+              "name": "Glitch",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:glitchy",
+              "name": "Glitchy",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:style:qloo:energetic",
+              "name": "Energetic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:experimental_electronic",
+              "name": "Experimental Electronic",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:dynamic",
+              "name": "Dynamic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:energetic",
+              "name": "Energetic",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:sequencers",
+              "name": "Sequencers",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:open_minded",
+              "name": "Open-Minded",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:avant_garde",
+              "name": "Avant-Garde",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:techno_infused",
+              "name": "Techno-Infused",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:energetic",
+              "name": "Energetic",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:hip_hop",
+              "name": "Hip Hop",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:eclectic",
+              "name": "Eclectic",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:bass_heavy",
+              "name": "Bass Heavy",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:glitch",
+              "name": "Glitch",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:bass_music",
+              "name": "Bass Music",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:eclectic",
+              "name": "Eclectic",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:idm",
+              "name": "IDM",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:innovative",
+              "name": "Innovative",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:energetic",
+              "name": "Energetic",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:dynamic",
+              "name": "Dynamic",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:bass_heavy",
+              "name": "Bass-Heavy",
+              "type": "urn:tag:style:qloo"
+            }
+          ],
+          "query": {
+            "affinity": 0.9520163516092429,
+            "measurements": {
+              "audience_growth": 0
+            }
+          },
+          "disambiguation": "Modeselektor",
+          "external": {
+            "imdb": [
+              {
+                "id": "nm5638308"
+              }
+            ],
+            "lastfm": [
+              {
+                "id": "modeselektor",
+                "listeners": 588593,
+                "scrobbles": 11986108
+              }
+            ],
+            "spotify": [
+              {
+                "id": "2jYMYP2SVifgmzNRQJx3SJ",
+                "verified": true,
+                "followers": 185060,
+                "last_release": 2020,
+                "first_release": 2002,
+                "monthly_listeners": 346930
+              }
+            ],
+            "twitter": [
+              {
+                "id": "modeselektor"
+              }
+            ],
+            "facebook": [
+              {
+                "id": "mdslktr"
+              }
+            ],
+            "wikidata": [
+              {
+                "id": "q829725"
+              }
+            ],
+            "instagram": [
+              {
+                "id": "modeselektor_berlin"
+              }
+            ],
+            "musicbrainz": [
+              {
+                "id": "8a7a4e72-a099-425f-8238-80706fc1c746",
+                "artist_type": "Group"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Nicolas Jaar",
+          "entity_id": "FE588EFF-F393-46A7-AD98-0B52A87B4AC1",
+          "type": "urn:entity",
+          "subtype": "urn:entity:artist",
+          "properties": {
+            "image": {
+              "url": "https://images.qloo.com/i/FE588EFF-F393-46A7-AD98-0B52A87B4AC1-420x-auto.jpg"
+            },
+            "aliases": [
+              "Nicolas Jaar"
+            ],
+            "members": [],
+            "is_group": false,
+            "biography": "Born in New York City to Chilean parents, Nicolas Jaar began producing music at a young age, quickly gaining recognition for his unique sound that defies traditional electronic music boundaries. He released his debut album 'Space Is Only Noise' in 2011 to critical acclaim, establishing himself as a leading figure in the electronic music scene. Jaar has continued to evolve his sound through various projects and collaborations, maintaining a reputation for pushing musical boundaries and exploring new sonic territories.",
+            "known_for": "Innovative electronic music production blending experimental, ambient, and downtempo styles with cinematic soundscapes.",
+            "start_year": 2007,
+            "description": "Nicolas Jaar is a Chilean-American electronic music composer, producer, and performer known for his innovative and experimental approach to electronic music. He blends elements of ambient, downtempo, minimal techno, and avant-garde styles to create immersive soundscapes. Jaar's work often features intricate rhythms, textured layers, and a cinematic quality, making him a prominent figure in contemporary electronic music.",
+            "instruments": [
+              "Synthesizer",
+              "Sampler",
+              "Piano",
+              "Drum Machine"
+            ],
+            "collaborators": [
+              "Dave Harrington",
+              "FKA twigs",
+              "Teebs"
+            ],
+            "date_of_birth": "1990-01-10",
+            "influenced_by": [
+              "Aphex Twin",
+              "Brian Eno",
+              "DJ Shadow",
+              "Fela Kuti"
+            ],
+            "notable_songs": [
+              "Space Is Only Noise",
+              "Mi Mujer",
+              "Colomb",
+              "El Bandido"
+            ],
+            "lyrical_themes": [
+              "Introspection",
+              "Emotional Depth",
+              "Abstract Concepts"
+            ],
+            "place_of_birth": "New York, New York, United State",
+            "primary_genres": [
+              "Electronic",
+              "Experimental",
+              "Ambient",
+              "Downtempo"
+            ],
+            "characteristics": [
+              "Experimental",
+              "Innovative",
+              "Atmospheric",
+              "Textured",
+              "Cinematic"
+            ],
+            "cultural_impact": "Nicolas Jaar has significantly influenced the electronic music landscape by blending experimental and ambient elements with accessible rhythms, inspiring a new generation of producers and expanding the boundaries of electronic music.",
+            "obscurity_scale": [
+              "3"
+            ],
+            "secondary_genres": [
+              "Minimal Techno",
+              "House",
+              "Avant-Garde"
+            ],
+            "associated_brands": [],
+            "genres_influenced": [
+              "Experimental Electronic",
+              "Ambient",
+              "Downtempo"
+            ],
+            "performance_style": "Jaar's live performances are immersive and dynamic, often incorporating live instrumentation and improvisation to create a deeply engaging and introspective experience.",
+            "artists_influenced": [
+              "SOHN",
+              "Kaitlyn Aurelia Smith",
+              "Kelly Lee Owens"
+            ],
+            "short_descriptions": [
+              {
+                "value": "Nicolas Jaar is a Chilean-American electronic music composer and producer known for his experimental and atmospheric sound.",
+                "languages": [
+                  "en"
+                ]
+              },
+              {
+                "value": "Nicolas Jaar ist ein chilenisch-amerikanischer Komponist und Produzent elektronischer Musik, bekannt für seinen experimentellen, atmosphärischen Sound.",
+                "languages": [
+                  "de"
+                ]
+              },
+              {
+                "value": "Nicolas Jaar es un compositor y productor chileno-estadounidense de música electrónica, famoso por su sonido experimental y atmosférico.",
+                "languages": [
+                  "es"
+                ]
+              },
+              {
+                "value": "Nicolas Jaar est un compositeur et producteur de musique électronique chiléno-américain, reconnu pour son style expérimental et atmosphérique.",
+                "languages": [
+                  "fr"
+                ]
+              }
+            ],
+            "adjectives_for_fans": [
+              "Open-Minded",
+              "Eclectic",
+              "Introspective",
+              "Experimental"
+            ],
+            "adjectives_for_music": [
+              "Experimental",
+              "Atmospheric",
+              "Textured",
+              "Cinematic",
+              "Innovative"
+            ],
+            "lyrical_themes_description": "Jaar's lyrics and vocal samples often explore introspective themes, emotional depth, and abstract concepts, complementing his atmospheric and experimental soundscapes.",
+            "adjectives_for_performance_style": [
+              "Immersive",
+              "Dynamic",
+              "Introspective"
+            ],
+            "creative_and_specific_adjectives_for_music": [
+              "Experimental Electronic",
+              "Ambient Downtempo",
+              "Minimal Techno",
+              "Cinematic Soundscape",
+              "Avant-Garde"
+            ]
+          },
+          "popularity": 0.9951896925728592,
+          "tags": [
+            {
+              "id": "urn:tag:influence:qloo:downtempo",
+              "name": "Downtempo",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:fela_kuti",
+              "name": "Fela Kuti",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:ambient_downtempo",
+              "name": "Ambient Downtempo",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:abstract_concepts",
+              "name": "Abstract Concepts",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:brian_eno",
+              "name": "Brian Eno",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:open_minded",
+              "name": "Open-Minded",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:aphex_twin",
+              "name": "Aphex Twin",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:obscurity:qloo:3",
+              "name": "3",
+              "type": "urn:tag:obscurity:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:dj_shadow",
+              "name": "DJ Shadow",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:cinematic",
+              "name": "Cinematic",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:experimental_electronic",
+              "name": "Experimental Electronic",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:emotional_depth",
+              "name": "Emotional Depth",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:textured",
+              "name": "Textured",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:synthesizer",
+              "name": "Synthesizer",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:introspective",
+              "name": "Introspective",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:style:qloo:minimal_techno",
+              "name": "Minimal Techno",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:piano",
+              "name": "Piano",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:avant_garde",
+              "name": "Avant Garde",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:introspective",
+              "name": "Introspective",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:innovative",
+              "name": "Innovative",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:ambient",
+              "name": "Ambient",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:introspection",
+              "name": "Introspection",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:cinematic_soundscape",
+              "name": "Cinematic Soundscape",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:experimental_electronic",
+              "name": "Experimental Electronic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:house",
+              "name": "House",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:house",
+              "name": "House",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:music:qloo:cinematic",
+              "name": "Cinematic",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:ambient",
+              "name": "Ambient",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:avant_garde",
+              "name": "Avant-Garde",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:dynamic",
+              "name": "Dynamic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:eclectic",
+              "name": "Eclectic",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:minimal",
+              "name": "Minimal",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:minimal_techno",
+              "name": "Minimal Techno",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:drum_machine",
+              "name": "Drum Machine",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:sampler",
+              "name": "Sampler",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:immersive",
+              "name": "Immersive",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:downtempo",
+              "name": "Downtempo",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:textured",
+              "name": "Textured",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:innovative",
+              "name": "Innovative",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:avant_garde",
+              "name": "Avant-Garde",
+              "type": "urn:tag:subgenre:qloo"
+            }
+          ],
+          "query": {
+            "affinity": 0.9503410345988439,
+            "measurements": {
+              "audience_growth": 0
+            }
+          },
+          "disambiguation": "Nicolas Jaar",
+          "external": {
+            "imdb": [
+              {
+                "id": "nm4111273"
+              }
+            ],
+            "lastfm": [
+              {
+                "id": "nicolas%20jaar",
+                "listeners": 573096,
+                "scrobbles": 17536809
+              }
+            ],
+            "spotify": [
+              {
+                "id": "5a0etAzO5V26gvlbmHzT9W",
+                "verified": true,
+                "followers": 574242,
+                "last_release": 2020,
+                "first_release": 2009,
+                "monthly_listeners": 956330
+              }
+            ],
+            "twitter": [
+              {
+                "id": "nicolas___jaar"
+              }
+            ],
+            "facebook": [
+              {
+                "id": "nicolas-jaar-15727540611"
+              }
+            ],
+            "wikidata": [
+              {
+                "id": "q261566"
+              }
+            ],
+            "instagram": [
+              {
+                "id": "nicolasjaar"
+              }
+            ],
+            "musicbrainz": [
+              {
+                "id": "06e99a1b-4020-4380-ab27-1a3e0c5e557c",
+                "artist_type": "Person"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Kiasmos",
+          "entity_id": "C002BD26-5F91-477A-A468-1BE759B5DBE4",
+          "type": "urn:entity",
+          "subtype": "urn:entity:artist",
+          "properties": {
+            "akas": [
+              {
+                "value": "Kiasmos",
+                "languages": [
+                  "zh"
+                ]
+              }
+            ],
+            "image": {
+              "url": "https://images.qloo.com/i/C002BD26-5F91-477A-A468-1BE759B5DBE4-420x-auto.jpg"
+            },
+            "aliases": [],
+            "members": [
+              "Ólafur Arnalds",
+              "Janus Rasmussen"
+            ],
+            "is_group": true,
+            "biography": "Kiasmos was formed by Icelandic composer Ólafur Arnalds and Faroese electronic musician Janus Rasmussen. Both artists brought their unique backgrounds to the project: Arnalds with his classical and neo-classical training, and Rasmussen with his experience in electronic and synth-pop music. The duo met through mutual musical interests and began collaborating to create a sound that merges minimal techno with classical sensibilities. Their debut self-titled album was released in 2014, establishing them as a distinctive act in the electronic music scene. Over the years, Kiasmos has toured internationally and released multiple records, continuing to evolve their sound while maintaining their signature blend of electronic and classical elements.",
+            "known_for": "Their unique fusion of minimal techno and classical music elements, creating emotive and atmospheric electronic soundscapes.",
+            "start_year": 2009,
+            "description": "Kiasmos is an Icelandic electronic music duo consisting of Ólafur Arnalds and Janus Rasmussen. They are known for their minimal techno and ambient techno sound that incorporates elements of contemporary classical music. Their music is characterized by atmospheric textures, emotive melodies, and a blend of electronic beats with organic instrumentation. Since their formation, Kiasmos has released several EPs and albums, gaining acclaim for their innovative approach to electronic music that bridges the gap between classical and techno genres.",
+            "instruments": [
+              "Synthesizer",
+              "Piano",
+              "Drum Machine",
+              "Sampler"
+            ],
+            "collaborators": [
+              "Ólafur Arnalds",
+              "Janus Rasmussen"
+            ],
+            "influenced_by": [
+              "Brian Eno",
+              "Aphex Twin",
+              "Steve Reich",
+              "Philip Glass"
+            ],
+            "notable_songs": [
+              "Looped",
+              "Thrown",
+              "Blurred",
+              "Burnt",
+              "Lit"
+            ],
+            "lyrical_themes": [],
+            "primary_genres": [
+              "Minimal Techno",
+              "Ambient Techno",
+              "Electronica"
+            ],
+            "characteristics": [
+              "Minimalistic",
+              "Atmospheric",
+              "Emotive",
+              "Innovative",
+              "Textured"
+            ],
+            "cultural_impact": "Kiasmos has contributed to the popularization of minimal techno and ambient electronic music by integrating classical music elements, influencing a wave of artists blending genres and expanding the boundaries of electronic music.",
+            "obscurity_scale": [
+              "4"
+            ],
+            "secondary_genres": [
+              "Experimental",
+              "Contemporary Classical"
+            ],
+            "associated_brands": [],
+            "genres_influenced": [
+              "Minimal Techno",
+              "Ambient Techno",
+              "Electronica",
+              "Contemporary Classical Fusion"
+            ],
+            "performance_style": "Kiasmos' live performances are known for their immersive and dynamic atmosphere, combining live electronic manipulation with emotive piano and synth play, often creating a deeply engaging audiovisual experience.",
+            "artists_influenced": [
+              "Nils Frahm",
+              "Jon Hopkins",
+              "Max Cooper"
+            ],
+            "short_descriptions": [
+              {
+                "value": "Kiasmos ist ein isländisches Minimal-Techno-Duo, das elektronische Musik mit klassischen Einflüssen verbindet.",
+                "languages": [
+                  "de"
+                ]
+              },
+              {
+                "value": "Kiasmos est un duo islandais de minimal techno reconnu pour mélanger musique électronique et influences classiques.",
+                "languages": [
+                  "fr"
+                ]
+              },
+              {
+                "value": "Kiasmos is an Icelandic minimal techno duo known for blending electronic music with classical influences.",
+                "languages": [
+                  "en"
+                ]
+              },
+              {
+                "value": "Kiasmos es un dúo islandés de minimal techno conocido por fusionar música electrónica con influencias clásicas.",
+                "languages": [
+                  "es"
+                ]
+              }
+            ],
+            "adjectives_for_fans": [
+              "Appreciative",
+              "Open-Minded",
+              "Introspective",
+              "Dedicated"
+            ],
+            "adjectives_for_music": [
+              "Minimalistic",
+              "Atmospheric",
+              "Emotive",
+              "Textured",
+              "Innovative"
+            ],
+            "adjectives_for_performance_style": [
+              "Immersive",
+              "Dynamic",
+              "Expressive"
+            ],
+            "creative_and_specific_adjectives_for_music": [
+              "Minimal Techno",
+              "Ambient Techno",
+              "Neo-Classical Electronica",
+              "Textured Soundscapes",
+              "Emotive Melodic"
+            ]
+          },
+          "popularity": 0.985280721415043,
+          "tags": [
+            {
+              "id": "urn:tag:influence:qloo:contemporary_classical_fusion",
+              "name": "Contemporary Classical Fusion",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:icelandic",
+              "name": "Icelandic",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:style:qloo:minimal_techno",
+              "name": "Minimal Techno",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:ambient_techno",
+              "name": "Ambient Techno",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:introspective",
+              "name": "Introspective",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:piano",
+              "name": "Piano",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:minimal",
+              "name": "Minimal",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:contemporary_classical",
+              "name": "Contemporary Classical",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:emotive",
+              "name": "Emotive",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:dedicated",
+              "name": "Dedicated",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:minimalistic",
+              "name": "Minimalistic",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:immersive",
+              "name": "Immersive",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:drum_machine",
+              "name": "Drum Machine",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:ambient_techno",
+              "name": "Ambient Techno",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:textured_soundscapes",
+              "name": "Textured Soundscapes",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:emotive_melodic",
+              "name": "Emotive Melodic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:neo_classical_electronica",
+              "name": "Neo-Classical Electronica",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:ambient_techno",
+              "name": "Ambient Techno",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:synthesizer",
+              "name": "Synthesizer",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:minimal_techno",
+              "name": "Minimal Techno",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:obscurity:qloo:4",
+              "name": "4",
+              "type": "urn:tag:obscurity:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:electronica",
+              "name": "Electronica",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:electronica",
+              "name": "Electronica",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:expressive",
+              "name": "Expressive",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:minimalistic",
+              "name": "Minimalistic",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:textured",
+              "name": "Textured",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:dynamic",
+              "name": "Dynamic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:music:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:artist:qloo:innovative",
+              "name": "Innovative",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:philip_glass",
+              "name": "Philip Glass",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:steve_reich",
+              "name": "Steve Reich",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:sampler",
+              "name": "Sampler",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:aphex_twin",
+              "name": "Aphex Twin",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:brian_eno",
+              "name": "Brian Eno",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:open_minded",
+              "name": "Open-Minded",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:appreciative",
+              "name": "Appreciative",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:minimal_techno",
+              "name": "Minimal Techno",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:emotive",
+              "name": "Emotive",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:textured",
+              "name": "Textured",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:innovative",
+              "name": "Innovative",
+              "type": "urn:tag:music:qloo"
+            }
+          ],
+          "query": {
+            "affinity": 0.9420808416726796,
+            "measurements": {
+              "audience_growth": 0
+            }
+          },
+          "disambiguation": "Kiasmos",
+          "external": {
+            "lastfm": [
+              {
+                "id": "kiasmos",
+                "listeners": 311420,
+                "scrobbles": 6715418
+              }
+            ],
+            "spotify": [
+              {
+                "id": "6X8lhZ7YaRUBlOsOYimlyD",
+                "verified": true,
+                "followers": 191517,
+                "last_release": 2020,
+                "first_release": 2009,
+                "monthly_listeners": 664878
+              }
+            ],
+            "twitter": [
+              {
+                "id": "kiasmos_"
+              }
+            ],
+            "facebook": [
+              {
+                "id": "kiasmos"
+              }
+            ],
+            "wikidata": [
+              {
+                "id": "q21583944"
+              }
+            ],
+            "instagram": [
+              {
+                "id": "kiasmos_"
+              }
+            ],
+            "musicbrainz": [
+              {
+                "id": "3252542b-98a7-48ba-9861-7a612b16c227",
+                "artist_type": "Group"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Christian Löffler",
+          "entity_id": "F8D294DE-3007-44F5-A286-DDC8C37AD81E",
+          "type": "urn:entity",
+          "subtype": "urn:entity:artist",
+          "properties": {
+            "aliases": [
+              "Christian Loeffler"
+            ],
+            "members": [],
+            "is_group": false,
+            "biography": "Christian Löffler was born in Germany and began producing electronic music in the early 2000s. He gained recognition for his unique style that merges ambient soundscapes with techno and deep house rhythms. Over the years, he has released multiple albums and EPs, establishing himself as a prominent figure in the European electronic music scene. His music often explores themes of nature and human emotion, and he is known for his live performances that combine DJing with live instrumentation and visuals.",
+            "known_for": "Known for his emotive, melancholic, and atmospheric electronic music that blends ambient textures with techno and deep house rhythms.",
+            "start_year": 2008,
+            "description": "Christian Löffler is a German electronic music producer and DJ who creates atmospheric and emotive electronic music, blending elements of ambient, deep house, and techno. His sound is characterized by melancholic melodies, warm analog synths, and organic textures, often incorporating field recordings and acoustic instruments. He has released several albums and EPs on the label Ki Records and is recognized for his introspective and cinematic approach to electronic music.",
+            "instruments": [
+              "Synthesizer",
+              "Drum Machine",
+              "Piano",
+              "Guitar"
+            ],
+            "collaborators": [
+              "Dawn",
+              "Mohna"
+            ],
+            "influenced_by": [
+              "Nicolas Jaar",
+              "Four Tet",
+              "Burial"
+            ],
+            "notable_songs": [
+              "Haul",
+              "Mare",
+              "Ry",
+              "York"
+            ],
+            "lyrical_themes": [
+              "Nature",
+              "Emotion",
+              "Melancholy",
+              "Introspection"
+            ],
+            "primary_genres": [
+              "Ambient",
+              "Techno",
+              "Deep House",
+              "Electronica"
+            ],
+            "characteristics": [
+              "Melancholic",
+              "Atmospheric",
+              "Emotive",
+              "Introspective",
+              "Cinematic"
+            ],
+            "cultural_impact": "Christian Löffler has influenced the modern ambient and melodic techno scenes with his emotive and cinematic style, inspiring a wave of producers who blend electronic music with organic and acoustic elements. His work has contributed to the popularization of a more introspective and atmospheric approach to electronic music.",
+            "obscurity_scale": [
+              "4"
+            ],
+            "secondary_genres": [
+              "Minimal",
+              "Melodic Techno",
+              "Downtempo"
+            ],
+            "associated_brands": [],
+            "genres_influenced": [
+              "Melodic Techno",
+              "Ambient Techno",
+              "Deep House"
+            ],
+            "performance_style": "Christian Löffler's performance style is immersive and cinematic, often combining DJ sets with live instrumentation and visual elements to create an emotional and atmospheric experience.",
+            "artists_influenced": [
+              "Ben Böhmer",
+              "Jan Blomqvist",
+              "Kölsch"
+            ],
+            "short_descriptions": [
+              {
+                "value": "Christian Löffler est un producteur et DJ allemand de musique électronique, reconnu pour son mélange émouvant d'ambient et de techno.",
+                "languages": [
+                  "fr"
+                ]
+              },
+              {
+                "value": "Christian Löffler ist ein deutscher Produzent und DJ, der für seinen gefühlvollen Mix aus Ambient und Techno bekannt ist.",
+                "languages": [
+                  "de"
+                ]
+              },
+              {
+                "value": "Christian Löffler es un productor y DJ alemán de música electrónica, famoso por su emotiva mezcla de ambient y techno.",
+                "languages": [
+                  "es"
+                ]
+              },
+              {
+                "value": "Christian Löffler is a German electronic music producer and DJ known for his emotive blend of ambient and techno music.",
+                "languages": [
+                  "en"
+                ]
+              }
+            ],
+            "adjectives_for_fans": [
+              "Introspective",
+              "Emotionally Attuned",
+              "Dedicated",
+              "Thoughtful"
+            ],
+            "adjectives_for_music": [
+              "Melancholic",
+              "Atmospheric",
+              "Emotive",
+              "Cinematic",
+              "Introspective"
+            ],
+            "lyrical_themes_description": "Christian Löffler's music explores themes of nature, human emotion, melancholy, and introspection, often conveyed through instrumental and minimal vocal elements that evoke a deep emotional response.",
+            "adjectives_for_performance_style": [
+              "Immersive",
+              "Cinematic",
+              "Introspective"
+            ],
+            "creative_and_specific_adjectives_for_music": [
+              "Ambient Techno",
+              "Melodic Deep House",
+              "Cinematic Electronica",
+              "Organic Minimalism",
+              "Emotive Soundscapes"
+            ],
+            "image": {
+              "url": "https://images.qloo.com/i/F8D294DE-3007-44F5-A286-DDC8C37AD81E-420x-auto.jpg"
+            }
+          },
+          "popularity": 0.9767283355943089,
+          "tags": [
+            {
+              "id": "urn:tag:obscurity:qloo:4",
+              "name": "4",
+              "type": "urn:tag:obscurity:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:guitar",
+              "name": "Guitar",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:ambient",
+              "name": "Ambient",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:introspective",
+              "name": "Introspective",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:burial",
+              "name": "Burial",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:introspective",
+              "name": "Introspective",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:cinematic",
+              "name": "Cinematic",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:dedicated",
+              "name": "Dedicated",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:cinematic",
+              "name": "Cinematic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:organic_minimalism",
+              "name": "Organic Minimalism",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:immersive",
+              "name": "Immersive",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:downtempo",
+              "name": "Downtempo",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:melancholic",
+              "name": "Melancholic",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:minimal",
+              "name": "Minimal",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:genre:music:house",
+              "name": "House",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:synthesizer",
+              "name": "Synthesizer",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:introspection",
+              "name": "Introspection",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:deep_house",
+              "name": "Deep House",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:melodic_techno",
+              "name": "Melodic Techno",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:emotive_soundscapes",
+              "name": "Emotive Soundscapes",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:minimal",
+              "name": "Minimal",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:techno",
+              "name": "Techno",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:drum_machine",
+              "name": "Drum Machine",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:nicolas_jaar",
+              "name": "Nicolas Jaar",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:cinematic_electronica",
+              "name": "Cinematic Electronica",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:ambient_techno",
+              "name": "Ambient Techno",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:electronica",
+              "name": "Electronica",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:emotive",
+              "name": "Emotive",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:introspective",
+              "name": "Introspective",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:nature",
+              "name": "Nature",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:deep_house",
+              "name": "Deep House",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:piano",
+              "name": "Piano",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:thoughtful",
+              "name": "Thoughtful",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:four_tet",
+              "name": "Four Tet",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:minimal_techno",
+              "name": "Minimal Techno",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:audience:qloo:emotionally_attuned",
+              "name": "Emotionally Attuned",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:melodic_techno",
+              "name": "Melodic Techno",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:cinematic",
+              "name": "Cinematic",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:melancholy",
+              "name": "Melancholy",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:emotion",
+              "name": "Emotion",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:ambient_techno",
+              "name": "Ambient Techno",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:melodic_deep_house",
+              "name": "Melodic Deep House",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:melancholic",
+              "name": "Melancholic",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:emotive",
+              "name": "Emotive",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:introspective",
+              "name": "Introspective",
+              "type": "urn:tag:music:qloo"
+            }
+          ],
+          "query": {
+            "affinity": 0.9411437564239443,
+            "measurements": {
+              "audience_growth": 0
+            }
+          },
+          "disambiguation": "Christian Löffler",
+          "external": {
+            "lastfm": [
+              {
+                "id": "christian%20l%C3%B6ffler",
+                "listeners": 316147,
+                "scrobbles": 6289562
+              }
+            ],
+            "spotify": [
+              {
+                "id": "3tSvlEzeDnVbQJBTkIA6nO",
+                "verified": true,
+                "followers": 166682,
+                "last_release": 2020,
+                "first_release": 2009,
+                "monthly_listeners": 1548259
+              }
+            ],
+            "twitter": [
+              {
+                "id": "chris_loeffler"
+              }
+            ],
+            "facebook": [
+              {
+                "id": "christianloefflerofficial"
+              }
+            ],
+            "wikidata": [
+              {
+                "id": "q16041783"
+              }
+            ],
+            "instagram": [
+              {
+                "id": "christianloeffler"
+              }
+            ],
+            "musicbrainz": [
+              {
+                "id": "a0d91c38-f5dc-487b-9b30-b67de1e7489e",
+                "artist_type": "Person"
+              }
+            ]
+          }
+        },
+        {
+          "name": "HVOB",
+          "entity_id": "942D53E9-0E94-4BE8-9684-D3BC23B6FCAC",
+          "type": "urn:entity",
+          "subtype": "urn:entity:artist",
+          "properties": {
+            "image": {
+              "url": "https://images.qloo.com/i/942D53E9-0E94-4BE8-9684-D3BC23B6FCAC-420x-auto.jpg"
+            },
+            "vocals": "HVOB's vocals are characterized by ethereal and haunting female vocals, primarily delivered by Anna Müller. The vocal style complements their minimal and atmospheric electronic production, often blending seamlessly into the soundscape rather than standing out as a traditional lead vocal.",
+            "aliases": [
+              "Her Voice Over Boys"
+            ],
+            "members": [
+              "Anna Müller",
+              "Paul Wallner"
+            ],
+            "is_group": true,
+            "biography": "HVOB was formed in Vienna, Austria, by Anna Müller and Paul Wallner. The duo gained attention with their unique blend of electronic music that combines minimal techno beats with ethereal vocals and ambient soundscapes. They released their debut album in 2012 and have since toured extensively, building a reputation for their immersive live performances and innovative production style. Their work has contributed to the evolution of the electronic music scene in Europe, particularly within the minimal and deep house subgenres.",
+            "known_for": "HVOB is known for their minimalistic and atmospheric electronic music, characterized by haunting female vocals and intricate production.",
+            "start_year": 2012,
+            "description": "HVOB (Her Voice Over Boys) is an Austrian electronic music duo formed by Anna Müller and Paul Wallner. They are recognized for their minimalistic and atmospheric approach to electronic music, blending elements of techno, deep house, and ambient sounds. Their music often features haunting vocals, intricate production, and a focus on mood and texture rather than traditional song structures.",
+            "instruments": [
+              "Synthesizers",
+              "Drum Machines",
+              "Vocals",
+              "Samplers"
+            ],
+            "collaborators": [
+              "Wankelmut",
+              "Oliver Koletzki"
+            ],
+            "influenced_by": [
+              "Kraftwerk",
+              "Depeche Mode",
+              "Underworld",
+              "Massive Attack"
+            ],
+            "notable_songs": [
+              "Ghost",
+              "Window",
+              "Sunday Morning",
+              "Easy",
+              "Jack"
+            ],
+            "lyrical_themes": [
+              "Introspection",
+              "Emotions",
+              "Human Experience",
+              "Nature"
+            ],
+            "primary_genres": [
+              "Electronic",
+              "Techno",
+              "Deep House",
+              "Minimal"
+            ],
+            "characteristics": [
+              "Minimalistic",
+              "Atmospheric",
+              "Haunting",
+              "Intricate",
+              "Melodic"
+            ],
+            "cultural_impact": "HVOB has influenced the European electronic music scene by popularizing a minimal and emotive style of techno and deep house, inspiring a wave of artists who blend electronic production with vocal-driven compositions. Their live performances and innovative sound design have contributed to the evolution of electronic music festivals and club culture.",
+            "obscurity_scale": [
+              "4"
+            ],
+            "secondary_genres": [
+              "Ambient",
+              "Downtempo"
+            ],
+            "associated_brands": [],
+            "genres_influenced": [
+              "Minimal Techno",
+              "Deep House",
+              "Ambient Electronic"
+            ],
+            "performance_style": "HVOB's performance style is immersive and intimate, often featuring live vocals by Anna Müller alongside electronic instrumentation, creating a dynamic and emotive atmosphere that engages audiences deeply.",
+            "artists_influenced": [
+              "Ben Böhmer",
+              "Kölsch",
+              "Rüfüs Du Sol"
+            ],
+            "short_descriptions": [
+              {
+                "value": "HVOB ist ein österreichisches Elektronik-Duo, bekannt für seinen minimalistischen und atmosphärischen Sound.",
+                "languages": [
+                  "de"
+                ]
+              },
+              {
+                "value": "HVOB es un dúo austríaco de música electrónica conocido por su sonido minimalista y atmosférico.",
+                "languages": [
+                  "es"
+                ]
+              },
+              {
+                "value": "HVOB is an Austrian electronic music duo known for their minimal and atmospheric sound.",
+                "languages": [
+                  "en"
+                ]
+              },
+              {
+                "value": "HVOB est un duo autrichien de musique électronique reconnu pour son style minimal et atmosphérique.",
+                "languages": [
+                  "fr"
+                ]
+              }
+            ],
+            "adjectives_for_fans": [
+              "Dedicated",
+              "Eclectic",
+              "Open-Minded",
+              "Passionate"
+            ],
+            "adjectives_for_music": [
+              "Minimalistic",
+              "Atmospheric",
+              "Melodic",
+              "Haunting",
+              "Intricate"
+            ],
+            "lyrical_themes_description": "HVOB's lyrics often explore introspective themes, focusing on emotions, human experiences, and connections with nature, delivered in a poetic and sometimes abstract manner that complements their atmospheric sound.",
+            "adjectives_for_performance_style": [
+              "Immersive",
+              "Intimate",
+              "Dynamic",
+              "Emotive"
+            ],
+            "creative_and_specific_adjectives_for_music": [
+              "Minimal Techno",
+              "Deep House",
+              "Ambient Electronica",
+              "Vocal-Driven",
+              "Atmospheric"
+            ]
+          },
+          "popularity": 0.9673829699388553,
+          "tags": [
+            {
+              "id": "urn:tag:theme:qloo:nature",
+              "name": "Nature",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:samplers",
+              "name": "Samplers",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:ambient_electronica",
+              "name": "Ambient Electronica",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:minimalistic",
+              "name": "Minimalistic",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:obscurity:qloo:4",
+              "name": "4",
+              "type": "urn:tag:obscurity:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:minimal_techno",
+              "name": "Minimal Techno",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:austrian",
+              "name": "Austrian",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:influence:qloo:ambient_electronic",
+              "name": "Ambient Electronic",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:melodic",
+              "name": "Melodic",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:melodic",
+              "name": "Melodic",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:downtempo",
+              "name": "Downtempo",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:introspection",
+              "name": "Introspection",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:deep_house",
+              "name": "Deep House",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:immersive",
+              "name": "Immersive",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:intricate",
+              "name": "Intricate",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:depeche_mode",
+              "name": "Depeche Mode",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:theme:qloo:emotions",
+              "name": "Emotions",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:dynamic",
+              "name": "Dynamic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:minimal",
+              "name": "Minimal",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:emotive",
+              "name": "Emotive",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:synthesizers",
+              "name": "Synthesizers",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:house",
+              "name": "House",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:vocals",
+              "name": "Vocals",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:eclectic",
+              "name": "Eclectic",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:techno",
+              "name": "Techno",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:vocal_driven",
+              "name": "Vocal Driven",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:ambient",
+              "name": "Ambient",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:deep_house",
+              "name": "Deep House",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:massive_attack",
+              "name": "Massive Attack",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:intimate",
+              "name": "Intimate",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:drum_machines",
+              "name": "Drum Machines",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:minimalistic",
+              "name": "Minimalistic",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:open_minded",
+              "name": "Open-Minded",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:deep_house",
+              "name": "Deep House",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:kraftwerk",
+              "name": "Kraftwerk",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:minimal_techno",
+              "name": "Minimal Techno",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:haunting",
+              "name": "Haunting",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:dedicated",
+              "name": "Dedicated",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:human_experience",
+              "name": "Human Experience",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:passionate",
+              "name": "Passionate",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:underworld",
+              "name": "Underworld",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:haunting",
+              "name": "Haunting",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:intricate",
+              "name": "Intricate",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:vocal_driven",
+              "name": "Vocal-Driven",
+              "type": "urn:tag:style:qloo"
+            }
+          ],
+          "query": {
+            "affinity": 0.9385259620235091,
+            "measurements": {
+              "audience_growth": 0
+            }
+          },
+          "disambiguation": "HVOB",
+          "external": {
+            "lastfm": [
+              {
+                "id": "hvob",
+                "listeners": 155301,
+                "scrobbles": 3217158
+              }
+            ],
+            "spotify": [
+              {
+                "id": "6RAx8RRxoHeJIqD2d0EjOa",
+                "verified": true,
+                "followers": 138788,
+                "monthly_listeners": 408018
+              }
+            ],
+            "twitter": [
+              {
+                "id": "hvob_official"
+              }
+            ],
+            "facebook": [
+              {
+                "id": "hvobmusic"
+              }
+            ],
+            "wikidata": [
+              {
+                "id": "q17123599"
+              }
+            ],
+            "instagram": [
+              {
+                "id": "hvob_official"
+              }
+            ],
+            "musicbrainz": [
+              {
+                "id": "9645d671-aafd-44bc-8b1e-1bf9ebdb5336",
+                "artist_type": "Group"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Weval",
+          "entity_id": "2F1A70C5-953B-4146-A0A5-29BF056D369A",
+          "type": "urn:entity",
+          "subtype": "urn:entity:artist",
+          "properties": {
+            "image": {
+              "url": "https://images.qloo.com/i/2F1A70C5-953B-4146-A0A5-29BF056D369A-420x-auto.jpg"
+            },
+            "aliases": [],
+            "members": [
+              "Joppe Molenaar",
+              "Tijmen Zinkhaan"
+            ],
+            "is_group": true,
+            "biography": "Weval was formed in the Netherlands by Joppe Molenaar and Tijmen Zinkhaan, who combined their talents to create a unique electronic sound that blends indie electronic and ambient influences. They gained recognition for their ability to craft immersive and emotive music that resonates with a wide audience. Over time, they have released several albums and singles that showcase their evolving style and commitment to quality production.",
+            "known_for": "Their atmospheric and melodic electronic music that blends organic and synthetic sounds.",
+            "start_year": 2013,
+            "description": "Weval is a Dutch electronic music duo consisting of Joppe Molenaar and Tijmen Zinkhaan. They are recognized for their blend of electronic, indie electronic, and ambient music, creating atmospheric and melodic soundscapes. Their music often incorporates elements of downtempo, chillout, and house, characterized by smooth rhythms and emotive melodies.",
+            "instruments": [
+              "Synthesizers",
+              "Drum Machines",
+              "Samplers"
+            ],
+            "collaborators": [],
+            "influenced_by": [
+              "Bonobo",
+              "Four Tet",
+              "Nicolas Jaar"
+            ],
+            "notable_songs": [
+              "Gimme Some",
+              "Easy",
+              "Over",
+              "The Weight"
+            ],
+            "lyrical_themes": [],
+            "primary_genres": [
+              "Electronic",
+              "Indie Electronic",
+              "Ambient"
+            ],
+            "characteristics": [
+              "Atmospheric",
+              "Melodic",
+              "Smooth",
+              "Emotive",
+              "Innovative"
+            ],
+            "cultural_impact": "Weval has contributed to the contemporary electronic music scene by blending organic and electronic elements, influencing the indie electronic genre and appealing to fans of atmospheric and melodic electronic music.",
+            "obscurity_scale": [
+              "4"
+            ],
+            "secondary_genres": [
+              "Downtempo",
+              "Chillout",
+              "House"
+            ],
+            "associated_brands": [],
+            "genres_influenced": [
+              "Indie Electronic",
+              "Ambient",
+              "Downtempo"
+            ],
+            "performance_style": "Weval's performance style is intimate and immersive, often featuring live electronic instrumentation and a focus on creating a dynamic atmosphere for the audience.",
+            "artists_influenced": [
+              "Maribou State",
+              "Kiasmos"
+            ],
+            "short_descriptions": [
+              {
+                "value": "Weval ist ein niederländisches Elektronik-Duo, das für seinen atmosphärischen und melodischen Sound bekannt ist.",
+                "languages": [
+                  "de"
+                ]
+              },
+              {
+                "value": "Weval is a Dutch electronic music duo known for their atmospheric and melodic sound.",
+                "languages": [
+                  "en"
+                ]
+              },
+              {
+                "value": "Weval es un dúo neerlandés de música electrónica conocido por su sonido atmosférico y melódico.",
+                "languages": [
+                  "es"
+                ]
+              },
+              {
+                "value": "Weval est un duo néerlandais de musique électronique reconnu pour ses sons atmosphériques et mélodiques.",
+                "languages": [
+                  "fr"
+                ]
+              }
+            ],
+            "adjectives_for_fans": [
+              "Dedicated",
+              "Eclectic",
+              "Chill",
+              "Open-Minded"
+            ],
+            "adjectives_for_music": [
+              "Atmospheric",
+              "Melodic",
+              "Smooth",
+              "Emotive",
+              "Innovative"
+            ],
+            "adjectives_for_performance_style": [
+              "Intimate",
+              "Immersive",
+              "Dynamic"
+            ],
+            "creative_and_specific_adjectives_for_music": [
+              "Indie Electronic",
+              "Ambient",
+              "Downtempo",
+              "Chillout",
+              "Melodic"
+            ]
+          },
+          "popularity": 0.9765579432331295,
+          "tags": [
+            {
+              "id": "urn:tag:genre:music:minimal",
+              "name": "Minimal",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:genre:qloo:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:bonobo",
+              "name": "Bonobo",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:melodic",
+              "name": "Melodic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:indie_electronic",
+              "name": "Indie Electronic",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:open_minded",
+              "name": "Open-Minded",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:eclectic",
+              "name": "Eclectic",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:intimate",
+              "name": "Intimate",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:ambient",
+              "name": "Ambient",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:nicolas_jaar",
+              "name": "Nicolas Jaar",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:samplers",
+              "name": "Samplers",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:drum_machines",
+              "name": "Drum Machines",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:house",
+              "name": "House",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:four_tet",
+              "name": "Four Tet",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:ambient",
+              "name": "Ambient",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:dedicated",
+              "name": "Dedicated",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:downtempo",
+              "name": "Downtempo",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:downtempo",
+              "name": "Downtempo",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:downtempo",
+              "name": "Downtempo",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:obscurity:qloo:4",
+              "name": "4",
+              "type": "urn:tag:obscurity:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:ambient",
+              "name": "Ambient",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:immersive",
+              "name": "Immersive",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:indie_electronic",
+              "name": "Indie Electronic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:chill",
+              "name": "Chill",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:smooth",
+              "name": "Smooth",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:melodic",
+              "name": "Melodic",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:indie_electronic",
+              "name": "Indie Electronic",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:melodic",
+              "name": "Melodic",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:innovative",
+              "name": "Innovative",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:chillout",
+              "name": "Chillout",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:dynamic",
+              "name": "Dynamic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:smooth",
+              "name": "Smooth",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:dutch",
+              "name": "Dutch",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:genre:music:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:style:qloo:chillout",
+              "name": "Chillout",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:emotive",
+              "name": "Emotive",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:synthesizers",
+              "name": "Synthesizers",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:emotive",
+              "name": "Emotive",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:innovative",
+              "name": "Innovative",
+              "type": "urn:tag:music:qloo"
+            }
+          ],
+          "query": {
+            "affinity": 0.9379882637325446,
+            "measurements": {
+              "audience_growth": 0
+            }
+          },
+          "disambiguation": "Weval",
+          "external": {
+            "lastfm": [
+              {
+                "id": "weval",
+                "listeners": 253498,
+                "scrobbles": 5409755
+              }
+            ],
+            "spotify": [
+              {
+                "id": "12tZvy2xFpWSkuJ3FsfisZ",
+                "verified": true,
+                "followers": 115365,
+                "monthly_listeners": 473411
+              }
+            ],
+            "twitter": [
+              {
+                "id": "wevalmusic"
+              }
+            ],
+            "facebook": [
+              {
+                "id": "wevalmusic"
+              }
+            ],
+            "wikidata": [
+              {
+                "id": "q65963642"
+              }
+            ],
+            "instagram": [
+              {
+                "id": "weval_"
+              }
+            ],
+            "musicbrainz": [
+              {
+                "id": "cda72260-9583-4fc5-95a2-ce5de94d7c99",
+                "artist_type": "Group"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Max Cooper",
+          "entity_id": "AC064C56-80E2-40AA-B964-5EF32BC8DAB6",
+          "type": "urn:entity",
+          "subtype": "urn:entity:artist",
+          "properties": {
+            "image": {
+              "url": "https://images.qloo.com/i/AC064C56-80E2-40AA-B964-5EF32BC8DAB6-420x-auto.jpg"
+            },
+            "aliases": [],
+            "members": [],
+            "is_group": false,
+            "biography": "Max Cooper was born in Belfast, Northern Ireland, and studied computational biology before fully dedicating himself to music. He began releasing music in the early 2010s and quickly gained recognition for his unique fusion of electronic music with scientific concepts. His background in science heavily influences his work, often reflected in the thematic content and structure of his compositions. Over the years, Cooper has released several acclaimed albums and EPs, performed at major electronic music festivals worldwide, and collaborated with visual artists to create multimedia experiences.",
+            "known_for": "Max Cooper is known for his innovative fusion of electronic music with scientific and philosophical themes, as well as his immersive live audiovisual performances.",
+            "start_year": 2010,
+            "description": "Max Cooper is a British electronic music producer and DJ renowned for blending techno, ambient, and experimental sounds with scientific and philosophical themes. His music often features complex rhythms, lush textures, and emotive melodies, creating immersive auditory experiences. Cooper is also known for integrating visual art and technology into his live performances, enhancing the sensory impact of his shows.",
+            "instruments": [
+              "Synthesizer",
+              "Drum Machine",
+              "Computer"
+            ],
+            "collaborators": [
+              "Kathrin deBoer",
+              "Tom Hodge",
+              "Christian Löffler"
+            ],
+            "influenced_by": [
+              "Aphex Twin",
+              "Brian Eno",
+              "Autechre",
+              "Kraftwerk"
+            ],
+            "notable_songs": [
+              "Order From Chaos",
+              "Repetition",
+              "Trust",
+              "Waves"
+            ],
+            "lyrical_themes": [
+              "Science",
+              "Philosophy",
+              "Nature",
+              "Technology",
+              "Human Emotion"
+            ],
+            "place_of_birth": "Belfast, Belfast, County Antrim,",
+            "primary_genres": [
+              "Electronic",
+              "Techno",
+              "Ambient",
+              "Experimental"
+            ],
+            "characteristics": [
+              "Intricate",
+              "Emotive",
+              "Experimental",
+              "Innovative",
+              "Atmospheric"
+            ],
+            "cultural_impact": "Max Cooper has contributed to the evolution of electronic music by merging scientific themes with emotive techno and ambient soundscapes, influencing a generation of producers and expanding the boundaries of electronic music performance through multimedia integration.",
+            "obscurity_scale": [
+              "4"
+            ],
+            "secondary_genres": [
+              "Minimal Techno",
+              "IDM",
+              "Electronica"
+            ],
+            "associated_brands": [
+              "Ableton",
+              "Native Instruments"
+            ],
+            "genres_influenced": [
+              "Techno",
+              "Ambient",
+              "Experimental Electronic"
+            ],
+            "performance_style": "Max Cooper's performance style is immersive and multimedia-driven, combining live electronic music with synchronized visual art to create a holistic sensory experience.",
+            "artists_influenced": [
+              "Jon Hopkins",
+              "Christian Löffler",
+              "Nils Frahm"
+            ],
+            "short_descriptions": [
+              {
+                "value": "Max Cooper es un productor y DJ británico de música electrónica, famoso por sus composiciones de techno y ambient complejas y emotivas.",
+                "languages": [
+                  "es"
+                ]
+              },
+              {
+                "value": "Max Cooper ist ein britischer Produzent und DJ für elektronische Musik, bekannt für seine komplexen und gefühlvollen Techno- und Ambient-Kompositionen.",
+                "languages": [
+                  "de"
+                ]
+              },
+              {
+                "value": "Max Cooper is a British electronic music producer and DJ known for his intricate and emotive techno and ambient compositions.",
+                "languages": [
+                  "en"
+                ]
+              },
+              {
+                "value": "Max Cooper est un producteur et DJ britannique de musique électronique, reconnu pour ses compositions techno et ambient complexes et émouvantes.",
+                "languages": [
+                  "fr"
+                ]
+              }
+            ],
+            "adjectives_for_fans": [
+              "Intellectual",
+              "Open-Minded",
+              "Appreciative",
+              "Experimental",
+              "Dedicated"
+            ],
+            "adjectives_for_music": [
+              "Intricate",
+              "Emotive",
+              "Atmospheric",
+              "Experimental",
+              "Innovative"
+            ],
+            "lyrical_themes_description": "Max Cooper's lyrics and thematic content often explore scientific concepts, philosophical ideas, the natural world, technology, and human emotions, reflecting his background in computational biology and interest in blending art with science.",
+            "adjectives_for_performance_style": [
+              "Immersive",
+              "Visual",
+              "Experimental",
+              "Dynamic"
+            ],
+            "creative_and_specific_adjectives_for_music": [
+              "Scientific Techno",
+              "Ambient Electronica",
+              "Experimental IDM",
+              "Minimal Techno",
+              "Emotive Soundscape"
+            ]
+          },
+          "popularity": 0.9796053450772991,
+          "tags": [
+            {
+              "id": "urn:tag:style:qloo:minimal_techno",
+              "name": "Minimal Techno",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:idm",
+              "name": "IDM",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:style:qloo:experimental_idm",
+              "name": "Experimental IDM",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:kraftwerk",
+              "name": "Kraftwerk",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:science",
+              "name": "Science",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:dynamic",
+              "name": "Dynamic",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:computer",
+              "name": "Computer",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:visual",
+              "name": "Visual",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:immersive",
+              "name": "Immersive",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:minimal_techno",
+              "name": "Minimal Techno",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:artist:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:technology",
+              "name": "Technology",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:ambient",
+              "name": "Ambient",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:minimal",
+              "name": "Minimal",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:style:qloo:emotive_soundscape",
+              "name": "Emotive Soundscape",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:brian_eno",
+              "name": "Brian Eno",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:autechre",
+              "name": "Autechre",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:emotive",
+              "name": "Emotive",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:ambient_electronica",
+              "name": "Ambient Electronica",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:intellectual",
+              "name": "Intellectual",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:techno",
+              "name": "Techno",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:drum_machine",
+              "name": "Drum Machine",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:synthesizer",
+              "name": "Synthesizer",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:nature",
+              "name": "Nature",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:philosophy",
+              "name": "Philosophy",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:appreciative",
+              "name": "Appreciative",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:intricate",
+              "name": "Intricate",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:electronica",
+              "name": "Electronica",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:aphex_twin",
+              "name": "Aphex Twin",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:obscurity:qloo:4",
+              "name": "4",
+              "type": "urn:tag:obscurity:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:open_minded",
+              "name": "Open-Minded",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:innovative",
+              "name": "Innovative",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:techno",
+              "name": "Techno",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:atmospheric",
+              "name": "Atmospheric",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:experimental_electronic",
+              "name": "Experimental Electronic",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:minimal_techno",
+              "name": "Minimal Techno",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:human_emotion",
+              "name": "Human Emotion",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:scientific_techno",
+              "name": "Scientific Techno",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:ambient",
+              "name": "Ambient",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:dedicated",
+              "name": "Dedicated",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:intricate",
+              "name": "Intricate",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:emotive",
+              "name": "Emotive",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:innovative",
+              "name": "Innovative",
+              "type": "urn:tag:music:qloo"
+            }
+          ],
+          "query": {
+            "affinity": 0.9364649010219112,
+            "measurements": {
+              "audience_growth": 0
+            }
+          },
+          "disambiguation": "Max Cooper",
+          "external": {
+            "lastfm": [
+              {
+                "id": "max%20cooper",
+                "listeners": 281112,
+                "scrobbles": 4839744
+              }
+            ],
+            "spotify": [
+              {
+                "id": "4zKHfLKNaWL2uycELOUWku",
+                "verified": true,
+                "followers": 13,
+                "monthly_listeners": 11
+              },
+              {
+                "id": "0WSSKmoRbxqLf3MnXInQ2J",
+                "verified": true,
+                "followers": 108382,
+                "last_release": 2020,
+                "first_release": 2008,
+                "monthly_listeners": 545518
+              }
+            ],
+            "twitter": [
+              {
+                "id": "maxcoopermax"
+              }
+            ],
+            "facebook": [
+              {
+                "id": "maxcoopermax"
+              }
+            ],
+            "wikidata": [
+              {
+                "id": "q6794665"
+              }
+            ],
+            "instagram": [
+              {
+                "id": "maxcoopermax"
+              }
+            ],
+            "musicbrainz": [
+              {
+                "id": "2d68f237-4e00-424a-a03e-d16993d1da15",
+                "artist_type": "Person"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Alex Banks",
+          "entity_id": "0386B058-CB4E-4F94-953C-1D0F3D34AE87",
+          "type": "urn:entity",
+          "subtype": "urn:entity:artist",
+          "properties": {
+            "image": {
+              "url": "https://images.qloo.com/i/0386B058-CB4E-4F94-953C-1D0F3D34AE87-420x-auto.jpg"
+            },
+            "vocals": "Alex Banks' vocals are characterized by smooth, soulful tones with a focus on emotional expression and clarity. His singing style incorporates elements of contemporary R&B and soul, with a warm timbre and controlled delivery.",
+            "aliases": [],
+            "members": [],
+            "is_group": false,
+            "biography": "Alex Banks grew up in the United States with a passion for music from a young age. Influenced by classic soul and modern R&B artists, he developed a unique style that combines heartfelt lyrics with smooth vocal performances. Banks began his career by releasing singles and EPs that showcased his vocal talent and songwriting skills, gradually building a dedicated fanbase. His music often reflects personal experiences and emotional storytelling, earning him recognition in the contemporary R&B scene.",
+            "known_for": "Known for his smooth, soulful vocals and emotionally resonant songwriting in contemporary R&B and soul music.",
+            "start_year": 2017,
+            "description": "Alex Banks is an American singer-songwriter specializing in R&B and soul music. He is recognized for his smooth vocal delivery and emotionally resonant songwriting, blending elements of contemporary R&B with soul and pop influences. Banks has gained attention for his ability to convey vulnerability and depth through his music, often exploring themes of love, relationships, and personal growth.",
+            "instruments": [
+              "Vocals"
+            ],
+            "collaborators": [],
+            "influenced_by": [
+              "Stevie Wonder",
+              "Marvin Gaye",
+              "D'Angelo",
+              "Maxwell"
+            ],
+            "notable_songs": [
+              "Love You Right",
+              "Good Love",
+              "Come Back"
+            ],
+            "lyrical_themes": [
+              "Love",
+              "Heartbreak",
+              "Self-Reflection",
+              "Growth",
+              "Relationships"
+            ],
+            "primary_genres": [
+              "R&B",
+              "Soul"
+            ],
+            "characteristics": [
+              "Smooth",
+              "Emotional",
+              "Soulful",
+              "Vulnerable",
+              "Expressive"
+            ],
+            "cultural_impact": "Alex Banks has contributed to the contemporary R&B and soul revival, influencing younger audiences with his authentic and heartfelt music, and helping to sustain interest in soulful vocal styles.",
+            "obscurity_scale": [
+              "4"
+            ],
+            "secondary_genres": [
+              "Pop",
+              "Hip Hop"
+            ],
+            "associated_brands": [],
+            "genres_influenced": [
+              "Contemporary R&B",
+              "Neo Soul"
+            ],
+            "performance_style": "Alex Banks performs with an intimate and expressive style, focusing on emotional connection with the audience through soulful vocal delivery and heartfelt stage presence.",
+            "artists_influenced": [],
+            "short_descriptions": [
+              {
+                "value": "Alex Banks ist ein US-amerikanischer R&B- und Soul-Sänger und Songwriter, bekannt für seinen sanften Gesang und gefühlvolle Texte.",
+                "languages": [
+                  "de"
+                ]
+              },
+              {
+                "value": "Alex Banks est un chanteur et auteur-compositeur américain de R&B et soul, reconnu pour sa voix douce et ses paroles touchantes.",
+                "languages": [
+                  "fr"
+                ]
+              },
+              {
+                "value": "Alex Banks is an American R&B and soul singer-songwriter known for his smooth vocals and heartfelt lyrics.",
+                "languages": [
+                  "en"
+                ]
+              },
+              {
+                "value": "Alex Banks es un cantante y compositor estadounidense de R&B y soul, conocido por su voz suave y letras emotivas.",
+                "languages": [
+                  "es"
+                ]
+              }
+            ],
+            "adjectives_for_fans": [
+              "Loyal",
+              "Passionate",
+              "Soulful",
+              "Supportive"
+            ],
+            "adjectives_for_music": [
+              "Smooth",
+              "Soulful",
+              "Emotional",
+              "Contemporary",
+              "Melodic"
+            ],
+            "lyrical_themes_description": "Alex Banks' lyrics often explore themes of love, heartbreak, self-reflection, personal growth, and the complexities of relationships, delivered with emotional honesty and vulnerability.",
+            "adjectives_for_performance_style": [
+              "Intimate",
+              "Expressive",
+              "Soulful"
+            ],
+            "creative_and_specific_adjectives_for_music": [
+              "Contemporary R&B",
+              "Neo Soul",
+              "Soulful Balladry",
+              "Emotive Vocals",
+              "Smooth Groove"
+            ]
+          },
+          "popularity": 0.8488292078721271,
+          "tags": [
+            {
+              "id": "urn:tag:genre:qloo:soul",
+              "name": "Soul",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:relationships",
+              "name": "Relationships",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:obscurity:qloo:4",
+              "name": "4",
+              "type": "urn:tag:obscurity:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:electronica",
+              "name": "Electronica",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:d_angelo",
+              "name": "D'Angelo",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:maxwell",
+              "name": "Maxwell",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:contemporary",
+              "name": "Contemporary",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:neo_soul",
+              "name": "Neo Soul",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:experimental",
+              "name": "Experimental",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:marvin_gaye",
+              "name": "Marvin Gaye",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:soulful",
+              "name": "Soulful",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:loyal",
+              "name": "Loyal",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:idm",
+              "name": "Idm",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:artist:qloo:vulnerable",
+              "name": "Vulnerable",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:passionate",
+              "name": "Passionate",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:pop",
+              "name": "Pop",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:genre:music:electronic",
+              "name": "Electronic",
+              "type": "urn:tag:genre:music"
+            },
+            {
+              "id": "urn:tag:style:qloo:soulful",
+              "name": "Soulful",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:smooth_groove",
+              "name": "Smooth Groove",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:soulful_balladry",
+              "name": "Soulful Balladry",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:growth",
+              "name": "Growth",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:smooth",
+              "name": "Smooth",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:r_b",
+              "name": "R & B",
+              "type": "urn:tag:genre:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:self_reflection",
+              "name": "Self Reflection",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:expressive",
+              "name": "Expressive",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:soulful",
+              "name": "Soulful",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:expressive",
+              "name": "Expressive",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:soulful",
+              "name": "Soulful",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:emotive_vocals",
+              "name": "Emotive Vocals",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:heartbreak",
+              "name": "Heartbreak",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:melodic",
+              "name": "Melodic",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:neo_soul",
+              "name": "Neo Soul",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:subgenre:qloo:hip_hop",
+              "name": "Hip Hop",
+              "type": "urn:tag:subgenre:qloo"
+            },
+            {
+              "id": "urn:tag:artist:qloo:emotional",
+              "name": "Emotional",
+              "type": "urn:tag:artist:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:smooth",
+              "name": "Smooth",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:music:qloo:emotional",
+              "name": "Emotional",
+              "type": "urn:tag:music:qloo"
+            },
+            {
+              "id": "urn:tag:audience:qloo:supportive",
+              "name": "Supportive",
+              "type": "urn:tag:audience:qloo"
+            },
+            {
+              "id": "urn:tag:influence:qloo:contemporary_r_b",
+              "name": "Contemporary R&B",
+              "type": "urn:tag:influence:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:love",
+              "name": "Love",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:intimate",
+              "name": "Intimate",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:style:qloo:contemporary_r_b",
+              "name": "Contemporary R&B",
+              "type": "urn:tag:style:qloo"
+            },
+            {
+              "id": "urn:tag:instrument:qloo:vocals",
+              "name": "Vocals",
+              "type": "urn:tag:instrument:qloo"
+            },
+            {
+              "id": "urn:tag:influenced_by:qloo:stevie_wonder",
+              "name": "Stevie Wonder",
+              "type": "urn:tag:influenced_by:qloo"
+            },
+            {
+              "id": "urn:tag:theme:qloo:self_reflection",
+              "name": "Self-Reflection",
+              "type": "urn:tag:theme:qloo"
+            },
+            {
+              "id": "urn:tag:genre:qloo:r_b",
+              "name": "R&B",
+              "type": "urn:tag:genre:qloo"
+            }
+          ],
+          "query": {
+            "affinity": 0.9364288308746179,
+            "measurements": {
+              "audience_growth": 0
+            }
+          },
+          "disambiguation": "Alex Banks",
+          "external": {
+            "lastfm": [
+              {
+                "id": "alex%20banks",
+                "listeners": 32662,
+                "scrobbles": 342114
+              }
+            ],
+            "spotify": [
+              {
+                "id": "2eQoWrMAVomftJQMFnZ6iE",
+                "verified": true,
+                "followers": 6441,
+                "last_release": 2020,
+                "first_release": 2014,
+                "monthly_listeners": 38428
+              }
+            ],
+            "twitter": [
+              {
+                "id": "alexbanksmusic"
+              }
+            ],
+            "instagram": [
+              {
+                "id": "alexbanksmusic"
+              }
+            ],
+            "musicbrainz": [
+              {
+                "id": "1159b5d1-ebaa-4c95-ad3d-12b2f11153bc",
+                "artist_type": "Person"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

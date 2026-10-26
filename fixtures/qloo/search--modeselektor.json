@@ -1,0 +1,425 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Modeselektor",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T06:08:43.369Z",
+  "latencyMs": 334,
+  "body": {
+    "results": [
+      {
+        "name": "Modeselektor",
+        "entity_id": "2E869AD9-26C3-42BC-BEDF-8C20FA178765",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "mdslktr"
+            },
+            "instagram": {
+              "id": "modeselektor_berlin"
+            },
+            "lastfm": {
+              "id": "modeselektor",
+              "listeners": 588593,
+              "scrobbles": 11986108
+            },
+            "musicbrainz": {
+              "id": "8a7a4e72-a099-425f-8238-80706fc1c746"
+            },
+            "spotify": {
+              "id": "2jYMYP2SVifgmzNRQJx3SJ"
+            },
+            "twitter": {
+              "id": "modeselektor"
+            },
+            "wikidata": {
+              "id": "q829725"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/2E869AD9-26C3-42BC-BEDF-8C20FA178765-420x-auto.jpg"
+          },
+          "short_description": "Modeselektor is a German electronic music duo known for their eclectic and experimental approach to techno and electronic music."
+        },
+        "popularity": 0.9943490626191336,
+        "disambiguation": "Modeselektor",
+        "tags": [
+          {
+            "name": "Idm",
+            "tag_id": "urn:tag:genre:idm",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:idm"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:electronic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronic"
+          },
+          {
+            "name": "Techno",
+            "tag_id": "urn:tag:genre:techno",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:techno"
+          },
+          {
+            "name": "Electro",
+            "tag_id": "urn:tag:genre:electro",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electro"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:audience:qloo:experimental",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:experimental"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:audience:qloo:energetic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:energetic"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:music:qloo:eclectic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:eclectic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:music:qloo:experimental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:experimental"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:music:qloo:energetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:energetic"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:music:qloo:dynamic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:dynamic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:style:qloo:innovative",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:innovative"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:characteristic:qloo:eclectic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:eclectic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:characteristic:qloo:experimental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:experimental"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:characteristic:qloo:dynamic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:dynamic"
+          },
+          {
+            "name": "Glitchy",
+            "tag_id": "urn:tag:style:qloo:glitchy",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:glitchy"
+          },
+          {
+            "name": "Bass-Heavy",
+            "tag_id": "urn:tag:style:qloo:bass_heavy",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:bass_heavy"
+          },
+          {
+            "name": "Techno-Infused",
+            "tag_id": "urn:tag:style:qloo:techno_infused",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:techno_infused"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:style:qloo:experimental",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental"
+          },
+          {
+            "name": "Avant-Garde",
+            "tag_id": "urn:tag:style:qloo:avant_garde",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:avant_garde"
+          },
+          {
+            "name": "Glitch",
+            "tag_id": "urn:tag:influence:qloo:glitch",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:glitch"
+          },
+          {
+            "name": "Experimental Electronic",
+            "tag_id": "urn:tag:influence:qloo:experimental_electronic",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:experimental_electronic"
+          },
+          {
+            "name": "Techno",
+            "tag_id": "urn:tag:influence:qloo:techno",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:techno"
+          },
+          {
+            "name": "IDM",
+            "tag_id": "urn:tag:influence:qloo:idm",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:idm"
+          },
+          {
+            "name": "Aphex Twin",
+            "tag_id": "urn:tag:influenced_by:qloo:aphex_twin",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:aphex_twin"
+          },
+          {
+            "name": "Autechre",
+            "tag_id": "urn:tag:influenced_by:qloo:autechre",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:autechre"
+          },
+          {
+            "name": "The Prodigy",
+            "tag_id": "urn:tag:influenced_by:qloo:the_prodigy",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:the_prodigy"
+          },
+          {
+            "name": "Daft Punk",
+            "tag_id": "urn:tag:influenced_by:qloo:daft_punk",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:daft_punk"
+          },
+          {
+            "name": "Synthesizers",
+            "tag_id": "urn:tag:instrument:qloo:synthesizers",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizers"
+          },
+          {
+            "name": "Drum Machines",
+            "tag_id": "urn:tag:instrument:qloo:drum_machines",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drum_machines"
+          },
+          {
+            "name": "Samplers",
+            "tag_id": "urn:tag:instrument:qloo:samplers",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:samplers"
+          },
+          {
+            "name": "Sequencers",
+            "tag_id": "urn:tag:instrument:qloo:sequencers",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:sequencers"
+          },
+          {
+            "name": "Technology",
+            "tag_id": "urn:tag:theme:qloo:technology",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:technology"
+          },
+          {
+            "name": "Urban Life",
+            "tag_id": "urn:tag:theme:qloo:urban_life",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:urban_life"
+          },
+          {
+            "name": "Abstract Concepts",
+            "tag_id": "urn:tag:theme:qloo:abstract_concepts",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:abstract_concepts"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:qloo:electronic",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:electronic"
+          },
+          {
+            "name": "Techno",
+            "tag_id": "urn:tag:genre:qloo:techno",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:techno"
+          },
+          {
+            "name": "Glitch",
+            "tag_id": "urn:tag:genre:qloo:glitch",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:glitch"
+          },
+          {
+            "name": "IDM",
+            "tag_id": "urn:tag:genre:qloo:idm",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:idm"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:genre:qloo:experimental",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:experimental"
+          },
+          {
+            "name": "House",
+            "tag_id": "urn:tag:subgenre:qloo:house",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:house"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:subgenre:qloo:hip_hop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:hip_hop"
+          },
+          {
+            "name": "Bass Music",
+            "tag_id": "urn:tag:subgenre:qloo:bass_music",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:bass_music"
+          }
+        ]
+      },
+      {
+        "name": "Modeselektor, Tommy Cash",
+        "entity_id": "8E5DF19A-CEB6-4F77-BF2F-5D61F1123086",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/8E5DF19A-CEB6-4F77-BF2F-5D61F1123086-420x-auto.jpg"
+          },
+          "short_description": "Modeselektor is an electronic music duo known for experimental beats; Tommy Cash is an avant-garde hip hop artist."
+        },
+        "popularity": 0.22155722965746885,
+        "disambiguation": "Modeselektor, Tommy Cash"
+      },
+      {
+        "name": "Modeselektor with Thom Yorke",
+        "entity_id": "47C0C8AF-8E25-4168-A588-36E93D078651",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/47C0C8AF-8E25-4168-A588-36E93D078651-420x-auto.jpg"
+          },
+          "short_description": "Electronic music collaboration between Modeselektor and Thom Yorke blending experimental and techno styles."
+        },
+        "popularity": 0.2103700604903327,
+        "disambiguation": "Modeselektor with Thom Yorke"
+      },
+      {
+        "name": "Fettes Brot mit Modeselektor",
+        "entity_id": "6F756E19-3DA2-432B-8DCC-1625D10D5EF8",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/6F756E19-3DA2-432B-8DCC-1625D10D5EF8-420x-auto.jpg"
+          },
+          "short_description": "A collaborative music project blending German hip hop and electronic music by Fettes Brot and Modeselektor."
+        },
+        "popularity": 0.6927779333425548,
+        "disambiguation": "Fettes Brot mit Modeselektor"
+      }
+    ]
+  }
+}
