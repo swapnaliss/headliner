@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* global console, process */
 // WCAG 2.2 contrast checker for the token tables in docs/design/design-system.md.
 //
 // Usage:
