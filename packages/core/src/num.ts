@@ -16,7 +16,8 @@ export function isUnitInterval(value: unknown): value is number {
 /** Round half away from zero to `places` decimals, deterministically. */
 export function roundTo(value: number, places: number): number {
   const factor = 10 ** places;
-  return Math.round(value * factor) / factor;
+  const rounded = Math.round(Math.abs(value) * factor) / factor;
+  return value < 0 && rounded !== 0 ? -rounded : rounded;
 }
 
 /** Code-unit string comparison: locale-independent, so ordering is identical everywhere. */

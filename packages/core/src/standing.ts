@@ -1,4 +1,4 @@
-import { isUnitInterval, roundTo, unavailable, type Unavailable } from "./types";
+import { isUnitInterval, roundTo, unavailable, type Unavailable } from "./num";
 
 /** The label users see next to the standing number. It is a popularity rank, not a draw claim. */
 export const STANDING_CAPTION = "Qloo popularity rank";

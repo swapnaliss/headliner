@@ -1,4 +1,4 @@
-import { isUnitInterval, roundTo, unavailable, type Unavailable } from "./types";
+import { isUnitInterval, roundTo, unavailable, type Unavailable } from "./num";
 
 /** Fewer heatmap cells than this is a thin-data city (ADR 0013). */
 export const THIN_DATA_CELLS = 15;

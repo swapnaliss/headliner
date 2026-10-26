@@ -6,17 +6,24 @@ export default tseslint.config(
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
-    files: ["packages/core/**/*.ts"],
+    // Domain core (ADR 0001): pure, no I/O. Source may import only `zod` and itself.
+    files: ["packages/core/src/**/*.ts"],
     rules: {
       "no-restricted-imports": [
         "error",
         {
           patterns: [
-            { group: ["next", "next/*"], message: "packages/core must not import a framework." },
-            { group: ["node:*"], message: "packages/core must not import Node built-ins." },
-            { group: ["pg", "pg/*"], message: "packages/core must not import a database driver." },
+            {
+              regex: "^(?!zod$|\\./)",
+              message: "packages/core may import only zod and itself (no framework, Node built-ins, drivers or SDKs).",
+            },
           ],
         },
+      ],
+      "no-restricted-globals": [
+        "error",
+        { name: "fetch", message: "packages/core does no I/O." },
+        { name: "process", message: "packages/core reads no environment." },
       ],
     },
   },
