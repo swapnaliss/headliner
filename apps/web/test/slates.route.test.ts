@@ -4,7 +4,7 @@ import { GET as health } from "../app/api/health/route";
 import { POST } from "../app/api/slates/route";
 import { fakeTransport, fixtureTransport, post, ROOM, runtimeWith } from "./helpers";
 
-const KEY = ["sk", "test", "0123456789abcdef0123456789abcdef"].join("-"); // assembled so no secret-shaped literal is committed
+const KEY = ["sk", "test"].join("-") + "-" + "ab12".repeat(8); // assembled at runtime: no secret-shaped literal is committed
 const SECRET_UPSTREAM = "UPSTREAM-SECRET-MARKER /srv/qloo/internal/path.ts";
 
 let logs: string[];
