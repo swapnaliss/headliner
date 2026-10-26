@@ -29,3 +29,5 @@ coverage/
 *.mp4
 *.mov
 data/raw/
+test-results/
+playwright-report/

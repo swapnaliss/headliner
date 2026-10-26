@@ -89,7 +89,7 @@ export function ActCard({ result, rankedCount, tiedWithPrevious = false }: ActCa
   const { act } = result;
   const headingId = `act-${act.qlooEntityId.replace(/[^A-Za-z0-9_-]/g, "_")}-name`;
   const noData = result.status === "no-data" || result.fit === null;
-  const reason = result.caveats.find((c) => c.type === "no-data")?.message ?? "Qloo returned nothing usable for this act.";
+  const reason = "Qloo returned nothing usable for this act, so no Fit or Qloo popularity rank is shown.";
   const shown = result.overlapTags.slice(0, 3);
   return (
     <li>
@@ -114,7 +114,8 @@ export function ActCard({ result, rankedCount, tiedWithPrevious = false }: ActCa
         ) : (
           <div className="card-body">
             <div className="stack-sm">
-              <div className="fit" aria-label={`Audience-taste fit ${fmt(result.fit?.value ?? 0, 1)} out of 100`}>
+              <div className="fit">
+                <span className="sr-only">{`Audience-taste fit ${fmt(result.fit?.value ?? 0, 1)} out of 100`}</span>
                 <span className="fit-label" aria-hidden="true">
                   Fit
                 </span>
@@ -158,7 +159,7 @@ export function ActCard({ result, rankedCount, tiedWithPrevious = false }: ActCa
           </div>
         )}
 
-        <CaveatList caveats={noData ? result.caveats.filter((c) => c.type !== "no-data") : result.caveats} />
+        <CaveatList caveats={result.caveats} />
         {result.evidence.length > 0 ? <EvidenceDisclosure name={act.name} evidence={result.evidence} /> : null}
       </article>
     </li>

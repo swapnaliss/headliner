@@ -727,3 +727,16 @@ th.num {
   font-weight: 600;
   margin: 0;
 }
+
+.act-chip[data-locked="true"] {
+  padding-inline: var(--space-4);
+}
+.sample .btn {
+  justify-self: start;
+}
+.table-wrap th[scope="row"] .entity {
+  overflow-wrap: normal;
+}
+table {
+  min-inline-size: 17rem;
+}

@@ -21,7 +21,7 @@ export function SlateView({ slate }: { slate: Slate }) {
             <p className="lead">Ranked by audience-taste fit with your crowd</p>
             <details className="disclosure">
               <summary>
-                Compared with {crowd.length} crowd {crowd.length === 1 ? "act" : "acts"}: show crowd acts
+                Compared with {crowd.length} crowd {crowd.length === 1 ? "act" : "acts"}
               </summary>
               <ul className="chip-row" aria-label="Crowd acts compared">
                 {crowd.map((act) => (
@@ -33,9 +33,11 @@ export function SlateView({ slate }: { slate: Slate }) {
                 ))}
               </ul>
             </details>
-            <p className="field-hint">
-              Fit is the mean Qloo tag score shared between an act&apos;s audience and your crowd, from 0 to 100. Read the rank first: Fit values are often close together.
-            </p>
+            {rankedCount > 0 ? (
+              <p className="field-hint">
+                Fit is the mean Qloo tag score shared between an act&apos;s audience and your crowd, from 0 to 100. Read the rank first: Fit values are often close together.
+              </p>
+            ) : null}
           </div>
 
           {view.close && view.spread !== null ? (
@@ -92,7 +94,7 @@ export function SlateView({ slate }: { slate: Slate }) {
             <section className="panel" aria-labelledby="compare-heading">
               <h2 id="compare-heading">Compare with Qloo popularity rank order</h2>
               <p>{view.differing === 0 ? "The two orders match." : `The orders differ: ${view.differing} of ${view.comparison.length} acts sit in a different position.`}</p>
-              <div className="table-wrap">
+              <div className="table-wrap" role="region" aria-label="Fit position and popularity position table" tabIndex={0}>
                 <table>
                   <caption>Fit position and popularity position for each ranked act</caption>
                   <thead>

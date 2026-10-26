@@ -15,7 +15,7 @@ describe("recorded slate on screen", () => {
     expect(cards).toHaveLength(4);
     const first = within(cards[0] as HTMLElement);
     expect(first.getByLabelText("Rank 1 of 3")).toBeTruthy();
-    expect(first.getByLabelText("Audience-taste fit 60.6 out of 100")).toBeTruthy();
+    expect(first.getByText("Audience-taste fit 60.6 out of 100")).toBeTruthy();
     expect(first.getByText("Qloo popularity rank")).toBeTruthy();
     expect(first.getByText("Below crowd median")).toBeTruthy();
     expect(first.getByText("86.4 of 100 vs crowd median 99.5")).toBeTruthy();

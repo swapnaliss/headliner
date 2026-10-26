@@ -220,7 +220,7 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
 
   return (
     <form className="stack" onSubmit={submit} noValidate aria-label="Room setup">
-      <div className="stack-sm">
+      <div className="stack-sm sample">
         <Button variant="secondary" onClick={fillSample}>
           Fill in the sample room
         </Button>
@@ -312,7 +312,6 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
         <ErrorState
           title="Could not rank these acts"
           message={failure}
-          kept="Your entries are kept."
           headingRef={errorHeadingRef}
           actions={
             <Button variant="secondary" onClick={() => void submit()}>

@@ -14,7 +14,7 @@ export interface ActChipProps {
 /** One typed act in the room form. The chip text is not interactive; the remove control is a button. */
 export function ActChip({ name, listLabel, onRemove, locked = false }: ActChipProps) {
   return (
-    <li className="act-chip">
+    <li className="act-chip" data-locked={locked ? "true" : undefined}>
       <span className="act-chip-name entity" dir="auto">
         <bdi>{name}</bdi>
       </span>
