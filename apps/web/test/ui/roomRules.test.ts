@@ -31,7 +31,7 @@ describe("room rules mirror the shared request schema", () => {
     expect(validateDraft({ city: "Berlin", crowd: ["a", "b", "c"], candidates: ["x", "y"] }).map((p) => p.message)).toEqual(["Add at least 3 candidate acts. You have 2."]);
     expect(disabledReason({ city: "Berlin", crowd: ["a", "b", "c"], candidates: ["x"] })).toBe("Add 2 more candidate acts to continue.");
     expect(disabledReason({ city: "", crowd: [], candidates: [] })).toBe("Add a city, at least 3 crowd acts and at least 3 candidate acts to continue.");
-    expect(disabledReason({ city: "Berlin", crowd: ["a"], candidates: ["x"] })).toBe("Add 2 more crowd acts to continue.");
+    expect(disabledReason({ city: "Berlin", crowd: ["a"], candidates: ["x", "y", "z"] })).toBe("Add 2 more crowd acts to continue.");
     expect(disabledReason({ city: "Berlin", crowd: ["a", "b", "c"], candidates: ["x", "y", "z"] })).toBeNull();
   });
 });
