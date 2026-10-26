@@ -7,10 +7,10 @@ import type { StandingResult } from "./standing";
 import type { Caveat } from "./types";
 
 /**
- * Match confidence below this raises `low-match-confidence`. Provisional: M2-01 owns how
+ * Match confidence below this raises `low-match-confidence`: 1 = one exact top hit, 0.5 = the user chose among several (MATCH_CONFIDENCE in matching.ts). M2-01 owns how
  * confidence is derived and may revise the value (ADR 0013 does not define it).
  */
-export const LOW_MATCH_CONFIDENCE = 0.5;
+export const LOW_MATCH_CONFIDENCE = 0.75;
 
 const NO_DATA_WORDING: Readonly<Record<FitUnavailableReason, string>> = {
   "no-shared-tags": "Qloo returned no shared audience tags for this act, so no audience-taste fit is shown.",
@@ -22,7 +22,7 @@ const NO_DATA_WORDING: Readonly<Record<FitUnavailableReason, string>> = {
 export const CAVEAT_WORDING = {
   "single-tag-overlap": "Only one shared audience tag was found, so the overlap with the regular crowd is very thin.",
   "standing-unavailable": "Qloo popularity rank is unavailable for this act or the crowd, so no standing comparison is shown.",
-  "low-match-confidence": "The match to a Qloo entity has low confidence. Check the matched name before relying on this result.",
+  "low-match-confidence": "You chose this match among several Qloo results. Check the matched name before relying on this result.",
   "thin-data": `Fewer than ${THIN_DATA_CELLS} Qloo heatmap cells back this city, so its strength is thin data.`,
   "city-no-data": "Qloo returned no usable heatmap cells for this city, so no city strength is shown.",
 } as const;

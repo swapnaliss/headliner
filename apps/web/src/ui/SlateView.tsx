@@ -57,6 +57,27 @@ export function SlateView({ slate }: { slate: Slate }) {
             </p>
           ) : null}
 
+          {slate.notes.length > 0 ? (
+            <ul className="stack-sm" aria-label="Notes about your entries" data-testid="slate-notes">
+              {slate.notes.map((note, index) => (
+                <li key={`${note.type}-${index}`} className="note" data-tone="neutral">
+                  <Icon name="info" />
+                  <span>
+                    {note.subject ? (
+                      <>
+                        <bdi className="entity" dir="auto">
+                          {note.subject}
+                        </bdi>
+                        :{" "}
+                      </>
+                    ) : null}
+                    {note.message}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+
           {rankedCount > 0 ? (
             <section className="stack" aria-labelledby="ranked-heading">
               <h2 id="ranked-heading">Ranked acts ({rankedCount})</h2>

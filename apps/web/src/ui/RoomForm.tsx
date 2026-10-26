@@ -7,17 +7,12 @@ import { SAMPLE_ROOM } from "../sampleRoom";
 import { ActChip } from "./ActChip";
 import { Button } from "./Button";
 import { ErrorState } from "./ErrorState";
-import { Icon } from "./Icon";
 import { ProgressStatus } from "./ProgressStatus";
 import { SkeletonList } from "./SkeletonCard";
 import { TextField } from "./TextField";
 import { isolate } from "./text";
 
-type Phase = "idle" | "submitting" | "error" | "awaiting";
-
-interface AwaitingNotice {
-  count: number;
-}
+type Phase = "idle" | "submitting" | "error";
 
 /** Client wall-clock cap on one request; the route allows 60 s (ADR 0004). */
 const REQUEST_TIMEOUT_MS = 65_000;
@@ -45,13 +40,11 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
   const [problems, setProblems] = useState<FieldProblem[]>([]);
   const [phase, setPhase] = useState<Phase>("idle");
   const [failure, setFailure] = useState<string>("");
-  const [awaiting, setAwaiting] = useState<AwaitingNotice | null>(null);
   const [message, setMessage] = useState("");
   const [seconds, setSeconds] = useState(0);
 
   const summaryRef = useRef<HTMLDivElement>(null);
   const errorHeadingRef = useRef<HTMLHeadingElement>(null);
-  const awaitingRef = useRef<HTMLHeadingElement>(null);
   const crowdInputRef = useRef<HTMLInputElement>(null);
   const candidateInputRef = useRef<HTMLInputElement>(null);
   const pendingFocus = useRef<{ kind: ListKind; index: number } | null>(null);
@@ -86,7 +79,6 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
 
   useEffect(() => {
     if (phase === "error") errorHeadingRef.current?.focus();
-    if (phase === "awaiting") awaitingRef.current?.focus();
   }, [phase]);
 
   useEffect(() => () => abortRef.current?.abort(), []);
@@ -171,7 +163,6 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
       return;
     }
     setPhase("submitting");
-    setAwaiting(null);
     setMessage(`Ranking ${candidates.length} ${candidates.length === 1 ? "act" : "acts"} for ${isolate(city.trim())}. The first run can take up to a minute.`);
     const controller = new AbortController();
     abortRef.current = controller;
@@ -189,15 +180,15 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
         setPhase("error");
         return;
       }
-      const result = body as { status?: string; id?: string; ambiguous?: unknown[] };
+      const result = body as { status?: string; id?: string; runId?: string };
       if (result.status === "done" && typeof result.id === "string" && /^[A-Za-z0-9_-]{21}$/.test(result.id)) {
         setMessage("Slate ready. Opening it now.");
         router.push(`/slates/${encodeURIComponent(result.id)}`);
         return;
       }
-      if (result.status === "awaiting_confirmation") {
-        setAwaiting({ count: Array.isArray(result.ambiguous) ? result.ambiguous.length : 0 });
-        setPhase("awaiting");
+      if (result.status === "awaiting_confirmation" && typeof result.runId === "string" && /^[A-Za-z0-9_-]{21}$/.test(result.runId)) {
+        setMessage("Some names need your confirmation. Opening the match screen.");
+        router.push(`/run/${encodeURIComponent(result.runId)}/confirm`);
         return;
       }
       setFailure(GENERIC_FAILURE);
@@ -319,21 +310,6 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
             </Button>
           }
         />
-      ) : null}
-
-      {phase === "awaiting" && awaiting ? (
-        <section className="state" data-tone="neutral" role="status">
-          <div className="state-head">
-            <Icon name="info" />
-            <h2 ref={awaitingRef} tabIndex={-1}>
-              Some matches need confirmation
-            </h2>
-          </div>
-          <p>
-            {awaiting.count === 1 ? "One name matches" : `${awaiting.count} names match`} more than one Qloo artist. Choosing between matches is not available yet in this version. Rename
-            the act (for example add the band name in full) or remove it, then rank again.
-          </p>
-        </section>
       ) : null}
 
       {busy ? (
