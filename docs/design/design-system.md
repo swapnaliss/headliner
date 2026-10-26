@@ -15,7 +15,7 @@ Rules:
 - Body text and any text in a component: 4.5:1 minimum. Large text, icons that carry meaning, input borders, focus ring, bar fills: 3:1 minimum. Every pairing used by a component is in the tables below; adding a new pairing means adding a row and running the script.
 - Status is never colour alone. Every status has an icon (shape differs per status) and a text label (see section 7). The colours below only reinforce.
 - Standing ("Qloo popularity rank") uses the neutral status colours only. Above, similar and below are not good or bad, and the glyphs are not arrows, because arrows read as a trend and the trending data in this environment is flat.
-- Disabled controls are exempt from WCAG contrast but are still kept legible (muted text on sunken), and the reason for a disabled action is always written next to it (see components.md, Button).
+- Disabled controls are exempt from WCAG contrast, but this project does not use the exemption for the primary button: its text (`--text-muted`) and its solid border (`--border-control`) on `--sunken` are in the contrast tables and meet AA (4.5:1 text, 3:1 border). The reason for a disabled action is always written next to it (see components.md, Button).
 - Skeleton fills and decorative hairlines (`--border-subtle`) carry no information and are exempt; they are never the only cue for anything.
 
 ### Token reference
@@ -56,6 +56,8 @@ Table format read by `scripts/check-contrast.mjs`: columns `Pair`, `Foreground`,
 | light: text-muted on surface | `#55524D` | `#FFFFFF` | 4.5 | 7.77 |
 | light: text-muted on sunken | `#55524D` | `#F0EEE8` | 4.5 | 6.70 |
 | light: placeholder (text-muted) on surface | `#55524D` | `#FFFFFF` | 4.5 | 7.77 |
+| light: disabled primary button text (text-muted) on sunken | `#55524D` | `#F0EEE8` | 4.5 | 6.70 |
+| light: disabled primary button border (border-control) on sunken | `#6B675F` | `#F0EEE8` | 3 | 4.85 |
 | light: link on canvas | `#0B5CAD` | `#FAF9F6` | 4.5 | 6.33 |
 | light: link on surface | `#0B5CAD` | `#FFFFFF` | 4.5 | 6.66 |
 | light: link on banner | `#0B5CAD` | `#FFF4D6` | 4.5 | 6.08 |
@@ -111,6 +113,8 @@ Table format read by `scripts/check-contrast.mjs`: columns `Pair`, `Foreground`,
 | dark: text-muted on surface | `#B0ABA2` | `#1D1C1A` | 4.5 | 7.45 |
 | dark: text-muted on sunken | `#B0ABA2` | `#0E0D0C` | 4.5 | 8.49 |
 | dark: placeholder (text-muted) on surface | `#B0ABA2` | `#1D1C1A` | 4.5 | 7.45 |
+| dark: disabled primary button text (text-muted) on sunken | `#B0ABA2` | `#0E0D0C` | 4.5 | 8.49 |
+| dark: disabled primary button border (border-control) on sunken | `#8A857B` | `#0E0D0C` | 3 | 5.29 |
 | dark: link on canvas | `#7FB6F0` | `#141311` | 4.5 | 8.71 |
 | dark: link on surface | `#7FB6F0` | `#1D1C1A` | 4.5 | 7.98 |
 | dark: link on banner | `#7FB6F0` | `#3A2F10` | 4.5 | 6.18 |
