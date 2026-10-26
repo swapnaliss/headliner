@@ -8,10 +8,9 @@ import {
   computeCityStrength,
   computeFit,
   computeStanding,
-  rankByFit,
   type CompareTag,
   type HeatmapCell,
-} from "../packages/core/src/scoring";
+} from "../packages/core/src";
 
 const DIR = join(dirname(fileURLToPath(import.meta.url)), "..", "fixtures", "qloo");
 
@@ -58,9 +57,10 @@ console.log(`crowd (${crowd.length} acts, one list compare per candidate): ${cro
 console.log(`candidates (${candidates.length}): ${candidates.map((c) => c.hit.name).join(", ")}`);
 console.log("");
 
-const ranked = rankByFit(
-  candidates.map((c) => ({ entityId: c.hit.entity_id, name: c.hit.name, fit: computeFit(c.body.results.tags) })),
-);
+const ranked = candidates
+  .map((c) => ({ entityId: c.hit.entity_id, name: c.hit.name, fit: computeFit(c.body.results.tags) }))
+  .sort((a, b) => (b.fit.status === "ok" ? b.fit.fit : -1) - (a.fit.status === "ok" ? a.fit.fit : -1) || (a.name < b.name ? -1 : 1))
+  .map((r, index) => ({ ...r, rank: index + 1 }));
 console.log("## Fit and standing");
 console.log(
   [pad("rank", 5), pad("candidate", 14), pad("fit", 6), pad("tags", 6), pad("standing", 22), "alt: max / mean / raw"].join(" "),

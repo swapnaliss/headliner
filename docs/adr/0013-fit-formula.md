@@ -3,7 +3,7 @@
 Status: Accepted (2026-10-26, M0-03; owner approval at the M0 gate)
 
 ## Context
-The hero number needs a documented, deterministic, checkable definition. Fit is computed by code from fields in recorded Qloo responses; the LLM never computes or invents it, it only phrases fields from the Slate (ADR 0009). The functions are pure TypeScript in `packages/core/src/scoring/` (no framework, no I/O); M1-02 hardens them. The prototype tests are `packages/core/test/scoring.test.ts`; the recorded-data check is `scripts/fit-sanity.ts`.
+The hero number needs a documented, deterministic, checkable definition. Fit is computed by code from fields in recorded Qloo responses; the LLM never computes or invents it, it only phrases fields from the Slate (ADR 0009). The functions are pure TypeScript in `packages/core/src/` (no framework, no I/O), hardened in M1-02. The tests are `packages/core/test/*.test.ts`; the recorded-data check is `scripts/fit-sanity.ts`.
 
 ## Words allowed in the product
 "Audience-taste fit" (short form "Fit") and "Qloo popularity rank". Fit is aggregate affinity between a candidate's audience tastes and the venue's regular crowd. It is not a ticket forecast and says nothing about sales, attendance or capacity; the banner "aggregate affinity, not a ticket forecast" appears on every screen. Words that imply prediction are never used as a claim.
@@ -32,7 +32,7 @@ Input: heatmap cells `results.heatmap[].query.affinity_rank` (0..1). Cell count 
 ### 4. Ranking
 Candidates are ordered by Fit descending, then name, then entity id (code-unit order, locale-independent). Ties get distinct, stable positions. Candidates with no Fit follow all scored ones in the same order. A repeated entity id (case-insensitive) is kept once.
 
-### 5. Edge cases (each has a named test in `scoring.test.ts`)
+### 5. Edge cases (each has a named test in `packages/core/test/`)
 | Case | Behaviour |
 |---|---|
 | Empty or missing tags | `unavailable: no-shared-tags`, never 0 |
