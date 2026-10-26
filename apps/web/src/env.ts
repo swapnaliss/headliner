@@ -12,10 +12,12 @@ const liveSchema = z.object({
 
 const fixturesSchema = z.object({
   DEMO_MODE: z.literal("fixtures"),
+  // Optional here: fixtures mode runs with no database. Required only in live mode.
+  DATABASE_URL: z.string().min(1).optional(),
 });
 
 export type Env =
-  | { mode: "fixtures" }
+  | { mode: "fixtures"; databaseUrl?: string }
   | {
       mode: "live";
       qlooApiKey: string;
@@ -32,8 +34,13 @@ export function demoMode(source: Record<string, string | undefined> = process.en
 
 export function loadEnv(source: Record<string, string | undefined> = process.env): Env {
   if (demoMode(source) === "fixtures") {
-    fixturesSchema.parse({ DEMO_MODE: "fixtures" });
-    return { mode: "fixtures" };
+    const fixtures = fixturesSchema.parse({
+      DEMO_MODE: "fixtures",
+      DATABASE_URL: source["DATABASE_URL"] || undefined,
+    });
+    return fixtures.DATABASE_URL === undefined
+      ? { mode: "fixtures" }
+      : { mode: "fixtures", databaseUrl: fixtures.DATABASE_URL };
   }
   const live = liveSchema.parse({
     DEMO_MODE: "live",

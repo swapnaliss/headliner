@@ -5,6 +5,9 @@ describe("env", () => {
   it("needs nothing in fixtures mode", () => {
     expect(loadEnv({ DEMO_MODE: "fixtures" })).toEqual({ mode: "fixtures" });
   });
+  it("treats DATABASE_URL as optional in fixtures mode", () => {
+    expect(loadEnv({ DEMO_MODE: "fixtures", DATABASE_URL: "d" })).toEqual({ mode: "fixtures", databaseUrl: "d" });
+  });
   it("defaults to fixtures when DEMO_MODE is absent or unknown", () => {
     expect(demoMode({})).toBe("fixtures");
     expect(demoMode({ DEMO_MODE: "weird" })).toBe("fixtures");
