@@ -1,0 +1,217 @@
+{
+  "endpoint": "/v2/insights",
+  "params": {
+    "filter.location.query": "Jakarta",
+    "filter.type": "urn:heatmap",
+    "signal.interests.entities": "DB342083-22F9-4B2D-B6F4-414AAF35F217"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T06:09:24.184Z",
+  "latencyMs": 1894,
+  "body": {
+    "success": true,
+    "results": {
+      "heatmap": [
+        {
+          "location": {
+            "latitude": -6.182556,
+            "longitude": 106.82556,
+            "geohash": "qqguyf"
+          },
+          "query": {
+            "affinity": 1,
+            "affinity_rank": 0.552467,
+            "popularity": 1,
+            "entity_artist_affinity_rank": 0.552467,
+            "entity_artist_affinity": 1
+          }
+        },
+        {
+          "location": {
+            "latitude": -6.2539673,
+            "longitude": 106.814575,
+            "geohash": "qqguqt"
+          },
+          "query": {
+            "affinity": 0.9166666666666666,
+            "affinity_rank": 0.36546,
+            "popularity": 0.6666666666666666,
+            "entity_artist_affinity_rank": 0.36546,
+            "entity_artist_affinity": 0.9166666666666666
+          }
+        },
+        {
+          "location": {
+            "latitude": -6.215515,
+            "longitude": 106.83655,
+            "geohash": "qqguxh"
+          },
+          "query": {
+            "affinity": 0.8333333333333334,
+            "affinity_rank": 0.358548,
+            "popularity": 0.6666666666666666,
+            "entity_artist_affinity_rank": 0.358548,
+            "entity_artist_affinity": 0.8333333333333334
+          }
+        },
+        {
+          "location": {
+            "latitude": -6.1660767,
+            "longitude": 106.80359,
+            "geohash": "qqguym"
+          },
+          "query": {
+            "affinity": 0.75,
+            "affinity_rank": 0.347817,
+            "popularity": 0.9166666666666666,
+            "entity_artist_affinity_rank": 0.347817,
+            "entity_artist_affinity": 0.75
+          }
+        },
+        {
+          "location": {
+            "latitude": -6.2265015,
+            "longitude": 106.82556,
+            "geohash": "qqguwf"
+          },
+          "query": {
+            "affinity": 0.6666666666666666,
+            "affinity_rank": 0.297595,
+            "popularity": 0.6666666666666666,
+            "entity_artist_affinity_rank": 0.297595,
+            "entity_artist_affinity": 0.6666666666666666
+          }
+        },
+        {
+          "location": {
+            "latitude": -6.210022,
+            "longitude": 106.814575,
+            "geohash": "qqguwt"
+          },
+          "query": {
+            "affinity": 0.5833333333333334,
+            "affinity_rank": 0.25945,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.25945,
+            "entity_artist_affinity": 0.5833333333333334
+          }
+        },
+        {
+          "location": {
+            "latitude": -6.1880493,
+            "longitude": 106.82556,
+            "geohash": "qqguyc"
+          },
+          "query": {
+            "affinity": 0.5,
+            "affinity_rank": 0.256197,
+            "popularity": 0.5,
+            "entity_artist_affinity_rank": 0.256197,
+            "entity_artist_affinity": 0.5
+          }
+        },
+        {
+          "location": {
+            "latitude": -6.1880493,
+            "longitude": 106.83655,
+            "geohash": "qqguz1"
+          },
+          "query": {
+            "affinity": 0.4166666666666667,
+            "affinity_rank": 0.235027,
+            "popularity": 0.4166666666666667,
+            "entity_artist_affinity_rank": 0.235027,
+            "entity_artist_affinity": 0.4166666666666667
+          }
+        },
+        {
+          "location": {
+            "latitude": -6.2265015,
+            "longitude": 106.814575,
+            "geohash": "qqguwd"
+          },
+          "query": {
+            "affinity": 0.3333333333333333,
+            "affinity_rank": 0.227127,
+            "popularity": 0.5,
+            "entity_artist_affinity_rank": 0.227127,
+            "entity_artist_affinity": 0.3333333333333333
+          }
+        },
+        {
+          "location": {
+            "latitude": -6.270447,
+            "longitude": 106.80359,
+            "geohash": "qqguq6"
+          },
+          "query": {
+            "affinity": 0.25,
+            "affinity_rank": 0.194423,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.194423,
+            "entity_artist_affinity": 0.25
+          }
+        },
+        {
+          "location": {
+            "latitude": -6.2210083,
+            "longitude": 106.80359,
+            "geohash": "qqguw7"
+          },
+          "query": {
+            "affinity": 0.16666666666666666,
+            "affinity_rank": 0.178218,
+            "popularity": 0.3333333333333333,
+            "entity_artist_affinity_rank": 0.178218,
+            "entity_artist_affinity": 0.16666666666666666
+          }
+        },
+        {
+          "location": {
+            "latitude": -6.177063,
+            "longitude": 106.82556,
+            "geohash": "qqguyg"
+          },
+          "query": {
+            "affinity": 0.08333333333333333,
+            "affinity_rank": 0.177381,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.177381,
+            "entity_artist_affinity": 0.08333333333333333
+          }
+        },
+        {
+          "location": {
+            "latitude": -6.1935425,
+            "longitude": 106.82556,
+            "geohash": "qqguyb"
+          },
+          "query": {
+            "affinity": 0,
+            "affinity_rank": 0.143024,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.143024,
+            "entity_artist_affinity": 0
+          }
+        }
+      ]
+    },
+    "query": {
+      "localities": {
+        "filter": [
+          {
+            "entity_id": "A59B2C71-B949-458E-BEAD-6AD6FBCA35B8",
+            "name": "Special capital Region of Jakarta",
+            "subtype": "urn:entity:locality",
+            "location": {
+              "lat": -5.628326176282531,
+              "lon": 106.68211921154341
+            },
+            "popularity": 0.999909,
+            "disambiguation": "Special capital Region of Jakarta, Java, Indonesia"
+          }
+        ]
+      }
+    }
+  }
+}

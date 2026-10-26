@@ -1,0 +1,379 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Khruangbin",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T06:08:44.769Z",
+  "latencyMs": 314,
+  "body": {
+    "results": [
+      {
+        "name": "Khruangbin",
+        "entity_id": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "khruangbin"
+            },
+            "instagram": {
+              "id": "khruangbin"
+            },
+            "lastfm": {
+              "id": "khruangbin",
+              "listeners": 900728,
+              "scrobbles": 36652855
+            },
+            "musicbrainz": {
+              "id": "aea4c9b9-9f8d-49dc-b2ca-57d6f26e8634"
+            },
+            "spotify": {
+              "id": "2mVVjNmdjXZZDvhgQWiakk"
+            },
+            "twitter": {
+              "id": "khruangbin"
+            },
+            "wikidata": {
+              "id": "q54555985"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/BAF6317A-DF94-4C90-92AE-63F86560C21B-420x-auto.jpg"
+          },
+          "short_description": "Khruangbin is an American musical trio known for their eclectic blend of global musical influences and instrumental sound."
+        },
+        "popularity": 0.9919334977446856,
+        "disambiguation": "Khruangbin",
+        "tags": [
+          {
+            "name": "Psychedelic",
+            "tag_id": "urn:tag:genre:psychedelic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:psychedelic"
+          },
+          {
+            "name": "Funk",
+            "tag_id": "urn:tag:genre:funk",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:funk"
+          },
+          {
+            "name": "Rock",
+            "tag_id": "urn:tag:genre:rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rock"
+          },
+          {
+            "name": "Psychedelic Rock",
+            "tag_id": "urn:tag:genre:psychedelic_rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:psychedelic_rock"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Laid-Back",
+            "tag_id": "urn:tag:audience:qloo:laid_back",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:laid_back"
+          },
+          {
+            "name": "Adventurous",
+            "tag_id": "urn:tag:audience:qloo:adventurous",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:adventurous"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Groovy",
+            "tag_id": "urn:tag:music:qloo:groovy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:groovy"
+          },
+          {
+            "name": "Psychedelic",
+            "tag_id": "urn:tag:music:qloo:psychedelic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:psychedelic"
+          },
+          {
+            "name": "Funky",
+            "tag_id": "urn:tag:music:qloo:funky",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:funky"
+          },
+          {
+            "name": "Instrumental",
+            "tag_id": "urn:tag:music:qloo:instrumental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:instrumental"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:music:qloo:eclectic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:eclectic"
+          },
+          {
+            "name": "Laid-Back",
+            "tag_id": "urn:tag:style:qloo:laid_back",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:laid_back"
+          },
+          {
+            "name": "Smooth",
+            "tag_id": "urn:tag:style:qloo:smooth",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:smooth"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:style:qloo:atmospheric",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:atmospheric"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:characteristic:qloo:eclectic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:eclectic"
+          },
+          {
+            "name": "Instrumental",
+            "tag_id": "urn:tag:characteristic:qloo:instrumental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:instrumental"
+          },
+          {
+            "name": "Groovy",
+            "tag_id": "urn:tag:characteristic:qloo:groovy",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:groovy"
+          },
+          {
+            "name": "Laid-Back",
+            "tag_id": "urn:tag:characteristic:qloo:laid_back",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:laid_back"
+          },
+          {
+            "name": "Psychedelic",
+            "tag_id": "urn:tag:characteristic:qloo:psychedelic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:psychedelic"
+          },
+          {
+            "name": "Thai Funk",
+            "tag_id": "urn:tag:style:qloo:thai_funk",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:thai_funk"
+          },
+          {
+            "name": "Psychedelic Soul",
+            "tag_id": "urn:tag:style:qloo:psychedelic_soul",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:psychedelic_soul"
+          },
+          {
+            "name": "Instrumental Funk",
+            "tag_id": "urn:tag:style:qloo:instrumental_funk",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:instrumental_funk"
+          },
+          {
+            "name": "World Fusion",
+            "tag_id": "urn:tag:style:qloo:world_fusion",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:world_fusion"
+          },
+          {
+            "name": "Vintage Groove",
+            "tag_id": "urn:tag:style:qloo:vintage_groove",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:vintage_groove"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:influence:qloo:indie_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:indie_rock"
+          },
+          {
+            "name": "Psychedelic Rock",
+            "tag_id": "urn:tag:influence:qloo:psychedelic_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:psychedelic_rock"
+          },
+          {
+            "name": "Funk",
+            "tag_id": "urn:tag:influence:qloo:funk",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:funk"
+          },
+          {
+            "name": "World Music Fusion",
+            "tag_id": "urn:tag:influence:qloo:world_music_fusion",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:world_music_fusion"
+          },
+          {
+            "name": "Thai Funk Artists",
+            "tag_id": "urn:tag:influenced_by:qloo:thai_funk_artists",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:thai_funk_artists"
+          },
+          {
+            "name": "Middle Eastern Music",
+            "tag_id": "urn:tag:influenced_by:qloo:middle_eastern_music",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:middle_eastern_music"
+          },
+          {
+            "name": "Funk",
+            "tag_id": "urn:tag:influenced_by:qloo:funk",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:funk"
+          },
+          {
+            "name": "Soul",
+            "tag_id": "urn:tag:influenced_by:qloo:soul",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:soul"
+          },
+          {
+            "name": "Psychedelic Rock",
+            "tag_id": "urn:tag:influenced_by:qloo:psychedelic_rock",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:psychedelic_rock"
+          },
+          {
+            "name": "Bass Guitar",
+            "tag_id": "urn:tag:instrument:qloo:bass_guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:bass_guitar"
+          },
+          {
+            "name": "Electric Guitar",
+            "tag_id": "urn:tag:instrument:qloo:electric_guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:electric_guitar"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Psychedelic Rock",
+            "tag_id": "urn:tag:genre:qloo:psychedelic_rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:psychedelic_rock"
+          },
+          {
+            "name": "Funk",
+            "tag_id": "urn:tag:genre:qloo:funk",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:funk"
+          },
+          {
+            "name": "Soul",
+            "tag_id": "urn:tag:genre:qloo:soul",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:soul"
+          },
+          {
+            "name": "Instrumental",
+            "tag_id": "urn:tag:genre:qloo:instrumental",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:instrumental"
+          },
+          {
+            "name": "Thai Funk",
+            "tag_id": "urn:tag:subgenre:qloo:thai_funk",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:thai_funk"
+          },
+          {
+            "name": "Surf Rock",
+            "tag_id": "urn:tag:subgenre:qloo:surf_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:surf_rock"
+          },
+          {
+            "name": "Dub",
+            "tag_id": "urn:tag:subgenre:qloo:dub",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:dub"
+          },
+          {
+            "name": "World Music",
+            "tag_id": "urn:tag:subgenre:qloo:world_music",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:world_music"
+          }
+        ]
+      },
+      {
+        "name": "Khruangbin & Leon Bridges",
+        "entity_id": "9446057A-BC4E-468A-BBC7-A3D8F9B70C83",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/9446057A-BC4E-468A-BBC7-A3D8F9B70C83-420x-auto.jpg"
+          },
+          "short_description": "A collaborative musical project blending Khruangbin's psychedelic soul with Leon Bridges' soulful vocals."
+        },
+        "popularity": 0.6103720847067079,
+        "disambiguation": "Khruangbin & Leon Bridges"
+      },
+      {
+        "name": "Khruangbin @ Villain",
+        "entity_id": "B52260DE-8051-48A5-80AC-B78D0A48D12F",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/B52260DE-8051-48A5-80AC-B78D0A48D12F-420x-auto.jpg"
+          },
+          "short_description": "A Texas-based trio known for their eclectic blend of global musical styles and instrumental grooves."
+        },
+        "popularity": 0.19901758031921893,
+        "disambiguation": "Khruangbin @ Villain"
+      }
+    ]
+  }
+}

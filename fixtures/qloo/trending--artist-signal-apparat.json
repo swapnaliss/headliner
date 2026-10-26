@@ -1,0 +1,20 @@
+{
+  "endpoint": "/v2/trending",
+  "params": {
+    "filter.end_date": "2026-10-24",
+    "filter.start_date": "2026-07-24",
+    "filter.type": "urn:entity:artist",
+    "signal.interests.entities": "DB342083-22F9-4B2D-B6F4-414AAF35F217",
+    "take": "10"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T06:09:31.933Z",
+  "latencyMs": 1515,
+  "body": {
+    "success": true,
+    "results": {
+      "trending": []
+    },
+    "duration": 10
+  }
+}

@@ -1,0 +1,1100 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Apparat",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T06:08:42.693Z",
+  "latencyMs": 1634,
+  "body": {
+    "results": [
+      {
+        "name": "Apparat",
+        "entity_id": "DB342083-22F9-4B2D-B6F4-414AAF35F217",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "apparat.official"
+            },
+            "instagram": {
+              "id": "apparat3000"
+            },
+            "lastfm": {
+              "id": "apparat",
+              "listeners": 763352,
+              "scrobbles": 22884525
+            },
+            "musicbrainz": {
+              "id": "dc3dbfc1-f1f1-49c6-9d7c-425fabf3ae12"
+            },
+            "spotify": {
+              "id": "40Ojab0UtVQFjA76qXr8Ot"
+            },
+            "twitter": {
+              "id": "apparatofficial"
+            },
+            "wikidata": {
+              "id": "q620679"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/DB342083-22F9-4B2D-B6F4-414AAF35F217-420x-auto.jpg"
+          },
+          "short_description": "Apparat is the stage name of Sascha Ring, a German electronic musician and producer known for his atmospheric and emotive electronic music."
+        },
+        "popularity": 0.9967072746962832,
+        "disambiguation": "Apparat",
+        "tags": [
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:genre:experimental",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:experimental"
+          },
+          {
+            "name": "Idm",
+            "tag_id": "urn:tag:genre:idm",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:idm"
+          },
+          {
+            "name": "Electronica",
+            "tag_id": "urn:tag:genre:electronica",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronica"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:electronic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronic"
+          },
+          {
+            "name": "Ambient",
+            "tag_id": "urn:tag:genre:ambient",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:ambient"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Appreciative",
+            "tag_id": "urn:tag:audience:qloo:appreciative",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:appreciative"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:music:qloo:atmospheric",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:atmospheric"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:music:qloo:emotive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:emotive"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:music:qloo:experimental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:experimental"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Intricate",
+            "tag_id": "urn:tag:music:qloo:intricate",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:intricate"
+          },
+          {
+            "name": "Intimate",
+            "tag_id": "urn:tag:style:qloo:intimate",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:intimate"
+          },
+          {
+            "name": "Immersive",
+            "tag_id": "urn:tag:style:qloo:immersive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:immersive"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:characteristic:qloo:atmospheric",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:atmospheric"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:characteristic:qloo:emotive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:emotive"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:characteristic:qloo:experimental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:experimental"
+          },
+          {
+            "name": "Intricate",
+            "tag_id": "urn:tag:characteristic:qloo:intricate",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:intricate"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:characteristic:qloo:melodic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:melodic"
+          },
+          {
+            "name": "Ambient Techno",
+            "tag_id": "urn:tag:style:qloo:ambient_techno",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:ambient_techno"
+          },
+          {
+            "name": "Emotive IDM",
+            "tag_id": "urn:tag:style:qloo:emotive_idm",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:emotive_idm"
+          },
+          {
+            "name": "Experimental Downtempo",
+            "tag_id": "urn:tag:style:qloo:experimental_downtempo",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental_downtempo"
+          },
+          {
+            "name": "Melodic Electronica",
+            "tag_id": "urn:tag:style:qloo:melodic_electronica",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:melodic_electronica"
+          },
+          {
+            "name": "Atmospheric Soundscape",
+            "tag_id": "urn:tag:style:qloo:atmospheric_soundscape",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:atmospheric_soundscape"
+          },
+          {
+            "name": "Ambient Techno",
+            "tag_id": "urn:tag:influence:qloo:ambient_techno",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:ambient_techno"
+          },
+          {
+            "name": "IDM",
+            "tag_id": "urn:tag:influence:qloo:idm",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:idm"
+          },
+          {
+            "name": "Experimental Electronic",
+            "tag_id": "urn:tag:influence:qloo:experimental_electronic",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:experimental_electronic"
+          },
+          {
+            "name": "Kraftwerk",
+            "tag_id": "urn:tag:influenced_by:qloo:kraftwerk",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:kraftwerk"
+          },
+          {
+            "name": "Brian Eno",
+            "tag_id": "urn:tag:influenced_by:qloo:brian_eno",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:brian_eno"
+          },
+          {
+            "name": "Aphex Twin",
+            "tag_id": "urn:tag:influenced_by:qloo:aphex_twin",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:aphex_twin"
+          },
+          {
+            "name": "Autechre",
+            "tag_id": "urn:tag:influenced_by:qloo:autechre",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:autechre"
+          },
+          {
+            "name": "Synthesizer",
+            "tag_id": "urn:tag:instrument:qloo:synthesizer",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizer"
+          },
+          {
+            "name": "Drum Machine",
+            "tag_id": "urn:tag:instrument:qloo:drum_machine",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drum_machine"
+          },
+          {
+            "name": "Sampler",
+            "tag_id": "urn:tag:instrument:qloo:sampler",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:sampler"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Emotions",
+            "tag_id": "urn:tag:theme:qloo:emotions",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:emotions"
+          },
+          {
+            "name": "Isolation",
+            "tag_id": "urn:tag:theme:qloo:isolation",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:isolation"
+          },
+          {
+            "name": "Technology",
+            "tag_id": "urn:tag:theme:qloo:technology",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:technology"
+          },
+          {
+            "name": "Human Experience",
+            "tag_id": "urn:tag:theme:qloo:human_experience",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:human_experience"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:qloo:electronic",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:electronic"
+          },
+          {
+            "name": "Ambient",
+            "tag_id": "urn:tag:genre:qloo:ambient",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:ambient"
+          },
+          {
+            "name": "IDM",
+            "tag_id": "urn:tag:genre:qloo:idm",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:idm"
+          },
+          {
+            "name": "Techno",
+            "tag_id": "urn:tag:genre:qloo:techno",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:techno"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:subgenre:qloo:experimental",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:experimental"
+          },
+          {
+            "name": "Downtempo",
+            "tag_id": "urn:tag:subgenre:qloo:downtempo",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:downtempo"
+          },
+          {
+            "name": "Trip Hop",
+            "tag_id": "urn:tag:subgenre:qloo:trip_hop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:trip_hop"
+          }
+        ]
+      },
+      {
+        "name": "Apparatjik",
+        "entity_id": "D003FFA3-B3C7-4E3F-BB05-938346106D6D",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "apparatjik"
+            },
+            "lastfm": {
+              "id": "apparatjik",
+              "listeners": 36733,
+              "scrobbles": 764919
+            },
+            "musicbrainz": {
+              "id": "08f3baa2-9962-4fa7-a8c7-95d64d75d348"
+            },
+            "spotify": {
+              "id": "6hCPvJQpF93r8O6KzW2wyK"
+            },
+            "twitter": {
+              "id": "apparatjik"
+            },
+            "wikidata": {
+              "id": "q620694"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/D003FFA3-B3C7-4E3F-BB05-938346106D6D-420x-auto.jpg"
+          },
+          "short_description": "Apparatjik is a supergroup formed by members of Coldplay, Mew, A-ha, and a producer, known for their experimental and electronic music."
+        },
+        "popularity": 0.9331401331259637,
+        "disambiguation": "Apparatjik",
+        "tags": [
+          {
+            "name": "Dream Pop",
+            "tag_id": "urn:tag:genre:dream_pop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:dream_pop"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:genre:experimental",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:experimental"
+          },
+          {
+            "name": "Dreamy",
+            "tag_id": "urn:tag:genre:dreamy",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:dreamy"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:electronic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronic"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Artistic",
+            "tag_id": "urn:tag:audience:qloo:artistic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:artistic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:audience:qloo:experimental",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:experimental"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:audience:qloo:innovative",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:innovative"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:music:qloo:experimental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:experimental"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:music:qloo:electronic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:electronic"
+          },
+          {
+            "name": "Alternative",
+            "tag_id": "urn:tag:music:qloo:alternative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:alternative"
+          },
+          {
+            "name": "Artistic",
+            "tag_id": "urn:tag:music:qloo:artistic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:artistic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Multimedia",
+            "tag_id": "urn:tag:style:qloo:multimedia",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:multimedia"
+          },
+          {
+            "name": "Avant-Garde",
+            "tag_id": "urn:tag:style:qloo:avant_garde",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:avant_garde"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:style:qloo:innovative",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:innovative"
+          },
+          {
+            "name": "Visual",
+            "tag_id": "urn:tag:style:qloo:visual",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:visual"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:style:qloo:experimental",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:characteristic:qloo:experimental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:experimental"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Multinational",
+            "tag_id": "urn:tag:characteristic:qloo:multinational",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:multinational"
+          },
+          {
+            "name": "Collaborative",
+            "tag_id": "urn:tag:characteristic:qloo:collaborative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:collaborative"
+          },
+          {
+            "name": "Avant-Garde",
+            "tag_id": "urn:tag:characteristic:qloo:avant_garde",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:avant_garde"
+          },
+          {
+            "name": "Experimental Electronic",
+            "tag_id": "urn:tag:style:qloo:experimental_electronic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental_electronic"
+          },
+          {
+            "name": "Alternative Art Rock",
+            "tag_id": "urn:tag:style:qloo:alternative_art_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:alternative_art_rock"
+          },
+          {
+            "name": "Multimedia-Integrated",
+            "tag_id": "urn:tag:style:qloo:multimedia_integrated",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:multimedia_integrated"
+          },
+          {
+            "name": "Avant-Garde Pop",
+            "tag_id": "urn:tag:style:qloo:avant_garde_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:avant_garde_pop"
+          },
+          {
+            "name": "Collaborative Supergroup",
+            "tag_id": "urn:tag:style:qloo:collaborative_supergroup",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:collaborative_supergroup"
+          },
+          {
+            "name": "Experimental Rock",
+            "tag_id": "urn:tag:influence:qloo:experimental_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:experimental_rock"
+          },
+          {
+            "name": "Electronic Rock",
+            "tag_id": "urn:tag:influence:qloo:electronic_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:electronic_rock"
+          },
+          {
+            "name": "Art Rock",
+            "tag_id": "urn:tag:influence:qloo:art_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:art_rock"
+          },
+          {
+            "name": "Radiohead",
+            "tag_id": "urn:tag:influenced_by:qloo:radiohead",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:radiohead"
+          },
+          {
+            "name": "David Bowie",
+            "tag_id": "urn:tag:influenced_by:qloo:david_bowie",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:david_bowie"
+          },
+          {
+            "name": "Brian Eno",
+            "tag_id": "urn:tag:influenced_by:qloo:brian_eno",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:brian_eno"
+          },
+          {
+            "name": "Massive Attack",
+            "tag_id": "urn:tag:influenced_by:qloo:massive_attack",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:massive_attack"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Bass Guitar",
+            "tag_id": "urn:tag:instrument:qloo:bass_guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:bass_guitar"
+          },
+          {
+            "name": "Keyboards",
+            "tag_id": "urn:tag:instrument:qloo:keyboards",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:keyboards"
+          },
+          {
+            "name": "Synthesizers",
+            "tag_id": "urn:tag:instrument:qloo:synthesizers",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizers"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Technology",
+            "tag_id": "urn:tag:theme:qloo:technology",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:technology"
+          },
+          {
+            "name": "Existentialism",
+            "tag_id": "urn:tag:theme:qloo:existentialism",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:existentialism"
+          },
+          {
+            "name": "Human Condition",
+            "tag_id": "urn:tag:theme:qloo:human_condition",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:human_condition"
+          },
+          {
+            "name": "Society",
+            "tag_id": "urn:tag:theme:qloo:society",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:society"
+          },
+          {
+            "name": "Identity",
+            "tag_id": "urn:tag:theme:qloo:identity",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:identity"
+          },
+          {
+            "name": "Alternative Rock",
+            "tag_id": "urn:tag:genre:qloo:alternative_rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:alternative_rock"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:qloo:electronic",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:electronic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:genre:qloo:experimental",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:experimental"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:subgenre:qloo:indie_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:indie_rock"
+          },
+          {
+            "name": "Art Rock",
+            "tag_id": "urn:tag:subgenre:qloo:art_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:art_rock"
+          }
+        ]
+      },
+      {
+        "name": "Apparat Organ Quartet",
+        "entity_id": "A3D1EB67-8AF7-47C0-924E-97D1EAAD1057",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "apparatorganquartet"
+            },
+            "lastfm": {
+              "id": "apparat%20organ%20quartet",
+              "listeners": 38705,
+              "scrobbles": 417745
+            },
+            "musicbrainz": {
+              "id": "24d3c205-7263-4bbf-aa7d-2057298730f2"
+            },
+            "spotify": {
+              "id": "3i5gr85i1BX2ntzmdRWW7W"
+            },
+            "twitter": {
+              "id": "apparatorgan"
+            },
+            "wikidata": {
+              "id": "q2625887"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/A3D1EB67-8AF7-47C0-924E-97D1EAAD1057-420x-auto.jpg"
+          },
+          "short_description": "An Icelandic electronic music group known for their unique blend of vintage organ sounds and electronic music."
+        },
+        "popularity": 0.9255695638825819,
+        "disambiguation": "Apparat Organ Quartet",
+        "tags": [
+          {
+            "name": "Icelandic",
+            "tag_id": "urn:tag:genre:icelandic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:icelandic"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:electronic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:genre:experimental",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:experimental"
+          },
+          {
+            "name": "Iceland",
+            "tag_id": "urn:tag:genre:iceland",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:iceland"
+          },
+          {
+            "name": "Indie",
+            "tag_id": "urn:tag:genre:indie",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:indie"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:music:qloo:atmospheric",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:atmospheric"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:music:qloo:experimental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:experimental"
+          },
+          {
+            "name": "Textured",
+            "tag_id": "urn:tag:music:qloo:textured",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:textured"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:music:qloo:energetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:energetic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:characteristic:qloo:experimental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:experimental"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:characteristic:qloo:atmospheric",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:atmospheric"
+          },
+          {
+            "name": "Textured",
+            "tag_id": "urn:tag:characteristic:qloo:textured",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:textured"
+          },
+          {
+            "name": "Instrumental",
+            "tag_id": "urn:tag:characteristic:qloo:instrumental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:instrumental"
+          },
+          {
+            "name": "Vintage-Organ-Driven",
+            "tag_id": "urn:tag:style:qloo:vintage_organ_driven",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:vintage_organ_driven"
+          },
+          {
+            "name": "Synth-Heavy",
+            "tag_id": "urn:tag:style:qloo:synth_heavy",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:synth_heavy"
+          },
+          {
+            "name": "Ambient-Textured",
+            "tag_id": "urn:tag:style:qloo:ambient_textured",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:ambient_textured"
+          },
+          {
+            "name": "Experimental-Electronic",
+            "tag_id": "urn:tag:style:qloo:experimental_electronic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental_electronic"
+          },
+          {
+            "name": "Post-Rock-Influenced",
+            "tag_id": "urn:tag:style:qloo:post_rock_influenced",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:post_rock_influenced"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:influence:qloo:electronic",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:electronic"
+          },
+          {
+            "name": "Synthpop",
+            "tag_id": "urn:tag:influence:qloo:synthpop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:synthpop"
+          },
+          {
+            "name": "Ambient",
+            "tag_id": "urn:tag:influence:qloo:ambient",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:ambient"
+          },
+          {
+            "name": "Kraftwerk",
+            "tag_id": "urn:tag:influenced_by:qloo:kraftwerk",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:kraftwerk"
+          },
+          {
+            "name": "Jean-Michel Jarre",
+            "tag_id": "urn:tag:influenced_by:qloo:jean_michel_jarre",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:jean_michel_jarre"
+          },
+          {
+            "name": "Tangerine Dream",
+            "tag_id": "urn:tag:influenced_by:qloo:tangerine_dream",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:tangerine_dream"
+          },
+          {
+            "name": "Organ",
+            "tag_id": "urn:tag:instrument:qloo:organ",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:organ"
+          },
+          {
+            "name": "Synthesizer",
+            "tag_id": "urn:tag:instrument:qloo:synthesizer",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizer"
+          },
+          {
+            "name": "Keyboard",
+            "tag_id": "urn:tag:instrument:qloo:keyboard",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:keyboard"
+          },
+          {
+            "name": "Drum Machine",
+            "tag_id": "urn:tag:instrument:qloo:drum_machine",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drum_machine"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:qloo:electronic",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:electronic"
+          },
+          {
+            "name": "Synthpop",
+            "tag_id": "urn:tag:genre:qloo:synthpop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:synthpop"
+          },
+          {
+            "name": "Ambient",
+            "tag_id": "urn:tag:genre:qloo:ambient",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:ambient"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:subgenre:qloo:experimental",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:experimental"
+          },
+          {
+            "name": "Post-Rock",
+            "tag_id": "urn:tag:subgenre:qloo:post_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:post_rock"
+          }
+        ]
+      },
+      {
+        "name": "Apparatschik",
+        "entity_id": "10E0D9AF-2263-442F-AC1D-4DDDA90AB9C7",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "apparatschik",
+              "listeners": 11155,
+              "scrobbles": 125036
+            },
+            "musicbrainz": {
+              "id": "9eec762a-8df7-4a79-a5f6-8362c45238a1"
+            },
+            "spotify": {
+              "id": "7uIDxDntCGcfGMPCzBL18Z"
+            },
+            "wikidata": {
+              "id": "q620697"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/10E0D9AF-2263-442F-AC1D-4DDDA90AB9C7-420x-auto.jpg"
+          },
+          "short_description": ""
+        },
+        "popularity": 0.8169636079632672,
+        "disambiguation": "Apparatschik",
+        "tags": [
+          {
+            "name": "Russian",
+            "tag_id": "urn:tag:genre:russian",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:russian"
+          },
+          {
+            "name": "Folk",
+            "tag_id": "urn:tag:genre:folk",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:folk"
+          },
+          {
+            "name": "Russian Folk",
+            "tag_id": "urn:tag:genre:russian_folk",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:russian_folk"
+          },
+          {
+            "name": "World",
+            "tag_id": "urn:tag:genre:world",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:world"
+          }
+        ]
+      },
+      {
+        "name": "Apparat Hase",
+        "entity_id": "6013B5F9-A3D4-4CB3-AC2A-E53264EC6DE3",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "apparat%20hase",
+              "listeners": 1092,
+              "scrobbles": 5893
+            },
+            "musicbrainz": {
+              "id": "2002b395-8963-4d5d-be09-7f4b78b54a88"
+            },
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/6013B5F9-A3D4-4CB3-AC2A-E53264EC6DE3-420x-auto.jpg"
+          },
+          "short_description": "None"
+        },
+        "popularity": 0.2103700604903327,
+        "disambiguation": "Apparat Hase",
+        "tags": [
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:electronic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronic"
+          },
+          {
+            "name": "Vocal",
+            "tag_id": "urn:tag:genre:vocal",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:vocal"
+          },
+          {
+            "name": "German",
+            "tag_id": "urn:tag:genre:german",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:german"
+          }
+        ]
+      }
+    ]
+  }
+}

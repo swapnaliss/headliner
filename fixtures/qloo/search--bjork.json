@@ -1,0 +1,483 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Björk",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T06:08:47.463Z",
+  "latencyMs": 319,
+  "body": {
+    "results": [
+      {
+        "name": "Björk",
+        "entity_id": "01381184-B533-4E3C-B9DB-43A2FE326744",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "bjork"
+            },
+            "instagram": {
+              "id": "bjork"
+            },
+            "lastfm": {
+              "id": "bj%C3%B6rk",
+              "listeners": 3097083,
+              "scrobbles": 211103078
+            },
+            "musicbrainz": {
+              "id": "87c5dedd-371d-4a53-9f7f-80522fb7f3cb"
+            },
+            "spotify": {
+              "id": "3HDfNAh4MpiptvaJP9We0w"
+            },
+            "twitter": {
+              "id": "bjork"
+            },
+            "wikidata": {
+              "id": "q42455"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/01381184-B533-4E3C-B9DB-43A2FE326744-420x-auto.jpg"
+          },
+          "short_description": "Icelandic singer, songwriter, and producer known for her eclectic musical style and innovative artistry."
+        },
+        "popularity": 0.9996963675437146,
+        "disambiguation": "Björk",
+        "tags": [
+          {
+            "name": "Alternative Rock",
+            "tag_id": "urn:tag:genre:alternative_rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:alternative_rock"
+          },
+          {
+            "name": "Icelandic",
+            "tag_id": "urn:tag:genre:icelandic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:icelandic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:genre:experimental",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:experimental"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:electronic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronic"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Artistic",
+            "tag_id": "urn:tag:audience:qloo:artistic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:artistic"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:music:qloo:experimental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:experimental"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:music:qloo:eclectic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:eclectic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:music:qloo:atmospheric",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:atmospheric"
+          },
+          {
+            "name": "Avant-Garde",
+            "tag_id": "urn:tag:music:qloo:avant_garde",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:avant_garde"
+          },
+          {
+            "name": "Theatrical",
+            "tag_id": "urn:tag:style:qloo:theatrical",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:theatrical"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Avant-Garde",
+            "tag_id": "urn:tag:style:qloo:avant_garde",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:avant_garde"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:style:qloo:innovative",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:innovative"
+          },
+          {
+            "name": "Immersive",
+            "tag_id": "urn:tag:style:qloo:immersive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:immersive"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:characteristic:qloo:eclectic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:eclectic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:characteristic:qloo:experimental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:experimental"
+          },
+          {
+            "name": "Avant-Garde",
+            "tag_id": "urn:tag:characteristic:qloo:avant_garde",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:avant_garde"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:characteristic:qloo:expressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:expressive"
+          },
+          {
+            "name": "Glitchy",
+            "tag_id": "urn:tag:style:qloo:glitchy",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:glitchy"
+          },
+          {
+            "name": "Ethereal",
+            "tag_id": "urn:tag:style:qloo:ethereal",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:ethereal"
+          },
+          {
+            "name": "Avant-Garde",
+            "tag_id": "urn:tag:style:qloo:avant_garde",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:avant_garde"
+          },
+          {
+            "name": "Orchestral",
+            "tag_id": "urn:tag:style:qloo:orchestral",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:orchestral"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:style:qloo:experimental",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:influence:qloo:electronic",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:electronic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:influence:qloo:experimental",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:experimental"
+          },
+          {
+            "name": "Art Pop",
+            "tag_id": "urn:tag:influence:qloo:art_pop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:art_pop"
+          },
+          {
+            "name": "Trip Hop",
+            "tag_id": "urn:tag:influence:qloo:trip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:trip_hop"
+          },
+          {
+            "name": "Kate Bush",
+            "tag_id": "urn:tag:influenced_by:qloo:kate_bush",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:kate_bush"
+          },
+          {
+            "name": "Enya",
+            "tag_id": "urn:tag:influenced_by:qloo:enya",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:enya"
+          },
+          {
+            "name": "Cocteau Twins",
+            "tag_id": "urn:tag:influenced_by:qloo:cocteau_twins",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:cocteau_twins"
+          },
+          {
+            "name": "David Bowie",
+            "tag_id": "urn:tag:influenced_by:qloo:david_bowie",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:david_bowie"
+          },
+          {
+            "name": "PJ Harvey",
+            "tag_id": "urn:tag:influenced_by:qloo:pj_harvey",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:pj_harvey"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Keyboards",
+            "tag_id": "urn:tag:instrument:qloo:keyboards",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:keyboards"
+          },
+          {
+            "name": "Synthesizers",
+            "tag_id": "urn:tag:instrument:qloo:synthesizers",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizers"
+          },
+          {
+            "name": "Piano",
+            "tag_id": "urn:tag:instrument:qloo:piano",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:piano"
+          },
+          {
+            "name": "Sampler",
+            "tag_id": "urn:tag:instrument:qloo:sampler",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:sampler"
+          },
+          {
+            "name": "Nature",
+            "tag_id": "urn:tag:theme:qloo:nature",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:nature"
+          },
+          {
+            "name": "Technology",
+            "tag_id": "urn:tag:theme:qloo:technology",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:technology"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Isolation",
+            "tag_id": "urn:tag:theme:qloo:isolation",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:isolation"
+          },
+          {
+            "name": "Emotions",
+            "tag_id": "urn:tag:theme:qloo:emotions",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:emotions"
+          },
+          {
+            "name": "Alternative",
+            "tag_id": "urn:tag:genre:qloo:alternative",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:alternative"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:qloo:electronic",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:electronic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:genre:qloo:experimental",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:experimental"
+          },
+          {
+            "name": "Art Pop",
+            "tag_id": "urn:tag:genre:qloo:art_pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:art_pop"
+          },
+          {
+            "name": "Trip Hop",
+            "tag_id": "urn:tag:subgenre:qloo:trip_hop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:trip_hop"
+          },
+          {
+            "name": "Avant-Garde",
+            "tag_id": "urn:tag:subgenre:qloo:avant_garde",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:avant_garde"
+          },
+          {
+            "name": "Indie Pop",
+            "tag_id": "urn:tag:subgenre:qloo:indie_pop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:indie_pop"
+          },
+          {
+            "name": "Soprano",
+            "tag_id": "urn:tag:artist:qloo:soprano",
+            "type": "urn:tag:artist:qloo",
+            "value": "urn:tag:artist:qloo:soprano"
+          }
+        ]
+      },
+      {
+        "name": "Björk and The Brodsky Quartet",
+        "entity_id": "F65F1DCE-6AF7-4DB6-82DA-E2820608C208",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/F65F1DCE-6AF7-4DB6-82DA-E2820608C208-420x-auto.jpg"
+          },
+          "short_description": "A collaboration between Icelandic singer Björk and the British Brodsky Quartet blending classical and experimental music."
+        },
+        "popularity": 0.5469129013430676,
+        "disambiguation": "Björk and The Brodsky Quartet"
+      },
+      {
+        "name": "Bjork & Skunk Anansie",
+        "entity_id": "4AEDCCE5-EFA1-4088-A88E-D94376C71FF0",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/4AEDCCE5-EFA1-4088-A88E-D94376C71FF0-420x-auto.jpg"
+          },
+          "short_description": "A collaboration between Icelandic singer Bjork and British rock band Skunk Anansie blending alternative and electronic styles."
+        },
+        "popularity": 0.39224927549922234,
+        "disambiguation": "Bjork & Skunk Anansie"
+      },
+      {
+        "name": "Bjork Guomundsdottir & Trio Guomundar In",
+        "entity_id": "0FFA23EE-1E82-4FE2-910C-C7CCCCFC10E2",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/0FFA23EE-1E82-4FE2-910C-C7CCCCFC10E2-420x-auto.jpg"
+          },
+          "short_description": "Icelandic singer Bjork and Trio Guomundar In blend alternative rock with experimental and electronic music."
+        },
+        "popularity": 0.3761871185617268,
+        "disambiguation": "Bjork Guomundsdottir & Trio Guomundar In"
+      },
+      {
+        "name": "Björk Gu›mundóttir",
+        "entity_id": "A7EBBB32-933A-4452-8EF3-F780FB600D6B",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/A7EBBB32-933A-4452-8EF3-F780FB600D6B-420x-auto.jpg"
+          },
+          "short_description": "Icelandic singer, songwriter, and producer known for her eclectic and innovative music style."
+        },
+        "popularity": 0.24191072531046418,
+        "disambiguation": "Björk Gu›mundóttir"
+      }
+    ]
+  }
+}
