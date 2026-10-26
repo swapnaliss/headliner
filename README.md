@@ -20,8 +20,17 @@ See [docs/architecture.md](docs/architecture.md). Diagram: <!-- M4-01 embeds it 
 - Live demo: <!-- M4-04 fills -->
 - Screenshots: <!-- M4-01 fills -->
 
-## How to run
-<!-- M0-01 writes the zero-key DEMO_MODE=fixtures path; M4-01 finalises -->
+## Run it
+Needs Node 24 or newer. No key, database or LLM is needed in fixtures mode.
+
+```bash
+git clone <this repo> && cd headliner
+npm ci
+DEMO_MODE=fixtures npm run dev     # http://localhost:3000
+npm run check                      # lint, typecheck, test, build
+```
+
+`GET /api/health` returns `{"ok":true,"mode":"fixtures",...}`.
 
 ## Future vision
 <!-- M4-01 fills this -->

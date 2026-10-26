@@ -31,7 +31,7 @@ See [docs/architecture.md](docs/architecture.md).
 |---|---|---|
 | Node.js | 24.22.1 (local) | runtime |
 | Next.js | 16.4.3 (published 2026-10-23) | full-stack app; fall back one minor if the build breaks (30 min time-box) |
-| TypeScript | 7.0.2 (2026-07-08) | types; fall back to 5.x if tooling breaks |
+| TypeScript | 5.9.3 (2025-09-30), fallback taken from 7.0.2 | types; typescript-eslint 8.72.0 does not support 7.x, see `docs/evidence/versions.md` |
 | zod | 4.6.7 (2026-10-12) | shared schemas |
 | drizzle-orm | 0.45.4 (2026-10-08) | migrations and queries |
 | @anthropic-ai/sdk | 1.3.0 (2026-10-23) | intake and explanation |
