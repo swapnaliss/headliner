@@ -4,6 +4,7 @@ export * from "./types";
 export * from "./fit";
 export * from "./standing";
 export * from "./city";
+export * from "./cityStrength";
 export * from "./caveats";
 export * from "./rank";
 export * from "./invariants";

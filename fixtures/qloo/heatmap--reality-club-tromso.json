@@ -1,0 +1,34 @@
+{
+  "endpoint": "/v2/insights",
+  "params": {
+    "filter.location.query": "Tromsø",
+    "filter.type": "urn:heatmap",
+    "signal.interests.entities": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T12:21:22.546Z",
+  "latencyMs": 1725,
+  "body": {
+    "success": true,
+    "results": {
+      "heatmap": []
+    },
+    "query": {
+      "localities": {
+        "filter": [
+          {
+            "entity_id": "D0BAF7EC-8EC7-4563-BE9C-935EA45ABECE",
+            "name": "Tromsø",
+            "subtype": "urn:entity:locality",
+            "location": {
+              "lat": 69.74471220752484,
+              "lon": 18.623383846887965
+            },
+            "popularity": 0.9873897,
+            "disambiguation": "Tromsø, Troms, Northern Norway, Norway"
+          }
+        ]
+      }
+    }
+  }
+}

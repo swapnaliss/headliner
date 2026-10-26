@@ -1,0 +1,147 @@
+{
+  "endpoint": "/v2/insights",
+  "params": {
+    "filter.location.query": "Tromsø",
+    "filter.type": "urn:heatmap",
+    "signal.interests.entities": "BAF6317A-DF94-4C90-92AE-63F86560C21B"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T12:21:53.797Z",
+  "latencyMs": 1766,
+  "body": {
+    "success": true,
+    "results": {
+      "heatmap": [
+        {
+          "location": {
+            "latitude": 69.65057,
+            "longitude": 18.95691,
+            "geohash": "ukmkpr"
+          },
+          "query": {
+            "affinity": 1,
+            "affinity_rank": 0.91175,
+            "popularity": 1,
+            "entity_artist_affinity_rank": 0.91175,
+            "entity_artist_affinity": 1
+          }
+        },
+        {
+          "location": {
+            "latitude": 69.64508,
+            "longitude": 18.945923,
+            "geohash": "ukmkpn"
+          },
+          "query": {
+            "affinity": 0.8571428571428571,
+            "affinity_rank": 0.700722,
+            "popularity": 0.8571428571428571,
+            "entity_artist_affinity_rank": 0.700722,
+            "entity_artist_affinity": 0.8571428571428571
+          }
+        },
+        {
+          "location": {
+            "latitude": 69.64508,
+            "longitude": 18.95691,
+            "geohash": "ukmkpq"
+          },
+          "query": {
+            "affinity": 0.7142857142857143,
+            "affinity_rank": 0.656604,
+            "popularity": 0.7142857142857143,
+            "entity_artist_affinity_rank": 0.656604,
+            "entity_artist_affinity": 0.7142857142857143
+          }
+        },
+        {
+          "location": {
+            "latitude": 69.65057,
+            "longitude": 18.945923,
+            "geohash": "ukmkpp"
+          },
+          "query": {
+            "affinity": 0.5714285714285714,
+            "affinity_rank": 0.643945,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.643945,
+            "entity_artist_affinity": 0.5714285714285714
+          }
+        },
+        {
+          "location": {
+            "latitude": 69.67804,
+            "longitude": 18.912964,
+            "geohash": "ukmkqk"
+          },
+          "query": {
+            "affinity": 0.42857142857142855,
+            "affinity_rank": 0.590663,
+            "popularity": 0.5714285714285714,
+            "entity_artist_affinity_rank": 0.590663,
+            "entity_artist_affinity": 0.42857142857142855
+          }
+        },
+        {
+          "location": {
+            "latitude": 69.65057,
+            "longitude": 18.989868,
+            "geohash": "ukms0p"
+          },
+          "query": {
+            "affinity": 0.2857142857142857,
+            "affinity_rank": 0.53857,
+            "popularity": 0.14285714285714285,
+            "entity_artist_affinity_rank": 0.53857,
+            "entity_artist_affinity": 0.2857142857142857
+          }
+        },
+        {
+          "location": {
+            "latitude": 69.634094,
+            "longitude": 18.023071,
+            "geohash": "ukku4h"
+          },
+          "query": {
+            "affinity": 0.14285714285714285,
+            "affinity_rank": 0.494902,
+            "popularity": 0.14285714285714285,
+            "entity_artist_affinity_rank": 0.494902,
+            "entity_artist_affinity": 0.14285714285714285
+          }
+        },
+        {
+          "location": {
+            "latitude": 69.634094,
+            "longitude": 19.000854,
+            "geohash": "ukms0k"
+          },
+          "query": {
+            "affinity": 0,
+            "affinity_rank": 0.455832,
+            "popularity": 0.14285714285714285,
+            "entity_artist_affinity_rank": 0.455832,
+            "entity_artist_affinity": 0
+          }
+        }
+      ]
+    },
+    "query": {
+      "localities": {
+        "filter": [
+          {
+            "entity_id": "D0BAF7EC-8EC7-4563-BE9C-935EA45ABECE",
+            "name": "Tromsø",
+            "subtype": "urn:entity:locality",
+            "location": {
+              "lat": 69.74471220752484,
+              "lon": 18.623383846887965
+            },
+            "popularity": 0.9873897,
+            "disambiguation": "Tromsø, Troms, Northern Norway, Norway"
+          }
+        ]
+      }
+    }
+  }
+}
