@@ -8,6 +8,13 @@
       "when": 1792994930972,
       "tag": "0000_condemned_bloodstrike",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1793017294506,
+      "tag": "0001_sloppy_marten_broadcloak",
+      "breakpoints": true
     }
   ]
 }

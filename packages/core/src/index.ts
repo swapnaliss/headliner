@@ -9,3 +9,5 @@ export * from "./rank";
 export * from "./invariants";
 export * from "./explain";
 export * from "./request";
+export * from "./matching";
+export * from "./run";

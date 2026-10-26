@@ -23,6 +23,18 @@ export const slates = pgTable(
   (t) => [index("slates_expires_at_idx").on(t.expiresAt)],
 );
 
+/** Runs waiting for entity-match confirmation (M2-01). Short-lived; the json is the core `Run`. */
+export const runs = pgTable(
+  "runs",
+  {
+    id: text("id").primaryKey(),
+    json: jsonb("json").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    expiresAt: timestamp("expires_at", { withTimezone: true }).notNull(),
+  },
+  (t) => [index("runs_expires_at_idx").on(t.expiresAt)],
+);
+
 /** Per-IP daily budgets. ip_hash is a salted hash, never the IP. */
 export const budgets = pgTable(
   "budgets",

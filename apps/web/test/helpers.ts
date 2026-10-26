@@ -10,6 +10,7 @@ import {
   type TransportResponse,
 } from "@headliner/qloo";
 import type { Runtime } from "../src/config";
+import { MemoryRunStore } from "../src/runStore";
 import { MemorySlateStore } from "../src/slateStore";
 
 export const FIXTURE_DIR = resolve(__dirname, "../../../fixtures/qloo");
@@ -45,6 +46,7 @@ export function runtimeWith(transport: QlooTransport, mode: "fixtures" | "live" 
     mode,
     client: createQlooClient({ transport, cache: new InMemoryCacheStore(), sleep: async () => undefined, jitterMs: () => 0 }),
     store: new MemorySlateStore(),
+    runs: new MemoryRunStore(),
     now: () => new Date("2026-10-26T12:00:00.000Z"),
   };
 }

@@ -10,6 +10,7 @@ import {
 } from "@headliner/qloo";
 import { getDb } from "@headliner/slates";
 import { loadEnv } from "./env";
+import { MemoryRunStore, PostgresRunStore, type RunStore } from "./runStore";
 import { MemorySlateStore, PostgresSlateStore, type SlateStore } from "./slateStore";
 
 /**
@@ -21,6 +22,8 @@ export interface Runtime {
   readonly mode: "fixtures" | "live";
   readonly client: QlooClient;
   readonly store: SlateStore;
+  /** Runs awaiting match confirmation (M2-01). */
+  readonly runs: RunStore;
   readonly now: () => Date;
 }
 
@@ -45,6 +48,7 @@ export function buildRuntime(source: Record<string, string | undefined> = proces
       mode: "fixtures",
       client: createQlooClient({ transport: new FixtureTransport(findFixtureDir(source)), cache: new InMemoryCacheStore() }),
       store: new MemorySlateStore(),
+      runs: new MemoryRunStore(),
       now: () => new Date(),
     };
   }
@@ -53,6 +57,7 @@ export function buildRuntime(source: Record<string, string | undefined> = proces
     mode: "live",
     client: createQlooClient({ transport: liveTransportFromEnv(source), cache: new PostgresCacheStore(db) }),
     store: new PostgresSlateStore(db),
+    runs: new PostgresRunStore(db),
     now: () => new Date(),
   };
 }
