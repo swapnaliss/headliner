@@ -13,3 +13,6 @@ Spawning `qloo mcp` or `qloo exec` from the server.
 
 ## Consequences / cost to reverse
 Low: one adapter.
+
+## Update (2026-10-26, M0-04)
+`@qloo/qloo-harness@0.1.26` is importable as an ES module (no `require`) and has an in-process direct executor, but it is a heavy terminal-agent runtime and its result envelope differs from the REST body. Verdict "importable but different"; live equivalence not checked. Status and decision unchanged: stay on REST. Evidence: `docs/evidence/harness-check.md`.
