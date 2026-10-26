@@ -1,0 +1,20 @@
+import { EmptyState } from "../src/ui/EmptyState";
+
+export const metadata = { title: "Not found" };
+
+export default function NotFound() {
+  return (
+    <main id="main" tabIndex={-1} className="main shell">
+      <h1>Not found</h1>
+      <EmptyState
+        title="This slate is no longer available."
+        reason="Slates are kept for 30 days. The link may be wrong or the slate may have expired."
+        action={
+          <a className="btn" data-variant="primary" href="/">
+            Start a new slate
+          </a>
+        }
+      />
+    </main>
+  );
+}
