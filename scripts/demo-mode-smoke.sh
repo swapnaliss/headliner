@@ -10,14 +10,14 @@ TMP="$(mktemp -d)"
 LOG="$TMP/server.log"
 OUT="$TMP/slate.json"
 SRV=""
-cleanup() { [ -n "$SRV" ] && kill "$SRV" 2>/dev/null || true; rm -rf "$TMP"; }
+cleanup() { [ -n "$SRV" ] && kill -- "-$SRV" 2>/dev/null || true; rm -rf "$TMP"; }  # stop the whole group: killing npm alone leaves next-server (BL-01 6410492710)
 trap cleanup EXIT
 
 unset QLOO_API_KEY ANTHROPIC_API_KEY DATABASE_URL
 export DEMO_MODE=fixtures
 
 npm run build -w apps/web >"$TMP/build.log" 2>&1 || { tail -30 "$TMP/build.log"; echo "demo-mode-smoke: build failed" >&2; exit 1; }
-PORT="$PORT" npm run start -w apps/web >"$LOG" 2>&1 &
+PORT="$PORT" setsid npm run start -w apps/web >"$LOG" 2>&1 &
 SRV=$!
 up=0
 for _ in $(seq 1 30); do
