@@ -6,14 +6,15 @@ export interface EmptyStateProps {
   title: string;
   reason: string;
   compact?: boolean;
-  /** Heading level: 2 on a page, 3 inside a card. */
-  level?: 2 | 3;
+  /** Heading level: 1 when the state is the whole page, 2 on a page, 3 inside a card. */
+  level?: 1 | 2 | 3;
   action?: ReactNode;
 }
 
 /** An honest "nothing to show": what is missing, why, and the way forward. Never a zero. */
 export function EmptyState({ title, reason, compact = false, level, action }: EmptyStateProps) {
-  const Heading = (level ?? (compact ? 3 : 2)) === 3 ? "h4" : "h2";
+  const resolved = level ?? (compact ? 3 : 2);
+  const Heading = resolved === 3 ? "h4" : resolved === 1 ? "h1" : "h2";
   return (
     <section className="state" data-tone="neutral" data-compact={compact ? "true" : undefined}>
       <div className="state-head">
