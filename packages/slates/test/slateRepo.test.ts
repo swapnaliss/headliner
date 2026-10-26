@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import type { Db } from "../src/db/client";
 import { slates } from "../src/db/schema";
-import { getSlateJson } from "../src/db/slateRepo";
+import { getSlateJson, updateSlateJson } from "../src/db/slateRepo";
 
 const migrationsFolder = fileURLToPath(new URL("../drizzle", import.meta.url));
 
@@ -32,5 +32,14 @@ describe("getSlateJson (PGlite)", () => {
   it("returns null for an expired row and for an unknown id", async () => {
     expect(await getSlateJson(db, "old-slate-id", now)).toBeNull();
     expect(await getSlateJson(db, "nope", now)).toBeNull();
+  });
+  it("updateSlateJson replaces the JSON of a live slate and keeps its expiry", async () => {
+    expect(await updateSlateJson(db, "live-slate-id", { id: "live-slate-id", more: 1 }, now)).toBe(true);
+    expect(await getSlateJson(db, "live-slate-id", now)).toEqual({ id: "live-slate-id", more: 1 });
+    expect(await getSlateJson(db, "live-slate-id", new Date(now.getTime() + 2000))).toBeNull();
+  });
+  it("updateSlateJson changes nothing for an expired or unknown slate", async () => {
+    expect(await updateSlateJson(db, "old-slate-id", { changed: true }, now)).toBe(false);
+    expect(await updateSlateJson(db, "nope", { changed: true }, now)).toBe(false);
   });
 });

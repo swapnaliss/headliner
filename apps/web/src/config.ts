@@ -22,7 +22,12 @@ export interface Runtime {
   readonly client: QlooClient;
   readonly store: SlateStore;
   readonly now: () => Date;
+  /** Per-IP budget check (M2-05 supplies it). Absent means no check. It throws an `ApiError` to refuse. */
+  readonly budget?: BudgetHook;
 }
+
+/** Called before a route spends Qloo calls: `plannedCalls` is the most live calls the request may make. */
+export type BudgetHook = (spend: { readonly route: "cities"; readonly plannedCalls: number; readonly request: Request }) => void | Promise<void>;
 
 /** Walks up from the working directory to the repository's `fixtures/qloo` (or FIXTURES_DIR). */
 export function findFixtureDir(source: Record<string, string | undefined> = process.env, start: string = process.cwd()): string {

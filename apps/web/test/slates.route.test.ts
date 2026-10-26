@@ -191,7 +191,7 @@ describe("safe errors and no leaks", () => {
 
   it("an unexpected bug returns internal_error with no detail", async () => {
     const runtime = runtimeWith(fixtureTransport());
-    setRuntimeForTests({ ...runtime, store: { save: async () => { throw new Error(`db password ${key}`); }, get: async () => null } });
+    setRuntimeForTests({ ...runtime, store: { save: async () => { throw new Error(`db password ${key}`); }, get: async () => null, update: async () => false } });
     const res = await POST(post(ROOM));
     expect(res.status).toBe(500);
     const text = await res.text();

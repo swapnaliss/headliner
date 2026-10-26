@@ -1,6 +1,6 @@
 import { randomBytes } from "node:crypto";
 import type { Db } from "@headliner/slates";
-import { getSlateJson, slates } from "@headliner/slates";
+import { getSlateJson, slates, updateSlateJson } from "@headliner/slates";
 import { SlateSchema, type Slate } from "@headliner/core";
 
 /** Shareable slates live 30 days (ADR 0003). */
@@ -20,6 +20,8 @@ export interface SlateStore {
   save(slate: Slate): Promise<void>;
   /** The slate for a valid id, or null when unknown or expired. */
   get(id: string): Promise<Slate | null>;
+  /** Replaces the stored slate (lazy city strength adds aggregates, M2-03). False when it is unknown or expired. */
+  update(slate: Slate): Promise<boolean>;
 }
 
 /** Fixtures mode: held in process memory, no database. */
@@ -30,6 +32,11 @@ export class MemorySlateStore implements SlateStore {
   }
   async get(id: string): Promise<Slate | null> {
     return this.items.get(id) ?? null;
+  }
+  async update(slate: Slate): Promise<boolean> {
+    if (!this.items.has(slate.id)) return false;
+    this.items.set(slate.id, slate);
+    return true;
   }
 }
 
@@ -54,5 +61,8 @@ export class PostgresSlateStore implements SlateStore {
     if (json === null) return null;
     const parsed = SlateSchema.safeParse(json);
     return parsed.success ? parsed.data : null;
+  }
+  async update(slate: Slate): Promise<boolean> {
+    return updateSlateJson(this.db, slate.id, slate, this.now());
   }
 }
