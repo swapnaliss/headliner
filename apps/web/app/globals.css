@@ -591,6 +591,21 @@ a {
   gap: var(--space-3);
   margin-block-start: var(--space-3);
 }
+/* Disclosure marker (BL-01 sweep M1): display:flex summaries lose the native triangle. */
+.banner-details > summary::before,
+.disclosure > summary::before,
+.evidence > summary::before {
+  content: "\25B8";
+  display: inline-block;
+  inline-size: 1.25em;
+  flex: none;
+  text-decoration: none;
+}
+.banner-details[open] > summary::before,
+.disclosure[open] > summary::before,
+.evidence[open] > summary::before {
+  content: "\25BE";
+}
 .evidence li {
   background: var(--sunken);
   border-radius: var(--radius-1);
