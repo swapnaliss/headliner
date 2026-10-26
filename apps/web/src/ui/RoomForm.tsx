@@ -289,7 +289,7 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
         <h2 id="cand-heading">Acts you are considering</h2>
         <ActList
           kind="candidate"
-          heading="Candidate acts: 1 to 12 (required)"
+          heading="Candidate acts: 3 to 12 (required)"
           hint="Acts you are thinking of booking."
           items={candidates}
           input={candidateInput}
