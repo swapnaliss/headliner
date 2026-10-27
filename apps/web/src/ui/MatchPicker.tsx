@@ -49,9 +49,13 @@ export function MatchPicker({ id, typedName, hits, value, locked = false, onChan
                 </span>
                 <span className="match-meta">Artist</span>
                 {hit.tags.length > 0 ? <span className="match-meta">{`Tags: ${hit.tags.join(", ")}`}</span> : null}
-                <span className="match-meta">
-                  {hit.disambiguation && hit.disambiguation.trim().toLowerCase() !== hit.name.trim().toLowerCase() ? <bdi dir="auto">{hit.disambiguation}</bdi> : "No description from Qloo"}
-                </span>
+                {hit.disambiguation && hit.disambiguation.trim().toLowerCase() !== hit.name.trim().toLowerCase() ? (
+                  <span className="match-meta">
+                    <bdi dir="auto">{hit.disambiguation}</bdi>
+                  </span>
+                ) : hit.tags.length === 0 ? (
+                  <span className="match-meta">No description from Qloo</span>
+                ) : null}
                 <span className="match-meta">{popularityText(hit.popularity)}</span>
               </span>
               {selected ? (
@@ -62,7 +66,7 @@ export function MatchPicker({ id, typedName, hits, value, locked = false, onChan
             </label>
           );
         })}
-        <label htmlFor={`${group}-none`} className="match-option" data-selected={value === "skip" ? "true" : undefined}>
+        <label htmlFor={`${group}-none`} className="match-option match-none" data-selected={value === "skip" ? "true" : undefined}>
           <input type="radio" id={`${group}-none`} name={group} value="skip" checked={value === "skip"} readOnly={locked} onChange={() => (locked ? undefined : onChange("skip"))} />
           <span className="match-option-body">
             <span className="match-option-name">None of these</span>

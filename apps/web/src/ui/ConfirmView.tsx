@@ -162,7 +162,7 @@ export function ConfirmView({ runId, locationDisplay, rows, demoMode }: ConfirmV
     <div className="main shell">
       <div className="two-col">
         <main id="main" tabIndex={-1} className="stack">
-          <p>
+          <p className="back-wrap">
             <a href="/" className="confirm-back">
               Back to edit the room
             </a>
@@ -250,14 +250,16 @@ export function ConfirmView({ runId, locationDisplay, rows, demoMode }: ConfirmV
                           </span>
                         ) : null}
                       </span>
-                      <span className="match-selected">
-                        <Icon name="check" /> Confirmed
+                      <span className="confirmed-actions">
+                        <span className="match-selected">
+                          <Icon name="check" /> Confirmed
+                        </span>
+                        {chosen ? (
+                          <Button id={`change-${rowId(row.role, row.actInput)}`} variant="quiet" onClick={() => decide(row.actInput, undefined)}>
+                            Change
+                          </Button>
+                        ) : null}
                       </span>
-                      {chosen ? (
-                        <Button id={`change-${rowId(row.role, row.actInput)}`} variant="quiet" onClick={() => decide(row.actInput, undefined)}>
-                          Change
-                        </Button>
-                      ) : null}
                     </li>
                   );
                 })}

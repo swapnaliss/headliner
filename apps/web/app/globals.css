@@ -860,6 +860,7 @@ table {
   align-items: center;
   font-size: var(--text-sm);
 }
+.back-link,
 .confirm-back {
   display: inline-flex;
   align-items: center;
@@ -889,6 +890,10 @@ table {
 .on-page ul {
   display: flex;
   gap: var(--space-5);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .summary-list {
   display: grid;
   gap: var(--space-2);
@@ -1121,6 +1126,7 @@ table {
 .city-ev-fields dd {
   margin: 0;
   white-space: pre-wrap;
+}
 .confirmed-list {
   display: grid;
   gap: var(--space-3);
@@ -1141,10 +1147,33 @@ table {
 }
 .confirmed-main {
   display: grid;
-  gap: var(--space-1);
+  gap: var(--space-2);
   min-inline-size: 0;
   flex: 1 1 14rem;
 }
 .back-note {
   display: block;
+}
+.confirmed-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+}
+.confirmed-main .match-role,
+.confirmed-main .entity {
+  display: block;
+}
+.confirmed-row .match-selected .icon,
+.confirmed-main .match-chosen .icon {
+  flex: none;
+}
+.back-wrap {
+  display: grid;
+  gap: var(--space-2);
+}
+.match-none {
+  grid-column: 1 / -1;
+  min-block-size: var(--target);
+  align-items: center;
 }
