@@ -282,8 +282,8 @@ function EvidenceTrail({ evidence }: { evidence: readonly DetailEvidence[] }) {
 }
 
 /** The act detail screen (docs/design/screen-act-detail.md). Server component: every value is already in `detail`. */
-export function ActDetailView({ detail, citiesSlot }: { detail: ActDetail; citiesSlot?: ReactNode }) {
-  const slateHref = `/slates/${detail.slateId}`;
+export function ActDetailView({ detail, citiesSlot, base = "/slates" }: { detail: ActDetail; citiesSlot?: ReactNode; base?: "/slates" | "/s" }) {
+  const slateHref = `${base}/${detail.slateId}`;
   const { act } = detail;
   const href = (entityId: string): string => `${slateHref}/act/${encodeURIComponent(entityId)}`;
   const noData = detail.fit === null;

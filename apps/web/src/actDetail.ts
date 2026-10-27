@@ -80,8 +80,9 @@ export function decodeActId(raw: string): string {
   }
 }
 
-export function actDetailPath(slateId: string, entityId: string): string {
-  return `/slates/${slateId}/act/${encodeURIComponent(entityId)}`;
+/** `base` is "/slates" for the owner's view and "/s" for the read-only shared view (M2-04). */
+export function actDetailPath(slateId: string, entityId: string, base: "/slates" | "/s" = "/slates"): string {
+  return `${base}/${slateId}/act/${encodeURIComponent(entityId)}`;
 }
 
 function sameId(a: string, b: string): boolean {

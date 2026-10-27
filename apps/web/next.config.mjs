@@ -12,6 +12,8 @@ const nextConfig = {
     "/api/slates": ["../../fixtures/qloo/**"],
     "/slates/[id]": ["../../fixtures/qloo/**"],
     "/slates/[id]/act/[actId]": ["../../fixtures/qloo/**"],
+    "/s/[id]": ["../../fixtures/qloo/**"],
+    "/s/[id]/act/[actId]": ["../../fixtures/qloo/**"],
     "/api/slates/[id]/acts/[actId]": ["../../fixtures/qloo/**"],
     "/api/slates/[id]/acts/[actId]/cities": ["../../fixtures/qloo/**"],
   },

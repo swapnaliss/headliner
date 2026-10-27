@@ -31,5 +31,5 @@ export default async function SlatePage({ params }: { params: Params }) {
   const { id } = await params;
   const slate = await load(id);
   if (!slate) notFound();
-  return <SlateView slate={slate} />;
+  return <SlateView slate={slate} ephemeral={getRuntime().mode === "fixtures"} />;
 }
