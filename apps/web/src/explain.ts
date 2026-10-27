@@ -1,6 +1,7 @@
 import { createExplainCache, explainSlate, templateFor, type ExplainCache, type ExplainDeps, type ExplainEvent, type Explanation } from "@headliner/agent";
 import type { Slate } from "@headliner/core";
 import { getRuntime, type Runtime } from "./config";
+import { logLlm } from "./log";
 
 /**
  * The explanation for a stored slate (M3-02). The model behind it is optional: with no model wired
@@ -18,8 +19,18 @@ function sharedCache(): ExplainCache {
 }
 
 function logEvent(event: ExplainEvent): void {
-  // Reason and violation kinds only: never the model's text, a name or an address.
-  console.warn(JSON.stringify({ level: "warn", ...event }));
+  // Counts, cost and fixed labels only: never the prompt, the model's text, a name or an address.
+  logLlm({
+    endpoint: "explain",
+    source: event.source ?? "template",
+    budget: event.budget ?? "none",
+    ...(event.reason ? { errorCode: event.reason } : {}),
+    ...(event.model ? { model: event.model } : {}),
+    ...(event.inputTokens !== undefined ? { inputTokens: event.inputTokens } : {}),
+    ...(event.outputTokens !== undefined ? { outputTokens: event.outputTokens } : {}),
+    ...(event.costUsd !== undefined ? { costUsd: Number(event.costUsd.toFixed(6)) } : {}),
+    ...(event.violations ? { violations: event.violations } : {}),
+  });
 }
 
 export function explainDeps(rt: Runtime, headers?: Headers): ExplainDeps {

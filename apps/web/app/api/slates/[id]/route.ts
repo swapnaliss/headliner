@@ -1,6 +1,7 @@
 import { getRuntime } from "../../../../src/config";
 import { errorResponse, logFailure } from "../../../../src/errors";
 import { getExplanation } from "../../../../src/explain";
+import { logged } from "../../../../src/log";
 import { isSlateId } from "../../../../src/slateStore";
 
 export const dynamic = "force-dynamic";
@@ -13,7 +14,7 @@ type Params = Promise<{ id: string }>;
  * carries no evidence and no stored text beyond the resolved city: per-act detail is
  * `GET /api/slates/:id/acts/:actId`.
  */
-export async function GET(request: Request, { params }: { params: Params }): Promise<Response> {
+async function handleGET(request: Request, { params }: { params: Params }): Promise<Response> {
   const { id } = await params;
   if (!isSlateId(id)) return errorResponse("not_found");
   try {
@@ -27,3 +28,5 @@ export async function GET(request: Request, { params }: { params: Params }): Pro
     return errorResponse("internal_error");
   }
 }
+
+export const GET = logged("GET /api/slates/[id]", handleGET);

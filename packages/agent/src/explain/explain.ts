@@ -67,10 +67,27 @@ function parseReply(text: string): string[] | null {
  * The model never sees free user text and never produces a figure that reaches the page unchecked.
  */
 export async function explainSlate(slate: Slate, deps: ExplainDeps = {}, scope: FactScope = {}): Promise<ExplainResult> {
+  const meta: Meta = { budget: "none" };
+  const result = await explainWith(slate, deps, scope, meta);
+  // One summary event per explanation: source, budget decision and (when a call was made) model, tokens and cost. Never text.
+  emit(deps, { event: "explain_done", source: result.source, budget: meta.budget, ...(result.fallback ? { reason: result.fallback } : {}), ...(meta.model ? { model: meta.model } : {}), ...(meta.inputTokens !== undefined ? { inputTokens: meta.inputTokens, outputTokens: meta.outputTokens ?? 0 } : {}), ...(meta.costUsd !== undefined ? { costUsd: meta.costUsd } : {}), ...(meta.violations ? { violations: meta.violations } : {}) });
+  return result;
+}
+
+interface Meta {
+  budget: "none" | "allow" | "deny";
+  violations?: readonly string[];
+  model?: string;
+  inputTokens?: number;
+  outputTokens?: number;
+  costUsd?: number;
+}
+
+async function explainWith(slate: Slate, deps: ExplainDeps, scope: FactScope, meta: Meta): Promise<ExplainResult> {
   const facts = buildSlateFacts(slate, scope);
   const template = renderTemplate(facts);
   const fallback = (reason: FallbackReason, violations?: readonly string[]): ExplainResult => {
-    if (reason !== "no_model") emit(deps, { event: "explain_fallback", reason, ...(violations ? { violations } : {}) });
+    if (violations) meta.violations = violations;
     return { text: template, source: "template", fallback: reason };
   };
 
@@ -87,6 +104,7 @@ export async function explainSlate(slate: Slate, deps: ExplainDeps = {}, scope: 
   let lease: BudgetLease | null;
   try {
     lease = deps.budget ? await deps.budget(reserved) : null;
+    if (deps.budget) meta.budget = lease === null ? "deny" : "allow";
     if (deps.budget && lease === null) return fallback("budget");
   } catch {
     return fallback("budget");
@@ -95,9 +113,12 @@ export async function explainSlate(slate: Slate, deps: ExplainDeps = {}, scope: 
   let used = reserved; // without a usage report the whole reservation counts
   try {
     const reply = await raceTimeout((signal) => model.generate({ system: SYSTEM_PROMPT, user, maxOutputTokens, json: true, signal }), deps.timeoutMs ?? DEFAULT_TIMEOUT_MS);
+    if (model.model) meta.model = model.model;
+    if (reply.costUsd !== undefined) meta.costUsd = reply.costUsd;
     if (reply.usage) {
       used = reply.usage.inputTokens + reply.usage.outputTokens;
-      emit(deps, { event: "explain_llm", inputTokens: reply.usage.inputTokens, outputTokens: reply.usage.outputTokens });
+      meta.inputTokens = reply.usage.inputTokens;
+      meta.outputTokens = reply.usage.outputTokens;
     }
     const sentences = parseReply(reply.text);
     if (!sentences || sentences.length === 0) return fallback("invalid_json");

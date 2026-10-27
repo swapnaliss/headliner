@@ -19,9 +19,13 @@ export interface ModelReply {
   readonly text: string;
   /** Tokens billed for the call, from the provider's `usage`. Absent: the reservation is kept. */
   readonly usage?: { readonly inputTokens: number; readonly outputTokens: number };
+  /** Cost of the call in USD, computed from `usage` by the provider. Logged, never shown. */
+  readonly costUsd?: number;
 }
 
 export interface ExplainModel {
+  /** Model id, for the log line. */
+  readonly model?: string;
   generate(request: ModelRequest): Promise<ModelReply>;
 }
 
@@ -40,7 +44,11 @@ export type ExplainBudget = (estimatedTokens: number) => Promise<BudgetLease | n
 export type FallbackReason = "no_model" | "budget" | "error" | "timeout" | "invalid_json" | "ungrounded";
 
 export interface ExplainEvent {
-  readonly event: "explain_llm" | "explain_fallback";
+  readonly event: "explain_done";
+  readonly source?: "llm" | "template";
+  readonly budget?: "none" | "allow" | "deny";
+  readonly model?: string;
+  readonly costUsd?: number;
   readonly reason?: FallbackReason;
   readonly inputTokens?: number;
   readonly outputTokens?: number;

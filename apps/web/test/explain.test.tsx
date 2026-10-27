@@ -142,7 +142,7 @@ describe("explainModelFrom (adapter over the M3-01 provider)", () => {
     ]);
     expect(arg.maxCompletionTokens).toBe(1500);
     expect(arg.jsonSchema.name).toBe("explanation");
-    expect(out).toEqual({ text: '{"sentences":["a"]}', usage: { inputTokens: 500, outputTokens: 200 } });
+    expect(out).toEqual({ text: '{"sentences":["a"]}', usage: { inputTokens: 500, outputTokens: 200 }, costUsd: 0.0001 });
   });
 
   it("hands unusable content back as text, so explainSlate falls back to the template", async () => {
