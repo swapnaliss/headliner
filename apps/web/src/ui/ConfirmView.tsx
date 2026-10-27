@@ -6,6 +6,7 @@ import type { MatchCandidate, MatchRowState } from "@headliner/core";
 import { reasonParts, SKIP, statusLine, summarise, toChoices, type Decisions } from "../confirmRules";
 import { Button } from "./Button";
 import { EmptyState } from "./EmptyState";
+import { DEMO_LIMIT_CODE, errorCode } from "./errorCode";
 import { ErrorState } from "./ErrorState";
 import { Icon } from "./Icon";
 import { MatchPicker } from "./MatchPicker";
@@ -32,7 +33,10 @@ const ROLE_LABEL = { crowd: "Crowd act", candidate: "Candidate act" } as const;
 type Phase = "idle" | "submitting" | "error" | "gone";
 
 /** Fixed messages only; upstream text is never shown. */
-function failureMessage(status: number | null): string {
+function failureMessage(status: number | null, code: string | null = null): string {
+  if (status === 429 && code === DEMO_LIMIT_CODE) {
+    return "This demo has reached its daily limit for live Qloo lookups. Your choices are kept. The sample rooms on the first page still work, and the limit resets at midnight UTC.";
+  }
   if (status === 429) return "This demo is busy right now. Your choices are kept. Wait a moment and try again.";
   if (status === 503) return "Could not reach Qloo. Your choices are kept. Try again.";
   return "Could not complete the ranking. Your choices are kept. Try again in a moment.";
@@ -137,7 +141,7 @@ export function ConfirmView({ runId, locationDisplay, rows, demoMode }: ConfirmV
         router.push(`/slates/${encodeURIComponent(result.id)}`);
         return;
       }
-      setFailure(failureMessage(response.ok ? null : response.status));
+      setFailure(failureMessage(response.ok ? null : response.status, errorCode(body)));
       setPhase("error");
     } catch {
       setFailure(failureMessage(null));

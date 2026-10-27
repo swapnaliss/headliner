@@ -6,6 +6,7 @@ import { addNames, disabledReason, LIMITS, validateDraft, type FieldProblem, typ
 import { SAMPLE_ROOM } from "../sampleRoom";
 import { ActChip } from "./ActChip";
 import { Button } from "./Button";
+import { DEMO_LIMIT_CODE, errorCode } from "./errorCode";
 import { ErrorState } from "./ErrorState";
 import { ProgressStatus } from "./ProgressStatus";
 import { SkeletonList } from "./SkeletonCard";
@@ -21,7 +22,10 @@ const SLOW_AFTER_MS = 20_000;
 const GENERIC_FAILURE = "Could not complete the ranking. Your entries are kept. Try again in a moment.";
 
 /** Only these fixed strings are ever shown for a failed request; upstream text is never displayed. */
-function failureMessage(status: number | null): string {
+function failureMessage(status: number | null, code: string | null = null): string {
+  if (status === 429 && code === DEMO_LIMIT_CODE) {
+    return "This demo has reached its daily limit for live Qloo lookups. Your entries are kept. The sample rooms above still work, and the limit resets at midnight UTC.";
+  }
   if (status === 429) return "This demo is busy right now. Your entries are kept. Wait a moment and try again.";
   if (status === 400) return "The server did not accept these entries. Check the names and the counts, then try again.";
   if (status === 503) return "Could not reach Qloo. Your entries are kept. Try again.";
@@ -181,7 +185,7 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
       });
       const body: unknown = await response.json().catch(() => null);
       if (!response.ok || typeof body !== "object" || body === null) {
-        setFailure(failureMessage(response.status));
+        setFailure(failureMessage(response.status, errorCode(body)));
         setPhase("error");
         return;
       }

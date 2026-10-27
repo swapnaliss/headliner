@@ -9,6 +9,7 @@ import {
   type Slate,
 } from "@headliner/core";
 import { fetchHeatmap, type HeatmapOutcome } from "@headliner/qloo";
+import { metered } from "../budget";
 import type { Runtime } from "../config";
 import type { CityCaveat, CityEntry, CityStrengthResponse } from "../cityStrengthTypes";
 import { ApiError, logFailure } from "../errors";
@@ -129,9 +130,10 @@ export async function loadCityStrength(rt: Runtime, params: CityStrengthParams):
   if (!slate || !act) throw new ApiError("not_found");
 
   const cities = distinctCities(params.cities);
-  await rt.budget?.({ route: "cities", plannedCalls: cities.length, request: params.request });
-
-  const outcomes = await mapWithLimit(cities, CITY_CONCURRENCY, (city) => fetchHeatmap(rt.client, { entityId: act.act.qlooEntityId, city }));
+  // The budget is asked before any heatmap call; a refusal throws and nothing was fetched.
+  const outcomes = await metered(rt, { route: "cities", plannedCalls: cities.length, request: params.request }, (budgeted) =>
+    mapWithLimit(cities, CITY_CONCURRENCY, (city) => fetchHeatmap(budgeted.client, { entityId: act.act.qlooEntityId, city })),
+  );
   const resolved = outcomes.map(resolveOutcome);
 
   if (resolved.some((r) => r.entry.status === "ok")) {

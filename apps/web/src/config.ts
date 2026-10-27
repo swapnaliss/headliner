@@ -7,8 +7,10 @@ import {
   liveTransportFromEnv,
   PostgresCacheStore,
   type QlooClient,
+  type QlooTransport,
 } from "@headliner/qloo";
 import { getDb } from "@headliner/slates";
+import { liveBudgetHook } from "./budget";
 import { loadEnv } from "./env";
 import { MemoryRunStore, PostgresRunStore, type RunStore } from "./runStore";
 import { FixtureSampleStore } from "./samples";
@@ -26,12 +28,34 @@ export interface Runtime {
   /** Runs awaiting match confirmation (M2-01). */
   readonly runs: RunStore;
   readonly now: () => Date;
-  /** Per-IP budget check (M2-05 supplies it). Absent means no check. It throws an `ApiError` to refuse. */
+  /** Qloo client that cannot make a live call (cache only). Used when the global Qloo ceiling is reached (M2-05). */
+  readonly cacheOnlyClient?: QlooClient;
+  /** Budget check (M2-05, live mode only). Absent means no check. It throws an `ApiError` to refuse. */
   readonly budget?: BudgetHook;
 }
 
+/** What a granted budget check returns. */
+export interface BudgetGrant {
+  /** True when the global Qloo ceiling is reached: run on `Runtime.cacheOnlyClient`. */
+  readonly cacheOnly: boolean;
+  readonly retryAfterSeconds: number;
+  /** Replaces the reservation with the live calls really made. Never throws. */
+  readonly settle: (liveCalls: number) => Promise<void>;
+}
+
 /** Called before a route spends Qloo calls: `plannedCalls` is the most live calls the request may make. */
-export type BudgetHook = (spend: { readonly route: "cities"; readonly plannedCalls: number; readonly request: Request }) => void | Promise<void>;
+export type BudgetHook = (spend: {
+  readonly route: "create" | "confirm" | "cities";
+  readonly plannedCalls: number;
+  readonly request: Request;
+}) => void | BudgetGrant | Promise<void | BudgetGrant>;
+
+/** A transport that refuses every call, so a client built on it can only answer from the cache. */
+class CacheOnlyTransport implements QlooTransport {
+  get(): Promise<never> {
+    return Promise.reject(new Error("cache only"));
+  }
+}
 
 /** Walks up from the working directory to the repository's `fixtures/qloo` (or FIXTURES_DIR). */
 export function findFixtureDir(source: Record<string, string | undefined> = process.env, start: string = process.cwd()): string {
@@ -61,9 +85,12 @@ export function buildRuntime(source: Record<string, string | undefined> = proces
     };
   }
   const db = getDb(source);
+  const cache = new PostgresCacheStore(db);
   return {
     mode: "live",
-    client: createQlooClient({ transport: liveTransportFromEnv(source), cache: new PostgresCacheStore(db) }),
+    client: createQlooClient({ transport: liveTransportFromEnv(source), cache }),
+    cacheOnlyClient: createQlooClient({ transport: new CacheOnlyTransport(), cache }),
+    budget: liveBudgetHook(db, source),
     store: new PostgresSlateStore(db),
     runs: new PostgresRunStore(db),
     now: () => new Date(),
