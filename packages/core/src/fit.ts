@@ -19,6 +19,8 @@ export interface OverlapTag {
   readonly name: string;
   /** Qloo `query.score` (0..1) of the chosen repeat. */
   readonly score: number;
+  /** Distinct crowd acts Qloo matched this tag to (of the crowd compared). */
+  readonly coveredCrowdActs: number;
 }
 
 export interface FitOk {
@@ -107,7 +109,7 @@ export function computeFit(
   const ordered = [...best.entries()].sort((x, y) => compareStrings(x[0], y[0]));
   const mean = ordered.reduce((sum, [, v]) => sum + v.score, 0) / ordered.length;
   const overlapTags = ordered
-    .map(([tagId, v]) => ({ tagId, name: v.name, score: v.score }))
+    .map(([tagId, v]) => ({ tagId, name: v.name, score: v.score, coveredCrowdActs: v.coverage }))
     .sort((x, y) => y.score - x.score || compareStrings(x.tagId, y.tagId));
   return {
     status: "ok",

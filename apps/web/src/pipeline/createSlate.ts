@@ -283,6 +283,16 @@ function scoreMatched(
             evidenceRefs: standingEvidence.map((e) => e.id),
           }
         : null,
+    standingExplanation:
+      standing.status === "ok"
+        ? {
+            candidatePercentile: standing.candidatePercentile,
+            crowdMedianPercentile: standing.crowdMedianPercentile,
+            crowdSample: standing.crowdSample,
+            candidateEvidenceRef: r.evidence.id,
+            crowdEvidenceRefs: crowdEvidence.map((e) => e.id),
+          }
+        : null,
     cityStrengths: [],
     caveats,
     evidence,

@@ -13,7 +13,8 @@ export {
   QlooUnavailable,
 } from "./errors";
 export type { QlooErrorKind, QlooFailure } from "./errors";
-export type { Evidence } from "./evidence";
+export type { Evidence, EvidenceInput, EvidenceStatus, PublicEntityGroup, PublicEvidence, PublicEvidenceParams } from "./evidence";
+export { evidenceRequestText, redactEvidence } from "./evidence";
 export { MAX_CANDIDATE_IDS, MAX_CROWD_IDS, MAX_NAME_LENGTH } from "./params";
 export type { CompareTag, HeatmapAggregate, RecommendedEntity, SearchEntity, TrendingEntity } from "./schemas";
 export { FixtureTransport } from "./transport/fixture";

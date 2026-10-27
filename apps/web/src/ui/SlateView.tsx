@@ -1,4 +1,5 @@
 import type { Slate } from "@headliner/core";
+import { actDetailPath } from "../actDetail";
 import { buildSlateView } from "../slateView";
 import { ActCard } from "./ActCard";
 import { EmptyState } from "./EmptyState";
@@ -61,7 +62,7 @@ export function SlateView({ slate }: { slate: Slate }) {
               <h2 id="ranked-heading">Ranked acts ({rankedCount})</h2>
               <ol className="card-list" aria-label="Ranked acts">
                 {view.ranked.map((result) => (
-                  <ActCard key={result.act.qlooEntityId} result={result} rankedCount={rankedCount} tiedWithPrevious={view.tied.has(result.act.qlooEntityId)} />
+                  <ActCard key={result.act.qlooEntityId} result={result} rankedCount={rankedCount} tiedWithPrevious={view.tied.has(result.act.qlooEntityId)} detailHref={actDetailPath(slate.id, result.act.qlooEntityId)} />
                 ))}
               </ol>
             </section>
@@ -82,7 +83,7 @@ export function SlateView({ slate }: { slate: Slate }) {
               <h2 id="unranked-heading">Not ranked ({view.unranked.length})</h2>
               <ul className="card-list" aria-label="Acts that could not be ranked">
                 {view.unranked.map((result) => (
-                  <ActCard key={result.act.qlooEntityId} result={result} rankedCount={rankedCount} />
+                  <ActCard key={result.act.qlooEntityId} result={result} rankedCount={rankedCount} detailHref={actDetailPath(slate.id, result.act.qlooEntityId)} />
                 ))}
               </ul>
             </section>

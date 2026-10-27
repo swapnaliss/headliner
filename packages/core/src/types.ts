@@ -57,6 +57,8 @@ export const OverlapTagSchema = z.object({
   tagId: z.string().min(1),
   name: z.string().min(1),
   score: z.number().min(0).max(1),
+  /** Crowd acts matched to this tag; absent on slates stored before M2-02. */
+  coveredCrowdActs: z.number().int().min(0).optional(),
 });
 
 export const FitValueSchema = z.object({
@@ -76,6 +78,21 @@ export const StandingValueSchema = z.object({
   evidenceRefs: EvidenceRefs,
 });
 
+/**
+ * Structured source of the Qloo popularity rank comparison (M2-02): the two numbers and the
+ * Evidence ids each rests on. M3-02 phrases the explanation from these fields only.
+ */
+export const StandingExplanationSchema = z.object({
+  candidatePercentile: z.number().min(0).max(100),
+  crowdMedianPercentile: z.number().min(0).max(100),
+  crowdSample: z.number().int().min(1),
+  /** Evidence id of the candidate's own search (its popularity value). */
+  candidateEvidenceRef: z.string().min(1),
+  /** Evidence ids of the crowd acts' searches (the median is taken over these). */
+  crowdEvidenceRefs: z.array(z.string().min(1)).min(1),
+});
+export type StandingExplanation = z.infer<typeof StandingExplanationSchema>;
+
 export const CityStrengthValueSchema = z.object({
   city: z.string().min(1),
   meanAffinityRank: z.number().min(0).max(1),
@@ -93,6 +110,8 @@ export const ActResultSchema = z.object({
   fit: FitValueSchema.nullable(),
   overlapTags: z.array(OverlapTagSchema),
   standing: StandingValueSchema.nullable(),
+  /** Absent on slates stored before M2-02; use `standingExplanationOf` to read it either way. */
+  standingExplanation: StandingExplanationSchema.nullable().optional(),
   cityStrengths: z.array(CityStrengthValueSchema),
   caveats: z.array(CaveatSchema),
   evidence: z.array(EvidenceSchema),
