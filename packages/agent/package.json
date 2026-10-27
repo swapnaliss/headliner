@@ -5,5 +5,12 @@
   "license": "MIT",
   "type": "module",
   "main": "src/index.ts",
-  "scripts": { "typecheck": "tsc -p tsconfig.json" }
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@headliner/core": "*",
+    "zod": "4.6.7"
+  }
 }
