@@ -4,6 +4,8 @@ import {
   createOpenAiProvider,
   DEFAULT_LLM_MODEL,
   loadIntakeTraces,
+  type ExplainBudget,
+  type ExplainModel,
   type LlmBudget,
   type LlmProvider,
 } from "@headliner/agent";
@@ -18,7 +20,8 @@ import {
   type QlooTransport,
 } from "@headliner/qloo";
 import { getDb } from "@headliner/slates";
-import { liveBudgetHook, liveLlmBudget } from "./budget";
+import { liveBudgetHook, liveExplainBudget, liveLlmBudget } from "./budget";
+import { explainModelFrom } from "./explainModel";
 import { loadEnv } from "./env";
 import { logQlooEvent } from "./log";
 import { MemoryRunStore, PostgresRunStore, type RunStore } from "./runStore";
@@ -41,6 +44,13 @@ export interface Runtime {
   readonly cacheOnlyClient?: QlooClient;
   /** Budget check (M2-05, live mode only). Absent means no check. It throws an `ApiError` to refuse. */
   readonly budget?: BudgetHook;
+  /**
+   * The model behind the explanation (M3-02): live mode with an OpenAI key only. Absent (fixtures mode, no key):
+   * the explanation is the deterministic template and no model call is made.
+   */
+  readonly explainModel?: ExplainModel;
+  /** LLM budget for the explanation, asked before each model turn (M2-05 guard). Absent: no check. */
+  readonly explainBudget?: (headers: Headers) => ExplainBudget;
   /** Intake model wiring (M3-01). Absent means no model: the intake route answers `deterministic`. */
   readonly intake?: IntakeEnv;
 }
@@ -113,6 +123,9 @@ export function buildRuntime(source: Record<string, string | undefined> = proces
     client: createQlooClient({ transport: liveTransportFromEnv(source), cache, onEvent: logQlooEvent }),
     cacheOnlyClient: createQlooClient({ transport: new CacheOnlyTransport(), cache, onEvent: logQlooEvent }),
     budget: liveBudgetHook(db, source),
+    // Explanation model (M3-02): only with an OpenAI key; the same provider settings as intake. No second client.
+    ...(env.openaiApiKey ? { explainModel: explainModelFrom(createOpenAiProvider({ apiKey: env.openaiApiKey, model: llmModel(source) })) } : {}),
+    explainBudget: liveExplainBudget(db, source),
     store: new PostgresSlateStore(db),
     runs: new PostgresRunStore(db),
     now: () => new Date(),

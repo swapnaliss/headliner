@@ -282,7 +282,18 @@ function EvidenceTrail({ evidence }: { evidence: readonly DetailEvidence[] }) {
 }
 
 /** The act detail screen (docs/design/screen-act-detail.md). Server component: every value is already in `detail`. */
-export function ActDetailView({ detail, citiesSlot, base = "/slates" }: { detail: ActDetail; citiesSlot?: ReactNode; base?: "/slates" | "/s" }) {
+export function ActDetailView({
+  detail,
+  citiesSlot,
+  explanationSlot,
+  base = "/slates",
+}: {
+  detail: ActDetail;
+  citiesSlot?: ReactNode;
+  /** The Explanation block (M3-02), after the tiles (caveats come first) and before "Why this Fit". */
+  explanationSlot?: ReactNode;
+  base?: "/slates" | "/s";
+}) {
   const slateHref = `${base}/${detail.slateId}`;
   const { act } = detail;
   const href = (entityId: string): string => `${slateHref}/act/${encodeURIComponent(entityId)}`;
@@ -325,6 +336,8 @@ export function ActDetailView({ detail, citiesSlot, base = "/slates" }: { detail
           <StandingTile detail={detail} />
           <CaveatsTile detail={detail} />
         </div>
+
+        {explanationSlot ?? null}
 
         <WhyFit detail={detail} />
 

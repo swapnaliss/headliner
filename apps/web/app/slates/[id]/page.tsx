@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getRuntime } from "../../../src/config";
 import { logFailure } from "../../../src/errors";
 import { isSlateId } from "../../../src/slateStore";
+import { ExplanationBlock } from "../../../src/ui/ExplanationBlock";
 import { SlateView } from "../../../src/ui/SlateView";
 import type { Slate } from "@headliner/core";
 
@@ -35,5 +36,5 @@ export default async function SlatePage({ params }: { params: Params }) {
   const { id } = await params;
   const slate = await load(id);
   if (!slate) notFound();
-  return <SlateView slate={slate} ephemeral={getRuntime().mode === "fixtures"} />;
+  return <SlateView slate={slate} ephemeral={getRuntime().mode === "fixtures"} explanation={<ExplanationBlock slate={slate} />} />;
 }

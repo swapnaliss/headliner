@@ -13,6 +13,7 @@ const nextConfig = {
     "/slates/[id]/act/[actId]": ["../../fixtures/qloo/**"],
     "/s/[id]": ["../../fixtures/qloo/**"],
     "/s/[id]/act/[actId]": ["../../fixtures/qloo/**"],
+    "/api/slates/[id]": ["../../fixtures/qloo/**"],
     "/api/slates/[id]/acts/[actId]": ["../../fixtures/qloo/**"],
     "/api/slates/[id]/acts/[actId]/cities": ["../../fixtures/qloo/**"],
   },

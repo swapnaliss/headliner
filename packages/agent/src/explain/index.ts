@@ -4,7 +4,7 @@ export { renderTemplate, sentenceOf } from "./template";
 export { allowedNumbers, groundingCheck } from "./grounding";
 export type { GroundingResult, Violation } from "./grounding";
 export { buildUserPrompt, estimateInputTokens, SYSTEM_PROMPT } from "./prompt";
-export { DEFAULT_MAX_OUTPUT_TOKENS, DEFAULT_TIMEOUT_MS, explainSlate } from "./explain";
+export { DEFAULT_MAX_OUTPUT_TOKENS, DEFAULT_TIMEOUT_MS, explainSlate, templateFor } from "./explain";
 export type { ExplainResult } from "./explain";
 export { createExplainCache } from "./ports";
 export type { BudgetLease, ExplainBudget, ExplainCache, ExplainDeps, ExplainEvent, ExplainModel, Explanation, FallbackReason, ModelReply, ModelRequest } from "./ports";
