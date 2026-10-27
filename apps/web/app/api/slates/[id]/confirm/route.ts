@@ -4,6 +4,7 @@ import { getRuntime } from "../../../../../src/config";
 import { ApiError, errorResponse, logFailure } from "../../../../../src/errors";
 import { confirmRun } from "../../../../../src/pipeline/createSlate";
 import { isSlateId } from "../../../../../src/slateStore";
+import { logged } from "../../../../../src/log";
 
 export const dynamic = "force-dynamic";
 /** Same budget as the create route: this call runs the compare and scoring half of the run. */
@@ -17,7 +18,7 @@ function invalidDetail(paths: readonly (readonly PropertyKey[])[]): string {
   return `Check: ${fields.join(", ")}.`;
 }
 
-export async function POST(request: Request, context: { params: Promise<{ id: string }> }): Promise<Response> {
+async function handlePOST(request: Request, context: { params: Promise<{ id: string }> }): Promise<Response> {
   const { id: runId } = await context.params;
   if (!isSlateId(runId)) return errorResponse("not_found");
 
@@ -51,3 +52,5 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
     return e instanceof ApiError ? errorResponse(e.code, e.detail, e.retryAfterSeconds) : errorResponse("internal_error");
   }
 }
+
+export const POST = logged("POST /api/slates/[id]/confirm", handlePOST);

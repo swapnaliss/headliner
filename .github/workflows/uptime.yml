@@ -1,0 +1,37 @@
+name: Uptime
+
+# A second, repo-owned uptime signal, independent of the external monitor (docs/runbook.md, ADR 0010).
+# GET only, no secrets, no Qloo calls: `/api/health?deep=1` runs `select 1` against the database.
+# A failed run shows red in the Actions tab and GitHub emails the repository owner about failed scheduled workflows.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  check:
+    # Same guard as keepwarm.yml. A private repo has about 2,000 free Actions minutes a month; a 10-minute schedule
+    # is about 4,300 billable minutes (each run rounds up to a minute) and would stall CI. A skipped job is not
+    # billed, so the scheduled run does nothing until the repo is public (public repos run for free).
+    # A manual run (workflow_dispatch) always goes ahead.
+    if: github.event_name == 'workflow_dispatch' || github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Health must answer 200 with ok true
+        run: |
+          url="https://headliner-ai.vercel.app/api/health?deep=1"
+          for attempt in 1 2; do
+            code=$(curl --silent --show-error --output body.json --max-time 20 --write-out "%{http_code}" "$url" || echo "000")
+            echo "attempt $attempt: HTTP $code"
+            if [ "$code" = "200" ] && grep -q '"ok":true' body.json; then
+              echo "healthy"
+              exit 0
+            fi
+            sleep 15
+          done
+          echo "::error::health check failed (last HTTP $code)"
+          exit 1

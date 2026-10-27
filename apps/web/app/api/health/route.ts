@@ -1,4 +1,5 @@
 import { demoMode } from "../../../src/env";
+import { logged } from "../../../src/log";
 
 export const dynamic = "force-dynamic";
 
@@ -17,10 +18,14 @@ async function dbStatus(): Promise<DbStatus> {
   }
 }
 
-export async function GET(request: Request): Promise<Response> {
+async function handleGET(request: Request): Promise<Response> {
   const base = { ok: true, mode: demoMode(), version: "0.1.0" };
   if (new URL(request.url).searchParams.get("deep") === "1") {
-    return Response.json({ ...base, db: await dbStatus() });
+    const db = await dbStatus();
+    // An unreachable database answers 503, so a monitor that only checks the status code still alerts.
+    return Response.json(db === "unavailable" ? { ...base, ok: false, db } : { ...base, db }, { status: db === "unavailable" ? 503 : 200 });
   }
   return Response.json(base);
 }
+
+export const GET = logged("GET /api/health", handleGET);

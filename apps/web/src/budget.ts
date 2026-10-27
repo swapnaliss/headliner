@@ -2,6 +2,7 @@ import { createGuard, DEFAULT_LIMITS, loadBudgetConfig, secondsToUtcMidnight, ty
 import type { Db } from "@headliner/slates";
 import type { BudgetGrant, BudgetHook, Runtime } from "./config";
 import { ApiError } from "./errors";
+import { noteBudget } from "./log";
 
 /** The routes that spend live Qloo calls and so ask the budget first. */
 export type MeteredRoute = "create" | "confirm" | "cities";
@@ -55,8 +56,15 @@ export interface Spend {
  * Afterwards the reservation is replaced with the live calls actually made (cache hits cost 0).
  */
 export async function metered<T>(rt: Runtime, spend: Spend, work: (rt: Runtime) => Promise<T>): Promise<T> {
-  const grant = await rt.budget?.(spend);
+  let grant: BudgetGrant | void;
+  try {
+    grant = await rt.budget?.(spend);
+  } catch (e) {
+    if (e instanceof ApiError && e.code === "demo_limit_reached") noteBudget("deny");
+    throw e;
+  }
   if (!grant) return work(rt);
+  noteBudget(grant.cacheOnly ? "cache_only" : "allow");
 
   if (grant.cacheOnly) {
     if (!rt.cacheOnlyClient) throw new ApiError("demo_limit_reached", undefined, grant.retryAfterSeconds);
