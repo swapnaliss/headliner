@@ -14,6 +14,10 @@ permissions: {}
 
 jobs:
   warm:
+    # Every 5 minutes is about 8,640 billable minutes a month. A private repo has a 2,000 minute allowance, so the
+    # schedule would exhaust it and stall CI. A skipped job is not billed: the scheduled run does nothing until the
+    # repo is public (public repos run for free). A manual run (workflow_dispatch) always goes ahead.
+    if: github.event_name == 'workflow_dispatch' || github.event.repository.private == false
     runs-on: ubuntu-latest
     timeout-minutes: 2
     steps:
