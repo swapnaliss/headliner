@@ -66,6 +66,21 @@ See ADRs 0006 to 0008. Threats considered on the core flow: key theft (server-on
 
 The product is a deterministic pipeline with an LLM at the edges (ADR 0009). The LLM never computes a number. Guardrails: input length and character limits; schema-validated output; a grounding check that fails any number not present in the Slate; max 3 intake steps; token and spend caps; read-only tools.
 
+Intake loop (M3-01, `packages/agent/src/intake/`, provider seam `packages/agent/src/llm/`). Constants, all in code and covered by tests:
+
+| Constant | Value | Where |
+|---|---|---|
+| `MAX_INTAKE_STEPS` | 3 model turns; the last turn offers `submit_room` only | `intake/schema.ts` |
+| Input | at most 500 characters (measured raw); control, line and paragraph separators rejected; tab and newline become spaces; empty rejected | `intake/guardrails.ts` |
+| Output | 6 crowd acts, 12 candidates, 5 cities, names 80 characters; over-limit output is rejected and retried, not truncated; every name must appear in the sentence | `intake/schema.ts`, `guardrails.ts` |
+| `TURN_MAX_COMPLETION_TOKENS` | 1,500 per turn (reasoning tokens are billed as output and count against it) | `intake/loop.ts` |
+| `MAX_RUN_TOKENS`, `MAX_RUN_COST_USD` | 9,000 tokens and 0.01 USD per run; at either the run returns `mode: "deterministic"` | `intake/loop.ts` |
+| `MAX_PROPOSE_CALLS` | 18 read-only Qloo searches per run (6 + 12); also the Qloo calls reserved by the route | `intake/tools.ts` |
+| Per-IP and global LLM tokens | 20,000 and 100,000 per UTC day (`BUDGET_*_LLM_TOKENS`), reserved before every turn through the M2-05 guard; a ceiling, a denial or an unreachable store means no model call | `apps/web/src/budget.ts` |
+| Default model | `gpt-5-nano` ($0.05 in, $0.40 out per 1M tokens), override `LLM_MODEL`; no `temperature` or `top_p` is sent (reasoning models reject them), `reasoning_effort: minimal` | `llm/pricing.ts`, `llm/openai.ts` |
+
+The model sees the sentence in a delimited data block, never in the system prompt, and tool results are limited to `entity_id`, `name`, `popularity`. The room it returns is a proposal that still goes through match confirmation.
+
 ## 8. Scaling story and cost at 100x
 
 5,000 slates a week at up to 30 calls is 150k uncached Qloo calls; at a 70% cache hit about 45k. The app tier is stateless. Hosting and database stay on free tiers; the LLM is the only metered cost and is capped.
