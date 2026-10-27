@@ -161,7 +161,7 @@ async function oneRun(browser: Awaited<ReturnType<typeof chromium.launch>>, full
     await page.getByText(/City strength loaded/).waitFor({ timeout: 90_000 });
     const lazy = await page.getByText(/City strength loaded[^.]*\.[^.]*\./).first().innerText();
     const cityCalls = apiCalls.filter((c) => c.includes("/cities"));
-    let thin = await page.getByRole("list", { name: "Cities with thin data" }).allInnerTexts().catch(() => [] as string[]);
+    const thin = await page.getByRole("list", { name: "Cities with thin data" }).allInnerTexts().catch(() => [] as string[]);
     const noData = await page.getByText("Qloo returned no usable audience data there.").count();
     report["step6"] = {
       cityRequestsBeforeActOpened: cityCallsBeforeOpen,
