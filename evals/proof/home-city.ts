@@ -40,6 +40,10 @@ export interface HomeCityResult {
     readonly listed: number;
     readonly resolved: number;
     readonly unresolved: number;
+    /** Resolved acts with at least one recorded heatmap response. Hit counts are out of this number. */
+    readonly measured: number;
+    /** Resolved acts for which no heatmap response was ever recorded (searched after the search-schema fix; never requested). */
+    readonly notMeasured: number;
     readonly hits: number;
     readonly hitsEnoughData: number;
     /** Resolved acts whose own home-city heatmap is thin. */
@@ -72,7 +76,10 @@ export async function runHomeCity(client: QlooClient, set: HomeCitySet): Promise
     const withMean = cities.filter((c) => c.meanAffinityRank !== null).sort(order);
     const enough = withMean.filter((c) => !c.thin);
     const home = withMean.findIndex((c) => c.city === act.homeCity);
-    const resolved = resolution.status === "resolved";
+    // Resolved but with no heatmap response at all (every city "unavailable" = no recording): a gap in the
+    // recordings, not a Qloo answer, so it is neither a hit nor a miss. Only reachable when an act's search
+    // failed at recording time and the heatmaps were therefore never requested.
+    const resolved = resolution.status === "resolved" && cities.some((c) => c.status === "ok");
     acts.push({
       ...act,
       resolution,
@@ -83,13 +90,15 @@ export async function runHomeCity(client: QlooClient, set: HomeCitySet): Promise
       hitEnoughData: resolved ? enough[0]?.city === act.homeCity : null,
     });
   }
-  const resolvedActs = acts.filter((a) => a.resolution.status === "resolved");
+  const resolvedActs = acts.filter((a) => a.resolution.status === "resolved" && a.cities.some((c) => c.status === "ok"));
   return {
     acts,
     summary: {
       listed: acts.length,
-      resolved: resolvedActs.length,
-      unresolved: acts.length - resolvedActs.length,
+      resolved: acts.filter((a) => a.resolution.status === "resolved").length,
+      unresolved: acts.filter((a) => a.resolution.status !== "resolved").length,
+      measured: resolvedActs.length,
+      notMeasured: acts.filter((a) => a.resolution.status === "resolved").length - resolvedActs.length,
       hits: acts.filter((a) => a.hit === true).length,
       hitsEnoughData: acts.filter((a) => a.hitEnoughData === true).length,
       homeCityThin: resolvedActs.filter((a) => a.cities.find((c) => c.city === a.homeCity)?.thin === true).length,

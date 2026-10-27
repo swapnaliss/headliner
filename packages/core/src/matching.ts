@@ -8,8 +8,8 @@
 export interface SearchHit {
   readonly entityId: string;
   readonly name: string;
-  /** Qloo popularity, 0..1. */
-  readonly popularity: number;
+  /** Qloo popularity, 0..1. Null or absent when Qloo gave none: that is "unavailable", never zero. */
+  readonly popularity?: number | null;
   readonly disambiguation?: string | null;
   readonly tags?: readonly { readonly name: string }[];
 }
@@ -17,7 +17,8 @@ export interface SearchHit {
 export interface MatchCandidate {
   readonly entityId: string;
   readonly name: string;
-  readonly popularity: number;
+  /** Null when Qloo gave no popularity for this result. */
+  readonly popularity: number | null;
   /** Up to 3 tag names, to tell same-named artists apart. */
   readonly tags: string[];
   readonly disambiguation: string | null;
@@ -55,7 +56,7 @@ function toCandidate(hit: SearchHit): MatchCandidate {
     tags.push(label);
     if (tags.length === MAX_CANDIDATE_TAGS) break;
   }
-  return { entityId: hit.entityId, name: hit.name, popularity: hit.popularity, tags, disambiguation: hit.disambiguation ?? null };
+  return { entityId: hit.entityId, name: hit.name, popularity: hit.popularity ?? null, tags, disambiguation: hit.disambiguation ?? null };
 }
 
 /**

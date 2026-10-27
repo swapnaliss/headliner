@@ -59,7 +59,7 @@ async function main(): Promise<void> {
   writeFileSync(FIT_REPORT, out.markdown.fitSanity);
   const h = out.homeCity.summary;
   const f = out.fitSanity.summary;
-  console.log(`home-city: ${h.hits} of ${h.resolved} resolved acts (${h.listed} listed); enough-data reading ${h.hitsEnoughData} of ${h.resolved}`);
+  console.log(`home-city: ${h.hits} of ${h.measured} resolved acts (${h.listed} listed); enough-data reading ${h.hitsEnoughData} of ${h.measured}`);
   console.log(`fit-sanity: ${f.outranking} of ${f.comparable} same-genre candidates above their control (${f.crowdCount} crowds)`);
 }
 

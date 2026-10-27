@@ -40,7 +40,7 @@ function cityCell(c: CityRow | undefined): string {
 export function renderHomeCity(r: HomeCityResult, sets: LoadedSets, log: RunLog): string {
   const s = r.summary;
   const set = sets.homeCity;
-  const resolved = r.acts.filter((a) => a.resolution.status === "resolved");
+  const resolved = r.acts.filter((a) => a.resolution.status === "resolved" && a.cities.some((c) => c.status === "ok"));
   const out: string[] = [
     "# Home-city check (measured)",
     "",
@@ -54,11 +54,17 @@ export function renderHomeCity(r: HomeCityResult, sets: LoadedSets, log: RunLog)
     "",
     "## Result",
     "",
-    `- Acts listed: ${s.listed}; resolved to a Qloo entity: ${s.resolved}; unresolved: ${s.unresolved}. Cities in the set: ${set.cities.length} (${set.cities.join(", ")}); home cities: ${s.cityCount}; continents: ${s.continentCount}.`,
-    `- Home city has the highest mean \`affinity_rank\` among all cities in the set (thin cities included, flagged): **${s.hits} of ${s.resolved}** resolved acts.`,
-    `- Stricter reading (home city has at least 15 cells and is highest among cities with at least 15 cells): **${s.hitsEnoughData} of ${s.resolved}** resolved acts.`,
-    `- Resolved acts whose own home-city heatmap is thin (under 15 cells): ${s.homeCityThin} of ${s.resolved}. Resolved acts with at least one thin city in the set: ${s.actsWithAnyThinCity} of ${s.resolved}.`,
+    `- Acts listed: ${s.listed}; resolved to a Qloo entity: ${s.resolved}; unresolved: ${s.unresolved}${s.notMeasured > 0 ? `; resolved but no heatmap recorded (not measured, neither hit nor miss): ${s.notMeasured}` : ""}. Cities in the set: ${set.cities.length} (${set.cities.join(", ")}); home cities: ${s.cityCount}; continents: ${s.continentCount}.`,
+    `- Home city has the highest mean \`affinity_rank\` among all cities in the set (thin cities included, flagged): **${s.hits} of ${s.measured}** resolved acts.`,
+    `- Stricter reading (home city has at least 15 cells and is highest among cities with at least 15 cells): **${s.hitsEnoughData} of ${s.measured}** resolved acts.`,
+    `- Resolved acts whose own home-city heatmap is thin (under 15 cells): ${s.homeCityThin} of ${s.measured}. Resolved acts with at least one thin city in the set: ${s.actsWithAnyThinCity} of ${s.measured}.`,
     "",
+    ...(s.notMeasured > 0
+      ? [
+          "Regenerated after the search-schema fix: the hit counts stay 11 of 14 because the one resolved act with no recorded heatmap is not counted. Its recorded search lacked a `popularity` key, which the adapter rejected when the proof was recorded, so its heatmaps were never requested. The fix makes it resolvable; recording its heatmaps needs a live run that was not made.",
+          "",
+        ]
+      : []),
     "No pass or fail line is applied to these counts. The sample is small and was chosen by hand; read the counts with every row below.",
     "",
     "## Every act",
@@ -66,7 +72,9 @@ export function renderHomeCity(r: HomeCityResult, sets: LoadedSets, log: RunLog)
     "| Act | Home city | Continent | Strongest city | Home city rank | Hit | Hit (enough data) |",
     "|---|---|---|---|---|---|---|",
     ...r.acts.map((a) =>
-      a.resolution.status === "resolved"
+      a.resolution.status === "resolved" && !a.cities.some((c) => c.status === "ok")
+        ? `| ${cell(a.name)} | ${a.homeCity} | ${a.continent} | resolved, no heatmap recorded (not measured) | n/a | n/a | n/a |`
+        : a.resolution.status === "resolved"
         ? `| ${cell(a.name)} | ${a.homeCity} | ${a.continent} | ${a.strongestCity ?? "n/a"} | ${a.homeRank ?? "n/a"} of ${a.cities.filter((c) => c.meanAffinityRank !== null).length} | ${yn(a.hit)} | ${yn(a.hitEnoughData)} |`
         : `| ${cell(a.name)} | ${a.homeCity} | ${a.continent} | unresolved (${cell(a.resolution.reason)}) | n/a | n/a | n/a |`,
     ),

@@ -10,10 +10,12 @@ For an act with a documented home city, is that city the one where Qloo's heatma
 
 ## Result
 
-- Acts listed: 15; resolved to a Qloo entity: 14; unresolved: 1. Cities in the set: 5 (London, Berlin, Lagos, Jakarta, Seoul); home cities: 5; continents: 3.
+- Acts listed: 15; resolved to a Qloo entity: 15; unresolved: 0; resolved but no heatmap recorded (not measured, neither hit nor miss): 1. Cities in the set: 5 (London, Berlin, Lagos, Jakarta, Seoul); home cities: 5; continents: 3.
 - Home city has the highest mean `affinity_rank` among all cities in the set (thin cities included, flagged): **11 of 14** resolved acts.
 - Stricter reading (home city has at least 15 cells and is highest among cities with at least 15 cells): **11 of 14** resolved acts.
 - Resolved acts whose own home-city heatmap is thin (under 15 cells): 0 of 14. Resolved acts with at least one thin city in the set: 5 of 14.
+
+Regenerated after the search-schema fix: the hit counts stay 11 of 14 because the one resolved act with no recorded heatmap is not counted. Its recorded search lacked a `popularity` key, which the adapter rejected when the proof was recorded, so its heatmaps were never requested. The fix makes it resolvable; recording its heatmaps needs a live run that was not made.
 
 No pass or fail line is applied to these counts. The sample is small and was chosen by hand; read the counts with every row below.
 
@@ -32,7 +34,7 @@ No pass or fail line is applied to these counts. The sample is small and was cho
 | Odunsi (The Engine) | Lagos | Africa | Lagos | 1 of 5 | yes | yes |
 | Hindia | Jakarta | Asia | Jakarta | 1 of 5 | yes | yes |
 | Reality Club | Jakarta | Asia | Jakarta | 1 of 5 | yes | yes |
-| Rich Brian | Jakarta | Asia | unresolved (search failed: QlooShapeError) | n/a | n/a | n/a |
+| Rich Brian | Jakarta | Asia | resolved, no heatmap recorded (not measured) | n/a | n/a | n/a |
 | BTS | Seoul | Asia | Jakarta | 2 of 5 | no | no |
 | BLACKPINK | Seoul | Asia | Jakarta | 2 of 5 | no | no |
 | IU | Seoul | Asia | Jakarta | 2 of 5 | no | no |
@@ -73,7 +75,7 @@ The home city is marked with an asterisk. `thin` = fewer than 15 cells.
 | Odunsi (The Engine) | Lagos | Wikipedia 'Odunsi (The Engine)': Lagos-based Nigerian artist | Odunsi (The Engine) |
 | Hindia | Jakarta | Wikipedia 'Hindia': project of Baskara Putra, Jakarta | Hindia |
 | Reality Club | Jakarta | Wikipedia 'Reality Club': Jakarta indie pop band | Reality Club |
-| Rich Brian | Jakarta | Wikipedia 'Rich Brian': born in Jakarta | unresolved |
+| Rich Brian | Jakarta | Wikipedia 'Rich Brian': born in Jakarta | Rich Brian |
 | BTS | Seoul | Wikipedia 'BTS': South Korean group formed in Seoul | BTS |
 | BLACKPINK | Seoul | Wikipedia 'Blackpink': South Korean group formed in Seoul | BLACKPINK |
 | IU | Seoul | Wikipedia 'IU (singer)': born in Seoul | IU |

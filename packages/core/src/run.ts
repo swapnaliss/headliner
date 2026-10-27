@@ -15,7 +15,7 @@ export type MatchRowState = (typeof MATCH_ROW_STATES)[number];
 export const MatchCandidateSchema = z.object({
   entityId: z.string().min(1).max(64),
   name: z.string(),
-  popularity: z.number().min(0).max(1),
+  popularity: z.number().min(0).max(1).nullable(),
   tags: z.array(z.string()).max(3),
   disambiguation: z.string().nullable(),
 });

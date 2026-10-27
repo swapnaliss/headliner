@@ -156,7 +156,7 @@ async function matchRow(rt: Runtime, role: "crowd" | "candidate", actInput: stri
 interface Resolved {
   readonly role: "crowd" | "candidate";
   readonly input: string;
-  readonly entity: { readonly entityId: string; readonly name: string; readonly popularity: number };
+  readonly entity: { readonly entityId: string; readonly name: string; readonly popularity: number | null };
   readonly confidence: number;
   readonly evidence: Evidence;
 }
@@ -333,7 +333,7 @@ function scoreMatched(
   compare: Compare,
   crowdIds: readonly string[],
   crowdEvidence: readonly Evidence[],
-  crowdPopularity: readonly number[],
+  crowdPopularity: readonly (number | null)[],
   overBudget: boolean,
 ): ActResult {
   const inCrowd = crowdIds.some((c) => c.toUpperCase() === r.entity.entityId.toUpperCase());
