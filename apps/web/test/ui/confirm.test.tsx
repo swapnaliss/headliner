@@ -100,7 +100,7 @@ describe("ConfirmView", () => {
     expect(rankButton().getAttribute("aria-disabled")).toBe("true");
     const reason = document.getElementById(rankButton().getAttribute("aria-describedby") ?? "");
     expect(reason?.textContent).toBe("Add another candidate act: only 2 remain.");
-    fireEvent.click(screen.getByRole("button", { name: "Put this act back" }));
+    fireEvent.click(screen.getByRole("button", { name: "Put back" }));
     expect(screen.getByText(/1 name still needs your decision/)).toBeTruthy();
   });
 
@@ -114,7 +114,7 @@ describe("ConfirmView", () => {
     expect(screen.queryAllByRole("radio")).toHaveLength(0);
     fireEvent.click(screen.getAllByRole("button", { name: "Remove act" })[0] as HTMLElement);
     fireEvent.click(screen.getAllByRole("button", { name: "Remove act" })[0] as HTMLElement);
-    expect(screen.getByTestId("status-line").textContent).toBe("All 7 names confirmed.");
+    expect(screen.getByTestId("status-line").textContent).toBe("5 confirmed, 2 left out. Ranking needs more acts.");
   });
 
   it("shows the city string the heatmap will receive, as text", () => {
@@ -130,7 +130,8 @@ describe("ConfirmView", () => {
     fireEvent.click(rankButton());
     expect(await screen.findByText("Could not reach Qloo. Your choices are kept. Try again.")).toBeTruthy();
     expect(document.body.textContent).not.toContain("SECRET");
-    expect((screen.getByLabelText(/French band/) as HTMLInputElement).checked).toBe(true);
+    expect(screen.getByRole("button", { name: "Change" })).toBeTruthy();
+    expect(screen.getByText("Match chosen by you")).toBeTruthy();
 
     cleanup();
     vi.stubGlobal("fetch", vi.fn(async () => Response.json({ error: { code: "not_found", message: "x" } }, { status: 404 })));
@@ -176,7 +177,7 @@ describe("confirmRules", () => {
     expect(summarise(list, {}).pending.map((r) => r.actInput)).toEqual(["Phoenix"]);
     const done = summarise(list, { Phoenix: "AAAA-1" });
     expect(done.blockedReason).toBeNull();
-    expect(done.decided).toBe(1);
+    expect(done.confirmed).toBe(6);
     expect(toChoices(list, { Phoenix: "AAAA-1" })).toEqual([{ actInput: "Phoenix", entityId: "AAAA-1" }]);
     expect(toChoices(list, {})).toEqual([]);
   });

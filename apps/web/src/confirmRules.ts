@@ -19,8 +19,10 @@ export interface Summary {
   readonly total: number;
   /** Rows that need a decision and have none. */
   readonly pending: readonly RowView[];
-  readonly decided: number;
-  readonly exact: number;
+  /** Acts that will be ranked from: exact matches plus names the user chose a hit for. */
+  readonly confirmed: number;
+  /** Names the user left out (None of these, Remove act). */
+  readonly leftOut: number;
   /** Acts left per role after the skips chosen so far. */
   readonly remaining: { readonly crowd: number; readonly candidate: number };
   /** Why ranking is blocked, or null when it is allowed. Names are untrusted: render as text. */
@@ -40,8 +42,8 @@ export function summarise(rows: readonly RowView[], decisions: Decisions): Summa
   return {
     total: rows.length,
     pending,
-    decided: rows.filter((r) => needsDecision(r) && decisions[r.actInput] !== undefined).length,
-    exact: rows.filter((r) => !needsDecision(r)).length,
+    confirmed: rows.filter((r) => !needsDecision(r) || (decisions[r.actInput] !== undefined && decisions[r.actInput] !== SKIP)).length,
+    leftOut: rows.filter(skipped).length,
     remaining,
     blockedReason,
   };
@@ -61,8 +63,10 @@ export function reasonParts(summary: Summary): { text: string; names: string[] }
 /** The status sentence (zero parts omitted). */
 export function statusLine(summary: Summary): string {
   const waiting = summary.pending.length;
-  if (waiting === 0 && summary.total > 0) return `All ${summary.total} names confirmed.`;
-  return `${waiting} ${waiting === 1 ? "name needs" : "names need"} your choice, ${summary.decided + summary.exact} confirmed.`;
+  const left = summary.leftOut > 0 ? `, ${summary.leftOut} left out` : "";
+  if (waiting === 0 && summary.blockedReason === null) return `All ${summary.confirmed} names confirmed${left}.`;
+  if (waiting === 0) return `${summary.confirmed} confirmed${left}. Ranking needs more acts.`;
+  return `${waiting} ${waiting === 1 ? "name needs" : "names need"} your choice, ${summary.confirmed} confirmed${left}.`;
 }
 
 /** The body for POST /api/slates/:runId/confirm: one choice per row that needs a decision. */

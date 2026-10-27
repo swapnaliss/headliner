@@ -44,7 +44,8 @@ test.describe("picker server (ambiguous name)", () => {
     await expect(radios.first()).toBeFocused();
     expect(await radios.evaluateAll((els) => els.some((e) => (e as HTMLInputElement).checked))).toBe(false);
     await page.keyboard.press("Space");
-    await expect(radios.first()).toBeChecked();
+    // The row moves to Confirmed and focus follows to its Change button.
+    await expect(page.getByRole("button", { name: "Change" })).toBeFocused();
     await expect(page.getByText("Match chosen by you")).toBeVisible();
     await expect(rank).not.toHaveAttribute("aria-disabled", "true");
     await rank.focus();
@@ -88,7 +89,7 @@ test.describe("default fixtures server (name not in the recordings)", () => {
     const rank = page.getByRole("button", { name: "Rank these acts" });
     await expect(rank).toHaveAttribute("aria-disabled", "true");
     await page.getByRole("button", { name: "Remove act" }).click();
-    await expect(page.getByTestId("status-line")).toHaveText("All 10 names confirmed.");
+    await expect(page.getByTestId("status-line")).toHaveText("All 9 names confirmed, 1 left out.");
     await rank.focus();
     await page.keyboard.press("Enter");
     await page.waitForURL(/\/slates\/[A-Za-z0-9_-]{21}$/);

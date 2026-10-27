@@ -48,8 +48,10 @@ export function MatchPicker({ id, typedName, hits, value, locked = false, onChan
                   <bdi>{hit.name}</bdi>
                 </span>
                 <span className="match-meta">Artist</span>
-                <span className="match-meta">{hit.tags.length > 0 ? `Tags: ${hit.tags.join(", ")}` : "No tags from Qloo"}</span>
-                <span className="match-meta">{hit.disambiguation ? <bdi dir="auto">{hit.disambiguation}</bdi> : "No description from Qloo"}</span>
+                {hit.tags.length > 0 ? <span className="match-meta">{`Tags: ${hit.tags.join(", ")}`}</span> : null}
+                <span className="match-meta">
+                  {hit.disambiguation && hit.disambiguation.trim().toLowerCase() !== hit.name.trim().toLowerCase() ? <bdi dir="auto">{hit.disambiguation}</bdi> : "No description from Qloo"}
+                </span>
                 <span className="match-meta">{popularityText(hit.popularity)}</span>
               </span>
               {selected ? (

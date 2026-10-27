@@ -41,11 +41,11 @@ function failureMessage(status: number | null): string {
 const NO_MATCH_REASON: Record<Exclude<MatchRowState, "exact" | "ambiguous">, { title: (name: string) => string; reason: (name: string) => string }> = {
   none: {
     title: (n) => `No Qloo match for ${n}`,
-    reason: () => "Qloo returned no artist with this name. Check the spelling in the room, or leave this act out.",
+    reason: () => "Qloo returned no artist with this name. Check the spelling or try the name the artist uses most.",
   },
   "not-in-recordings": {
     title: (n) => `${n} is not in the recorded responses`,
-    reason: (n) => `This demo only has recorded responses and does not include ${n}. Go back and use the sample room, or leave it out.`,
+    reason: (n) => `This demo only has recorded responses and does not include ${n}. Use the sample room or remove it.`,
   },
   "search-failed": {
     title: (n) => `Could not search for ${n}`,
@@ -61,12 +61,16 @@ export function ConfirmView({ runId, locationDisplay, rows, demoMode }: ConfirmV
   const [announcement, setAnnouncement] = useState("");
   const errorRef = useRef<HTMLHeadingElement>(null);
   const abortRef = useRef<AbortController | null>(null);
+  const focusAfter = useRef<string | null>(null);
 
   const summary = summarise(rows, decisions);
   const reason = reasonParts(summary);
   const busy = phase === "submitting";
-  const needing = rows.filter((r) => r.state !== "exact");
-  const exact = rows.filter((r) => r.state === "exact");
+  const open = rows.filter((r) => r.state !== "exact" && decisions[r.actInput] === undefined);
+  const confirmedRows = rows
+    .filter((r) => r.state === "exact" || (decisions[r.actInput] !== undefined && decisions[r.actInput] !== SKIP))
+    .map((row) => ({ row, chosen: row.state === "exact" ? undefined : row.candidates.find((c) => c.entityId === decisions[row.actInput]) }));
+  const leftOutRows = rows.filter((r) => decisions[r.actInput] === SKIP);
   const roleCount = (role: "crowd" | "candidate"): number => rows.filter((r) => r.role === role && decisions[r.actInput] !== SKIP).length;
 
   useEffect(() => {
@@ -74,8 +78,18 @@ export function ConfirmView({ runId, locationDisplay, rows, demoMode }: ConfirmV
   }, [phase]);
   useEffect(() => () => abortRef.current?.abort(), []);
 
+  // A row moves between sections when decided: keep focus on that row's next control.
+  useEffect(() => {
+    const target = focusAfter.current;
+    focusAfter.current = null;
+    if (target) document.getElementById(target)?.focus();
+  }, [decisions]);
+
   function decide(actInput: string, value: string | undefined) {
     if (busy) return;
+    const role = rows.find((r) => r.actInput === actInput)?.role ?? "candidate";
+    const id = rowId(role, actInput);
+    focusAfter.current = value === undefined ? id : value === SKIP ? `back-${id}` : `change-${id}`;
     const next = { ...decisions, [actInput]: value };
     setDecisions(next);
     const after = summarise(rows, next);
@@ -152,16 +166,13 @@ export function ConfirmView({ runId, locationDisplay, rows, demoMode }: ConfirmV
             <a href="/" className="back-link">
               Back to edit the room
             </a>
+            <span className="field-hint back-note">Your confirmations are kept for names you do not change.</span>
           </p>
           <div className="stack-sm">
             <h1>Confirm the matches</h1>
             <p role="status" aria-live="polite" data-testid="status-line">
               {statusLine(summary)}
             </p>
-            <p className="field-hint" data-testid="location-line">
-              City for the heatmap lookups: <bdi className="entity" dir="auto">{locationDisplay}</bdi>
-            </p>
-            {demoMode ? <p className="field-hint">Demo mode: only names with recorded Qloo responses can be matched.</p> : null}
             {summary.pending.length > 0 ? (
               <div>
                 <Button variant="secondary" onClick={focusFirstPending}>
@@ -179,7 +190,6 @@ export function ConfirmView({ runId, locationDisplay, rows, demoMode }: ConfirmV
             <ErrorState
               title="Could not rank these acts"
               message={failure}
-              kept="Your choices are kept on this page."
               headingRef={errorRef}
               actions={
                 <>
@@ -192,52 +202,84 @@ export function ConfirmView({ runId, locationDisplay, rows, demoMode }: ConfirmV
             />
           ) : null}
 
-          {needing.length > 0 ? (
+          {open.length > 0 ? (
             <section className="stack" aria-labelledby="needs-heading">
               <h2 id="needs-heading">Needs your choice</h2>
-              {needing.map((row) => {
-                const decision = decisions[row.actInput];
-                return (
-                  <article key={`${row.role}:${row.actInput}`} className="match-row" aria-labelledby={rowId(row.role, row.actInput)}>
-                    <p className="match-role">{ROLE_LABEL[row.role]}</p>
-                    {row.state === "ambiguous" ? (
-                      <MatchPicker
-                        id={rowId(row.role, row.actInput)}
-                        typedName={row.actInput}
-                        hits={row.candidates}
-                        value={decision ?? null}
-                        locked={busy}
-                        onChange={(value) => decide(row.actInput, value)}
-                      />
-                    ) : (
-                      <NoMatch id={rowId(row.role, row.actInput)} typedName={row.actInput} state={row.state} left={decision === SKIP} onChange={(skip) => decide(row.actInput, skip ? SKIP : undefined)} />
-                    )}
-                    {row.state === "ambiguous" && decision !== undefined && decision !== SKIP ? <p className="match-chosen"><Icon name="info" /> Match chosen by you</p> : null}
-                    {row.state === "ambiguous" ? (
+              {open.map((row) => (
+                <article key={`${row.role}:${row.actInput}`} className="match-row" aria-labelledby={rowId(row.role, row.actInput)}>
+                  <p className="match-role">{ROLE_LABEL[row.role]}</p>
+                  {row.state === "ambiguous" ? (
+                    <>
+                      <MatchPicker id={rowId(row.role, row.actInput)} typedName={row.actInput} hits={row.candidates} value={null} locked={busy} onChange={(value) => decide(row.actInput, value)} />
                       <div>
-                        <Button variant="quiet" onClick={() => decide(row.actInput, decision === SKIP ? undefined : SKIP)}>
-                          {decision === SKIP ? "Put this act back" : "Remove act"}
+                        <Button variant="quiet" onClick={() => decide(row.actInput, SKIP)}>
+                          Remove act
                         </Button>
                       </div>
-                    ) : null}
-                  </article>
-                );
-              })}
+                    </>
+                  ) : (
+                    <NoMatch id={rowId(row.role, row.actInput)} typedName={row.actInput} state={row.state} onRemove={() => decide(row.actInput, SKIP)} />
+                  )}
+                </article>
+              ))}
             </section>
           ) : null}
 
-          {exact.length > 0 ? (
+          {confirmedRows.length > 0 ? (
             <section className="stack-sm" aria-labelledby="confirmed-heading">
-              <h2 id="confirmed-heading">Confirmed ({exact.length})</h2>
-              <p className="field-hint">These names matched one Qloo artist exactly, so they need no choice.</p>
-              <ul className="chip-row" aria-label="Confirmed names">
-                {exact.map((row) => (
-                  <li key={`${row.role}:${row.actInput}`} className="tag-chip">
-                    <Icon name="check" />
-                    <span className="sr-only">{ROLE_LABEL[row.role]}: </span>
-                    <bdi className="entity" dir="auto">
-                      {row.candidates[0]?.name ?? row.actInput}
-                    </bdi>
+              <h2 id="confirmed-heading">Confirmed ({confirmedRows.length})</h2>
+              <ul className="confirmed-list">
+                {confirmedRows.map(({ row, chosen }) => {
+                  const hitName = chosen?.name ?? row.candidates[0]?.name ?? row.actInput;
+                  return (
+                    <li key={`${row.role}:${row.actInput}`} className="confirmed-row">
+                      <span className="confirmed-main">
+                        <span className="match-role">{ROLE_LABEL[row.role]}</span>
+                        <span className="entity" dir="auto">
+                          <bdi>{hitName}</bdi>
+                          {hitName !== row.actInput ? (
+                            <>
+                              {" "}
+                              (you typed <bdi>{row.actInput}</bdi>)
+                            </>
+                          ) : null}
+                        </span>
+                        {chosen ? (
+                          <span className="match-chosen">
+                            <Icon name="info" /> Match chosen by you
+                          </span>
+                        ) : null}
+                      </span>
+                      <span className="match-selected">
+                        <Icon name="check" /> Confirmed
+                      </span>
+                      {chosen ? (
+                        <Button id={`change-${rowId(row.role, row.actInput)}`} variant="quiet" onClick={() => decide(row.actInput, undefined)}>
+                          Change
+                        </Button>
+                      ) : null}
+                    </li>
+                  );
+                })}
+              </ul>
+            </section>
+          ) : null}
+
+          {leftOutRows.length > 0 ? (
+            <section className="stack-sm" aria-labelledby="left-heading">
+              <h2 id="left-heading">Left out ({leftOutRows.length})</h2>
+              <ul className="confirmed-list">
+                {leftOutRows.map((row) => (
+                  <li key={`${row.role}:${row.actInput}`} className="confirmed-row">
+                    <span className="confirmed-main">
+                      <span className="match-role">{ROLE_LABEL[row.role]}</span>
+                      <span className="entity" dir="auto">
+                        <bdi>{row.actInput}</bdi>
+                      </span>
+                    </span>
+                    <Button id={`back-${rowId(row.role, row.actInput)}`} variant="quiet" onClick={() => decide(row.actInput, undefined)}>
+                      Put back
+                    </Button>
                   </li>
                 ))}
               </ul>
@@ -250,10 +292,15 @@ export function ConfirmView({ runId, locationDisplay, rows, demoMode }: ConfirmV
             <h2 id="summary-heading">Summary</h2>
             <ul className="summary-list">
               <li>{summary.pending.length} need a choice</li>
-              <li>{summary.decided + summary.exact} confirmed</li>
+              <li>{summary.confirmed} confirmed</li>
+              {summary.leftOut > 0 ? <li>{summary.leftOut} left out</li> : null}
               <li>
                 {roleCount("crowd")} crowd acts, {roleCount("candidate")} candidate acts
               </li>
+              <li data-testid="location-line">
+                City for the heatmap lookups: <bdi className="entity" dir="auto">{locationDisplay}</bdi>
+              </li>
+              {demoMode ? <li>Demo mode: only names with recorded Qloo responses can be matched.</li> : null}
             </ul>
             <Button id="rank-button" loading={busy} loadingLabel="Ranking…" disabled={summary.blockedReason !== null} describedBy={describedBy} onClick={() => void rank()}>
               {rankLabel}
@@ -286,7 +333,7 @@ function rowId(role: string, actInput: string): string {
   return `row-${role}-${Array.from(actInput).map((c) => c.codePointAt(0)?.toString(16) ?? "").join("").slice(0, 40)}`;
 }
 
-function NoMatch({ id, typedName, state, left, onChange }: { id: string; typedName: string; state: MatchRowState; left: boolean; onChange: (skip: boolean) => void }) {
+function NoMatch({ id, typedName, state, onRemove }: { id: string; typedName: string; state: MatchRowState; onRemove: () => void }) {
   const copy = NO_MATCH_REASON[state as keyof typeof NO_MATCH_REASON];
   return (
     <div className="stack-sm">
@@ -301,10 +348,14 @@ function NoMatch({ id, typedName, state, left, onChange }: { id: string; typedNa
       <p>
         <bdi dir="auto">{copy.reason(typedName)}</bdi>
       </p>
-      {left ? <p className="match-chosen"><Icon name="check" /> Left out of this slate</p> : null}
-      <div>
-        <Button variant="quiet" onClick={() => onChange(!left)}>
-          {left ? "Put this act back" : "Remove act"}
+      <div className="state-actions">
+        {state === "not-in-recordings" ? (
+          <a className="btn" data-variant="secondary" href="/?sample=1">
+            Use the sample room
+          </a>
+        ) : null}
+        <Button variant="quiet" onClick={onRemove}>
+          Remove act
         </Button>
       </div>
     </div>
