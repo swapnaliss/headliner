@@ -108,6 +108,30 @@ export function logQlooEvent(event: QlooEvent): void {
   }
 }
 
+/** The model-turn line (M3-02), same style as the others: counts, cost and labels only, never prompt or reply text, never a key. */
+export interface LlmLogFields {
+  readonly endpoint: string;
+  /** What the page got: the model's checked text or the template. */
+  readonly source: "llm" | "template";
+  readonly budget: "none" | "allow" | "deny";
+  /** Fixed fallback reason (`budget`, `timeout`, `ungrounded`...), when the template was used with a model wired. */
+  readonly errorCode?: string;
+  readonly model?: string;
+  readonly inputTokens?: number;
+  readonly outputTokens?: number;
+  readonly costUsd?: number;
+  /** Grounding violation kinds (`number`, `banned`, `markup`), never the offending text. */
+  readonly violations?: readonly string[];
+}
+
+export function logLlm(fields: LlmLogFields): void {
+  try {
+    console.log(JSON.stringify({ kind: "llm", runId: runs.getStore()?.runId ?? "none", ...fields }));
+  } catch {
+    // logging must never break a request
+  }
+}
+
 /** The fixed error code of an error response (`{error:{code}}`), read without consuming the body. */
 async function errorCodeOf(response: Response): Promise<string | undefined> {
   if (response.status < 400) return undefined;

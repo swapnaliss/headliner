@@ -49,7 +49,7 @@ describe("explainSlate", () => {
     expect(out.text).toContain("Moderat's fit is 63.8");
     expect(model.calls).toBe(1);
     expect(b.settled).toEqual([1000]); // the real usage replaces the reservation
-    expect(events).toEqual([{ event: "explain_llm", inputTokens: 700, outputTokens: 300 }]);
+    expect(events).toEqual([{ event: "explain_done", source: "llm", budget: "allow", inputTokens: 700, outputTokens: 300 }]);
   });
 
   it("accepts the live recorded replies for the slate and for one act (both pass the grounding check)", async () => {
@@ -65,7 +65,7 @@ describe("explainSlate", () => {
     const events: ExplainEvent[] = [];
     const out = await explainSlate(slate, { model: stub({ text: loadReply("ungrounded") }), onEvent: (e) => void events.push(e) });
     expect(out).toMatchObject({ text: template, source: "template", fallback: "ungrounded" });
-    expect(events).toEqual([{ event: "explain_fallback", reason: "ungrounded", violations: ["number", "number"] }]);
+    expect(events).toEqual([{ event: "explain_done", source: "template", budget: "none", reason: "ungrounded", violations: ["number", "number"] }]);
   });
 
   it("falls back on banned wording, markup and invalid JSON", async () => {

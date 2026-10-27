@@ -18,6 +18,7 @@ const RequestSchema = z.object({ sentences: z.array(z.string()) });
  */
 export function explainModelFrom(provider: LlmProvider): ExplainModel {
   return {
+    model: provider.model,
     async generate({ system, user, maxOutputTokens }) {
       const result = await completeJson(provider, {
         messages: [
@@ -29,7 +30,7 @@ export function explainModelFrom(provider: LlmProvider): ExplainModel {
         maxCompletionTokens: maxOutputTokens,
       });
       const usage = { inputTokens: result.turn.usage.inputTokens, outputTokens: result.turn.usage.outputTokens };
-      return { text: result.ok ? JSON.stringify(result.value) : (result.turn.content ?? ""), usage };
+      return { text: result.ok ? JSON.stringify(result.value) : (result.turn.content ?? ""), usage, costUsd: result.turn.costUsd };
     },
   };
 }
