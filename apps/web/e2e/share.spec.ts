@@ -81,6 +81,19 @@ test.describe("share", () => {
     expect(res?.status()).toBe(404);
   });
 
+  test("a pinned sample id and a normal id are both served by /s/[id] with the same security headers", async ({ request }) => {
+    const id = await createSlate(request);
+    for (const path of [`/s/${id}`, "/s/sample-berlin-electronic"]) {
+      const res = await request.get(path);
+      expect(res.status(), path).toBe(200);
+      expect(res.headers()["x-robots-tag"], path).toBe("noindex, nofollow");
+      expect(res.headers()["cache-control"], path).toBe("private, no-store");
+      expect(res.headers()["content-security-policy"], path).toMatch(/script-src 'self' 'nonce-[^']+' 'strict-dynamic'/);
+    }
+    const sample = await request.get("/s/sample-berlin-electronic");
+    expect(await sample.text()).toContain("It does not expire.");
+  });
+
   test("security headers are on every response", async ({ request }) => {
     const id = await createSlate(request);
     for (const path of ["/", `/s/${id}`, `/slates/${id}`, "/api/health"]) {

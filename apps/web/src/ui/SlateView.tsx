@@ -1,6 +1,7 @@
 import type { Slate } from "@headliner/core";
 import { SLATE_TTL_MS } from "@headliner/slates";
 import { actDetailPath } from "../actDetail";
+import { isSampleId } from "../sampleId";
 import { buildSlateView } from "../slateView";
 import { ActCard } from "./ActCard";
 import { EmptyState } from "./EmptyState";
@@ -42,7 +43,7 @@ export function SlateView({ slate, shared = false, ephemeral = false }: SlateVie
             <p className="lead">Ranked by audience-taste fit with your crowd</p>
             {shared && life ? (
               <p className="field-hint shared-line" data-testid="shared-line">
-                Shared slate, created {life.created}. Kept until {life.until}.
+                {isSampleId(slate.id) ? `Sample slate, created ${life.created}. It does not expire.` : `Shared slate, created ${life.created}. Kept until ${life.until}.`}
               </p>
             ) : null}
             <details className="disclosure">
