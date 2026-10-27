@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Pre-registered crowds, same-genre candidates and one off-genre control each for the Fit sanity test (M3-04). Chosen on 2026-10-27 before any compare was requested for them.",
+  "chosenOn": "2026-10-27",
+  "rule": "For each crowd, every same-genre candidate should have a higher Fit than the off-genre control. Reported as observed; no threshold; nothing is tuned.",
+  "resolutionRule": "Same as home-city-set.json.",
+  "crowds": [
+    {
+      "id": "electronic",
+      "description": "an electronic-leaning, Berlin-style crowd",
+      "crowd": [
+        "Apparat",
+        "Moderat",
+        "Modeselektor",
+        "Hundreds",
+        "Brandt Brauer Frick",
+        "Boys Noize"
+      ],
+      "sameGenre": [
+        "Four Tet",
+        "Bonobo",
+        "Jon Hopkins",
+        "Caribou"
+      ],
+      "control": "Johnny Cash"
+    },
+    {
+      "id": "jazz",
+      "description": "a jazz-leaning crowd",
+      "crowd": [
+        "Miles Davis",
+        "John Coltrane",
+        "Herbie Hancock",
+        "Kamasi Washington",
+        "Esperanza Spalding"
+      ],
+      "sameGenre": [
+        "Robert Glasper",
+        "Pat Metheny",
+        "Brad Mehldau",
+        "Sonny Rollins"
+      ],
+      "control": "Metallica"
+    },
+    {
+      "id": "hip-hop",
+      "description": "a hip-hop-leaning crowd",
+      "crowd": [
+        "Kendrick Lamar",
+        "J. Cole",
+        "Nas",
+        "Tyler, the Creator",
+        "A Tribe Called Quest"
+      ],
+      "sameGenre": [
+        "Jay-Z",
+        "Run the Jewels",
+        "Denzel Curry",
+        "Little Simz"
+      ],
+      "control": "Dolly Parton"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "endpoint": "/v2/insights",
+  "params": {
+    "filter.location.query": "Lagos",
+    "filter.type": "urn:heatmap",
+    "signal.interests.entities": "2E869AD9-26C3-42BC-BEDF-8C20FA178765"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:08.335Z",
+  "latencyMs": 503,
+  "body": {
+    "success": true,
+    "results": {
+      "heatmap": [
+        {
+          "location": {
+            "latitude": 6.451721,
+            "longitude": 3.4002686,
+            "geohash": "s14ktq"
+          },
+          "query": {
+            "affinity": 1,
+            "affinity_rank": 0.675498,
+            "popularity": 1,
+            "entity_artist_affinity_rank": 0.675498,
+            "entity_artist_affinity": 1
+          }
+        },
+        {
+          "location": {
+            "latitude": 6.451721,
+            "longitude": 3.3343506,
+            "geohash": "s14key"
+          },
+          "query": {
+            "affinity": 0.5,
+            "affinity_rank": 0.200406,
+            "popularity": 0.5,
+            "entity_artist_affinity_rank": 0.200406,
+            "entity_artist_affinity": 0.5
+          }
+        },
+        {
+          "location": {
+            "latitude": 6.506653,
+            "longitude": 3.3563232,
+            "geohash": "s14mh2"
+          },
+          "query": {
+            "affinity": 0,
+            "affinity_rank": 0.169966,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.169966,
+            "entity_artist_affinity": 0
+          }
+        }
+      ]
+    },
+    "query": {
+      "localities": {
+        "filter": [
+          {
+            "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+            "name": "Lagos",
+            "subtype": "urn:entity:locality",
+            "location": {
+              "lat": 6.520236604701515,
+              "lon": 3.5956709582495026
+            },
+            "popularity": 0.99928516,
+            "disambiguation": "Lagos, Nigeria"
+          }
+        ]
+      }
+    }
+  }
+}

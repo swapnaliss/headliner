@@ -1,0 +1,1529 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Esperanza Spalding",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:33.369Z",
+  "latencyMs": 381,
+  "body": {
+    "results": [
+      {
+        "name": "Esperanza Spalding",
+        "entity_id": "5BEF4693-355C-4B46-B7EA-167DD66335F0",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "esperanzaspalding"
+            },
+            "instagram": {
+              "id": "esperanzaspalding"
+            },
+            "lastfm": {
+              "id": "esperanza%20spalding",
+              "listeners": 348870,
+              "scrobbles": 5355954
+            },
+            "musicbrainz": {
+              "id": "5c12b265-5e59-44e0-b657-5cf4169f7316"
+            },
+            "spotify": {
+              "id": "5bepW5vcdRzheNc0F8lHJ5"
+            },
+            "twitter": {
+              "id": "espespalding"
+            },
+            "wikidata": {
+              "id": "q238705"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/5BEF4693-355C-4B46-B7EA-167DD66335F0-420x-auto.jpg"
+          },
+          "short_description": "Esperanza Spalding is an American jazz bassist, singer, and composer known for her innovative blend of jazz, soul, and funk."
+        },
+        "popularity": 0.9864613661436317,
+        "disambiguation": "Esperanza Spalding",
+        "tags": [
+          {
+            "name": "Contemporary Jazz",
+            "tag_id": "urn:tag:genre:contemporary_jazz",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:contemporary_jazz"
+          },
+          {
+            "name": "Latin Jazz",
+            "tag_id": "urn:tag:genre:latin_jazz",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:latin_jazz"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:jazz",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:jazz"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Intellectual",
+            "tag_id": "urn:tag:audience:qloo:intellectual",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:intellectual"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:music:qloo:eclectic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:eclectic"
+          },
+          {
+            "name": "Soulful",
+            "tag_id": "urn:tag:music:qloo:soulful",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:soulful"
+          },
+          {
+            "name": "Complex",
+            "tag_id": "urn:tag:music:qloo:complex",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:complex"
+          },
+          {
+            "name": "Groovy",
+            "tag_id": "urn:tag:music:qloo:groovy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:groovy"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Intimate",
+            "tag_id": "urn:tag:style:qloo:intimate",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:intimate"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Virtuosic",
+            "tag_id": "urn:tag:characteristic:qloo:virtuosic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:virtuosic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:characteristic:qloo:expressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:expressive"
+          },
+          {
+            "name": "Creative",
+            "tag_id": "urn:tag:characteristic:qloo:creative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:creative"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:characteristic:qloo:eclectic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:eclectic"
+          },
+          {
+            "name": "Contemporary Jazz",
+            "tag_id": "urn:tag:style:qloo:contemporary_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:contemporary_jazz"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:style:qloo:jazz_fusion",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:jazz_fusion"
+          },
+          {
+            "name": "Neo-Soul",
+            "tag_id": "urn:tag:style:qloo:neo_soul",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:neo_soul"
+          },
+          {
+            "name": "Progressive Jazz",
+            "tag_id": "urn:tag:style:qloo:progressive_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:progressive_jazz"
+          },
+          {
+            "name": "Experimental Funk",
+            "tag_id": "urn:tag:style:qloo:experimental_funk",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental_funk"
+          },
+          {
+            "name": "Contemporary Jazz",
+            "tag_id": "urn:tag:influence:qloo:contemporary_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:contemporary_jazz"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:influence:qloo:jazz_fusion",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:jazz_fusion"
+          },
+          {
+            "name": "Neo-Soul",
+            "tag_id": "urn:tag:influence:qloo:neo_soul",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:neo_soul"
+          },
+          {
+            "name": "Jaco Pastorius",
+            "tag_id": "urn:tag:influenced_by:qloo:jaco_pastorius",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:jaco_pastorius"
+          },
+          {
+            "name": "Stanley Clarke",
+            "tag_id": "urn:tag:influenced_by:qloo:stanley_clarke",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:stanley_clarke"
+          },
+          {
+            "name": "Cassandra Wilson",
+            "tag_id": "urn:tag:influenced_by:qloo:cassandra_wilson",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:cassandra_wilson"
+          },
+          {
+            "name": "Joni Mitchell",
+            "tag_id": "urn:tag:influenced_by:qloo:joni_mitchell",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:joni_mitchell"
+          },
+          {
+            "name": "Double Bass",
+            "tag_id": "urn:tag:instrument:qloo:double_bass",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:double_bass"
+          },
+          {
+            "name": "Electric Bass",
+            "tag_id": "urn:tag:instrument:qloo:electric_bass",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:electric_bass"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Social Justice",
+            "tag_id": "urn:tag:theme:qloo:social_justice",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:social_justice"
+          },
+          {
+            "name": "Self-Discovery",
+            "tag_id": "urn:tag:theme:qloo:self_discovery",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:self_discovery"
+          },
+          {
+            "name": "Empowerment",
+            "tag_id": "urn:tag:theme:qloo:empowerment",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:empowerment"
+          },
+          {
+            "name": "Spirituality",
+            "tag_id": "urn:tag:theme:qloo:spirituality",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:spirituality"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:qloo:jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz"
+          },
+          {
+            "name": "Contemporary Jazz",
+            "tag_id": "urn:tag:genre:qloo:contemporary_jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:contemporary_jazz"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:genre:qloo:jazz_fusion",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz_fusion"
+          },
+          {
+            "name": "Soul",
+            "tag_id": "urn:tag:subgenre:qloo:soul",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:soul"
+          },
+          {
+            "name": "Funk",
+            "tag_id": "urn:tag:subgenre:qloo:funk",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:funk"
+          },
+          {
+            "name": "R&B",
+            "tag_id": "urn:tag:subgenre:qloo:r_b",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:r_b"
+          },
+          {
+            "name": "Mezzo-Soprano",
+            "tag_id": "urn:tag:artist:qloo:mezzo_soprano",
+            "type": "urn:tag:artist:qloo",
+            "value": "urn:tag:artist:qloo:mezzo_soprano"
+          }
+        ]
+      },
+      {
+        "name": "Esperanza",
+        "entity_id": "1978BE1A-F519-4C1C-B86D-614AC2FDBF49",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "esperanza",
+              "listeners": 66636,
+              "scrobbles": 279742
+            },
+            "musicbrainz": {
+              "id": "e0990991-10ae-44fd-90f3-4d1197cd7c6e"
+            },
+            "spotify": {
+              "id": "2EPsB0EMA0mySrM1lqvZ0x"
+            },
+            "twitter": {
+              "id": "esperanzaska"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/1978BE1A-F519-4C1C-B86D-614AC2FDBF49-420x-auto.jpg"
+          },
+          "short_description": "Esperanza is a jazz and Latin jazz artist known for vibrant, soulful compositions."
+        },
+        "popularity": 0.8072001376467135,
+        "disambiguation": "Esperanza",
+        "tags": [
+          {
+            "name": "Punk",
+            "tag_id": "urn:tag:genre:punk",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:punk"
+          },
+          {
+            "name": "Indie",
+            "tag_id": "urn:tag:genre:indie",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:indie"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Intellectual",
+            "tag_id": "urn:tag:audience:qloo:intellectual",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:intellectual"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Soulful",
+            "tag_id": "urn:tag:music:qloo:soulful",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:soulful"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:music:qloo:eclectic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:eclectic"
+          },
+          {
+            "name": "Rhythmic",
+            "tag_id": "urn:tag:music:qloo:rhythmic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:rhythmic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:music:qloo:expressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:expressive"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Improvisational",
+            "tag_id": "urn:tag:style:qloo:improvisational",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:improvisational"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Virtuosic",
+            "tag_id": "urn:tag:characteristic:qloo:virtuosic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:virtuosic"
+          },
+          {
+            "name": "Soulful",
+            "tag_id": "urn:tag:characteristic:qloo:soulful",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:soulful"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:characteristic:qloo:eclectic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:eclectic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:characteristic:qloo:expressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:expressive"
+          },
+          {
+            "name": "Jazz-Fusion",
+            "tag_id": "urn:tag:style:qloo:jazz_fusion",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:jazz_fusion"
+          },
+          {
+            "name": "Latin-Jazz",
+            "tag_id": "urn:tag:style:qloo:latin_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:latin_jazz"
+          },
+          {
+            "name": "World-Jazz",
+            "tag_id": "urn:tag:style:qloo:world_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:world_jazz"
+          },
+          {
+            "name": "Soul-Jazz",
+            "tag_id": "urn:tag:style:qloo:soul_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:soul_jazz"
+          },
+          {
+            "name": "Progressive-Jazz",
+            "tag_id": "urn:tag:style:qloo:progressive_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:progressive_jazz"
+          },
+          {
+            "name": "Contemporary Jazz",
+            "tag_id": "urn:tag:influence:qloo:contemporary_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:contemporary_jazz"
+          },
+          {
+            "name": "Fusion",
+            "tag_id": "urn:tag:influence:qloo:fusion",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:fusion"
+          },
+          {
+            "name": "Neo-Soul",
+            "tag_id": "urn:tag:influence:qloo:neo_soul",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:neo_soul"
+          },
+          {
+            "name": "Stanley Clarke",
+            "tag_id": "urn:tag:influenced_by:qloo:stanley_clarke",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:stanley_clarke"
+          },
+          {
+            "name": "Jaco Pastorius",
+            "tag_id": "urn:tag:influenced_by:qloo:jaco_pastorius",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:jaco_pastorius"
+          },
+          {
+            "name": "Esperanza Spalding",
+            "tag_id": "urn:tag:influenced_by:qloo:esperanza_spalding",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:esperanza_spalding"
+          },
+          {
+            "name": "Esperanza Spalding",
+            "tag_id": "urn:tag:influenced_by:qloo:esperanza_spalding",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:esperanza_spalding"
+          },
+          {
+            "name": "Double Bass",
+            "tag_id": "urn:tag:instrument:qloo:double_bass",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:double_bass"
+          },
+          {
+            "name": "Electric Bass",
+            "tag_id": "urn:tag:instrument:qloo:electric_bass",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:electric_bass"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Identity",
+            "tag_id": "urn:tag:theme:qloo:identity",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:identity"
+          },
+          {
+            "name": "Social Justice",
+            "tag_id": "urn:tag:theme:qloo:social_justice",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:social_justice"
+          },
+          {
+            "name": "Spirituality",
+            "tag_id": "urn:tag:theme:qloo:spirituality",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:spirituality"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:qloo:jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz"
+          },
+          {
+            "name": "Latin Jazz",
+            "tag_id": "urn:tag:genre:qloo:latin_jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:latin_jazz"
+          },
+          {
+            "name": "World Music",
+            "tag_id": "urn:tag:subgenre:qloo:world_music",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:world_music"
+          },
+          {
+            "name": "Fusion",
+            "tag_id": "urn:tag:subgenre:qloo:fusion",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:fusion"
+          },
+          {
+            "name": "Mezzo-Soprano",
+            "tag_id": "urn:tag:artist:qloo:mezzo_soprano",
+            "type": "urn:tag:artist:qloo",
+            "value": "urn:tag:artist:qloo:mezzo_soprano"
+          }
+        ]
+      },
+      {
+        "name": "Lord Esperanza",
+        "entity_id": "066D926F-2136-46C6-993A-F415B190D01C",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "lordesperanza23"
+            },
+            "instagram": {
+              "id": "lordesperanza"
+            },
+            "lastfm": {
+              "id": "lord%20esperanza",
+              "listeners": 20846,
+              "scrobbles": 405155
+            },
+            "musicbrainz": {
+              "id": "d10c842d-0a33-49c7-9ea6-2b01143f8e0f"
+            },
+            "spotify": {
+              "id": "7CPznx8a1emLVLeCHGuJeN"
+            },
+            "twitter": {
+              "id": "lordesperanza"
+            },
+            "wikidata": {
+              "id": "q56318840"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/066D926F-2136-46C6-993A-F415B190D01C-420x-auto.jpg"
+          },
+          "short_description": "French rapper known for his poetic and socially conscious lyrics blending hip hop and trap."
+        },
+        "popularity": 0.7128952704184393,
+        "disambiguation": "Lord Esperanza",
+        "tags": [
+          {
+            "name": "Rap",
+            "tag_id": "urn:tag:genre:rap",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rap"
+          },
+          {
+            "name": "Hip - Hop",
+            "tag_id": "urn:tag:genre:hip_hop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:hip_hop"
+          },
+          {
+            "name": "French",
+            "tag_id": "urn:tag:genre:french",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:french"
+          },
+          {
+            "name": "Trap",
+            "tag_id": "urn:tag:genre:trap",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:trap"
+          },
+          {
+            "name": "Thoughtful",
+            "tag_id": "urn:tag:audience:qloo:thoughtful",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:thoughtful"
+          },
+          {
+            "name": "Engaged",
+            "tag_id": "urn:tag:audience:qloo:engaged",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:engaged"
+          },
+          {
+            "name": "Youthful",
+            "tag_id": "urn:tag:audience:qloo:youthful",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:youthful"
+          },
+          {
+            "name": "Diverse",
+            "tag_id": "urn:tag:audience:qloo:diverse",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:diverse"
+          },
+          {
+            "name": "Poetic",
+            "tag_id": "urn:tag:music:qloo:poetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:poetic"
+          },
+          {
+            "name": "Socially Conscious",
+            "tag_id": "urn:tag:music:qloo:socially_conscious",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:socially_conscious"
+          },
+          {
+            "name": "Introspective",
+            "tag_id": "urn:tag:music:qloo:introspective",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:introspective"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Rhythmic",
+            "tag_id": "urn:tag:music:qloo:rhythmic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:rhythmic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Poetic",
+            "tag_id": "urn:tag:characteristic:qloo:poetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:poetic"
+          },
+          {
+            "name": "Socially Conscious",
+            "tag_id": "urn:tag:characteristic:qloo:socially_conscious",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:socially_conscious"
+          },
+          {
+            "name": "Introspective",
+            "tag_id": "urn:tag:characteristic:qloo:introspective",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:introspective"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:characteristic:qloo:expressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:expressive"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "French Hip Hop",
+            "tag_id": "urn:tag:style:qloo:french_hip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:french_hip_hop"
+          },
+          {
+            "name": "Conscious Rap",
+            "tag_id": "urn:tag:style:qloo:conscious_rap",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:conscious_rap"
+          },
+          {
+            "name": "Trap-Infused",
+            "tag_id": "urn:tag:style:qloo:trap_infused",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:trap_infused"
+          },
+          {
+            "name": "Poetic",
+            "tag_id": "urn:tag:style:qloo:poetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:poetic"
+          },
+          {
+            "name": "Alternative",
+            "tag_id": "urn:tag:style:qloo:alternative",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:alternative"
+          },
+          {
+            "name": "French Hip Hop",
+            "tag_id": "urn:tag:influence:qloo:french_hip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:french_hip_hop"
+          },
+          {
+            "name": "Alternative Hip Hop",
+            "tag_id": "urn:tag:influence:qloo:alternative_hip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:alternative_hip_hop"
+          },
+          {
+            "name": "Oxmo Puccino",
+            "tag_id": "urn:tag:influenced_by:qloo:oxmo_puccino",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:oxmo_puccino"
+          },
+          {
+            "name": "IAM",
+            "tag_id": "urn:tag:influenced_by:qloo:iam",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:iam"
+          },
+          {
+            "name": "Kery James",
+            "tag_id": "urn:tag:influenced_by:qloo:kery_james",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:kery_james"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Identity",
+            "tag_id": "urn:tag:theme:qloo:identity",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:identity"
+          },
+          {
+            "name": "Social Justice",
+            "tag_id": "urn:tag:theme:qloo:social_justice",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:social_justice"
+          },
+          {
+            "name": "Personal Growth",
+            "tag_id": "urn:tag:theme:qloo:personal_growth",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:personal_growth"
+          },
+          {
+            "name": "Urban Life",
+            "tag_id": "urn:tag:theme:qloo:urban_life",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:urban_life"
+          },
+          {
+            "name": "Existentialism",
+            "tag_id": "urn:tag:theme:qloo:existentialism",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:existentialism"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:genre:qloo:hip_hop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hip_hop"
+          },
+          {
+            "name": "Rap",
+            "tag_id": "urn:tag:genre:qloo:rap",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:rap"
+          },
+          {
+            "name": "Trap",
+            "tag_id": "urn:tag:genre:qloo:trap",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:trap"
+          },
+          {
+            "name": "Alternative Hip Hop",
+            "tag_id": "urn:tag:subgenre:qloo:alternative_hip_hop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:alternative_hip_hop"
+          },
+          {
+            "name": "Conscious Rap",
+            "tag_id": "urn:tag:subgenre:qloo:conscious_rap",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:conscious_rap"
+          }
+        ]
+      },
+      {
+        "name": "Spalding Rockwell",
+        "entity_id": "B5779429-F783-4A53-8D04-24224DAE05C4",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "spalding%20rockwell",
+              "listeners": 8685,
+              "scrobbles": 63121
+            },
+            "musicbrainz": {
+              "id": "3a2812ee-7069-462a-be38-b874ee753f40"
+            },
+            "spotify": {},
+            "wikidata": {
+              "id": "q7572990"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/B5779429-F783-4A53-8D04-24224DAE05C4-420x-auto.jpg"
+          },
+          "short_description": "An electronic dance music duo known for their energetic house and electro tracks."
+        },
+        "popularity": 0.7031081842441744,
+        "disambiguation": "Spalding Rockwell",
+        "tags": [
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:electronic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronic"
+          },
+          {
+            "name": "Electronica",
+            "tag_id": "urn:tag:genre:electronica",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronica"
+          },
+          {
+            "name": "Electro",
+            "tag_id": "urn:tag:genre:electro",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electro"
+          },
+          {
+            "name": "Electroclash",
+            "tag_id": "urn:tag:genre:electroclash",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electroclash"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:audience:qloo:energetic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:energetic"
+          },
+          {
+            "name": "Dance-Loving",
+            "tag_id": "urn:tag:audience:qloo:dance_loving",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dance_loving"
+          },
+          {
+            "name": "Youthful",
+            "tag_id": "urn:tag:audience:qloo:youthful",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:youthful"
+          },
+          {
+            "name": "Enthusiastic",
+            "tag_id": "urn:tag:audience:qloo:enthusiastic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:enthusiastic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:music:qloo:energetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:energetic"
+          },
+          {
+            "name": "Catchy",
+            "tag_id": "urn:tag:music:qloo:catchy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:catchy"
+          },
+          {
+            "name": "Vibrant",
+            "tag_id": "urn:tag:music:qloo:vibrant",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:vibrant"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:music:qloo:electronic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:electronic"
+          },
+          {
+            "name": "Danceable",
+            "tag_id": "urn:tag:music:qloo:danceable",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:danceable"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Vibrant",
+            "tag_id": "urn:tag:characteristic:qloo:vibrant",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:vibrant"
+          },
+          {
+            "name": "Catchy",
+            "tag_id": "urn:tag:characteristic:qloo:catchy",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:catchy"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:characteristic:qloo:dynamic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:dynamic"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:characteristic:qloo:electronic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:electronic"
+          },
+          {
+            "name": "Electro-House",
+            "tag_id": "urn:tag:style:qloo:electro_house",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:electro_house"
+          },
+          {
+            "name": "Dance-Pop",
+            "tag_id": "urn:tag:style:qloo:dance_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dance_pop"
+          },
+          {
+            "name": "Synth-Driven",
+            "tag_id": "urn:tag:style:qloo:synth_driven",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:synth_driven"
+          },
+          {
+            "name": "Vocal-Centric",
+            "tag_id": "urn:tag:style:qloo:vocal_centric",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:vocal_centric"
+          },
+          {
+            "name": "Club-Ready",
+            "tag_id": "urn:tag:style:qloo:club_ready",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:club_ready"
+          },
+          {
+            "name": "Electro House",
+            "tag_id": "urn:tag:influence:qloo:electro_house",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:electro_house"
+          },
+          {
+            "name": "Dance-Pop",
+            "tag_id": "urn:tag:influence:qloo:dance_pop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:dance_pop"
+          },
+          {
+            "name": "Daft Punk",
+            "tag_id": "urn:tag:influenced_by:qloo:daft_punk",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:daft_punk"
+          },
+          {
+            "name": "The Chemical Brothers",
+            "tag_id": "urn:tag:influenced_by:qloo:the_chemical_brothers",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:the_chemical_brothers"
+          },
+          {
+            "name": "New Order",
+            "tag_id": "urn:tag:influenced_by:qloo:new_order",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:new_order"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Synthesizers",
+            "tag_id": "urn:tag:instrument:qloo:synthesizers",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizers"
+          },
+          {
+            "name": "Drum Machines",
+            "tag_id": "urn:tag:instrument:qloo:drum_machines",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drum_machines"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Nightlife",
+            "tag_id": "urn:tag:theme:qloo:nightlife",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:nightlife"
+          },
+          {
+            "name": "Freedom",
+            "tag_id": "urn:tag:theme:qloo:freedom",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:freedom"
+          },
+          {
+            "name": "Dance",
+            "tag_id": "urn:tag:theme:qloo:dance",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:dance"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:qloo:electronic",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:electronic"
+          },
+          {
+            "name": "Dance",
+            "tag_id": "urn:tag:genre:qloo:dance",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:dance"
+          },
+          {
+            "name": "House",
+            "tag_id": "urn:tag:genre:qloo:house",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:house"
+          },
+          {
+            "name": "Electro",
+            "tag_id": "urn:tag:subgenre:qloo:electro",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:electro"
+          },
+          {
+            "name": "Pop",
+            "tag_id": "urn:tag:subgenre:qloo:pop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:pop"
+          }
+        ]
+      },
+      {
+        "name": "Esperanza de Vida",
+        "entity_id": "5596F32C-B0CC-4479-BCE2-F4D3C0013641",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "instagram": {
+              "id": "esperanzadevida"
+            },
+            "lastfm": {
+              "id": "esperanza%20de%20vida",
+              "listeners": 6144,
+              "scrobbles": 82143
+            },
+            "musicbrainz": {
+              "id": "5e82c7cc-73e9-4c9b-9055-fa7247e6811b"
+            },
+            "spotify": {
+              "id": "2JjoUSP8dUA7UhlWW59fK1"
+            },
+            "twitter": {
+              "id": "esperanzadevida"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/5596F32C-B0CC-4479-BCE2-F4D3C0013641-420x-auto.jpg"
+          },
+          "short_description": "Esperanza De Vida is a Latin Christian music group known for uplifting worship songs."
+        },
+        "popularity": 0.6843774353853265,
+        "disambiguation": "Esperanza de Vida",
+        "tags": [
+          {
+            "name": "Cristiano",
+            "tag_id": "urn:tag:genre:cristiano",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:cristiano"
+          },
+          {
+            "name": "En Espanol",
+            "tag_id": "urn:tag:genre:en_espanol",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:en_espanol"
+          },
+          {
+            "name": "Adoracion",
+            "tag_id": "urn:tag:genre:adoracion",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:adoracion"
+          },
+          {
+            "name": "Devout",
+            "tag_id": "urn:tag:audience:qloo:devout",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:devout"
+          },
+          {
+            "name": "Faithful",
+            "tag_id": "urn:tag:audience:qloo:faithful",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:faithful"
+          },
+          {
+            "name": "Spiritual",
+            "tag_id": "urn:tag:audience:qloo:spiritual",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:spiritual"
+          },
+          {
+            "name": "Engaged",
+            "tag_id": "urn:tag:audience:qloo:engaged",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:engaged"
+          },
+          {
+            "name": "Uplifting",
+            "tag_id": "urn:tag:music:qloo:uplifting",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:uplifting"
+          },
+          {
+            "name": "Inspirational",
+            "tag_id": "urn:tag:music:qloo:inspirational",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:inspirational"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Faith-Based",
+            "tag_id": "urn:tag:music:qloo:faith_based",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:faith_based"
+          },
+          {
+            "name": "Contemporary",
+            "tag_id": "urn:tag:music:qloo:contemporary",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:contemporary"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:style:qloo:passionate",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:passionate"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Worshipful",
+            "tag_id": "urn:tag:style:qloo:worshipful",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:worshipful"
+          },
+          {
+            "name": "Uplifting",
+            "tag_id": "urn:tag:characteristic:qloo:uplifting",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:uplifting"
+          },
+          {
+            "name": "Inspirational",
+            "tag_id": "urn:tag:characteristic:qloo:inspirational",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:inspirational"
+          },
+          {
+            "name": "Faith-Based",
+            "tag_id": "urn:tag:characteristic:qloo:faith_based",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:faith_based"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:characteristic:qloo:melodic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:melodic"
+          },
+          {
+            "name": "Contemporary",
+            "tag_id": "urn:tag:characteristic:qloo:contemporary",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:contemporary"
+          },
+          {
+            "name": "Latin Christian",
+            "tag_id": "urn:tag:style:qloo:latin_christian",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:latin_christian"
+          },
+          {
+            "name": "Contemporary Worship",
+            "tag_id": "urn:tag:style:qloo:contemporary_worship",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:contemporary_worship"
+          },
+          {
+            "name": "Gospel-Influenced",
+            "tag_id": "urn:tag:style:qloo:gospel_influenced",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:gospel_influenced"
+          },
+          {
+            "name": "Spanish-Language",
+            "tag_id": "urn:tag:style:qloo:spanish_language",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:spanish_language"
+          },
+          {
+            "name": "Faith-Centered",
+            "tag_id": "urn:tag:style:qloo:faith_centered",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:faith_centered"
+          },
+          {
+            "name": "Latin Christian Music",
+            "tag_id": "urn:tag:influence:qloo:latin_christian_music",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:latin_christian_music"
+          },
+          {
+            "name": "Contemporary Worship",
+            "tag_id": "urn:tag:influence:qloo:contemporary_worship",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:contemporary_worship"
+          },
+          {
+            "name": "Marcos Witt",
+            "tag_id": "urn:tag:influenced_by:qloo:marcos_witt",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:marcos_witt"
+          },
+          {
+            "name": "Jesus Adrian Romero",
+            "tag_id": "urn:tag:influenced_by:qloo:jesus_adrian_romero",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:jesus_adrian_romero"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Keyboard",
+            "tag_id": "urn:tag:instrument:qloo:keyboard",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:keyboard"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Faith",
+            "tag_id": "urn:tag:theme:qloo:faith",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:faith"
+          },
+          {
+            "name": "Hope",
+            "tag_id": "urn:tag:theme:qloo:hope",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:hope"
+          },
+          {
+            "name": "Worship",
+            "tag_id": "urn:tag:theme:qloo:worship",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:worship"
+          },
+          {
+            "name": "Praise",
+            "tag_id": "urn:tag:theme:qloo:praise",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:praise"
+          },
+          {
+            "name": "Spiritual Strength",
+            "tag_id": "urn:tag:theme:qloo:spiritual_strength",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:spiritual_strength"
+          },
+          {
+            "name": "Christian Music",
+            "tag_id": "urn:tag:genre:qloo:christian_music",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:christian_music"
+          },
+          {
+            "name": "Latin Christian",
+            "tag_id": "urn:tag:genre:qloo:latin_christian",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:latin_christian"
+          },
+          {
+            "name": "Contemporary Christian",
+            "tag_id": "urn:tag:genre:qloo:contemporary_christian",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:contemporary_christian"
+          },
+          {
+            "name": "Gospel",
+            "tag_id": "urn:tag:subgenre:qloo:gospel",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:gospel"
+          },
+          {
+            "name": "Latin Pop",
+            "tag_id": "urn:tag:subgenre:qloo:latin_pop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:latin_pop"
+          }
+        ]
+      }
+    ]
+  }
+}

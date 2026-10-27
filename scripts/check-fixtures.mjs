@@ -12,18 +12,23 @@ const fail = (m) => {
   bad += 1;
 };
 
-const files = readdirSync(DIR).filter((f) => f.endsWith(".json") && f !== "index.json");
-for (const f of files) {
-  const text = readFileSync(join(DIR, f), "utf8");
-  if (/x-api-key/i.test(text)) fail(`${f} mentions the API-key header`);
-  try {
-    const fx = JSON.parse(text);
-    for (const k of REQUIRED) if (!(k in fx)) fail(`${f} missing ${k}`);
-  } catch {
-    fail(`${f} is not valid JSON`);
+// fixtures/qloo (M0-02, M2) and fixtures/qloo/proof (M3-04, with its own index.json and a run-log.json that is not a fixture).
+let total = 0;
+for (const dir of [DIR, join(DIR, "proof")]) {
+  const files = readdirSync(dir).filter((f) => f.endsWith(".json") && f !== "index.json" && f !== "run-log.json");
+  total += files.length;
+  for (const f of files) {
+    const text = readFileSync(join(dir, f), "utf8");
+    if (/x-api-key/i.test(text)) fail(`${f} mentions the API-key header`);
+    try {
+      const fx = JSON.parse(text);
+      for (const k of REQUIRED) if (!(k in fx)) fail(`${f} missing ${k}`);
+    } catch {
+      fail(`${f} is not valid JSON`);
+    }
   }
+  const index = JSON.parse(readFileSync(join(dir, "index.json"), "utf8"));
+  for (const f of Object.values(index)) if (!files.includes(f)) fail(`${dir}/index.json points at missing ${f}`);
 }
-const index = JSON.parse(readFileSync(join(DIR, "index.json"), "utf8"));
-for (const f of Object.values(index)) if (!files.includes(f)) fail(`index.json points at missing ${f}`);
 if (bad) process.exit(1);
-console.log(`check-fixtures: ok (${files.length} fixtures)`);
+console.log(`check-fixtures: ok (${total} fixtures)`);

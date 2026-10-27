@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Pre-registered evaluation set for the home-city check (M3-04). Chosen from public knowledge before any heatmap for these acts was requested; never edited after results exist (a test checks the digest recorded in the report).",
+  "chosenOn": "2026-10-27",
+  "cities": [
+    "London",
+    "Berlin",
+    "Lagos",
+    "Jakarta",
+    "Seoul"
+  ],
+  "resolutionRule": "Search 'types=urn:entity:artist&take=5' for the act name; use the first result whose name equals the act name ignoring case, accents and punctuation; otherwise the act is reported unresolved.",
+  "acts": [
+    {
+      "name": "Stormzy",
+      "homeCity": "London",
+      "continent": "Europe",
+      "source": "Wikipedia 'Stormzy': born and raised in South London (Thornton Heath)"
+    },
+    {
+      "name": "Adele",
+      "homeCity": "London",
+      "continent": "Europe",
+      "source": "Wikipedia 'Adele': born in Tottenham, London"
+    },
+    {
+      "name": "Dua Lipa",
+      "homeCity": "London",
+      "continent": "Europe",
+      "source": "Wikipedia 'Dua Lipa': born in London"
+    },
+    {
+      "name": "Modeselektor",
+      "homeCity": "Berlin",
+      "continent": "Europe",
+      "source": "Wikipedia 'Modeselektor': Berlin electronic duo"
+    },
+    {
+      "name": "Seeed",
+      "homeCity": "Berlin",
+      "continent": "Europe",
+      "source": "Wikipedia 'Seeed': Berlin dancehall/reggae band formed in Berlin"
+    },
+    {
+      "name": "Rammstein",
+      "homeCity": "Berlin",
+      "continent": "Europe",
+      "source": "Wikipedia 'Rammstein': formed in Berlin in 1994"
+    },
+    {
+      "name": "Wizkid",
+      "homeCity": "Lagos",
+      "continent": "Africa",
+      "source": "Wikipedia 'Wizkid': born in Surulere, Lagos"
+    },
+    {
+      "name": "Tems",
+      "homeCity": "Lagos",
+      "continent": "Africa",
+      "source": "Wikipedia 'Tems': born in Lagos"
+    },
+    {
+      "name": "Odunsi (The Engine)",
+      "homeCity": "Lagos",
+      "continent": "Africa",
+      "source": "Wikipedia 'Odunsi (The Engine)': Lagos-based Nigerian artist"
+    },
+    {
+      "name": "Hindia",
+      "homeCity": "Jakarta",
+      "continent": "Asia",
+      "source": "Wikipedia 'Hindia': project of Baskara Putra, Jakarta"
+    },
+    {
+      "name": "Reality Club",
+      "homeCity": "Jakarta",
+      "continent": "Asia",
+      "source": "Wikipedia 'Reality Club': Jakarta indie pop band"
+    },
+    {
+      "name": "Rich Brian",
+      "homeCity": "Jakarta",
+      "continent": "Asia",
+      "source": "Wikipedia 'Rich Brian': born in Jakarta"
+    },
+    {
+      "name": "BTS",
+      "homeCity": "Seoul",
+      "continent": "Asia",
+      "source": "Wikipedia 'BTS': South Korean group formed in Seoul"
+    },
+    {
+      "name": "BLACKPINK",
+      "homeCity": "Seoul",
+      "continent": "Asia",
+      "source": "Wikipedia 'Blackpink': South Korean group formed in Seoul"
+    },
+    {
+      "name": "IU",
+      "homeCity": "Seoul",
+      "continent": "Asia",
+      "source": "Wikipedia 'IU (singer)': born in Seoul"
+    }
+  ]
+}

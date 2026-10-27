@@ -1,0 +1,1331 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Odunsi (The Engine)",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:16.620Z",
+  "latencyMs": 342,
+  "body": {
+    "results": [
+      {
+        "name": "Odunsi (The Engine)",
+        "entity_id": "6C76AD0C-4A3F-4D3B-81ED-C8FD8DCF1DFF",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "odunsi%20%28the%20engine%29",
+              "listeners": 84153,
+              "scrobbles": 1126748
+            },
+            "musicbrainz": {
+              "id": "00bff43c-6384-4841-9f5d-c8878dc83d26"
+            },
+            "spotify": {
+              "id": "3QAWvRmq1TMLuNtDKVyRaW"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/6C76AD0C-4A3F-4D3B-81ED-C8FD8DCF1DFF-420x-auto.jpg"
+          },
+          "short_description": "Nigerian alternative R&B and Afrobeats artist known for his eclectic sound and production skills."
+        },
+        "popularity": 0.7772552300690595,
+        "disambiguation": "Odunsi (The Engine)",
+        "tags": [
+          {
+            "name": "Nigeria",
+            "tag_id": "urn:tag:genre:nigeria",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:nigeria"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:electronic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronic"
+          },
+          {
+            "name": "Afrobeats",
+            "tag_id": "urn:tag:genre:afrobeats",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:afrobeats"
+          },
+          {
+            "name": "Rap",
+            "tag_id": "urn:tag:genre:rap",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rap"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Youthful",
+            "tag_id": "urn:tag:audience:qloo:youthful",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:youthful"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Creative",
+            "tag_id": "urn:tag:audience:qloo:creative",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:creative"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:music:qloo:eclectic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:eclectic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:music:qloo:experimental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:experimental"
+          },
+          {
+            "name": "Soulful",
+            "tag_id": "urn:tag:music:qloo:soulful",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:soulful"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Intimate",
+            "tag_id": "urn:tag:style:qloo:intimate",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:intimate"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:characteristic:qloo:eclectic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:eclectic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:characteristic:qloo:experimental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:experimental"
+          },
+          {
+            "name": "Soulful",
+            "tag_id": "urn:tag:characteristic:qloo:soulful",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:soulful"
+          },
+          {
+            "name": "Versatile",
+            "tag_id": "urn:tag:characteristic:qloo:versatile",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:versatile"
+          },
+          {
+            "name": "Alternative R&B",
+            "tag_id": "urn:tag:style:qloo:alternative_r_b",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:alternative_r_b"
+          },
+          {
+            "name": "Afro-Futuristic",
+            "tag_id": "urn:tag:style:qloo:afro_futuristic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:afro_futuristic"
+          },
+          {
+            "name": "Neo Soul",
+            "tag_id": "urn:tag:style:qloo:neo_soul",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:neo_soul"
+          },
+          {
+            "name": "Experimental Hip Hop",
+            "tag_id": "urn:tag:style:qloo:experimental_hip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental_hip_hop"
+          },
+          {
+            "name": "Psychedelic Afrobeats",
+            "tag_id": "urn:tag:style:qloo:psychedelic_afrobeats",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:psychedelic_afrobeats"
+          },
+          {
+            "name": "Alternative R&B",
+            "tag_id": "urn:tag:influence:qloo:alternative_r_b",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:alternative_r_b"
+          },
+          {
+            "name": "Afrobeats",
+            "tag_id": "urn:tag:influence:qloo:afrobeats",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:afrobeats"
+          },
+          {
+            "name": "Neo Soul",
+            "tag_id": "urn:tag:influence:qloo:neo_soul",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:neo_soul"
+          },
+          {
+            "name": "Fela Kuti",
+            "tag_id": "urn:tag:influenced_by:qloo:fela_kuti",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:fela_kuti"
+          },
+          {
+            "name": "Frank Ocean",
+            "tag_id": "urn:tag:influenced_by:qloo:frank_ocean",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:frank_ocean"
+          },
+          {
+            "name": "Kanye West",
+            "tag_id": "urn:tag:influenced_by:qloo:kanye_west",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:kanye_west"
+          },
+          {
+            "name": "J Dilla",
+            "tag_id": "urn:tag:influenced_by:qloo:j_dilla",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:j_dilla"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Synthesizer",
+            "tag_id": "urn:tag:instrument:qloo:synthesizer",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizer"
+          },
+          {
+            "name": "Drum Machine",
+            "tag_id": "urn:tag:instrument:qloo:drum_machine",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drum_machine"
+          },
+          {
+            "name": "Keyboard",
+            "tag_id": "urn:tag:instrument:qloo:keyboard",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:keyboard"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Self-Discovery",
+            "tag_id": "urn:tag:theme:qloo:self_discovery",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:self_discovery"
+          },
+          {
+            "name": "Youth",
+            "tag_id": "urn:tag:theme:qloo:youth",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:youth"
+          },
+          {
+            "name": "Emotions",
+            "tag_id": "urn:tag:theme:qloo:emotions",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:emotions"
+          },
+          {
+            "name": "Urban Life",
+            "tag_id": "urn:tag:theme:qloo:urban_life",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:urban_life"
+          },
+          {
+            "name": "Alternative R&B",
+            "tag_id": "urn:tag:genre:qloo:alternative_r_b",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:alternative_r_b"
+          },
+          {
+            "name": "Afrobeats",
+            "tag_id": "urn:tag:genre:qloo:afrobeats",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:afrobeats"
+          },
+          {
+            "name": "Neo Soul",
+            "tag_id": "urn:tag:genre:qloo:neo_soul",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:neo_soul"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:subgenre:qloo:hip_hop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:hip_hop"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:subgenre:qloo:experimental",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:experimental"
+          }
+        ]
+      },
+      {
+        "name": "Engine Down",
+        "entity_id": "DD35A9EE-BA9B-43FB-B4D0-F4A54FC472E3",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "engine%20down",
+              "listeners": 43367,
+              "scrobbles": 834280
+            },
+            "musicbrainz": {
+              "id": "65c54877-7b81-4cb1-8e6b-dc14fbec8b43"
+            },
+            "spotify": {
+              "id": "3y2Ft6gr35tMVtH2SKYIac"
+            },
+            "wikidata": {
+              "id": "q1342379"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/DD35A9EE-BA9B-43FB-B4D0-F4A54FC472E3-420x-auto.jpg"
+          },
+          "short_description": "Engine Down was an American post-hardcore band known for their dynamic sound and emotive lyrics."
+        },
+        "popularity": 0.9412336249329478,
+        "disambiguation": "Engine Down",
+        "tags": [
+          {
+            "name": "Indie",
+            "tag_id": "urn:tag:genre:indie",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:indie"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:genre:indie_rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:indie_rock"
+          },
+          {
+            "name": "Emo",
+            "tag_id": "urn:tag:genre:emo",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:emo"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:audience:qloo:emotive",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:emotive"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:music:qloo:dynamic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:dynamic"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:music:qloo:emotive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:emotive"
+          },
+          {
+            "name": "Intricate",
+            "tag_id": "urn:tag:music:qloo:intricate",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:intricate"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:music:qloo:energetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:energetic"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Intense",
+            "tag_id": "urn:tag:style:qloo:intense",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:intense"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:characteristic:qloo:dynamic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:dynamic"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:characteristic:qloo:emotive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:emotive"
+          },
+          {
+            "name": "Intricate",
+            "tag_id": "urn:tag:characteristic:qloo:intricate",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:intricate"
+          },
+          {
+            "name": "Introspective",
+            "tag_id": "urn:tag:characteristic:qloo:introspective",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:introspective"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Post-Hardcore",
+            "tag_id": "urn:tag:style:qloo:post_hardcore",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:post_hardcore"
+          },
+          {
+            "name": "Emotive-Indie",
+            "tag_id": "urn:tag:style:qloo:emotive_indie",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:emotive_indie"
+          },
+          {
+            "name": "Complex-Guitar-Driven",
+            "tag_id": "urn:tag:style:qloo:complex_guitar_driven",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:complex_guitar_driven"
+          },
+          {
+            "name": "Melodic-Alternative",
+            "tag_id": "urn:tag:style:qloo:melodic_alternative",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:melodic_alternative"
+          },
+          {
+            "name": "Experimental-Post-Rock",
+            "tag_id": "urn:tag:style:qloo:experimental_post_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental_post_rock"
+          },
+          {
+            "name": "Post-Hardcore",
+            "tag_id": "urn:tag:influence:qloo:post_hardcore",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:post_hardcore"
+          },
+          {
+            "name": "Emo",
+            "tag_id": "urn:tag:influence:qloo:emo",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:emo"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:influence:qloo:indie_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:indie_rock"
+          },
+          {
+            "name": "Fugazi",
+            "tag_id": "urn:tag:influenced_by:qloo:fugazi",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:fugazi"
+          },
+          {
+            "name": "Drive Like Jehu",
+            "tag_id": "urn:tag:influenced_by:qloo:drive_like_jehu",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:drive_like_jehu"
+          },
+          {
+            "name": "Jawbox",
+            "tag_id": "urn:tag:influenced_by:qloo:jawbox",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:jawbox"
+          },
+          {
+            "name": "Sunny Day Real Estate",
+            "tag_id": "urn:tag:influenced_by:qloo:sunny_day_real_estate",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:sunny_day_real_estate"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Bass",
+            "tag_id": "urn:tag:instrument:qloo:bass",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:bass"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Emotional Struggle",
+            "tag_id": "urn:tag:theme:qloo:emotional_struggle",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:emotional_struggle"
+          },
+          {
+            "name": "Personal Growth",
+            "tag_id": "urn:tag:theme:qloo:personal_growth",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:personal_growth"
+          },
+          {
+            "name": "Relationships",
+            "tag_id": "urn:tag:theme:qloo:relationships",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:relationships"
+          },
+          {
+            "name": "Introspection",
+            "tag_id": "urn:tag:theme:qloo:introspection",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:introspection"
+          },
+          {
+            "name": "Post-Hardcore",
+            "tag_id": "urn:tag:genre:qloo:post_hardcore",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:post_hardcore"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:genre:qloo:indie_rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:indie_rock"
+          },
+          {
+            "name": "Emo",
+            "tag_id": "urn:tag:genre:qloo:emo",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:emo"
+          },
+          {
+            "name": "Alternative Rock",
+            "tag_id": "urn:tag:subgenre:qloo:alternative_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:alternative_rock"
+          },
+          {
+            "name": "Experimental Rock",
+            "tag_id": "urn:tag:subgenre:qloo:experimental_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:experimental_rock"
+          }
+        ]
+      },
+      {
+        "name": "The Engine Room",
+        "entity_id": "3311B1D2-0999-4DED-A802-F5443B4E4185",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "the%20engine%20room",
+              "listeners": 34414,
+              "scrobbles": 333296
+            },
+            "musicbrainz": {
+              "id": "7ff0daea-a97b-4b25-992e-071b4ad5116b"
+            },
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/3311B1D2-0999-4DED-A802-F5443B4E4185-420x-auto.jpg"
+          },
+          "short_description": "The Engine Room is a music artist or group."
+        },
+        "popularity": 0.9384537011109574,
+        "disambiguation": "The Engine Room",
+        "tags": [
+          {
+            "name": "Soundtrack",
+            "tag_id": "urn:tag:genre:soundtrack",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:soundtrack"
+          },
+          {
+            "name": "Chillout",
+            "tag_id": "urn:tag:genre:chillout",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:chillout"
+          },
+          {
+            "name": "Electronica",
+            "tag_id": "urn:tag:genre:electronica",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronica"
+          },
+          {
+            "name": "Trip - Hop",
+            "tag_id": "urn:tag:genre:trip_hop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:trip_hop"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:electronic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronic"
+          }
+        ]
+      },
+      {
+        "name": "Engine-EarZ Experiment",
+        "entity_id": "3BD41441-E427-423A-A55A-D7D8EF90067F",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "engine-earz%20experiment",
+              "listeners": 50474,
+              "scrobbles": 230737
+            },
+            "musicbrainz": {
+              "id": "dc9bb3e0-716b-4378-a530-53650f642eb6"
+            },
+            "spotify": {
+              "id": "7C2zlBAZdvmkeb1fuqB37i"
+            },
+            "twitter": {
+              "id": "engineearz"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/3BD41441-E427-423A-A55A-D7D8EF90067F-420x-auto.jpg"
+          },
+          "short_description": "An experimental hip hop group known for innovative beats and lyrical complexity."
+        },
+        "popularity": 0.8652546632884744,
+        "disambiguation": "Engine-EarZ Experiment",
+        "tags": [
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:electronic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronic"
+          },
+          {
+            "name": "Drum & Bass",
+            "tag_id": "urn:tag:genre:drum_bass",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:drum_bass"
+          },
+          {
+            "name": "Dubstep",
+            "tag_id": "urn:tag:genre:dubstep",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:dubstep"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:genre:experimental",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:experimental"
+          },
+          {
+            "name": "Electronica",
+            "tag_id": "urn:tag:genre:electronica",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronica"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Underground",
+            "tag_id": "urn:tag:audience:qloo:underground",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:underground"
+          },
+          {
+            "name": "Appreciative",
+            "tag_id": "urn:tag:audience:qloo:appreciative",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:appreciative"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:music:qloo:experimental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:experimental"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Complex",
+            "tag_id": "urn:tag:music:qloo:complex",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:complex"
+          },
+          {
+            "name": "Layered",
+            "tag_id": "urn:tag:music:qloo:layered",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:layered"
+          },
+          {
+            "name": "Avant-Garde",
+            "tag_id": "urn:tag:music:qloo:avant_garde",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:avant_garde"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Raw",
+            "tag_id": "urn:tag:style:qloo:raw",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:raw"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:characteristic:qloo:experimental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:experimental"
+          },
+          {
+            "name": "Complex",
+            "tag_id": "urn:tag:characteristic:qloo:complex",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:complex"
+          },
+          {
+            "name": "Underground",
+            "tag_id": "urn:tag:characteristic:qloo:underground",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:underground"
+          },
+          {
+            "name": "Alternative",
+            "tag_id": "urn:tag:characteristic:qloo:alternative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:alternative"
+          },
+          {
+            "name": "Abstract Hip Hop",
+            "tag_id": "urn:tag:style:qloo:abstract_hip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:abstract_hip_hop"
+          },
+          {
+            "name": "Avant-Garde Hip Hop",
+            "tag_id": "urn:tag:style:qloo:avant_garde_hip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:avant_garde_hip_hop"
+          },
+          {
+            "name": "Experimental Boom Bap",
+            "tag_id": "urn:tag:style:qloo:experimental_boom_bap",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental_boom_bap"
+          },
+          {
+            "name": "Underground Hip Hop",
+            "tag_id": "urn:tag:style:qloo:underground_hip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:underground_hip_hop"
+          },
+          {
+            "name": "Alternative Hip Hop",
+            "tag_id": "urn:tag:style:qloo:alternative_hip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:alternative_hip_hop"
+          },
+          {
+            "name": "Experimental Hip Hop",
+            "tag_id": "urn:tag:influence:qloo:experimental_hip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:experimental_hip_hop"
+          },
+          {
+            "name": "Alternative Hip Hop",
+            "tag_id": "urn:tag:influence:qloo:alternative_hip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:alternative_hip_hop"
+          },
+          {
+            "name": "Underground Hip Hop",
+            "tag_id": "urn:tag:influence:qloo:underground_hip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:underground_hip_hop"
+          },
+          {
+            "name": "Wu-Tang Clan",
+            "tag_id": "urn:tag:influenced_by:qloo:wu_tang_clan",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:wu_tang_clan"
+          },
+          {
+            "name": "Company Flow",
+            "tag_id": "urn:tag:influenced_by:qloo:company_flow",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:company_flow"
+          },
+          {
+            "name": "DJ Shadow",
+            "tag_id": "urn:tag:influenced_by:qloo:dj_shadow",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:dj_shadow"
+          },
+          {
+            "name": "RZA",
+            "tag_id": "urn:tag:influenced_by:qloo:rza",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:rza"
+          },
+          {
+            "name": "Turntables",
+            "tag_id": "urn:tag:instrument:qloo:turntables",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:turntables"
+          },
+          {
+            "name": "Samplers",
+            "tag_id": "urn:tag:instrument:qloo:samplers",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:samplers"
+          },
+          {
+            "name": "Drum Machines",
+            "tag_id": "urn:tag:instrument:qloo:drum_machines",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drum_machines"
+          },
+          {
+            "name": "Synthesizers",
+            "tag_id": "urn:tag:instrument:qloo:synthesizers",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizers"
+          },
+          {
+            "name": "Social Commentary",
+            "tag_id": "urn:tag:theme:qloo:social_commentary",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:social_commentary"
+          },
+          {
+            "name": "Urban Life",
+            "tag_id": "urn:tag:theme:qloo:urban_life",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:urban_life"
+          },
+          {
+            "name": "Personal Struggle",
+            "tag_id": "urn:tag:theme:qloo:personal_struggle",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:personal_struggle"
+          },
+          {
+            "name": "Abstract Concepts",
+            "tag_id": "urn:tag:theme:qloo:abstract_concepts",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:abstract_concepts"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:genre:qloo:hip_hop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hip_hop"
+          },
+          {
+            "name": "Experimental Hip Hop",
+            "tag_id": "urn:tag:genre:qloo:experimental_hip_hop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:experimental_hip_hop"
+          },
+          {
+            "name": "Alternative Hip Hop",
+            "tag_id": "urn:tag:subgenre:qloo:alternative_hip_hop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:alternative_hip_hop"
+          },
+          {
+            "name": "Underground Hip Hop",
+            "tag_id": "urn:tag:subgenre:qloo:underground_hip_hop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:underground_hip_hop"
+          }
+        ]
+      },
+      {
+        "name": "Engine",
+        "entity_id": "F0EC5560-C2CA-4EEA-ABFF-85441C9F2F43",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "instagram": {
+              "id": "engine.band"
+            },
+            "lastfm": {
+              "id": "engine",
+              "listeners": 8062,
+              "scrobbles": 132548
+            },
+            "musicbrainz": {
+              "id": "696d1852-1fae-40d3-b766-bc4837a06b54"
+            },
+            "spotify": {
+              "id": "4oqY7yzBFjrc3xFtskajUj"
+            },
+            "twitter": {
+              "id": "engine0fficial"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/F0EC5560-C2CA-4EEA-ABFF-85441C9F2F43-420x-auto.jpg"
+          },
+          "short_description": "Engine is an American progressive metal band known for complex compositions and heavy riffs."
+        },
+        "popularity": 0.8206274396024439,
+        "disambiguation": "Engine",
+        "tags": [
+          {
+            "name": "Nu Metal",
+            "tag_id": "urn:tag:genre:nu_metal",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:nu_metal"
+          },
+          {
+            "name": "Alternative Metal",
+            "tag_id": "urn:tag:genre:alternative_metal",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:alternative_metal"
+          },
+          {
+            "name": "Metal",
+            "tag_id": "urn:tag:genre:metal",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:metal"
+          },
+          {
+            "name": "Progressive Metal",
+            "tag_id": "urn:tag:genre:progressive_metal",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:progressive_metal"
+          },
+          {
+            "name": "Progressive",
+            "tag_id": "urn:tag:genre:progressive",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:progressive"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Technical",
+            "tag_id": "urn:tag:audience:qloo:technical",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:technical"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Analytical",
+            "tag_id": "urn:tag:audience:qloo:analytical",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:analytical"
+          },
+          {
+            "name": "Technical",
+            "tag_id": "urn:tag:music:qloo:technical",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:technical"
+          },
+          {
+            "name": "Complex",
+            "tag_id": "urn:tag:music:qloo:complex",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:complex"
+          },
+          {
+            "name": "Heavy",
+            "tag_id": "urn:tag:music:qloo:heavy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:heavy"
+          },
+          {
+            "name": "Progressive",
+            "tag_id": "urn:tag:music:qloo:progressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:progressive"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:music:qloo:dynamic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:dynamic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Precise",
+            "tag_id": "urn:tag:style:qloo:precise",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:precise"
+          },
+          {
+            "name": "Technical",
+            "tag_id": "urn:tag:style:qloo:technical",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:technical"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Technical",
+            "tag_id": "urn:tag:characteristic:qloo:technical",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:technical"
+          },
+          {
+            "name": "Complex",
+            "tag_id": "urn:tag:characteristic:qloo:complex",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:complex"
+          },
+          {
+            "name": "Heavy",
+            "tag_id": "urn:tag:characteristic:qloo:heavy",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:heavy"
+          },
+          {
+            "name": "Progressive",
+            "tag_id": "urn:tag:characteristic:qloo:progressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:progressive"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:characteristic:qloo:dynamic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:dynamic"
+          },
+          {
+            "name": "Progressive",
+            "tag_id": "urn:tag:style:qloo:progressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:progressive"
+          },
+          {
+            "name": "Technical",
+            "tag_id": "urn:tag:style:qloo:technical",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:technical"
+          },
+          {
+            "name": "Alternative",
+            "tag_id": "urn:tag:style:qloo:alternative",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:alternative"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Heavy",
+            "tag_id": "urn:tag:style:qloo:heavy",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:heavy"
+          },
+          {
+            "name": "Progressive Metal",
+            "tag_id": "urn:tag:influence:qloo:progressive_metal",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:progressive_metal"
+          },
+          {
+            "name": "Alternative Metal",
+            "tag_id": "urn:tag:influence:qloo:alternative_metal",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:alternative_metal"
+          },
+          {
+            "name": "Technical Metal",
+            "tag_id": "urn:tag:influence:qloo:technical_metal",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:technical_metal"
+          },
+          {
+            "name": "Rush",
+            "tag_id": "urn:tag:influenced_by:qloo:rush",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:rush"
+          },
+          {
+            "name": "Metallica",
+            "tag_id": "urn:tag:influenced_by:qloo:metallica",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:metallica"
+          },
+          {
+            "name": "King Crimson",
+            "tag_id": "urn:tag:influenced_by:qloo:king_crimson",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:king_crimson"
+          },
+          {
+            "name": "Iron Maiden",
+            "tag_id": "urn:tag:influenced_by:qloo:iron_maiden",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:iron_maiden"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Bass",
+            "tag_id": "urn:tag:instrument:qloo:bass",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:bass"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Existentialism",
+            "tag_id": "urn:tag:theme:qloo:existentialism",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:existentialism"
+          },
+          {
+            "name": "Personal Struggle",
+            "tag_id": "urn:tag:theme:qloo:personal_struggle",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:personal_struggle"
+          },
+          {
+            "name": "Society",
+            "tag_id": "urn:tag:theme:qloo:society",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:society"
+          },
+          {
+            "name": "Technology",
+            "tag_id": "urn:tag:theme:qloo:technology",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:technology"
+          },
+          {
+            "name": "Progressive Metal",
+            "tag_id": "urn:tag:genre:qloo:progressive_metal",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:progressive_metal"
+          },
+          {
+            "name": "Alternative Metal",
+            "tag_id": "urn:tag:genre:qloo:alternative_metal",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:alternative_metal"
+          },
+          {
+            "name": "Hard Rock",
+            "tag_id": "urn:tag:subgenre:qloo:hard_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:hard_rock"
+          },
+          {
+            "name": "Heavy Metal",
+            "tag_id": "urn:tag:subgenre:qloo:heavy_metal",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:heavy_metal"
+          }
+        ]
+      }
+    ]
+  }
+}

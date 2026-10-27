@@ -1,0 +1,1002 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Adele",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:02.217Z",
+  "latencyMs": 380,
+  "body": {
+    "results": [
+      {
+        "name": "Adele",
+        "entity_id": "24012F7D-C125-4EB7-A661-6AF65523E43C",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "adele"
+            },
+            "instagram": {
+              "id": "adele"
+            },
+            "lastfm": {
+              "id": "adele",
+              "listeners": 4908324,
+              "scrobbles": 256977966
+            },
+            "musicbrainz": {
+              "id": "27e6ad4b-792a-4d6f-b796-8e7d8cd5c991"
+            },
+            "spotify": {
+              "id": "4dpARuHxo51G3z768sgnrY"
+            },
+            "twitter": {
+              "id": "adele"
+            },
+            "wikidata": {
+              "id": "q23215"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/24012F7D-C125-4EB7-A661-6AF65523E43C-420x-auto.jpg"
+          },
+          "short_description": "Adele is a British singer-songwriter known for her powerful voice and emotive ballads."
+        },
+        "popularity": 0.9998211942201876,
+        "disambiguation": "Adele",
+        "tags": [
+          {
+            "name": "Indie",
+            "tag_id": "urn:tag:genre:indie",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:indie"
+          },
+          {
+            "name": "Singer & Songwriter",
+            "tag_id": "urn:tag:genre:singer_songwriter",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:singer_songwriter"
+          },
+          {
+            "name": "British",
+            "tag_id": "urn:tag:genre:british",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:british"
+          },
+          {
+            "name": "Soul",
+            "tag_id": "urn:tag:genre:soul",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:soul"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Diverse",
+            "tag_id": "urn:tag:audience:qloo:diverse",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:diverse"
+          },
+          {
+            "name": "Emotional",
+            "tag_id": "urn:tag:audience:qloo:emotional",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:emotional"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Soulful",
+            "tag_id": "urn:tag:music:qloo:soulful",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:soulful"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:music:qloo:emotive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:emotive"
+          },
+          {
+            "name": "Melancholic",
+            "tag_id": "urn:tag:music:qloo:melancholic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melancholic"
+          },
+          {
+            "name": "Powerful",
+            "tag_id": "urn:tag:music:qloo:powerful",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:powerful"
+          },
+          {
+            "name": "Introspective",
+            "tag_id": "urn:tag:music:qloo:introspective",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:introspective"
+          },
+          {
+            "name": "Intimate",
+            "tag_id": "urn:tag:style:qloo:intimate",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:intimate"
+          },
+          {
+            "name": "Emotional",
+            "tag_id": "urn:tag:style:qloo:emotional",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:emotional"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Powerful",
+            "tag_id": "urn:tag:style:qloo:powerful",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:powerful"
+          },
+          {
+            "name": "Authentic",
+            "tag_id": "urn:tag:style:qloo:authentic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:authentic"
+          },
+          {
+            "name": "Powerful",
+            "tag_id": "urn:tag:characteristic:qloo:powerful",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:powerful"
+          },
+          {
+            "name": "Soulful",
+            "tag_id": "urn:tag:characteristic:qloo:soulful",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:soulful"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:characteristic:qloo:emotive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:emotive"
+          },
+          {
+            "name": "Melancholic",
+            "tag_id": "urn:tag:characteristic:qloo:melancholic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:melancholic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:characteristic:qloo:expressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:expressive"
+          },
+          {
+            "name": "Blue-Eyed Soul",
+            "tag_id": "urn:tag:style:qloo:blue_eyed_soul",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:blue_eyed_soul"
+          },
+          {
+            "name": "Adult Contemporary Pop",
+            "tag_id": "urn:tag:style:qloo:adult_contemporary_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:adult_contemporary_pop"
+          },
+          {
+            "name": "Soulful Balladry",
+            "tag_id": "urn:tag:style:qloo:soulful_balladry",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:soulful_balladry"
+          },
+          {
+            "name": "Emotive Pop",
+            "tag_id": "urn:tag:style:qloo:emotive_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:emotive_pop"
+          },
+          {
+            "name": "Melancholic Soul",
+            "tag_id": "urn:tag:style:qloo:melancholic_soul",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:melancholic_soul"
+          },
+          {
+            "name": "Contemporary Pop",
+            "tag_id": "urn:tag:influence:qloo:contemporary_pop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:contemporary_pop"
+          },
+          {
+            "name": "Soul",
+            "tag_id": "urn:tag:influence:qloo:soul",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:soul"
+          },
+          {
+            "name": "Adult Contemporary",
+            "tag_id": "urn:tag:influence:qloo:adult_contemporary",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:adult_contemporary"
+          },
+          {
+            "name": "Ella Fitzgerald",
+            "tag_id": "urn:tag:influenced_by:qloo:ella_fitzgerald",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:ella_fitzgerald"
+          },
+          {
+            "name": "Etta James",
+            "tag_id": "urn:tag:influenced_by:qloo:etta_james",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:etta_james"
+          },
+          {
+            "name": "Aretha Franklin",
+            "tag_id": "urn:tag:influenced_by:qloo:aretha_franklin",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:aretha_franklin"
+          },
+          {
+            "name": "Mariah Carey",
+            "tag_id": "urn:tag:influenced_by:qloo:mariah_carey",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:mariah_carey"
+          },
+          {
+            "name": "The Beatles",
+            "tag_id": "urn:tag:influenced_by:qloo:the_beatles",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:the_beatles"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Piano",
+            "tag_id": "urn:tag:instrument:qloo:piano",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:piano"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Heartbreak",
+            "tag_id": "urn:tag:theme:qloo:heartbreak",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:heartbreak"
+          },
+          {
+            "name": "Empowerment",
+            "tag_id": "urn:tag:theme:qloo:empowerment",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:empowerment"
+          },
+          {
+            "name": "Self-Reflection",
+            "tag_id": "urn:tag:theme:qloo:self_reflection",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:self_reflection"
+          },
+          {
+            "name": "Loss",
+            "tag_id": "urn:tag:theme:qloo:loss",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:loss"
+          },
+          {
+            "name": "Pop",
+            "tag_id": "urn:tag:genre:qloo:pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:pop"
+          },
+          {
+            "name": "Soul",
+            "tag_id": "urn:tag:genre:qloo:soul",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:soul"
+          },
+          {
+            "name": "Blue-Eyed Soul",
+            "tag_id": "urn:tag:genre:qloo:blue_eyed_soul",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:blue_eyed_soul"
+          },
+          {
+            "name": "Adult Contemporary",
+            "tag_id": "urn:tag:genre:qloo:adult_contemporary",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:adult_contemporary"
+          },
+          {
+            "name": "R&B",
+            "tag_id": "urn:tag:subgenre:qloo:r_b",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:r_b"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:subgenre:qloo:jazz",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:jazz"
+          },
+          {
+            "name": "Blues",
+            "tag_id": "urn:tag:subgenre:qloo:blues",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:blues"
+          },
+          {
+            "name": "Mezzo-Soprano",
+            "tag_id": "urn:tag:artist:qloo:mezzo_soprano",
+            "type": "urn:tag:artist:qloo",
+            "value": "urn:tag:artist:qloo:mezzo_soprano"
+          }
+        ]
+      },
+      {
+        "name": "Adelén",
+        "entity_id": "6104A70B-0973-4AD5-ADA2-E9E3A56EF98A",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "adelenofficial"
+            },
+            "instagram": {
+              "id": "iam_adelen"
+            },
+            "lastfm": {
+              "id": "adel%C3%A9n",
+              "listeners": 59133,
+              "scrobbles": 550635
+            },
+            "musicbrainz": {
+              "id": "e090f60d-443c-465c-bcfc-0bb36a890d27"
+            },
+            "spotify": {
+              "id": "2qS6cYzM5ajhprcxQa1Ilc"
+            },
+            "twitter": {
+              "id": "iam_adelen"
+            },
+            "wikidata": {
+              "id": "q4045556"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/6104A70B-0973-4AD5-ADA2-E9E3A56EF98A-420x-auto.jpg"
+          },
+          "short_description": "Norwegian singer known for her tropical pop and dance music."
+        },
+        "popularity": 0.9242673180145137,
+        "disambiguation": "Adelén",
+        "tags": [
+          {
+            "name": "Norway",
+            "tag_id": "urn:tag:genre:norway",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:norway"
+          },
+          {
+            "name": "Eurovision",
+            "tag_id": "urn:tag:genre:eurovision",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:eurovision"
+          },
+          {
+            "name": "Norwegian",
+            "tag_id": "urn:tag:genre:norwegian",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:norwegian"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:audience:qloo:energetic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:energetic"
+          },
+          {
+            "name": "Youthful",
+            "tag_id": "urn:tag:audience:qloo:youthful",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:youthful"
+          },
+          {
+            "name": "Dance-loving",
+            "tag_id": "urn:tag:audience:qloo:dance_loving",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dance_loving"
+          },
+          {
+            "name": "Upbeat",
+            "tag_id": "urn:tag:music:qloo:upbeat",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:upbeat"
+          },
+          {
+            "name": "Catchy",
+            "tag_id": "urn:tag:music:qloo:catchy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:catchy"
+          },
+          {
+            "name": "Tropical",
+            "tag_id": "urn:tag:music:qloo:tropical",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:tropical"
+          },
+          {
+            "name": "Danceable",
+            "tag_id": "urn:tag:music:qloo:danceable",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:danceable"
+          },
+          {
+            "name": "Vibrant",
+            "tag_id": "urn:tag:music:qloo:vibrant",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:vibrant"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Vibrant",
+            "tag_id": "urn:tag:style:qloo:vibrant",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:vibrant"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Vibrant",
+            "tag_id": "urn:tag:characteristic:qloo:vibrant",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:vibrant"
+          },
+          {
+            "name": "Tropical",
+            "tag_id": "urn:tag:characteristic:qloo:tropical",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:tropical"
+          },
+          {
+            "name": "Catchy",
+            "tag_id": "urn:tag:characteristic:qloo:catchy",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:catchy"
+          },
+          {
+            "name": "Danceable",
+            "tag_id": "urn:tag:characteristic:qloo:danceable",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:danceable"
+          },
+          {
+            "name": "Tropical Pop",
+            "tag_id": "urn:tag:style:qloo:tropical_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:tropical_pop"
+          },
+          {
+            "name": "Dance-pop",
+            "tag_id": "urn:tag:style:qloo:dance_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dance_pop"
+          },
+          {
+            "name": "Latin-infused Pop",
+            "tag_id": "urn:tag:style:qloo:latin_infused_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:latin_infused_pop"
+          },
+          {
+            "name": "Scandinavian Pop",
+            "tag_id": "urn:tag:style:qloo:scandinavian_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:scandinavian_pop"
+          },
+          {
+            "name": "Upbeat Dance",
+            "tag_id": "urn:tag:style:qloo:upbeat_dance",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:upbeat_dance"
+          },
+          {
+            "name": "Tropical Pop",
+            "tag_id": "urn:tag:influence:qloo:tropical_pop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:tropical_pop"
+          },
+          {
+            "name": "Dance-pop",
+            "tag_id": "urn:tag:influence:qloo:dance_pop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:dance_pop"
+          },
+          {
+            "name": "Shakira",
+            "tag_id": "urn:tag:influenced_by:qloo:shakira",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:shakira"
+          },
+          {
+            "name": "Jennifer Lopez",
+            "tag_id": "urn:tag:influenced_by:qloo:jennifer_lopez",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:jennifer_lopez"
+          },
+          {
+            "name": "Rihanna",
+            "tag_id": "urn:tag:influenced_by:qloo:rihanna",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:rihanna"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Celebration",
+            "tag_id": "urn:tag:theme:qloo:celebration",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:celebration"
+          },
+          {
+            "name": "Dance",
+            "tag_id": "urn:tag:theme:qloo:dance",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:dance"
+          },
+          {
+            "name": "Empowerment",
+            "tag_id": "urn:tag:theme:qloo:empowerment",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:empowerment"
+          },
+          {
+            "name": "Pop",
+            "tag_id": "urn:tag:genre:qloo:pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:pop"
+          },
+          {
+            "name": "Dance-pop",
+            "tag_id": "urn:tag:genre:qloo:dance_pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:dance_pop"
+          },
+          {
+            "name": "Tropical Pop",
+            "tag_id": "urn:tag:genre:qloo:tropical_pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:tropical_pop"
+          },
+          {
+            "name": "Latin Pop",
+            "tag_id": "urn:tag:subgenre:qloo:latin_pop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:latin_pop"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:subgenre:qloo:electronic",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:electronic"
+          }
+        ]
+      },
+      {
+        "name": "Adele vs. Daft Punk",
+        "entity_id": "CADFCCA2-D14D-4E07-B2C2-26117CF7FD99",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/CADFCCA2-D14D-4E07-B2C2-26117CF7FD99-420x-auto.jpg"
+          },
+          "short_description": "A mashup group combining Adele's vocals with Daft Punk's electronic music."
+        },
+        "popularity": 0.8786516019985763,
+        "disambiguation": "Adele vs. Daft Punk"
+      },
+      {
+        "name": "Adèle Castillon",
+        "entity_id": "9DA84DF6-D089-41C1-AFAE-10171FE401F4",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "instagram": {
+              "id": "adelecastillon"
+            },
+            "lastfm": {
+              "id": "ad%C3%A8le%20castillon",
+              "listeners": 67453,
+              "scrobbles": 1118587
+            },
+            "musicbrainz": {
+              "id": "d87c77e3-3512-41ed-b241-6387d4a6ae4e"
+            },
+            "spotify": {},
+            "twitter": {
+              "id": "adelecastillon"
+            },
+            "wikidata": {
+              "id": "q62567094"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/9DA84DF6-D089-41C1-AFAE-10171FE401F4-420x-auto.jpg"
+          },
+          "short_description": "French singer and actress known for her emotive pop music and acting roles."
+        },
+        "popularity": 0.760366518111676,
+        "disambiguation": "Adèle Castillon",
+        "tags": [
+          {
+            "name": "French",
+            "tag_id": "urn:tag:genre:french",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:french"
+          },
+          {
+            "name": "80s",
+            "tag_id": "urn:tag:genre:80s",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:80s"
+          },
+          {
+            "name": "Indie",
+            "tag_id": "urn:tag:genre:indie",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:indie"
+          },
+          {
+            "name": "Indie Pop",
+            "tag_id": "urn:tag:genre:indie_pop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:indie_pop"
+          },
+          {
+            "name": "Youthful",
+            "tag_id": "urn:tag:audience:qloo:youthful",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:youthful"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Artistic",
+            "tag_id": "urn:tag:audience:qloo:artistic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:artistic"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:music:qloo:emotive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:emotive"
+          },
+          {
+            "name": "Intimate",
+            "tag_id": "urn:tag:music:qloo:intimate",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:intimate"
+          },
+          {
+            "name": "Nostalgic",
+            "tag_id": "urn:tag:music:qloo:nostalgic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:nostalgic"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:music:qloo:expressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:expressive"
+          },
+          {
+            "name": "Intimate",
+            "tag_id": "urn:tag:style:qloo:intimate",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:intimate"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Minimalist",
+            "tag_id": "urn:tag:style:qloo:minimalist",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:minimalist"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:characteristic:qloo:emotive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:emotive"
+          },
+          {
+            "name": "Intimate",
+            "tag_id": "urn:tag:characteristic:qloo:intimate",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:intimate"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:characteristic:qloo:expressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:expressive"
+          },
+          {
+            "name": "Youthful",
+            "tag_id": "urn:tag:characteristic:qloo:youthful",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:youthful"
+          },
+          {
+            "name": "Artistic",
+            "tag_id": "urn:tag:characteristic:qloo:artistic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:artistic"
+          },
+          {
+            "name": "French Synthpop",
+            "tag_id": "urn:tag:style:qloo:french_synthpop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:french_synthpop"
+          },
+          {
+            "name": "Indie Electropop",
+            "tag_id": "urn:tag:style:qloo:indie_electropop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:indie_electropop"
+          },
+          {
+            "name": "Nostalgic French Pop",
+            "tag_id": "urn:tag:style:qloo:nostalgic_french_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:nostalgic_french_pop"
+          },
+          {
+            "name": "Emotive Indie Pop",
+            "tag_id": "urn:tag:style:qloo:emotive_indie_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:emotive_indie_pop"
+          },
+          {
+            "name": "Minimalist Pop",
+            "tag_id": "urn:tag:style:qloo:minimalist_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:minimalist_pop"
+          },
+          {
+            "name": "French Pop",
+            "tag_id": "urn:tag:influence:qloo:french_pop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:french_pop"
+          },
+          {
+            "name": "Indie Pop",
+            "tag_id": "urn:tag:influence:qloo:indie_pop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:indie_pop"
+          },
+          {
+            "name": "Electropop",
+            "tag_id": "urn:tag:influence:qloo:electropop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:electropop"
+          },
+          {
+            "name": "Françoise Hardy",
+            "tag_id": "urn:tag:influenced_by:qloo:francoise_hardy",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:francoise_hardy"
+          },
+          {
+            "name": "Serge Gainsbourg",
+            "tag_id": "urn:tag:influenced_by:qloo:serge_gainsbourg",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:serge_gainsbourg"
+          },
+          {
+            "name": "Christine and the Queens",
+            "tag_id": "urn:tag:influenced_by:qloo:christine_and_the_queens",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:christine_and_the_queens"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Youth",
+            "tag_id": "urn:tag:theme:qloo:youth",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:youth"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Personal Growth",
+            "tag_id": "urn:tag:theme:qloo:personal_growth",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:personal_growth"
+          },
+          {
+            "name": "Nostalgia",
+            "tag_id": "urn:tag:theme:qloo:nostalgia",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:nostalgia"
+          },
+          {
+            "name": "Introspection",
+            "tag_id": "urn:tag:theme:qloo:introspection",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:introspection"
+          },
+          {
+            "name": "Pop",
+            "tag_id": "urn:tag:genre:qloo:pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:pop"
+          },
+          {
+            "name": "French Pop",
+            "tag_id": "urn:tag:genre:qloo:french_pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:french_pop"
+          },
+          {
+            "name": "Indie Pop",
+            "tag_id": "urn:tag:genre:qloo:indie_pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:indie_pop"
+          },
+          {
+            "name": "Electropop",
+            "tag_id": "urn:tag:subgenre:qloo:electropop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:electropop"
+          },
+          {
+            "name": "Chanson",
+            "tag_id": "urn:tag:subgenre:qloo:chanson",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:chanson"
+          }
+        ]
+      },
+      {
+        "name": "Adele and The Raconteurs",
+        "entity_id": "8DF54107-D229-4C0F-9834-84E5646D9AC5",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/8DF54107-D229-4C0F-9834-84E5646D9AC5-420x-auto.jpg"
+          },
+          "short_description": "A rock supergroup formed by members of The Raconteurs and singer Adele."
+        },
+        "popularity": 0.7052032481925434,
+        "disambiguation": "Adele and The Raconteurs"
+      }
+    ]
+  }
+}

@@ -7,6 +7,6 @@ export default defineConfig({
     // default 10 s hook and 5 s test limits flake. Assertions are unchanged (BL-01 6434973808).
     hookTimeout: 90_000,
     testTimeout: 30_000,
-    include: ["packages/*/test/**/*.test.ts", "packages/*/src/**/*.test.ts", "apps/*/test/**/*.test.{ts,tsx}", "scripts/**/*.test.ts"],
+    include: ["packages/*/test/**/*.test.ts", "packages/*/src/**/*.test.ts", "apps/*/test/**/*.test.{ts,tsx}", "scripts/**/*.test.ts", "evals/**/*.test.ts"],
   },
 });

@@ -1,0 +1,147 @@
+{
+  "endpoint": "/v2/insights",
+  "params": {
+    "filter.location.query": "Lagos",
+    "filter.type": "urn:heatmap",
+    "signal.interests.entities": "EC0AFFC5-3D07-40AD-AB32-2C758DA9D667"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:12.663Z",
+  "latencyMs": 602,
+  "body": {
+    "success": true,
+    "results": {
+      "heatmap": [
+        {
+          "location": {
+            "latitude": 6.451721,
+            "longitude": 3.4002686,
+            "geohash": "s14ktq"
+          },
+          "query": {
+            "affinity": 1,
+            "affinity_rank": 0.617205,
+            "popularity": 1,
+            "entity_artist_affinity_rank": 0.617205,
+            "entity_artist_affinity": 1
+          }
+        },
+        {
+          "location": {
+            "latitude": 6.451721,
+            "longitude": 3.3343506,
+            "geohash": "s14key"
+          },
+          "query": {
+            "affinity": 0.8571428571428571,
+            "affinity_rank": 0.299355,
+            "popularity": 0.8571428571428571,
+            "entity_artist_affinity_rank": 0.299355,
+            "entity_artist_affinity": 0.8571428571428571
+          }
+        },
+        {
+          "location": {
+            "latitude": 6.506653,
+            "longitude": 3.3563232,
+            "geohash": "s14mh2"
+          },
+          "query": {
+            "affinity": 0.7142857142857143,
+            "affinity_rank": 0.229617,
+            "popularity": 0.7142857142857143,
+            "entity_artist_affinity_rank": 0.229617,
+            "entity_artist_affinity": 0.7142857142857143
+          }
+        },
+        {
+          "location": {
+            "latitude": 6.5670776,
+            "longitude": 3.345337,
+            "geohash": "s14mk5"
+          },
+          "query": {
+            "affinity": 0.5714285714285714,
+            "affinity_rank": 0.10667,
+            "popularity": 0.42857142857142855,
+            "entity_artist_affinity_rank": 0.10667,
+            "entity_artist_affinity": 0.5714285714285714
+          }
+        },
+        {
+          "location": {
+            "latitude": 6.4682007,
+            "longitude": 3.4552002,
+            "geohash": "s14ky9"
+          },
+          "query": {
+            "affinity": 0.42857142857142855,
+            "affinity_rank": 0.078388,
+            "popularity": 0.5714285714285714,
+            "entity_artist_affinity_rank": 0.078388,
+            "entity_artist_affinity": 0.42857142857142855
+          }
+        },
+        {
+          "location": {
+            "latitude": 6.5011597,
+            "longitude": 3.3892822,
+            "geohash": "s14kvp"
+          },
+          "query": {
+            "affinity": 0.2857142857142857,
+            "affinity_rank": 0.064991,
+            "popularity": 0.2857142857142857,
+            "entity_artist_affinity_rank": 0.064991,
+            "entity_artist_affinity": 0.2857142857142857
+          }
+        },
+        {
+          "location": {
+            "latitude": 6.479187,
+            "longitude": 3.345337,
+            "geohash": "s14ku5"
+          },
+          "query": {
+            "affinity": 0.14285714285714285,
+            "affinity_rank": 0.014058,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.014058,
+            "entity_artist_affinity": 0.14285714285714285
+          }
+        },
+        {
+          "location": {
+            "latitude": 6.611023,
+            "longitude": 3.5760498,
+            "geohash": "s14t97"
+          },
+          "query": {
+            "affinity": 0,
+            "affinity_rank": 0.004285,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.004285,
+            "entity_artist_affinity": 0
+          }
+        }
+      ]
+    },
+    "query": {
+      "localities": {
+        "filter": [
+          {
+            "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+            "name": "Lagos",
+            "subtype": "urn:entity:locality",
+            "location": {
+              "lat": 6.520236604701515,
+              "lon": 3.5956709582495026
+            },
+            "popularity": 0.99928516,
+            "disambiguation": "Lagos, Nigeria"
+          }
+        ]
+      }
+    }
+  }
+}

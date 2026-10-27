@@ -1,0 +1,995 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Brandt Brauer Frick",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:30.580Z",
+  "latencyMs": 338,
+  "body": {
+    "results": [
+      {
+        "name": "Brandt Brauer Frick",
+        "entity_id": "EC8C92D0-0FDC-4F08-848E-2CCAA4B73149",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "brandtbrauerfrick"
+            },
+            "instagram": {
+              "id": "brandtbrauerfrick"
+            },
+            "lastfm": {
+              "id": "brandt%20brauer%20frick",
+              "listeners": 66431,
+              "scrobbles": 690476
+            },
+            "musicbrainz": {
+              "id": "3aa850f7-7a16-4bc9-8d67-7c16220ca4b3"
+            },
+            "spotify": {
+              "id": "29TG40TGDvrOFQZM4adBf7"
+            },
+            "twitter": {
+              "id": "bbf_music"
+            },
+            "wikidata": {
+              "id": "q898324"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/EC8C92D0-0FDC-4F08-848E-2CCAA4B73149-420x-auto.jpg"
+          },
+          "short_description": "Brandt Brauer Frick is a German electronic music group known for blending classical instrumentation with electronic beats."
+        },
+        "popularity": 0.9259980230153402,
+        "disambiguation": "Brandt Brauer Frick",
+        "tags": [
+          {
+            "name": "Minimal",
+            "tag_id": "urn:tag:genre:minimal",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:minimal"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:genre:experimental",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:experimental"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:electronic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronic"
+          },
+          {
+            "name": "House",
+            "tag_id": "urn:tag:genre:house",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:house"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Adventurous",
+            "tag_id": "urn:tag:audience:qloo:adventurous",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:adventurous"
+          },
+          {
+            "name": "Appreciative",
+            "tag_id": "urn:tag:audience:qloo:appreciative",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:appreciative"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:music:qloo:eclectic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:eclectic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:music:qloo:experimental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:experimental"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:music:qloo:dynamic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:dynamic"
+          },
+          {
+            "name": "Fusion",
+            "tag_id": "urn:tag:music:qloo:fusion",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:fusion"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:style:qloo:innovative",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:innovative"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:characteristic:qloo:eclectic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:eclectic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:characteristic:qloo:experimental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:experimental"
+          },
+          {
+            "name": "Fusion",
+            "tag_id": "urn:tag:characteristic:qloo:fusion",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:fusion"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:characteristic:qloo:dynamic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:dynamic"
+          },
+          {
+            "name": "Classical-Electronic Fusion",
+            "tag_id": "urn:tag:style:qloo:classical_electronic_fusion",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:classical_electronic_fusion"
+          },
+          {
+            "name": "Minimal Techno",
+            "tag_id": "urn:tag:style:qloo:minimal_techno",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:minimal_techno"
+          },
+          {
+            "name": "Tech House",
+            "tag_id": "urn:tag:style:qloo:tech_house",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:tech_house"
+          },
+          {
+            "name": "Experimental Electronica",
+            "tag_id": "urn:tag:style:qloo:experimental_electronica",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental_electronica"
+          },
+          {
+            "name": "Live Instrumentation",
+            "tag_id": "urn:tag:style:qloo:live_instrumentation",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:live_instrumentation"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:influence:qloo:electronic",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:electronic"
+          },
+          {
+            "name": "Techno",
+            "tag_id": "urn:tag:influence:qloo:techno",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:techno"
+          },
+          {
+            "name": "Minimal Techno",
+            "tag_id": "urn:tag:influence:qloo:minimal_techno",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:minimal_techno"
+          },
+          {
+            "name": "Tech House",
+            "tag_id": "urn:tag:influence:qloo:tech_house",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:tech_house"
+          },
+          {
+            "name": "Classical Crossover",
+            "tag_id": "urn:tag:influence:qloo:classical_crossover",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:classical_crossover"
+          },
+          {
+            "name": "Kraftwerk",
+            "tag_id": "urn:tag:influenced_by:qloo:kraftwerk",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:kraftwerk"
+          },
+          {
+            "name": "Steve Reich",
+            "tag_id": "urn:tag:influenced_by:qloo:steve_reich",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:steve_reich"
+          },
+          {
+            "name": "Aphex Twin",
+            "tag_id": "urn:tag:influenced_by:qloo:aphex_twin",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:aphex_twin"
+          },
+          {
+            "name": "Piano",
+            "tag_id": "urn:tag:instrument:qloo:piano",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:piano"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Brass Instruments",
+            "tag_id": "urn:tag:instrument:qloo:brass_instruments",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:brass_instruments"
+          },
+          {
+            "name": "Synthesizers",
+            "tag_id": "urn:tag:instrument:qloo:synthesizers",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizers"
+          },
+          {
+            "name": "Percussion",
+            "tag_id": "urn:tag:instrument:qloo:percussion",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:percussion"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:qloo:electronic",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:electronic"
+          },
+          {
+            "name": "Techno",
+            "tag_id": "urn:tag:genre:qloo:techno",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:techno"
+          },
+          {
+            "name": "Minimal Techno",
+            "tag_id": "urn:tag:genre:qloo:minimal_techno",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:minimal_techno"
+          },
+          {
+            "name": "Tech House",
+            "tag_id": "urn:tag:genre:qloo:tech_house",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:tech_house"
+          },
+          {
+            "name": "Classical",
+            "tag_id": "urn:tag:subgenre:qloo:classical",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:classical"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:subgenre:qloo:experimental",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:experimental"
+          }
+        ]
+      },
+      {
+        "name": "Sebastian Brandt",
+        "entity_id": "4CC25D47-2E42-486C-8B6F-3DFC6C7C7EF5",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "instagram": {
+              "id": "sebastianbrandt"
+            },
+            "lastfm": {
+              "id": "sebastian%20brandt",
+              "listeners": 53976,
+              "scrobbles": 346042
+            },
+            "musicbrainz": {
+              "id": "d00c10c9-f9e1-439f-b9a6-0c98bf2db868"
+            },
+            "spotify": {
+              "id": "3X4FE3j7UlwfPgMoxeP2tQ"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/4CC25D47-2E42-486C-8B6F-3DFC6C7C7EF5-420x-auto.jpg"
+          },
+          "short_description": "Sebastian Brandt is an electronic music producer and DJ known for his techno and house music productions."
+        },
+        "popularity": 0.9192168981583004,
+        "disambiguation": "Sebastian Brandt",
+        "tags": [
+          {
+            "name": "Trance",
+            "tag_id": "urn:tag:genre:trance",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:trance"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:electronic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronic"
+          },
+          {
+            "name": "Melodic Trance",
+            "tag_id": "urn:tag:genre:melodic_trance",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:melodic_trance"
+          },
+          {
+            "name": "Progressive Trance",
+            "tag_id": "urn:tag:genre:progressive_trance",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:progressive_trance"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Underground",
+            "tag_id": "urn:tag:audience:qloo:underground",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:underground"
+          },
+          {
+            "name": "Discerning",
+            "tag_id": "urn:tag:audience:qloo:discerning",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:discerning"
+          },
+          {
+            "name": "Minimalistic",
+            "tag_id": "urn:tag:music:qloo:minimalistic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:minimalistic"
+          },
+          {
+            "name": "Deep",
+            "tag_id": "urn:tag:music:qloo:deep",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:deep"
+          },
+          {
+            "name": "Groovy",
+            "tag_id": "urn:tag:music:qloo:groovy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:groovy"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:music:qloo:atmospheric",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:atmospheric"
+          },
+          {
+            "name": "Technical",
+            "tag_id": "urn:tag:music:qloo:technical",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:technical"
+          },
+          {
+            "name": "Hypnotic",
+            "tag_id": "urn:tag:style:qloo:hypnotic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:hypnotic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Seamless",
+            "tag_id": "urn:tag:style:qloo:seamless",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:seamless"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Minimalistic",
+            "tag_id": "urn:tag:characteristic:qloo:minimalistic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:minimalistic"
+          },
+          {
+            "name": "Deep",
+            "tag_id": "urn:tag:characteristic:qloo:deep",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:deep"
+          },
+          {
+            "name": "Groovy",
+            "tag_id": "urn:tag:characteristic:qloo:groovy",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:groovy"
+          },
+          {
+            "name": "Technical",
+            "tag_id": "urn:tag:characteristic:qloo:technical",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:technical"
+          },
+          {
+            "name": "Minimal Techno",
+            "tag_id": "urn:tag:style:qloo:minimal_techno",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:minimal_techno"
+          },
+          {
+            "name": "Deep House",
+            "tag_id": "urn:tag:style:qloo:deep_house",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:deep_house"
+          },
+          {
+            "name": "Tech House",
+            "tag_id": "urn:tag:style:qloo:tech_house",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:tech_house"
+          },
+          {
+            "name": "Atmospheric Techno",
+            "tag_id": "urn:tag:style:qloo:atmospheric_techno",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:atmospheric_techno"
+          },
+          {
+            "name": "Groove-Oriented",
+            "tag_id": "urn:tag:style:qloo:groove_oriented",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:groove_oriented"
+          },
+          {
+            "name": "Minimal Techno",
+            "tag_id": "urn:tag:influence:qloo:minimal_techno",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:minimal_techno"
+          },
+          {
+            "name": "Deep House",
+            "tag_id": "urn:tag:influence:qloo:deep_house",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:deep_house"
+          },
+          {
+            "name": "Tech House",
+            "tag_id": "urn:tag:influence:qloo:tech_house",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:tech_house"
+          },
+          {
+            "name": "Basic Channel",
+            "tag_id": "urn:tag:influenced_by:qloo:basic_channel",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:basic_channel"
+          },
+          {
+            "name": "Maurizio",
+            "tag_id": "urn:tag:influenced_by:qloo:maurizio",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:maurizio"
+          },
+          {
+            "name": "Deepchord",
+            "tag_id": "urn:tag:influenced_by:qloo:deepchord",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:deepchord"
+          },
+          {
+            "name": "Richie Hawtin",
+            "tag_id": "urn:tag:influenced_by:qloo:richie_hawtin",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:richie_hawtin"
+          },
+          {
+            "name": "Synthesizer",
+            "tag_id": "urn:tag:instrument:qloo:synthesizer",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizer"
+          },
+          {
+            "name": "Drum Machine",
+            "tag_id": "urn:tag:instrument:qloo:drum_machine",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drum_machine"
+          },
+          {
+            "name": "Sampler",
+            "tag_id": "urn:tag:instrument:qloo:sampler",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:sampler"
+          },
+          {
+            "name": "Digital Audio Workstation",
+            "tag_id": "urn:tag:instrument:qloo:digital_audio_workstation",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:digital_audio_workstation"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:qloo:electronic",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:electronic"
+          },
+          {
+            "name": "Techno",
+            "tag_id": "urn:tag:genre:qloo:techno",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:techno"
+          },
+          {
+            "name": "House",
+            "tag_id": "urn:tag:genre:qloo:house",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:house"
+          },
+          {
+            "name": "Minimal",
+            "tag_id": "urn:tag:subgenre:qloo:minimal",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:minimal"
+          },
+          {
+            "name": "Deep House",
+            "tag_id": "urn:tag:subgenre:qloo:deep_house",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:deep_house"
+          }
+        ]
+      },
+      {
+        "name": "Paul Brandt",
+        "entity_id": "23047287-13D2-4EF6-B39C-FAA82A8F59B1",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "paul%20brandt",
+              "listeners": 34312,
+              "scrobbles": 500564
+            },
+            "musicbrainz": {
+              "id": "3ca374f1-66b4-43c5-a61a-5f65f0ed7bb1"
+            },
+            "spotify": {
+              "id": "11Rb0Ax3Q2dZJ7jNlOvxxP"
+            },
+            "wikidata": {
+              "id": "q2058983"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/23047287-13D2-4EF6-B39C-FAA82A8F59B1-420x-auto.jpg"
+          },
+          "short_description": "Canadian country music artist known for his rich vocals and heartfelt songwriting."
+        },
+        "popularity": 0.8897139444892396,
+        "disambiguation": "Paul Brandt",
+        "tags": [
+          {
+            "name": "Country",
+            "tag_id": "urn:tag:genre:country",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:country"
+          },
+          {
+            "name": "Canadian",
+            "tag_id": "urn:tag:genre:canadian",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:canadian"
+          },
+          {
+            "name": "Canadian Country",
+            "tag_id": "urn:tag:genre:canadian_country",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:canadian_country"
+          },
+          {
+            "name": "Canada",
+            "tag_id": "urn:tag:genre:canada",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:canada"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Appreciative",
+            "tag_id": "urn:tag:audience:qloo:appreciative",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:appreciative"
+          },
+          {
+            "name": "Country Music Enthusiasts",
+            "tag_id": "urn:tag:audience:qloo:country_music_enthusiasts",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:country_music_enthusiasts"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:music:qloo:emotive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:emotive"
+          },
+          {
+            "name": "Authentic",
+            "tag_id": "urn:tag:music:qloo:authentic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:authentic"
+          },
+          {
+            "name": "Traditional",
+            "tag_id": "urn:tag:music:qloo:traditional",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:traditional"
+          },
+          {
+            "name": "Contemporary",
+            "tag_id": "urn:tag:music:qloo:contemporary",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:contemporary"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Warm",
+            "tag_id": "urn:tag:style:qloo:warm",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:warm"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Intimate",
+            "tag_id": "urn:tag:style:qloo:intimate",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:intimate"
+          },
+          {
+            "name": "Rich Vocals",
+            "tag_id": "urn:tag:characteristic:qloo:rich_vocals",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:rich_vocals"
+          },
+          {
+            "name": "Heartfelt",
+            "tag_id": "urn:tag:characteristic:qloo:heartfelt",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:heartfelt"
+          },
+          {
+            "name": "Authentic",
+            "tag_id": "urn:tag:characteristic:qloo:authentic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:authentic"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:characteristic:qloo:melodic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:melodic"
+          },
+          {
+            "name": "Storytelling",
+            "tag_id": "urn:tag:characteristic:qloo:storytelling",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:storytelling"
+          },
+          {
+            "name": "Contemporary Country",
+            "tag_id": "urn:tag:style:qloo:contemporary_country",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:contemporary_country"
+          },
+          {
+            "name": "Country Pop",
+            "tag_id": "urn:tag:style:qloo:country_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:country_pop"
+          },
+          {
+            "name": "Traditional Country",
+            "tag_id": "urn:tag:style:qloo:traditional_country",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:traditional_country"
+          },
+          {
+            "name": "Canadian Country",
+            "tag_id": "urn:tag:style:qloo:canadian_country",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:canadian_country"
+          },
+          {
+            "name": "Storytelling Country",
+            "tag_id": "urn:tag:style:qloo:storytelling_country",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:storytelling_country"
+          },
+          {
+            "name": "Canadian Country",
+            "tag_id": "urn:tag:influence:qloo:canadian_country",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:canadian_country"
+          },
+          {
+            "name": "Contemporary Country",
+            "tag_id": "urn:tag:influence:qloo:contemporary_country",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:contemporary_country"
+          },
+          {
+            "name": "George Strait",
+            "tag_id": "urn:tag:influenced_by:qloo:george_strait",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:george_strait"
+          },
+          {
+            "name": "Vince Gill",
+            "tag_id": "urn:tag:influenced_by:qloo:vince_gill",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:vince_gill"
+          },
+          {
+            "name": "Alan Jackson",
+            "tag_id": "urn:tag:influenced_by:qloo:alan_jackson",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:alan_jackson"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Piano",
+            "tag_id": "urn:tag:instrument:qloo:piano",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:piano"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Life",
+            "tag_id": "urn:tag:theme:qloo:life",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:life"
+          },
+          {
+            "name": "Faith",
+            "tag_id": "urn:tag:theme:qloo:faith",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:faith"
+          },
+          {
+            "name": "Reflection",
+            "tag_id": "urn:tag:theme:qloo:reflection",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:reflection"
+          },
+          {
+            "name": "Canadian Identity",
+            "tag_id": "urn:tag:theme:qloo:canadian_identity",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:canadian_identity"
+          },
+          {
+            "name": "Country",
+            "tag_id": "urn:tag:genre:qloo:country",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:country"
+          },
+          {
+            "name": "Country Pop",
+            "tag_id": "urn:tag:genre:qloo:country_pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:country_pop"
+          },
+          {
+            "name": "Contemporary Country",
+            "tag_id": "urn:tag:genre:qloo:contemporary_country",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:contemporary_country"
+          },
+          {
+            "name": "Country Rock",
+            "tag_id": "urn:tag:subgenre:qloo:country_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:country_rock"
+          },
+          {
+            "name": "Bluegrass",
+            "tag_id": "urn:tag:subgenre:qloo:bluegrass",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:bluegrass"
+          },
+          {
+            "name": "Baritone",
+            "tag_id": "urn:tag:artist:qloo:baritone",
+            "type": "urn:tag:artist:qloo",
+            "value": "urn:tag:artist:qloo:baritone"
+          }
+        ]
+      },
+      {
+        "name": "Vitor Brauer",
+        "entity_id": "0D45F6C0-455A-42D4-90B8-7FE2E72950D9",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "instagram": {
+              "id": "vitorbrauer"
+            },
+            "lastfm": {},
+            "musicbrainz": {
+              "id": "cc482190-3812-4a54-996a-fa27c81c4a47"
+            },
+            "spotify": {
+              "id": "0LgGTp6dIjvLJ8Lx750VY8"
+            },
+            "twitter": {
+              "id": "vitorbrauer"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/0D45F6C0-455A-42D4-90B8-7FE2E72950D9-420x-auto.jpg"
+          },
+          "short_description": "Brazilian singer-songwriter known for emotive pop and indie music."
+        },
+        "popularity": 0.7044846513793348,
+        "disambiguation": "Vitor Brauer"
+      },
+      {
+        "name": "Vilhelm Brandt",
+        "entity_id": "4886C388-B539-4290-A866-9375B1789080",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {
+              "id": "4k5hcVGerX1LVQ79iXD52S"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/4886C388-B539-4290-A866-9375B1789080-420x-auto.jpg"
+          },
+          "short_description": "Vilhelm Brandt is a Danish jazz saxophonist and composer known for his modern jazz style."
+        },
+        "popularity": 0.6179696435017594,
+        "disambiguation": "Vilhelm Brandt"
+      }
+    ]
+  }
+}

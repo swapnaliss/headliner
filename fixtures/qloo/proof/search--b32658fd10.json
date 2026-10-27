@@ -1,0 +1,412 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Bonobo",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:30.959Z",
+  "latencyMs": 339,
+  "body": {
+    "results": [
+      {
+        "name": "Bonobo",
+        "entity_id": "5861FE97-122C-4A14-B5A6-0150B105D45F",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "bonobo",
+              "listeners": 1904637,
+              "scrobbles": 101914500
+            },
+            "musicbrainz": {
+              "id": "eb366ad8-06e9-43c5-9d74-92b1bf7ad4de"
+            },
+            "spotify": {
+              "id": "3CA7lyKUkVtDuaZjqYb6nH"
+            },
+            "wikidata": {
+              "id": "q2019658"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/5861FE97-122C-4A14-B5A6-0150B105D45F-420x-auto.jpg"
+          },
+          "short_description": "Bonobo is a British musician, producer, and DJ known for his downtempo and electronic music."
+        },
+        "popularity": 0.999358998147842,
+        "disambiguation": "Bonobo",
+        "tags": [
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:electronic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronic"
+          },
+          {
+            "name": "Downtempo",
+            "tag_id": "urn:tag:genre:downtempo",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:downtempo"
+          },
+          {
+            "name": "Trip - Hop",
+            "tag_id": "urn:tag:genre:trip_hop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:trip_hop"
+          },
+          {
+            "name": "Chillout",
+            "tag_id": "urn:tag:genre:chillout",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:chillout"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Chill",
+            "tag_id": "urn:tag:audience:qloo:chill",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:chill"
+          },
+          {
+            "name": "Appreciative",
+            "tag_id": "urn:tag:audience:qloo:appreciative",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:appreciative"
+          },
+          {
+            "name": "Thoughtful",
+            "tag_id": "urn:tag:audience:qloo:thoughtful",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:thoughtful"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:music:qloo:atmospheric",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:atmospheric"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Lush",
+            "tag_id": "urn:tag:music:qloo:lush",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:lush"
+          },
+          {
+            "name": "Intricate",
+            "tag_id": "urn:tag:music:qloo:intricate",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:intricate"
+          },
+          {
+            "name": "Organic",
+            "tag_id": "urn:tag:music:qloo:organic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:organic"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Immersive",
+            "tag_id": "urn:tag:style:qloo:immersive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:immersive"
+          },
+          {
+            "name": "Live",
+            "tag_id": "urn:tag:style:qloo:live",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:live"
+          },
+          {
+            "name": "Instrumental",
+            "tag_id": "urn:tag:style:qloo:instrumental",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:instrumental"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:characteristic:qloo:atmospheric",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:atmospheric"
+          },
+          {
+            "name": "Lush",
+            "tag_id": "urn:tag:characteristic:qloo:lush",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:lush"
+          },
+          {
+            "name": "Intricate",
+            "tag_id": "urn:tag:characteristic:qloo:intricate",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:intricate"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:characteristic:qloo:melodic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:melodic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:characteristic:qloo:experimental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:experimental"
+          },
+          {
+            "name": "Downtempo",
+            "tag_id": "urn:tag:style:qloo:downtempo",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:downtempo"
+          },
+          {
+            "name": "Trip Hop",
+            "tag_id": "urn:tag:style:qloo:trip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:trip_hop"
+          },
+          {
+            "name": "Nu Jazz",
+            "tag_id": "urn:tag:style:qloo:nu_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:nu_jazz"
+          },
+          {
+            "name": "Electronica",
+            "tag_id": "urn:tag:style:qloo:electronica",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:electronica"
+          },
+          {
+            "name": "Ambient",
+            "tag_id": "urn:tag:style:qloo:ambient",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:ambient"
+          },
+          {
+            "name": "Downtempo",
+            "tag_id": "urn:tag:influence:qloo:downtempo",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:downtempo"
+          },
+          {
+            "name": "Chillout",
+            "tag_id": "urn:tag:influence:qloo:chillout",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:chillout"
+          },
+          {
+            "name": "Nu Jazz",
+            "tag_id": "urn:tag:influence:qloo:nu_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:nu_jazz"
+          },
+          {
+            "name": "Electronica",
+            "tag_id": "urn:tag:influence:qloo:electronica",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:electronica"
+          },
+          {
+            "name": "DJ Shadow",
+            "tag_id": "urn:tag:influenced_by:qloo:dj_shadow",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:dj_shadow"
+          },
+          {
+            "name": "Massive Attack",
+            "tag_id": "urn:tag:influenced_by:qloo:massive_attack",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:massive_attack"
+          },
+          {
+            "name": "Portishead",
+            "tag_id": "urn:tag:influenced_by:qloo:portishead",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:portishead"
+          },
+          {
+            "name": "Nujabes",
+            "tag_id": "urn:tag:influenced_by:qloo:nujabes",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:nujabes"
+          },
+          {
+            "name": "Synthesizer",
+            "tag_id": "urn:tag:instrument:qloo:synthesizer",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizer"
+          },
+          {
+            "name": "Drum Machine",
+            "tag_id": "urn:tag:instrument:qloo:drum_machine",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drum_machine"
+          },
+          {
+            "name": "Sampler",
+            "tag_id": "urn:tag:instrument:qloo:sampler",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:sampler"
+          },
+          {
+            "name": "Piano",
+            "tag_id": "urn:tag:instrument:qloo:piano",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:piano"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Introspection",
+            "tag_id": "urn:tag:theme:qloo:introspection",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:introspection"
+          },
+          {
+            "name": "Nature",
+            "tag_id": "urn:tag:theme:qloo:nature",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:nature"
+          },
+          {
+            "name": "Emotions",
+            "tag_id": "urn:tag:theme:qloo:emotions",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:emotions"
+          },
+          {
+            "name": "Human Experience",
+            "tag_id": "urn:tag:theme:qloo:human_experience",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:human_experience"
+          },
+          {
+            "name": "Downtempo",
+            "tag_id": "urn:tag:genre:qloo:downtempo",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:downtempo"
+          },
+          {
+            "name": "Trip Hop",
+            "tag_id": "urn:tag:genre:qloo:trip_hop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:trip_hop"
+          },
+          {
+            "name": "Electronica",
+            "tag_id": "urn:tag:genre:qloo:electronica",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:electronica"
+          },
+          {
+            "name": "Ambient",
+            "tag_id": "urn:tag:genre:qloo:ambient",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:ambient"
+          },
+          {
+            "name": "Chillout",
+            "tag_id": "urn:tag:subgenre:qloo:chillout",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:chillout"
+          },
+          {
+            "name": "Nu Jazz",
+            "tag_id": "urn:tag:subgenre:qloo:nu_jazz",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:nu_jazz"
+          },
+          {
+            "name": "World Music",
+            "tag_id": "urn:tag:subgenre:qloo:world_music",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:world_music"
+          }
+        ]
+      },
+      {
+        "name": "Bonobo, Andreya Triana",
+        "entity_id": "8A6BA642-B78E-4EF8-8553-414358AD099C",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/8A6BA642-B78E-4EF8-8553-414358AD099C-420x-auto.jpg"
+          },
+          "short_description": "Bonobo is a British musician and producer known for downtempo electronic music; Andreya Triana is a British singer-songwriter."
+        },
+        "popularity": 0.6333435668716748,
+        "disambiguation": "Bonobo, Andreya Triana"
+      },
+      {
+        "name": "Solid Steel presents Bonobo",
+        "entity_id": "9B7161D6-436B-4C49-A3AC-4F809D002A50",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/9B7161D6-436B-4C49-A3AC-4F809D002A50-420x-auto.jpg"
+          },
+          "short_description": "British musician and DJ known for downtempo and electronic music blending organic and electronic sounds."
+        },
+        "popularity": 0.7850822000533043,
+        "disambiguation": "Solid Steel presents Bonobo"
+      }
+    ]
+  }
+}

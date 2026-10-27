@@ -1,0 +1,329 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Tems",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:15.151Z",
+  "latencyMs": 320,
+  "body": {
+    "results": [
+      {
+        "name": "TEms",
+        "entity_id": "A78C19AA-DF8B-4D1C-9120-0F39041BA590",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "temsbaby"
+            },
+            "instagram": {
+              "id": "temsbaby"
+            },
+            "lastfm": {
+              "id": "tems",
+              "listeners": 539704,
+              "scrobbles": 12401196
+            },
+            "musicbrainz": {
+              "id": "5b2a8faa-ffee-4706-a1a8-58f109bc8ca2"
+            },
+            "spotify": {
+              "id": "4ICXNnHDsi7fJr7IOcbOd0"
+            },
+            "twitter": {
+              "id": "temsbaby"
+            },
+            "wikidata": {
+              "id": "q72759173"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/A78C19AA-DF8B-4D1C-9120-0F39041BA590-420x-auto.jpg"
+          },
+          "short_description": "Tems is a Nigerian singer, songwriter, and record producer known for her soulful voice and Afrobeats style."
+        },
+        "popularity": 0.9364902112269787,
+        "disambiguation": "TEms",
+        "tags": [
+          {
+            "name": "Nigeria",
+            "tag_id": "urn:tag:genre:nigeria",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:nigeria"
+          },
+          {
+            "name": "Rhythm & Blues",
+            "tag_id": "urn:tag:genre:rhythm_blues",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rhythm_blues"
+          },
+          {
+            "name": "Afrobeats",
+            "tag_id": "urn:tag:genre:afrobeats",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:afrobeats"
+          },
+          {
+            "name": "Soul",
+            "tag_id": "urn:tag:genre:soul",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:soul"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Diverse",
+            "tag_id": "urn:tag:audience:qloo:diverse",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:diverse"
+          },
+          {
+            "name": "Supportive",
+            "tag_id": "urn:tag:audience:qloo:supportive",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:supportive"
+          },
+          {
+            "name": "Soulful",
+            "tag_id": "urn:tag:music:qloo:soulful",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:soulful"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:music:qloo:emotive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:emotive"
+          },
+          {
+            "name": "Smooth",
+            "tag_id": "urn:tag:music:qloo:smooth",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:smooth"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:music:qloo:atmospheric",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:atmospheric"
+          },
+          {
+            "name": "Intimate",
+            "tag_id": "urn:tag:style:qloo:intimate",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:intimate"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Soulful",
+            "tag_id": "urn:tag:characteristic:qloo:soulful",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:soulful"
+          },
+          {
+            "name": "Distinctive",
+            "tag_id": "urn:tag:characteristic:qloo:distinctive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:distinctive"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:characteristic:qloo:emotive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:emotive"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Versatile",
+            "tag_id": "urn:tag:characteristic:qloo:versatile",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:versatile"
+          },
+          {
+            "name": "Afrocentric",
+            "tag_id": "urn:tag:style:qloo:afrocentric",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:afrocentric"
+          },
+          {
+            "name": "Soul-infused",
+            "tag_id": "urn:tag:style:qloo:soul_infused",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:soul_infused"
+          },
+          {
+            "name": "Alternative R&B",
+            "tag_id": "urn:tag:style:qloo:alternative_r_b",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:alternative_r_b"
+          },
+          {
+            "name": "Neo Soul",
+            "tag_id": "urn:tag:style:qloo:neo_soul",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:neo_soul"
+          },
+          {
+            "name": "Contemporary Afrobeats",
+            "tag_id": "urn:tag:style:qloo:contemporary_afrobeats",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:contemporary_afrobeats"
+          },
+          {
+            "name": "Afrobeats",
+            "tag_id": "urn:tag:influence:qloo:afrobeats",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:afrobeats"
+          },
+          {
+            "name": "Alternative R&B",
+            "tag_id": "urn:tag:influence:qloo:alternative_r_b",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:alternative_r_b"
+          },
+          {
+            "name": "Neo Soul",
+            "tag_id": "urn:tag:influence:qloo:neo_soul",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:neo_soul"
+          },
+          {
+            "name": "Beyoncé",
+            "tag_id": "urn:tag:influenced_by:qloo:beyonce",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:beyonce"
+          },
+          {
+            "name": "Adele",
+            "tag_id": "urn:tag:influenced_by:qloo:adele",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:adele"
+          },
+          {
+            "name": "Fela Kuti",
+            "tag_id": "urn:tag:influenced_by:qloo:fela_kuti",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:fela_kuti"
+          },
+          {
+            "name": "Erykah Badu",
+            "tag_id": "urn:tag:influenced_by:qloo:erykah_badu",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:erykah_badu"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Keyboard",
+            "tag_id": "urn:tag:instrument:qloo:keyboard",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:keyboard"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Self-empowerment",
+            "tag_id": "urn:tag:theme:qloo:self_empowerment",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:self_empowerment"
+          },
+          {
+            "name": "Heartbreak",
+            "tag_id": "urn:tag:theme:qloo:heartbreak",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:heartbreak"
+          },
+          {
+            "name": "Resilience",
+            "tag_id": "urn:tag:theme:qloo:resilience",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:resilience"
+          },
+          {
+            "name": "Identity",
+            "tag_id": "urn:tag:theme:qloo:identity",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:identity"
+          },
+          {
+            "name": "Afrobeats",
+            "tag_id": "urn:tag:genre:qloo:afrobeats",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:afrobeats"
+          },
+          {
+            "name": "Alternative R&B",
+            "tag_id": "urn:tag:genre:qloo:alternative_r_b",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:alternative_r_b"
+          },
+          {
+            "name": "Soul",
+            "tag_id": "urn:tag:genre:qloo:soul",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:soul"
+          },
+          {
+            "name": "Neo Soul",
+            "tag_id": "urn:tag:subgenre:qloo:neo_soul",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:neo_soul"
+          },
+          {
+            "name": "Indie Pop",
+            "tag_id": "urn:tag:subgenre:qloo:indie_pop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:indie_pop"
+          }
+        ]
+      }
+    ]
+  }
+}

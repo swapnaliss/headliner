@@ -1,0 +1,1787 @@
+{
+  "endpoint": "/v2/insights/compare",
+  "params": {
+    "a.signal.interests.entities": "C915A918-39C5-47A3-A101-D9FA1DECBD9C,75422648-F55C-4620-91C8-C9CF153E28C0,3C52F3B1-9D28-42C1-AC77-8FD2B5045A2D,375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C,DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+    "b.signal.interests.entities": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+    "filter.type": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:36.735Z",
+  "latencyMs": 340,
+  "body": {
+    "duration": 30,
+    "results": {
+      "tags": [
+        {
+          "tag_id": "urn:tag:style:qloo:engaging",
+          "name": "Engaging",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "3F4ACC42-080A-4FC3-85F1-BE70AA7B774A",
+          "popularity": 0.9949500785800129,
+          "query": {
+            "score": 0.7300645416298027,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "A Tribe Called Quest"
+              },
+              {
+                "entity_id": "3C52F3B1-9D28-42C1-AC77-8FD2B5045A2D",
+                "name": "Nas",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Nas"
+              },
+              {
+                "entity_id": "75422648-F55C-4620-91C8-C9CF153E28C0",
+                "name": "J. Cole",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "J. Cole"
+              },
+              {
+                "entity_id": "C915A918-39C5-47A3-A101-D9FA1DECBD9C",
+                "name": "Kendrick Lamar",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Kendrick Lamar"
+              },
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+                "name": "Jay-Z",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Jay-Z"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:love",
+          "name": "Love",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "FE9F1B33-D668-4A8C-80FD-60B78D5F13FD",
+          "popularity": 0.9934362577424425,
+          "query": {
+            "score": 0.7297661168313316,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Tyler, the Creator"
+              },
+              {
+                "entity_id": "75422648-F55C-4620-91C8-C9CF153E28C0",
+                "name": "J. Cole",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "J. Cole"
+              },
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+                "name": "Jay-Z",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Jay-Z"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:energetic",
+          "name": "Energetic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "DDA96216-6F10-4D64-BA4B-3553DA45652B",
+          "popularity": 0.993239807710086,
+          "query": {
+            "score": 0.7297273723004448,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "A Tribe Called Quest"
+              },
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Tyler, the Creator"
+              },
+              {
+                "entity_id": "75422648-F55C-4620-91C8-C9CF153E28C0",
+                "name": "J. Cole",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "J. Cole"
+              },
+              {
+                "entity_id": "C915A918-39C5-47A3-A101-D9FA1DECBD9C",
+                "name": "Kendrick Lamar",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Kendrick Lamar"
+              },
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+                "name": "Jay-Z",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Jay-Z"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:dynamic",
+          "name": "Dynamic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "4900E325-E17B-482E-A421-A36C21F51569",
+          "popularity": 0.9926157899602478,
+          "query": {
+            "score": 0.7296042858489226,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "A Tribe Called Quest"
+              },
+              {
+                "entity_id": "3C52F3B1-9D28-42C1-AC77-8FD2B5045A2D",
+                "name": "Nas",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Nas"
+              },
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Tyler, the Creator"
+              },
+              {
+                "entity_id": "C915A918-39C5-47A3-A101-D9FA1DECBD9C",
+                "name": "Kendrick Lamar",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Kendrick Lamar"
+              },
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+                "name": "Jay-Z",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Jay-Z"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:passionate",
+          "name": "Passionate",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "F5485D5E-6C8E-4CE8-951C-3B13AD76D935",
+          "popularity": 0.9920842192844597,
+          "query": {
+            "score": 0.7294993952774845,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "A Tribe Called Quest"
+              },
+              {
+                "entity_id": "3C52F3B1-9D28-42C1-AC77-8FD2B5045A2D",
+                "name": "Nas",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Nas"
+              },
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Tyler, the Creator"
+              },
+              {
+                "entity_id": "75422648-F55C-4620-91C8-C9CF153E28C0",
+                "name": "J. Cole",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "J. Cole"
+              },
+              {
+                "entity_id": "C915A918-39C5-47A3-A101-D9FA1DECBD9C",
+                "name": "Kendrick Lamar",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Kendrick Lamar"
+              },
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+                "name": "Jay-Z",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Jay-Z"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:loyal",
+          "name": "Loyal",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "EDDB06AD-35FE-431E-A2A5-4F5589471FEE",
+          "popularity": 0.9920264398631783,
+          "query": {
+            "score": 0.7294879979555896,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "A Tribe Called Quest"
+              },
+              {
+                "entity_id": "3C52F3B1-9D28-42C1-AC77-8FD2B5045A2D",
+                "name": "Nas",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Nas"
+              },
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Tyler, the Creator"
+              },
+              {
+                "entity_id": "75422648-F55C-4620-91C8-C9CF153E28C0",
+                "name": "J. Cole",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "J. Cole"
+              },
+              {
+                "entity_id": "C915A918-39C5-47A3-A101-D9FA1DECBD9C",
+                "name": "Kendrick Lamar",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Kendrick Lamar"
+              },
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+                "name": "Jay-Z",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Jay-Z"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:vocals",
+          "name": "Vocals",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "BC4B0E4D-F317-47A7-94A5-62BBD3D42042",
+          "popularity": 0.9906397337524268,
+          "query": {
+            "score": 0.7292142656792078,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "3C52F3B1-9D28-42C1-AC77-8FD2B5045A2D",
+                "name": "Nas",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Nas"
+              },
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Tyler, the Creator"
+              },
+              {
+                "entity_id": "75422648-F55C-4620-91C8-C9CF153E28C0",
+                "name": "J. Cole",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "J. Cole"
+              },
+              {
+                "entity_id": "C915A918-39C5-47A3-A101-D9FA1DECBD9C",
+                "name": "Kendrick Lamar",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Kendrick Lamar"
+              },
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+                "name": "Jay-Z",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Jay-Z"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:innovative",
+          "name": "Innovative",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "F468945C-6B6C-467D-8496-733087E03D56",
+          "popularity": 0.9902583895719701,
+          "query": {
+            "score": 0.729138957311338,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "A Tribe Called Quest"
+              },
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Tyler, the Creator"
+              },
+              {
+                "entity_id": "C915A918-39C5-47A3-A101-D9FA1DECBD9C",
+                "name": "Kendrick Lamar",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Kendrick Lamar"
+              },
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+                "name": "Jay-Z",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Jay-Z"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:influential",
+          "name": "Influential",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "777FD204-95A1-43A8-B83F-373CB929792F",
+          "popularity": 0.9810367939354719,
+          "query": {
+            "score": 0.727313888158234,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "3C52F3B1-9D28-42C1-AC77-8FD2B5045A2D",
+                "name": "Nas",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Nas"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+                "name": "Jay-Z",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Jay-Z"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:diverse",
+          "name": "Diverse",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "AC97BEBA-2B50-444E-9CFE-AF91F03532AB",
+          "popularity": 0.9611260053619303,
+          "query": {
+            "score": 0.7233471983363156,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "A Tribe Called Quest"
+              },
+              {
+                "entity_id": "3C52F3B1-9D28-42C1-AC77-8FD2B5045A2D",
+                "name": "Nas",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Nas"
+              },
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Tyler, the Creator"
+              },
+              {
+                "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+                "name": "Tyler, the Creator",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+                "name": "Jay-Z",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Jay-Z"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:rhythmic",
+          "name": "Rhythmic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "6F5D42F0-9C8D-416E-8505-3BED2754F25F",
+          "popularity": 0.9460686881760192,
+          "query": {
+            "score": 0.7203238758303845,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "A Tribe Called Quest"
+              },
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+                "name": "Jay-Z",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Jay-Z"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:smooth",
+          "name": "Smooth",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "A183FC56-6750-4FE3-A515-81A20726A2EA",
+          "popularity": 0.9418623463067394,
+          "query": {
+            "score": 0.7194756888317272,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "A Tribe Called Quest"
+              },
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+                "name": "Jay-Z",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Jay-Z"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:ambition",
+          "name": "Ambition",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "294B1BB6-5177-4065-900F-57371E5353BA",
+          "popularity": 0.8847416104280299,
+          "query": {
+            "score": 0.7078038335300443,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "75422648-F55C-4620-91C8-C9CF153E28C0",
+                "name": "J. Cole",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "J. Cole"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+                "name": "Jay-Z",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Jay-Z"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:lyrical",
+          "name": "Lyrical",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "26AAD2EC-B4F6-4415-B868-47BFF26E0C2B",
+          "popularity": 0.8147013959508181,
+          "query": {
+            "score": 0.6931104336666634,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "3C52F3B1-9D28-42C1-AC77-8FD2B5045A2D",
+                "name": "Nas",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Nas"
+              },
+              {
+                "entity_id": "75422648-F55C-4620-91C8-C9CF153E28C0",
+                "name": "J. Cole",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "J. Cole"
+              },
+              {
+                "entity_id": "C915A918-39C5-47A3-A101-D9FA1DECBD9C",
+                "name": "Kendrick Lamar",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Kendrick Lamar"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+                "name": "Jay-Z",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Jay-Z"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:boom_bap",
+          "name": "Boom Bap",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "44CB3865-7B75-40B4-9A98-D3BC9E72E449",
+          "popularity": 0.21380697050938338,
+          "query": {
+            "score": 0.55324904767918,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "A Tribe Called Quest"
+              },
+              {
+                "entity_id": "DF0BFEC5-8BA1-43E8-B15B-9070DD452F76",
+                "name": "A Tribe Called Quest",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+                "name": "Jay-Z",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Jay-Z"
+              }
+            ]
+          }
+        }
+      ],
+      "a": [
+        {
+          "tag_id": "urn:tag:genre:music:hip_hop",
+          "name": "Hip - Hop",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "8F1E88FF-2B32-452A-A85C-FDC6A737F87D",
+          "popularity": 0.9995143,
+          "query": {
+            "count": "5"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:rap",
+          "name": "Rap",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "B09BB895-93A6-4724-AA2F-D182649E448C",
+          "popularity": 0.99934137,
+          "query": {
+            "count": "5"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:loyal",
+          "name": "Loyal",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "EDDB06AD-35FE-431E-A2A5-4F5589471FEE",
+          "popularity": 0.99202645,
+          "query": {
+            "count": "5"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:passionate",
+          "name": "Passionate",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "F5485D5E-6C8E-4CE8-951C-3B13AD76D935",
+          "popularity": 0.9920842,
+          "query": {
+            "count": "5"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:thoughtful",
+          "name": "Thoughtful",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "56241BA1-2FCB-4E8A-AE39-C9B99F0868E5",
+          "popularity": 0.9906166,
+          "query": {
+            "count": "4"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:engaging",
+          "name": "Engaging",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "3F4ACC42-080A-4FC3-85F1-BE70AA7B774A",
+          "popularity": 0.99495006,
+          "query": {
+            "count": "4"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:dynamic",
+          "name": "Dynamic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "4900E325-E17B-482E-A421-A36C21F51569",
+          "popularity": 0.9926158,
+          "query": {
+            "count": "4"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:energetic",
+          "name": "Energetic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "DDA96216-6F10-4D64-BA4B-3553DA45652B",
+          "popularity": 0.9932398,
+          "query": {
+            "count": "4"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:vocals",
+          "name": "Vocals",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "BC4B0E4D-F317-47A7-94A5-62BBD3D42042",
+          "popularity": 0.99063975,
+          "query": {
+            "count": "4"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:diverse",
+          "name": "Diverse",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "AC97BEBA-2B50-444E-9CFE-AF91F03532AB",
+          "popularity": 0.961126,
+          "query": {
+            "count": "3"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:innovative",
+          "name": "Innovative",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "F468945C-6B6C-467D-8496-733087E03D56",
+          "popularity": 0.9902584,
+          "query": {
+            "count": "3"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:expressive",
+          "name": "Expressive",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "241982E6-3CCA-42C2-81EC-A5DC7E99896A",
+          "popularity": 0.9734908,
+          "query": {
+            "count": "3"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:identity",
+          "name": "Identity",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "FDB07737-F3E6-4ED6-AFE8-FB9248E6C066",
+          "popularity": 0.9851738,
+          "query": {
+            "count": "3"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:thoughtful",
+          "name": "Thoughtful",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "F3702D96-6D74-4B29-8FDD-75380CC7CE3F",
+          "popularity": 0.8895258,
+          "query": {
+            "count": "3"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:lyrical",
+          "name": "Lyrical",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "26AAD2EC-B4F6-4415-B868-47BFF26E0C2B",
+          "popularity": 0.8147014,
+          "query": {
+            "count": "3"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:love",
+          "name": "Love",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "FE9F1B33-D668-4A8C-80FD-60B78D5F13FD",
+          "popularity": 0.9934363,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:jazz_infused",
+          "name": "Jazz-infused",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "18A1806C-E4E7-481F-A3C7-559A8A5930E8",
+          "popularity": 0.83042896,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:introspective",
+          "name": "Introspective",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "37B3BB7B-51D4-43D1-BE6B-03C60CB4A1D1",
+          "popularity": 0.948403,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:authentic",
+          "name": "Authentic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "4487A451-9C8D-4E2B-8F85-10E68003079B",
+          "popularity": 0.98925304,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:conscious",
+          "name": "Conscious",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "4EC558F1-5CF1-4F9E-A1CF-D7F30F1D69BE",
+          "popularity": 0.54555327,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:underground_hip_hop",
+          "name": "Underground Hip Hop",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "50D57395-C040-4D75-9ED9-7C806E4F007A",
+          "popularity": 0.9983099,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:soulful",
+          "name": "Soulful",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "543C4CA2-F8BF-455E-89D1-F804398CEC27",
+          "popularity": 0.97279745,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:poetic",
+          "name": "Poetic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "56DD2CBC-5E10-41DD-A9F3-0389C5F5BCA8",
+          "popularity": 0.78202134,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:engaged",
+          "name": "Engaged",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "5F245FF9-FAFD-4F73-AA93-20374F31659A",
+          "popularity": 0.98003143,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:piano",
+          "name": "Piano",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "80C2C13B-39EB-4DAF-90EB-C43D84162858",
+          "popularity": 0.9774776,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:drum_machine",
+          "name": "Drum machine",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "81C293EE-57D7-4DBE-BE8B-F09CE4807A8A",
+          "popularity": 0.9223098,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:social_issues",
+          "name": "Social issues",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "84340B53-BE2E-4C90-A899-F622F485C550",
+          "popularity": 0.9728206,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:storyteller",
+          "name": "Storyteller",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "8B791979-32A2-402D-9F66-E61C1BC0FA84",
+          "popularity": 0.2393917,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:conscious",
+          "name": "Conscious",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "A4B00794-95D1-4AFC-B0BA-FA5B17EA0652",
+          "popularity": 0.18663909,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:melodic",
+          "name": "Melodic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "AEDE7DAB-D607-41AD-AAB7-77048675DCAD",
+          "popularity": 0.9827355,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:mental_health",
+          "name": "Mental Health",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "B30FF206-3A3D-40BA-896B-24C332E9CDEE",
+          "popularity": 0.9464038,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:conscious",
+          "name": "Conscious",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "B510D327-A488-4B69-A403-57AB689123A3",
+          "popularity": 0.7397499,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:personal_struggle",
+          "name": "Personal struggle",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "0D949402-303A-4F82-9D0B-634445D9AD91",
+          "popularity": 0.9122562,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:eclectic",
+          "name": "Eclectic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "77694357-7B1B-4065-AB25-76B06D85545B",
+          "popularity": 0.94086856,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:influential",
+          "name": "Influential",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "777FD204-95A1-43A8-B83F-373CB929792F",
+          "popularity": 0.9810368,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:experimental",
+          "name": "Experimental",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "801B4F9C-CC0E-47F1-A3E0-6A610A552CB4",
+          "popularity": 0.94283307,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:socially_aware",
+          "name": "Socially-aware",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "2717DEFD-14D1-4493-949D-0B4189D29F46",
+          "popularity": 0.4659448,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:provocative",
+          "name": "Provocative",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "1BF1D4F5-1D71-43C9-9A25-873F8F20F855",
+          "popularity": 0.8599311,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:storytelling",
+          "name": "Storytelling",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "1B138B4C-C485-41AB-9D56-6BC0B7A5B788",
+          "popularity": 0.94798696,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:self_expression",
+          "name": "Self-Expression",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "F6AD78A5-539E-4D65-AA5D-3E8721E5DCF7",
+          "popularity": 0.72240454,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:rebellion",
+          "name": "Rebellion",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "38DD3F7C-8CF5-4B2B-831D-D91D2174A7C8",
+          "popularity": 0.9541,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:creative",
+          "name": "Creative",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "8FCE2057-39A6-4E91-9DD8-280ECE514223",
+          "popularity": 0.97075206,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:creative",
+          "name": "Creative",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "93425479-1996-42CB-91E1-BB484475AE3F",
+          "popularity": 0.96243185,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:passionate",
+          "name": "Passionate",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "95C01218-0791-4A0E-B69B-82C8B2BDD7F5",
+          "popularity": 0.961126,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:eclectic",
+          "name": "Eclectic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "968DEF8A-6070-46E9-ACE1-374CC19C25A7",
+          "popularity": 0.96655726,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:north_carolina",
+          "name": "North Carolina",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "9AB635DC-E757-4CE7-A4ED-39C25C089EE0",
+          "popularity": 0.9840159,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:samplers",
+          "name": "Samplers",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "9D582C83-E244-4765-A415-B5317A4E7EBC",
+          "popularity": 0.7655889,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:smooth",
+          "name": "Smooth",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "A183FC56-6750-4FE3-A515-81A20726A2EA",
+          "popularity": 0.94186234,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:self_reflection",
+          "name": "Self-Reflection",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "A3A5072B-4389-49EC-84DC-53EE13ACDE56",
+          "popularity": 0.91249883,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:personal_growth",
+          "name": "Personal growth",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "F82A37C3-5749-42F7-8D36-712C8F117063",
+          "popularity": 0.9822155,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:compton",
+          "name": "Compton",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "389D0BD2-7FAB-40BA-88DA-088AFA75696A",
+          "popularity": 0.8634985,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:narrative_driven",
+          "name": "Narrative-Driven",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "FBE0247A-051D-4397-8D6C-A7A388F36A08",
+          "popularity": 0.98133725,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:urban_life",
+          "name": "Urban Life",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "2E124C95-AA10-4405-B607-68F315486507",
+          "popularity": 0.93431634,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:personal_struggles",
+          "name": "Personal struggles",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "15143B92-BA9A-4294-A54C-88A0CF201CC5",
+          "popularity": 0.96065223,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:soulful",
+          "name": "Soulful",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "FE269CB2-E069-4F57-9CB7-C19B42DCCD2A",
+          "popularity": 0.9732597,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:everyday_life",
+          "name": "Everyday life",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "29C9568C-2446-44A7-8E90-56AC4CACD04E",
+          "popularity": 0.93269855,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:east_coast_rap",
+          "name": "East Coast Rap",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "C577C58D-751D-4291-A95A-295786BF733F",
+          "popularity": 0.98785704,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:turntables",
+          "name": "Turntables",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "C9FBF890-B2B4-49E4-9049-AA33EB072D07",
+          "popularity": 0.9481834,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:socially_conscious",
+          "name": "Socially Conscious",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "D4C50040-CA2B-4040-A682-FBEEC018F85D",
+          "popularity": 0.7684894,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:drum_machines",
+          "name": "Drum machines",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "D6FF311F-C540-42DC-897D-2A917C88F777",
+          "popularity": 0.8611445,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:soulful",
+          "name": "Soulful",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "444CE3BB-69EF-49A2-966B-BF9A50A5212B",
+          "popularity": 0.94167745,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:complex",
+          "name": "Complex",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "D7FAED07-F2AB-4752-BD66-4F2B632FFB2F",
+          "popularity": 0.95799434,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:boom_bap",
+          "name": "Boom Bap",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "44CB3865-7B75-40B4-9A98-D3BC9E72E449",
+          "popularity": 0.21380697,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:funk",
+          "name": "Funk",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "47ED0FA8-991E-45F2-9074-D95153C98ED7",
+          "popularity": 0.9989218,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:political_awareness",
+          "name": "Political awareness",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "41CA6F22-A53E-4404-BC7C-0C9E0AD4E94E",
+          "popularity": 0.08605667,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:new_york",
+          "name": "New York",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "DCB43EAF-7E1D-4348-8796-E2ADFE420097",
+          "popularity": 0.99718267,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:politics",
+          "name": "Politics",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "DD294EE1-3BCF-4DAF-827B-195A81F72E94",
+          "popularity": 0.95203155,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:experimental",
+          "name": "Experimental",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "29C806BD-D356-476A-977F-DA8915462690",
+          "popularity": 0.95076036,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:pioneering",
+          "name": "Pioneering",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "3B41E9E2-9D6E-4353-BF93-A85DD70E297E",
+          "popularity": 0.96976984,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:social_justice",
+          "name": "Social justice",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "E7342165-0606-4641-B031-30A47CE85127",
+          "popularity": 0.953996,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:ambition",
+          "name": "Ambition",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "294B1BB6-5177-4065-900F-57371E5353BA",
+          "popularity": 0.8847416,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:theatrical",
+          "name": "Theatrical",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "5FA6AA44-FC61-4932-8ACF-73BD0CE70F3D",
+          "popularity": 0.971977,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:community",
+          "name": "Community",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "602BFD40-4B8D-4D15-AEA0-ACF016C82C57",
+          "popularity": 0.96225846,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:rhythmic",
+          "name": "Rhythmic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "6F5D42F0-9C8D-416E-8505-3BED2754F25F",
+          "popularity": 0.9460687,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:synthesizer",
+          "name": "Synthesizer",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "75F19A67-5889-4C7D-B8BE-88FA805DBD30",
+          "popularity": 0.9755593,
+          "query": {
+            "count": "1"
+          }
+        }
+      ],
+      "b": [
+        {
+          "tag_id": "urn:tag:theme:qloo:struggle",
+          "name": "Struggle",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "0864633A-A5B6-4C8A-9912-89402FA31A2B",
+          "popularity": 0.93216693,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:streetwise",
+          "name": "Streetwise",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "1958C231-4B87-4BEB-B34C-65CCB6F29E1C",
+          "popularity": 0.83802116,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:lyrical",
+          "name": "Lyrical",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "26AAD2EC-B4F6-4415-B868-47BFF26E0C2B",
+          "popularity": 0.8147014,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:global",
+          "name": "Global",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "26B50458-1264-4E6C-82C2-DFBA095A7145",
+          "popularity": 0.4659448,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:ambition",
+          "name": "Ambition",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "294B1BB6-5177-4065-900F-57371E5353BA",
+          "popularity": 0.8847416,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:success",
+          "name": "Success",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "2ECD5C56-1BEB-4D13-B289-D1CA01D598D5",
+          "popularity": 0.9341777,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:charismatic",
+          "name": "Charismatic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "320A650A-6BE9-4810-9171-88717CC7A084",
+          "popularity": 0.9500786,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:engaging",
+          "name": "Engaging",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "3F4ACC42-080A-4FC3-85F1-BE70AA7B774A",
+          "popularity": 0.99495006,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:street_life",
+          "name": "Street life",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "44A714AC-33B8-4F86-887E-22200AA8B85E",
+          "popularity": 0.92412406,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:boom_bap",
+          "name": "Boom Bap",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "44CB3865-7B75-40B4-9A98-D3BC9E72E449",
+          "popularity": 0.21380697,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:wealth",
+          "name": "Wealth",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "47346675-4490-41B5-AAF5-326401808EC2",
+          "popularity": 0.8147014,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:dynamic",
+          "name": "Dynamic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "4900E325-E17B-482E-A421-A36C21F51569",
+          "popularity": 0.9926158,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:rhythmic",
+          "name": "Rhythmic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "6F5D42F0-9C8D-416E-8505-3BED2754F25F",
+          "popularity": 0.9460687,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:urban",
+          "name": "Urban",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "73DF876F-A976-43D8-843A-5E6977BF0260",
+          "popularity": 0.90814227,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:influential",
+          "name": "Influential",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "777FD204-95A1-43A8-B83F-373CB929792F",
+          "popularity": 0.9810368,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:smooth",
+          "name": "Smooth",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "A183FC56-6750-4FE3-A515-81A20726A2EA",
+          "popularity": 0.94186234,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:charismatic",
+          "name": "Charismatic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "A48B3E48-36AE-495B-91ED-4392ED0D5320",
+          "popularity": 0.9714454,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:diverse",
+          "name": "Diverse",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "AC97BEBA-2B50-444E-9CFE-AF91F03532AB",
+          "popularity": 0.961126,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:vocals",
+          "name": "Vocals",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "BC4B0E4D-F317-47A7-94A5-62BBD3D42042",
+          "popularity": 0.99063975,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:energetic",
+          "name": "Energetic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "DDA96216-6F10-4D64-BA4B-3553DA45652B",
+          "popularity": 0.9932398,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:loyal",
+          "name": "Loyal",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "EDDB06AD-35FE-431E-A2A5-4F5589471FEE",
+          "popularity": 0.99202645,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:innovative",
+          "name": "Innovative",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "F468945C-6B6C-467D-8496-733087E03D56",
+          "popularity": 0.9902584,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:passionate",
+          "name": "Passionate",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "F5485D5E-6C8E-4CE8-951C-3B13AD76D935",
+          "popularity": 0.9920842,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:love",
+          "name": "Love",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "FE9F1B33-D668-4A8C-80FD-60B78D5F13FD",
+          "popularity": 0.9934363,
+          "query": {
+            "count": "1"
+          }
+        }
+      ],
+      "matchEntities": []
+    }
+  }
+}

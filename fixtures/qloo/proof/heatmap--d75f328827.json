@@ -1,0 +1,49 @@
+{
+  "endpoint": "/v2/insights",
+  "params": {
+    "filter.location.query": "Lagos",
+    "filter.type": "urn:heatmap",
+    "signal.interests.entities": "C344B97A-CBBC-4297-967A-D8EA5A703492"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:20.442Z",
+  "latencyMs": 502,
+  "body": {
+    "success": true,
+    "results": {
+      "heatmap": [
+        {
+          "location": {
+            "latitude": 6.451721,
+            "longitude": 3.4002686,
+            "geohash": "s14ktq"
+          },
+          "query": {
+            "affinity": 0,
+            "affinity_rank": 0.179641,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.179641,
+            "entity_artist_affinity": 0
+          }
+        }
+      ]
+    },
+    "query": {
+      "localities": {
+        "filter": [
+          {
+            "entity_id": "1B96428C-69B1-4035-8628-88CD552218CB",
+            "name": "Lagos",
+            "subtype": "urn:entity:locality",
+            "location": {
+              "lat": 6.520236604701515,
+              "lon": 3.5956709582495026
+            },
+            "popularity": 0.99928516,
+            "disambiguation": "Lagos, Nigeria"
+          }
+        ]
+      }
+    }
+  }
+}

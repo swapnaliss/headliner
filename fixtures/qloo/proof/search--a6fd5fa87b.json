@@ -1,0 +1,423 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Denzel Curry",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:36.395Z",
+  "latencyMs": 335,
+  "body": {
+    "results": [
+      {
+        "name": "Denzel Curry",
+        "entity_id": "1AF69DE9-48C2-49F3-9DC8-823876B7C8E4",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "ultimatedenzelcurry"
+            },
+            "instagram": {
+              "id": "denzelcurryph"
+            },
+            "lastfm": {
+              "id": "denzel%20curry",
+              "listeners": 1357530,
+              "scrobbles": 123487257
+            },
+            "musicbrainz": {
+              "id": "5f95440d-7737-4a36-9bcf-c05337f7129b"
+            },
+            "spotify": {
+              "id": "6fxyWrfmjcbj5d12gXeiNV"
+            },
+            "twitter": {
+              "id": "ravenxmiyagi"
+            },
+            "wikidata": {
+              "id": "q17517049"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/1AF69DE9-48C2-49F3-9DC8-823876B7C8E4-420x-auto.jpg"
+          },
+          "short_description": "Denzel Curry is an American rapper known for his aggressive style and versatile flow."
+        },
+        "popularity": 0.99361697103009,
+        "disambiguation": "Denzel Curry",
+        "tags": [
+          {
+            "name": "Cloud Rap",
+            "tag_id": "urn:tag:genre:cloud_rap",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:cloud_rap"
+          },
+          {
+            "name": "Trap",
+            "tag_id": "urn:tag:genre:trap",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:trap"
+          },
+          {
+            "name": "Hip - Hop",
+            "tag_id": "urn:tag:genre:hip_hop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:hip_hop"
+          },
+          {
+            "name": "Rap",
+            "tag_id": "urn:tag:genre:rap",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rap"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Diverse",
+            "tag_id": "urn:tag:audience:qloo:diverse",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:diverse"
+          },
+          {
+            "name": "Youthful",
+            "tag_id": "urn:tag:audience:qloo:youthful",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:youthful"
+          },
+          {
+            "name": "Aggressive",
+            "tag_id": "urn:tag:music:qloo:aggressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:aggressive"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:music:qloo:energetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:energetic"
+          },
+          {
+            "name": "Dark",
+            "tag_id": "urn:tag:music:qloo:dark",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:dark"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:music:qloo:experimental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:experimental"
+          },
+          {
+            "name": "Lyrical",
+            "tag_id": "urn:tag:music:qloo:lyrical",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:lyrical"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Intense",
+            "tag_id": "urn:tag:style:qloo:intense",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:intense"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Aggressive",
+            "tag_id": "urn:tag:characteristic:qloo:aggressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:aggressive"
+          },
+          {
+            "name": "Versatile",
+            "tag_id": "urn:tag:characteristic:qloo:versatile",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:versatile"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Intense",
+            "tag_id": "urn:tag:characteristic:qloo:intense",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:intense"
+          },
+          {
+            "name": "Lyrical",
+            "tag_id": "urn:tag:characteristic:qloo:lyrical",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:lyrical"
+          },
+          {
+            "name": "Hardcore Hip Hop",
+            "tag_id": "urn:tag:style:qloo:hardcore_hip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:hardcore_hip_hop"
+          },
+          {
+            "name": "Trap Rap",
+            "tag_id": "urn:tag:style:qloo:trap_rap",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:trap_rap"
+          },
+          {
+            "name": "Experimental Hip Hop",
+            "tag_id": "urn:tag:style:qloo:experimental_hip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental_hip_hop"
+          },
+          {
+            "name": "Cloud Rap",
+            "tag_id": "urn:tag:style:qloo:cloud_rap",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:cloud_rap"
+          },
+          {
+            "name": "Southern Hip Hop",
+            "tag_id": "urn:tag:style:qloo:southern_hip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:southern_hip_hop"
+          },
+          {
+            "name": "Trap",
+            "tag_id": "urn:tag:influence:qloo:trap",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:trap"
+          },
+          {
+            "name": "Experimental Hip Hop",
+            "tag_id": "urn:tag:influence:qloo:experimental_hip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:experimental_hip_hop"
+          },
+          {
+            "name": "Hardcore Hip Hop",
+            "tag_id": "urn:tag:influence:qloo:hardcore_hip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:hardcore_hip_hop"
+          },
+          {
+            "name": "Three 6 Mafia",
+            "tag_id": "urn:tag:influenced_by:qloo:three_6_mafia",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:three_6_mafia"
+          },
+          {
+            "name": "Outkast",
+            "tag_id": "urn:tag:influenced_by:qloo:outkast",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:outkast"
+          },
+          {
+            "name": "Wu-Tang Clan",
+            "tag_id": "urn:tag:influenced_by:qloo:wu_tang_clan",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:wu_tang_clan"
+          },
+          {
+            "name": "Kanye West",
+            "tag_id": "urn:tag:influenced_by:qloo:kanye_west",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:kanye_west"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Mental Health",
+            "tag_id": "urn:tag:theme:qloo:mental_health",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:mental_health"
+          },
+          {
+            "name": "Social Issues",
+            "tag_id": "urn:tag:theme:qloo:social_issues",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:social_issues"
+          },
+          {
+            "name": "Personal Struggles",
+            "tag_id": "urn:tag:theme:qloo:personal_struggles",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:personal_struggles"
+          },
+          {
+            "name": "Violence",
+            "tag_id": "urn:tag:theme:qloo:violence",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:violence"
+          },
+          {
+            "name": "Identity",
+            "tag_id": "urn:tag:theme:qloo:identity",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:identity"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:genre:qloo:hip_hop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hip_hop"
+          },
+          {
+            "name": "Rap",
+            "tag_id": "urn:tag:genre:qloo:rap",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:rap"
+          },
+          {
+            "name": "Trap",
+            "tag_id": "urn:tag:genre:qloo:trap",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:trap"
+          },
+          {
+            "name": "Cloud Rap",
+            "tag_id": "urn:tag:subgenre:qloo:cloud_rap",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:cloud_rap"
+          },
+          {
+            "name": "Hardcore Hip Hop",
+            "tag_id": "urn:tag:subgenre:qloo:hardcore_hip_hop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:hardcore_hip_hop"
+          },
+          {
+            "name": "Experimental Hip Hop",
+            "tag_id": "urn:tag:subgenre:qloo:experimental_hip_hop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:experimental_hip_hop"
+          }
+        ]
+      },
+      {
+        "name": "Denzel Curry & Tay Keith",
+        "entity_id": "3A3DE5DC-3B7E-4D18-BF3D-0A6F7ED19819",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/3A3DE5DC-3B7E-4D18-BF3D-0A6F7ED19819-420x-auto.jpg"
+          },
+          "short_description": "American hip hop duo known for their energetic rap and trap productions."
+        },
+        "popularity": 0.4541902965814359,
+        "disambiguation": "Denzel Curry & Tay Keith"
+      },
+      {
+        "name": "Denzel Curry, Nyyjerya",
+        "entity_id": "0BB32AE5-02AA-4FC1-9AF5-A3C5C1A1397D",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/0BB32AE5-02AA-4FC1-9AF5-A3C5C1A1397D-420x-auto.jpg"
+          },
+          "short_description": "American rapper known for his aggressive style and versatile flow blending hip hop and trap."
+        },
+        "popularity": 0.42104712713090947,
+        "disambiguation": "Denzel Curry, Nyyjerya"
+      },
+      {
+        "name": "Denzel Curry, J.I.D",
+        "entity_id": "78078F88-F2AE-458E-8FEF-136A5A119460",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/78078F88-F2AE-458E-8FEF-136A5A119460-420x-auto.jpg"
+          },
+          "short_description": "American rapper known for his aggressive style and introspective lyrics."
+        },
+        "popularity": 0.3110478356066408,
+        "disambiguation": "Denzel Curry, J.I.D"
+      },
+      {
+        "name": "Denzel Curry, Rick Ross",
+        "entity_id": "0636ED41-6987-49B8-9A78-0A980E9691E3",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/0636ED41-6987-49B8-9A78-0A980E9691E3-420x-auto.jpg"
+          },
+          "short_description": "American rapper known for his aggressive style and versatile flow."
+        },
+        "popularity": 0.29563342790922065,
+        "disambiguation": "Denzel Curry, Rick Ross"
+      }
+    ]
+  }
+}

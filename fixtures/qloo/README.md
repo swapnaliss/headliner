@@ -64,3 +64,5 @@ Entity ids in params are abbreviated below as counts; the exact ids are in each 
 | `heatmap--sample-d9e2aad93e.json` | `GET /v2/insights` | `filter.location.query=Tromsø&filter.type=urn:heatmap&signal.interests.entities=<1 entity id>` | 200 | 2026-10-27 |
 
 The `*--sample-*` files were recorded by `scripts/prewarm-samples.ts --record-fixtures` (M2-06) from the same adapter calls the sample rooms in `apps/web/samples/rooms.json` make; they cover each room's compares and the top act's city heatmaps.
+
+`proof/` (M3-04) holds the one-time live recording for `npm run proof` (130 responses recorded 2026-10-27 by `evals/proof/run.ts --live` through the adapter, with its own `index.json` and a `run-log.json` of call counts and latency). It is replayed with `new FixtureTransport("fixtures/qloo/proof")`; it is deliberately not merged into the top-level `index.json`.

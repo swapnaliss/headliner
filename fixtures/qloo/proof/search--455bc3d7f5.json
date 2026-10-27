@@ -1,0 +1,990 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Pat Metheny",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:33.786Z",
+  "latencyMs": 405,
+  "body": {
+    "results": [
+      {
+        "name": "Pat Metheny",
+        "entity_id": "D266F8E9-C611-41D2-8877-1AACDFFA1559",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "patmetheny"
+            },
+            "lastfm": {
+              "id": "pat%20metheny",
+              "listeners": 474228,
+              "scrobbles": 8637050
+            },
+            "musicbrainz": {
+              "id": "7daac7f9-8fcc-485f-a14f-f8091d98cf25"
+            },
+            "spotify": {
+              "id": "3t58jfUhoMLYVO14XaUFLA"
+            },
+            "twitter": {
+              "id": "patmetheny"
+            },
+            "wikidata": {
+              "id": "q213887"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/D266F8E9-C611-41D2-8877-1AACDFFA1559-420x-auto.jpg"
+          },
+          "short_description": "An American jazz guitarist and composer known for his innovative style and contributions to jazz fusion."
+        },
+        "popularity": 0.9931311591000334,
+        "disambiguation": "Pat Metheny",
+        "tags": [
+          {
+            "name": "Jazz Guitar",
+            "tag_id": "urn:tag:genre:jazz_guitar",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:jazz_guitar"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:genre:jazz_fusion",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:jazz_fusion"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:genre:guitar",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:guitar"
+          },
+          {
+            "name": "Fusion",
+            "tag_id": "urn:tag:genre:fusion",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:fusion"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:jazz",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:jazz"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Knowledgeable",
+            "tag_id": "urn:tag:audience:qloo:knowledgeable",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:knowledgeable"
+          },
+          {
+            "name": "Diverse",
+            "tag_id": "urn:tag:audience:qloo:diverse",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:diverse"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Complex",
+            "tag_id": "urn:tag:music:qloo:complex",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:complex"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:music:qloo:atmospheric",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:atmospheric"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:music:qloo:expressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:expressive"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Technical",
+            "tag_id": "urn:tag:style:qloo:technical",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:technical"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:characteristic:qloo:melodic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:melodic"
+          },
+          {
+            "name": "Versatile",
+            "tag_id": "urn:tag:characteristic:qloo:versatile",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:versatile"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:characteristic:qloo:expressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:expressive"
+          },
+          {
+            "name": "Technical",
+            "tag_id": "urn:tag:characteristic:qloo:technical",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:technical"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:style:qloo:jazz_fusion",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:jazz_fusion"
+          },
+          {
+            "name": "Contemporary Jazz",
+            "tag_id": "urn:tag:style:qloo:contemporary_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:contemporary_jazz"
+          },
+          {
+            "name": "Progressive Jazz",
+            "tag_id": "urn:tag:style:qloo:progressive_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:progressive_jazz"
+          },
+          {
+            "name": "World Jazz",
+            "tag_id": "urn:tag:style:qloo:world_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:world_jazz"
+          },
+          {
+            "name": "Ambient Jazz",
+            "tag_id": "urn:tag:style:qloo:ambient_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:ambient_jazz"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:influence:qloo:jazz_fusion",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:jazz_fusion"
+          },
+          {
+            "name": "Contemporary Jazz",
+            "tag_id": "urn:tag:influence:qloo:contemporary_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:contemporary_jazz"
+          },
+          {
+            "name": "Smooth Jazz",
+            "tag_id": "urn:tag:influence:qloo:smooth_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:smooth_jazz"
+          },
+          {
+            "name": "Wes Montgomery",
+            "tag_id": "urn:tag:influenced_by:qloo:wes_montgomery",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:wes_montgomery"
+          },
+          {
+            "name": "Jim Hall",
+            "tag_id": "urn:tag:influenced_by:qloo:jim_hall",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:jim_hall"
+          },
+          {
+            "name": "George Benson",
+            "tag_id": "urn:tag:influenced_by:qloo:george_benson",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:george_benson"
+          },
+          {
+            "name": "John McLaughlin",
+            "tag_id": "urn:tag:influenced_by:qloo:john_mclaughlin",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:john_mclaughlin"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Electric Guitar",
+            "tag_id": "urn:tag:instrument:qloo:electric_guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:electric_guitar"
+          },
+          {
+            "name": "Acoustic Guitar",
+            "tag_id": "urn:tag:instrument:qloo:acoustic_guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:acoustic_guitar"
+          },
+          {
+            "name": "Synthesizer Guitar",
+            "tag_id": "urn:tag:instrument:qloo:synthesizer_guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizer_guitar"
+          },
+          {
+            "name": "Guitar Synthesizer",
+            "tag_id": "urn:tag:instrument:qloo:guitar_synthesizer",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar_synthesizer"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:qloo:jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:genre:qloo:jazz_fusion",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz_fusion"
+          },
+          {
+            "name": "Contemporary Jazz",
+            "tag_id": "urn:tag:genre:qloo:contemporary_jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:contemporary_jazz"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:subgenre:qloo:post_bop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:post_bop"
+          },
+          {
+            "name": "Progressive Jazz",
+            "tag_id": "urn:tag:subgenre:qloo:progressive_jazz",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:progressive_jazz"
+          }
+        ]
+      },
+      {
+        "name": "Pat Metheny Unity Group",
+        "entity_id": "4EB26383-A7E0-4FC5-87AC-C03DDD09689E",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "pat%20metheny%20unity%20group",
+              "listeners": 2042,
+              "scrobbles": 37424
+            },
+            "musicbrainz": {
+              "id": "92ba66d8-81b8-4eed-b178-1e79d21f76a6"
+            },
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/4EB26383-A7E0-4FC5-87AC-C03DDD09689E-420x-auto.jpg"
+          },
+          "short_description": "A jazz fusion group led by guitarist Pat Metheny, known for blending modern jazz with world music elements."
+        },
+        "popularity": 0.5819689552681918,
+        "disambiguation": "Pat Metheny Unity Group",
+        "tags": [
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:genre:jazz_fusion",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:jazz_fusion"
+          },
+          {
+            "name": "Fusion",
+            "tag_id": "urn:tag:genre:fusion",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:fusion"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:jazz",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:jazz"
+          },
+          {
+            "name": "Instrumental",
+            "tag_id": "urn:tag:genre:instrumental",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:instrumental"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Knowledgeable",
+            "tag_id": "urn:tag:audience:qloo:knowledgeable",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:knowledgeable"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Complex",
+            "tag_id": "urn:tag:music:qloo:complex",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:complex"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:music:qloo:eclectic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:eclectic"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:music:qloo:dynamic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:dynamic"
+          },
+          {
+            "name": "Sophisticated",
+            "tag_id": "urn:tag:music:qloo:sophisticated",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:sophisticated"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Tight",
+            "tag_id": "urn:tag:style:qloo:tight",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:tight"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Virtuosic",
+            "tag_id": "urn:tag:characteristic:qloo:virtuosic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:virtuosic"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:characteristic:qloo:eclectic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:eclectic"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:characteristic:qloo:dynamic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:dynamic"
+          },
+          {
+            "name": "Sophisticated",
+            "tag_id": "urn:tag:characteristic:qloo:sophisticated",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:sophisticated"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:style:qloo:jazz_fusion",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:jazz_fusion"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:style:qloo:post_bop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:post_bop"
+          },
+          {
+            "name": "Contemporary Jazz",
+            "tag_id": "urn:tag:style:qloo:contemporary_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:contemporary_jazz"
+          },
+          {
+            "name": "Latin Jazz",
+            "tag_id": "urn:tag:style:qloo:latin_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:latin_jazz"
+          },
+          {
+            "name": "World Jazz",
+            "tag_id": "urn:tag:style:qloo:world_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:world_jazz"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:influence:qloo:jazz_fusion",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:jazz_fusion"
+          },
+          {
+            "name": "Contemporary Jazz",
+            "tag_id": "urn:tag:influence:qloo:contemporary_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:contemporary_jazz"
+          },
+          {
+            "name": "World Jazz",
+            "tag_id": "urn:tag:influence:qloo:world_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:world_jazz"
+          },
+          {
+            "name": "Miles Davis",
+            "tag_id": "urn:tag:influenced_by:qloo:miles_davis",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:miles_davis"
+          },
+          {
+            "name": "John Coltrane",
+            "tag_id": "urn:tag:influenced_by:qloo:john_coltrane",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:john_coltrane"
+          },
+          {
+            "name": "Wes Montgomery",
+            "tag_id": "urn:tag:influenced_by:qloo:wes_montgomery",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:wes_montgomery"
+          },
+          {
+            "name": "Herbie Hancock",
+            "tag_id": "urn:tag:influenced_by:qloo:herbie_hancock",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:herbie_hancock"
+          },
+          {
+            "name": "Chick Corea",
+            "tag_id": "urn:tag:influenced_by:qloo:chick_corea",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:chick_corea"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Saxophone",
+            "tag_id": "urn:tag:instrument:qloo:saxophone",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:saxophone"
+          },
+          {
+            "name": "Bass",
+            "tag_id": "urn:tag:instrument:qloo:bass",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:bass"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Percussion",
+            "tag_id": "urn:tag:instrument:qloo:percussion",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:percussion"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:qloo:jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:genre:qloo:jazz_fusion",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz_fusion"
+          },
+          {
+            "name": "Contemporary Jazz",
+            "tag_id": "urn:tag:genre:qloo:contemporary_jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:contemporary_jazz"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:subgenre:qloo:post_bop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:post_bop"
+          },
+          {
+            "name": "Latin Jazz",
+            "tag_id": "urn:tag:subgenre:qloo:latin_jazz",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:latin_jazz"
+          }
+        ]
+      },
+      {
+        "name": "Pat Metheny & Dave Holland & Roy Haynes",
+        "entity_id": "91445DC5-B779-4134-848D-F15B328A0E75",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/91445DC5-B779-4134-848D-F15B328A0E75-420x-auto.jpg"
+          },
+          "short_description": "A jazz supergroup featuring guitarist Pat Metheny, bassist Dave Holland, and drummer Roy Haynes."
+        },
+        "popularity": 0.1609656861587458,
+        "disambiguation": "Pat Metheny & Dave Holland & Roy Haynes"
+      },
+      {
+        "name": "B.B. King, Pat Metheny & Dave Brubeck",
+        "entity_id": "8AC1EAF8-1777-4564-B17E-6CE5F44307E7",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/8AC1EAF8-1777-4564-B17E-6CE5F44307E7-420x-auto.jpg"
+          },
+          "short_description": "A collaborative group featuring legendary blues and jazz artists B.B. King, Pat Metheny, and Dave Brubeck."
+        },
+        "popularity": 0.28738811987409374,
+        "disambiguation": "B.B. King, Pat Metheny & Dave Brubeck"
+      },
+      {
+        "name": "Pat Benatar",
+        "entity_id": "F0F7E71E-92AF-492F-A5D2-0E340DEA5DB5",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "benatargiraldo"
+            },
+            "instagram": {
+              "id": "benatargiraldo"
+            },
+            "lastfm": {
+              "id": "pat%20benatar",
+              "listeners": 1249404,
+              "scrobbles": 12630662
+            },
+            "musicbrainz": {
+              "id": "6bc658ea-005f-486b-8f94-33a2e40f7a72"
+            },
+            "spotify": {
+              "id": "43mhFhQ4JAknA7Ik1bOZuV"
+            },
+            "twitter": {
+              "id": "benatargiraldo"
+            },
+            "wikidata": {
+              "id": "q235252"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/F0F7E71E-92AF-492F-A5D2-0E340DEA5DB5-420x-auto.jpg"
+          },
+          "short_description": "Pat Benatar is an American rock singer known for her powerful voice and hits in the 1980s."
+        },
+        "popularity": 0.9936473342757185,
+        "disambiguation": "Pat Benatar",
+        "tags": [
+          {
+            "name": "Classic Rock",
+            "tag_id": "urn:tag:genre:classic_rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:classic_rock"
+          },
+          {
+            "name": "Rock",
+            "tag_id": "urn:tag:genre:rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rock"
+          },
+          {
+            "name": "80s",
+            "tag_id": "urn:tag:genre:80s",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:80s"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:audience:qloo:energetic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:energetic"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Powerful",
+            "tag_id": "urn:tag:music:qloo:powerful",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:powerful"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:music:qloo:energetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:energetic"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Catchy",
+            "tag_id": "urn:tag:music:qloo:catchy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:catchy"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:music:qloo:dynamic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:dynamic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Powerful",
+            "tag_id": "urn:tag:style:qloo:powerful",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:powerful"
+          },
+          {
+            "name": "Powerful",
+            "tag_id": "urn:tag:characteristic:qloo:powerful",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:powerful"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:characteristic:qloo:dynamic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:dynamic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:characteristic:qloo:expressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:expressive"
+          },
+          {
+            "name": "Versatile",
+            "tag_id": "urn:tag:characteristic:qloo:versatile",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:versatile"
+          },
+          {
+            "name": "Arena Rock",
+            "tag_id": "urn:tag:style:qloo:arena_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:arena_rock"
+          },
+          {
+            "name": "Hard Rock",
+            "tag_id": "urn:tag:style:qloo:hard_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:hard_rock"
+          },
+          {
+            "name": "Pop Rock",
+            "tag_id": "urn:tag:style:qloo:pop_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:pop_rock"
+          },
+          {
+            "name": "New Wave",
+            "tag_id": "urn:tag:style:qloo:new_wave",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:new_wave"
+          },
+          {
+            "name": "Female Rock",
+            "tag_id": "urn:tag:style:qloo:female_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:female_rock"
+          },
+          {
+            "name": "Female Rock",
+            "tag_id": "urn:tag:influence:qloo:female_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:female_rock"
+          },
+          {
+            "name": "Pop Rock",
+            "tag_id": "urn:tag:influence:qloo:pop_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:pop_rock"
+          },
+          {
+            "name": "Hard Rock",
+            "tag_id": "urn:tag:influence:qloo:hard_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:hard_rock"
+          },
+          {
+            "name": "Janis Joplin",
+            "tag_id": "urn:tag:influenced_by:qloo:janis_joplin",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:janis_joplin"
+          },
+          {
+            "name": "Aretha Franklin",
+            "tag_id": "urn:tag:influenced_by:qloo:aretha_franklin",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:aretha_franklin"
+          },
+          {
+            "name": "Led Zeppelin",
+            "tag_id": "urn:tag:influenced_by:qloo:led_zeppelin",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:led_zeppelin"
+          },
+          {
+            "name": "The Beatles",
+            "tag_id": "urn:tag:influenced_by:qloo:the_beatles",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:the_beatles"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Empowerment",
+            "tag_id": "urn:tag:theme:qloo:empowerment",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:empowerment"
+          },
+          {
+            "name": "Heartbreak",
+            "tag_id": "urn:tag:theme:qloo:heartbreak",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:heartbreak"
+          },
+          {
+            "name": "Resilience",
+            "tag_id": "urn:tag:theme:qloo:resilience",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:resilience"
+          },
+          {
+            "name": "Freedom",
+            "tag_id": "urn:tag:theme:qloo:freedom",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:freedom"
+          },
+          {
+            "name": "Rock",
+            "tag_id": "urn:tag:genre:qloo:rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:rock"
+          },
+          {
+            "name": "Hard Rock",
+            "tag_id": "urn:tag:genre:qloo:hard_rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hard_rock"
+          },
+          {
+            "name": "Pop Rock",
+            "tag_id": "urn:tag:genre:qloo:pop_rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:pop_rock"
+          },
+          {
+            "name": "New Wave",
+            "tag_id": "urn:tag:subgenre:qloo:new_wave",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:new_wave"
+          },
+          {
+            "name": "Arena Rock",
+            "tag_id": "urn:tag:subgenre:qloo:arena_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:arena_rock"
+          },
+          {
+            "name": "Mezzo-Soprano",
+            "tag_id": "urn:tag:artist:qloo:mezzo_soprano",
+            "type": "urn:tag:artist:qloo",
+            "value": "urn:tag:artist:qloo:mezzo_soprano"
+          }
+        ]
+      }
+    ]
+  }
+}
