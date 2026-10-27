@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import type { Slate } from "@headliner/core";
 import { SLATE_TTL_MS } from "@headliner/slates";
 import { actDetailPath } from "../actDetail";
@@ -22,10 +23,12 @@ export interface SlateViewProps {
   shared?: boolean;
   /** Fixtures mode keeps slates in memory only; the share note says so. */
   ephemeral?: boolean;
+  /** The Explanation block (M3-02), placed after the notes and before the ranked list. */
+  explanation?: ReactNode;
 }
 
 /** The slate screen (docs/design/screen-slate.md): ranked ActCards, the Not ranked group, comparison and room summary. */
-export function SlateView({ slate, shared = false, ephemeral = false }: SlateViewProps) {
+export function SlateView({ slate, shared = false, ephemeral = false, explanation }: SlateViewProps) {
   const view = buildSlateView(slate);
   const base = shared ? "/s" : "/slates";
   const life = keptUntil(slate.createdAt);
@@ -103,6 +106,8 @@ export function SlateView({ slate, shared = false, ephemeral = false }: SlateVie
               ))}
             </ul>
           ) : null}
+
+          {explanation ?? null}
 
           {rankedCount > 0 ? (
             <section className="stack" aria-labelledby="ranked-heading">

@@ -51,7 +51,7 @@ unset OPENAI_API_KEY
 npm run lint && npm run typecheck
 npm test -- packages/agent/src/explain
 OUT="${TMPDIR:-/tmp}/m3-02.json"
-curl -sS http://localhost:3000/api/slates/sample-leipzig > "$OUT"
+curl -sS http://localhost:3000/api/slates/sample-leipzig-indie > "$OUT"
 jq -e '.explanation.source=="template"' "$OUT"
 grep -ciE 'forecast|turnout|will sell' "$OUT" | grep -qx 0
 ./scripts/check-no-secrets.sh
