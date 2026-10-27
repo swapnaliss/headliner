@@ -97,10 +97,24 @@ export function locationDisplay(city: string): string {
   return city.trim();
 }
 
+function evidenceId(endpoint: string, params: Readonly<Record<string, string>>): string {
+  const sorted = Object.entries(params).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0));
+  return `ev-${createHash("sha256").update(`${endpoint}?${JSON.stringify(sorted)}`).digest("hex").slice(0, 12)}`;
+}
+
 export function toEvidence(q: QlooEvidence): Evidence {
-  const sorted = Object.entries(q.redactedParams).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0));
-  const id = `ev-${createHash("sha256").update(`${q.endpoint}?${JSON.stringify(sorted)}`).digest("hex").slice(0, 12)}`;
-  return { id, endpoint: q.endpoint, redactedParams: { ...q.redactedParams }, responseDigest: q.responseDigest, fetchedAt: q.fetchedAt };
+  return { id: evidenceId(q.endpoint, q.redactedParams), endpoint: q.endpoint, redactedParams: { ...q.redactedParams }, responseDigest: q.responseDigest, fetchedAt: q.fetchedAt };
+}
+
+/**
+ * A stored slate is shareable (ADR 0008), so it never keeps what the user typed. The search that
+ * found an act carried the typed text as `query`; the saved copy shows the resolved Qloo name there
+ * instead, and the evidence id is recomputed from the saved parameters so references stay consistent.
+ */
+function shareable(evidence: Evidence, resolvedName: string): Evidence {
+  if (evidence.endpoint !== "/search" || evidence.redactedParams["query"] === undefined) return evidence;
+  const redactedParams = { ...evidence.redactedParams, query: resolvedName };
+  return { ...evidence, id: evidenceId(evidence.endpoint, redactedParams), redactedParams };
 }
 
 function dedupeEvidence(items: readonly Evidence[]): Evidence[] {
@@ -193,7 +207,7 @@ export function publicRun(run: Run): PublicRun {
 function resolveExact(row: MatchRow): Resolved {
   const hit = row.candidates[0];
   if (!hit || !row.evidence) throw new ApiError("internal_error");
-  return { role: row.role, input: row.actInput, entity: hit, confidence: MATCH_CONFIDENCE.exact, evidence: row.evidence };
+  return { role: row.role, input: row.actInput, entity: hit, confidence: MATCH_CONFIDENCE.exact, evidence: shareable(row.evidence, hit.name) };
 }
 
 /**
@@ -225,12 +239,13 @@ export async function confirmRun(runId: string, choices: readonly Choice[], rt: 
     const choice = byInput.get(row.actInput);
     if (!choice) throw new ApiError("invalid_input", "Check: choices.");
     if (choice.entityId === "skip") {
-      notes.push({ type: "skipped", message: NOTE_WORDING.skipped, subject: row.actInput });
+      // No subject: the typed text is never stored, and a skipped name has no resolved Qloo name.
+      notes.push({ type: "skipped", message: NOTE_WORDING.skipped });
       continue;
     }
     const picked = row.candidates.find((c) => c.entityId.toUpperCase() === choice.entityId.toUpperCase());
     if (!picked || !row.evidence) throw new ApiError("invalid_input", "Check: choices.");
-    resolved.push({ role: row.role, input: row.actInput, entity: picked, confidence: MATCH_CONFIDENCE.chosenByUser, evidence: row.evidence });
+    resolved.push({ role: row.role, input: row.actInput, entity: picked, confidence: MATCH_CONFIDENCE.chosenByUser, evidence: shareable(row.evidence, picked.name) });
   }
 
   if (resolved.filter((r) => r.role === "crowd").length < MIN_CROWD_ACTS || resolved.filter((r) => r.role === "candidate").length < MIN_CANDIDATE_ACTS) {
@@ -261,17 +276,17 @@ async function finish(
     return key(r);
   });
   for (const r of resolved.filter((x) => x.role === "crowd")) {
-    if (!crowd.includes(r)) notes.push({ type: "merged-duplicate", message: NOTE_WORDING["merged-duplicate"], subject: r.input });
+    if (!crowd.includes(r)) notes.push({ type: "merged-duplicate", message: NOTE_WORDING["merged-duplicate"], subject: r.entity.name });
   }
   const crowdKeys = new Set(crowd.map(key));
   const candidates = firstByKey(resolved.filter((r) => r.role === "candidate"), key);
   for (const r of resolved.filter((x) => x.role === "candidate")) {
-    if (!candidates.includes(r)) notes.push({ type: "merged-duplicate", message: NOTE_WORDING["merged-duplicate"], subject: r.input });
+    if (!candidates.includes(r)) notes.push({ type: "merged-duplicate", message: NOTE_WORDING["merged-duplicate"], subject: r.entity.name });
   }
   // A candidate equal to a crowd act is never scored against itself.
   const scorable = candidates.filter((r) => {
     if (!crowdKeys.has(key(r))) return true;
-    notes.push({ type: "already-in-crowd", message: NOTE_WORDING["already-in-crowd"], subject: r.input });
+    notes.push({ type: "already-in-crowd", message: NOTE_WORDING["already-in-crowd"], subject: r.entity.name });
     return false;
   });
 
