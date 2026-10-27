@@ -1,7 +1,8 @@
 import { CreateSlateRequestSchema } from "@headliner/core";
+import { metered } from "../../../src/budget";
 import { getRuntime } from "../../../src/config";
 import { ApiError, errorResponse, logFailure } from "../../../src/errors";
-import { createSlate } from "../../../src/pipeline/createSlate";
+import { createSlate, normalizeName } from "../../../src/pipeline/createSlate";
 
 export const dynamic = "force-dynamic";
 /** ADR 0004: the whole run is one request; a cold 6x12 slate needs several seconds of Qloo time. */
@@ -34,10 +35,14 @@ export async function POST(request: Request): Promise<Response> {
   if (!parsed.success) return errorResponse("invalid_input", invalidDetail(parsed.error.issues.map((i) => i.path)));
 
   try {
-    const outcome = await createSlate(parsed.data, getRuntime());
+    // Upper bound on live calls: one search per distinct name, plus one compare per distinct candidate
+    // when every name matches exactly (cache hits and unused calls are given back afterwards).
+    const distinct = (names: readonly string[]): number => new Set(names.map(normalizeName)).size;
+    const plannedCalls = distinct([...parsed.data.crowdActs, ...parsed.data.candidateActs]) + distinct(parsed.data.candidateActs);
+    const outcome = await metered(getRuntime(), { route: "create", plannedCalls, request }, (rt) => createSlate(parsed.data, rt));
     return Response.json(outcome, { headers: { "cache-control": "no-store" } });
   } catch (e) {
-    logFailure("create_slate_failed", e);
-    return e instanceof ApiError ? errorResponse(e.code) : errorResponse("internal_error");
+    if (!(e instanceof ApiError && e.code === "demo_limit_reached")) logFailure("create_slate_failed", e);
+    return e instanceof ApiError ? errorResponse(e.code, undefined, e.retryAfterSeconds) : errorResponse("internal_error");
   }
 }

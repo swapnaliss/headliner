@@ -1,4 +1,5 @@
 import { ConfirmRequestSchema } from "@headliner/core";
+import { metered } from "../../../../../src/budget";
 import { getRuntime } from "../../../../../src/config";
 import { ApiError, errorResponse, logFailure } from "../../../../../src/errors";
 import { confirmRun } from "../../../../../src/pipeline/createSlate";
@@ -38,10 +39,15 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
   if (!parsed.success) return errorResponse("invalid_input", invalidDetail(parsed.error.issues.map((i) => i.path)));
 
   try {
-    const outcome = await confirmRun(runId, parsed.data.choices, getRuntime());
+    const rt = getRuntime();
+    // An unknown run costs nothing: look it up before asking the budget. One compare per candidate.
+    const run = await rt.runs.get(runId);
+    if (!run) return errorResponse("not_found");
+    const plannedCalls = run.matches.filter((m) => m.role === "candidate").length;
+    const outcome = await metered(rt, { route: "confirm", plannedCalls, request }, (m) => confirmRun(runId, parsed.data.choices, m));
     return Response.json(outcome, { headers: { "cache-control": "no-store" } });
   } catch (e) {
-    logFailure("confirm_run_failed", e);
-    return e instanceof ApiError ? errorResponse(e.code, e.detail) : errorResponse("internal_error");
+    if (!(e instanceof ApiError && e.code === "demo_limit_reached")) logFailure("confirm_run_failed", e);
+    return e instanceof ApiError ? errorResponse(e.code, e.detail, e.retryAfterSeconds) : errorResponse("internal_error");
   }
 }

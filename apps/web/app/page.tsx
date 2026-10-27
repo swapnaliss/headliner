@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { displayedDailyQlooCalls } from "../src/budget";
 import { demoMode } from "../src/env";
 import { sampleLinks } from "../src/samples";
+import { DemoLimits } from "../src/ui/DemoLimits";
 import { RoomForm } from "../src/ui/RoomForm";
 import { SampleRooms } from "../src/ui/SampleRooms";
 
@@ -33,6 +35,7 @@ export default function Home() {
             <h2 id="get-heading">What you get</h2>
             <p>A ranked slate. Each act shows Fit, shared tastes, Qloo popularity rank, caveats and the Qloo calls behind every number.</p>
           </section>
+          <DemoLimits recorded={demoMode() === "fixtures"} dailyQlooCalls={displayedDailyQlooCalls()} />
         </div>
       </div>
     </main>

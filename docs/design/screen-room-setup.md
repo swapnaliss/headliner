@@ -128,7 +128,8 @@ The wireframes use act names recorded in the project's sample fixtures (see ADR 
 | One-sentence: failed (LLM unavailable, spend cap reached, or unreadable) | Inline ErrorState (compact): "We could not read that description. The form above works without it." | Form untouched; no data lost |
 | Submitting (matching) | "Check matches" shows "Checking matches…" (`aria-busy`, `aria-disabled`, never native `disabled`), fields read-only | Status region: "Checking {n} names with Qloo" then navigates to match confirmation. Navigation moves focus to that screen's h1. |
 | Qloo or network error | ErrorState above the primary button: "Could not reach Qloo. Your entries are kept. Try again." with Button "Try again" | Entries stay; focus to the ErrorState heading |
-| Budget reached | "This demo has reached its live-data limit for now. The sample room uses recorded Qloo responses and still works." with the sample button | Honest, no CAPTCHA, no login |
+| Budget reached | ErrorState above the primary button (API code `demo_limit_reached`, HTTP 429): "This demo has reached its daily limit for live Qloo lookups. Your entries are kept. The sample rooms above still work, and the limit resets at midnight UTC." | Honest, no CAPTCHA, no login. The sample rooms (saved runs) are on the same page and cost nothing. |
+| Demo limits note (M2-05) | A panel "Demo limits" in the aside under "What you get" (below the form at 768px and under): the per-visitor daily limit, that the sample rooms are always available, no login and no CAPTCHA | Always shown. In recorded-responses mode it says the limits are off in this demo and names the live limit |
 | Offline | Notice: "You appear to be offline. Your entries stay on this page; reconnect to check matches." | Primary action keeps aria-disabled with this reason |
 | Demo mode (recorded responses) | Chip at the right of the header row on every screen (drawn in every wireframe): "Demo mode: recorded Qloo responses" with info icon, plus the Demo-mode note under the lead | Shown whenever the server runs with recorded data. Names not in the recordings are reported on match confirmation with the dedicated message (not as an ordinary "no match") |
 | Dark mode, 200% zoom, 320px | Same content, reflowed | See accessibility.md |
@@ -160,6 +161,10 @@ Exact strings. Voice: plain, specific, no marketing. Wording rule: "audience-tas
 | Sentence disclosure summary | "Describe it in one sentence" |
 | Sentence label / hint | "Describe your room" / "For example: Leipzig club, our regulars follow Moderat, Apparat and Modeselektor, and we are considering Khruangbin and Radiohead." |
 | Sentence AI disclosure | "This description is sent to an AI model to read it. Do not include personal details. Nothing you type here is sent to Qloo except the artist names and city after you press Check matches." |
+| Demo limits heading | "Demo limits" |
+| Demo limits (live) | "To keep this demo free for everyone, each visitor gets {n} live Qloo calls a day. A cold room with 12 candidate acts used about 39 when we tested it, and names already looked up cost nothing. The limit resets at midnight UTC." |
+| Demo limits (recorded responses) | "Daily limits are off in this recorded-responses demo: it makes no live Qloo calls. In the live demo each visitor gets {n} live Qloo calls a day." |
+| Demo limits (both) | "The sample rooms are saved runs. They are always available and use none of those calls. No login, no CAPTCHA." |
 | Demo-mode note | "This demo runs on recorded Qloo responses, so only artists in those recordings can be matched. The sample room always works." |
 | Demo-mode name not recorded (shown after Check matches, on the next screen, and here if the server rejects the entry) | "This demo only has recorded responses and does not include {name}. Use the sample room or remove it." |
 | Sentence button | "Read my description" / loading "Reading…" |

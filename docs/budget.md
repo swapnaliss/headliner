@@ -51,6 +51,19 @@ Decision requested from the owner: keep the production deploy and the Neon datab
 | Per-IP daily budgets | one visitor cannot use the shared quota | M2-05 |
 | Owner reviews the provider usage page at each milestone gate | catches drift early | M1, M2, M3 gates |
 
+## Daily limits (M2-05, `packages/budgets`)
+
+Enforced in Postgres (`budgets` table, one atomic upsert per charge), per UTC day. Every value is overridable by the environment variable shown; a malformed value fails closed.
+
+| Limit | Default | Variable | Why this number |
+|---|---|---|---|
+| Per visitor, live Qloo calls | 150 | `BUDGET_IP_QLOO_CALLS` | A cold 6 crowd x 12 candidate slate cost 39 live calls in M1-01 (18 searches, 12 compares, 9 retried 429s; n=2, BL-01 6413231989). The recorded 6 x 4 room costs 14. 150 therefore covers about 3 full cold rooms or about 10 of the small size, plus lazy city loads (1 call per city). Calls for names already cached cost 0, so repeat visits cost less. Kept at the ticket default after sizing; not measured against real visitor behaviour. |
+| Per visitor, LLM tokens | 20,000 | `BUDGET_IP_LLM_TOKENS` | Intake (at most 3 steps) plus phrasing for one slate. Not measured yet (M3-01 and M3-02 measure tokens per run). |
+| Global, live Qloo calls | 2,000 | `BUDGET_GLOBAL_QLOO_CALLS` | The hackathon quota is unpublished (see the Qloo row above), so this is a conservative ceiling of about 50 cold full rooms a day, an assumption the owner can raise if Qloo confirms more. |
+| Global, LLM tokens | 100,000 | `BUDGET_GLOBAL_LLM_TOKENS` | Bounds judging-window spend under the 5 USD provider cap: at an assumed blended 5 USD per million tokens, 100,000 tokens a day is about 0.50 USD a day, so about 5 USD over ten days. The owner re-checks this against the chosen `LLM_MODEL` price before M3-01. |
+
+Behaviour at a limit: per-visitor Qloo limit reached gives 429 `demo_limit_reached` with `Retry-After` (seconds to the next UTC midnight); global Qloo ceiling serves cached data only (no live call); an LLM ceiling returns `deterministic_only`; an unreachable budget store denies metered work. Stored slates (`/slates/[id]`, `/s/[id]`) and the sample rooms never call the guard, so they load whatever the budget state. A request reserves its planned Qloo calls, then gives back the unused part once it knows the live calls really made; a repeat near the limit can therefore be refused although it would have been served from cache.
+
 ## Environment names the plan expects
 
 Names only. Values live in `.env` (gitignored) and the Vercel project, never in the repo.
@@ -61,6 +74,7 @@ Names only. Values live in `.env` (gitignored) and the Vercel project, never in 
 | `QLOO_API_KEY`, `QLOO_BASE_URL`, `QLOO_LIVE` | owner (`QLOO_LIVE=1` only for the opt-in smoke test) | M0-02, M1-01 |
 | `DATABASE_URL`, `TEST_DATABASE_URL` | owner (Neon; the test one is a throwaway branch) | M0-05, M2-05 |
 | `OPENAI_API_KEY`, `LLM_MODEL` (model chosen by the owner) | owner | M3-01, M3-02 |
-| `BUDGET_SALT` | owner (random string) | M2-05 |
+| `BUDGET_SALT` | owner (random string, at least 8 characters) | M2-05 |
+| `BUDGET_IP_QLOO_CALLS`, `BUDGET_IP_LLM_TOKENS`, `BUDGET_GLOBAL_QLOO_CALLS`, `BUDGET_GLOBAL_LLM_TOKENS` | optional overrides of the daily limits above | M2-05 |
 | `HEADLINER_PROD_URL`, `PROD_URL`, `DEMO_URL` | exported by the person running a gate, from the Vercel production URL | M0-01, M0-05, M0-GATE, M2-GATE, M3-05, M3-GATE, M4-GATE, M4-SUBMIT |
 | `REPO_URL`, `REPO_SLUG`, `DEVPOST_URL` | exported by the person running M4-SUBMIT | M4-SUBMIT |

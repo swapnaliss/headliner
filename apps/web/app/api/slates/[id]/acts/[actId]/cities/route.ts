@@ -46,6 +46,6 @@ export async function POST(request: Request, context: Context): Promise<Response
     return Response.json(body, { headers: { "cache-control": "no-store" } });
   } catch (e) {
     if (!(e instanceof ApiError)) logFailure("city_strength_failed", e);
-    return e instanceof ApiError ? errorResponse(e.code) : errorResponse("internal_error");
+    return e instanceof ApiError ? errorResponse(e.code, undefined, e.retryAfterSeconds) : errorResponse("internal_error");
   }
 }
