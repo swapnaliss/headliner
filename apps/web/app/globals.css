@@ -905,6 +905,9 @@ table {
   }
   .ev-row > [data-label]::before {
     content: none;
+  }
+}
+
 /* City strength (M2-03): rows, bar, thin-data hatch. A row keeps one height while it loads, so nothing shifts. */
 .city-list {
   display: grid;
@@ -987,36 +990,36 @@ table {
 .city-evidence-link {
   min-block-size: 24px;
 }
-.ev-row {
+.city-ev-row {
   scroll-margin-block: 24px;
 }
-.ev-row h3 {
+.city-ev-row h3 {
   font-size: var(--text-base);
 }
-.ev-row .ev-linked {
+.city-ev-row .city-ev-linked {
   display: none;
   font-size: var(--text-sm);
   font-weight: 600;
 }
-.ev-row:target,
-.ev-row:focus {
+.city-ev-row:target,
+.city-ev-row:focus {
   outline: 3px solid var(--focus);
   outline-offset: 2px;
 }
-.ev-row:target .ev-linked,
-.ev-row:focus .ev-linked {
+.city-ev-row:target .city-ev-linked,
+.city-ev-row:focus .city-ev-linked {
   display: block;
 }
-.ev-fields {
+.city-ev-fields {
   display: grid;
   gap: var(--space-1);
   margin: 0;
 }
-.ev-fields dt {
+.city-ev-fields dt {
   font-size: var(--text-sm);
   color: var(--text-muted);
 }
-.ev-fields dd {
+.city-ev-fields dd {
   margin: 0;
   white-space: pre-wrap;
 }

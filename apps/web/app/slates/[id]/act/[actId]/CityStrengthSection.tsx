@@ -1,6 +1,7 @@
 "use client";
 
 import type { Evidence } from "@headliner/core";
+import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import {
   groupRows,
@@ -58,13 +59,13 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
     for (const p of persisted) seeded[key(p.city)] = rowFromPersisted(p);
     return seeded;
   });
-  const [evidence, setEvidence] = useState<readonly Evidence[]>(persistedEvidence);
   const [started, setStarted] = useState(false);
   const [noObserver, setNoObserver] = useState(false);
   const [offline, setOffline] = useState(false);
-  const [evidenceOpen, setEvidenceOpen] = useState(false);
   const [draft, setDraft] = useState("");
   const [draftError, setDraftError] = useState<string | undefined>(undefined);
+  const router = useRouter();
+  const refreshed = useRef(false);
   const sectionRef = useRef<HTMLElement | null>(null);
   const inFlight = useRef(new Set<string>());
   const queue = useRef<string[]>([]);
@@ -91,7 +92,6 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
           return;
         }
         patchRow(city, rowFromEntry({ ...entry, city }));
-        setEvidence((prev) => [...prev, ...parsed.evidence.filter((e) => !prev.some((p) => p.id === e.id))]);
       } catch {
         if (typeof navigator !== "undefined" && navigator.onLine === false) setOffline(true);
         patchRow(city, { kind: "failed", city, reason: "network" });
@@ -170,8 +170,15 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
     if (status === "ready" || status === "partial") onThinCities?.(thinKey ? thinKey.split("\u0000") : []);
   }, [status, thinKey, onThinCities]);
 
-  const referenced = new Set(shown.flatMap((r) => (r.kind === "ok" || r.kind === "zero" ? r.evidenceRefs : [])));
-  const trail = evidence.filter((e) => referenced.has(e.id));
+  // The saved aggregates also feed the page's Caveats tile and Evidence trail: re-read the server part once, after the first load.
+  const loadedFresh = started && (status === "ready" || status === "partial") && groups.ranked.length + groups.thin.length > persisted.length;
+  useEffect(() => {
+    if (loadedFresh && !refreshed.current) {
+      refreshed.current = true;
+      router.refresh();
+    }
+  }, [loadedFresh, router]);
+
 
   const retry = (city: string): void => {
     inFlight.current.delete(key(city));
@@ -216,22 +223,15 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
         : "";
 
   const venue = key(roomCity);
-  const evidenceNumber = (ref: string): number => trail.findIndex((e) => e.id === ref) + 1;
-  const openEvidence = (ref: string) => (event: { preventDefault: () => void }): void => {
-    event.preventDefault();
-    setEvidenceOpen(true);
-    setTimeout(() => {
-      const el = document.getElementById(ref);
-      el?.focus();
-      history.replaceState(null, "", `#${ref}`);
-    }, 0);
-  };
-  const evidenceLink = (refs: readonly string[]) =>
-    refs[0] && evidenceNumber(refs[0]) > 0 ? (
-      <a className="city-evidence-link" href={`#${refs[0]}`} onClick={openEvidence(refs[0])}>
-        See evidence: {evidenceNumber(refs[0])}
+  // Row links point into the page's Evidence trail (same numbering as M2-02: position in the act's saved evidence).
+  const evidenceLink = (refs: readonly string[]) => {
+    const n = refs[0] ? persistedEvidence.findIndex((e) => e.id === refs[0]) + 1 : 0;
+    return n > 0 ? (
+      <a className="city-evidence-link" href={`#ev-${n}`}>
+        See evidence: {n}
       </a>
     ) : null;
+  };
   const rowFor = (r: Extract<RowState, { kind: "ok" }>) => (
     <li key={key(r.city)} className="city-row" data-thin={r.thin ? "true" : undefined}>
       <div className="city-name">
@@ -264,7 +264,6 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
 
       {thinCities.length > 0 && (status === "ready" || status === "partial") ? (
         <div className="stack-sm">
-          <h3>Caveats</h3>
           <p className="status" data-tone="caution">
             <Icon name="thin" />
             <span>
@@ -383,37 +382,6 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
         </form>
       ) : null}
 
-      {trail.length > 0 ? (
-        <details className="evidence" id="evidence" open={evidenceOpen} onToggle={(e) => setEvidenceOpen((e.currentTarget as HTMLDetailsElement).open)}>
-          <summary aria-label={`Evidence for ${isolate(actName)}, ${trail.length} ${plural(trail.length, "call", "calls")}`}>
-            Evidence ({trail.length} {plural(trail.length, "call", "calls")})
-          </summary>
-          <p className="field-hint">Each number above comes from the Qloo calls below. Parameters are redacted summaries.</p>
-          <ol aria-label="Evidence trail">
-            {trail.map((ev, i) => (
-              <li key={ev.id} id={ev.id} tabIndex={-1} className="ev-row">
-                <h3>
-                  Evidence {i + 1}: GET <span className="mono">{ev.endpoint}</span>
-                </h3>
-                <span className="ev-linked">Linked from above</span>
-                <dl className="ev-fields">
-                  <dt>Parameters (redacted)</dt>
-                  <dd className="mono">{Object.entries(ev.redactedParams).map(([k, v]) => `${k}=${v}`).join("\n")}</dd>
-                  <dt>Response digest</dt>
-                  <dd className="mono">{ev.responseDigest.slice(0, 12)}</dd>
-                  <dt>Fetched</dt>
-                  <dd>
-                    <time dateTime={ev.fetchedAt}>{ev.fetchedAt}</time>
-                  </dd>
-                  <dt>Supports</dt>
-                  <dd>City strength</dd>
-                </dl>
-              </li>
-            ))}
-          </ol>
-          <p className="field-hint">Request headers, including the API key, are never stored or shown.</p>
-        </details>
-      ) : null}
     </section>
   );
 }

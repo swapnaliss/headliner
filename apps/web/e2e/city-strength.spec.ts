@@ -36,6 +36,9 @@ test("opening an act loads city strength lazily: ranked list, Thin data flag and
   await expect(thin).toContainText("Leipzig");
   await expect(page.getByText("Qloo returned no usable audience data there.")).toBeVisible();
   await expect(page.getByText(/aggregate affinity, not a ticket forecast/).first()).toBeVisible();
+  // the saved aggregates reach the page's Evidence trail and Caveats tile
+  await expect(page.getByRole("heading", { name: /Evidence trail \(12 calls\)/ })).toBeVisible();
+  await expect(page.getByText("Thin data : Berlin").or(page.getByText("Thin data: Berlin")).first()).toBeVisible();
 });
 
 for (const scheme of ["light", "dark"] as const) {

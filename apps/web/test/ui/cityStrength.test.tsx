@@ -6,6 +6,7 @@ import { POST as citiesRoute } from "../../app/api/slates/[id]/acts/[actId]/citi
 import { CityStrengthSection } from "../../app/slates/[id]/act/[actId]/CityStrengthSection";
 import { setRuntimeForTests } from "../../src/config";
 import { fixtureTransport, runtimeWith } from "../helpers";
+vi.mock("next/navigation", () => ({ useRouter: () => ({ refresh: () => undefined }) }));
 import { recordedSlate } from "./uiHelpers";
 
 interface Setup {
@@ -106,18 +107,6 @@ describe("CityStrengthSection", () => {
 
     expect(screen.getByText(/No heatmap cells for/).textContent).toContain("Tromsø");
     expect(screen.getByText("Qloo returned no usable audience data there.")).toBeTruthy();
-  });
-
-  it("lists the Qloo calls behind the numbers in an Evidence disclosure, with no key or header", async () => {
-    const s = await setup();
-    const { container } = render(section(s));
-    fireEvent.click(screen.getByRole("button", { name: "Load city strength" }));
-    await screen.findByText(/City strength loaded/);
-    const evidence = container.querySelector("details.evidence");
-    expect(evidence?.textContent).toContain("Evidence (5 calls)");
-    expect(evidence?.textContent).toContain("filter.type=urn:heatmap");
-    expect(evidence?.textContent).toContain("never stored or shown");
-    expect(container.textContent?.toLowerCase()).not.toContain("x-api-key=");
   });
 
   it("uses audience-taste wording only: no turnout, sales or forecast claims, no momentum", async () => {
