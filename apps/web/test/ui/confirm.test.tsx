@@ -8,10 +8,10 @@ vi.mock("next/navigation", () => ({ useRouter: () => ({ push }) }));
 import { ConfirmView, type ConfirmRow } from "../../src/ui/ConfirmView";
 import { summarise, toChoices } from "../../src/confirmRules";
 
-const hit = (entityId: string, name: string, extra: Partial<{ tags: string[]; disambiguation: string | null; popularity: number }> = {}) => ({
+const hit = (entityId: string, name: string, extra: Partial<{ tags: string[]; disambiguation: string | null; popularity: number | null }> = {}) => ({
   entityId,
   name,
-  popularity: extra.popularity ?? 0.5,
+  popularity: extra.popularity === undefined ? 0.5 : extra.popularity,
   tags: extra.tags ?? ["Indie", "Pop"],
   disambiguation: extra.disambiguation ?? null,
 });
@@ -58,6 +58,15 @@ describe("ConfirmView", () => {
     expect(rankButton().getAttribute("aria-disabled")).toBeNull();
     expect(screen.getByTestId("status-line").textContent).toBe("All 6 names confirmed.");
     expect(screen.getByText("Match chosen by you")).toBeTruthy();
+  });
+
+  it("a match with no popularity from Qloo says the rank is unavailable, never a number", () => {
+    const row: ConfirmRow = { role: "crowd", actInput: "Rich Brian", state: "ambiguous", candidates: [hit("RB-1", "Rich Brian", { popularity: 0.98 }), hit("RB-2", "Rich Brian Fan", { popularity: null })] };
+    render(<ConfirmView runId="r" locationDisplay="Jakarta" rows={[row]} demoMode={false} />);
+    const group = screen.getByRole("group", { name: /Which Rich Brian\?/ });
+    expect(within(group).getByText("Qloo popularity rank unavailable for this match")).toBeTruthy();
+    expect(within(group).queryByText(/rank 0\.0 of 100/)).toBeNull();
+    expect(within(group).getByText(/Qloo popularity rank 98\.0 of 100/)).toBeTruthy();
   });
 
   it("shows name, three tags and the Qloo popularity rank for each option, and preselects nothing", () => {

@@ -145,3 +145,30 @@ describe("normalizeName", () => {
     expect(normalizeName("Odunsi (The Engine)")).toBe("odunsi the engine");
   });
 });
+
+describe("createSlate when Qloo gives a search result no popularity", () => {
+  it("scores Fit as usual, shows no popularity rank for that act, adds the standing caveat, and uses no zero", async () => {
+    const inner = fixtureTransport();
+    const rt = runtimeWith(
+      fakeTransport(async (req) => {
+        const res = await inner.get(req);
+        if (req.endpoint !== "/search" || req.params.get("query") !== "Radiohead") return res;
+        const body = JSON.parse(JSON.stringify(res.body)) as { results: { name: string; popularity?: number }[] };
+        for (const r of body.results) if (r.name === "Radiohead") delete r.popularity;
+        return { ...res, body };
+      }),
+    );
+    const out = await createSlate(ROOM, rt);
+    expect(out.status).toBe("done");
+    if (out.status !== "done") return;
+    const radiohead = out.slate.results.find((r) => r.act.name === "Radiohead");
+    expect(radiohead?.status).toBe("scored");
+    expect(radiohead?.fit?.value).toBe(59.5);
+    expect(radiohead?.standing).toBeNull();
+    expect(radiohead?.caveats.map((c) => c.type)).toContain("standing-unavailable");
+    const others = out.slate.results.filter((r) => r.act.name !== "Radiohead" && r.status === "scored");
+    expect(others.length).toBeGreaterThan(0);
+    expect(others.every((r) => r.standing !== null)).toBe(true);
+    for (const r of out.slate.results) assertEveryNumberHasEvidence(r);
+  });
+});

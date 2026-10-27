@@ -120,3 +120,23 @@ describe("match confidence model (provisional, owned by M2-01)", () => {
     expect(MATCH_CONFIDENCE.chosenByUser).toBeLessThan(MATCH_CONFIDENCE.exact);
   });
 });
+
+describe("classifyMatch with a hit that has no popularity (recorded: Rich Brian, result 2)", () => {
+  const body = JSON.parse(readFileSync(resolve(__dirname, "../../../fixtures/qloo/proof/search--04d768c161.json"), "utf8")) as { body: { results: { entity_id: string; name: string; popularity?: number; tags?: { name: string }[] }[] } };
+  const hits: SearchHit[] = body.body.results.map((r) => ({ entityId: r.entity_id, name: r.name, popularity: r.popularity ?? null, tags: r.tags ?? [] }));
+
+  it("keeps null for the missing popularity (never 0) and the number for the others", () => {
+    const state = classifyMatch("Rich Brian", hits);
+    const byId = new Map(state.candidates.map((c) => [c.entityId, c.popularity]));
+    const missing = body.body.results.filter((r) => !("popularity" in r));
+    expect(missing.length).toBeGreaterThan(0);
+    for (const r of body.body.results.slice(0, state.candidates.length)) {
+      expect(byId.get(r.entity_id)).toBe("popularity" in r ? r.popularity : null);
+    }
+  });
+
+  it("accepts a hit with the popularity key left out entirely", () => {
+    const state = classifyMatch("X", [{ entityId: "E1", name: "X" }]);
+    expect(state.candidates[0]?.popularity).toBeNull();
+  });
+});
