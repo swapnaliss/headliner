@@ -1,7 +1,9 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { createQlooClient, type QlooClient } from "../src/client";
 import { QlooShapeError } from "../src/errors";
-import { CROWD, fakeTransport, fixtureBody, KHRUANGBIN } from "./helpers";
+import { CROWD, FIXTURE_DIR, fakeTransport, fixtureBody, KHRUANGBIN } from "./helpers";
 
 const A = CROWD[0] as string;
 
@@ -80,5 +82,34 @@ describe("the parameter-ignoring pitfall", () => {
   it("the recorded invalid-parameter response still passes (Qloo ignores bad params and returns 200), which is why shapes are asserted", () => {
     const body = fixtureBody("invalid--bogus-parameter.json") as { results: { entities: unknown[] } };
     expect(Array.isArray(body.results.entities)).toBe(true);
+  });
+});
+
+describe("search: a result without `popularity` (recorded: 'Rich Brian', result 2)", () => {
+  const recorded = (JSON.parse(readFileSync(join(FIXTURE_DIR, "proof", "search--04d768c161.json"), "utf8")) as { body: { results: { popularity?: number }[] } }).body;
+
+  it("the recording really has a result with no popularity key", () => {
+    expect(recorded.results.some((r) => !("popularity" in r))).toBe(true);
+  });
+
+  it("is accepted; the missing popularity is null, never 0 or a guess; present values are kept", async () => {
+    const c = createQlooClient({ transport: fakeTransport(() => ({ status: 200, body: recorded })) });
+    const { data } = await c.search("Rich Brian");
+    expect(data.length).toBe(recorded.results.length);
+    recorded.results.forEach((r, i) => {
+      expect(data[i]?.popularity).toBe("popularity" in r ? r.popularity : null);
+    });
+  });
+
+  it.each([
+    ["popularity of the wrong type", { results: [{ entity_id: "E1", name: "X", popularity: "high", types: [] }] }],
+    ["popularity out of range", { results: [{ entity_id: "E1", name: "X", popularity: 1.5, types: [] }] }],
+    ["popularity null", { results: [{ entity_id: "E1", name: "X", popularity: null, types: [] }] }],
+    ["no entity_id", { results: [{ name: "X", types: [] }] }],
+    ["no name", { results: [{ entity_id: "E1", types: [] }] }],
+    ["results not an array", { results: "none" }],
+  ])("still rejects %s", async (_n, body) => {
+    const c = createQlooClient({ transport: fakeTransport(() => ({ status: 200, body })) });
+    await expect(c.search("X")).rejects.toBeInstanceOf(QlooShapeError);
   });
 });
