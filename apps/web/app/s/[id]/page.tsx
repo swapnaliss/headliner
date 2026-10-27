@@ -5,6 +5,7 @@ import type { Slate } from "@headliner/core";
 import { getRuntime } from "../../../src/config";
 import { logFailure } from "../../../src/errors";
 import { isSlateId } from "../../../src/slateStore";
+import { ExplanationBlock } from "../../../src/ui/ExplanationBlock";
 import { SlateView } from "../../../src/ui/SlateView";
 
 export const dynamic = "force-dynamic";
@@ -35,5 +36,5 @@ export default async function SharedSlatePage({ params }: { params: Params }) {
   const { id } = await params;
   const slate = await load(id);
   if (!slate) notFound();
-  return <SlateView slate={slate} shared />;
+  return <SlateView slate={slate} shared explanation={<ExplanationBlock slate={slate} />} />;
 }

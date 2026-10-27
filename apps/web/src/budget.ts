@@ -1,4 +1,5 @@
-import { createGuard, DEFAULT_LIMITS, loadBudgetConfig, secondsToUtcMidnight, type BudgetConfig } from "@headliner/budgets";
+import type { BudgetLease, ExplainBudget } from "@headliner/agent";
+import { createGuard, DEFAULT_LIMITS, loadBudgetConfig, secondsToUtcMidnight, type BudgetConfig, type Guard } from "@headliner/budgets";
 import type { Db } from "@headliner/slates";
 import type { BudgetGrant, BudgetHook, Runtime } from "./config";
 import { ApiError } from "./errors";
@@ -11,10 +12,10 @@ export type MeteredRoute = "create" | "confirm" | "cities";
  * `budgets` table. A denial is an `ApiError("demo_limit_reached")` with the seconds to the next UTC
  * midnight; a malformed limit variable fails closed the same way (no metered work without a valid budget).
  */
-export function liveBudgetHook(db: Db, source: Record<string, string | undefined> = process.env, now: () => Date = () => new Date()): BudgetHook {
+export function liveGuard(db: Db, source: Record<string, string | undefined> = process.env, now: () => Date = () => new Date()): Guard {
   let config: BudgetConfig | undefined;
   let configFailed = false;
-  const guard = createGuard({
+  return createGuard({
     db: () => db,
     get config() {
       if (!config && !configFailed) {
@@ -29,6 +30,23 @@ export function liveBudgetHook(db: Db, source: Record<string, string | undefined
     },
     now,
   });
+}
+
+/** The explanation's LLM budget (M3-02) over the same guard: asked before each model turn with the tokens it may use. A denial, or a reached LLM ceiling (`deterministic_only`), is `null` and the explanation uses its template. */
+export function llmBudgetFrom(guard: Guard, headers: Headers): ExplainBudget {
+  return async (estimatedTokens): Promise<BudgetLease | null> => {
+    const decision = await guard(headers, { route: "explain", llmTokens: estimatedTokens });
+    if (decision.kind === "deny") return null;
+    if (decision.llm === "deterministic_only") {
+      await decision.settle({ llmTokens: 0 });
+      return null;
+    }
+    return { settle: (actualTokens) => decision.settle({ llmTokens: actualTokens }) };
+  };
+}
+
+export function liveBudgetHook(db: Db, source: Record<string, string | undefined> = process.env, now: () => Date = () => new Date()): BudgetHook {
+  const guard = liveGuard(db, source, now);
   return async ({ route, plannedCalls, request }): Promise<BudgetGrant> => {
     const decision = await guard(request, { route, qlooCalls: plannedCalls });
     if (decision.kind === "deny") throw new ApiError("demo_limit_reached", undefined, decision.retryAfterSeconds);

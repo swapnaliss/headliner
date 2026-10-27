@@ -8,12 +8,14 @@ import { logFailure } from "../../../../../src/errors";
 import { isSlateId } from "../../../../../src/slateStore";
 import { CityStrengthSection } from "./CityStrengthSection";
 import { ActDetailView } from "../../../../../src/ui/ActDetailView";
+import { ExplanationBlock } from "../../../../../src/ui/ExplanationBlock";
 
 export const dynamic = "force-dynamic";
 
 type Params = Promise<{ id: string; actId: string }>;
 
 interface Loaded {
+  slate: Slate;
   detail: ActDetail;
   city: string;
   cityStrengths: Slate["results"][number]["cityStrengths"];
@@ -28,7 +30,7 @@ async function loadUncached(id: string, actId: string): Promise<Loaded | null> {
     if (!slate) return null;
     const detail = buildActDetail(slate, decodeActId(actId));
     const result = detail ? slate.results.find((r) => r.act.qlooEntityId === detail.act.entityId) : undefined;
-    return detail && result ? { detail, city: slate.room.city, cityStrengths: result.cityStrengths, evidence: result.evidence } : null;
+    return detail && result ? { slate, detail, city: slate.room.city, cityStrengths: result.cityStrengths, evidence: result.evidence } : null;
   } catch (e) {
     logFailure("act_detail_read_failed", e);
     throw new Error("act_detail_read_failed", { cause: e });
@@ -52,6 +54,7 @@ export default async function ActDetailPage({ params }: { params: Params }) {
   return (
     <ActDetailView
       detail={detail}
+      explanationSlot={<ExplanationBlock slate={loaded.slate} actId={detail.act.entityId} />}
       citiesSlot={
         detail.act.entityId.startsWith("unmatched:") ? undefined : (
         <CityStrengthSection

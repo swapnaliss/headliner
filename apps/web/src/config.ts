@@ -10,7 +10,8 @@ import {
   type QlooTransport,
 } from "@headliner/qloo";
 import { getDb } from "@headliner/slates";
-import { liveBudgetHook } from "./budget";
+import type { ExplainBudget, ExplainModel } from "@headliner/agent";
+import { liveBudgetHook, liveGuard, llmBudgetFrom } from "./budget";
 import { loadEnv } from "./env";
 import { MemoryRunStore, PostgresRunStore, type RunStore } from "./runStore";
 import { FixtureSampleStore } from "./samples";
@@ -32,6 +33,13 @@ export interface Runtime {
   readonly cacheOnlyClient?: QlooClient;
   /** Budget check (M2-05, live mode only). Absent means no check. It throws an `ApiError` to refuse. */
   readonly budget?: BudgetHook;
+  /**
+   * The model behind the explanation (M3-02). Absent in fixtures mode and while no LLM key is wired: the
+   * explanation is then the deterministic template. The OpenAI wrapper (M3-01) is adapted to this port.
+   */
+  readonly explainModel?: ExplainModel;
+  /** LLM budget for the explanation, asked before each model turn (M2-05 guard). Absent: no check. */
+  readonly explainBudget?: (headers: Headers) => ExplainBudget;
 }
 
 /** What a granted budget check returns. */
@@ -91,6 +99,7 @@ export function buildRuntime(source: Record<string, string | undefined> = proces
     client: createQlooClient({ transport: liveTransportFromEnv(source), cache }),
     cacheOnlyClient: createQlooClient({ transport: new CacheOnlyTransport(), cache }),
     budget: liveBudgetHook(db, source),
+    explainBudget: (headers) => llmBudgetFrom(liveGuard(db, source), headers),
     store: new PostgresSlateStore(db),
     runs: new PostgresRunStore(db),
     now: () => new Date(),

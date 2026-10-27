@@ -112,3 +112,8 @@ export async function explainSlate(slate: Slate, deps: ExplainDeps = {}, scope: 
     await settleQuietly(lease, used);
   }
 }
+
+/** The deterministic template for a slate or one act, without any model: what the page shows first and when the model is off. */
+export function templateFor(slate: Slate, scope: FactScope = {}): string {
+  return renderTemplate(buildSlateFacts(slate, scope));
+}
