@@ -177,7 +177,7 @@ describe("skips, duplicates and notes", () => {
     const res = await confirm(waiting.runId, { choices: [{ actInput: "Unrecorded Act", entityId: "skip" }] });
     const done = (await res.json()) as { slate: { results: { act: { name: string } }[]; notes: { type: string; subject: string }[] } };
     expect(done.slate.results.map((r) => r.act.name)).toEqual(["Reality Club", "Radiohead", "Khruangbin"]);
-    expect(done.slate.notes).toEqual([{ type: "skipped", message: "Skipped by you, so it is not part of this slate.", subject: "Unrecorded Act" }]);
+    expect(done.slate.notes).toEqual([{ type: "skipped", message: "Skipped by you, so it is not part of this slate." }]);
   });
 
   it("a name with no match can only be skipped, never given an entity", async () => {

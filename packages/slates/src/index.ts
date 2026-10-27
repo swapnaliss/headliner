@@ -4,5 +4,8 @@ export type { Db } from "./db/client";
 export { getCache, getStale, putCache, purgeExpired } from "./db/cacheRepo";
 export type { CacheRow } from "./db/cacheRepo";
 export { getSlateJson, updateSlateJson } from "./db/slateRepo";
+export { isSlateId, newSlateId, SLATE_TTL_MS } from "./id";
+export { loadSlate, MemorySlateStore, PostgresSlateStore, saveSlate } from "./store";
+export type { Identified, SlateStore } from "./store";
 export { putRunJson, getRunJson, deleteRun, RUN_TTL_MS } from "./db/runRepo";
 export { qlooCache, slates, budgets, runs } from "./db/schema";
