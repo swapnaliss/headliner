@@ -1,0 +1,10 @@
+export { buildFacts, buildSlateFacts, fmt, SLATE_SUMMARY_ACTS } from "./facts";
+export type { CaveatFact, CityFact, Fact, FactScope, FitFact, NoDataFact, RoomFact, StandingFact, TastesFact } from "./facts";
+export { renderTemplate, sentenceOf } from "./template";
+export { allowedNumbers, groundingCheck, INTERNAL_FIELD_NAMES } from "./grounding";
+export type { GroundingResult, Violation } from "./grounding";
+export { buildUserPrompt, estimateInputTokens, SYSTEM_PROMPT } from "./prompt";
+export { DEFAULT_MAX_OUTPUT_TOKENS, DEFAULT_TIMEOUT_MS, explainSlate, templateFor } from "./explain";
+export type { ExplainResult } from "./explain";
+export { createExplainCache } from "./ports";
+export type { BudgetLease, ExplainBudget, ExplainCache, ExplainDeps, ExplainEvent, ExplainModel, Explanation, FallbackReason, ModelReply, ModelRequest } from "./ports";

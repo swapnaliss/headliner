@@ -1,0 +1,13 @@
+{
+  "_note": "Live recording from the OpenAI API (key-free) of the structured reply for the sample-leipzig-indie slate; scope act; third prompt (plain-English statements, checked). Unedited. The page shows the template for this scope: the reply claims thin or limited data when no fact states a limit, so groundingCheck rejects it.",
+  "recordedOn": "2026-10-27",
+  "model": "gpt-5-nano",
+  "scope": "act",
+  "usage": {
+    "in": 758,
+    "out": 103,
+    "reasoning": 0,
+    "costUsd": 0.0000791
+  },
+  "text": "{\"sentences\":[\"Audience-taste fit ranks Apparat 2, with a fit of 60.6 out of 100. \",\"Apparat shares Japan, Innovative, and France with your crowd. \",\"Apparat has a Qloo popularity rank of 99.7 out of 100 against a crowd median of 100.0. \",\"Note: data is drawn from 4 crowd acts; some data is thin or limited.\"]}"
+}

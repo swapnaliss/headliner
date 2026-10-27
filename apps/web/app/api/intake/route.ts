@@ -3,6 +3,7 @@ import { z } from "zod";
 import { metered } from "../../../src/budget";
 import { getRuntime } from "../../../src/config";
 import { ApiError, errorResponse, logFailure } from "../../../src/errors";
+import { logged } from "../../../src/log";
 
 export const dynamic = "force-dynamic";
 /** Three model turns of a few seconds each, plus read-only Qloo searches. */
@@ -18,7 +19,7 @@ const IntakeRequestSchema = z.object({ text: z.string(), clarified: z.boolean().
  * names still go through the match-confirmation screen. Response `status`: `room`, `clarification`,
  * `deterministic` (no model: use the form), `intake_failed`. Fixtures mode replays recorded traces.
  */
-export async function POST(request: Request): Promise<Response> {
+async function handlePOST(request: Request): Promise<Response> {
   let raw: string;
   try {
     raw = await request.text();
@@ -59,3 +60,5 @@ export async function POST(request: Request): Promise<Response> {
     return e instanceof ApiError ? errorResponse(e.code, undefined, e.retryAfterSeconds) : errorResponse("internal_error");
   }
 }
+
+export const POST = logged("POST /api/intake", handlePOST);

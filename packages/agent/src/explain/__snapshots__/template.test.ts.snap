@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renderTemplate > is byte-stable for one act with city strengths (Berlin, snapshot) 1`] = `
+"Audience-taste fit compares 5 of 5 candidate acts with the 6 regular-crowd acts for Berlin. Fit values span 2.5 points, so neighbouring ranks are close.
+Reality Club ranks 1 with an audience-taste fit of 60.6 out of 100, from 71 shared audience tags. Its strongest shared tastes are Electronic (score 0.73), Indie (score 0.73), Simple (score 0.73). Qloo popularity rank: Reality Club sits at 86.4 of 100 against a crowd median of 99.5 across 6 crowd acts, below the crowd. In Berlin, Reality Club has a mean affinity rank of 0.086 across 6 heatmap cells. In Jakarta, Reality Club has a mean affinity rank of 0.780 across 686 heatmap cells. In Leipzig, Reality Club has a mean affinity rank of 0.070 across 1 heatmap cell. In London, Reality Club has a mean affinity rank of 0.108 across 44 heatmap cells. Berlin: Fewer than 15 Qloo heatmap cells back this city, so its strength is thin data. Leipzig: Fewer than 15 Qloo heatmap cells back this city, so its strength is thin data."
+`;
+
+exports[`renderTemplate > is byte-stable on the recorded Leipzig slate (snapshot) 1`] = `
+"Audience-taste fit compares 5 of 5 candidate acts with the 4 regular-crowd acts for Leipzig.
+Moderat ranks 1 with an audience-taste fit of 63.8 out of 100, from 67 shared audience tags. Its strongest shared tastes are Germany (score 0.86), Japan (score 0.86), Rock (score 0.73). Qloo popularity rank: Moderat sits at 99.7 of 100 against a crowd median of 100.0 across 4 crowd acts, similar to the crowd. In London, Moderat has a mean affinity rank of 0.436 across 10 heatmap cells. London: Fewer than 15 Qloo heatmap cells back this city, so its strength is thin data.
+Apparat ranks 2 with an audience-taste fit of 60.6 out of 100, from 93 shared audience tags. Its strongest shared tastes are Japan (score 0.86), Innovative (score 0.82), France (score 0.73). Qloo popularity rank: Apparat sits at 99.7 of 100 against a crowd median of 100.0 across 4 crowd acts, similar to the crowd.
+amaarae ranks 3 with an audience-taste fit of 60.2 out of 100, from 65 shared audience tags. Its strongest shared tastes are Innovative (score 0.73), Alternative Rock (score 0.73), Electronic (score 0.73). Qloo popularity rank: amaarae sits at 96.0 of 100 against a crowd median of 100.0 across 4 crowd acts, similar to the crowd."
+`;

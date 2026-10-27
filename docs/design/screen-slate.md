@@ -260,3 +260,13 @@ The shared slate (`/s/{slateId}`) is this screen in read-only form. It differs a
 - Link to start your own: "Make your own slate".
 - The id is a random, unguessable 21-character id; it is validated against the id format before any lookup and encoded when placed in a URL.
 - Unknown or expired id: the same EmptyState as above ("This slate is no longer available."), with a 404 status and no hint whether the id ever existed.
+
+## Explanation block (M3-02)
+
+A `section` headed "Explanation" (h2), placed after the notes and before "Ranked acts". It also appears, for one act, on the act detail screen between the Fit, standing and caveats tiles and "Why this Fit" (caveats are read first).
+
+- Source line under the heading, `field-hint` text: "Written from checked facts. Every figure in this text was checked against this slate before it was shown." or "Template. Built from this slate's values by a fixed template; no figure is added." Both are plain text; the source is also in `data-source`.
+- Body: one paragraph per line of text, `dir="auto"`, max width 70ch. React text nodes only: no HTML, no markdown, no links, so a name containing markup shows as typed.
+- The slate summary covers the room line and the top 3 ranked acts; the act detail covers that one act, including its saved city strengths and caveats.
+- The Banner is unchanged. The template shows first (it is the loading state) and is replaced only by model text whose every figure is in the slate.
+- Wording: "audience-taste fit" and "Qloo popularity rank"; never forecast, turnout, "will sell" or any trend or momentum claim.
