@@ -1,3 +1,4 @@
+import { cache } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import type { Slate } from "@headliner/core";
@@ -19,7 +20,7 @@ interface Loaded {
   evidence: Slate["results"][number]["evidence"];
 }
 
-async function load(id: string, actId: string): Promise<Loaded | null> {
+async function loadUncached(id: string, actId: string): Promise<Loaded | null> {
   // Both route values are untrusted: the slate id is format-checked and the act id is matched by equality against the slate.
   if (!isSlateId(id)) return null;
   try {
@@ -33,6 +34,9 @@ async function load(id: string, actId: string): Promise<Loaded | null> {
     throw new Error("act_detail_read_failed", { cause: e });
   }
 }
+
+/** One store read per request: `generateMetadata` and the page share it (the database is a network round trip). */
+const load = cache(loadUncached);
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { id, actId } = await params;
