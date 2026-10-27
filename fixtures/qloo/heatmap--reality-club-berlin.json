@@ -1,0 +1,119 @@
+{
+  "endpoint": "/v2/insights",
+  "params": {
+    "filter.location.query": "Berlin",
+    "filter.type": "urn:heatmap",
+    "signal.interests.entities": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T12:21:01.838Z",
+  "latencyMs": 559,
+  "body": {
+    "success": true,
+    "results": {
+      "heatmap": [
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.397827,
+            "geohash": "u33dbb"
+          },
+          "query": {
+            "affinity": 1,
+            "affinity_rank": 0.226973,
+            "popularity": 1,
+            "entity_artist_affinity_rank": 0.226973,
+            "entity_artist_affinity": 1
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.3758545,
+            "geohash": "u33db2"
+          },
+          "query": {
+            "affinity": 0.8,
+            "affinity_rank": 0.106317,
+            "popularity": 0.8,
+            "entity_artist_affinity_rank": 0.106317,
+            "entity_artist_affinity": 0.8
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.3758545,
+            "geohash": "u33d8r"
+          },
+          "query": {
+            "affinity": 0.6,
+            "affinity_rank": 0.076176,
+            "popularity": 0.6,
+            "entity_artist_affinity_rank": 0.076176,
+            "entity_artist_affinity": 0.6
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.386841,
+            "geohash": "u33d8w"
+          },
+          "query": {
+            "affinity": 0.4,
+            "affinity_rank": 0.051099,
+            "popularity": 0.2,
+            "entity_artist_affinity_rank": 0.051099,
+            "entity_artist_affinity": 0.4
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.4198,
+            "geohash": "u33d9k"
+          },
+          "query": {
+            "affinity": 0.2,
+            "affinity_rank": 0.029991,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.029991,
+            "entity_artist_affinity": 0.2
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.441772,
+            "geohash": "u33d9v"
+          },
+          "query": {
+            "affinity": 0,
+            "affinity_rank": 0.024084,
+            "popularity": 0.2,
+            "entity_artist_affinity_rank": 0.024084,
+            "entity_artist_affinity": 0
+          }
+        }
+      ]
+    },
+    "query": {
+      "localities": {
+        "filter": [
+          {
+            "entity_id": "302C82B3-3EB5-43A8-9A74-6AE11368E716",
+            "name": "Berlin",
+            "subtype": "urn:entity:locality",
+            "location": {
+              "lat": 52.501493996022454,
+              "lon": 13.402316124298212
+            },
+            "popularity": 0.9997469,
+            "disambiguation": "Berlin, Germany"
+          }
+        ]
+      }
+    }
+  }
+}

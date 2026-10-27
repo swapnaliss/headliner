@@ -28,3 +28,9 @@ export const CreateSlateRequestSchema = z
   })
   .strict();
 export type CreateSlateRequest = z.infer<typeof CreateSlateRequestSchema>;
+
+/** Lazy city strength (ADR 0004): at most 5 heatmap calls per act, so at most 5 cities per request. */
+export const MAX_CITIES_PER_REQUEST = 5;
+
+export const CityStrengthRequestSchema = z.object({ cities: z.array(text).min(1).max(MAX_CITIES_PER_REQUEST) }).strict();
+export type CityStrengthRequest = z.infer<typeof CityStrengthRequestSchema>;

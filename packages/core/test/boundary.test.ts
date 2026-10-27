@@ -5,7 +5,7 @@ import { describe, expect, it } from "vitest";
 import * as core from "../src";
 
 const SRC = join(dirname(fileURLToPath(import.meta.url)), "..", "src");
-const files = readdirSync(SRC).filter((f) => f.endsWith(".ts"));
+const files = readdirSync(SRC).filter((f) => f.endsWith(".ts") && !f.endsWith(".test.ts"));
 const read = (f: string): string => readFileSync(join(SRC, f), "utf8");
 
 describe("packages/core boundary", () => {

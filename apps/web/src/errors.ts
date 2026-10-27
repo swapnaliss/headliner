@@ -8,18 +8,18 @@ export type ErrorCode = (typeof ERROR_CODES)[number];
 
 const STATUS: Readonly<Record<ErrorCode, number>> = {
   invalid_input: 400,
+  not_found: 404,
   rate_limited: 429,
   upstream_unavailable: 503,
   internal_error: 500,
-  not_found: 404,
 };
 
 const MESSAGE: Readonly<Record<ErrorCode, string>> = {
   invalid_input: "The request is not valid.",
+  not_found: "This slate or act was not found.",
   rate_limited: "Too many requests to the data provider. Try again in a minute.",
   upstream_unavailable: "The data provider is unavailable. Try again shortly.",
   internal_error: "Something went wrong on our side.",
-  not_found: "This slate or act was not found.",
 };
 
 export class ApiError extends Error {

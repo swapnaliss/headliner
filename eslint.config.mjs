@@ -8,6 +8,7 @@ export default tseslint.config(
   {
     // Domain core (ADR 0001): pure, no I/O. Source may import only `zod` and itself.
     files: ["packages/core/src/**/*.ts"],
+    ignores: ["packages/core/src/**/*.test.ts"],
     rules: {
       "no-restricted-imports": [
         "error",

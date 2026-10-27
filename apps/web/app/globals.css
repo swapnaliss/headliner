@@ -907,3 +907,119 @@ table {
     content: none;
   }
 }
+
+/* City strength (M2-03): rows, bar, thin-data hatch. A row keeps one height while it loads, so nothing shifts. */
+.city-list {
+  display: grid;
+  gap: var(--space-3);
+}
+.city-row {
+  display: grid;
+  gap: var(--space-2);
+  min-block-size: 92px;
+  align-content: center;
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-2);
+}
+.city-row[data-skeleton="true"] {
+  align-content: center;
+}
+.city-row[data-skeleton="true"] .skeleton-line {
+  inline-size: 60%;
+  block-size: 16px;
+}
+.city-name {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-3);
+  align-items: center;
+  font-weight: 600;
+}
+.city-name .status {
+  white-space: nowrap;
+}
+.city-meter {
+  background: var(--track);
+  border-radius: var(--radius-pill);
+  block-size: 10px;
+  overflow: hidden;
+}
+.city-bar {
+  display: block;
+  block-size: 100%;
+  background: var(--info-fg);
+  border-radius: var(--radius-pill);
+}
+.city-row[data-thin="true"] .city-bar {
+  background: repeating-linear-gradient(135deg, var(--caution-fg) 0 4px, var(--caution-bg) 4px 8px);
+}
+.city-figures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+}
+.thin-badge {
+  display: grid;
+  gap: var(--space-2);
+  justify-items: start;
+}
+.city-status {
+  min-block-size: 1.5em;
+  font-size: var(--text-sm);
+}
+@media (min-width: 768px) {
+  .city-row {
+    grid-template-columns: minmax(12ch, 20ch) minmax(80px, 1fr) auto;
+    align-items: center;
+    column-gap: var(--space-4);
+  }
+  .city-row > .thin-badge,
+  .city-row > .state {
+    grid-column: 1 / -1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .city-bar {
+    transition: none;
+  }
+}
+
+.city-evidence-link {
+  min-block-size: 24px;
+}
+.city-ev-row {
+  scroll-margin-block: 24px;
+}
+.city-ev-row h3 {
+  font-size: var(--text-base);
+}
+.city-ev-row .city-ev-linked {
+  display: none;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+.city-ev-row:target,
+.city-ev-row:focus {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.city-ev-row:target .city-ev-linked,
+.city-ev-row:focus .city-ev-linked {
+  display: block;
+}
+.city-ev-fields {
+  display: grid;
+  gap: var(--space-1);
+  margin: 0;
+}
+.city-ev-fields dt {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+.city-ev-fields dd {
+  margin: 0;
+  white-space: pre-wrap;
+}

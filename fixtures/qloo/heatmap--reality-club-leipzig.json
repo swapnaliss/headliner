@@ -1,0 +1,49 @@
+{
+  "endpoint": "/v2/insights",
+  "params": {
+    "filter.location.query": "Leipzig",
+    "filter.type": "urn:heatmap",
+    "signal.interests.entities": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-26T12:21:03.007Z",
+  "latencyMs": 531,
+  "body": {
+    "success": true,
+    "results": {
+      "heatmap": [
+        {
+          "location": {
+            "latitude": 51.341858,
+            "longitude": 12.376099,
+            "geohash": "u30u1d"
+          },
+          "query": {
+            "affinity": 0,
+            "affinity_rank": 0.070237,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.070237,
+            "entity_artist_affinity": 0
+          }
+        }
+      ]
+    },
+    "query": {
+      "localities": {
+        "filter": [
+          {
+            "entity_id": "1F1582E4-7C5A-47C4-A7C7-6E55AD324B96",
+            "name": "Leipzig",
+            "subtype": "urn:entity:locality",
+            "location": {
+              "lat": 51.3589999792792,
+              "lon": 12.67460075488401
+            },
+            "popularity": 0.9987451,
+            "disambiguation": "Leipzig, Saxony, Germany"
+          }
+        ]
+      }
+    }
+  }
+}

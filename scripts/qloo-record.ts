@@ -1,5 +1,5 @@
 // Qloo recorder (M0-02). Usage: node scripts/qloo-record.ts <stage>   (also runs under `npx tsx`)
-// Stages: search | insights | compare | heatmap | trending | invalid | burst | index | all
+// Stages: search | insights | compare | heatmap | heatmap-m2 | heatmap-extra | trending | invalid | burst | index | all
 // The key is read ONLY from the QLOO_API_KEY environment variable (loaded by the shell). It is sent as a
 // request header and is never printed, never written to a file, and request headers are never recorded.
 import { mkdirSync, readFileSync, readdirSync, writeFileSync, existsSync } from "node:fs";
@@ -204,6 +204,36 @@ async function stageHeatmap(): Promise<void> {
   });
 }
 
+// M2-03: heatmaps of the sample-room candidates in the cities the act-detail strip compares.
+const M2_CITIES = ["Berlin", "London", "Leipzig", "Jakarta"];
+const M2_CANDIDATES = ["Khruangbin", "Radiohead", "Reality Club"];
+
+async function stageHeatmapM2(): Promise<void> {
+  for (const n of M2_CANDIDATES) {
+    for (const c of M2_CITIES) {
+      if (existsSync(join(FIX, `heatmap--${slug(`${n}-${c}`)}.json`))) continue;
+      await record("heatmap", `${n}-${c}`, "/v2/insights", {
+        "filter.type": "urn:heatmap",
+        "filter.location.query": c,
+        "signal.interests.entities": idFor(n),
+      });
+    }
+  }
+}
+
+// Probe extra "Name|City" pairs given on the command line (used to find a city with no heatmap cells).
+async function stageHeatmapExtra(): Promise<void> {
+  for (const pair of process.argv.slice(3)) {
+    const [n, c] = pair.split("|");
+    if (!n || !c) continue;
+    await record("heatmap", `${n}-${c}`, "/v2/insights", {
+      "filter.type": "urn:heatmap",
+      "filter.location.query": c,
+      "signal.interests.entities": idFor(n),
+    });
+  }
+}
+
 async function stageTrending(): Promise<void> {
   await record("trending", "artist-no-signal", "/v2/trending", {
     "filter.type": ARTIST,
@@ -279,6 +309,8 @@ const stages: Record<string, () => Promise<void> | void> = {
   insights: stageInsights,
   compare: stageCompare,
   heatmap: stageHeatmap,
+  "heatmap-m2": stageHeatmapM2,
+  "heatmap-extra": stageHeatmapExtra,
   trending: stageTrending,
   invalid: stageInvalid,
   burst: stageBurst,

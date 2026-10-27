@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { evidenceRequestText } from "@headliner/qloo";
 import type { ActDetail, DetailEvidence } from "../actDetail";
 import { CopyButton } from "./CopyButton";
@@ -281,7 +282,7 @@ function EvidenceTrail({ evidence }: { evidence: readonly DetailEvidence[] }) {
 }
 
 /** The act detail screen (docs/design/screen-act-detail.md). Server component: every value is already in `detail`. */
-export function ActDetailView({ detail }: { detail: ActDetail }) {
+export function ActDetailView({ detail, citiesSlot }: { detail: ActDetail; citiesSlot?: ReactNode }) {
   const slateHref = `/slates/${detail.slateId}`;
   const { act } = detail;
   const href = (entityId: string): string => `${slateHref}/act/${encodeURIComponent(entityId)}`;
@@ -347,7 +348,7 @@ export function ActDetailView({ detail }: { detail: ActDetail }) {
 
         <StandingSection detail={detail} />
 
-        {/* Slot for "Other cities compared" (M2-03): lazily loaded city strength goes here, before the Evidence trail. */}
+        {citiesSlot ?? null}
 
         <EvidenceTrail evidence={detail.evidence} />
 

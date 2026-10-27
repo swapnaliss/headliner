@@ -89,7 +89,7 @@ type Resolution =
   | { readonly kind: "none"; readonly input: string }
   | { readonly kind: "failed"; readonly input: string; readonly rateLimited: boolean };
 
-function toEvidence(q: QlooEvidence): Evidence {
+export function toEvidence(q: QlooEvidence): Evidence {
   const sorted = Object.entries(q.redactedParams).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0));
   const id = `ev-${createHash("sha256").update(`${q.endpoint}?${JSON.stringify(sorted)}`).digest("hex").slice(0, 12)}`;
   return { id, endpoint: q.endpoint, redactedParams: { ...q.redactedParams }, responseDigest: q.responseDigest, fetchedAt: q.fetchedAt };
