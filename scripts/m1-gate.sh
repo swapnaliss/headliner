@@ -7,6 +7,9 @@
 #
 # Env: M1_GATE_REPO (default: origin URL), M1_GATE_REF (default: main), M1_GATE_PORT (default 3918),
 #      M1_GATE_KEEP=1 keeps the temp dir. Needs git, npm, curl, gitleaks on PATH.
+#      M1_GATE_EXTRA=<script> (M2-GATE) runs that script against the running fixtures server, from the clone
+#      (it gets M1_GATE_PORT and M1_GATE_WORK). M1_GATE_E2E=1 (M2-GATE) then runs the clone's Playwright suite
+#      on ports M1_GATE_PORT+10 and +11, with the same empty environment.
 # The server runs in its own process group (setsid) and the whole group is killed on exit, so no
 # next-server is left running (BL-01 6410492710).
 set -euo pipefail
@@ -75,7 +78,17 @@ if grep -iE 'x-api-key' "$WORK/slate.json" "$WORK/server.log"; then echo "m1-gat
 if grep -rlE 'X-Api-Key|hackathon\.api\.qloo\.com' apps/web/.next/static; then echo "m1-gate: FAIL key material or Qloo host in client bundle" >&2; exit 1; fi
 echo "no X-Api-Key in response/log; no X-Api-Key or Qloo host in apps/web/.next/static"
 
+if [ -n "${M1_GATE_EXTRA:-}" ]; then
+  step "extra checks: $(basename "$M1_GATE_EXTRA")"
+  run M1_GATE_PORT="$PORT" M1_GATE_WORK="$WORK" bash "$M1_GATE_EXTRA"
+fi
+
 stop_server
+if [ "${M1_GATE_E2E:-0}" = 1 ]; then
+  step "e2e (Playwright, fixtures, no keys) on :$((PORT + 10))"
+  run E2E_PORT="$((PORT + 10))" npm run e2e -w apps/web 2>&1 | tail -45
+  [ "${PIPESTATUS[0]}" = 0 ] || { echo "m1-gate: FAIL e2e" >&2; exit 1; }
+fi
 echo "server process group stopped; leftover next-server from this run: $(pgrep -f "$WORK" | wc -l)"
 
 step "licence"
