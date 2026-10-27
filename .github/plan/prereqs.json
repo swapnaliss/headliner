@@ -20,7 +20,7 @@
    "lands_in": ".env OPENAI_API_KEY; Vercel env OPENAI_API_KEY", "verify": "[ -n \"${OPENAI_API_KEY:+set}\" ]", "required": true},
   {"id": "P-06", "what": "Joined the hackathon on Devpost", "kind": "account",
    "needed_by": ["M4-SUBMIT"], "who": "owner", "how": "qloo.devpost.com -> Join hackathon", "lands_in": "Devpost account",
-   "status": "pending", "required": true},
+   "status": "done", "required": true},
   {"id": "P-07", "what": "Joined the Qloo Discord and posted the organiser questions", "kind": "decision",
    "needed_by": ["M1-01"], "who": "owner", "how": "discord.gg/rF9PKsD5Q7 -> #api-help; post the text drafted by M0-04",
    "lands_in": "-", "status": "pending", "required": false},
