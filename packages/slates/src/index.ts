@@ -3,7 +3,7 @@ export { DatabaseUnavailable, getDb, closeDb, pingDb } from "./db/client";
 export type { Db } from "./db/client";
 export { getCache, getStale, putCache, purgeExpired } from "./db/cacheRepo";
 export type { CacheRow } from "./db/cacheRepo";
-export { getSlateJson, isPinnedExpiry, PINNED_EXPIRES_AT, purgeExpiredSlates, putPinnedSlate, updateSlateJson } from "./db/slateRepo";
+export { getSlateJson, isPinnedExpiry, patchSlateJson, PINNED_EXPIRES_AT, purgeExpiredSlates, putPinnedSlate, updateSlateJson } from "./db/slateRepo";
 export { isSlateId, newSlateId, SLATE_TTL_MS } from "./id";
 export { loadSlate, MemorySlateStore, PostgresSlateStore, saveSlate } from "./store";
 export type { Identified, SlateStore } from "./store";

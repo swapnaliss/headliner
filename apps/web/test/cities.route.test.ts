@@ -204,7 +204,7 @@ describe("POST /api/slates/:id/acts/:actId/cities", () => {
 
   it("a store failure does not lose the answer", async () => {
     const made = await makeSlate();
-    setRuntimeForTests({ ...made.runtime, store: { save: made.runtime.store.save.bind(made.runtime.store), get: made.runtime.store.get.bind(made.runtime.store), update: async () => { throw new Error("db password hunter2"); } } });
+    setRuntimeForTests({ ...made.runtime, store: { save: made.runtime.store.save.bind(made.runtime.store), get: made.runtime.store.get.bind(made.runtime.store), update: async () => { throw new Error("db password hunter2"); }, updateWith: async () => { throw new Error("db password hunter2"); } } });
     const res = await cities(made, { cities: ["Berlin"] });
     expect(res.status).toBe(200);
     expect(JSON.stringify(logs)).not.toContain("hunter2");

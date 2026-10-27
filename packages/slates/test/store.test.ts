@@ -104,7 +104,11 @@ describe("MemorySlateStore (fixtures mode)", () => {
     expect(await store.get("a".repeat(22))).toBeNull();
     expect(await store.update({ ...slate, n: 2 })).toBe(true);
     expect((await store.get(slate.id))?.n).toBe(2);
+    expect(await store.updateWith(slate.id, (c) => ({ ...c, n: c.n + 1 }))).toBe(true);
+    expect((await store.get(slate.id))?.n).toBe(3);
+    expect(await store.updateWith(slate.id, () => null)).toBe(false);
     t = new Date(t.getTime() + SLATE_TTL_MS);
+    expect(await store.updateWith(slate.id, (c) => ({ ...c, n: 9 }))).toBe(false);
     expect(await store.update({ ...slate, n: 3 })).toBe(false);
     expect(await store.get(slate.id)).toBeNull();
   });
