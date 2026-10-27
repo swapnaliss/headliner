@@ -934,6 +934,9 @@ table {
   align-items: center;
   font-weight: 600;
 }
+.city-name .status {
+  white-space: nowrap;
+}
 .city-meter {
   background: var(--track);
   border-radius: var(--radius-pill);
@@ -966,7 +969,7 @@ table {
 }
 @media (min-width: 768px) {
   .city-row {
-    grid-template-columns: minmax(10ch, 14ch) minmax(80px, 1fr) auto;
+    grid-template-columns: minmax(12ch, 20ch) minmax(80px, 1fr) auto;
     align-items: center;
     column-gap: var(--space-4);
   }
@@ -979,4 +982,41 @@ table {
   .city-bar {
     transition: none;
   }
+}
+
+.city-evidence-link {
+  min-block-size: 24px;
+}
+.ev-row {
+  scroll-margin-block: 24px;
+}
+.ev-row h3 {
+  font-size: var(--text-base);
+}
+.ev-row .ev-linked {
+  display: none;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+.ev-row:target,
+.ev-row:focus {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.ev-row:target .ev-linked,
+.ev-row:focus .ev-linked {
+  display: block;
+}
+.ev-fields {
+  display: grid;
+  gap: var(--space-1);
+  margin: 0;
+}
+.ev-fields dt {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+.ev-fields dd {
+  margin: 0;
+  white-space: pre-wrap;
 }

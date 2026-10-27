@@ -137,7 +137,7 @@ describe("CityStrengthSection", () => {
     const failedRow = screen.getByText(/Could not load/).closest("li") as HTMLElement;
     expect(failedRow.textContent).toContain("London");
     expect(within(screen.getByRole("list", { name: "Cities compared" })).getByText("Jakarta")).toBeTruthy();
-    expect(screen.queryByText("Could not load city strength. The rest of this page is unaffected.")).toBeNull();
+    expect(screen.queryByText("The rest of this page is unaffected.")).toBeNull();
     // retry: the endpoint is asked again for that city only
     s.fetchMock.mockClear();
     fireEvent.click(within(failedRow).getByRole("button", { name: "Try again" }));
@@ -151,7 +151,8 @@ describe("CityStrengthSection", () => {
     render(section(s));
     fireEvent.click(screen.getByRole("button", { name: "Load city strength" }));
     const alert = await screen.findByRole("alert");
-    expect(alert.textContent).toContain("Could not load city strength. The rest of this page is unaffected.");
+    expect(alert.textContent).toContain("Could not load city strength");
+    expect(alert.textContent).toContain("The rest of this page is unaffected.");
     expect(screen.getByRole("button", { name: "Try again" })).toBeTruthy();
   });
 

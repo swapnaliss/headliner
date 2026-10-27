@@ -15,7 +15,6 @@ import {
 } from "../../../../../src/cityStrengthView";
 import { Button } from "../../../../../src/ui/Button";
 import { ErrorState } from "../../../../../src/ui/ErrorState";
-import { EvidenceDisclosure } from "../../../../../src/ui/ActCard";
 import { Icon } from "../../../../../src/ui/Icon";
 import { TextField } from "../../../../../src/ui/TextField";
 import { ThinDataBadge } from "../../../../../src/ui/ThinDataBadge";
@@ -63,6 +62,7 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
   const [started, setStarted] = useState(false);
   const [noObserver, setNoObserver] = useState(false);
   const [offline, setOffline] = useState(false);
+  const [evidenceOpen, setEvidenceOpen] = useState(false);
   const [draft, setDraft] = useState("");
   const [draftError, setDraftError] = useState<string | undefined>(undefined);
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -212,10 +212,26 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
     status === "loading"
       ? `Loading city strength: ${done} of ${total} cities.`
       : (status === "ready" || status === "partial") && total > 0
-        ? `City strength loaded for ${done - groups.failed.length} ${plural(done - groups.failed.length, "city", "cities")}.${thinCities.length > 0 ? ` ${thinCities.length} ${plural(thinCities.length, "has", "have")} thin data.` : ""}`
+        ? `City strength loaded for ${done - groups.failed.length}${groups.failed.length > 0 ? ` of ${total}` : ""} ${plural(groups.failed.length > 0 ? total : done, "city", "cities")}.${thinCities.length > 0 ? ` ${thinCities.length} ${plural(thinCities.length, "has", "have")} thin data.` : ""}`
         : "";
 
   const venue = key(roomCity);
+  const evidenceNumber = (ref: string): number => trail.findIndex((e) => e.id === ref) + 1;
+  const openEvidence = (ref: string) => (event: { preventDefault: () => void }): void => {
+    event.preventDefault();
+    setEvidenceOpen(true);
+    setTimeout(() => {
+      const el = document.getElementById(ref);
+      el?.focus();
+      history.replaceState(null, "", `#${ref}`);
+    }, 0);
+  };
+  const evidenceLink = (refs: readonly string[]) =>
+    refs[0] && evidenceNumber(refs[0]) > 0 ? (
+      <a className="city-evidence-link" href={`#${refs[0]}`} onClick={openEvidence(refs[0])}>
+        See evidence: {evidenceNumber(refs[0])}
+      </a>
+    ) : null;
   const rowFor = (r: Extract<RowState, { kind: "ok" }>) => (
     <li key={key(r.city)} className="city-row" data-thin={r.thin ? "true" : undefined}>
       <div className="city-name">
@@ -232,6 +248,7 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
         <span className="num">
           {r.cellCount} {plural(r.cellCount, "cell", "cells")}
         </span>
+        {evidenceLink(r.evidenceRefs)}
       </div>
       {r.thin ? <ThinDataBadge cellCount={r.cellCount} variant="block" /> : null}
     </li>
@@ -245,6 +262,18 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
 
       {readOnly && cities.length === 0 ? <p className="note" data-tone="neutral">City strength was not loaded for this act on this slate.</p> : null}
 
+      {thinCities.length > 0 && (status === "ready" || status === "partial") ? (
+        <div className="stack-sm">
+          <h3>Caveats</h3>
+          <p className="status" data-tone="caution">
+            <Icon name="thin" />
+            <span>
+              Thin data: <bdi className="entity">{thinCities.join(", ")}</bdi>
+            </span>
+          </p>
+        </div>
+      ) : null}
+
       <div role="status" aria-live="polite" className="city-status">
         {message ? <p>{message}</p> : null}
         {offline ? <p>You appear to be offline. The page is shown as last loaded; city strength cannot load.</p> : null}
@@ -253,12 +282,10 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
       {status === "idle" ? (
         <div className="stack-sm">
           <ul className="city-list" aria-label="Cities compared" aria-busy="true">
-            {cities.map((c) => (
-              <li key={key(c)} className="city-row" data-skeleton="true">
-                <span className="sr-only">{`Waiting to load ${isolate(c)}`}</span>
-                <span className="skeleton-line" />
-              </li>
-            ))}
+            <li className="city-row" data-skeleton="true">
+              <span className="sr-only">Waiting to load city strength</span>
+              <span className="skeleton-line" />
+            </li>
           </ul>
           {noObserver && !readOnly ? <Button variant="secondary" onClick={start}>Load city strength</Button> : null}
         </div>
@@ -267,7 +294,7 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
       {status === "error" ? (
         <ErrorState
           title="Could not load city strength"
-          message="Could not load city strength. The rest of this page is unaffected."
+          message="The rest of this page is unaffected."
           actions={<Button variant="secondary" onClick={() => groups.failed.forEach((r) => retry(r.city))}>Try again</Button>}
         />
       ) : null}
@@ -299,6 +326,7 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
                   </div>
                   <p>Qloo returned no usable audience data there.</p>
                 </div>
+                {evidenceLink(r.evidenceRefs)}
               </li>
             ))}
             {groups.failed.map((r) => (
@@ -355,7 +383,37 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
         </form>
       ) : null}
 
-      {trail.length > 0 ? <EvidenceDisclosure name={actName} evidence={trail} /> : null}
+      {trail.length > 0 ? (
+        <details className="evidence" id="evidence" open={evidenceOpen} onToggle={(e) => setEvidenceOpen((e.currentTarget as HTMLDetailsElement).open)}>
+          <summary aria-label={`Evidence for ${isolate(actName)}, ${trail.length} ${plural(trail.length, "call", "calls")}`}>
+            Evidence ({trail.length} {plural(trail.length, "call", "calls")})
+          </summary>
+          <p className="field-hint">Each number above comes from the Qloo calls below. Parameters are redacted summaries.</p>
+          <ol aria-label="Evidence trail">
+            {trail.map((ev, i) => (
+              <li key={ev.id} id={ev.id} tabIndex={-1} className="ev-row">
+                <h3>
+                  Evidence {i + 1}: GET <span className="mono">{ev.endpoint}</span>
+                </h3>
+                <span className="ev-linked">Linked from above</span>
+                <dl className="ev-fields">
+                  <dt>Parameters (redacted)</dt>
+                  <dd className="mono">{Object.entries(ev.redactedParams).map(([k, v]) => `${k}=${v}`).join("\n")}</dd>
+                  <dt>Response digest</dt>
+                  <dd className="mono">{ev.responseDigest.slice(0, 12)}</dd>
+                  <dt>Fetched</dt>
+                  <dd>
+                    <time dateTime={ev.fetchedAt}>{ev.fetchedAt}</time>
+                  </dd>
+                  <dt>Supports</dt>
+                  <dd>City strength</dd>
+                </dl>
+              </li>
+            ))}
+          </ol>
+          <p className="field-hint">Request headers, including the API key, are never stored or shown.</p>
+        </details>
+      ) : null}
     </section>
   );
 }
