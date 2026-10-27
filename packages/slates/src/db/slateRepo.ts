@@ -39,6 +39,34 @@ export async function updateSlateJson(db: Db, id: string, json: unknown, now: Da
 }
 
 /**
+ * Atomic read-modify-write of one unexpired slate (BL-01 6434847617). The row is locked
+ * (`SELECT ... FOR UPDATE`) inside a transaction, so two serverless instances patching different
+ * parts of the same slate queue up and each sees the other's write. `patch` receives the stored
+ * JSON and returns the new JSON, or null to leave the row alone. Returns true only when written.
+ */
+export async function patchSlateJson(
+  db: Db,
+  id: string,
+  patch: (current: unknown) => unknown | null,
+  now: Date = new Date(),
+): Promise<boolean> {
+  return db.transaction(async (tx) => {
+    const rows = await tx
+      .select({ json: slates.json })
+      .from(slates)
+      .where(and(eq(slates.id, id), gt(slates.expiresAt, now)))
+      .limit(1)
+      .for("update");
+    const row = rows[0];
+    if (!row) return false;
+    const next = patch(row.json);
+    if (next === null) return false;
+    await tx.update(slates).set({ json: next }).where(eq(slates.id, id));
+    return true;
+  });
+}
+
+/**
  * Pinned slates (M2-06, ADR 0002 addendum): a sample slate is stored with this expiry, so the one
  * cleanup rule ("delete rows whose expires_at has passed") can never remove it. No extra column.
  */

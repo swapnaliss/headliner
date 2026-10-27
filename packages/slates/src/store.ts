@@ -1,5 +1,5 @@
 import type { Db } from "./db/client";
-import { deleteSlate, getSlateRow, insertSlate, updateSlateJson } from "./db/slateRepo";
+import { deleteSlate, getSlateRow, insertSlate, patchSlateJson, updateSlateJson } from "./db/slateRepo";
 import { isSlateId, SLATE_TTL_MS } from "./id";
 
 /** A slate as the store sees it: any JSON-able value with an id. The parser decides what is valid. */
@@ -13,6 +13,12 @@ export interface SlateStore<T extends Identified> {
   get(id: string): Promise<T | null>;
   /** Replaces the stored slate (lazy city strength adds aggregates, M2-03). False when it is unknown or expired. */
   update(slate: T): Promise<boolean>;
+  /**
+   * Atomic read-modify-write: `patch` gets the current slate and returns the replacement, or null to
+   * write nothing. Concurrent calls (even from another instance) are serialised per slate, so none
+   * overwrites another's change (BL-01 6434847617). False when unknown, expired, unparsable or unchanged.
+   */
+  updateWith(id: string, patch: (current: T) => T | null): Promise<boolean>;
 }
 
 /** Fixtures mode: held in process memory with the same 30-day life, no database. */
@@ -39,6 +45,15 @@ export class MemorySlateStore<T extends Identified> implements SlateStore<T> {
     const item = this.items.get(slate.id);
     if (!item || item.expiresAt <= this.now().getTime()) return false;
     this.items.set(slate.id, { value: slate, expiresAt: item.expiresAt });
+    return true;
+  }
+  async updateWith(id: string, patch: (current: T) => T | null): Promise<boolean> {
+    // One process, no await between read and write: nothing can interleave.
+    const item = this.items.get(id);
+    if (!item || item.expiresAt <= this.now().getTime()) return false;
+    const next = patch(item.value);
+    if (next === null) return false;
+    this.items.set(id, { value: next, expiresAt: item.expiresAt });
     return true;
   }
 }
@@ -80,5 +95,17 @@ export class PostgresSlateStore<T extends Identified> implements SlateStore<T> {
   }
   async update(slate: T): Promise<boolean> {
     return updateSlateJson(this.db, slate.id, slate, this.now());
+  }
+  async updateWith(id: string, patch: (current: T) => T | null): Promise<boolean> {
+    if (!this.validId(id)) return false;
+    return patchSlateJson(
+      this.db,
+      id,
+      (json) => {
+        const current = this.parse(json);
+        return current === null ? null : patch(current);
+      },
+      this.now(),
+    );
   }
 }

@@ -158,4 +158,7 @@ export class FixtureSampleStore implements SlateStore {
   update(slate: Slate): Promise<boolean> {
     return this.inner.update(slate);
   }
+  updateWith(id: string, patch: (current: Slate) => Slate | null): Promise<boolean> {
+    return this.inner.updateWith(id, patch);
+  }
 }

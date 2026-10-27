@@ -37,20 +37,6 @@ async function mapWithLimit<T, R>(items: readonly T[], limit: number, fn: (item:
   return out;
 }
 
-/** One chain per slate, so two acts opened at once cannot overwrite each other's aggregates in this process. */
-const locks = new Map<string, Promise<unknown>>();
-async function withLock<T>(key: string, fn: () => Promise<T>): Promise<T> {
-  const previous = locks.get(key) ?? Promise.resolve();
-  const run = previous.then(fn, fn);
-  const tail = run.catch(() => undefined);
-  locks.set(key, tail);
-  try {
-    return await run;
-  } finally {
-    if (locks.get(key) === tail) locks.delete(key);
-  }
-}
-
 const sameId = (a: string, b: string): boolean => a.toUpperCase() === b.toUpperCase();
 
 function findAct(slate: Slate, actId: string): ActResult | undefined {
@@ -138,14 +124,14 @@ export async function loadCityStrength(rt: Runtime, params: CityStrengthParams):
 
   if (resolved.some((r) => r.entry.status === "ok")) {
     try {
-      await withLock(slate.id, async () => {
-        const current = (await rt.store.get(slate.id)) ?? slate;
+      // Atomic across instances (row lock in Postgres): each save re-reads the stored slate and
+      // patches only this act, so two acts saved at the same moment both survive (BL-01 6434847617).
+      await rt.store.updateWith(slate.id, (current) => {
         const target = findAct(current, params.actId);
-        if (!target) return;
+        if (!target) return null;
         const merged = mergeCityStrengths(target, resolved);
         assertEveryNumberHasEvidence(merged);
-        const next: Slate = { ...current, results: current.results.map((r) => (r === target ? merged : r)) };
-        await rt.store.update(next);
+        return { ...current, results: current.results.map((r) => (r === target ? merged : r)) };
       });
     } catch (e) {
       // The answer is still valid and checkable; only the saved copy is behind. The next open refetches (cached).

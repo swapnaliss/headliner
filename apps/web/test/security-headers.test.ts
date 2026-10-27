@@ -82,6 +82,7 @@ function countingRuntime(base: Runtime & { store: MemorySlateStore }): { rt: Run
   const store = {
     save: (s: Parameters<MemorySlateStore["save"]>[0]) => base.store.save(s),
     update: (s: Parameters<MemorySlateStore["update"]>[0]) => base.store.update(s),
+    updateWith: (id: string, patch: Parameters<MemorySlateStore["updateWith"]>[1]) => base.store.updateWith(id, patch),
     get: (id: string) => {
       gets.push(id);
       return base.store.get(id);

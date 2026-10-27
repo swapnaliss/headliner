@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import type { Db } from "../src/db/client";
 import { slates } from "../src/db/schema";
-import { getSlateJson, updateSlateJson } from "../src/db/slateRepo";
+import { getSlateJson, patchSlateJson, updateSlateJson } from "../src/db/slateRepo";
 
 const migrationsFolder = fileURLToPath(new URL("../drizzle", import.meta.url));
 
@@ -41,5 +41,18 @@ describe("getSlateJson (PGlite)", () => {
   it("updateSlateJson changes nothing for an expired or unknown slate", async () => {
     expect(await updateSlateJson(db, "old-slate-id", { changed: true }, now)).toBe(false);
     expect(await updateSlateJson(db, "nope", { changed: true }, now)).toBe(false);
+  });
+  it("patchSlateJson serialises concurrent patches so none is lost (BL-01 6434847617)", async () => {
+    await db.insert(slates).values({ id: "race-slate-id", json: { id: "race-slate-id", a: 0, b: 0 }, createdAt: now, expiresAt: new Date(now.getTime() + 1000) });
+    const bump = (key: "a" | "b") => patchSlateJson(db, "race-slate-id", (cur) => ({ ...(cur as object), [key]: 1 }), now);
+    const results = await Promise.all([bump("a"), bump("b")]);
+    expect(results).toEqual([true, true]);
+    expect(await getSlateJson(db, "race-slate-id", now)).toEqual({ id: "race-slate-id", a: 1, b: 1 });
+  });
+  it("patchSlateJson writes nothing when the patch returns null, or for an expired or unknown slate", async () => {
+    expect(await patchSlateJson(db, "live-slate-id", () => null, now)).toBe(false);
+    expect(await patchSlateJson(db, "old-slate-id", () => ({ changed: true }), now)).toBe(false);
+    expect(await patchSlateJson(db, "nope", () => ({ changed: true }), now)).toBe(false);
+    expect(await getSlateJson(db, "live-slate-id", now)).toEqual({ id: "live-slate-id", more: 1 });
   });
 });
