@@ -1,0 +1,647 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Caribou",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:31.333Z",
+  "latencyMs": 385,
+  "body": {
+    "results": [
+      {
+        "name": "Caribou",
+        "entity_id": "132F123E-6250-47F5-8A67-4C32F867C1A4",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "caribouband"
+            },
+            "instagram": {
+              "id": "cariboumusic"
+            },
+            "lastfm": {
+              "id": "caribou",
+              "listeners": 1286066,
+              "scrobbles": 42604968
+            },
+            "musicbrainz": {
+              "id": "5fa4eb47-ae75-4e2a-a033-6fdf0afc077a"
+            },
+            "spotify": {
+              "id": "7nFj31QiQll8sRmWagex1M"
+            },
+            "twitter": {
+              "id": "caribouband"
+            },
+            "wikidata": {
+              "id": "q1036131"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/132F123E-6250-47F5-8A67-4C32F867C1A4-420x-auto.jpg"
+          },
+          "short_description": "Caribou is the stage name of Canadian electronic musician Dan Snaith, known for his eclectic and innovative electronic music."
+        },
+        "popularity": 0.9985391905158716,
+        "disambiguation": "Caribou",
+        "tags": [
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:genre:experimental",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:experimental"
+          },
+          {
+            "name": "Indie",
+            "tag_id": "urn:tag:genre:indie",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:indie"
+          },
+          {
+            "name": "Canadian",
+            "tag_id": "urn:tag:genre:canadian",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:canadian"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:electronic",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronic"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Appreciative",
+            "tag_id": "urn:tag:audience:qloo:appreciative",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:appreciative"
+          },
+          {
+            "name": "Introspective",
+            "tag_id": "urn:tag:audience:qloo:introspective",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:introspective"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:music:qloo:eclectic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:eclectic"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Psychedelic",
+            "tag_id": "urn:tag:music:qloo:psychedelic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:psychedelic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:music:qloo:experimental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:experimental"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:music:qloo:atmospheric",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:atmospheric"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Immersive",
+            "tag_id": "urn:tag:style:qloo:immersive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:immersive"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:characteristic:qloo:eclectic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:eclectic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:characteristic:qloo:melodic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:melodic"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:characteristic:qloo:experimental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:experimental"
+          },
+          {
+            "name": "Psychedelic",
+            "tag_id": "urn:tag:characteristic:qloo:psychedelic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:psychedelic"
+          },
+          {
+            "name": "Psychedelic Indie Electronic",
+            "tag_id": "urn:tag:style:qloo:psychedelic_indie_electronic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:psychedelic_indie_electronic"
+          },
+          {
+            "name": "Melodic Downtempo Electronica",
+            "tag_id": "urn:tag:style:qloo:melodic_downtempo_electronica",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:melodic_downtempo_electronica"
+          },
+          {
+            "name": "Experimental Synth-Pop",
+            "tag_id": "urn:tag:style:qloo:experimental_synth_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental_synth_pop"
+          },
+          {
+            "name": "Organic Electronic Fusion",
+            "tag_id": "urn:tag:style:qloo:organic_electronic_fusion",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:organic_electronic_fusion"
+          },
+          {
+            "name": "Atmospheric Dance Music",
+            "tag_id": "urn:tag:style:qloo:atmospheric_dance_music",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:atmospheric_dance_music"
+          },
+          {
+            "name": "Indie Electronic",
+            "tag_id": "urn:tag:influence:qloo:indie_electronic",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:indie_electronic"
+          },
+          {
+            "name": "Psychedelic Pop",
+            "tag_id": "urn:tag:influence:qloo:psychedelic_pop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:psychedelic_pop"
+          },
+          {
+            "name": "Ambient",
+            "tag_id": "urn:tag:influence:qloo:ambient",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:ambient"
+          },
+          {
+            "name": "Downtempo",
+            "tag_id": "urn:tag:influence:qloo:downtempo",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:downtempo"
+          },
+          {
+            "name": "Aphex Twin",
+            "tag_id": "urn:tag:influenced_by:qloo:aphex_twin",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:aphex_twin"
+          },
+          {
+            "name": "Brian Eno",
+            "tag_id": "urn:tag:influenced_by:qloo:brian_eno",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:brian_eno"
+          },
+          {
+            "name": "The Beatles",
+            "tag_id": "urn:tag:influenced_by:qloo:the_beatles",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:the_beatles"
+          },
+          {
+            "name": "Stereolab",
+            "tag_id": "urn:tag:influenced_by:qloo:stereolab",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:stereolab"
+          },
+          {
+            "name": "Synthesizer",
+            "tag_id": "urn:tag:instrument:qloo:synthesizer",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizer"
+          },
+          {
+            "name": "Drum Machine",
+            "tag_id": "urn:tag:instrument:qloo:drum_machine",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drum_machine"
+          },
+          {
+            "name": "Sampler",
+            "tag_id": "urn:tag:instrument:qloo:sampler",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:sampler"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Bass",
+            "tag_id": "urn:tag:instrument:qloo:bass",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:bass"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Memory",
+            "tag_id": "urn:tag:theme:qloo:memory",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:memory"
+          },
+          {
+            "name": "Identity",
+            "tag_id": "urn:tag:theme:qloo:identity",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:identity"
+          },
+          {
+            "name": "Emotions",
+            "tag_id": "urn:tag:theme:qloo:emotions",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:emotions"
+          },
+          {
+            "name": "Human Connection",
+            "tag_id": "urn:tag:theme:qloo:human_connection",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:human_connection"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:qloo:electronic",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:electronic"
+          },
+          {
+            "name": "Indie Electronic",
+            "tag_id": "urn:tag:genre:qloo:indie_electronic",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:indie_electronic"
+          },
+          {
+            "name": "Psychedelic Pop",
+            "tag_id": "urn:tag:genre:qloo:psychedelic_pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:psychedelic_pop"
+          },
+          {
+            "name": "Ambient",
+            "tag_id": "urn:tag:subgenre:qloo:ambient",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:ambient"
+          },
+          {
+            "name": "Downtempo",
+            "tag_id": "urn:tag:subgenre:qloo:downtempo",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:downtempo"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:subgenre:qloo:experimental",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:experimental"
+          }
+        ]
+      },
+      {
+        "name": "Caribou Vibration Ensemble",
+        "entity_id": "00B71C2F-2A93-4606-A6C3-E710EA33FDD3",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "caribou%20vibration%20ensemble",
+              "listeners": 2983,
+              "scrobbles": 15751
+            },
+            "musicbrainz": {
+              "id": "16e2db7a-c995-4ef1-a4f4-6435eb563c95"
+            },
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/00B71C2F-2A93-4606-A6C3-E710EA33FDD3-420x-auto.jpg"
+          },
+          "short_description": "A Canadian Indigenous electronic music collective blending traditional and modern sounds."
+        },
+        "popularity": 0.24191072531046418,
+        "disambiguation": "Caribou Vibration Ensemble",
+        "tags": [
+          {
+            "name": "Indie",
+            "tag_id": "urn:tag:genre:indie",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:indie"
+          },
+          {
+            "name": "Lo - Fi",
+            "tag_id": "urn:tag:genre:lo_fi",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:lo_fi"
+          },
+          {
+            "name": "All",
+            "tag_id": "urn:tag:genre:all",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:all"
+          },
+          {
+            "name": "Culturally Conscious",
+            "tag_id": "urn:tag:audience:qloo:culturally_conscious",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:culturally_conscious"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Supportive",
+            "tag_id": "urn:tag:audience:qloo:supportive",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:supportive"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Ambient",
+            "tag_id": "urn:tag:music:qloo:ambient",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:ambient"
+          },
+          {
+            "name": "Cultural",
+            "tag_id": "urn:tag:music:qloo:cultural",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:cultural"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:music:qloo:experimental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:experimental"
+          },
+          {
+            "name": "Fusion",
+            "tag_id": "urn:tag:music:qloo:fusion",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:fusion"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Cultural",
+            "tag_id": "urn:tag:style:qloo:cultural",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:cultural"
+          },
+          {
+            "name": "Immersive",
+            "tag_id": "urn:tag:style:qloo:immersive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:immersive"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Cultural",
+            "tag_id": "urn:tag:characteristic:qloo:cultural",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:cultural"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:characteristic:qloo:experimental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:experimental"
+          },
+          {
+            "name": "Fusion",
+            "tag_id": "urn:tag:characteristic:qloo:fusion",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:fusion"
+          },
+          {
+            "name": "Ambient",
+            "tag_id": "urn:tag:characteristic:qloo:ambient",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:ambient"
+          },
+          {
+            "name": "Indigenous Electronic Fusion",
+            "tag_id": "urn:tag:style:qloo:indigenous_electronic_fusion",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:indigenous_electronic_fusion"
+          },
+          {
+            "name": "Ambient Cultural Soundscape",
+            "tag_id": "urn:tag:style:qloo:ambient_cultural_soundscape",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:ambient_cultural_soundscape"
+          },
+          {
+            "name": "Experimental Indigenous Beats",
+            "tag_id": "urn:tag:style:qloo:experimental_indigenous_beats",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental_indigenous_beats"
+          },
+          {
+            "name": "Traditional-Modern Hybrid",
+            "tag_id": "urn:tag:style:qloo:traditional_modern_hybrid",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:traditional_modern_hybrid"
+          },
+          {
+            "name": "Spiritual Electronic Music",
+            "tag_id": "urn:tag:style:qloo:spiritual_electronic_music",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:spiritual_electronic_music"
+          },
+          {
+            "name": "Indigenous Electronic Music",
+            "tag_id": "urn:tag:influence:qloo:indigenous_electronic_music",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:indigenous_electronic_music"
+          },
+          {
+            "name": "Ambient Fusion",
+            "tag_id": "urn:tag:influence:qloo:ambient_fusion",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:ambient_fusion"
+          },
+          {
+            "name": "Traditional Indigenous Music",
+            "tag_id": "urn:tag:influenced_by:qloo:traditional_indigenous_music",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:traditional_indigenous_music"
+          },
+          {
+            "name": "Electronic Music Pioneers",
+            "tag_id": "urn:tag:influenced_by:qloo:electronic_music_pioneers",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:electronic_music_pioneers"
+          },
+          {
+            "name": "Synthesizers",
+            "tag_id": "urn:tag:instrument:qloo:synthesizers",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizers"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Traditional Indigenous Instruments",
+            "tag_id": "urn:tag:instrument:qloo:traditional_indigenous_instruments",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:traditional_indigenous_instruments"
+          },
+          {
+            "name": "Indigenous Identity",
+            "tag_id": "urn:tag:theme:qloo:indigenous_identity",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:indigenous_identity"
+          },
+          {
+            "name": "Cultural Heritage",
+            "tag_id": "urn:tag:theme:qloo:cultural_heritage",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:cultural_heritage"
+          },
+          {
+            "name": "Spirituality",
+            "tag_id": "urn:tag:theme:qloo:spirituality",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:spirituality"
+          },
+          {
+            "name": "Nature",
+            "tag_id": "urn:tag:theme:qloo:nature",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:nature"
+          },
+          {
+            "name": "World Music",
+            "tag_id": "urn:tag:genre:qloo:world_music",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:world_music"
+          },
+          {
+            "name": "Indigenous Music",
+            "tag_id": "urn:tag:genre:qloo:indigenous_music",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:indigenous_music"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:qloo:electronic",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:electronic"
+          },
+          {
+            "name": "Ambient",
+            "tag_id": "urn:tag:subgenre:qloo:ambient",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:ambient"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:subgenre:qloo:experimental",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:experimental"
+          }
+        ]
+      }
+    ]
+  }
+}

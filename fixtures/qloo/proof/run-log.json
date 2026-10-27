@@ -1,0 +1,35 @@
+{
+  "recordedAt": "2026-10-27T12:36:37.828Z",
+  "adapterVersion": "0.1.0",
+  "maxConcurrent": 3,
+  "liveCalls": 130,
+  "retries": 0,
+  "statusCounts": {
+    "200": 130
+  },
+  "rateLimited429": 0,
+  "wallSeconds": 40,
+  "byEndpoint": [
+    {
+      "endpoint": "/search",
+      "calls": 45,
+      "medianMs": 353,
+      "p95Ms": 435,
+      "maxMs": 1640
+    },
+    {
+      "endpoint": "/v2/insights",
+      "calls": 70,
+      "medianMs": 623,
+      "p95Ms": 2072,
+      "maxMs": 3180
+    },
+    {
+      "endpoint": "/v2/insights/compare",
+      "calls": 15,
+      "medianMs": 390,
+      "p95Ms": 466,
+      "maxMs": 466
+    }
+  ]
+}

@@ -1,0 +1,1243 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Miles Davis",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:32.961Z",
+  "latencyMs": 320,
+  "body": {
+    "results": [
+      {
+        "name": "Miles Davis",
+        "entity_id": "578CFC26-B696-449A-9655-3FB270DDA725",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "milesdavis"
+            },
+            "instagram": {
+              "id": "milesdavis"
+            },
+            "lastfm": {
+              "id": "miles%20davis",
+              "listeners": 2111284,
+              "scrobbles": 72137810
+            },
+            "musicbrainz": {
+              "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a"
+            },
+            "spotify": {
+              "id": "0kbYTNQb4Pb1rPbbaF0pT4"
+            },
+            "twitter": {
+              "id": "milesdavis"
+            },
+            "wikidata": {
+              "id": "q93341"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/578CFC26-B696-449A-9655-3FB270DDA725-420x-auto.jpg"
+          },
+          "short_description": "Miles Davis was an influential American jazz trumpeter, bandleader, and composer."
+        },
+        "popularity": 0.9991633238982359,
+        "disambiguation": "Miles Davis",
+        "tags": [
+          {
+            "name": "Bebop",
+            "tag_id": "urn:tag:genre:bebop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:bebop"
+          },
+          {
+            "name": "Trumpet",
+            "tag_id": "urn:tag:genre:trumpet",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:trumpet"
+          },
+          {
+            "name": "Blues",
+            "tag_id": "urn:tag:genre:blues",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:blues"
+          },
+          {
+            "name": "Fusion",
+            "tag_id": "urn:tag:genre:fusion",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:fusion"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:jazz",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:jazz"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Knowledgeable",
+            "tag_id": "urn:tag:audience:qloo:knowledgeable",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:knowledgeable"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:music:qloo:expressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:expressive"
+          },
+          {
+            "name": "Complex",
+            "tag_id": "urn:tag:music:qloo:complex",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:complex"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:music:qloo:atmospheric",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:atmospheric"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:music:qloo:experimental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:experimental"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Improvisational",
+            "tag_id": "urn:tag:style:qloo:improvisational",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:improvisational"
+          },
+          {
+            "name": "Charismatic",
+            "tag_id": "urn:tag:style:qloo:charismatic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:charismatic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Influential",
+            "tag_id": "urn:tag:characteristic:qloo:influential",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:influential"
+          },
+          {
+            "name": "Versatile",
+            "tag_id": "urn:tag:characteristic:qloo:versatile",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:versatile"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:characteristic:qloo:expressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:expressive"
+          },
+          {
+            "name": "Pioneering",
+            "tag_id": "urn:tag:characteristic:qloo:pioneering",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:pioneering"
+          },
+          {
+            "name": "Modal Jazz",
+            "tag_id": "urn:tag:style:qloo:modal_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:modal_jazz"
+          },
+          {
+            "name": "Cool Jazz",
+            "tag_id": "urn:tag:style:qloo:cool_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:cool_jazz"
+          },
+          {
+            "name": "Hard Bop",
+            "tag_id": "urn:tag:style:qloo:hard_bop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:hard_bop"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:style:qloo:jazz_fusion",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:jazz_fusion"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:style:qloo:post_bop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:post_bop"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:influence:qloo:jazz_fusion",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:jazz_fusion"
+          },
+          {
+            "name": "Funk",
+            "tag_id": "urn:tag:influence:qloo:funk",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:funk"
+          },
+          {
+            "name": "Rock",
+            "tag_id": "urn:tag:influence:qloo:rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:rock"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:influence:qloo:hip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:hip_hop"
+          },
+          {
+            "name": "Louis Armstrong",
+            "tag_id": "urn:tag:influenced_by:qloo:louis_armstrong",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:louis_armstrong"
+          },
+          {
+            "name": "Dizzy Gillespie",
+            "tag_id": "urn:tag:influenced_by:qloo:dizzy_gillespie",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:dizzy_gillespie"
+          },
+          {
+            "name": "Charlie Parker",
+            "tag_id": "urn:tag:influenced_by:qloo:charlie_parker",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:charlie_parker"
+          },
+          {
+            "name": "Clifford Brown",
+            "tag_id": "urn:tag:influenced_by:qloo:clifford_brown",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:clifford_brown"
+          },
+          {
+            "name": "Trumpet",
+            "tag_id": "urn:tag:instrument:qloo:trumpet",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:trumpet"
+          },
+          {
+            "name": "Flugelhorn",
+            "tag_id": "urn:tag:instrument:qloo:flugelhorn",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:flugelhorn"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:qloo:jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz"
+          },
+          {
+            "name": "Modal Jazz",
+            "tag_id": "urn:tag:genre:qloo:modal_jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:modal_jazz"
+          },
+          {
+            "name": "Cool Jazz",
+            "tag_id": "urn:tag:genre:qloo:cool_jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:cool_jazz"
+          },
+          {
+            "name": "Hard Bop",
+            "tag_id": "urn:tag:genre:qloo:hard_bop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hard_bop"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:genre:qloo:jazz_fusion",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz_fusion"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:genre:qloo:post_bop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:post_bop"
+          },
+          {
+            "name": "Bebop",
+            "tag_id": "urn:tag:subgenre:qloo:bebop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:bebop"
+          },
+          {
+            "name": "Avant-Garde Jazz",
+            "tag_id": "urn:tag:subgenre:qloo:avant_garde_jazz",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:avant_garde_jazz"
+          },
+          {
+            "name": "Funk",
+            "tag_id": "urn:tag:subgenre:qloo:funk",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:funk"
+          },
+          {
+            "name": "Rock",
+            "tag_id": "urn:tag:subgenre:qloo:rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:rock"
+          }
+        ]
+      },
+      {
+        "name": "Miles Davis Quintet",
+        "entity_id": "49847748-D853-4A57-B1B0-3C5D79E6C8EF",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "miles%20davis%20quintet",
+              "listeners": 505801,
+              "scrobbles": 4597812
+            },
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/49847748-D853-4A57-B1B0-3C5D79E6C8EF-420x-auto.jpg"
+          },
+          "short_description": "A seminal jazz group led by trumpeter Miles Davis, known for pioneering modal jazz and hard bop styles."
+        },
+        "popularity": 0.9805945123494068,
+        "disambiguation": "Miles Davis Quintet",
+        "tags": [
+          {
+            "name": "Trumpet",
+            "tag_id": "urn:tag:genre:trumpet",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:trumpet"
+          },
+          {
+            "name": "Fusion",
+            "tag_id": "urn:tag:genre:fusion",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:fusion"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:jazz",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:jazz"
+          },
+          {
+            "name": "Instrumental",
+            "tag_id": "urn:tag:genre:instrumental",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:instrumental"
+          },
+          {
+            "name": "Bebop",
+            "tag_id": "urn:tag:genre:bebop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:bebop"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Knowledgeable",
+            "tag_id": "urn:tag:audience:qloo:knowledgeable",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:knowledgeable"
+          },
+          {
+            "name": "Appreciative",
+            "tag_id": "urn:tag:audience:qloo:appreciative",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:appreciative"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Complex",
+            "tag_id": "urn:tag:music:qloo:complex",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:complex"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:music:qloo:expressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:expressive"
+          },
+          {
+            "name": "Sophisticated",
+            "tag_id": "urn:tag:music:qloo:sophisticated",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:sophisticated"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:music:qloo:dynamic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:dynamic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Spontaneous",
+            "tag_id": "urn:tag:style:qloo:spontaneous",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:spontaneous"
+          },
+          {
+            "name": "Interactive",
+            "tag_id": "urn:tag:style:qloo:interactive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:interactive"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Influential",
+            "tag_id": "urn:tag:characteristic:qloo:influential",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:influential"
+          },
+          {
+            "name": "Sophisticated",
+            "tag_id": "urn:tag:characteristic:qloo:sophisticated",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:sophisticated"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:characteristic:qloo:expressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:expressive"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:characteristic:qloo:dynamic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:dynamic"
+          },
+          {
+            "name": "Modal Jazz",
+            "tag_id": "urn:tag:style:qloo:modal_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:modal_jazz"
+          },
+          {
+            "name": "Hard Bop",
+            "tag_id": "urn:tag:style:qloo:hard_bop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:hard_bop"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:style:qloo:post_bop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:post_bop"
+          },
+          {
+            "name": "Cool Jazz",
+            "tag_id": "urn:tag:style:qloo:cool_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:cool_jazz"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:style:qloo:innovative",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:innovative"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:influence:qloo:post_bop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:post_bop"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:influence:qloo:jazz_fusion",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:jazz_fusion"
+          },
+          {
+            "name": "Modal Jazz",
+            "tag_id": "urn:tag:influence:qloo:modal_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:modal_jazz"
+          },
+          {
+            "name": "Hard Bop",
+            "tag_id": "urn:tag:influence:qloo:hard_bop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:hard_bop"
+          },
+          {
+            "name": "Charlie Parker",
+            "tag_id": "urn:tag:influenced_by:qloo:charlie_parker",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:charlie_parker"
+          },
+          {
+            "name": "Dizzy Gillespie",
+            "tag_id": "urn:tag:influenced_by:qloo:dizzy_gillespie",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:dizzy_gillespie"
+          },
+          {
+            "name": "Lester Young",
+            "tag_id": "urn:tag:influenced_by:qloo:lester_young",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:lester_young"
+          },
+          {
+            "name": "Clifford Brown",
+            "tag_id": "urn:tag:influenced_by:qloo:clifford_brown",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:clifford_brown"
+          },
+          {
+            "name": "Trumpet",
+            "tag_id": "urn:tag:instrument:qloo:trumpet",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:trumpet"
+          },
+          {
+            "name": "Tenor Saxophone",
+            "tag_id": "urn:tag:instrument:qloo:tenor_saxophone",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:tenor_saxophone"
+          },
+          {
+            "name": "Piano",
+            "tag_id": "urn:tag:instrument:qloo:piano",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:piano"
+          },
+          {
+            "name": "Double Bass",
+            "tag_id": "urn:tag:instrument:qloo:double_bass",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:double_bass"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:qloo:jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz"
+          },
+          {
+            "name": "Hard Bop",
+            "tag_id": "urn:tag:genre:qloo:hard_bop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hard_bop"
+          },
+          {
+            "name": "Modal Jazz",
+            "tag_id": "urn:tag:genre:qloo:modal_jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:modal_jazz"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:subgenre:qloo:post_bop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:post_bop"
+          },
+          {
+            "name": "Cool Jazz",
+            "tag_id": "urn:tag:subgenre:qloo:cool_jazz",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:cool_jazz"
+          }
+        ]
+      },
+      {
+        "name": "Miles Davis & Charlie Parker",
+        "entity_id": "9BFF98DD-28E2-4236-ACD6-EAE0A92D5911",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/9BFF98DD-28E2-4236-ACD6-EAE0A92D5911-420x-auto.jpg"
+          },
+          "short_description": "A legendary jazz collaboration between trumpeter Miles Davis and saxophonist Charlie Parker."
+        },
+        "popularity": 0.702362597879296,
+        "disambiguation": "Miles Davis & Charlie Parker"
+      },
+      {
+        "name": "Miles Davis Septet",
+        "entity_id": "352540A5-589A-4224-9E27-8C66552B57AE",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "miles%20davis%20septet",
+              "listeners": 1515,
+              "scrobbles": 15959
+            },
+            "musicbrainz": {
+              "id": "88130878-7ee9-4ce2-b24b-1dd9da898030"
+            },
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/352540A5-589A-4224-9E27-8C66552B57AE-420x-auto.jpg"
+          },
+          "short_description": "A jazz septet led by Miles Davis, known for innovative jazz compositions and performances."
+        },
+        "popularity": 0.45804642877626,
+        "disambiguation": "Miles Davis Septet",
+        "tags": [
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:jazz",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:jazz"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Knowledgeable",
+            "tag_id": "urn:tag:audience:qloo:knowledgeable",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:knowledgeable"
+          },
+          {
+            "name": "Appreciative",
+            "tag_id": "urn:tag:audience:qloo:appreciative",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:appreciative"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Complex",
+            "tag_id": "urn:tag:music:qloo:complex",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:complex"
+          },
+          {
+            "name": "Sophisticated",
+            "tag_id": "urn:tag:music:qloo:sophisticated",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:sophisticated"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:music:qloo:expressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:expressive"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:music:qloo:dynamic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:dynamic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Improvisational",
+            "tag_id": "urn:tag:style:qloo:improvisational",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:improvisational"
+          },
+          {
+            "name": "Collaborative",
+            "tag_id": "urn:tag:style:qloo:collaborative",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:collaborative"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:characteristic:qloo:experimental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:experimental"
+          },
+          {
+            "name": "Sophisticated",
+            "tag_id": "urn:tag:characteristic:qloo:sophisticated",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:sophisticated"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:characteristic:qloo:dynamic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:dynamic"
+          },
+          {
+            "name": "Influential",
+            "tag_id": "urn:tag:characteristic:qloo:influential",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:influential"
+          },
+          {
+            "name": "Modal",
+            "tag_id": "urn:tag:style:qloo:modal",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:modal"
+          },
+          {
+            "name": "Hard Bop",
+            "tag_id": "urn:tag:style:qloo:hard_bop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:hard_bop"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:style:qloo:post_bop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:post_bop"
+          },
+          {
+            "name": "Cool Jazz",
+            "tag_id": "urn:tag:style:qloo:cool_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:cool_jazz"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:style:qloo:innovative",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:innovative"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:influence:qloo:post_bop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:post_bop"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:influence:qloo:jazz_fusion",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:jazz_fusion"
+          },
+          {
+            "name": "Modal Jazz",
+            "tag_id": "urn:tag:influence:qloo:modal_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:modal_jazz"
+          },
+          {
+            "name": "Charlie Parker",
+            "tag_id": "urn:tag:influenced_by:qloo:charlie_parker",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:charlie_parker"
+          },
+          {
+            "name": "Dizzy Gillespie",
+            "tag_id": "urn:tag:influenced_by:qloo:dizzy_gillespie",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:dizzy_gillespie"
+          },
+          {
+            "name": "Bud Powell",
+            "tag_id": "urn:tag:influenced_by:qloo:bud_powell",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:bud_powell"
+          },
+          {
+            "name": "Clifford Brown",
+            "tag_id": "urn:tag:influenced_by:qloo:clifford_brown",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:clifford_brown"
+          },
+          {
+            "name": "Trumpet",
+            "tag_id": "urn:tag:instrument:qloo:trumpet",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:trumpet"
+          },
+          {
+            "name": "Saxophone",
+            "tag_id": "urn:tag:instrument:qloo:saxophone",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:saxophone"
+          },
+          {
+            "name": "Piano",
+            "tag_id": "urn:tag:instrument:qloo:piano",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:piano"
+          },
+          {
+            "name": "Double Bass",
+            "tag_id": "urn:tag:instrument:qloo:double_bass",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:double_bass"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:qloo:jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz"
+          },
+          {
+            "name": "Hard Bop",
+            "tag_id": "urn:tag:genre:qloo:hard_bop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hard_bop"
+          },
+          {
+            "name": "Modal Jazz",
+            "tag_id": "urn:tag:genre:qloo:modal_jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:modal_jazz"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:subgenre:qloo:post_bop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:post_bop"
+          },
+          {
+            "name": "Cool Jazz",
+            "tag_id": "urn:tag:subgenre:qloo:cool_jazz",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:cool_jazz"
+          }
+        ]
+      },
+      {
+        "name": "Miles Davis & The Modern Jazz Giants",
+        "entity_id": "34FC87C5-DD33-4841-A384-EB64EC39492E",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "miles%20davis%20%26%20the%20modern%20jazz%20giants",
+              "listeners": 1610,
+              "scrobbles": 8021
+            },
+            "musicbrainz": {
+              "id": "e1b6e38e-ab75-43fc-b994-bfeea9bc7626"
+            },
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/34FC87C5-DD33-4841-A384-EB64EC39492E-420x-auto.jpg"
+          },
+          "short_description": "A jazz group led by Miles Davis featuring prominent jazz musicians from the bebop and hard bop eras."
+        },
+        "popularity": 0.28738811987409374,
+        "disambiguation": "Miles Davis & The Modern Jazz Giants",
+        "tags": [
+          {
+            "name": "Piano",
+            "tag_id": "urn:tag:genre:piano",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:piano"
+          },
+          {
+            "name": "Bebop",
+            "tag_id": "urn:tag:genre:bebop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:bebop"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:jazz",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:jazz"
+          },
+          {
+            "name": "Trumpet",
+            "tag_id": "urn:tag:genre:trumpet",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:trumpet"
+          },
+          {
+            "name": "Swing",
+            "tag_id": "urn:tag:genre:swing",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:swing"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Knowledgeable",
+            "tag_id": "urn:tag:audience:qloo:knowledgeable",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:knowledgeable"
+          },
+          {
+            "name": "Appreciative",
+            "tag_id": "urn:tag:audience:qloo:appreciative",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:appreciative"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Complex",
+            "tag_id": "urn:tag:music:qloo:complex",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:complex"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:music:qloo:expressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:expressive"
+          },
+          {
+            "name": "Sophisticated",
+            "tag_id": "urn:tag:music:qloo:sophisticated",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:sophisticated"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:music:qloo:dynamic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:dynamic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Improvisational",
+            "tag_id": "urn:tag:style:qloo:improvisational",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:improvisational"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Collaborative",
+            "tag_id": "urn:tag:style:qloo:collaborative",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:collaborative"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Influential",
+            "tag_id": "urn:tag:characteristic:qloo:influential",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:influential"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:characteristic:qloo:expressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:expressive"
+          },
+          {
+            "name": "Sophisticated",
+            "tag_id": "urn:tag:characteristic:qloo:sophisticated",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:sophisticated"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:characteristic:qloo:dynamic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:dynamic"
+          },
+          {
+            "name": "Hard Bop",
+            "tag_id": "urn:tag:style:qloo:hard_bop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:hard_bop"
+          },
+          {
+            "name": "Bebop",
+            "tag_id": "urn:tag:style:qloo:bebop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:bebop"
+          },
+          {
+            "name": "Modal Jazz",
+            "tag_id": "urn:tag:style:qloo:modal_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:modal_jazz"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:style:qloo:post_bop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:post_bop"
+          },
+          {
+            "name": "Cool Jazz",
+            "tag_id": "urn:tag:style:qloo:cool_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:cool_jazz"
+          },
+          {
+            "name": "Modal Jazz",
+            "tag_id": "urn:tag:influence:qloo:modal_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:modal_jazz"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:influence:qloo:post_bop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:post_bop"
+          },
+          {
+            "name": "Fusion Jazz",
+            "tag_id": "urn:tag:influence:qloo:fusion_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:fusion_jazz"
+          },
+          {
+            "name": "Louis Armstrong",
+            "tag_id": "urn:tag:influenced_by:qloo:louis_armstrong",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:louis_armstrong"
+          },
+          {
+            "name": "Duke Ellington",
+            "tag_id": "urn:tag:influenced_by:qloo:duke_ellington",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:duke_ellington"
+          },
+          {
+            "name": "Charlie Parker",
+            "tag_id": "urn:tag:influenced_by:qloo:charlie_parker",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:charlie_parker"
+          },
+          {
+            "name": "Clifford Brown",
+            "tag_id": "urn:tag:influenced_by:qloo:clifford_brown",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:clifford_brown"
+          },
+          {
+            "name": "Trumpet",
+            "tag_id": "urn:tag:instrument:qloo:trumpet",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:trumpet"
+          },
+          {
+            "name": "Saxophone",
+            "tag_id": "urn:tag:instrument:qloo:saxophone",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:saxophone"
+          },
+          {
+            "name": "Piano",
+            "tag_id": "urn:tag:instrument:qloo:piano",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:piano"
+          },
+          {
+            "name": "Double Bass",
+            "tag_id": "urn:tag:instrument:qloo:double_bass",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:double_bass"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:qloo:jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz"
+          },
+          {
+            "name": "Hard Bop",
+            "tag_id": "urn:tag:genre:qloo:hard_bop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hard_bop"
+          },
+          {
+            "name": "Bebop",
+            "tag_id": "urn:tag:genre:qloo:bebop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:bebop"
+          },
+          {
+            "name": "Modal Jazz",
+            "tag_id": "urn:tag:subgenre:qloo:modal_jazz",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:modal_jazz"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:subgenre:qloo:post_bop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:post_bop"
+          }
+        ]
+      }
+    ]
+  }
+}

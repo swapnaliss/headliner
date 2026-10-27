@@ -1,0 +1,718 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Herbie Hancock",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:32.987Z",
+  "latencyMs": 345,
+  "body": {
+    "results": [
+      {
+        "name": "Herbie Hancock",
+        "entity_id": "3500B5F2-AA30-4596-A6A1-9D18DD42697F",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "herbiehancock"
+            },
+            "instagram": {
+              "id": "herbiehancock"
+            },
+            "lastfm": {
+              "id": "herbie%20hancock",
+              "listeners": 1388982,
+              "scrobbles": 19654665
+            },
+            "musicbrainz": {
+              "id": "27613b78-1b9d-4ec3-9db5-fa0743465fdd"
+            },
+            "spotify": {
+              "id": "2ZvrvbQNrHKwjT7qfGFFUW"
+            },
+            "twitter": {
+              "id": "herbiehancock"
+            },
+            "wikidata": {
+              "id": "q105875"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/3500B5F2-AA30-4596-A6A1-9D18DD42697F-420x-auto.jpg"
+          },
+          "short_description": "Herbie Hancock is an American jazz pianist, keyboardist, bandleader, and composer known for his influential work in jazz and jazz fusion."
+        },
+        "popularity": 0.9968557172304672,
+        "disambiguation": "Herbie Hancock",
+        "tags": [
+          {
+            "name": "Fusion",
+            "tag_id": "urn:tag:genre:fusion",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:fusion"
+          },
+          {
+            "name": "Piano",
+            "tag_id": "urn:tag:genre:piano",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:piano"
+          },
+          {
+            "name": "Funk",
+            "tag_id": "urn:tag:genre:funk",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:funk"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:jazz",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:jazz"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:genre:jazz_fusion",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:jazz_fusion"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Jazz-Loving",
+            "tag_id": "urn:tag:audience:qloo:jazz_loving",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:jazz_loving"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Funky",
+            "tag_id": "urn:tag:music:qloo:funky",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:funky"
+          },
+          {
+            "name": "Complex",
+            "tag_id": "urn:tag:music:qloo:complex",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:complex"
+          },
+          {
+            "name": "Groovy",
+            "tag_id": "urn:tag:music:qloo:groovy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:groovy"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:music:qloo:experimental",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:experimental"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Improvisational",
+            "tag_id": "urn:tag:style:qloo:improvisational",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:improvisational"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Versatile",
+            "tag_id": "urn:tag:characteristic:qloo:versatile",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:versatile"
+          },
+          {
+            "name": "Pioneering",
+            "tag_id": "urn:tag:characteristic:qloo:pioneering",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:pioneering"
+          },
+          {
+            "name": "Virtuosic",
+            "tag_id": "urn:tag:characteristic:qloo:virtuosic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:virtuosic"
+          },
+          {
+            "name": "Influential",
+            "tag_id": "urn:tag:characteristic:qloo:influential",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:influential"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:style:qloo:post_bop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:post_bop"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:style:qloo:jazz_fusion",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:jazz_fusion"
+          },
+          {
+            "name": "Funk Jazz",
+            "tag_id": "urn:tag:style:qloo:funk_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:funk_jazz"
+          },
+          {
+            "name": "Electro-Jazz",
+            "tag_id": "urn:tag:style:qloo:electro_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:electro_jazz"
+          },
+          {
+            "name": "Soul Jazz",
+            "tag_id": "urn:tag:style:qloo:soul_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:soul_jazz"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:influence:qloo:jazz_fusion",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:jazz_fusion"
+          },
+          {
+            "name": "Funk",
+            "tag_id": "urn:tag:influence:qloo:funk",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:funk"
+          },
+          {
+            "name": "Electronic Jazz",
+            "tag_id": "urn:tag:influence:qloo:electronic_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:electronic_jazz"
+          },
+          {
+            "name": "Acid Jazz",
+            "tag_id": "urn:tag:influence:qloo:acid_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:acid_jazz"
+          },
+          {
+            "name": "Miles Davis",
+            "tag_id": "urn:tag:influenced_by:qloo:miles_davis",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:miles_davis"
+          },
+          {
+            "name": "Thelonious Monk",
+            "tag_id": "urn:tag:influenced_by:qloo:thelonious_monk",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:thelonious_monk"
+          },
+          {
+            "name": "Bill Evans",
+            "tag_id": "urn:tag:influenced_by:qloo:bill_evans",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:bill_evans"
+          },
+          {
+            "name": "Bud Powell",
+            "tag_id": "urn:tag:influenced_by:qloo:bud_powell",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:bud_powell"
+          },
+          {
+            "name": "Piano",
+            "tag_id": "urn:tag:instrument:qloo:piano",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:piano"
+          },
+          {
+            "name": "Keyboards",
+            "tag_id": "urn:tag:instrument:qloo:keyboards",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:keyboards"
+          },
+          {
+            "name": "Synthesizers",
+            "tag_id": "urn:tag:instrument:qloo:synthesizers",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizers"
+          },
+          {
+            "name": "Electric Piano",
+            "tag_id": "urn:tag:instrument:qloo:electric_piano",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:electric_piano"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:qloo:jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:genre:qloo:jazz_fusion",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz_fusion"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:genre:qloo:post_bop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:post_bop"
+          },
+          {
+            "name": "Funk",
+            "tag_id": "urn:tag:genre:qloo:funk",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:funk"
+          },
+          {
+            "name": "Soul Jazz",
+            "tag_id": "urn:tag:subgenre:qloo:soul_jazz",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:soul_jazz"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:subgenre:qloo:electronic",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:electronic"
+          },
+          {
+            "name": "R&B",
+            "tag_id": "urn:tag:subgenre:qloo:r_b",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:r_b"
+          }
+        ]
+      },
+      {
+        "name": "Herbie Hancock with jaco pastorius",
+        "entity_id": "B0C9E16A-5EAD-4D90-84CC-1A7EBC6E8648",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/B0C9E16A-5EAD-4D90-84CC-1A7EBC6E8648-420x-auto.jpg"
+          },
+          "short_description": "A collaboration between jazz pianist Herbie Hancock and bassist Jaco Pastorius blending jazz fusion and funk."
+        },
+        "popularity": 0.6525736224364143,
+        "disambiguation": "Herbie Hancock with jaco pastorius"
+      },
+      {
+        "name": "Herbie Hancock - Michael Brecker - Roy Hargrove",
+        "entity_id": "CFA1A491-C101-4DEE-8BEF-26BC847D599F",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/CFA1A491-C101-4DEE-8BEF-26BC847D599F-420x-auto.jpg"
+          },
+          "short_description": "A collaborative jazz supergroup featuring legendary musicians Herbie Hancock, Michael Brecker, and Roy Hargrove."
+        },
+        "popularity": 0.19901758031921893,
+        "disambiguation": "Herbie Hancock - Michael Brecker - Roy Hargrove"
+      },
+      {
+        "name": "Herbie Hancock and The Headhunters",
+        "entity_id": "B578EAC2-C643-46F5-8824-63D6068485DC",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/B578EAC2-C643-46F5-8824-63D6068485DC-420x-auto.jpg"
+          },
+          "short_description": "A pioneering jazz fusion and funk group led by Herbie Hancock in the 1970s."
+        },
+        "popularity": 0.17417369800715898,
+        "disambiguation": "Herbie Hancock and The Headhunters"
+      },
+      {
+        "name": "Herbie Mann",
+        "entity_id": "353B3BC2-2023-412E-B55A-B9C2C67C603D",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "herbie%20mann",
+              "listeners": 191900,
+              "scrobbles": 1223664
+            },
+            "musicbrainz": {
+              "id": "04271c28-b9a7-4724-b7fd-022409fbce60"
+            },
+            "spotify": {
+              "id": "6ycoXr0Ayd89vFUT6BOiWo"
+            },
+            "wikidata": {
+              "id": "q551912"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/353B3BC2-2023-412E-B55A-B9C2C67C603D-420x-auto.jpg"
+          },
+          "short_description": "Herbie Mann was an American jazz flutist known for pioneering the use of the flute in jazz and for his fusion of jazz with world music styles."
+        },
+        "popularity": 0.9419184848065693,
+        "disambiguation": "Herbie Mann",
+        "tags": [
+          {
+            "name": "Latin Jazz",
+            "tag_id": "urn:tag:genre:latin_jazz",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:latin_jazz"
+          },
+          {
+            "name": "Flute",
+            "tag_id": "urn:tag:genre:flute",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:flute"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:jazz",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:jazz"
+          },
+          {
+            "name": "Funk",
+            "tag_id": "urn:tag:genre:funk",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:funk"
+          },
+          {
+            "name": "Fusion",
+            "tag_id": "urn:tag:genre:fusion",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:fusion"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:audience:qloo:eclectic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:eclectic"
+          },
+          {
+            "name": "Open-Minded",
+            "tag_id": "urn:tag:audience:qloo:open_minded",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:open_minded"
+          },
+          {
+            "name": "Adventurous",
+            "tag_id": "urn:tag:audience:qloo:adventurous",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:adventurous"
+          },
+          {
+            "name": "Jazz Enthusiasts",
+            "tag_id": "urn:tag:audience:qloo:jazz_enthusiasts",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:jazz_enthusiasts"
+          },
+          {
+            "name": "Smooth",
+            "tag_id": "urn:tag:music:qloo:smooth",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:smooth"
+          },
+          {
+            "name": "Rhythmic",
+            "tag_id": "urn:tag:music:qloo:rhythmic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:rhythmic"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Fusion",
+            "tag_id": "urn:tag:music:qloo:fusion",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:fusion"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Improvisational",
+            "tag_id": "urn:tag:style:qloo:improvisational",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:improvisational"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Versatile",
+            "tag_id": "urn:tag:characteristic:qloo:versatile",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:versatile"
+          },
+          {
+            "name": "Pioneering",
+            "tag_id": "urn:tag:characteristic:qloo:pioneering",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:pioneering"
+          },
+          {
+            "name": "Eclectic",
+            "tag_id": "urn:tag:characteristic:qloo:eclectic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:eclectic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:characteristic:qloo:expressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:expressive"
+          },
+          {
+            "name": "Latin Jazz",
+            "tag_id": "urn:tag:style:qloo:latin_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:latin_jazz"
+          },
+          {
+            "name": "Bossa Nova",
+            "tag_id": "urn:tag:style:qloo:bossa_nova",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:bossa_nova"
+          },
+          {
+            "name": "Afro-Cuban Jazz",
+            "tag_id": "urn:tag:style:qloo:afro_cuban_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:afro_cuban_jazz"
+          },
+          {
+            "name": "World Fusion",
+            "tag_id": "urn:tag:style:qloo:world_fusion",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:world_fusion"
+          },
+          {
+            "name": "Soul Jazz",
+            "tag_id": "urn:tag:style:qloo:soul_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:soul_jazz"
+          },
+          {
+            "name": "Latin Jazz",
+            "tag_id": "urn:tag:influence:qloo:latin_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:latin_jazz"
+          },
+          {
+            "name": "World Fusion",
+            "tag_id": "urn:tag:influence:qloo:world_fusion",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:world_fusion"
+          },
+          {
+            "name": "Smooth Jazz",
+            "tag_id": "urn:tag:influence:qloo:smooth_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:smooth_jazz"
+          },
+          {
+            "name": "Jazz Fusion",
+            "tag_id": "urn:tag:influence:qloo:jazz_fusion",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:jazz_fusion"
+          },
+          {
+            "name": "Charlie Parker",
+            "tag_id": "urn:tag:influenced_by:qloo:charlie_parker",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:charlie_parker"
+          },
+          {
+            "name": "Dizzy Gillespie",
+            "tag_id": "urn:tag:influenced_by:qloo:dizzy_gillespie",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:dizzy_gillespie"
+          },
+          {
+            "name": "Lester Young",
+            "tag_id": "urn:tag:influenced_by:qloo:lester_young",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:lester_young"
+          },
+          {
+            "name": "Latin Music Traditions",
+            "tag_id": "urn:tag:influenced_by:qloo:latin_music_traditions",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:latin_music_traditions"
+          },
+          {
+            "name": "Flute",
+            "tag_id": "urn:tag:instrument:qloo:flute",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:flute"
+          },
+          {
+            "name": "Bass Flute",
+            "tag_id": "urn:tag:instrument:qloo:bass_flute",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:bass_flute"
+          },
+          {
+            "name": "Saxophone",
+            "tag_id": "urn:tag:instrument:qloo:saxophone",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:saxophone"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:qloo:jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz"
+          },
+          {
+            "name": "Latin Jazz",
+            "tag_id": "urn:tag:genre:qloo:latin_jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:latin_jazz"
+          },
+          {
+            "name": "Bossa Nova",
+            "tag_id": "urn:tag:genre:qloo:bossa_nova",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:bossa_nova"
+          },
+          {
+            "name": "World Music",
+            "tag_id": "urn:tag:genre:qloo:world_music",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:world_music"
+          },
+          {
+            "name": "Soul Jazz",
+            "tag_id": "urn:tag:subgenre:qloo:soul_jazz",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:soul_jazz"
+          },
+          {
+            "name": "Funk",
+            "tag_id": "urn:tag:subgenre:qloo:funk",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:funk"
+          },
+          {
+            "name": "Pop Jazz",
+            "tag_id": "urn:tag:subgenre:qloo:pop_jazz",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:pop_jazz"
+          }
+        ]
+      }
+    ]
+  }
+}

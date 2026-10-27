@@ -1,0 +1,371 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Seeed",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:10.385Z",
+  "latencyMs": 334,
+  "body": {
+    "results": [
+      {
+        "name": "Seeed",
+        "entity_id": "4658CC71-4493-4E95-9921-811BD1D0C827",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "seeedde"
+            },
+            "instagram": {
+              "id": "seeed.de"
+            },
+            "lastfm": {
+              "id": "seeed",
+              "listeners": 507194,
+              "scrobbles": 13956319
+            },
+            "musicbrainz": {
+              "id": "49c43c49-328d-4b14-8a1d-be99cafaec14"
+            },
+            "spotify": {
+              "id": "5ISjkNS17JpCwiFtW80lpV"
+            },
+            "twitter": {
+              "id": "seeed"
+            },
+            "wikidata": {
+              "id": "q279408"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/4658CC71-4493-4E95-9921-811BD1D0C827-420x-auto.jpg"
+          },
+          "short_description": "Seeed is a German band known for their fusion of reggae, dancehall, and hip hop music."
+        },
+        "popularity": 0.9957828825515922,
+        "disambiguation": "Seeed",
+        "tags": [
+          {
+            "name": "German Reggae",
+            "tag_id": "urn:tag:genre:german_reggae",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:german_reggae"
+          },
+          {
+            "name": "Dancehall",
+            "tag_id": "urn:tag:genre:dancehall",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:dancehall"
+          },
+          {
+            "name": "Reggae",
+            "tag_id": "urn:tag:genre:reggae",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:reggae"
+          },
+          {
+            "name": "German",
+            "tag_id": "urn:tag:genre:german",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:german"
+          },
+          {
+            "name": "Diverse",
+            "tag_id": "urn:tag:audience:qloo:diverse",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:diverse"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:audience:qloo:energetic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:energetic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:music:qloo:energetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:energetic"
+          },
+          {
+            "name": "Rhythmic",
+            "tag_id": "urn:tag:music:qloo:rhythmic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:rhythmic"
+          },
+          {
+            "name": "Fusion",
+            "tag_id": "urn:tag:music:qloo:fusion",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:fusion"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Socially Conscious",
+            "tag_id": "urn:tag:music:qloo:socially_conscious",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:socially_conscious"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Multicultural",
+            "tag_id": "urn:tag:style:qloo:multicultural",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:multicultural"
+          },
+          {
+            "name": "Vibrant",
+            "tag_id": "urn:tag:style:qloo:vibrant",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:vibrant"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Fusion",
+            "tag_id": "urn:tag:characteristic:qloo:fusion",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:fusion"
+          },
+          {
+            "name": "Socially Conscious",
+            "tag_id": "urn:tag:characteristic:qloo:socially_conscious",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:socially_conscious"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:characteristic:qloo:dynamic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:dynamic"
+          },
+          {
+            "name": "German Reggae Fusion",
+            "tag_id": "urn:tag:style:qloo:german_reggae_fusion",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:german_reggae_fusion"
+          },
+          {
+            "name": "Dancehall Hip Hop",
+            "tag_id": "urn:tag:style:qloo:dancehall_hip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dancehall_hip_hop"
+          },
+          {
+            "name": "Multilingual Urban",
+            "tag_id": "urn:tag:style:qloo:multilingual_urban",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:multilingual_urban"
+          },
+          {
+            "name": "Brass-Driven Funk",
+            "tag_id": "urn:tag:style:qloo:brass_driven_funk",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:brass_driven_funk"
+          },
+          {
+            "name": "Socially Conscious",
+            "tag_id": "urn:tag:style:qloo:socially_conscious",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:socially_conscious"
+          },
+          {
+            "name": "German Reggae",
+            "tag_id": "urn:tag:influence:qloo:german_reggae",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:german_reggae"
+          },
+          {
+            "name": "European Dancehall",
+            "tag_id": "urn:tag:influence:qloo:european_dancehall",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:european_dancehall"
+          },
+          {
+            "name": "Urban Fusion",
+            "tag_id": "urn:tag:influence:qloo:urban_fusion",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:urban_fusion"
+          },
+          {
+            "name": "Bob Marley",
+            "tag_id": "urn:tag:influenced_by:qloo:bob_marley",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:bob_marley"
+          },
+          {
+            "name": "Fela Kuti",
+            "tag_id": "urn:tag:influenced_by:qloo:fela_kuti",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:fela_kuti"
+          },
+          {
+            "name": "Sly and Robbie",
+            "tag_id": "urn:tag:influenced_by:qloo:sly_and_robbie",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:sly_and_robbie"
+          },
+          {
+            "name": "The Roots",
+            "tag_id": "urn:tag:influenced_by:qloo:the_roots",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:the_roots"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Brass Instruments",
+            "tag_id": "urn:tag:instrument:qloo:brass_instruments",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:brass_instruments"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Bass Guitar",
+            "tag_id": "urn:tag:instrument:qloo:bass_guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:bass_guitar"
+          },
+          {
+            "name": "Keyboards",
+            "tag_id": "urn:tag:instrument:qloo:keyboards",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:keyboards"
+          },
+          {
+            "name": "Turntables",
+            "tag_id": "urn:tag:instrument:qloo:turntables",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:turntables"
+          },
+          {
+            "name": "Social Issues",
+            "tag_id": "urn:tag:theme:qloo:social_issues",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:social_issues"
+          },
+          {
+            "name": "Unity",
+            "tag_id": "urn:tag:theme:qloo:unity",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:unity"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Political Commentary",
+            "tag_id": "urn:tag:theme:qloo:political_commentary",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:political_commentary"
+          },
+          {
+            "name": "Urban Life",
+            "tag_id": "urn:tag:theme:qloo:urban_life",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:urban_life"
+          },
+          {
+            "name": "Reggae",
+            "tag_id": "urn:tag:genre:qloo:reggae",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:reggae"
+          },
+          {
+            "name": "Dancehall",
+            "tag_id": "urn:tag:genre:qloo:dancehall",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:dancehall"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:genre:qloo:hip_hop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hip_hop"
+          },
+          {
+            "name": "Funk",
+            "tag_id": "urn:tag:subgenre:qloo:funk",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:funk"
+          },
+          {
+            "name": "Ska",
+            "tag_id": "urn:tag:subgenre:qloo:ska",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:ska"
+          },
+          {
+            "name": "Pop",
+            "tag_id": "urn:tag:subgenre:qloo:pop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:pop"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,749 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Johnny Cash",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:32.223Z",
+  "latencyMs": 392,
+  "body": {
+    "results": [
+      {
+        "name": "Johnny Cash",
+        "entity_id": "7750E5CF-DD08-4836-9634-AB11246AAE7B",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "johnnycash"
+            },
+            "instagram": {
+              "id": "johnnycash"
+            },
+            "lastfm": {
+              "id": "johnny%20cash",
+              "listeners": 3685705,
+              "scrobbles": 141576161
+            },
+            "musicbrainz": {
+              "id": "d43d12a1-2dc9-4257-a2fd-0a3bb1081b86"
+            },
+            "spotify": {
+              "id": "6kACVPfCOnqzgfEF5ryl0x"
+            },
+            "twitter": {
+              "id": "johnnycash"
+            },
+            "wikidata": {
+              "id": "q42775"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/7750E5CF-DD08-4836-9634-AB11246AAE7B-420x-auto.jpg"
+          },
+          "short_description": "Johnny Cash was an American singer-songwriter known for his deep, calm bass-baritone voice and his genre-spanning music."
+        },
+        "popularity": 0.9997334781772607,
+        "disambiguation": "Johnny Cash",
+        "tags": [
+          {
+            "name": "Singer & Songwriter",
+            "tag_id": "urn:tag:genre:singer_songwriter",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:singer_songwriter"
+          },
+          {
+            "name": "Folk",
+            "tag_id": "urn:tag:genre:folk",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:folk"
+          },
+          {
+            "name": "Rock",
+            "tag_id": "urn:tag:genre:rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rock"
+          },
+          {
+            "name": "Classic Rock",
+            "tag_id": "urn:tag:genre:classic_rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:classic_rock"
+          },
+          {
+            "name": "Country",
+            "tag_id": "urn:tag:genre:country",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:country"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Diverse",
+            "tag_id": "urn:tag:audience:qloo:diverse",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:diverse"
+          },
+          {
+            "name": "Authentic",
+            "tag_id": "urn:tag:audience:qloo:authentic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:authentic"
+          },
+          {
+            "name": "Soulful",
+            "tag_id": "urn:tag:music:qloo:soulful",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:soulful"
+          },
+          {
+            "name": "Raw",
+            "tag_id": "urn:tag:music:qloo:raw",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:raw"
+          },
+          {
+            "name": "Authentic",
+            "tag_id": "urn:tag:music:qloo:authentic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:authentic"
+          },
+          {
+            "name": "Melancholic",
+            "tag_id": "urn:tag:music:qloo:melancholic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melancholic"
+          },
+          {
+            "name": "Narrative",
+            "tag_id": "urn:tag:music:qloo:narrative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:narrative"
+          },
+          {
+            "name": "Intimate",
+            "tag_id": "urn:tag:style:qloo:intimate",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:intimate"
+          },
+          {
+            "name": "Raw",
+            "tag_id": "urn:tag:style:qloo:raw",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:raw"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:style:qloo:emotive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:emotive"
+          },
+          {
+            "name": "Storytelling",
+            "tag_id": "urn:tag:style:qloo:storytelling",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:storytelling"
+          },
+          {
+            "name": "Deep",
+            "tag_id": "urn:tag:characteristic:qloo:deep",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:deep"
+          },
+          {
+            "name": "Rebellious",
+            "tag_id": "urn:tag:characteristic:qloo:rebellious",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:rebellious"
+          },
+          {
+            "name": "Soulful",
+            "tag_id": "urn:tag:characteristic:qloo:soulful",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:soulful"
+          },
+          {
+            "name": "Authentic",
+            "tag_id": "urn:tag:characteristic:qloo:authentic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:authentic"
+          },
+          {
+            "name": "Melancholic",
+            "tag_id": "urn:tag:characteristic:qloo:melancholic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:melancholic"
+          },
+          {
+            "name": "Outlaw Country",
+            "tag_id": "urn:tag:style:qloo:outlaw_country",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:outlaw_country"
+          },
+          {
+            "name": "Rockabilly",
+            "tag_id": "urn:tag:style:qloo:rockabilly",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:rockabilly"
+          },
+          {
+            "name": "Folk Ballad",
+            "tag_id": "urn:tag:style:qloo:folk_ballad",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:folk_ballad"
+          },
+          {
+            "name": "Gospel-Influenced Country",
+            "tag_id": "urn:tag:style:qloo:gospel_influenced_country",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:gospel_influenced_country"
+          },
+          {
+            "name": "Narrative Folk",
+            "tag_id": "urn:tag:style:qloo:narrative_folk",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:narrative_folk"
+          },
+          {
+            "name": "Outlaw Country",
+            "tag_id": "urn:tag:influence:qloo:outlaw_country",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:outlaw_country"
+          },
+          {
+            "name": "Alternative Country",
+            "tag_id": "urn:tag:influence:qloo:alternative_country",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:alternative_country"
+          },
+          {
+            "name": "Folk Rock",
+            "tag_id": "urn:tag:influence:qloo:folk_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:folk_rock"
+          },
+          {
+            "name": "Elvis Presley",
+            "tag_id": "urn:tag:influenced_by:qloo:elvis_presley",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:elvis_presley"
+          },
+          {
+            "name": "Bob Dylan",
+            "tag_id": "urn:tag:influenced_by:qloo:bob_dylan",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:bob_dylan"
+          },
+          {
+            "name": "Hank Williams",
+            "tag_id": "urn:tag:influenced_by:qloo:hank_williams",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:hank_williams"
+          },
+          {
+            "name": "Marty Robbins",
+            "tag_id": "urn:tag:influenced_by:qloo:marty_robbins",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:marty_robbins"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Harmonica",
+            "tag_id": "urn:tag:instrument:qloo:harmonica",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:harmonica"
+          },
+          {
+            "name": "Piano",
+            "tag_id": "urn:tag:instrument:qloo:piano",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:piano"
+          },
+          {
+            "name": "Redemption",
+            "tag_id": "urn:tag:theme:qloo:redemption",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:redemption"
+          },
+          {
+            "name": "Sorrow",
+            "tag_id": "urn:tag:theme:qloo:sorrow",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:sorrow"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Moral Struggle",
+            "tag_id": "urn:tag:theme:qloo:moral_struggle",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:moral_struggle"
+          },
+          {
+            "name": "Social Justice",
+            "tag_id": "urn:tag:theme:qloo:social_justice",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:social_justice"
+          },
+          {
+            "name": "Outlaw Life",
+            "tag_id": "urn:tag:theme:qloo:outlaw_life",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:outlaw_life"
+          },
+          {
+            "name": "Country",
+            "tag_id": "urn:tag:genre:qloo:country",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:country"
+          },
+          {
+            "name": "Folk",
+            "tag_id": "urn:tag:genre:qloo:folk",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:folk"
+          },
+          {
+            "name": "Rockabilly",
+            "tag_id": "urn:tag:genre:qloo:rockabilly",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:rockabilly"
+          },
+          {
+            "name": "Rock and Roll",
+            "tag_id": "urn:tag:subgenre:qloo:rock_and_roll",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:rock_and_roll"
+          },
+          {
+            "name": "Gospel",
+            "tag_id": "urn:tag:subgenre:qloo:gospel",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:gospel"
+          },
+          {
+            "name": "Blues",
+            "tag_id": "urn:tag:subgenre:qloo:blues",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:blues"
+          },
+          {
+            "name": "Baritone",
+            "tag_id": "urn:tag:artist:qloo:baritone",
+            "type": "urn:tag:artist:qloo",
+            "value": "urn:tag:artist:qloo:baritone"
+          }
+        ]
+      },
+      {
+        "name": "Johnny Cash with The Carter Family",
+        "entity_id": "6DFCE371-B4CF-4A74-A6F0-BEFFB9C396F6",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/6DFCE371-B4CF-4A74-A6F0-BEFFB9C396F6-420x-auto.jpg"
+          },
+          "short_description": "A collaboration between Johnny Cash and The Carter Family blending country and folk traditions."
+        },
+        "popularity": 0.5397775386203616,
+        "disambiguation": "Johnny Cash with The Carter Family",
+        "tags": [
+          {
+            "name": "World",
+            "tag_id": "urn:tag:genre:world",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:world"
+          },
+          {
+            "name": "Country",
+            "tag_id": "urn:tag:genre:country",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:country"
+          },
+          {
+            "name": "Christmas",
+            "tag_id": "urn:tag:genre:christmas",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:christmas"
+          },
+          {
+            "name": "Dialogue",
+            "tag_id": "urn:tag:genre:dialogue",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:dialogue"
+          },
+          {
+            "name": "Folk",
+            "tag_id": "urn:tag:genre:folk",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:folk"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Traditionalist",
+            "tag_id": "urn:tag:audience:qloo:traditionalist",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:traditionalist"
+          },
+          {
+            "name": "Roots-oriented",
+            "tag_id": "urn:tag:audience:qloo:roots_oriented",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:roots_oriented"
+          },
+          {
+            "name": "Authentic",
+            "tag_id": "urn:tag:music:qloo:authentic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:authentic"
+          },
+          {
+            "name": "Traditional",
+            "tag_id": "urn:tag:music:qloo:traditional",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:traditional"
+          },
+          {
+            "name": "Harmonic",
+            "tag_id": "urn:tag:music:qloo:harmonic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:harmonic"
+          },
+          {
+            "name": "Storytelling",
+            "tag_id": "urn:tag:music:qloo:storytelling",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:storytelling"
+          },
+          {
+            "name": "Roots-oriented",
+            "tag_id": "urn:tag:music:qloo:roots_oriented",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:roots_oriented"
+          },
+          {
+            "name": "Intimate",
+            "tag_id": "urn:tag:style:qloo:intimate",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:intimate"
+          },
+          {
+            "name": "Soulful",
+            "tag_id": "urn:tag:style:qloo:soulful",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:soulful"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Authentic",
+            "tag_id": "urn:tag:style:qloo:authentic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:authentic"
+          },
+          {
+            "name": "Traditional",
+            "tag_id": "urn:tag:characteristic:qloo:traditional",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:traditional"
+          },
+          {
+            "name": "Authentic",
+            "tag_id": "urn:tag:characteristic:qloo:authentic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:authentic"
+          },
+          {
+            "name": "Harmonic",
+            "tag_id": "urn:tag:characteristic:qloo:harmonic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:harmonic"
+          },
+          {
+            "name": "Storytelling",
+            "tag_id": "urn:tag:characteristic:qloo:storytelling",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:storytelling"
+          },
+          {
+            "name": "Roots-oriented",
+            "tag_id": "urn:tag:characteristic:qloo:roots_oriented",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:roots_oriented"
+          },
+          {
+            "name": "Traditional Country",
+            "tag_id": "urn:tag:style:qloo:traditional_country",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:traditional_country"
+          },
+          {
+            "name": "Folk Balladry",
+            "tag_id": "urn:tag:style:qloo:folk_balladry",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:folk_balladry"
+          },
+          {
+            "name": "Roots Americana",
+            "tag_id": "urn:tag:style:qloo:roots_americana",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:roots_americana"
+          },
+          {
+            "name": "Harmonic Vocal",
+            "tag_id": "urn:tag:style:qloo:harmonic_vocal",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:harmonic_vocal"
+          },
+          {
+            "name": "Storytelling Lyricism",
+            "tag_id": "urn:tag:style:qloo:storytelling_lyricism",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:storytelling_lyricism"
+          },
+          {
+            "name": "Country Rock",
+            "tag_id": "urn:tag:influence:qloo:country_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:country_rock"
+          },
+          {
+            "name": "Americana",
+            "tag_id": "urn:tag:influence:qloo:americana",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:americana"
+          },
+          {
+            "name": "Folk Rock",
+            "tag_id": "urn:tag:influence:qloo:folk_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:folk_rock"
+          },
+          {
+            "name": "The Carter Family",
+            "tag_id": "urn:tag:influenced_by:qloo:the_carter_family",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:the_carter_family"
+          },
+          {
+            "name": "Jimmie Rodgers",
+            "tag_id": "urn:tag:influenced_by:qloo:jimmie_rodgers",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:jimmie_rodgers"
+          },
+          {
+            "name": "Bob Dylan",
+            "tag_id": "urn:tag:influenced_by:qloo:bob_dylan",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:bob_dylan"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Autoharp",
+            "tag_id": "urn:tag:instrument:qloo:autoharp",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:autoharp"
+          },
+          {
+            "name": "Fiddle",
+            "tag_id": "urn:tag:instrument:qloo:fiddle",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:fiddle"
+          },
+          {
+            "name": "Banjo",
+            "tag_id": "urn:tag:instrument:qloo:banjo",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:banjo"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Faith",
+            "tag_id": "urn:tag:theme:qloo:faith",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:faith"
+          },
+          {
+            "name": "Struggle",
+            "tag_id": "urn:tag:theme:qloo:struggle",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:struggle"
+          },
+          {
+            "name": "Redemption",
+            "tag_id": "urn:tag:theme:qloo:redemption",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:redemption"
+          },
+          {
+            "name": "Family",
+            "tag_id": "urn:tag:theme:qloo:family",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:family"
+          },
+          {
+            "name": "Country",
+            "tag_id": "urn:tag:genre:qloo:country",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:country"
+          },
+          {
+            "name": "Folk",
+            "tag_id": "urn:tag:genre:qloo:folk",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:folk"
+          },
+          {
+            "name": "Americana",
+            "tag_id": "urn:tag:genre:qloo:americana",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:americana"
+          },
+          {
+            "name": "Gospel",
+            "tag_id": "urn:tag:subgenre:qloo:gospel",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:gospel"
+          },
+          {
+            "name": "Bluegrass",
+            "tag_id": "urn:tag:subgenre:qloo:bluegrass",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:bluegrass"
+          },
+          {
+            "name": "Baritone",
+            "tag_id": "urn:tag:artist:qloo:baritone",
+            "type": "urn:tag:artist:qloo",
+            "value": "urn:tag:artist:qloo:baritone"
+          }
+        ]
+      },
+      {
+        "name": "Johnny Cash with Waylon Jennings",
+        "entity_id": "852B4DB8-9E54-48BE-9F78-F49B135F081C",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/852B4DB8-9E54-48BE-9F78-F49B135F081C-420x-auto.jpg"
+          },
+          "short_description": "A collaborative country music duo featuring Johnny Cash and Waylon Jennings."
+        },
+        "popularity": 0.3761871185617268,
+        "disambiguation": "Johnny Cash with Waylon Jennings"
+      },
+      {
+        "name": "Johnny Cash with Neil Young",
+        "entity_id": "006057BC-E219-44EF-A4D3-563D7424EB9B",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/006057BC-E219-44EF-A4D3-563D7424EB9B-420x-auto.jpg"
+          },
+          "short_description": "A collaboration between iconic country and rock musicians Johnny Cash and Neil Young."
+        },
+        "popularity": 0.22155722965746885,
+        "disambiguation": "Johnny Cash with Neil Young"
+      },
+      {
+        "name": "Johnny Cash and the Original Tennessee Two",
+        "entity_id": "93817C3E-82E0-4865-8088-58B3C6DDCCD9",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/93817C3E-82E0-4865-8088-58B3C6DDCCD9-420x-auto.jpg"
+          },
+          "short_description": "A pioneering country and rockabilly band backing Johnny Cash in the 1950s."
+        },
+        "popularity": 0.17417369800715898,
+        "disambiguation": "Johnny Cash and the Original Tennessee Two"
+      }
+    ]
+  }
+}

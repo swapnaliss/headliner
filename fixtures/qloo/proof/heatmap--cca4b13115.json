@@ -1,0 +1,77 @@
+{
+  "endpoint": "/v2/insights",
+  "params": {
+    "filter.location.query": "Seoul",
+    "filter.type": "urn:heatmap",
+    "signal.interests.entities": "4658CC71-4493-4E95-9921-811BD1D0C827"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:11.619Z",
+  "latencyMs": 608,
+  "body": {
+    "success": true,
+    "results": {
+      "heatmap": [
+        {
+          "location": {
+            "latitude": 37.514877,
+            "longitude": 127.01637,
+            "geohash": "wydm6m6"
+          },
+          "query": {
+            "affinity": 1,
+            "affinity_rank": 0.337139,
+            "popularity": 1,
+            "entity_artist_affinity_rank": 0.337139,
+            "entity_artist_affinity": 1
+          }
+        },
+        {
+          "location": {
+            "latitude": 37.568436,
+            "longitude": 126.97655,
+            "geohash": "wydm9rj"
+          },
+          "query": {
+            "affinity": 0.5,
+            "affinity_rank": 0.241649,
+            "popularity": 0.5,
+            "entity_artist_affinity_rank": 0.241649,
+            "entity_artist_affinity": 0.5
+          }
+        },
+        {
+          "location": {
+            "latitude": 37.57805,
+            "longitude": 126.97655,
+            "geohash": "wydmc2v"
+          },
+          "query": {
+            "affinity": 0,
+            "affinity_rank": 0.136339,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.136339,
+            "entity_artist_affinity": 0
+          }
+        }
+      ]
+    },
+    "query": {
+      "localities": {
+        "filter": [
+          {
+            "entity_id": "E8482C12-A5F9-4E70-8713-787576873753",
+            "name": "Seoul",
+            "subtype": "urn:entity:locality",
+            "location": {
+              "lat": 37.55192941888345,
+              "lon": 126.99181138055098
+            },
+            "popularity": 0.9997057,
+            "disambiguation": "Seoul, South Korea"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,452 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "BTS",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:24.693Z",
+  "latencyMs": 332,
+  "body": {
+    "results": [
+      {
+        "name": "BTS",
+        "entity_id": "F347D506-CB6F-46FA-9A8B-AFBC31C71A1A",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "bangtan.official"
+            },
+            "instagram": {
+              "id": "bts.bighitofficial"
+            },
+            "lastfm": {
+              "id": "bts",
+              "listeners": 1905832
+            },
+            "musicbrainz": {
+              "id": "0d79fe8e-ba27-4859-bb8c-2f255f346853"
+            },
+            "spotify": {
+              "id": "3Nrfpe0tUJi4K4DXYWgMUX"
+            },
+            "twitter": {
+              "id": "bts_jp_official"
+            },
+            "wikidata": {
+              "id": "q13580495"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/F347D506-CB6F-46FA-9A8B-AFBC31C71A1A-420x-auto.jpg"
+          },
+          "short_description": "A South Korean boy band known for their diverse music styles and global influence."
+        },
+        "popularity": 0.9956040767717798,
+        "disambiguation": "BTS",
+        "tags": [
+          {
+            "name": "Korean",
+            "tag_id": "urn:tag:genre:korean",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:korean"
+          },
+          {
+            "name": "K Pop",
+            "tag_id": "urn:tag:genre:k_pop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:k_pop"
+          },
+          {
+            "name": "Kpop",
+            "tag_id": "urn:tag:genre:kpop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:kpop"
+          },
+          {
+            "name": "Bts",
+            "tag_id": "urn:tag:genre:bts",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:bts"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Diverse",
+            "tag_id": "urn:tag:audience:qloo:diverse",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:diverse"
+          },
+          {
+            "name": "Catchy",
+            "tag_id": "urn:tag:music:qloo:catchy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:catchy"
+          },
+          {
+            "name": "Emotional",
+            "tag_id": "urn:tag:music:qloo:emotional",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:emotional"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:music:qloo:energetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:energetic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Polished",
+            "tag_id": "urn:tag:music:qloo:polished",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:polished"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Choreographed",
+            "tag_id": "urn:tag:style:qloo:choreographed",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:choreographed"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Versatile",
+            "tag_id": "urn:tag:characteristic:qloo:versatile",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:versatile"
+          },
+          {
+            "name": "Charismatic",
+            "tag_id": "urn:tag:characteristic:qloo:charismatic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:charismatic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Socially Conscious",
+            "tag_id": "urn:tag:characteristic:qloo:socially_conscious",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:socially_conscious"
+          },
+          {
+            "name": "K-Pop",
+            "tag_id": "urn:tag:style:qloo:k_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:k_pop"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:style:qloo:hip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:hip_hop"
+          },
+          {
+            "name": "R&B",
+            "tag_id": "urn:tag:style:qloo:r_b",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:r_b"
+          },
+          {
+            "name": "Dance Pop",
+            "tag_id": "urn:tag:style:qloo:dance_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dance_pop"
+          },
+          {
+            "name": "Trap",
+            "tag_id": "urn:tag:style:qloo:trap",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:trap"
+          },
+          {
+            "name": "K-Pop",
+            "tag_id": "urn:tag:influence:qloo:k_pop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:k_pop"
+          },
+          {
+            "name": "Pop",
+            "tag_id": "urn:tag:influence:qloo:pop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:pop"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:influence:qloo:hip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:hip_hop"
+          },
+          {
+            "name": "R&B",
+            "tag_id": "urn:tag:influence:qloo:r_b",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:r_b"
+          },
+          {
+            "name": "Eminem",
+            "tag_id": "urn:tag:influenced_by:qloo:eminem",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:eminem"
+          },
+          {
+            "name": "Drake",
+            "tag_id": "urn:tag:influenced_by:qloo:drake",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:drake"
+          },
+          {
+            "name": "Justin Bieber",
+            "tag_id": "urn:tag:influenced_by:qloo:justin_bieber",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:justin_bieber"
+          },
+          {
+            "name": "Michael Jackson",
+            "tag_id": "urn:tag:influenced_by:qloo:michael_jackson",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:michael_jackson"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Rap",
+            "tag_id": "urn:tag:instrument:qloo:rap",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:rap"
+          },
+          {
+            "name": "Self-Love",
+            "tag_id": "urn:tag:theme:qloo:self_love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:self_love"
+          },
+          {
+            "name": "Mental Health",
+            "tag_id": "urn:tag:theme:qloo:mental_health",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:mental_health"
+          },
+          {
+            "name": "Youth",
+            "tag_id": "urn:tag:theme:qloo:youth",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:youth"
+          },
+          {
+            "name": "Social Commentary",
+            "tag_id": "urn:tag:theme:qloo:social_commentary",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:social_commentary"
+          },
+          {
+            "name": "Dreams",
+            "tag_id": "urn:tag:theme:qloo:dreams",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:dreams"
+          },
+          {
+            "name": "K-Pop",
+            "tag_id": "urn:tag:genre:qloo:k_pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:k_pop"
+          },
+          {
+            "name": "Pop",
+            "tag_id": "urn:tag:genre:qloo:pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:pop"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:genre:qloo:hip_hop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hip_hop"
+          },
+          {
+            "name": "R&B",
+            "tag_id": "urn:tag:genre:qloo:r_b",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:r_b"
+          },
+          {
+            "name": "EDM",
+            "tag_id": "urn:tag:subgenre:qloo:edm",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:edm"
+          },
+          {
+            "name": "Dance Pop",
+            "tag_id": "urn:tag:subgenre:qloo:dance_pop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:dance_pop"
+          },
+          {
+            "name": "Trap",
+            "tag_id": "urn:tag:subgenre:qloo:trap",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:trap"
+          },
+          {
+            "name": "Funk",
+            "tag_id": "urn:tag:subgenre:qloo:funk",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:funk"
+          }
+        ]
+      },
+      {
+        "name": "BTS World",
+        "entity_id": "C3B84F97-9975-4C03-B0CF-41EC3778FDFD",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/C3B84F97-9975-4C03-B0CF-41EC3778FDFD-420x-auto.jpg"
+          },
+          "short_description": "South Korean boy band known for their diverse music and global influence."
+        },
+        "popularity": 0.8593304566969512,
+        "disambiguation": "BTS World"
+      },
+      {
+        "name": "BTS, Halsey",
+        "entity_id": "D8FFAD18-4448-4550-9749-383E8619D8DC",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/D8FFAD18-4448-4550-9749-383E8619D8DC-420x-auto.jpg"
+          },
+          "short_description": "South Korean boy band known for their diverse music and global influence."
+        },
+        "popularity": 0.6478437035062802,
+        "disambiguation": "BTS, Halsey"
+      },
+      {
+        "name": "BTS (방탄소년단) MAP OF THE SOUL",
+        "entity_id": "11A8489C-B85F-47CD-AEDF-E22EFC05ED31",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/11A8489C-B85F-47CD-AEDF-E22EFC05ED31-420x-auto.jpg"
+          },
+          "short_description": "South Korean boy band known for their diverse music and global influence."
+        },
+        "popularity": 0.6333435668716748,
+        "disambiguation": "BTS (방탄소년단) MAP OF THE SOUL"
+      },
+      {
+        "name": "BTS (baLAnce and The Traveling Sounds)",
+        "entity_id": "493E9080-D669-4CE3-8755-4C8811BF432D",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/493E9080-D669-4CE3-8755-4C8811BF432D-420x-auto.jpg"
+          },
+          "short_description": "South Korean boy band known for their dynamic music and global influence."
+        },
+        "popularity": 0.6179696435017594,
+        "disambiguation": "BTS (baLAnce and The Traveling Sounds)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1351 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Run the Jewels",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:36.438Z",
+  "latencyMs": 379,
+  "body": {
+    "results": [
+      {
+        "name": "Run the Jewels",
+        "entity_id": "16356604-84CC-4EAA-A053-2259CF69C4E3",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "therealrunthejewels"
+            },
+            "instagram": {
+              "id": "runthejewels"
+            },
+            "lastfm": {
+              "id": "run%20the%20jewels",
+              "listeners": 751172,
+              "scrobbles": 44227300
+            },
+            "musicbrainz": {
+              "id": "a80c5dc5-b12e-4667-9f5a-b568961f3839"
+            },
+            "spotify": {
+              "id": "4RnBFZRiMLRyZy0AzzTg2C"
+            },
+            "twitter": {
+              "id": "runjewels"
+            },
+            "wikidata": {
+              "id": "q15052731"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/16356604-84CC-4EAA-A053-2259CF69C4E3-420x-auto.jpg"
+          },
+          "short_description": "Run the Jewels is an American hip hop duo known for their aggressive style and politically charged lyrics."
+        },
+        "popularity": 0.996191099520598,
+        "disambiguation": "Run the Jewels",
+        "tags": [
+          {
+            "name": "Underground Hip Hop",
+            "tag_id": "urn:tag:genre:underground_hip_hop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:underground_hip_hop"
+          },
+          {
+            "name": "Hip - Hop",
+            "tag_id": "urn:tag:genre:hip_hop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:hip_hop"
+          },
+          {
+            "name": "Rap",
+            "tag_id": "urn:tag:genre:rap",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rap"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Engaged",
+            "tag_id": "urn:tag:audience:qloo:engaged",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:engaged"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Socially Conscious",
+            "tag_id": "urn:tag:audience:qloo:socially_conscious",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:socially_conscious"
+          },
+          {
+            "name": "Aggressive",
+            "tag_id": "urn:tag:music:qloo:aggressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:aggressive"
+          },
+          {
+            "name": "Hard-Hitting",
+            "tag_id": "urn:tag:music:qloo:hard_hitting",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:hard_hitting"
+          },
+          {
+            "name": "Political",
+            "tag_id": "urn:tag:music:qloo:political",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:political"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:music:qloo:energetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:energetic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Intense",
+            "tag_id": "urn:tag:style:qloo:intense",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:intense"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Aggressive",
+            "tag_id": "urn:tag:characteristic:qloo:aggressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:aggressive"
+          },
+          {
+            "name": "Politically Charged",
+            "tag_id": "urn:tag:characteristic:qloo:politically_charged",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:politically_charged"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Socially Conscious",
+            "tag_id": "urn:tag:characteristic:qloo:socially_conscious",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:socially_conscious"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Political Hip Hop",
+            "tag_id": "urn:tag:style:qloo:political_hip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:political_hip_hop"
+          },
+          {
+            "name": "Alternative Hip Hop",
+            "tag_id": "urn:tag:style:qloo:alternative_hip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:alternative_hip_hop"
+          },
+          {
+            "name": "Hard-Hitting",
+            "tag_id": "urn:tag:style:qloo:hard_hitting",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:hard_hitting"
+          },
+          {
+            "name": "Socially Conscious",
+            "tag_id": "urn:tag:style:qloo:socially_conscious",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:socially_conscious"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:style:qloo:experimental",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental"
+          },
+          {
+            "name": "Political Hip Hop",
+            "tag_id": "urn:tag:influence:qloo:political_hip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:political_hip_hop"
+          },
+          {
+            "name": "Alternative Hip Hop",
+            "tag_id": "urn:tag:influence:qloo:alternative_hip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:alternative_hip_hop"
+          },
+          {
+            "name": "Conscious Hip Hop",
+            "tag_id": "urn:tag:influence:qloo:conscious_hip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:conscious_hip_hop"
+          },
+          {
+            "name": "Public Enemy",
+            "tag_id": "urn:tag:influenced_by:qloo:public_enemy",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:public_enemy"
+          },
+          {
+            "name": "Beastie Boys",
+            "tag_id": "urn:tag:influenced_by:qloo:beastie_boys",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:beastie_boys"
+          },
+          {
+            "name": "Wu-Tang Clan",
+            "tag_id": "urn:tag:influenced_by:qloo:wu_tang_clan",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:wu_tang_clan"
+          },
+          {
+            "name": "Outkast",
+            "tag_id": "urn:tag:influenced_by:qloo:outkast",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:outkast"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Synthesizers",
+            "tag_id": "urn:tag:instrument:qloo:synthesizers",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizers"
+          },
+          {
+            "name": "Drum Machines",
+            "tag_id": "urn:tag:instrument:qloo:drum_machines",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drum_machines"
+          },
+          {
+            "name": "Samplers",
+            "tag_id": "urn:tag:instrument:qloo:samplers",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:samplers"
+          },
+          {
+            "name": "Social Justice",
+            "tag_id": "urn:tag:theme:qloo:social_justice",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:social_justice"
+          },
+          {
+            "name": "Political Activism",
+            "tag_id": "urn:tag:theme:qloo:political_activism",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:political_activism"
+          },
+          {
+            "name": "Police Brutality",
+            "tag_id": "urn:tag:theme:qloo:police_brutality",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:police_brutality"
+          },
+          {
+            "name": "Inequality",
+            "tag_id": "urn:tag:theme:qloo:inequality",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:inequality"
+          },
+          {
+            "name": "Resistance",
+            "tag_id": "urn:tag:theme:qloo:resistance",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:resistance"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:genre:qloo:hip_hop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hip_hop"
+          },
+          {
+            "name": "Rap",
+            "tag_id": "urn:tag:genre:qloo:rap",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:rap"
+          },
+          {
+            "name": "Alternative Hip Hop",
+            "tag_id": "urn:tag:subgenre:qloo:alternative_hip_hop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:alternative_hip_hop"
+          },
+          {
+            "name": "Political Hip Hop",
+            "tag_id": "urn:tag:subgenre:qloo:political_hip_hop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:political_hip_hop"
+          }
+        ]
+      },
+      {
+        "name": "Run-D.M.C.",
+        "entity_id": "FF9A754B-4BB2-45B3-8FB7-40F091E760DD",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "rundmc"
+            },
+            "instagram": {
+              "id": "rundmc"
+            },
+            "lastfm": {},
+            "musicbrainz": {
+              "id": "5ecc3f72-20a6-47a0-8dc5-fb0b3dadeea0"
+            },
+            "spotify": {
+              "id": "3CQIn7N5CuRDP8wEI7FiDA"
+            },
+            "twitter": {
+              "id": "officialrundmc"
+            },
+            "wikidata": {
+              "id": "q159351"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/FF9A754B-4BB2-45B3-8FB7-40F091E760DD-420x-auto.jpg"
+          },
+          "short_description": "Run-D.M.C. is a pioneering American hip hop group known for their influential role in the development of rap music and culture."
+        },
+        "popularity": 0.9956648032630367,
+        "disambiguation": "Run-D.M.C."
+      },
+      {
+        "name": "Straylight Run",
+        "entity_id": "E848C799-F89F-48FB-87EE-DC73A907E05B",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "straylightrun"
+            },
+            "lastfm": {
+              "id": "straylight%20run",
+              "listeners": 435156,
+              "scrobbles": 7689843
+            },
+            "musicbrainz": {
+              "id": "ffe16bba-4d84-409b-8f22-5242c60b930f"
+            },
+            "spotify": {
+              "id": "1tjsxXugls5CwUxSlsDgKB"
+            },
+            "twitter": {
+              "id": "straylightrun"
+            },
+            "wikidata": {
+              "id": "q1676074"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/E848C799-F89F-48FB-87EE-DC73A907E05B-420x-auto.jpg"
+          },
+          "short_description": "Straylight Run is an American indie rock band known for their emotive lyrics and melodic sound."
+        },
+        "popularity": 0.9932796016342174,
+        "disambiguation": "Straylight Run",
+        "tags": [
+          {
+            "name": "Indie",
+            "tag_id": "urn:tag:genre:indie",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:indie"
+          },
+          {
+            "name": "Emo",
+            "tag_id": "urn:tag:genre:emo",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:emo"
+          },
+          {
+            "name": "Alternative Rock",
+            "tag_id": "urn:tag:genre:alternative_rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:alternative_rock"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:genre:indie_rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:indie_rock"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:audience:qloo:emotive",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:emotive"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:music:qloo:emotive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:emotive"
+          },
+          {
+            "name": "Introspective",
+            "tag_id": "urn:tag:music:qloo:introspective",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:introspective"
+          },
+          {
+            "name": "Harmonious",
+            "tag_id": "urn:tag:music:qloo:harmonious",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:harmonious"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:music:qloo:energetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:energetic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Intimate",
+            "tag_id": "urn:tag:style:qloo:intimate",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:intimate"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:characteristic:qloo:emotive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:emotive"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:characteristic:qloo:melodic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:melodic"
+          },
+          {
+            "name": "Introspective",
+            "tag_id": "urn:tag:characteristic:qloo:introspective",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:introspective"
+          },
+          {
+            "name": "Harmonious",
+            "tag_id": "urn:tag:characteristic:qloo:harmonious",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:harmonious"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Piano-Driven Indie Rock",
+            "tag_id": "urn:tag:style:qloo:piano_driven_indie_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:piano_driven_indie_rock"
+          },
+          {
+            "name": "Emotive Emo Rock",
+            "tag_id": "urn:tag:style:qloo:emotive_emo_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:emotive_emo_rock"
+          },
+          {
+            "name": "Melodic Alternative Rock",
+            "tag_id": "urn:tag:style:qloo:melodic_alternative_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:melodic_alternative_rock"
+          },
+          {
+            "name": "Harmonious Vocal Interplay",
+            "tag_id": "urn:tag:style:qloo:harmonious_vocal_interplay",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:harmonious_vocal_interplay"
+          },
+          {
+            "name": "Introspective Lyricism",
+            "tag_id": "urn:tag:style:qloo:introspective_lyricism",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:introspective_lyricism"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:influence:qloo:indie_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:indie_rock"
+          },
+          {
+            "name": "Emo",
+            "tag_id": "urn:tag:influence:qloo:emo",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:emo"
+          },
+          {
+            "name": "Alternative Rock",
+            "tag_id": "urn:tag:influence:qloo:alternative_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:alternative_rock"
+          },
+          {
+            "name": "Jimmy Eat World",
+            "tag_id": "urn:tag:influenced_by:qloo:jimmy_eat_world",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:jimmy_eat_world"
+          },
+          {
+            "name": "The Get Up Kids",
+            "tag_id": "urn:tag:influenced_by:qloo:the_get_up_kids",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:the_get_up_kids"
+          },
+          {
+            "name": "Sunny Day Real Estate",
+            "tag_id": "urn:tag:influenced_by:qloo:sunny_day_real_estate",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:sunny_day_real_estate"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Piano",
+            "tag_id": "urn:tag:instrument:qloo:piano",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:piano"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Bass Guitar",
+            "tag_id": "urn:tag:instrument:qloo:bass_guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:bass_guitar"
+          },
+          {
+            "name": "Introspection",
+            "tag_id": "urn:tag:theme:qloo:introspection",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:introspection"
+          },
+          {
+            "name": "Relationships",
+            "tag_id": "urn:tag:theme:qloo:relationships",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:relationships"
+          },
+          {
+            "name": "Emotional Struggle",
+            "tag_id": "urn:tag:theme:qloo:emotional_struggle",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:emotional_struggle"
+          },
+          {
+            "name": "Self-Discovery",
+            "tag_id": "urn:tag:theme:qloo:self_discovery",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:self_discovery"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:genre:qloo:indie_rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:indie_rock"
+          },
+          {
+            "name": "Alternative Rock",
+            "tag_id": "urn:tag:genre:qloo:alternative_rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:alternative_rock"
+          },
+          {
+            "name": "Emo",
+            "tag_id": "urn:tag:genre:qloo:emo",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:emo"
+          },
+          {
+            "name": "Post-Hardcore",
+            "tag_id": "urn:tag:subgenre:qloo:post_hardcore",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:post_hardcore"
+          },
+          {
+            "name": "Pop Punk",
+            "tag_id": "urn:tag:subgenre:qloo:pop_punk",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:pop_punk"
+          }
+        ]
+      },
+      {
+        "name": "Half Moon Run",
+        "entity_id": "D3AB5985-AA89-48CE-9C2F-5BCC49F3B561",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "halfmoonrun"
+            },
+            "instagram": {
+              "id": "halfmoonrun"
+            },
+            "lastfm": {
+              "id": "half%20moon%20run",
+              "listeners": 490660,
+              "scrobbles": 8024558
+            },
+            "musicbrainz": {
+              "id": "b48e0b4e-587b-4fb4-9706-78dfd1a5ea92"
+            },
+            "spotify": {
+              "id": "3ceQN2NVlLg1hgTzljDE4n"
+            },
+            "twitter": {
+              "id": "halfmoonrun"
+            },
+            "wikidata": {
+              "id": "q5641722"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/D3AB5985-AA89-48CE-9C2F-5BCC49F3B561-420x-auto.jpg"
+          },
+          "short_description": "Canadian indie rock band known for their intricate harmonies and multi-instrumentalism."
+        },
+        "popularity": 0.9878580754425443,
+        "disambiguation": "Half Moon Run",
+        "tags": [
+          {
+            "name": "Canadian",
+            "tag_id": "urn:tag:genre:canadian",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:canadian"
+          },
+          {
+            "name": "Shoegaze",
+            "tag_id": "urn:tag:genre:shoegaze",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:shoegaze"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:genre:indie_rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:indie_rock"
+          },
+          {
+            "name": "Indie",
+            "tag_id": "urn:tag:genre:indie",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:indie"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Introspective",
+            "tag_id": "urn:tag:audience:qloo:introspective",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:introspective"
+          },
+          {
+            "name": "Intricate",
+            "tag_id": "urn:tag:music:qloo:intricate",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:intricate"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:music:qloo:atmospheric",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:atmospheric"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:music:qloo:emotive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:emotive"
+          },
+          {
+            "name": "Harmonic",
+            "tag_id": "urn:tag:music:qloo:harmonic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:harmonic"
+          },
+          {
+            "name": "Progressive",
+            "tag_id": "urn:tag:music:qloo:progressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:progressive"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Intricate",
+            "tag_id": "urn:tag:characteristic:qloo:intricate",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:intricate"
+          },
+          {
+            "name": "Harmonic",
+            "tag_id": "urn:tag:characteristic:qloo:harmonic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:harmonic"
+          },
+          {
+            "name": "Multi-Instrumental",
+            "tag_id": "urn:tag:characteristic:qloo:multi_instrumental",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:multi_instrumental"
+          },
+          {
+            "name": "Atmospheric",
+            "tag_id": "urn:tag:characteristic:qloo:atmospheric",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:atmospheric"
+          },
+          {
+            "name": "Emotive",
+            "tag_id": "urn:tag:characteristic:qloo:emotive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:emotive"
+          },
+          {
+            "name": "Indie Folk Rock",
+            "tag_id": "urn:tag:style:qloo:indie_folk_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:indie_folk_rock"
+          },
+          {
+            "name": "Progressive Indie",
+            "tag_id": "urn:tag:style:qloo:progressive_indie",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:progressive_indie"
+          },
+          {
+            "name": "Art Rock Fusion",
+            "tag_id": "urn:tag:style:qloo:art_rock_fusion",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:art_rock_fusion"
+          },
+          {
+            "name": "Harmonic Indie",
+            "tag_id": "urn:tag:style:qloo:harmonic_indie",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:harmonic_indie"
+          },
+          {
+            "name": "Atmospheric Alternative",
+            "tag_id": "urn:tag:style:qloo:atmospheric_alternative",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:atmospheric_alternative"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:influence:qloo:indie_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:indie_rock"
+          },
+          {
+            "name": "Indie Folk",
+            "tag_id": "urn:tag:influence:qloo:indie_folk",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:indie_folk"
+          },
+          {
+            "name": "Progressive Rock",
+            "tag_id": "urn:tag:influence:qloo:progressive_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:progressive_rock"
+          },
+          {
+            "name": "Radiohead",
+            "tag_id": "urn:tag:influenced_by:qloo:radiohead",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:radiohead"
+          },
+          {
+            "name": "Fleet Foxes",
+            "tag_id": "urn:tag:influenced_by:qloo:fleet_foxes",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:fleet_foxes"
+          },
+          {
+            "name": "The National",
+            "tag_id": "urn:tag:influenced_by:qloo:the_national",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:the_national"
+          },
+          {
+            "name": "Bon Iver",
+            "tag_id": "urn:tag:influenced_by:qloo:bon_iver",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:bon_iver"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Bass",
+            "tag_id": "urn:tag:instrument:qloo:bass",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:bass"
+          },
+          {
+            "name": "Piano",
+            "tag_id": "urn:tag:instrument:qloo:piano",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:piano"
+          },
+          {
+            "name": "Synthesizer",
+            "tag_id": "urn:tag:instrument:qloo:synthesizer",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizer"
+          },
+          {
+            "name": "Percussion",
+            "tag_id": "urn:tag:instrument:qloo:percussion",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:percussion"
+          },
+          {
+            "name": "Mandolin",
+            "tag_id": "urn:tag:instrument:qloo:mandolin",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:mandolin"
+          },
+          {
+            "name": "Introspection",
+            "tag_id": "urn:tag:theme:qloo:introspection",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:introspection"
+          },
+          {
+            "name": "Relationships",
+            "tag_id": "urn:tag:theme:qloo:relationships",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:relationships"
+          },
+          {
+            "name": "Emotional Struggles",
+            "tag_id": "urn:tag:theme:qloo:emotional_struggles",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:emotional_struggles"
+          },
+          {
+            "name": "Nature",
+            "tag_id": "urn:tag:theme:qloo:nature",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:nature"
+          },
+          {
+            "name": "Existentialism",
+            "tag_id": "urn:tag:theme:qloo:existentialism",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:existentialism"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:genre:qloo:indie_rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:indie_rock"
+          },
+          {
+            "name": "Indie Folk",
+            "tag_id": "urn:tag:genre:qloo:indie_folk",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:indie_folk"
+          },
+          {
+            "name": "Alternative Rock",
+            "tag_id": "urn:tag:genre:qloo:alternative_rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:alternative_rock"
+          },
+          {
+            "name": "Folk Rock",
+            "tag_id": "urn:tag:subgenre:qloo:folk_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:folk_rock"
+          },
+          {
+            "name": "Progressive Rock",
+            "tag_id": "urn:tag:subgenre:qloo:progressive_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:progressive_rock"
+          },
+          {
+            "name": "Art Rock",
+            "tag_id": "urn:tag:subgenre:qloo:art_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:art_rock"
+          }
+        ]
+      },
+      {
+        "name": "Pony Pony Run Run",
+        "entity_id": "74C6DEC7-4729-4495-8085-ED1E2A41E064",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "ponyponyrunrun"
+            },
+            "lastfm": {
+              "id": "pony%20pony%20run%20run",
+              "listeners": 133902,
+              "scrobbles": 1900103
+            },
+            "musicbrainz": {
+              "id": "9f6f0d07-93d0-454a-a702-a0699e6dabec"
+            },
+            "spotify": {
+              "id": "6RXZaVIbZfdngXJOSGrVH3"
+            },
+            "twitter": {
+              "id": "ponyponyrunrun"
+            },
+            "wikidata": {
+              "id": "q1550659"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/74C6DEC7-4729-4495-8085-ED1E2A41E064-420x-auto.jpg"
+          },
+          "short_description": "French power pop and indie pop band known for catchy melodies and energetic synth-driven sound."
+        },
+        "popularity": 0.9781452105353715,
+        "disambiguation": "Pony Pony Run Run",
+        "tags": [
+          {
+            "name": "Electronica",
+            "tag_id": "urn:tag:genre:electronica",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electronica"
+          },
+          {
+            "name": "French",
+            "tag_id": "urn:tag:genre:french",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:french"
+          },
+          {
+            "name": "Power Pop",
+            "tag_id": "urn:tag:genre:power_pop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:power_pop"
+          },
+          {
+            "name": "Electro",
+            "tag_id": "urn:tag:genre:electro",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electro"
+          },
+          {
+            "name": "Electro - Rock",
+            "tag_id": "urn:tag:genre:electro_rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:electro_rock"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:audience:qloo:energetic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:energetic"
+          },
+          {
+            "name": "Youthful",
+            "tag_id": "urn:tag:audience:qloo:youthful",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:youthful"
+          },
+          {
+            "name": "Enthusiastic",
+            "tag_id": "urn:tag:audience:qloo:enthusiastic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:enthusiastic"
+          },
+          {
+            "name": "Catchy",
+            "tag_id": "urn:tag:music:qloo:catchy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:catchy"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:music:qloo:energetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:energetic"
+          },
+          {
+            "name": "Synth-Driven",
+            "tag_id": "urn:tag:music:qloo:synth_driven",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:synth_driven"
+          },
+          {
+            "name": "Upbeat",
+            "tag_id": "urn:tag:music:qloo:upbeat",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:upbeat"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Lively",
+            "tag_id": "urn:tag:style:qloo:lively",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:lively"
+          },
+          {
+            "name": "Catchy",
+            "tag_id": "urn:tag:characteristic:qloo:catchy",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:catchy"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Synth-Driven",
+            "tag_id": "urn:tag:characteristic:qloo:synth_driven",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:synth_driven"
+          },
+          {
+            "name": "Upbeat",
+            "tag_id": "urn:tag:characteristic:qloo:upbeat",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:upbeat"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:characteristic:qloo:melodic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:melodic"
+          },
+          {
+            "name": "Synthpop",
+            "tag_id": "urn:tag:style:qloo:synthpop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:synthpop"
+          },
+          {
+            "name": "Power Pop",
+            "tag_id": "urn:tag:style:qloo:power_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:power_pop"
+          },
+          {
+            "name": "Indie Pop",
+            "tag_id": "urn:tag:style:qloo:indie_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:indie_pop"
+          },
+          {
+            "name": "Electropop",
+            "tag_id": "urn:tag:style:qloo:electropop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:electropop"
+          },
+          {
+            "name": "Pop Rock",
+            "tag_id": "urn:tag:style:qloo:pop_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:pop_rock"
+          },
+          {
+            "name": "Indie Pop",
+            "tag_id": "urn:tag:influence:qloo:indie_pop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:indie_pop"
+          },
+          {
+            "name": "Synthpop",
+            "tag_id": "urn:tag:influence:qloo:synthpop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:synthpop"
+          },
+          {
+            "name": "Phoenix",
+            "tag_id": "urn:tag:influenced_by:qloo:phoenix",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:phoenix"
+          },
+          {
+            "name": "The Strokes",
+            "tag_id": "urn:tag:influenced_by:qloo:the_strokes",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:the_strokes"
+          },
+          {
+            "name": "New Order",
+            "tag_id": "urn:tag:influenced_by:qloo:new_order",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:new_order"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Bass",
+            "tag_id": "urn:tag:instrument:qloo:bass",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:bass"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Synthesizer",
+            "tag_id": "urn:tag:instrument:qloo:synthesizer",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizer"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Youth",
+            "tag_id": "urn:tag:theme:qloo:youth",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:youth"
+          },
+          {
+            "name": "Relationships",
+            "tag_id": "urn:tag:theme:qloo:relationships",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:relationships"
+          },
+          {
+            "name": "Optimism",
+            "tag_id": "urn:tag:theme:qloo:optimism",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:optimism"
+          },
+          {
+            "name": "Power Pop",
+            "tag_id": "urn:tag:genre:qloo:power_pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:power_pop"
+          },
+          {
+            "name": "Indie Pop",
+            "tag_id": "urn:tag:genre:qloo:indie_pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:indie_pop"
+          },
+          {
+            "name": "Pop Rock",
+            "tag_id": "urn:tag:genre:qloo:pop_rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:pop_rock"
+          },
+          {
+            "name": "Synthpop",
+            "tag_id": "urn:tag:subgenre:qloo:synthpop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:synthpop"
+          },
+          {
+            "name": "Electropop",
+            "tag_id": "urn:tag:subgenre:qloo:electropop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:electropop"
+          }
+        ]
+      }
+    ]
+  }
+}

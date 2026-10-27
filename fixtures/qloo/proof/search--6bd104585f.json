@@ -1,0 +1,417 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Kendrick Lamar",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:35.703Z",
+  "latencyMs": 397,
+  "body": {
+    "results": [
+      {
+        "name": "Kendrick Lamar",
+        "entity_id": "C915A918-39C5-47A3-A101-D9FA1DECBD9C",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "kendricklamar"
+            },
+            "instagram": {
+              "id": "jojoruski"
+            },
+            "lastfm": {
+              "id": "kendrick%20lamar",
+              "listeners": 4334329,
+              "scrobbles": 781780966
+            },
+            "musicbrainz": {
+              "id": "381086ea-f511-4aba-bdf9-71c753dc5077"
+            },
+            "spotify": {
+              "id": "2YZyLoL8N0Wb9xBt1NhZWg"
+            },
+            "twitter": {
+              "id": "kendricklamar"
+            },
+            "wikidata": {
+              "id": "q130798"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/C915A918-39C5-47A3-A101-D9FA1DECBD9C-420x-auto.jpg"
+          },
+          "short_description": "An influential American rapper and songwriter known for his profound lyricism and storytelling."
+        },
+        "popularity": 0.9995749145612005,
+        "disambiguation": "Kendrick Lamar",
+        "tags": [
+          {
+            "name": "West Coast",
+            "tag_id": "urn:tag:genre:west_coast",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:west_coast"
+          },
+          {
+            "name": "Hip - Hop",
+            "tag_id": "urn:tag:genre:hip_hop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:hip_hop"
+          },
+          {
+            "name": "Rap",
+            "tag_id": "urn:tag:genre:rap",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rap"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Thoughtful",
+            "tag_id": "urn:tag:audience:qloo:thoughtful",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:thoughtful"
+          },
+          {
+            "name": "Engaged",
+            "tag_id": "urn:tag:audience:qloo:engaged",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:engaged"
+          },
+          {
+            "name": "Lyrical",
+            "tag_id": "urn:tag:music:qloo:lyrical",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:lyrical"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Poetic",
+            "tag_id": "urn:tag:music:qloo:poetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:poetic"
+          },
+          {
+            "name": "Socially Conscious",
+            "tag_id": "urn:tag:music:qloo:socially_conscious",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:socially_conscious"
+          },
+          {
+            "name": "Complex",
+            "tag_id": "urn:tag:music:qloo:complex",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:complex"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Lyrical",
+            "tag_id": "urn:tag:characteristic:qloo:lyrical",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:lyrical"
+          },
+          {
+            "name": "Thoughtful",
+            "tag_id": "urn:tag:characteristic:qloo:thoughtful",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:thoughtful"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Socially Conscious",
+            "tag_id": "urn:tag:characteristic:qloo:socially_conscious",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:socially_conscious"
+          },
+          {
+            "name": "Poetic",
+            "tag_id": "urn:tag:characteristic:qloo:poetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:poetic"
+          },
+          {
+            "name": "Conscious",
+            "tag_id": "urn:tag:style:qloo:conscious",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:conscious"
+          },
+          {
+            "name": "Jazz-Infused",
+            "tag_id": "urn:tag:style:qloo:jazz_infused",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:jazz_infused"
+          },
+          {
+            "name": "Narrative-Driven",
+            "tag_id": "urn:tag:style:qloo:narrative_driven",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:narrative_driven"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:style:qloo:experimental",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:experimental"
+          },
+          {
+            "name": "Soulful",
+            "tag_id": "urn:tag:style:qloo:soulful",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:soulful"
+          },
+          {
+            "name": "Conscious Hip Hop",
+            "tag_id": "urn:tag:influence:qloo:conscious_hip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:conscious_hip_hop"
+          },
+          {
+            "name": "Alternative Hip Hop",
+            "tag_id": "urn:tag:influence:qloo:alternative_hip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:alternative_hip_hop"
+          },
+          {
+            "name": "Jazz Rap",
+            "tag_id": "urn:tag:influence:qloo:jazz_rap",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:jazz_rap"
+          },
+          {
+            "name": "Tupac Shakur",
+            "tag_id": "urn:tag:influenced_by:qloo:tupac_shakur",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:tupac_shakur"
+          },
+          {
+            "name": "Dr. Dre",
+            "tag_id": "urn:tag:influenced_by:qloo:dr_dre",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:dr_dre"
+          },
+          {
+            "name": "Eminem",
+            "tag_id": "urn:tag:influenced_by:qloo:eminem",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:eminem"
+          },
+          {
+            "name": "Jay-Z",
+            "tag_id": "urn:tag:influenced_by:qloo:jay_z",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:jay_z"
+          },
+          {
+            "name": "Nas",
+            "tag_id": "urn:tag:influenced_by:qloo:nas",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:nas"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Racial Inequality",
+            "tag_id": "urn:tag:theme:qloo:racial_inequality",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:racial_inequality"
+          },
+          {
+            "name": "Personal Struggle",
+            "tag_id": "urn:tag:theme:qloo:personal_struggle",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:personal_struggle"
+          },
+          {
+            "name": "Social Justice",
+            "tag_id": "urn:tag:theme:qloo:social_justice",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:social_justice"
+          },
+          {
+            "name": "Identity",
+            "tag_id": "urn:tag:theme:qloo:identity",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:identity"
+          },
+          {
+            "name": "Mental Health",
+            "tag_id": "urn:tag:theme:qloo:mental_health",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:mental_health"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:genre:qloo:hip_hop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hip_hop"
+          },
+          {
+            "name": "Rap",
+            "tag_id": "urn:tag:genre:qloo:rap",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:rap"
+          },
+          {
+            "name": "Conscious Hip Hop",
+            "tag_id": "urn:tag:subgenre:qloo:conscious_hip_hop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:conscious_hip_hop"
+          },
+          {
+            "name": "West Coast Hip Hop",
+            "tag_id": "urn:tag:subgenre:qloo:west_coast_hip_hop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:west_coast_hip_hop"
+          },
+          {
+            "name": "Jazz Rap",
+            "tag_id": "urn:tag:subgenre:qloo:jazz_rap",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:jazz_rap"
+          }
+        ]
+      },
+      {
+        "name": "Kendrick Lamar, SZA",
+        "entity_id": "B8874D35-B38E-4932-AE48-BAA86948C8B8",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/B8874D35-B38E-4932-AE48-BAA86948C8B8-420x-auto.jpg"
+          },
+          "short_description": "American hip hop and R&B artists known for their profound lyrics and innovative music."
+        },
+        "popularity": 0.8885466463795203,
+        "disambiguation": "Kendrick Lamar, SZA"
+      },
+      {
+        "name": "Kendrick Lamar, Travis Scott",
+        "entity_id": "2B4A9D52-242D-440D-898E-1A7ADB5DE79A",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/2B4A9D52-242D-440D-898E-1A7ADB5DE79A-420x-auto.jpg"
+          },
+          "short_description": "American rapper and songwriter known for his profound lyrics and storytelling."
+        },
+        "popularity": 0.7383565387249461,
+        "disambiguation": "Kendrick Lamar, Travis Scott"
+      },
+      {
+        "name": "Kendrick Lamar, Zacari",
+        "entity_id": "B16BCD64-A57E-4496-9419-368B0F3D63FF",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/B16BCD64-A57E-4496-9419-368B0F3D63FF-420x-auto.jpg"
+          },
+          "short_description": "American rapper and songwriter known for his profound lyrics and storytelling."
+        },
+        "popularity": 0.6467270108059417,
+        "disambiguation": "Kendrick Lamar, Zacari"
+      },
+      {
+        "name": "Kendrick Lamar, U2",
+        "entity_id": "83052D30-913B-4546-AEB6-1C4EC966E95D",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/83052D30-913B-4546-AEB6-1C4EC966E95D-420x-auto.jpg"
+          },
+          "short_description": "American rapper and songwriter known for his profound lyrics and storytelling."
+        },
+        "popularity": 0.5600163286787603,
+        "disambiguation": "Kendrick Lamar, U2"
+      }
+    ]
+  }
+}

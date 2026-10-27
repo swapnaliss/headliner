@@ -1,0 +1,495 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Rammstein",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:12.054Z",
+  "latencyMs": 433,
+  "body": {
+    "results": [
+      {
+        "name": "Rammstein",
+        "entity_id": "EC0AFFC5-3D07-40AD-AB32-2C758DA9D667",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "rammstein"
+            },
+            "instagram": {
+              "id": "rammsteinofficial"
+            },
+            "lastfm": {
+              "id": "rammstein",
+              "listeners": 2654116,
+              "scrobbles": 264940651
+            },
+            "musicbrainz": {
+              "id": "b2d122f9-eadb-4930-a196-8f221eeb0c66"
+            },
+            "spotify": {
+              "id": "6wWVKhxIU2cEi0K81v7HvP"
+            },
+            "twitter": {
+              "id": "rsprachrohr"
+            },
+            "wikidata": {
+              "id": "q25177"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/EC0AFFC5-3D07-40AD-AB32-2C758DA9D667-420x-auto.jpg"
+          },
+          "short_description": "Rammstein is a German industrial metal band known for their theatrical live performances and deep, powerful vocals."
+        },
+        "popularity": 0.999827941608105,
+        "disambiguation": "Rammstein",
+        "tags": [
+          {
+            "name": "Industrial",
+            "tag_id": "urn:tag:genre:industrial",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:industrial"
+          },
+          {
+            "name": "Metal",
+            "tag_id": "urn:tag:genre:metal",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:metal"
+          },
+          {
+            "name": "German",
+            "tag_id": "urn:tag:genre:german",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:german"
+          },
+          {
+            "name": "Rock",
+            "tag_id": "urn:tag:genre:rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rock"
+          },
+          {
+            "name": "Industrial Metal",
+            "tag_id": "urn:tag:genre:industrial_metal",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:industrial_metal"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:audience:qloo:energetic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:energetic"
+          },
+          {
+            "name": "Diverse",
+            "tag_id": "urn:tag:audience:qloo:diverse",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:diverse"
+          },
+          {
+            "name": "Heavy",
+            "tag_id": "urn:tag:music:qloo:heavy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:heavy"
+          },
+          {
+            "name": "Industrial",
+            "tag_id": "urn:tag:music:qloo:industrial",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:industrial"
+          },
+          {
+            "name": "Theatrical",
+            "tag_id": "urn:tag:music:qloo:theatrical",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:theatrical"
+          },
+          {
+            "name": "Aggressive",
+            "tag_id": "urn:tag:music:qloo:aggressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:aggressive"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Theatrical",
+            "tag_id": "urn:tag:style:qloo:theatrical",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:theatrical"
+          },
+          {
+            "name": "Explosive",
+            "tag_id": "urn:tag:style:qloo:explosive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:explosive"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Dramatic",
+            "tag_id": "urn:tag:style:qloo:dramatic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dramatic"
+          },
+          {
+            "name": "Pyrotechnic",
+            "tag_id": "urn:tag:style:qloo:pyrotechnic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:pyrotechnic"
+          },
+          {
+            "name": "Theatrical",
+            "tag_id": "urn:tag:characteristic:qloo:theatrical",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:theatrical"
+          },
+          {
+            "name": "Powerful",
+            "tag_id": "urn:tag:characteristic:qloo:powerful",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:powerful"
+          },
+          {
+            "name": "Intense",
+            "tag_id": "urn:tag:characteristic:qloo:intense",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:intense"
+          },
+          {
+            "name": "Provocative",
+            "tag_id": "urn:tag:characteristic:qloo:provocative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:provocative"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Neue Deutsche Härte",
+            "tag_id": "urn:tag:style:qloo:neue_deutsche_harte",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:neue_deutsche_harte"
+          },
+          {
+            "name": "Industrial Metal",
+            "tag_id": "urn:tag:style:qloo:industrial_metal",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:industrial_metal"
+          },
+          {
+            "name": "Electronic Rock",
+            "tag_id": "urn:tag:style:qloo:electronic_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:electronic_rock"
+          },
+          {
+            "name": "Heavy Metal",
+            "tag_id": "urn:tag:style:qloo:heavy_metal",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:heavy_metal"
+          },
+          {
+            "name": "Darkwave",
+            "tag_id": "urn:tag:style:qloo:darkwave",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:darkwave"
+          },
+          {
+            "name": "Industrial Metal",
+            "tag_id": "urn:tag:influence:qloo:industrial_metal",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:industrial_metal"
+          },
+          {
+            "name": "Neue Deutsche Härte",
+            "tag_id": "urn:tag:influence:qloo:neue_deutsche_harte",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:neue_deutsche_harte"
+          },
+          {
+            "name": "Alternative Metal",
+            "tag_id": "urn:tag:influence:qloo:alternative_metal",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:alternative_metal"
+          },
+          {
+            "name": "Ministry",
+            "tag_id": "urn:tag:influenced_by:qloo:ministry",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:ministry"
+          },
+          {
+            "name": "Einstürzende Neubauten",
+            "tag_id": "urn:tag:influenced_by:qloo:einsturzende_neubauten",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:einsturzende_neubauten"
+          },
+          {
+            "name": "Laibach",
+            "tag_id": "urn:tag:influenced_by:qloo:laibach",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:laibach"
+          },
+          {
+            "name": "Depeche Mode",
+            "tag_id": "urn:tag:influenced_by:qloo:depeche_mode",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:depeche_mode"
+          },
+          {
+            "name": "Nine Inch Nails",
+            "tag_id": "urn:tag:influenced_by:qloo:nine_inch_nails",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:nine_inch_nails"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Electric Guitar",
+            "tag_id": "urn:tag:instrument:qloo:electric_guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:electric_guitar"
+          },
+          {
+            "name": "Bass Guitar",
+            "tag_id": "urn:tag:instrument:qloo:bass_guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:bass_guitar"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Keyboards",
+            "tag_id": "urn:tag:instrument:qloo:keyboards",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:keyboards"
+          },
+          {
+            "name": "Synthesizers",
+            "tag_id": "urn:tag:instrument:qloo:synthesizers",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:synthesizers"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Politics",
+            "tag_id": "urn:tag:theme:qloo:politics",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:politics"
+          },
+          {
+            "name": "Religion",
+            "tag_id": "urn:tag:theme:qloo:religion",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:religion"
+          },
+          {
+            "name": "War",
+            "tag_id": "urn:tag:theme:qloo:war",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:war"
+          },
+          {
+            "name": "Society",
+            "tag_id": "urn:tag:theme:qloo:society",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:society"
+          },
+          {
+            "name": "Provocation",
+            "tag_id": "urn:tag:theme:qloo:provocation",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:provocation"
+          },
+          {
+            "name": "Taboo",
+            "tag_id": "urn:tag:theme:qloo:taboo",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:taboo"
+          },
+          {
+            "name": "Industrial Metal",
+            "tag_id": "urn:tag:genre:qloo:industrial_metal",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:industrial_metal"
+          },
+          {
+            "name": "Neue Deutsche Härte",
+            "tag_id": "urn:tag:genre:qloo:neue_deutsche_harte",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:neue_deutsche_harte"
+          },
+          {
+            "name": "Metal",
+            "tag_id": "urn:tag:genre:qloo:metal",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:metal"
+          },
+          {
+            "name": "Alternative Metal",
+            "tag_id": "urn:tag:subgenre:qloo:alternative_metal",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:alternative_metal"
+          },
+          {
+            "name": "Hard Rock",
+            "tag_id": "urn:tag:subgenre:qloo:hard_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:hard_rock"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:subgenre:qloo:electronic",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:electronic"
+          },
+          {
+            "name": "Baritone",
+            "tag_id": "urn:tag:artist:qloo:baritone",
+            "type": "urn:tag:artist:qloo",
+            "value": "urn:tag:artist:qloo:baritone"
+          }
+        ]
+      },
+      {
+        "name": "Rammstein 1997 - Engel (English Version)",
+        "entity_id": "DAC6A844-B6E6-4AE0-84DE-9F210E5AD12B",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/DAC6A844-B6E6-4AE0-84DE-9F210E5AD12B-420x-auto.jpg"
+          },
+          "short_description": "German industrial metal band known for theatrical performances and powerful music."
+        },
+        "popularity": 0.3326091136968601,
+        "disambiguation": "Rammstein 1997 - Engel (English Version)"
+      },
+      {
+        "name": "T.A.T.U + Rammstein",
+        "entity_id": "A2D5C2AD-5408-47C0-B29C-2D7A705754B0",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/A2D5C2AD-5408-47C0-B29C-2D7A705754B0-420x-auto.jpg"
+          },
+          "short_description": "A collaboration blending Russian pop duo T.A.T.U and German industrial metal band Rammstein."
+        },
+        "popularity": 0.802375755285735,
+        "disambiguation": "T.A.T.U + Rammstein"
+      },
+      {
+        "name": "Rammstein: Paris",
+        "entity_id": "A6688C62-9DFA-4CF3-9BBD-2110B407AF62",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/A6688C62-9DFA-4CF3-9BBD-2110B407AF62-420x-auto.jpg"
+          },
+          "short_description": "German industrial metal band known for theatrical live performances and powerful music."
+        },
+        "popularity": 0.09997604677289304,
+        "disambiguation": "Rammstein: Paris"
+      },
+      {
+        "name": "Тату И Rammstein",
+        "entity_id": "9FC5BCA1-13FE-4EC3-BD8F-11D799B6B97E",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/9FC5BCA1-13FE-4EC3-BD8F-11D799B6B97E-420x-auto.jpg"
+          },
+          "short_description": "A collaboration between Russian pop duo t.A.T.u and German industrial metal band Rammstein."
+        },
+        "popularity": 0.4296331782558677,
+        "disambiguation": "Тату И Rammstein"
+      }
+    ]
+  }
+}

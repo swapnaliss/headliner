@@ -1,0 +1,367 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Wizkid",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:13.686Z",
+  "latencyMs": 358,
+  "body": {
+    "results": [
+      {
+        "name": "Wizkid",
+        "entity_id": "C510E01A-E17C-45FC-8DCE-64A963A121A4",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "wizkidmusic"
+            },
+            "instagram": {
+              "id": "wizkidayo"
+            },
+            "lastfm": {
+              "id": "wizkid",
+              "listeners": 483221,
+              "scrobbles": 10483482
+            },
+            "musicbrainz": {
+              "id": "508fc5b7-0fe3-4575-9ba4-24f4d54cd9e5"
+            },
+            "spotify": {
+              "id": "3tVQdUvClmAT7URs9V3rsp"
+            },
+            "twitter": {
+              "id": "wizkidayo"
+            },
+            "wikidata": {
+              "id": "q16233663"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/C510E01A-E17C-45FC-8DCE-64A963A121A4-420x-auto.jpg"
+          },
+          "short_description": "Nigerian singer and songwriter known for pioneering Afrobeats and international collaborations."
+        },
+        "popularity": 0.9456599114067966,
+        "disambiguation": "Wizkid",
+        "tags": [
+          {
+            "name": "Hip - Hop",
+            "tag_id": "urn:tag:genre:hip_hop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:hip_hop"
+          },
+          {
+            "name": "Afrobeat",
+            "tag_id": "urn:tag:genre:afrobeat",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:afrobeat"
+          },
+          {
+            "name": "Nigeria",
+            "tag_id": "urn:tag:genre:nigeria",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:nigeria"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Diverse",
+            "tag_id": "urn:tag:audience:qloo:diverse",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:diverse"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:audience:qloo:energetic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:energetic"
+          },
+          {
+            "name": "Catchy",
+            "tag_id": "urn:tag:music:qloo:catchy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:catchy"
+          },
+          {
+            "name": "Rhythmic",
+            "tag_id": "urn:tag:music:qloo:rhythmic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:rhythmic"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Danceable",
+            "tag_id": "urn:tag:music:qloo:danceable",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:danceable"
+          },
+          {
+            "name": "Smooth",
+            "tag_id": "urn:tag:music:qloo:smooth",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:smooth"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Charismatic",
+            "tag_id": "urn:tag:style:qloo:charismatic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:charismatic"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Charismatic",
+            "tag_id": "urn:tag:characteristic:qloo:charismatic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:charismatic"
+          },
+          {
+            "name": "Versatile",
+            "tag_id": "urn:tag:characteristic:qloo:versatile",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:versatile"
+          },
+          {
+            "name": "Influential",
+            "tag_id": "urn:tag:characteristic:qloo:influential",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:influential"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:characteristic:qloo:dynamic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:dynamic"
+          },
+          {
+            "name": "Afrobeat Fusion",
+            "tag_id": "urn:tag:style:qloo:afrobeat_fusion",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:afrobeat_fusion"
+          },
+          {
+            "name": "Contemporary Afropop",
+            "tag_id": "urn:tag:style:qloo:contemporary_afropop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:contemporary_afropop"
+          },
+          {
+            "name": "Global Hip Hop",
+            "tag_id": "urn:tag:style:qloo:global_hip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:global_hip_hop"
+          },
+          {
+            "name": "Nigerian Dancehall",
+            "tag_id": "urn:tag:style:qloo:nigerian_dancehall",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:nigerian_dancehall"
+          },
+          {
+            "name": "Melodic R&B",
+            "tag_id": "urn:tag:style:qloo:melodic_r_b",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:melodic_r_b"
+          },
+          {
+            "name": "Afrobeats",
+            "tag_id": "urn:tag:influence:qloo:afrobeats",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:afrobeats"
+          },
+          {
+            "name": "Afropop",
+            "tag_id": "urn:tag:influence:qloo:afropop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:afropop"
+          },
+          {
+            "name": "Global Pop",
+            "tag_id": "urn:tag:influence:qloo:global_pop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:global_pop"
+          },
+          {
+            "name": "Fela Kuti",
+            "tag_id": "urn:tag:influenced_by:qloo:fela_kuti",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:fela_kuti"
+          },
+          {
+            "name": "Bob Marley",
+            "tag_id": "urn:tag:influenced_by:qloo:bob_marley",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:bob_marley"
+          },
+          {
+            "name": "King Sunny Adé",
+            "tag_id": "urn:tag:influenced_by:qloo:king_sunny_ade",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:king_sunny_ade"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Party",
+            "tag_id": "urn:tag:theme:qloo:party",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:party"
+          },
+          {
+            "name": "Success",
+            "tag_id": "urn:tag:theme:qloo:success",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:success"
+          },
+          {
+            "name": "Life",
+            "tag_id": "urn:tag:theme:qloo:life",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:life"
+          },
+          {
+            "name": "Relationships",
+            "tag_id": "urn:tag:theme:qloo:relationships",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:relationships"
+          },
+          {
+            "name": "Afrobeats",
+            "tag_id": "urn:tag:genre:qloo:afrobeats",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:afrobeats"
+          },
+          {
+            "name": "Afropop",
+            "tag_id": "urn:tag:genre:qloo:afropop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:afropop"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:genre:qloo:hip_hop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hip_hop"
+          },
+          {
+            "name": "R&B",
+            "tag_id": "urn:tag:subgenre:qloo:r_b",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:r_b"
+          },
+          {
+            "name": "Dancehall",
+            "tag_id": "urn:tag:subgenre:qloo:dancehall",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:dancehall"
+          },
+          {
+            "name": "Reggae",
+            "tag_id": "urn:tag:subgenre:qloo:reggae",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:reggae"
+          }
+        ]
+      },
+      {
+        "name": "Beyoncé, SAINt JHN & Wizkid",
+        "entity_id": "B91437EB-EC7C-40B4-B7CD-B5C9155AF744",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/B91437EB-EC7C-40B4-B7CD-B5C9155AF744-420x-auto.jpg"
+          },
+          "short_description": "A collaboration of three prominent artists blending R&B, hip hop, and Afrobeats styles."
+        },
+        "popularity": 0.3645310059343277,
+        "disambiguation": "Beyoncé, SAINt JHN & Wizkid"
+      },
+      {
+        "name": "Skepta & Wizkid",
+        "entity_id": "6B83D9DF-F293-4F2D-A2FD-74F95EA05620",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/6B83D9DF-F293-4F2D-A2FD-74F95EA05620-420x-auto.jpg"
+          },
+          "short_description": "A collaborative music duo blending UK grime and Nigerian Afrobeats styles."
+        },
+        "popularity": 0.2609484803195563,
+        "disambiguation": "Skepta & Wizkid"
+      }
+    ]
+  }
+}

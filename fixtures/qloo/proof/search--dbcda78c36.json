@@ -1,0 +1,1287 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Sonny Rollins",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:34.153Z",
+  "latencyMs": 378,
+  "body": {
+    "results": [
+      {
+        "name": "Sonny Rollins",
+        "entity_id": "4499F9D7-1A91-46BB-B12B-3E8F291BB0B8",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "officialsonnyrollins"
+            },
+            "lastfm": {
+              "id": "sonny%20rollins",
+              "listeners": 676910,
+              "scrobbles": 6708635
+            },
+            "musicbrainz": {
+              "id": "3b47247e-5b57-49b6-a0ed-bad80243802a"
+            },
+            "spotify": {
+              "id": "1VEzN9lxvG6KPR3QQGsebR"
+            },
+            "twitter": {
+              "id": "sonnyrollins"
+            },
+            "wikidata": {
+              "id": "q299208"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/4499F9D7-1A91-46BB-B12B-3E8F291BB0B8-420x-auto.jpg"
+          },
+          "short_description": "Sonny Rollins is an American jazz tenor saxophonist known for his influential work in hard bop and post-bop styles."
+        },
+        "popularity": 0.9892851479870854,
+        "disambiguation": "Sonny Rollins",
+        "tags": [
+          {
+            "name": "Saxophone",
+            "tag_id": "urn:tag:genre:saxophone",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:saxophone"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:jazz",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:jazz"
+          },
+          {
+            "name": "Instrumental",
+            "tag_id": "urn:tag:genre:instrumental",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:instrumental"
+          },
+          {
+            "name": "Bebop",
+            "tag_id": "urn:tag:genre:bebop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:bebop"
+          },
+          {
+            "name": "Hard Bop",
+            "tag_id": "urn:tag:genre:hard_bop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:hard_bop"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Knowledgeable",
+            "tag_id": "urn:tag:audience:qloo:knowledgeable",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:knowledgeable"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:music:qloo:expressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:expressive"
+          },
+          {
+            "name": "Complex",
+            "tag_id": "urn:tag:music:qloo:complex",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:complex"
+          },
+          {
+            "name": "Rhythmic",
+            "tag_id": "urn:tag:music:qloo:rhythmic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:rhythmic"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Spontaneous",
+            "tag_id": "urn:tag:style:qloo:spontaneous",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:spontaneous"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:characteristic:qloo:expressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:expressive"
+          },
+          {
+            "name": "Virtuosic",
+            "tag_id": "urn:tag:characteristic:qloo:virtuosic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:virtuosic"
+          },
+          {
+            "name": "Influential",
+            "tag_id": "urn:tag:characteristic:qloo:influential",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:influential"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:characteristic:qloo:dynamic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:dynamic"
+          },
+          {
+            "name": "Hard Bop",
+            "tag_id": "urn:tag:style:qloo:hard_bop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:hard_bop"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:style:qloo:post_bop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:post_bop"
+          },
+          {
+            "name": "Modal Jazz",
+            "tag_id": "urn:tag:style:qloo:modal_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:modal_jazz"
+          },
+          {
+            "name": "Bebop",
+            "tag_id": "urn:tag:style:qloo:bebop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:bebop"
+          },
+          {
+            "name": "Avant-Garde Jazz",
+            "tag_id": "urn:tag:style:qloo:avant_garde_jazz",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:avant_garde_jazz"
+          },
+          {
+            "name": "Hard Bop",
+            "tag_id": "urn:tag:influence:qloo:hard_bop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:hard_bop"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:influence:qloo:post_bop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:post_bop"
+          },
+          {
+            "name": "Modal Jazz",
+            "tag_id": "urn:tag:influence:qloo:modal_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:modal_jazz"
+          },
+          {
+            "name": "Avant-Garde Jazz",
+            "tag_id": "urn:tag:influence:qloo:avant_garde_jazz",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:avant_garde_jazz"
+          },
+          {
+            "name": "Charlie Parker",
+            "tag_id": "urn:tag:influenced_by:qloo:charlie_parker",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:charlie_parker"
+          },
+          {
+            "name": "Coleman Hawkins",
+            "tag_id": "urn:tag:influenced_by:qloo:coleman_hawkins",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:coleman_hawkins"
+          },
+          {
+            "name": "Lester Young",
+            "tag_id": "urn:tag:influenced_by:qloo:lester_young",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:lester_young"
+          },
+          {
+            "name": "Thelonious Monk",
+            "tag_id": "urn:tag:influenced_by:qloo:thelonious_monk",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:thelonious_monk"
+          },
+          {
+            "name": "Tenor Saxophone",
+            "tag_id": "urn:tag:instrument:qloo:tenor_saxophone",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:tenor_saxophone"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:qloo:jazz",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:jazz"
+          },
+          {
+            "name": "Hard Bop",
+            "tag_id": "urn:tag:genre:qloo:hard_bop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hard_bop"
+          },
+          {
+            "name": "Post-Bop",
+            "tag_id": "urn:tag:genre:qloo:post_bop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:post_bop"
+          },
+          {
+            "name": "Bebop",
+            "tag_id": "urn:tag:subgenre:qloo:bebop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:bebop"
+          },
+          {
+            "name": "Modal Jazz",
+            "tag_id": "urn:tag:subgenre:qloo:modal_jazz",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:modal_jazz"
+          },
+          {
+            "name": "Avant-Garde Jazz",
+            "tag_id": "urn:tag:subgenre:qloo:avant_garde_jazz",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:avant_garde_jazz"
+          }
+        ]
+      },
+      {
+        "name": "Sonny Rollins with the Modern Jazz Quartet",
+        "entity_id": "96C234CD-2FE4-4696-A3A3-BE55CFF83BEB",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/96C234CD-2FE4-4696-A3A3-BE55CFF83BEB-420x-auto.jpg"
+          },
+          "short_description": "A collaboration between tenor saxophonist Sonny Rollins and the Modern Jazz Quartet blending bebop and cool jazz styles."
+        },
+        "popularity": 0.5703297111105863,
+        "disambiguation": "Sonny Rollins with the Modern Jazz Quartet"
+      },
+      {
+        "name": "Rollins Band",
+        "entity_id": "1B412F75-1529-4BC4-9052-132DF55F9356",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "rollins%20band",
+              "listeners": 189327,
+              "scrobbles": 3193185
+            },
+            "musicbrainz": {
+              "id": "3ca37f23-fdce-49ce-86e2-134c9a17ebc5"
+            },
+            "spotify": {
+              "id": "5tdgsNGbOvPQZjcco3yOMt"
+            },
+            "wikidata": {
+              "id": "q1891331"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/1B412F75-1529-4BC4-9052-132DF55F9356-420x-auto.jpg"
+          },
+          "short_description": "Rollins Band is an American rock band led by vocalist Henry Rollins, known for their intense and aggressive sound blending metal, punk, and funk."
+        },
+        "popularity": 0.9791978030504941,
+        "disambiguation": "Rollins Band",
+        "tags": [
+          {
+            "name": "Rock",
+            "tag_id": "urn:tag:genre:rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rock"
+          },
+          {
+            "name": "Hard Rock",
+            "tag_id": "urn:tag:genre:hard_rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:hard_rock"
+          },
+          {
+            "name": "Punk",
+            "tag_id": "urn:tag:genre:punk",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:punk"
+          },
+          {
+            "name": "Metal",
+            "tag_id": "urn:tag:genre:metal",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:metal"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:audience:qloo:energetic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:energetic"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Aggressive",
+            "tag_id": "urn:tag:music:qloo:aggressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:aggressive"
+          },
+          {
+            "name": "Heavy",
+            "tag_id": "urn:tag:music:qloo:heavy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:heavy"
+          },
+          {
+            "name": "Funky",
+            "tag_id": "urn:tag:music:qloo:funky",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:funky"
+          },
+          {
+            "name": "Raw",
+            "tag_id": "urn:tag:music:qloo:raw",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:raw"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:music:qloo:energetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:energetic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Intense",
+            "tag_id": "urn:tag:style:qloo:intense",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:intense"
+          },
+          {
+            "name": "Raw",
+            "tag_id": "urn:tag:style:qloo:raw",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:raw"
+          },
+          {
+            "name": "Powerful",
+            "tag_id": "urn:tag:style:qloo:powerful",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:powerful"
+          },
+          {
+            "name": "Intense",
+            "tag_id": "urn:tag:characteristic:qloo:intense",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:intense"
+          },
+          {
+            "name": "Aggressive",
+            "tag_id": "urn:tag:characteristic:qloo:aggressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:aggressive"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Raw",
+            "tag_id": "urn:tag:characteristic:qloo:raw",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:raw"
+          },
+          {
+            "name": "Powerful",
+            "tag_id": "urn:tag:characteristic:qloo:powerful",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:powerful"
+          },
+          {
+            "name": "Post-Hardcore",
+            "tag_id": "urn:tag:style:qloo:post_hardcore",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:post_hardcore"
+          },
+          {
+            "name": "Funk Metal",
+            "tag_id": "urn:tag:style:qloo:funk_metal",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:funk_metal"
+          },
+          {
+            "name": "Alternative Metal",
+            "tag_id": "urn:tag:style:qloo:alternative_metal",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:alternative_metal"
+          },
+          {
+            "name": "Punk-Influenced",
+            "tag_id": "urn:tag:style:qloo:punk_influenced",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:punk_influenced"
+          },
+          {
+            "name": "Groove-Oriented",
+            "tag_id": "urn:tag:style:qloo:groove_oriented",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:groove_oriented"
+          },
+          {
+            "name": "Alternative Metal",
+            "tag_id": "urn:tag:influence:qloo:alternative_metal",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:alternative_metal"
+          },
+          {
+            "name": "Post-Hardcore",
+            "tag_id": "urn:tag:influence:qloo:post_hardcore",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:post_hardcore"
+          },
+          {
+            "name": "Funk Metal",
+            "tag_id": "urn:tag:influence:qloo:funk_metal",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:funk_metal"
+          },
+          {
+            "name": "Black Flag",
+            "tag_id": "urn:tag:influenced_by:qloo:black_flag",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:black_flag"
+          },
+          {
+            "name": "The Stooges",
+            "tag_id": "urn:tag:influenced_by:qloo:the_stooges",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:the_stooges"
+          },
+          {
+            "name": "Led Zeppelin",
+            "tag_id": "urn:tag:influenced_by:qloo:led_zeppelin",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:led_zeppelin"
+          },
+          {
+            "name": "Funkadelic",
+            "tag_id": "urn:tag:influenced_by:qloo:funkadelic",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:funkadelic"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Electric Guitar",
+            "tag_id": "urn:tag:instrument:qloo:electric_guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:electric_guitar"
+          },
+          {
+            "name": "Bass Guitar",
+            "tag_id": "urn:tag:instrument:qloo:bass_guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:bass_guitar"
+          },
+          {
+            "name": "Drums",
+            "tag_id": "urn:tag:instrument:qloo:drums",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:drums"
+          },
+          {
+            "name": "Personal Struggle",
+            "tag_id": "urn:tag:theme:qloo:personal_struggle",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:personal_struggle"
+          },
+          {
+            "name": "Social Issues",
+            "tag_id": "urn:tag:theme:qloo:social_issues",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:social_issues"
+          },
+          {
+            "name": "Anger",
+            "tag_id": "urn:tag:theme:qloo:anger",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:anger"
+          },
+          {
+            "name": "Isolation",
+            "tag_id": "urn:tag:theme:qloo:isolation",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:isolation"
+          },
+          {
+            "name": "Self-Reflection",
+            "tag_id": "urn:tag:theme:qloo:self_reflection",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:self_reflection"
+          },
+          {
+            "name": "Alternative Metal",
+            "tag_id": "urn:tag:genre:qloo:alternative_metal",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:alternative_metal"
+          },
+          {
+            "name": "Post-Hardcore",
+            "tag_id": "urn:tag:genre:qloo:post_hardcore",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:post_hardcore"
+          },
+          {
+            "name": "Funk Metal",
+            "tag_id": "urn:tag:genre:qloo:funk_metal",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:funk_metal"
+          },
+          {
+            "name": "Hard Rock",
+            "tag_id": "urn:tag:subgenre:qloo:hard_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:hard_rock"
+          },
+          {
+            "name": "Punk Rock",
+            "tag_id": "urn:tag:subgenre:qloo:punk_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:punk_rock"
+          }
+        ]
+      },
+      {
+        "name": "Sonny Boy Williamson",
+        "entity_id": "51E8F027-0E94-4777-978B-7F42E2BBB826",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "sonny%20boy%20williamson",
+              "listeners": 232547,
+              "scrobbles": 1832929
+            },
+            "musicbrainz": {
+              "id": "3b8403b6-72c8-4953-b966-5fc555923baf"
+            },
+            "spotify": {
+              "id": "69VgCcXFV59QuQWEXSTxfK"
+            },
+            "wikidata": {
+              "id": "q918571"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/51E8F027-0E94-4777-978B-7F42E2BBB826-420x-auto.jpg"
+          },
+          "short_description": "Influential American blues harmonica player and singer known for his distinctive style."
+        },
+        "popularity": 0.9772174446967218,
+        "disambiguation": "Sonny Boy Williamson",
+        "tags": [
+          {
+            "name": "Classic Blues",
+            "tag_id": "urn:tag:genre:classic_blues",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:classic_blues"
+          },
+          {
+            "name": "Harmonica Blues",
+            "tag_id": "urn:tag:genre:harmonica_blues",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:harmonica_blues"
+          },
+          {
+            "name": "Delta Blues",
+            "tag_id": "urn:tag:genre:delta_blues",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:delta_blues"
+          },
+          {
+            "name": "Blues",
+            "tag_id": "urn:tag:genre:blues",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:blues"
+          },
+          {
+            "name": "Chicago Blues",
+            "tag_id": "urn:tag:genre:chicago_blues",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:chicago_blues"
+          },
+          {
+            "name": "Dedicated",
+            "tag_id": "urn:tag:audience:qloo:dedicated",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:dedicated"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Blues Enthusiasts",
+            "tag_id": "urn:tag:audience:qloo:blues_enthusiasts",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:blues_enthusiasts"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Soulful",
+            "tag_id": "urn:tag:music:qloo:soulful",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:soulful"
+          },
+          {
+            "name": "Raw",
+            "tag_id": "urn:tag:music:qloo:raw",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:raw"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:music:qloo:expressive",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:expressive"
+          },
+          {
+            "name": "Bluesy",
+            "tag_id": "urn:tag:music:qloo:bluesy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:bluesy"
+          },
+          {
+            "name": "Authentic",
+            "tag_id": "urn:tag:music:qloo:authentic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:authentic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:style:qloo:expressive",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:expressive"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Authentic",
+            "tag_id": "urn:tag:style:qloo:authentic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:authentic"
+          },
+          {
+            "name": "Influential",
+            "tag_id": "urn:tag:characteristic:qloo:influential",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:influential"
+          },
+          {
+            "name": "Pioneering",
+            "tag_id": "urn:tag:characteristic:qloo:pioneering",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:pioneering"
+          },
+          {
+            "name": "Expressive",
+            "tag_id": "urn:tag:characteristic:qloo:expressive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:expressive"
+          },
+          {
+            "name": "Soulful",
+            "tag_id": "urn:tag:characteristic:qloo:soulful",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:soulful"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Delta Blues",
+            "tag_id": "urn:tag:style:qloo:delta_blues",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:delta_blues"
+          },
+          {
+            "name": "Chicago Blues",
+            "tag_id": "urn:tag:style:qloo:chicago_blues",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:chicago_blues"
+          },
+          {
+            "name": "Electric Blues",
+            "tag_id": "urn:tag:style:qloo:electric_blues",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:electric_blues"
+          },
+          {
+            "name": "Harmonica Blues",
+            "tag_id": "urn:tag:style:qloo:harmonica_blues",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:harmonica_blues"
+          },
+          {
+            "name": "Urban Blues",
+            "tag_id": "urn:tag:style:qloo:urban_blues",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:urban_blues"
+          },
+          {
+            "name": "Blues Rock",
+            "tag_id": "urn:tag:influence:qloo:blues_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:blues_rock"
+          },
+          {
+            "name": "Rock and Roll",
+            "tag_id": "urn:tag:influence:qloo:rock_and_roll",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:rock_and_roll"
+          },
+          {
+            "name": "Harmonica Blues",
+            "tag_id": "urn:tag:influence:qloo:harmonica_blues",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:harmonica_blues"
+          },
+          {
+            "name": "Electric Blues",
+            "tag_id": "urn:tag:influence:qloo:electric_blues",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:electric_blues"
+          },
+          {
+            "name": "Charley Patton",
+            "tag_id": "urn:tag:influenced_by:qloo:charley_patton",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:charley_patton"
+          },
+          {
+            "name": "Sonny Terry",
+            "tag_id": "urn:tag:influenced_by:qloo:sonny_terry",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:sonny_terry"
+          },
+          {
+            "name": "Big Joe Williams",
+            "tag_id": "urn:tag:influenced_by:qloo:big_joe_williams",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:big_joe_williams"
+          },
+          {
+            "name": "Harmonica",
+            "tag_id": "urn:tag:instrument:qloo:harmonica",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:harmonica"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Heartache",
+            "tag_id": "urn:tag:theme:qloo:heartache",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:heartache"
+          },
+          {
+            "name": "Life Struggles",
+            "tag_id": "urn:tag:theme:qloo:life_struggles",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:life_struggles"
+          },
+          {
+            "name": "Travel",
+            "tag_id": "urn:tag:theme:qloo:travel",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:travel"
+          },
+          {
+            "name": "Hardship",
+            "tag_id": "urn:tag:theme:qloo:hardship",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:hardship"
+          },
+          {
+            "name": "Blues",
+            "tag_id": "urn:tag:genre:qloo:blues",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:blues"
+          },
+          {
+            "name": "Chicago Blues",
+            "tag_id": "urn:tag:genre:qloo:chicago_blues",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:chicago_blues"
+          },
+          {
+            "name": "Delta Blues",
+            "tag_id": "urn:tag:genre:qloo:delta_blues",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:delta_blues"
+          },
+          {
+            "name": "Electric Blues",
+            "tag_id": "urn:tag:subgenre:qloo:electric_blues",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:electric_blues"
+          },
+          {
+            "name": "Harmonica Blues",
+            "tag_id": "urn:tag:subgenre:qloo:harmonica_blues",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:harmonica_blues"
+          }
+        ]
+      },
+      {
+        "name": "Sonny & Cher",
+        "entity_id": "FC820C1A-91D6-4E69-8FCF-B545FBDB6293",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "sonny%20%26%20cher",
+              "listeners": 461147,
+              "scrobbles": 2631818
+            },
+            "musicbrainz": {
+              "id": "3d6e4b6d-2700-458c-9722-9021965a8164"
+            },
+            "spotify": {
+              "id": "71lGEtP9qYXDsSXjfexTqO"
+            },
+            "wikidata": {
+              "id": "q907445"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/FC820C1A-91D6-4E69-8FCF-B545FBDB6293-420x-auto.jpg"
+          },
+          "short_description": "Sonny & Cher were an American pop duo known for their distinctive blend of pop and rock music and their television variety show."
+        },
+        "popularity": 0.9706286203953295,
+        "disambiguation": "Sonny & Cher",
+        "tags": [
+          {
+            "name": "American",
+            "tag_id": "urn:tag:genre:american",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:american"
+          },
+          {
+            "name": "Rock",
+            "tag_id": "urn:tag:genre:rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rock"
+          },
+          {
+            "name": "Oldies",
+            "tag_id": "urn:tag:genre:oldies",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:oldies"
+          },
+          {
+            "name": "60s",
+            "tag_id": "urn:tag:genre:60s",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:60s"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Nostalgic",
+            "tag_id": "urn:tag:audience:qloo:nostalgic",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:nostalgic"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Diverse",
+            "tag_id": "urn:tag:audience:qloo:diverse",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:diverse"
+          },
+          {
+            "name": "Catchy",
+            "tag_id": "urn:tag:music:qloo:catchy",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:catchy"
+          },
+          {
+            "name": "Melodic",
+            "tag_id": "urn:tag:music:qloo:melodic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:melodic"
+          },
+          {
+            "name": "Harmonious",
+            "tag_id": "urn:tag:music:qloo:harmonious",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:harmonious"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:music:qloo:energetic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:energetic"
+          },
+          {
+            "name": "Playful",
+            "tag_id": "urn:tag:music:qloo:playful",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:playful"
+          },
+          {
+            "name": "Charismatic",
+            "tag_id": "urn:tag:style:qloo:charismatic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:charismatic"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Playful",
+            "tag_id": "urn:tag:style:qloo:playful",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:playful"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Charismatic",
+            "tag_id": "urn:tag:characteristic:qloo:charismatic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:charismatic"
+          },
+          {
+            "name": "Harmonious",
+            "tag_id": "urn:tag:characteristic:qloo:harmonious",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:harmonious"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:characteristic:qloo:energetic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:energetic"
+          },
+          {
+            "name": "Playful",
+            "tag_id": "urn:tag:characteristic:qloo:playful",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:playful"
+          },
+          {
+            "name": "Distinctive",
+            "tag_id": "urn:tag:characteristic:qloo:distinctive",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:distinctive"
+          },
+          {
+            "name": "1960s Pop",
+            "tag_id": "urn:tag:style:qloo:1960s_pop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:1960s_pop"
+          },
+          {
+            "name": "Folk Rock",
+            "tag_id": "urn:tag:style:qloo:folk_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:folk_rock"
+          },
+          {
+            "name": "Blue-Eyed Soul",
+            "tag_id": "urn:tag:style:qloo:blue_eyed_soul",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:blue_eyed_soul"
+          },
+          {
+            "name": "Soft Rock",
+            "tag_id": "urn:tag:style:qloo:soft_rock",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:soft_rock"
+          },
+          {
+            "name": "Television Variety Show Music",
+            "tag_id": "urn:tag:style:qloo:television_variety_show_music",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:television_variety_show_music"
+          },
+          {
+            "name": "Pop Rock",
+            "tag_id": "urn:tag:influence:qloo:pop_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:pop_rock"
+          },
+          {
+            "name": "Soft Rock",
+            "tag_id": "urn:tag:influence:qloo:soft_rock",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:soft_rock"
+          },
+          {
+            "name": "Adult Contemporary",
+            "tag_id": "urn:tag:influence:qloo:adult_contemporary",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:adult_contemporary"
+          },
+          {
+            "name": "Phil Spector",
+            "tag_id": "urn:tag:influenced_by:qloo:phil_spector",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:phil_spector"
+          },
+          {
+            "name": "The Beatles",
+            "tag_id": "urn:tag:influenced_by:qloo:the_beatles",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:the_beatles"
+          },
+          {
+            "name": "Bob Dylan",
+            "tag_id": "urn:tag:influenced_by:qloo:bob_dylan",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:bob_dylan"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Guitar",
+            "tag_id": "urn:tag:instrument:qloo:guitar",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:guitar"
+          },
+          {
+            "name": "Keyboards",
+            "tag_id": "urn:tag:instrument:qloo:keyboards",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:keyboards"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Relationships",
+            "tag_id": "urn:tag:theme:qloo:relationships",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:relationships"
+          },
+          {
+            "name": "Social Commentary",
+            "tag_id": "urn:tag:theme:qloo:social_commentary",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:social_commentary"
+          },
+          {
+            "name": "Youth Culture",
+            "tag_id": "urn:tag:theme:qloo:youth_culture",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:youth_culture"
+          },
+          {
+            "name": "Pop",
+            "tag_id": "urn:tag:genre:qloo:pop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:pop"
+          },
+          {
+            "name": "Rock",
+            "tag_id": "urn:tag:genre:qloo:rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:rock"
+          },
+          {
+            "name": "Folk Rock",
+            "tag_id": "urn:tag:genre:qloo:folk_rock",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:folk_rock"
+          },
+          {
+            "name": "Soft Rock",
+            "tag_id": "urn:tag:subgenre:qloo:soft_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:soft_rock"
+          },
+          {
+            "name": "Pop Rock",
+            "tag_id": "urn:tag:subgenre:qloo:pop_rock",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:pop_rock"
+          },
+          {
+            "name": "Blue-Eyed Soul",
+            "tag_id": "urn:tag:subgenre:qloo:blue_eyed_soul",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:blue_eyed_soul"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "endpoint": "/search",
+  "params": {
+    "query": "Jay-Z",
+    "take": "5",
+    "types": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:36.382Z",
+  "latencyMs": 324,
+  "body": {
+    "results": [
+      {
+        "name": "Jay-Z",
+        "entity_id": "1894930C-9D08-485C-8F0F-0E0AC4DFB447",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "facebook": {
+              "id": "jayz"
+            },
+            "instagram": {
+              "id": "jayz"
+            },
+            "lastfm": {
+              "id": "jay-z",
+              "listeners": 5197562,
+              "scrobbles": 197356841
+            },
+            "musicbrainz": {
+              "id": "f82bcf78-5b69-4622-a5ef-73800768d9ac"
+            },
+            "spotify": {
+              "id": "3nFkdlSjzX9mRTtwJOzDYB"
+            },
+            "twitter": {
+              "id": "sc"
+            },
+            "wikidata": {
+              "id": "q62766"
+            }
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/1894930C-9D08-485C-8F0F-0E0AC4DFB447-420x-auto.jpg"
+          },
+          "short_description": "Jay-Z is an American rapper, songwriter, and entrepreneur known for his influential role in hip hop music and culture."
+        },
+        "popularity": 0.9996322673584989,
+        "disambiguation": "Jay-Z",
+        "tags": [
+          {
+            "name": "East Coast Rap",
+            "tag_id": "urn:tag:genre:east_coast_rap",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:east_coast_rap"
+          },
+          {
+            "name": "Hip - Hop",
+            "tag_id": "urn:tag:genre:hip_hop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:hip_hop"
+          },
+          {
+            "name": "Rap",
+            "tag_id": "urn:tag:genre:rap",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rap"
+          },
+          {
+            "name": "Loyal",
+            "tag_id": "urn:tag:audience:qloo:loyal",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:loyal"
+          },
+          {
+            "name": "Diverse",
+            "tag_id": "urn:tag:audience:qloo:diverse",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:diverse"
+          },
+          {
+            "name": "Passionate",
+            "tag_id": "urn:tag:audience:qloo:passionate",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:passionate"
+          },
+          {
+            "name": "Urban",
+            "tag_id": "urn:tag:audience:qloo:urban",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:urban"
+          },
+          {
+            "name": "Global",
+            "tag_id": "urn:tag:audience:qloo:global",
+            "type": "urn:tag:audience:qloo",
+            "value": "urn:tag:audience:qloo:global"
+          },
+          {
+            "name": "Lyrical",
+            "tag_id": "urn:tag:music:qloo:lyrical",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:lyrical"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:music:qloo:innovative",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:innovative"
+          },
+          {
+            "name": "Smooth",
+            "tag_id": "urn:tag:music:qloo:smooth",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:smooth"
+          },
+          {
+            "name": "Rhythmic",
+            "tag_id": "urn:tag:music:qloo:rhythmic",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:rhythmic"
+          },
+          {
+            "name": "Storytelling",
+            "tag_id": "urn:tag:music:qloo:storytelling",
+            "type": "urn:tag:music:qloo",
+            "value": "urn:tag:music:qloo:storytelling"
+          },
+          {
+            "name": "Charismatic",
+            "tag_id": "urn:tag:style:qloo:charismatic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:charismatic"
+          },
+          {
+            "name": "Energetic",
+            "tag_id": "urn:tag:style:qloo:energetic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:energetic"
+          },
+          {
+            "name": "Confident",
+            "tag_id": "urn:tag:style:qloo:confident",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:confident"
+          },
+          {
+            "name": "Engaging",
+            "tag_id": "urn:tag:style:qloo:engaging",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:engaging"
+          },
+          {
+            "name": "Dynamic",
+            "tag_id": "urn:tag:style:qloo:dynamic",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:dynamic"
+          },
+          {
+            "name": "Influential",
+            "tag_id": "urn:tag:characteristic:qloo:influential",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:influential"
+          },
+          {
+            "name": "Lyrical",
+            "tag_id": "urn:tag:characteristic:qloo:lyrical",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:lyrical"
+          },
+          {
+            "name": "Entrepreneurial",
+            "tag_id": "urn:tag:characteristic:qloo:entrepreneurial",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:entrepreneurial"
+          },
+          {
+            "name": "Innovative",
+            "tag_id": "urn:tag:characteristic:qloo:innovative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:innovative"
+          },
+          {
+            "name": "Charismatic",
+            "tag_id": "urn:tag:characteristic:qloo:charismatic",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:charismatic"
+          },
+          {
+            "name": "East Coast Hip Hop",
+            "tag_id": "urn:tag:style:qloo:east_coast_hip_hop",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:east_coast_hip_hop"
+          },
+          {
+            "name": "Conscious Rap",
+            "tag_id": "urn:tag:style:qloo:conscious_rap",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:conscious_rap"
+          },
+          {
+            "name": "Gangsta Rap",
+            "tag_id": "urn:tag:style:qloo:gangsta_rap",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:gangsta_rap"
+          },
+          {
+            "name": "Boom Bap",
+            "tag_id": "urn:tag:style:qloo:boom_bap",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:boom_bap"
+          },
+          {
+            "name": "Streetwise",
+            "tag_id": "urn:tag:style:qloo:streetwise",
+            "type": "urn:tag:style:qloo",
+            "value": "urn:tag:style:qloo:streetwise"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:influence:qloo:hip_hop",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:hip_hop"
+          },
+          {
+            "name": "Rap",
+            "tag_id": "urn:tag:influence:qloo:rap",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:rap"
+          },
+          {
+            "name": "Trap",
+            "tag_id": "urn:tag:influence:qloo:trap",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:trap"
+          },
+          {
+            "name": "Contemporary R&B",
+            "tag_id": "urn:tag:influence:qloo:contemporary_r_b",
+            "type": "urn:tag:influence:qloo",
+            "value": "urn:tag:influence:qloo:contemporary_r_b"
+          },
+          {
+            "name": "The Notorious B.I.G.",
+            "tag_id": "urn:tag:influenced_by:qloo:the_notorious_b_i_g_",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:the_notorious_b_i_g_"
+          },
+          {
+            "name": "Nas",
+            "tag_id": "urn:tag:influenced_by:qloo:nas",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:nas"
+          },
+          {
+            "name": "Rakim",
+            "tag_id": "urn:tag:influenced_by:qloo:rakim",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:rakim"
+          },
+          {
+            "name": "KRS-One",
+            "tag_id": "urn:tag:influenced_by:qloo:krs_one",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:krs_one"
+          },
+          {
+            "name": "Big Daddy Kane",
+            "tag_id": "urn:tag:influenced_by:qloo:big_daddy_kane",
+            "type": "urn:tag:influenced_by:qloo",
+            "value": "urn:tag:influenced_by:qloo:big_daddy_kane"
+          },
+          {
+            "name": "Vocals",
+            "tag_id": "urn:tag:instrument:qloo:vocals",
+            "type": "urn:tag:instrument:qloo",
+            "value": "urn:tag:instrument:qloo:vocals"
+          },
+          {
+            "name": "Success",
+            "tag_id": "urn:tag:theme:qloo:success",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:success"
+          },
+          {
+            "name": "Wealth",
+            "tag_id": "urn:tag:theme:qloo:wealth",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:wealth"
+          },
+          {
+            "name": "Struggle",
+            "tag_id": "urn:tag:theme:qloo:struggle",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:struggle"
+          },
+          {
+            "name": "Street Life",
+            "tag_id": "urn:tag:theme:qloo:street_life",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:street_life"
+          },
+          {
+            "name": "Love",
+            "tag_id": "urn:tag:theme:qloo:love",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:love"
+          },
+          {
+            "name": "Ambition",
+            "tag_id": "urn:tag:theme:qloo:ambition",
+            "type": "urn:tag:theme:qloo",
+            "value": "urn:tag:theme:qloo:ambition"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:genre:qloo:hip_hop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hip_hop"
+          },
+          {
+            "name": "Rap",
+            "tag_id": "urn:tag:genre:qloo:rap",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:rap"
+          },
+          {
+            "name": "East Coast Hip Hop",
+            "tag_id": "urn:tag:subgenre:qloo:east_coast_hip_hop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:east_coast_hip_hop"
+          },
+          {
+            "name": "Gangsta Rap",
+            "tag_id": "urn:tag:subgenre:qloo:gangsta_rap",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:gangsta_rap"
+          },
+          {
+            "name": "Conscious Hip Hop",
+            "tag_id": "urn:tag:subgenre:qloo:conscious_hip_hop",
+            "type": "urn:tag:subgenre:qloo",
+            "value": "urn:tag:subgenre:qloo:conscious_hip_hop"
+          }
+        ]
+      },
+      {
+        "name": "Jay-Z and Linkin Park",
+        "entity_id": "5BF55F32-C72A-4AAE-BC86-D514510B6056",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/5BF55F32-C72A-4AAE-BC86-D514510B6056-420x-auto.jpg"
+          },
+          "short_description": "A collaborative project between rapper Jay-Z and rock band Linkin Park blending hip hop and rock."
+        },
+        "popularity": 0.9966195586533563,
+        "disambiguation": "Jay-Z and Linkin Park"
+      },
+      {
+        "name": "Jay-Z & Alicia Keys",
+        "entity_id": "0082A893-C557-4A81-AF17-6759073DDFF3",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/0082A893-C557-4A81-AF17-6759073DDFF3-420x-auto.jpg"
+          },
+          "short_description": "A collaborative musical duo consisting of rapper Jay-Z and singer Alicia Keys, known for their hit song 'Empire State of Mind'."
+        },
+        "popularity": 0.909598496681972,
+        "disambiguation": "Jay-Z & Alicia Keys"
+      },
+      {
+        "name": "Jay-Zeezer",
+        "entity_id": "CF59394E-21CA-48D3-B0AA-D3E0F58A5612",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {
+              "id": "jay-zeezer",
+              "listeners": 12102,
+              "scrobbles": 110940
+            },
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/CF59394E-21CA-48D3-B0AA-D3E0F58A5612-420x-auto.jpg"
+          },
+          "short_description": "Hip hop artist known as Jay-Zeezer."
+        },
+        "popularity": 0.8653761162709886,
+        "disambiguation": "Jay-Zeezer",
+        "tags": [
+          {
+            "name": "Mash Up",
+            "tag_id": "urn:tag:genre:mash_up",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:mash_up"
+          },
+          {
+            "name": "Hip - Hop",
+            "tag_id": "urn:tag:genre:hip_hop",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:hip_hop"
+          },
+          {
+            "name": "Mashup",
+            "tag_id": "urn:tag:genre:mashup",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:mashup"
+          },
+          {
+            "name": "Rock",
+            "tag_id": "urn:tag:genre:rock",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rock"
+          },
+          {
+            "name": "Rap",
+            "tag_id": "urn:tag:genre:rap",
+            "type": "urn:tag:genre",
+            "value": "urn:tag:genre:rap"
+          },
+          {
+            "name": "Creative",
+            "tag_id": "urn:tag:characteristic:qloo:creative",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:creative"
+          },
+          {
+            "name": "Lyrical",
+            "tag_id": "urn:tag:characteristic:qloo:lyrical",
+            "type": "urn:tag:characteristic:qloo",
+            "value": "urn:tag:characteristic:qloo:lyrical"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:genre:qloo:hip_hop",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:hip_hop"
+          },
+          {
+            "name": "Rap",
+            "tag_id": "urn:tag:genre:qloo:rap",
+            "type": "urn:tag:genre:qloo",
+            "value": "urn:tag:genre:qloo:rap"
+          }
+        ]
+      },
+      {
+        "name": "Jay-Z&Beyonce",
+        "entity_id": "B9450D4C-7BE5-4AA0-B6E5-923C89C22E94",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "properties": {
+          "akas": [],
+          "duration": {},
+          "external": {
+            "lastfm": {},
+            "musicbrainz": {},
+            "spotify": {}
+          },
+          "image": {
+            "url": "https://images.qloo.com/i/B9450D4C-7BE5-4AA0-B6E5-923C89C22E94-420x-auto.jpg"
+          },
+          "short_description": "American hip hop and R&B power couple known for influential music and cultural impact."
+        },
+        "popularity": 0.8284611569746062,
+        "disambiguation": "Jay-Z&Beyonce"
+      }
+    ]
+  }
+}

@@ -1,0 +1,5005 @@
+{
+  "endpoint": "/v2/insights",
+  "params": {
+    "filter.location.query": "Berlin",
+    "filter.type": "urn:heatmap",
+    "signal.interests.entities": "AFB6CA3D-9620-4D8B-9958-6727BA40AFA6"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T12:36:26.994Z",
+  "latencyMs": 625,
+  "body": {
+    "success": true,
+    "results": {
+      "heatmap": [
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.397827,
+            "geohash": "u33dbb"
+          },
+          "query": {
+            "affinity": 1,
+            "affinity_rank": 0.95946,
+            "popularity": 1,
+            "entity_artist_affinity_rank": 0.95946,
+            "entity_artist_affinity": 1
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.441772,
+            "geohash": "u33d9y"
+          },
+          "query": {
+            "affinity": 0.9971751412429378,
+            "affinity_rank": 0.952043,
+            "popularity": 0.9915254237288136,
+            "entity_artist_affinity_rank": 0.952043,
+            "entity_artist_affinity": 0.9971751412429378
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.3758545,
+            "geohash": "u33db2"
+          },
+          "query": {
+            "affinity": 0.9943502824858758,
+            "affinity_rank": 0.941125,
+            "popularity": 0.9971751412429378,
+            "entity_artist_affinity_rank": 0.941125,
+            "entity_artist_affinity": 0.9943502824858758
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.3758545,
+            "geohash": "u33d8r"
+          },
+          "query": {
+            "affinity": 0.9915254237288136,
+            "affinity_rank": 0.922947,
+            "popularity": 0.9887005649717514,
+            "entity_artist_affinity_rank": 0.922947,
+            "entity_artist_affinity": 0.9915254237288136
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.441772,
+            "geohash": "u33d9v"
+          },
+          "query": {
+            "affinity": 0.9887005649717514,
+            "affinity_rank": 0.906901,
+            "popularity": 0.9943502824858758,
+            "entity_artist_affinity_rank": 0.906901,
+            "entity_artist_affinity": 0.9887005649717514
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52289,
+            "longitude": 13.397827,
+            "geohash": "u33dbc"
+          },
+          "query": {
+            "affinity": 0.9858757062146892,
+            "affinity_rank": 0.904978,
+            "popularity": 0.9858757062146892,
+            "entity_artist_affinity_rank": 0.904978,
+            "entity_artist_affinity": 0.9858757062146892
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52289,
+            "longitude": 13.408813,
+            "geohash": "u33dc1"
+          },
+          "query": {
+            "affinity": 0.9830508474576272,
+            "affinity_rank": 0.896341,
+            "popularity": 0.980225988700565,
+            "entity_artist_affinity_rank": 0.896341,
+            "entity_artist_affinity": 0.9830508474576272
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.54486,
+            "longitude": 13.408813,
+            "geohash": "u33dcj"
+          },
+          "query": {
+            "affinity": 0.980225988700565,
+            "affinity_rank": 0.886085,
+            "popularity": 0.9689265536723164,
+            "entity_artist_affinity_rank": 0.886085,
+            "entity_artist_affinity": 0.980225988700565
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.386841,
+            "geohash": "u33db8"
+          },
+          "query": {
+            "affinity": 0.9774011299435028,
+            "affinity_rank": 0.885735,
+            "popularity": 0.9830508474576272,
+            "entity_artist_affinity_rank": 0.885735,
+            "entity_artist_affinity": 0.9774011299435028
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.386841,
+            "geohash": "u33d8t"
+          },
+          "query": {
+            "affinity": 0.9745762711864406,
+            "affinity_rank": 0.883349,
+            "popularity": 0.9717514124293786,
+            "entity_artist_affinity_rank": 0.883349,
+            "entity_artist_affinity": 0.9745762711864406
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.331909,
+            "geohash": "u336xq"
+          },
+          "query": {
+            "affinity": 0.9717514124293786,
+            "affinity_rank": 0.883021,
+            "popularity": 0.9774011299435028,
+            "entity_artist_affinity_rank": 0.883021,
+            "entity_artist_affinity": 0.9717514124293786
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.386841,
+            "geohash": "u33d8w"
+          },
+          "query": {
+            "affinity": 0.9689265536723164,
+            "affinity_rank": 0.878579,
+            "popularity": 0.9745762711864406,
+            "entity_artist_affinity_rank": 0.878579,
+            "entity_artist_affinity": 0.9689265536723164
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.397827,
+            "geohash": "u33d8v"
+          },
+          "query": {
+            "affinity": 0.9661016949152542,
+            "affinity_rank": 0.872831,
+            "popularity": 0.9661016949152542,
+            "entity_artist_affinity_rank": 0.872831,
+            "entity_artist_affinity": 0.9661016949152542
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.408813,
+            "geohash": "u33dc0"
+          },
+          "query": {
+            "affinity": 0.963276836158192,
+            "affinity_rank": 0.849245,
+            "popularity": 0.963276836158192,
+            "entity_artist_affinity_rank": 0.849245,
+            "entity_artist_affinity": 0.963276836158192
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.3428955,
+            "geohash": "u336xt"
+          },
+          "query": {
+            "affinity": 0.96045197740113,
+            "affinity_rank": 0.844008,
+            "popularity": 0.9491525423728814,
+            "entity_artist_affinity_rank": 0.844008,
+            "entity_artist_affinity": 0.96045197740113
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.40753,
+            "longitude": 13.408813,
+            "geohash": "u33d1h"
+          },
+          "query": {
+            "affinity": 0.9576271186440678,
+            "affinity_rank": 0.842043,
+            "popularity": 0.96045197740113,
+            "entity_artist_affinity_rank": 0.842043,
+            "entity_artist_affinity": 0.9576271186440678
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52289,
+            "longitude": 13.364868,
+            "geohash": "u33db1"
+          },
+          "query": {
+            "affinity": 0.9548022598870056,
+            "affinity_rank": 0.833986,
+            "popularity": 0.9378531073446328,
+            "entity_artist_affinity_rank": 0.833986,
+            "entity_artist_affinity": 0.9548022598870056
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.386841,
+            "geohash": "u33d8x"
+          },
+          "query": {
+            "affinity": 0.9519774011299436,
+            "affinity_rank": 0.831611,
+            "popularity": 0.9350282485875706,
+            "entity_artist_affinity_rank": 0.831611,
+            "entity_artist_affinity": 0.9519774011299436
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.3758545,
+            "geohash": "u33d8q"
+          },
+          "query": {
+            "affinity": 0.9491525423728814,
+            "affinity_rank": 0.83085,
+            "popularity": 0.9548022598870056,
+            "entity_artist_affinity_rank": 0.83085,
+            "entity_artist_affinity": 0.9491525423728814
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.533875,
+            "longitude": 13.386841,
+            "geohash": "u33dbe"
+          },
+          "query": {
+            "affinity": 0.9463276836158192,
+            "affinity_rank": 0.822967,
+            "popularity": 0.9067796610169492,
+            "entity_artist_affinity_rank": 0.822967,
+            "entity_artist_affinity": 0.9463276836158192
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.3428955,
+            "geohash": "u336xw"
+          },
+          "query": {
+            "affinity": 0.943502824858757,
+            "affinity_rank": 0.817866,
+            "popularity": 0.9322033898305084,
+            "entity_artist_affinity_rank": 0.817866,
+            "entity_artist_affinity": 0.943502824858757
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.408813,
+            "geohash": "u33dc4"
+          },
+          "query": {
+            "affinity": 0.940677966101695,
+            "affinity_rank": 0.810461,
+            "popularity": 0.9519774011299436,
+            "entity_artist_affinity_rank": 0.810461,
+            "entity_artist_affinity": 0.940677966101695
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.397827,
+            "geohash": "u33dbf"
+          },
+          "query": {
+            "affinity": 0.9378531073446328,
+            "affinity_rank": 0.805945,
+            "popularity": 0.9576271186440678,
+            "entity_artist_affinity_rank": 0.805945,
+            "entity_artist_affinity": 0.9378531073446328
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52289,
+            "longitude": 13.386841,
+            "geohash": "u33db9"
+          },
+          "query": {
+            "affinity": 0.9350282485875706,
+            "affinity_rank": 0.805413,
+            "popularity": 0.943502824858757,
+            "entity_artist_affinity_rank": 0.805413,
+            "entity_artist_affinity": 0.9350282485875706
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.3758545,
+            "geohash": "u33d8m"
+          },
+          "query": {
+            "affinity": 0.9322033898305084,
+            "affinity_rank": 0.798245,
+            "popularity": 0.9180790960451978,
+            "entity_artist_affinity_rank": 0.798245,
+            "entity_artist_affinity": 0.9322033898305084
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.397827,
+            "geohash": "u33d8z"
+          },
+          "query": {
+            "affinity": 0.9293785310734464,
+            "affinity_rank": 0.793258,
+            "popularity": 0.9124293785310734,
+            "entity_artist_affinity_rank": 0.793258,
+            "entity_artist_affinity": 0.9293785310734464
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.244019,
+            "geohash": "u336tr"
+          },
+          "query": {
+            "affinity": 0.9265536723163842,
+            "affinity_rank": 0.789636,
+            "popularity": 0.9265536723163842,
+            "entity_artist_affinity_rank": 0.789636,
+            "entity_artist_affinity": 0.9265536723163842
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.331909,
+            "geohash": "u336xm"
+          },
+          "query": {
+            "affinity": 0.923728813559322,
+            "affinity_rank": 0.788438,
+            "popularity": 0.9096045197740112,
+            "entity_artist_affinity_rank": 0.788438,
+            "entity_artist_affinity": 0.923728813559322
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.364868,
+            "geohash": "u33db0"
+          },
+          "query": {
+            "affinity": 0.9209039548022598,
+            "affinity_rank": 0.78705,
+            "popularity": 0.940677966101695,
+            "entity_artist_affinity_rank": 0.78705,
+            "entity_artist_affinity": 0.9209039548022598
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52289,
+            "longitude": 13.4198,
+            "geohash": "u33dc3"
+          },
+          "query": {
+            "affinity": 0.9180790960451978,
+            "affinity_rank": 0.78596,
+            "popularity": 0.903954802259887,
+            "entity_artist_affinity_rank": 0.78596,
+            "entity_artist_affinity": 0.9180790960451978
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.29895,
+            "geohash": "u336y8"
+          },
+          "query": {
+            "affinity": 0.9152542372881356,
+            "affinity_rank": 0.777115,
+            "popularity": 0.8954802259887006,
+            "entity_artist_affinity_rank": 0.777115,
+            "entity_artist_affinity": 0.9152542372881356
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.539368,
+            "longitude": 13.408813,
+            "geohash": "u33dch"
+          },
+          "query": {
+            "affinity": 0.9124293785310734,
+            "affinity_rank": 0.775171,
+            "popularity": 0.9293785310734464,
+            "entity_artist_affinity_rank": 0.775171,
+            "entity_artist_affinity": 0.9124293785310734
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.533875,
+            "longitude": 13.452759,
+            "geohash": "u33df5"
+          },
+          "query": {
+            "affinity": 0.9096045197740112,
+            "affinity_rank": 0.761163,
+            "popularity": 0.8870056497175142,
+            "entity_artist_affinity_rank": 0.761163,
+            "entity_artist_affinity": 0.9096045197740112
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.555847,
+            "longitude": 13.287964,
+            "geohash": "u336yr"
+          },
+          "query": {
+            "affinity": 0.9067796610169492,
+            "affinity_rank": 0.757769,
+            "popularity": 0.9011299435028248,
+            "entity_artist_affinity_rank": 0.757769,
+            "entity_artist_affinity": 0.9067796610169492
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.539368,
+            "longitude": 13.573608,
+            "geohash": "u33duu"
+          },
+          "query": {
+            "affinity": 0.903954802259887,
+            "affinity_rank": 0.753417,
+            "popularity": 0.867231638418079,
+            "entity_artist_affinity_rank": 0.753417,
+            "entity_artist_affinity": 0.903954802259887
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.452759,
+            "geohash": "u33ddn"
+          },
+          "query": {
+            "affinity": 0.9011299435028248,
+            "affinity_rank": 0.752994,
+            "popularity": 0.9463276836158192,
+            "entity_artist_affinity_rank": 0.752994,
+            "entity_artist_affinity": 0.9011299435028248
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.353882,
+            "geohash": "u336xz"
+          },
+          "query": {
+            "affinity": 0.8983050847457628,
+            "affinity_rank": 0.750183,
+            "popularity": 0.8785310734463276,
+            "entity_artist_affinity_rank": 0.750183,
+            "entity_artist_affinity": 0.8983050847457628
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.3758545,
+            "geohash": "u33db6"
+          },
+          "query": {
+            "affinity": 0.8954802259887006,
+            "affinity_rank": 0.747006,
+            "popularity": 0.9152542372881356,
+            "entity_artist_affinity_rank": 0.747006,
+            "entity_artist_affinity": 0.8954802259887006
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52289,
+            "longitude": 13.29895,
+            "geohash": "u336y9"
+          },
+          "query": {
+            "affinity": 0.8926553672316384,
+            "affinity_rank": 0.744183,
+            "popularity": 0.847457627118644,
+            "entity_artist_affinity_rank": 0.744183,
+            "entity_artist_affinity": 0.8926553672316384
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.539368,
+            "longitude": 13.397827,
+            "geohash": "u33dbu"
+          },
+          "query": {
+            "affinity": 0.8898305084745762,
+            "affinity_rank": 0.739006,
+            "popularity": 0.8898305084745762,
+            "entity_artist_affinity_rank": 0.739006,
+            "entity_artist_affinity": 0.8898305084745762
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.320923,
+            "geohash": "u336xj"
+          },
+          "query": {
+            "affinity": 0.8870056497175142,
+            "affinity_rank": 0.736967,
+            "popularity": 0.864406779661017,
+            "entity_artist_affinity_rank": 0.736967,
+            "entity_artist_affinity": 0.8870056497175142
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.309937,
+            "geohash": "u336wv"
+          },
+          "query": {
+            "affinity": 0.884180790960452,
+            "affinity_rank": 0.707087,
+            "popularity": 0.8531073446327684,
+            "entity_artist_affinity_rank": 0.707087,
+            "entity_artist_affinity": 0.884180790960452
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.408813,
+            "geohash": "u33d9h"
+          },
+          "query": {
+            "affinity": 0.8813559322033898,
+            "affinity_rank": 0.704627,
+            "popularity": 0.9209039548022598,
+            "entity_artist_affinity_rank": 0.704627,
+            "entity_artist_affinity": 0.8813559322033898
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.4198,
+            "geohash": "u33d9k"
+          },
+          "query": {
+            "affinity": 0.8785310734463276,
+            "affinity_rank": 0.697437,
+            "popularity": 0.923728813559322,
+            "entity_artist_affinity_rank": 0.697437,
+            "entity_artist_affinity": 0.8785310734463276
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.320923,
+            "geohash": "u336xn"
+          },
+          "query": {
+            "affinity": 0.8757062146892656,
+            "affinity_rank": 0.694324,
+            "popularity": 0.8559322033898306,
+            "entity_artist_affinity_rank": 0.694324,
+            "entity_artist_affinity": 0.8757062146892656
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.452759,
+            "geohash": "u33ddp"
+          },
+          "query": {
+            "affinity": 0.8728813559322034,
+            "affinity_rank": 0.687887,
+            "popularity": 0.8983050847457628,
+            "entity_artist_affinity_rank": 0.687887,
+            "entity_artist_affinity": 0.8728813559322034
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.364868,
+            "geohash": "u33d84"
+          },
+          "query": {
+            "affinity": 0.8700564971751412,
+            "affinity_rank": 0.686744,
+            "popularity": 0.788135593220339,
+            "entity_artist_affinity_rank": 0.686744,
+            "entity_artist_affinity": 0.8700564971751412
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.566833,
+            "longitude": 13.430786,
+            "geohash": "u33e19"
+          },
+          "query": {
+            "affinity": 0.867231638418079,
+            "affinity_rank": 0.683389,
+            "popularity": 0.8022598870056498,
+            "entity_artist_affinity_rank": 0.683389,
+            "entity_artist_affinity": 0.867231638418079
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.353882,
+            "geohash": "u336xv"
+          },
+          "query": {
+            "affinity": 0.864406779661017,
+            "affinity_rank": 0.682128,
+            "popularity": 0.844632768361582,
+            "entity_artist_affinity_rank": 0.682128,
+            "entity_artist_affinity": 0.864406779661017
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.4198,
+            "geohash": "u33d9m"
+          },
+          "query": {
+            "affinity": 0.8615819209039548,
+            "affinity_rank": 0.668597,
+            "popularity": 0.8926553672316384,
+            "entity_artist_affinity_rank": 0.668597,
+            "entity_artist_affinity": 0.8615819209039548
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.353882,
+            "geohash": "u336xy"
+          },
+          "query": {
+            "affinity": 0.8587570621468926,
+            "affinity_rank": 0.668427,
+            "popularity": 0.8220338983050848,
+            "entity_artist_affinity_rank": 0.668427,
+            "entity_artist_affinity": 0.8587570621468926
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.386841,
+            "geohash": "u33d8d"
+          },
+          "query": {
+            "affinity": 0.8559322033898306,
+            "affinity_rank": 0.668356,
+            "popularity": 0.8615819209039548,
+            "entity_artist_affinity_rank": 0.668356,
+            "entity_artist_affinity": 0.8559322033898306
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.397827,
+            "geohash": "u33d8f"
+          },
+          "query": {
+            "affinity": 0.8531073446327684,
+            "affinity_rank": 0.665864,
+            "popularity": 0.8700564971751412,
+            "entity_artist_affinity_rank": 0.665864,
+            "entity_artist_affinity": 0.8531073446327684
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.353882,
+            "geohash": "u336xf"
+          },
+          "query": {
+            "affinity": 0.8502824858757062,
+            "affinity_rank": 0.645035,
+            "popularity": 0.8502824858757062,
+            "entity_artist_affinity_rank": 0.645035,
+            "entity_artist_affinity": 0.8502824858757062
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.539368,
+            "longitude": 13.430786,
+            "geohash": "u33dcs"
+          },
+          "query": {
+            "affinity": 0.847457627118644,
+            "affinity_rank": 0.643696,
+            "popularity": 0.8813559322033898,
+            "entity_artist_affinity_rank": 0.643696,
+            "entity_artist_affinity": 0.847457627118644
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.4198,
+            "geohash": "u33d96"
+          },
+          "query": {
+            "affinity": 0.844632768361582,
+            "affinity_rank": 0.643168,
+            "popularity": 0.8728813559322034,
+            "entity_artist_affinity_rank": 0.643168,
+            "entity_artist_affinity": 0.844632768361582
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.309937,
+            "geohash": "u336wy"
+          },
+          "query": {
+            "affinity": 0.8418079096045198,
+            "affinity_rank": 0.635723,
+            "popularity": 0.7542372881355932,
+            "entity_artist_affinity_rank": 0.635723,
+            "entity_artist_affinity": 0.8418079096045198
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.430786,
+            "geohash": "u33d9t"
+          },
+          "query": {
+            "affinity": 0.8389830508474576,
+            "affinity_rank": 0.631703,
+            "popularity": 0.8757062146892656,
+            "entity_artist_affinity_rank": 0.631703,
+            "entity_artist_affinity": 0.8389830508474576
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.478943,
+            "longitude": 13.430786,
+            "geohash": "u33d99"
+          },
+          "query": {
+            "affinity": 0.8361581920903954,
+            "affinity_rank": 0.630594,
+            "popularity": 0.884180790960452,
+            "entity_artist_affinity_rank": 0.630594,
+            "entity_artist_affinity": 0.8361581920903954
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.408813,
+            "geohash": "u33d9p"
+          },
+          "query": {
+            "affinity": 0.8333333333333334,
+            "affinity_rank": 0.623756,
+            "popularity": 0.7994350282485876,
+            "entity_artist_affinity_rank": 0.623756,
+            "entity_artist_affinity": 0.8333333333333334
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.309937,
+            "geohash": "u336wz"
+          },
+          "query": {
+            "affinity": 0.8305084745762712,
+            "affinity_rank": 0.613271,
+            "popularity": 0.7937853107344632,
+            "entity_artist_affinity_rank": 0.613271,
+            "entity_artist_affinity": 0.8305084745762712
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.364868,
+            "geohash": "u33d8n"
+          },
+          "query": {
+            "affinity": 0.827683615819209,
+            "affinity_rank": 0.604688,
+            "popularity": 0.8192090395480226,
+            "entity_artist_affinity_rank": 0.604688,
+            "entity_artist_affinity": 0.827683615819209
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.452759,
+            "geohash": "u33ddj"
+          },
+          "query": {
+            "affinity": 0.8248587570621468,
+            "affinity_rank": 0.599223,
+            "popularity": 0.827683615819209,
+            "entity_artist_affinity_rank": 0.599223,
+            "entity_artist_affinity": 0.8248587570621468
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.386841,
+            "geohash": "u33d8s"
+          },
+          "query": {
+            "affinity": 0.8220338983050848,
+            "affinity_rank": 0.597496,
+            "popularity": 0.8418079096045198,
+            "entity_artist_affinity_rank": 0.597496,
+            "entity_artist_affinity": 0.8220338983050848
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.364868,
+            "geohash": "u33d8h"
+          },
+          "query": {
+            "affinity": 0.8192090395480226,
+            "affinity_rank": 0.597483,
+            "popularity": 0.768361581920904,
+            "entity_artist_affinity_rank": 0.597483,
+            "entity_artist_affinity": 0.8192090395480226
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.386841,
+            "geohash": "u33dbd"
+          },
+          "query": {
+            "affinity": 0.8163841807909604,
+            "affinity_rank": 0.593121,
+            "popularity": 0.8135593220338984,
+            "entity_artist_affinity_rank": 0.593121,
+            "entity_artist_affinity": 0.8163841807909604
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.533875,
+            "longitude": 13.397827,
+            "geohash": "u33dbg"
+          },
+          "query": {
+            "affinity": 0.8135593220338984,
+            "affinity_rank": 0.582504,
+            "popularity": 0.8361581920903954,
+            "entity_artist_affinity_rank": 0.582504,
+            "entity_artist_affinity": 0.8135593220338984
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.4198,
+            "geohash": "u33d9r"
+          },
+          "query": {
+            "affinity": 0.8107344632768362,
+            "affinity_rank": 0.580356,
+            "popularity": 0.8587570621468926,
+            "entity_artist_affinity_rank": 0.580356,
+            "entity_artist_affinity": 0.8107344632768362
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.4198,
+            "geohash": "u33dc2"
+          },
+          "query": {
+            "affinity": 0.807909604519774,
+            "affinity_rank": 0.579447,
+            "popularity": 0.788135593220339,
+            "entity_artist_affinity_rank": 0.579447,
+            "entity_artist_affinity": 0.807909604519774
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.4198,
+            "geohash": "u33dc6"
+          },
+          "query": {
+            "affinity": 0.8050847457627118,
+            "affinity_rank": 0.575878,
+            "popularity": 0.8248587570621468,
+            "entity_artist_affinity_rank": 0.575878,
+            "entity_artist_affinity": 0.8050847457627118
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.539368,
+            "longitude": 13.4198,
+            "geohash": "u33dck"
+          },
+          "query": {
+            "affinity": 0.8022598870056498,
+            "affinity_rank": 0.575721,
+            "popularity": 0.7853107344632768,
+            "entity_artist_affinity_rank": 0.575721,
+            "entity_artist_affinity": 0.8022598870056498
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.430786,
+            "geohash": "u33d9x"
+          },
+          "query": {
+            "affinity": 0.7994350282485876,
+            "affinity_rank": 0.572982,
+            "popularity": 0.8389830508474576,
+            "entity_artist_affinity_rank": 0.572982,
+            "entity_artist_affinity": 0.7994350282485876
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.474731,
+            "geohash": "u33dde"
+          },
+          "query": {
+            "affinity": 0.7966101694915254,
+            "affinity_rank": 0.560826,
+            "popularity": 0.8163841807909604,
+            "entity_artist_affinity_rank": 0.560826,
+            "entity_artist_affinity": 0.7966101694915254
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.276978,
+            "geohash": "u336wn"
+          },
+          "query": {
+            "affinity": 0.7937853107344632,
+            "affinity_rank": 0.559049,
+            "popularity": 0.7824858757062146,
+            "entity_artist_affinity_rank": 0.559049,
+            "entity_artist_affinity": 0.7937853107344632
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.276978,
+            "geohash": "u336wj"
+          },
+          "query": {
+            "affinity": 0.7909604519774012,
+            "affinity_rank": 0.549465,
+            "popularity": 0.7344632768361582,
+            "entity_artist_affinity_rank": 0.549465,
+            "entity_artist_affinity": 0.7909604519774012
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.386841,
+            "geohash": "u33d8e"
+          },
+          "query": {
+            "affinity": 0.788135593220339,
+            "affinity_rank": 0.546694,
+            "popularity": 0.8050847457627118,
+            "entity_artist_affinity_rank": 0.546694,
+            "entity_artist_affinity": 0.788135593220339
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.29895,
+            "geohash": "u336ww"
+          },
+          "query": {
+            "affinity": 0.7853107344632768,
+            "affinity_rank": 0.544843,
+            "popularity": 0.7372881355932204,
+            "entity_artist_affinity_rank": 0.544843,
+            "entity_artist_affinity": 0.7853107344632768
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.364868,
+            "geohash": "u33d8p"
+          },
+          "query": {
+            "affinity": 0.7824858757062146,
+            "affinity_rank": 0.543175,
+            "popularity": 0.7768361581920904,
+            "entity_artist_affinity_rank": 0.543175,
+            "entity_artist_affinity": 0.7824858757062146
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.430786,
+            "geohash": "u33d9d"
+          },
+          "query": {
+            "affinity": 0.7796610169491526,
+            "affinity_rank": 0.541584,
+            "popularity": 0.8305084745762712,
+            "entity_artist_affinity_rank": 0.541584,
+            "entity_artist_affinity": 0.7796610169491526
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.45697,
+            "longitude": 13.309937,
+            "geohash": "u336qv"
+          },
+          "query": {
+            "affinity": 0.7768361581920904,
+            "affinity_rank": 0.539187,
+            "popularity": 0.7711864406779662,
+            "entity_artist_affinity_rank": 0.539187,
+            "entity_artist_affinity": 0.7768361581920904
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.430786,
+            "geohash": "u33d9w"
+          },
+          "query": {
+            "affinity": 0.7740112994350282,
+            "affinity_rank": 0.53781,
+            "popularity": 0.7796610169491526,
+            "entity_artist_affinity_rank": 0.53781,
+            "entity_artist_affinity": 0.7740112994350282
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.408813,
+            "geohash": "u33d9j"
+          },
+          "query": {
+            "affinity": 0.7711864406779662,
+            "affinity_rank": 0.520793,
+            "popularity": 0.8107344632768362,
+            "entity_artist_affinity_rank": 0.520793,
+            "entity_artist_affinity": 0.7711864406779662
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.533875,
+            "longitude": 13.4198,
+            "geohash": "u33dc7"
+          },
+          "query": {
+            "affinity": 0.768361581920904,
+            "affinity_rank": 0.516817,
+            "popularity": 0.7627118644067796,
+            "entity_artist_affinity_rank": 0.516817,
+            "entity_artist_affinity": 0.768361581920904
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.452759,
+            "geohash": "u33ddh"
+          },
+          "query": {
+            "affinity": 0.7655367231638418,
+            "affinity_rank": 0.503863,
+            "popularity": 0.8305084745762712,
+            "entity_artist_affinity_rank": 0.503863,
+            "entity_artist_affinity": 0.7655367231638418
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.533875,
+            "longitude": 13.408813,
+            "geohash": "u33dc5"
+          },
+          "query": {
+            "affinity": 0.7627118644067796,
+            "affinity_rank": 0.497259,
+            "popularity": 0.7740112994350282,
+            "entity_artist_affinity_rank": 0.497259,
+            "entity_artist_affinity": 0.7627118644067796
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.320923,
+            "geohash": "u336xh"
+          },
+          "query": {
+            "affinity": 0.7598870056497176,
+            "affinity_rank": 0.495285,
+            "popularity": 0.731638418079096,
+            "entity_artist_affinity_rank": 0.495285,
+            "entity_artist_affinity": 0.7598870056497176
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.463745,
+            "geohash": "u33ddr"
+          },
+          "query": {
+            "affinity": 0.7570621468926554,
+            "affinity_rank": 0.486263,
+            "popularity": 0.7966101694915254,
+            "entity_artist_affinity_rank": 0.486263,
+            "entity_artist_affinity": 0.7570621468926554
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.452759,
+            "geohash": "u33df0"
+          },
+          "query": {
+            "affinity": 0.7542372881355932,
+            "affinity_rank": 0.483418,
+            "popularity": 0.751412429378531,
+            "entity_artist_affinity_rank": 0.483418,
+            "entity_artist_affinity": 0.7542372881355932
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.467957,
+            "longitude": 13.386841,
+            "geohash": "u33d2x"
+          },
+          "query": {
+            "affinity": 0.751412429378531,
+            "affinity_rank": 0.477337,
+            "popularity": 0.7655367231638418,
+            "entity_artist_affinity_rank": 0.477337,
+            "entity_artist_affinity": 0.751412429378531
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.485718,
+            "geohash": "u33ddy"
+          },
+          "query": {
+            "affinity": 0.748587570621469,
+            "affinity_rank": 0.476521,
+            "popularity": 0.6949152542372882,
+            "entity_artist_affinity_rank": 0.476521,
+            "entity_artist_affinity": 0.748587570621469
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.364868,
+            "geohash": "u33d8j"
+          },
+          "query": {
+            "affinity": 0.7457627118644068,
+            "affinity_rank": 0.476222,
+            "popularity": 0.7457627118644068,
+            "entity_artist_affinity_rank": 0.476222,
+            "entity_artist_affinity": 0.7457627118644068
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.396545,
+            "longitude": 13.540649,
+            "geohash": "u33dh4"
+          },
+          "query": {
+            "affinity": 0.7429378531073446,
+            "affinity_rank": 0.475046,
+            "popularity": 0.6045197740112994,
+            "entity_artist_affinity_rank": 0.475046,
+            "entity_artist_affinity": 0.7429378531073446
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.244019,
+            "geohash": "u336tk"
+          },
+          "query": {
+            "affinity": 0.7401129943502824,
+            "affinity_rank": 0.470085,
+            "popularity": 0.7598870056497176,
+            "entity_artist_affinity_rank": 0.470085,
+            "entity_artist_affinity": 0.7401129943502824
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.452759,
+            "geohash": "u33df4"
+          },
+          "query": {
+            "affinity": 0.7372881355932204,
+            "affinity_rank": 0.463904,
+            "popularity": 0.7146892655367232,
+            "entity_artist_affinity_rank": 0.463904,
+            "entity_artist_affinity": 0.7372881355932204
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.533875,
+            "longitude": 13.200073,
+            "geohash": "u336u7"
+          },
+          "query": {
+            "affinity": 0.7344632768361582,
+            "affinity_rank": 0.459174,
+            "popularity": 0.6977401129943502,
+            "entity_artist_affinity_rank": 0.459174,
+            "entity_artist_affinity": 0.7344632768361582
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.441772,
+            "geohash": "u33d9z"
+          },
+          "query": {
+            "affinity": 0.731638418079096,
+            "affinity_rank": 0.449412,
+            "popularity": 0.807909604519774,
+            "entity_artist_affinity_rank": 0.449412,
+            "entity_artist_affinity": 0.731638418079096
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.550354,
+            "longitude": 13.3428955,
+            "geohash": "u336zw"
+          },
+          "query": {
+            "affinity": 0.7288135593220338,
+            "affinity_rank": 0.449338,
+            "popularity": 0.748587570621469,
+            "entity_artist_affinity_rank": 0.449338,
+            "entity_artist_affinity": 0.7288135593220338
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.3428955,
+            "geohash": "u336xx"
+          },
+          "query": {
+            "affinity": 0.7259887005649718,
+            "affinity_rank": 0.444879,
+            "popularity": 0.7203389830508474,
+            "entity_artist_affinity_rank": 0.444879,
+            "entity_artist_affinity": 0.7259887005649718
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.550354,
+            "longitude": 13.386841,
+            "geohash": "u33dbw"
+          },
+          "query": {
+            "affinity": 0.7231638418079096,
+            "affinity_rank": 0.431421,
+            "popularity": 0.7175141242937854,
+            "entity_artist_affinity_rank": 0.431421,
+            "entity_artist_affinity": 0.7231638418079096
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.430786,
+            "geohash": "u33d9e"
+          },
+          "query": {
+            "affinity": 0.7203389830508474,
+            "affinity_rank": 0.431289,
+            "popularity": 0.7570621468926554,
+            "entity_artist_affinity_rank": 0.431289,
+            "entity_artist_affinity": 0.7203389830508474
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.566833,
+            "longitude": 13.397827,
+            "geohash": "u33e0c"
+          },
+          "query": {
+            "affinity": 0.7175141242937854,
+            "affinity_rank": 0.428141,
+            "popularity": 0.7259887005649718,
+            "entity_artist_affinity_rank": 0.428141,
+            "entity_artist_affinity": 0.7175141242937854
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.331909,
+            "geohash": "u336xr"
+          },
+          "query": {
+            "affinity": 0.7146892655367232,
+            "affinity_rank": 0.421676,
+            "popularity": 0.652542372881356,
+            "entity_artist_affinity_rank": 0.421676,
+            "entity_artist_affinity": 0.7146892655367232
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.533875,
+            "longitude": 13.3758545,
+            "geohash": "u33db7"
+          },
+          "query": {
+            "affinity": 0.711864406779661,
+            "affinity_rank": 0.418146,
+            "popularity": 0.6751412429378532,
+            "entity_artist_affinity_rank": 0.418146,
+            "entity_artist_affinity": 0.711864406779661
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.54486,
+            "longitude": 13.4198,
+            "geohash": "u33dcm"
+          },
+          "query": {
+            "affinity": 0.7090395480225988,
+            "affinity_rank": 0.413938,
+            "popularity": 0.7401129943502824,
+            "entity_artist_affinity_rank": 0.413938,
+            "entity_artist_affinity": 0.7090395480225988
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.309937,
+            "geohash": "u336wu"
+          },
+          "query": {
+            "affinity": 0.7062146892655368,
+            "affinity_rank": 0.405121,
+            "popularity": 0.6836158192090396,
+            "entity_artist_affinity_rank": 0.405121,
+            "entity_artist_affinity": 0.7062146892655368
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.45697,
+            "longitude": 13.320923,
+            "geohash": "u336rj"
+          },
+          "query": {
+            "affinity": 0.7033898305084746,
+            "affinity_rank": 0.399374,
+            "popularity": 0.632768361581921,
+            "entity_artist_affinity_rank": 0.399374,
+            "entity_artist_affinity": 0.7033898305084746
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.451477,
+            "longitude": 13.573608,
+            "geohash": "u33dku"
+          },
+          "query": {
+            "affinity": 0.7005649717514124,
+            "affinity_rank": 0.399236,
+            "popularity": 0.6807909604519774,
+            "entity_artist_affinity_rank": 0.399236,
+            "entity_artist_affinity": 0.7005649717514124
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.3428955,
+            "geohash": "u336xs"
+          },
+          "query": {
+            "affinity": 0.6977401129943502,
+            "affinity_rank": 0.395599,
+            "popularity": 0.6440677966101694,
+            "entity_artist_affinity_rank": 0.395599,
+            "entity_artist_affinity": 0.6977401129943502
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.331909,
+            "geohash": "u336z6"
+          },
+          "query": {
+            "affinity": 0.6949152542372882,
+            "affinity_rank": 0.394786,
+            "popularity": 0.6497175141242938,
+            "entity_artist_affinity_rank": 0.394786,
+            "entity_artist_affinity": 0.6949152542372882
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.320923,
+            "geohash": "u336xp"
+          },
+          "query": {
+            "affinity": 0.692090395480226,
+            "affinity_rank": 0.39158,
+            "popularity": 0.7259887005649718,
+            "entity_artist_affinity_rank": 0.39158,
+            "entity_artist_affinity": 0.692090395480226
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.397827,
+            "geohash": "u33d8y"
+          },
+          "query": {
+            "affinity": 0.6892655367231638,
+            "affinity_rank": 0.388705,
+            "popularity": 0.6751412429378532,
+            "entity_artist_affinity_rank": 0.388705,
+            "entity_artist_affinity": 0.6892655367231638
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.496704,
+            "geohash": "u33dg0"
+          },
+          "query": {
+            "affinity": 0.6864406779661016,
+            "affinity_rank": 0.385455,
+            "popularity": 0.7090395480225988,
+            "entity_artist_affinity_rank": 0.385455,
+            "entity_artist_affinity": 0.6864406779661016
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.451477,
+            "longitude": 13.331909,
+            "geohash": "u336rk"
+          },
+          "query": {
+            "affinity": 0.6836158192090396,
+            "affinity_rank": 0.374856,
+            "popularity": 0.615819209039548,
+            "entity_artist_affinity_rank": 0.374856,
+            "entity_artist_affinity": 0.6836158192090396
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.430786,
+            "geohash": "u33d9s"
+          },
+          "query": {
+            "affinity": 0.6807909604519774,
+            "affinity_rank": 0.373597,
+            "popularity": 0.7429378531073446,
+            "entity_artist_affinity_rank": 0.373597,
+            "entity_artist_affinity": 0.6807909604519774
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.408813,
+            "geohash": "u33d9n"
+          },
+          "query": {
+            "affinity": 0.6779661016949152,
+            "affinity_rank": 0.372975,
+            "popularity": 0.6694915254237288,
+            "entity_artist_affinity_rank": 0.372975,
+            "entity_artist_affinity": 0.6779661016949152
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52289,
+            "longitude": 13.3758545,
+            "geohash": "u33db3"
+          },
+          "query": {
+            "affinity": 0.6751412429378532,
+            "affinity_rank": 0.371886,
+            "popularity": 0.6694915254237288,
+            "entity_artist_affinity_rank": 0.371886,
+            "entity_artist_affinity": 0.6751412429378532
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.3428955,
+            "geohash": "u336zd"
+          },
+          "query": {
+            "affinity": 0.672316384180791,
+            "affinity_rank": 0.368239,
+            "popularity": 0.615819209039548,
+            "entity_artist_affinity_rank": 0.368239,
+            "entity_artist_affinity": 0.672316384180791
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.430786,
+            "geohash": "u33dcd"
+          },
+          "query": {
+            "affinity": 0.6694915254237288,
+            "affinity_rank": 0.368092,
+            "popularity": 0.7062146892655368,
+            "entity_artist_affinity_rank": 0.368092,
+            "entity_artist_affinity": 0.6694915254237288
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.434998,
+            "longitude": 13.255005,
+            "geohash": "u336m9"
+          },
+          "query": {
+            "affinity": 0.6666666666666666,
+            "affinity_rank": 0.366294,
+            "popularity": 0.6101694915254238,
+            "entity_artist_affinity_rank": 0.366294,
+            "entity_artist_affinity": 0.6666666666666666
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.584595,
+            "geohash": "u33dt5"
+          },
+          "query": {
+            "affinity": 0.6638418079096046,
+            "affinity_rank": 0.365154,
+            "popularity": 0.6101694915254238,
+            "entity_artist_affinity_rank": 0.365154,
+            "entity_artist_affinity": 0.6638418079096046
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.599792,
+            "longitude": 13.353882,
+            "geohash": "u337pz"
+          },
+          "query": {
+            "affinity": 0.6610169491525424,
+            "affinity_rank": 0.362486,
+            "popularity": 0.5734463276836158,
+            "entity_artist_affinity_rank": 0.362486,
+            "entity_artist_affinity": 0.6610169491525424
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.550354,
+            "longitude": 13.287964,
+            "geohash": "u336yq"
+          },
+          "query": {
+            "affinity": 0.6581920903954802,
+            "affinity_rank": 0.354941,
+            "popularity": 0.5988700564971752,
+            "entity_artist_affinity_rank": 0.354941,
+            "entity_artist_affinity": 0.6581920903954802
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.4198,
+            "geohash": "u33d9q"
+          },
+          "query": {
+            "affinity": 0.655367231638418,
+            "affinity_rank": 0.352251,
+            "popularity": 0.7090395480225988,
+            "entity_artist_affinity_rank": 0.352251,
+            "entity_artist_affinity": 0.655367231638418
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.353882,
+            "geohash": "u336xu"
+          },
+          "query": {
+            "affinity": 0.652542372881356,
+            "affinity_rank": 0.35067,
+            "popularity": 0.632768361581921,
+            "entity_artist_affinity_rank": 0.35067,
+            "entity_artist_affinity": 0.652542372881356
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.478943,
+            "longitude": 13.386841,
+            "geohash": "u33d89"
+          },
+          "query": {
+            "affinity": 0.6497175141242938,
+            "affinity_rank": 0.344652,
+            "popularity": 0.7203389830508474,
+            "entity_artist_affinity_rank": 0.344652,
+            "entity_artist_affinity": 0.6497175141242938
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.555847,
+            "longitude": 13.3428955,
+            "geohash": "u336zx"
+          },
+          "query": {
+            "affinity": 0.6468926553672316,
+            "affinity_rank": 0.329897,
+            "popularity": 0.4717514124293785,
+            "entity_artist_affinity_rank": 0.329897,
+            "entity_artist_affinity": 0.6468926553672316
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.441772,
+            "geohash": "u33dcb"
+          },
+          "query": {
+            "affinity": 0.6440677966101694,
+            "affinity_rank": 0.323457,
+            "popularity": 0.6384180790960452,
+            "entity_artist_affinity_rank": 0.323457,
+            "entity_artist_affinity": 0.6440677966101694
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.47345,
+            "longitude": 13.397827,
+            "geohash": "u33d8b"
+          },
+          "query": {
+            "affinity": 0.6412429378531074,
+            "affinity_rank": 0.322662,
+            "popularity": 0.6864406779661016,
+            "entity_artist_affinity_rank": 0.322662,
+            "entity_artist_affinity": 0.6412429378531074
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.533875,
+            "longitude": 13.331909,
+            "geohash": "u336z7"
+          },
+          "query": {
+            "affinity": 0.6384180790960452,
+            "affinity_rank": 0.315683,
+            "popularity": 0.655367231638418,
+            "entity_artist_affinity_rank": 0.315683,
+            "entity_artist_affinity": 0.6384180790960452
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.265991,
+            "geohash": "u336tv"
+          },
+          "query": {
+            "affinity": 0.635593220338983,
+            "affinity_rank": 0.314873,
+            "popularity": 0.5649717514124294,
+            "entity_artist_affinity_rank": 0.314873,
+            "entity_artist_affinity": 0.635593220338983
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.353882,
+            "geohash": "u336zb"
+          },
+          "query": {
+            "affinity": 0.632768361581921,
+            "affinity_rank": 0.309427,
+            "popularity": 0.5875706214689266,
+            "entity_artist_affinity_rank": 0.309427,
+            "entity_artist_affinity": 0.632768361581921
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.4198,
+            "geohash": "u33d97"
+          },
+          "query": {
+            "affinity": 0.6299435028248588,
+            "affinity_rank": 0.308774,
+            "popularity": 0.7033898305084746,
+            "entity_artist_affinity_rank": 0.308774,
+            "entity_artist_affinity": 0.6299435028248588
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.485718,
+            "geohash": "u33dff"
+          },
+          "query": {
+            "affinity": 0.6271186440677966,
+            "affinity_rank": 0.307353,
+            "popularity": 0.6242937853107344,
+            "entity_artist_affinity_rank": 0.307353,
+            "entity_artist_affinity": 0.6271186440677966
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.3758545,
+            "geohash": "u33d87"
+          },
+          "query": {
+            "affinity": 0.6242937853107344,
+            "affinity_rank": 0.305871,
+            "popularity": 0.6412429378531074,
+            "entity_artist_affinity_rank": 0.305871,
+            "entity_artist_affinity": 0.6242937853107344
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.533875,
+            "longitude": 13.430786,
+            "geohash": "u33dce"
+          },
+          "query": {
+            "affinity": 0.6214689265536724,
+            "affinity_rank": 0.301288,
+            "popularity": 0.655367231638418,
+            "entity_artist_affinity_rank": 0.301288,
+            "entity_artist_affinity": 0.6214689265536724
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.441772,
+            "geohash": "u33d9u"
+          },
+          "query": {
+            "affinity": 0.6186440677966102,
+            "affinity_rank": 0.299906,
+            "popularity": 0.692090395480226,
+            "entity_artist_affinity_rank": 0.299906,
+            "entity_artist_affinity": 0.6186440677966102
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.3428955,
+            "geohash": "u336z8"
+          },
+          "query": {
+            "affinity": 0.615819209039548,
+            "affinity_rank": 0.298068,
+            "popularity": 0.6271186440677966,
+            "entity_artist_affinity_rank": 0.298068,
+            "entity_artist_affinity": 0.615819209039548
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52289,
+            "longitude": 13.331909,
+            "geohash": "u336z3"
+          },
+          "query": {
+            "affinity": 0.6129943502824858,
+            "affinity_rank": 0.297441,
+            "popularity": 0.5338983050847458,
+            "entity_artist_affinity_rank": 0.297441,
+            "entity_artist_affinity": 0.6129943502824858
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.331909,
+            "geohash": "u336z2"
+          },
+          "query": {
+            "affinity": 0.6101694915254238,
+            "affinity_rank": 0.297228,
+            "popularity": 0.5,
+            "entity_artist_affinity_rank": 0.297228,
+            "entity_artist_affinity": 0.6101694915254238
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.463745,
+            "geohash": "u33ddq"
+          },
+          "query": {
+            "affinity": 0.6073446327683616,
+            "affinity_rank": 0.293698,
+            "popularity": 0.6638418079096046,
+            "entity_artist_affinity_rank": 0.293698,
+            "entity_artist_affinity": 0.6073446327683616
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.583313,
+            "longitude": 13.287964,
+            "geohash": "u337nk"
+          },
+          "query": {
+            "affinity": 0.6045197740112994,
+            "affinity_rank": 0.289738,
+            "popularity": 0.5480225988700564,
+            "entity_artist_affinity_rank": 0.289738,
+            "entity_artist_affinity": 0.6045197740112994
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.562622,
+            "geohash": "u33dsw"
+          },
+          "query": {
+            "affinity": 0.6016949152542372,
+            "affinity_rank": 0.287678,
+            "popularity": 0.4265536723163842,
+            "entity_artist_affinity_rank": 0.287678,
+            "entity_artist_affinity": 0.6016949152542372
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.397827,
+            "geohash": "u33d8g"
+          },
+          "query": {
+            "affinity": 0.5988700564971752,
+            "affinity_rank": 0.283665,
+            "popularity": 0.6638418079096046,
+            "entity_artist_affinity_rank": 0.283665,
+            "entity_artist_affinity": 0.5988700564971752
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.463745,
+            "geohash": "u33ddk"
+          },
+          "query": {
+            "affinity": 0.596045197740113,
+            "affinity_rank": 0.282117,
+            "popularity": 0.6977401129943502,
+            "entity_artist_affinity_rank": 0.282117,
+            "entity_artist_affinity": 0.596045197740113
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.462463,
+            "longitude": 13.320923,
+            "geohash": "u336rn"
+          },
+          "query": {
+            "affinity": 0.5932203389830508,
+            "affinity_rank": 0.28186,
+            "popularity": 0.5649717514124294,
+            "entity_artist_affinity_rank": 0.28186,
+            "entity_artist_affinity": 0.5932203389830508
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.364868,
+            "geohash": "u33db4"
+          },
+          "query": {
+            "affinity": 0.5903954802259888,
+            "affinity_rank": 0.276868,
+            "popularity": 0.5875706214689266,
+            "entity_artist_affinity_rank": 0.276868,
+            "entity_artist_affinity": 0.5903954802259888
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.550354,
+            "longitude": 13.408813,
+            "geohash": "u33dcn"
+          },
+          "query": {
+            "affinity": 0.5875706214689266,
+            "affinity_rank": 0.275539,
+            "popularity": 0.615819209039548,
+            "entity_artist_affinity_rank": 0.275539,
+            "entity_artist_affinity": 0.5875706214689266
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.54486,
+            "longitude": 13.430786,
+            "geohash": "u33dct"
+          },
+          "query": {
+            "affinity": 0.5847457627118644,
+            "affinity_rank": 0.271407,
+            "popularity": 0.655367231638418,
+            "entity_artist_affinity_rank": 0.271407,
+            "entity_artist_affinity": 0.5847457627118644
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52289,
+            "longitude": 13.167114,
+            "geohash": "u336g9"
+          },
+          "query": {
+            "affinity": 0.5819209039548022,
+            "affinity_rank": 0.268164,
+            "popularity": 0.3305084745762712,
+            "entity_artist_affinity_rank": 0.268164,
+            "entity_artist_affinity": 0.5819209039548022
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.478943,
+            "longitude": 13.441772,
+            "geohash": "u33d9c"
+          },
+          "query": {
+            "affinity": 0.5790960451977402,
+            "affinity_rank": 0.265394,
+            "popularity": 0.6864406779661016,
+            "entity_artist_affinity_rank": 0.265394,
+            "entity_artist_affinity": 0.5790960451977402
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.555847,
+            "longitude": 13.29895,
+            "geohash": "u336yx"
+          },
+          "query": {
+            "affinity": 0.576271186440678,
+            "affinity_rank": 0.25952,
+            "popularity": 0.519774011299435,
+            "entity_artist_affinity_rank": 0.25952,
+            "entity_artist_affinity": 0.576271186440678
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.287964,
+            "geohash": "u336wq"
+          },
+          "query": {
+            "affinity": 0.5734463276836158,
+            "affinity_rank": 0.259206,
+            "popularity": 0.5536723163841808,
+            "entity_artist_affinity_rank": 0.259206,
+            "entity_artist_affinity": 0.5734463276836158
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.616272,
+            "longitude": 13.233032,
+            "geohash": "u337m4"
+          },
+          "query": {
+            "affinity": 0.5706214689265536,
+            "affinity_rank": 0.253197,
+            "popularity": 0.4265536723163842,
+            "entity_artist_affinity_rank": 0.253197,
+            "entity_artist_affinity": 0.5706214689265536
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.434998,
+            "longitude": 13.4198,
+            "geohash": "u33d33"
+          },
+          "query": {
+            "affinity": 0.5677966101694916,
+            "affinity_rank": 0.251123,
+            "popularity": 0.519774011299435,
+            "entity_artist_affinity_rank": 0.251123,
+            "entity_artist_affinity": 0.5677966101694916
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.320923,
+            "geohash": "u336x4"
+          },
+          "query": {
+            "affinity": 0.5649717514124294,
+            "affinity_rank": 0.248326,
+            "popularity": 0.5536723163841808,
+            "entity_artist_affinity_rank": 0.248326,
+            "entity_artist_affinity": 0.5649717514124294
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.467957,
+            "longitude": 13.441772,
+            "geohash": "u33d3z"
+          },
+          "query": {
+            "affinity": 0.5621468926553672,
+            "affinity_rank": 0.247414,
+            "popularity": 0.6271186440677966,
+            "entity_artist_affinity_rank": 0.247414,
+            "entity_artist_affinity": 0.5621468926553672
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.550354,
+            "longitude": 13.551636,
+            "geohash": "u33duq"
+          },
+          "query": {
+            "affinity": 0.559322033898305,
+            "affinity_rank": 0.245943,
+            "popularity": 0.5282485875706214,
+            "entity_artist_affinity_rank": 0.245943,
+            "entity_artist_affinity": 0.559322033898305
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.555847,
+            "longitude": 13.386841,
+            "geohash": "u33dbx"
+          },
+          "query": {
+            "affinity": 0.556497175141243,
+            "affinity_rank": 0.245716,
+            "popularity": 0.5,
+            "entity_artist_affinity_rank": 0.245716,
+            "entity_artist_affinity": 0.556497175141243
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.434998,
+            "longitude": 13.540649,
+            "geohash": "u33dk1"
+          },
+          "query": {
+            "affinity": 0.5536723163841808,
+            "affinity_rank": 0.243938,
+            "popularity": 0.5338983050847458,
+            "entity_artist_affinity_rank": 0.243938,
+            "entity_artist_affinity": 0.5536723163841808
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.353882,
+            "geohash": "u336xg"
+          },
+          "query": {
+            "affinity": 0.5508474576271186,
+            "affinity_rank": 0.242021,
+            "popularity": 0.576271186440678,
+            "entity_artist_affinity_rank": 0.242021,
+            "entity_artist_affinity": 0.5508474576271186
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.445984,
+            "longitude": 13.573608,
+            "geohash": "u33dkg"
+          },
+          "query": {
+            "affinity": 0.5480225988700564,
+            "affinity_rank": 0.241224,
+            "popularity": 0.5338983050847458,
+            "entity_artist_affinity_rank": 0.241224,
+            "entity_artist_affinity": 0.5480225988700564
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.47345,
+            "longitude": 13.408813,
+            "geohash": "u33d90"
+          },
+          "query": {
+            "affinity": 0.5451977401129944,
+            "affinity_rank": 0.236225,
+            "popularity": 0.6440677966101694,
+            "entity_artist_affinity_rank": 0.236225,
+            "entity_artist_affinity": 0.5451977401129944
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.539368,
+            "longitude": 13.21106,
+            "geohash": "u336us"
+          },
+          "query": {
+            "affinity": 0.5423728813559322,
+            "affinity_rank": 0.234244,
+            "popularity": 0.6073446327683616,
+            "entity_artist_affinity_rank": 0.234244,
+            "entity_artist_affinity": 0.5423728813559322
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.44049,
+            "longitude": 13.21106,
+            "geohash": "u336kd"
+          },
+          "query": {
+            "affinity": 0.53954802259887,
+            "affinity_rank": 0.229074,
+            "popularity": 0.576271186440678,
+            "entity_artist_affinity_rank": 0.229074,
+            "entity_artist_affinity": 0.53954802259887
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.462463,
+            "longitude": 13.331909,
+            "geohash": "u336rq"
+          },
+          "query": {
+            "affinity": 0.536723163841808,
+            "affinity_rank": 0.227956,
+            "popularity": 0.4406779661016949,
+            "entity_artist_affinity_rank": 0.227956,
+            "entity_artist_affinity": 0.536723163841808
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.539368,
+            "longitude": 13.200073,
+            "geohash": "u336uk"
+          },
+          "query": {
+            "affinity": 0.5338983050847458,
+            "affinity_rank": 0.223447,
+            "popularity": 0.4548022598870056,
+            "entity_artist_affinity_rank": 0.223447,
+            "entity_artist_affinity": 0.5338983050847458
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.54486,
+            "longitude": 13.353882,
+            "geohash": "u336zv"
+          },
+          "query": {
+            "affinity": 0.5310734463276836,
+            "affinity_rank": 0.223138,
+            "popularity": 0.4858757062146893,
+            "entity_artist_affinity_rank": 0.223138,
+            "entity_artist_affinity": 0.5310734463276836
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.566833,
+            "longitude": 13.331909,
+            "geohash": "u337p3"
+          },
+          "query": {
+            "affinity": 0.5282485875706214,
+            "affinity_rank": 0.21308,
+            "popularity": 0.4011299435028249,
+            "entity_artist_affinity_rank": 0.21308,
+            "entity_artist_affinity": 0.5282485875706214
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.364868,
+            "geohash": "u33d85"
+          },
+          "query": {
+            "affinity": 0.5254237288135594,
+            "affinity_rank": 0.21157,
+            "popularity": 0.5536723163841808,
+            "entity_artist_affinity_rank": 0.21157,
+            "entity_artist_affinity": 0.5254237288135594
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.533875,
+            "longitude": 13.3428955,
+            "geohash": "u336ze"
+          },
+          "query": {
+            "affinity": 0.5225988700564972,
+            "affinity_rank": 0.210357,
+            "popularity": 0.5,
+            "entity_artist_affinity_rank": 0.210357,
+            "entity_artist_affinity": 0.5225988700564972
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.56134,
+            "longitude": 13.50769,
+            "geohash": "u33e52"
+          },
+          "query": {
+            "affinity": 0.519774011299435,
+            "affinity_rank": 0.20854,
+            "popularity": 0.4011299435028249,
+            "entity_artist_affinity_rank": 0.20854,
+            "entity_artist_affinity": 0.519774011299435
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.463745,
+            "geohash": "u33df2"
+          },
+          "query": {
+            "affinity": 0.5169491525423728,
+            "affinity_rank": 0.20081,
+            "popularity": 0.5932203389830508,
+            "entity_artist_affinity_rank": 0.20081,
+            "entity_artist_affinity": 0.5169491525423728
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.47345,
+            "longitude": 13.463745,
+            "geohash": "u33dd2"
+          },
+          "query": {
+            "affinity": 0.5141242937853108,
+            "affinity_rank": 0.19988,
+            "popularity": 0.4717514124293785,
+            "entity_artist_affinity_rank": 0.19988,
+            "entity_artist_affinity": 0.5141242937853108
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.474731,
+            "geohash": "u33ddw"
+          },
+          "query": {
+            "affinity": 0.5112994350282486,
+            "affinity_rank": 0.199016,
+            "popularity": 0.576271186440678,
+            "entity_artist_affinity_rank": 0.199016,
+            "entity_artist_affinity": 0.5112994350282486
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.588806,
+            "longitude": 13.276978,
+            "geohash": "u337nj"
+          },
+          "query": {
+            "affinity": 0.5084745762711864,
+            "affinity_rank": 0.195866,
+            "popularity": 0.3757062146892655,
+            "entity_artist_affinity_rank": 0.195866,
+            "entity_artist_affinity": 0.5084745762711864
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.496704,
+            "geohash": "u33deh"
+          },
+          "query": {
+            "affinity": 0.5056497175141242,
+            "affinity_rank": 0.195712,
+            "popularity": 0.5536723163841808,
+            "entity_artist_affinity_rank": 0.195712,
+            "entity_artist_affinity": 0.5056497175141242
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.29895,
+            "geohash": "u336wt"
+          },
+          "query": {
+            "affinity": 0.5028248587570622,
+            "affinity_rank": 0.185649,
+            "popularity": 0.4717514124293785,
+            "entity_artist_affinity_rank": 0.185649,
+            "entity_artist_affinity": 0.5028248587570622
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.474731,
+            "geohash": "u33ddt"
+          },
+          "query": {
+            "affinity": 0.5,
+            "affinity_rank": 0.183479,
+            "popularity": 0.576271186440678,
+            "entity_artist_affinity_rank": 0.183479,
+            "entity_artist_affinity": 0.5
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.451477,
+            "longitude": 13.287964,
+            "geohash": "u336qk"
+          },
+          "query": {
+            "affinity": 0.4971751412429379,
+            "affinity_rank": 0.179372,
+            "popularity": 0.4011299435028249,
+            "entity_artist_affinity_rank": 0.179372,
+            "entity_artist_affinity": 0.4971751412429379
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.42401,
+            "longitude": 13.178101,
+            "geohash": "u3365z"
+          },
+          "query": {
+            "affinity": 0.4943502824858757,
+            "affinity_rank": 0.176612,
+            "popularity": 0.4406779661016949,
+            "entity_artist_affinity_rank": 0.176612,
+            "entity_artist_affinity": 0.4943502824858757
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.233032,
+            "geohash": "u336v0"
+          },
+          "query": {
+            "affinity": 0.4915254237288136,
+            "affinity_rank": 0.171278,
+            "popularity": 0.5988700564971752,
+            "entity_artist_affinity_rank": 0.171278,
+            "entity_artist_affinity": 0.4915254237288136
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.287964,
+            "geohash": "u336wm"
+          },
+          "query": {
+            "affinity": 0.4887005649717514,
+            "affinity_rank": 0.170414,
+            "popularity": 0.4011299435028249,
+            "entity_artist_affinity_rank": 0.170414,
+            "entity_artist_affinity": 0.4887005649717514
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.3428955,
+            "geohash": "u336xd"
+          },
+          "query": {
+            "affinity": 0.4858757062146893,
+            "affinity_rank": 0.170107,
+            "popularity": 0.4632768361581921,
+            "entity_artist_affinity_rank": 0.170107,
+            "entity_artist_affinity": 0.4858757062146893
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.47345,
+            "longitude": 13.386841,
+            "geohash": "u33d88"
+          },
+          "query": {
+            "affinity": 0.4830508474576271,
+            "affinity_rank": 0.167255,
+            "popularity": 0.5,
+            "entity_artist_affinity_rank": 0.167255,
+            "entity_artist_affinity": 0.4830508474576271
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.434998,
+            "longitude": 13.3428955,
+            "geohash": "u336r9"
+          },
+          "query": {
+            "affinity": 0.480225988700565,
+            "affinity_rank": 0.162031,
+            "popularity": 0.3305084745762712,
+            "entity_artist_affinity_rank": 0.162031,
+            "entity_artist_affinity": 0.480225988700565
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.474731,
+            "geohash": "u33ddx"
+          },
+          "query": {
+            "affinity": 0.4774011299435028,
+            "affinity_rank": 0.161085,
+            "popularity": 0.519774011299435,
+            "entity_artist_affinity_rank": 0.161085,
+            "entity_artist_affinity": 0.4774011299435028
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.478943,
+            "longitude": 13.4198,
+            "geohash": "u33d93"
+          },
+          "query": {
+            "affinity": 0.4745762711864407,
+            "affinity_rank": 0.160483,
+            "popularity": 0.5338983050847458,
+            "entity_artist_affinity_rank": 0.160483,
+            "entity_artist_affinity": 0.4745762711864407
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.467957,
+            "longitude": 13.364868,
+            "geohash": "u33d2p"
+          },
+          "query": {
+            "affinity": 0.4717514124293785,
+            "affinity_rank": 0.15805,
+            "popularity": 0.4717514124293785,
+            "entity_artist_affinity_rank": 0.15805,
+            "entity_artist_affinity": 0.4717514124293785
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.533875,
+            "longitude": 13.518677,
+            "geohash": "u33dge"
+          },
+          "query": {
+            "affinity": 0.4689265536723164,
+            "affinity_rank": 0.157538,
+            "popularity": 0.384180790960452,
+            "entity_artist_affinity_rank": 0.157538,
+            "entity_artist_affinity": 0.4689265536723164
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.54486,
+            "longitude": 13.386841,
+            "geohash": "u33dbt"
+          },
+          "query": {
+            "affinity": 0.4661016949152542,
+            "affinity_rank": 0.155534,
+            "popularity": 0.4632768361581921,
+            "entity_artist_affinity_rank": 0.155534,
+            "entity_artist_affinity": 0.4661016949152542
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.255005,
+            "geohash": "u336v8"
+          },
+          "query": {
+            "affinity": 0.4632768361581921,
+            "affinity_rank": 0.152899,
+            "popularity": 0.3757062146892655,
+            "entity_artist_affinity_rank": 0.152899,
+            "entity_artist_affinity": 0.4632768361581921
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.54486,
+            "longitude": 13.3758545,
+            "geohash": "u33dbm"
+          },
+          "query": {
+            "affinity": 0.4604519774011299,
+            "affinity_rank": 0.152874,
+            "popularity": 0.5338983050847458,
+            "entity_artist_affinity_rank": 0.152874,
+            "entity_artist_affinity": 0.4604519774011299
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.429504,
+            "longitude": 13.178101,
+            "geohash": "u3367b"
+          },
+          "query": {
+            "affinity": 0.4576271186440678,
+            "affinity_rank": 0.15227,
+            "popularity": 0.4265536723163842,
+            "entity_artist_affinity_rank": 0.15227,
+            "entity_artist_affinity": 0.4576271186440678
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.555847,
+            "longitude": 13.3758545,
+            "geohash": "u33dbr"
+          },
+          "query": {
+            "affinity": 0.4548022598870056,
+            "affinity_rank": 0.150086,
+            "popularity": 0.4265536723163842,
+            "entity_artist_affinity_rank": 0.150086,
+            "entity_artist_affinity": 0.4548022598870056
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.434998,
+            "longitude": 13.134155,
+            "geohash": "u3366c"
+          },
+          "query": {
+            "affinity": 0.4519774011299435,
+            "affinity_rank": 0.149476,
+            "popularity": 0.4011299435028249,
+            "entity_artist_affinity_rank": 0.149476,
+            "entity_artist_affinity": 0.4519774011299435
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.430786,
+            "geohash": "u33dc8"
+          },
+          "query": {
+            "affinity": 0.4491525423728814,
+            "affinity_rank": 0.148575,
+            "popularity": 0.5282485875706214,
+            "entity_artist_affinity_rank": 0.148575,
+            "entity_artist_affinity": 0.4491525423728814
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.533875,
+            "longitude": 13.595581,
+            "geohash": "u33dv7"
+          },
+          "query": {
+            "affinity": 0.4463276836158192,
+            "affinity_rank": 0.147925,
+            "popularity": 0.3446327683615819,
+            "entity_artist_affinity_rank": 0.147925,
+            "entity_artist_affinity": 0.4463276836158192
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.47345,
+            "longitude": 13.441772,
+            "geohash": "u33d9b"
+          },
+          "query": {
+            "affinity": 0.4435028248587571,
+            "affinity_rank": 0.143762,
+            "popularity": 0.5480225988700564,
+            "entity_artist_affinity_rank": 0.143762,
+            "entity_artist_affinity": 0.4435028248587571
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.452759,
+            "geohash": "u33dd4"
+          },
+          "query": {
+            "affinity": 0.4406779661016949,
+            "affinity_rank": 0.141226,
+            "popularity": 0.5706214689265536,
+            "entity_artist_affinity_rank": 0.141226,
+            "entity_artist_affinity": 0.4406779661016949
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.467957,
+            "longitude": 13.430786,
+            "geohash": "u33d3x"
+          },
+          "query": {
+            "affinity": 0.4378531073446328,
+            "affinity_rank": 0.140172,
+            "popularity": 0.5,
+            "entity_artist_affinity_rank": 0.140172,
+            "entity_artist_affinity": 0.4378531073446328
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.47345,
+            "longitude": 13.364868,
+            "geohash": "u33d80"
+          },
+          "query": {
+            "affinity": 0.4350282485875706,
+            "affinity_rank": 0.13867,
+            "popularity": 0.4011299435028249,
+            "entity_artist_affinity_rank": 0.13867,
+            "entity_artist_affinity": 0.4350282485875706
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.434998,
+            "longitude": 13.353882,
+            "geohash": "u336rc"
+          },
+          "query": {
+            "affinity": 0.4322033898305085,
+            "affinity_rank": 0.13752,
+            "popularity": 0.3163841807909605,
+            "entity_artist_affinity_rank": 0.13752,
+            "entity_artist_affinity": 0.4322033898305085
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.474731,
+            "geohash": "u33ddd"
+          },
+          "query": {
+            "affinity": 0.4293785310734463,
+            "affinity_rank": 0.136599,
+            "popularity": 0.4858757062146893,
+            "entity_artist_affinity_rank": 0.136599,
+            "entity_artist_affinity": 0.4293785310734463
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.452759,
+            "geohash": "u33dd5"
+          },
+          "query": {
+            "affinity": 0.4265536723163842,
+            "affinity_rank": 0.136156,
+            "popularity": 0.4943502824858757,
+            "entity_artist_affinity_rank": 0.136156,
+            "entity_artist_affinity": 0.4265536723163842
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.550354,
+            "longitude": 13.353882,
+            "geohash": "u336zy"
+          },
+          "query": {
+            "affinity": 0.423728813559322,
+            "affinity_rank": 0.136041,
+            "popularity": 0.3757062146892655,
+            "entity_artist_affinity_rank": 0.136041,
+            "entity_artist_affinity": 0.423728813559322
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.429504,
+            "longitude": 13.540649,
+            "geohash": "u33dk0"
+          },
+          "query": {
+            "affinity": 0.4209039548022599,
+            "affinity_rank": 0.135175,
+            "popularity": 0.4011299435028249,
+            "entity_artist_affinity_rank": 0.135175,
+            "entity_artist_affinity": 0.4209039548022599
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.42401,
+            "longitude": 13.320923,
+            "geohash": "u336pp"
+          },
+          "query": {
+            "affinity": 0.4180790960451977,
+            "affinity_rank": 0.132569,
+            "popularity": 0.3700564971751412,
+            "entity_artist_affinity_rank": 0.132569,
+            "entity_artist_affinity": 0.4180790960451977
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.3758545,
+            "geohash": "u33d8k"
+          },
+          "query": {
+            "affinity": 0.4152542372881356,
+            "affinity_rank": 0.132346,
+            "popularity": 0.4406779661016949,
+            "entity_artist_affinity_rank": 0.132346,
+            "entity_artist_affinity": 0.4152542372881356
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.441772,
+            "geohash": "u33d9f"
+          },
+          "query": {
+            "affinity": 0.4124293785310734,
+            "affinity_rank": 0.131396,
+            "popularity": 0.5,
+            "entity_artist_affinity_rank": 0.131396,
+            "entity_artist_affinity": 0.4124293785310734
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.44049,
+            "longitude": 13.386841,
+            "geohash": "u33d2d"
+          },
+          "query": {
+            "affinity": 0.4096045197740113,
+            "affinity_rank": 0.129855,
+            "popularity": 0.3446327683615819,
+            "entity_artist_affinity_rank": 0.129855,
+            "entity_artist_affinity": 0.4096045197740113
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.478943,
+            "longitude": 13.496704,
+            "geohash": "u33de1"
+          },
+          "query": {
+            "affinity": 0.4067796610169492,
+            "affinity_rank": 0.127946,
+            "popularity": 0.5932203389830508,
+            "entity_artist_affinity_rank": 0.127946,
+            "entity_artist_affinity": 0.4067796610169492
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.54486,
+            "longitude": 13.397827,
+            "geohash": "u33dbv"
+          },
+          "query": {
+            "affinity": 0.403954802259887,
+            "affinity_rank": 0.126141,
+            "popularity": 0.4632768361581921,
+            "entity_artist_affinity_rank": 0.126141,
+            "entity_artist_affinity": 0.403954802259887
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.434998,
+            "longitude": 13.320923,
+            "geohash": "u336r1"
+          },
+          "query": {
+            "affinity": 0.4011299435028249,
+            "affinity_rank": 0.125778,
+            "popularity": 0.3446327683615819,
+            "entity_artist_affinity_rank": 0.125778,
+            "entity_artist_affinity": 0.4011299435028249
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.320923,
+            "geohash": "u336z0"
+          },
+          "query": {
+            "affinity": 0.3983050847457627,
+            "affinity_rank": 0.122112,
+            "popularity": 0.4265536723163842,
+            "entity_artist_affinity_rank": 0.122112,
+            "entity_artist_affinity": 0.3983050847457627
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.47345,
+            "longitude": 13.4198,
+            "geohash": "u33d92"
+          },
+          "query": {
+            "affinity": 0.3954802259887006,
+            "affinity_rank": 0.120046,
+            "popularity": 0.4858757062146893,
+            "entity_artist_affinity_rank": 0.120046,
+            "entity_artist_affinity": 0.3954802259887006
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.467957,
+            "longitude": 13.331909,
+            "geohash": "u336rr"
+          },
+          "query": {
+            "affinity": 0.3926553672316384,
+            "affinity_rank": 0.119954,
+            "popularity": 0.3446327683615819,
+            "entity_artist_affinity_rank": 0.119954,
+            "entity_artist_affinity": 0.3926553672316384
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.550354,
+            "longitude": 13.309937,
+            "geohash": "u336yy"
+          },
+          "query": {
+            "affinity": 0.3898305084745763,
+            "affinity_rank": 0.11921,
+            "popularity": 0.3163841807909605,
+            "entity_artist_affinity_rank": 0.11921,
+            "entity_artist_affinity": 0.3898305084745763
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.434998,
+            "longitude": 13.650513,
+            "geohash": "u33dq9"
+          },
+          "query": {
+            "affinity": 0.3870056497175141,
+            "affinity_rank": 0.116918,
+            "popularity": 0.4406779661016949,
+            "entity_artist_affinity_rank": 0.116918,
+            "entity_artist_affinity": 0.3870056497175141
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.463745,
+            "geohash": "u33ddm"
+          },
+          "query": {
+            "affinity": 0.384180790960452,
+            "affinity_rank": 0.11631,
+            "popularity": 0.5169491525423728,
+            "entity_artist_affinity_rank": 0.11631,
+            "entity_artist_affinity": 0.384180790960452
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.550354,
+            "longitude": 13.4198,
+            "geohash": "u33dcq"
+          },
+          "query": {
+            "affinity": 0.3813559322033898,
+            "affinity_rank": 0.114943,
+            "popularity": 0.3587570621468927,
+            "entity_artist_affinity_rank": 0.114943,
+            "entity_artist_affinity": 0.3813559322033898
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.555847,
+            "longitude": 13.463745,
+            "geohash": "u33dfr"
+          },
+          "query": {
+            "affinity": 0.3785310734463277,
+            "affinity_rank": 0.114606,
+            "popularity": 0.384180790960452,
+            "entity_artist_affinity_rank": 0.114606,
+            "entity_artist_affinity": 0.3785310734463277
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.408813,
+            "geohash": "u33d95"
+          },
+          "query": {
+            "affinity": 0.3757062146892655,
+            "affinity_rank": 0.114061,
+            "popularity": 0.4717514124293785,
+            "entity_artist_affinity_rank": 0.114061,
+            "entity_artist_affinity": 0.3757062146892655
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.320923,
+            "geohash": "u336z4"
+          },
+          "query": {
+            "affinity": 0.3728813559322034,
+            "affinity_rank": 0.112418,
+            "popularity": 0.3587570621468927,
+            "entity_artist_affinity_rank": 0.112418,
+            "entity_artist_affinity": 0.3728813559322034
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.539368,
+            "longitude": 13.3758545,
+            "geohash": "u33dbk"
+          },
+          "query": {
+            "affinity": 0.3700564971751412,
+            "affinity_rank": 0.111801,
+            "popularity": 0.2514124293785311,
+            "entity_artist_affinity_rank": 0.111801,
+            "entity_artist_affinity": 0.3700564971751412
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.331909,
+            "geohash": "u336xk"
+          },
+          "query": {
+            "affinity": 0.3672316384180791,
+            "affinity_rank": 0.111202,
+            "popularity": 0.3163841807909605,
+            "entity_artist_affinity_rank": 0.111202,
+            "entity_artist_affinity": 0.3672316384180791
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.54486,
+            "longitude": 13.364868,
+            "geohash": "u33dbj"
+          },
+          "query": {
+            "affinity": 0.3644067796610169,
+            "affinity_rank": 0.111011,
+            "popularity": 0.4604519774011299,
+            "entity_artist_affinity_rank": 0.111011,
+            "entity_artist_affinity": 0.3644067796610169
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52289,
+            "longitude": 13.430786,
+            "geohash": "u33dc9"
+          },
+          "query": {
+            "affinity": 0.3615819209039548,
+            "affinity_rank": 0.110862,
+            "popularity": 0.384180790960452,
+            "entity_artist_affinity_rank": 0.110862,
+            "entity_artist_affinity": 0.3615819209039548
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.397827,
+            "geohash": "u33d8u"
+          },
+          "query": {
+            "affinity": 0.3587570621468927,
+            "affinity_rank": 0.109919,
+            "popularity": 0.4406779661016949,
+            "entity_artist_affinity_rank": 0.109919,
+            "entity_artist_affinity": 0.3587570621468927
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.44049,
+            "longitude": 13.178101,
+            "geohash": "u3367f"
+          },
+          "query": {
+            "affinity": 0.3559322033898305,
+            "affinity_rank": 0.108453,
+            "popularity": 0.3446327683615819,
+            "entity_artist_affinity_rank": 0.108453,
+            "entity_artist_affinity": 0.3559322033898305
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.265991,
+            "geohash": "u336tf"
+          },
+          "query": {
+            "affinity": 0.3531073446327684,
+            "affinity_rank": 0.1083,
+            "popularity": 0.384180790960452,
+            "entity_artist_affinity_rank": 0.1083,
+            "entity_artist_affinity": 0.3531073446327684
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.485718,
+            "geohash": "u33ddf"
+          },
+          "query": {
+            "affinity": 0.3502824858757062,
+            "affinity_rank": 0.107492,
+            "popularity": 0.4548022598870056,
+            "entity_artist_affinity_rank": 0.107492,
+            "entity_artist_affinity": 0.3502824858757062
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.478943,
+            "longitude": 13.331909,
+            "geohash": "u336x3"
+          },
+          "query": {
+            "affinity": 0.3474576271186441,
+            "affinity_rank": 0.107192,
+            "popularity": 0.3163841807909605,
+            "entity_artist_affinity_rank": 0.107192,
+            "entity_artist_affinity": 0.3474576271186441
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.588806,
+            "longitude": 13.134155,
+            "geohash": "u3374v"
+          },
+          "query": {
+            "affinity": 0.3446327683615819,
+            "affinity_rank": 0.107038,
+            "popularity": 0.2711864406779661,
+            "entity_artist_affinity_rank": 0.107038,
+            "entity_artist_affinity": 0.3446327683615819
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.533875,
+            "longitude": 13.441772,
+            "geohash": "u33dcg"
+          },
+          "query": {
+            "affinity": 0.3418079096045198,
+            "affinity_rank": 0.106171,
+            "popularity": 0.3305084745762712,
+            "entity_artist_affinity_rank": 0.106171,
+            "entity_artist_affinity": 0.3418079096045198
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.478943,
+            "longitude": 13.3428955,
+            "geohash": "u336x9"
+          },
+          "query": {
+            "affinity": 0.3389830508474576,
+            "affinity_rank": 0.105769,
+            "popularity": 0.3107344632768362,
+            "entity_artist_affinity_rank": 0.105769,
+            "entity_artist_affinity": 0.3389830508474576
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.47345,
+            "longitude": 13.430786,
+            "geohash": "u33d98"
+          },
+          "query": {
+            "affinity": 0.3361581920903955,
+            "affinity_rank": 0.102476,
+            "popularity": 0.384180790960452,
+            "entity_artist_affinity_rank": 0.102476,
+            "entity_artist_affinity": 0.3361581920903955
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.462463,
+            "longitude": 13.540649,
+            "geohash": "u33dkn"
+          },
+          "query": {
+            "affinity": 0.3333333333333333,
+            "affinity_rank": 0.101761,
+            "popularity": 0.4943502824858757,
+            "entity_artist_affinity_rank": 0.101761,
+            "entity_artist_affinity": 0.3333333333333333
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52289,
+            "longitude": 13.452759,
+            "geohash": "u33df1"
+          },
+          "query": {
+            "affinity": 0.3305084745762712,
+            "affinity_rank": 0.098158,
+            "popularity": 0.4011299435028249,
+            "entity_artist_affinity_rank": 0.098158,
+            "entity_artist_affinity": 0.3305084745762712
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.309937,
+            "geohash": "u336wg"
+          },
+          "query": {
+            "affinity": 0.327683615819209,
+            "affinity_rank": 0.097229,
+            "popularity": 0.3163841807909605,
+            "entity_artist_affinity_rank": 0.097229,
+            "entity_artist_affinity": 0.327683615819209
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.478943,
+            "longitude": 13.353882,
+            "geohash": "u336xc"
+          },
+          "query": {
+            "affinity": 0.3248587570621469,
+            "affinity_rank": 0.096321,
+            "popularity": 0.3305084745762712,
+            "entity_artist_affinity_rank": 0.096321,
+            "entity_artist_affinity": 0.3248587570621469
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.539368,
+            "longitude": 13.364868,
+            "geohash": "u33dbh"
+          },
+          "query": {
+            "affinity": 0.3220338983050847,
+            "affinity_rank": 0.095072,
+            "popularity": 0.3305084745762712,
+            "entity_artist_affinity_rank": 0.095072,
+            "entity_artist_affinity": 0.3220338983050847
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.47345,
+            "longitude": 13.452759,
+            "geohash": "u33dd0"
+          },
+          "query": {
+            "affinity": 0.3192090395480226,
+            "affinity_rank": 0.092503,
+            "popularity": 0.4011299435028249,
+            "entity_artist_affinity_rank": 0.092503,
+            "entity_artist_affinity": 0.3192090395480226
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.54486,
+            "longitude": 13.595581,
+            "geohash": "u33dvm"
+          },
+          "query": {
+            "affinity": 0.3163841807909605,
+            "affinity_rank": 0.09073,
+            "popularity": 0.20056497175141244,
+            "entity_artist_affinity_rank": 0.09073,
+            "entity_artist_affinity": 0.3163841807909605
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.462463,
+            "longitude": 13.4198,
+            "geohash": "u33d3q"
+          },
+          "query": {
+            "affinity": 0.3135593220338983,
+            "affinity_rank": 0.090303,
+            "popularity": 0.2966101694915254,
+            "entity_artist_affinity_rank": 0.090303,
+            "entity_artist_affinity": 0.3135593220338983
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.29895,
+            "geohash": "u336wd"
+          },
+          "query": {
+            "affinity": 0.3107344632768362,
+            "affinity_rank": 0.087783,
+            "popularity": 0.2711864406779661,
+            "entity_artist_affinity_rank": 0.087783,
+            "entity_artist_affinity": 0.3107344632768362
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.21106,
+            "geohash": "u336ud"
+          },
+          "query": {
+            "affinity": 0.307909604519774,
+            "affinity_rank": 0.085535,
+            "popularity": 0.23163841807909605,
+            "entity_artist_affinity_rank": 0.085535,
+            "entity_artist_affinity": 0.307909604519774
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52289,
+            "longitude": 13.441772,
+            "geohash": "u33dcc"
+          },
+          "query": {
+            "affinity": 0.3050847457627119,
+            "affinity_rank": 0.085422,
+            "popularity": 0.2966101694915254,
+            "entity_artist_affinity_rank": 0.085422,
+            "entity_artist_affinity": 0.3050847457627119
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52289,
+            "longitude": 13.3428955,
+            "geohash": "u336z9"
+          },
+          "query": {
+            "affinity": 0.3022598870056497,
+            "affinity_rank": 0.084299,
+            "popularity": 0.2966101694915254,
+            "entity_artist_affinity_rank": 0.084299,
+            "entity_artist_affinity": 0.3022598870056497
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.583313,
+            "longitude": 13.309937,
+            "geohash": "u337nu"
+          },
+          "query": {
+            "affinity": 0.2994350282485876,
+            "affinity_rank": 0.082896,
+            "popularity": 0.2514124293785311,
+            "entity_artist_affinity_rank": 0.082896,
+            "entity_artist_affinity": 0.2994350282485876
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.408813,
+            "geohash": "u33d94"
+          },
+          "query": {
+            "affinity": 0.2966101694915254,
+            "affinity_rank": 0.080925,
+            "popularity": 0.20056497175141244,
+            "entity_artist_affinity_rank": 0.080925,
+            "entity_artist_affinity": 0.2966101694915254
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.441772,
+            "geohash": "u33dcf"
+          },
+          "query": {
+            "affinity": 0.2937853107344633,
+            "affinity_rank": 0.080574,
+            "popularity": 0.3587570621468927,
+            "entity_artist_affinity_rank": 0.080574,
+            "entity_artist_affinity": 0.2937853107344633
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.309937,
+            "geohash": "u336yb"
+          },
+          "query": {
+            "affinity": 0.2909604519774011,
+            "affinity_rank": 0.08,
+            "popularity": 0.2711864406779661,
+            "entity_artist_affinity_rank": 0.08,
+            "entity_artist_affinity": 0.2909604519774011
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.496704,
+            "geohash": "u33dep"
+          },
+          "query": {
+            "affinity": 0.288135593220339,
+            "affinity_rank": 0.079193,
+            "popularity": 0.2711864406779661,
+            "entity_artist_affinity_rank": 0.079193,
+            "entity_artist_affinity": 0.288135593220339
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.45697,
+            "longitude": 13.452759,
+            "geohash": "u33d6j"
+          },
+          "query": {
+            "affinity": 0.2853107344632768,
+            "affinity_rank": 0.077912,
+            "popularity": 0.23163841807909605,
+            "entity_artist_affinity_rank": 0.077912,
+            "entity_artist_affinity": 0.2853107344632768
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.550354,
+            "longitude": 13.364868,
+            "geohash": "u33dbn"
+          },
+          "query": {
+            "affinity": 0.2824858757062147,
+            "affinity_rank": 0.076395,
+            "popularity": 0.23163841807909605,
+            "entity_artist_affinity_rank": 0.076395,
+            "entity_artist_affinity": 0.2824858757062147
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.429504,
+            "longitude": 13.452759,
+            "geohash": "u33d60"
+          },
+          "query": {
+            "affinity": 0.2796610169491525,
+            "affinity_rank": 0.075778,
+            "popularity": 0.23163841807909605,
+            "entity_artist_affinity_rank": 0.075778,
+            "entity_artist_affinity": 0.2796610169491525
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.244019,
+            "geohash": "u336tm"
+          },
+          "query": {
+            "affinity": 0.2768361581920904,
+            "affinity_rank": 0.07409,
+            "popularity": 0.3587570621468927,
+            "entity_artist_affinity_rank": 0.07409,
+            "entity_artist_affinity": 0.2768361581920904
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.42401,
+            "longitude": 13.474731,
+            "geohash": "u33d4x"
+          },
+          "query": {
+            "affinity": 0.2740112994350282,
+            "affinity_rank": 0.072917,
+            "popularity": 0.20056497175141244,
+            "entity_artist_affinity_rank": 0.072917,
+            "entity_artist_affinity": 0.2740112994350282
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52289,
+            "longitude": 13.353882,
+            "geohash": "u336zc"
+          },
+          "query": {
+            "affinity": 0.2711864406779661,
+            "affinity_rank": 0.071194,
+            "popularity": 0.2711864406779661,
+            "entity_artist_affinity_rank": 0.071194,
+            "entity_artist_affinity": 0.2711864406779661
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.287964,
+            "geohash": "u336y2"
+          },
+          "query": {
+            "affinity": 0.268361581920904,
+            "affinity_rank": 0.070899,
+            "popularity": 0.20056497175141244,
+            "entity_artist_affinity_rank": 0.070899,
+            "entity_artist_affinity": 0.268361581920904
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.485718,
+            "geohash": "u33ddu"
+          },
+          "query": {
+            "affinity": 0.2655367231638418,
+            "affinity_rank": 0.070773,
+            "popularity": 0.384180790960452,
+            "entity_artist_affinity_rank": 0.070773,
+            "entity_artist_affinity": 0.2655367231638418
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.29895,
+            "geohash": "u336ws"
+          },
+          "query": {
+            "affinity": 0.2627118644067797,
+            "affinity_rank": 0.070265,
+            "popularity": 0.20056497175141244,
+            "entity_artist_affinity_rank": 0.070265,
+            "entity_artist_affinity": 0.2627118644067797
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.478943,
+            "longitude": 13.452759,
+            "geohash": "u33dd1"
+          },
+          "query": {
+            "affinity": 0.2598870056497175,
+            "affinity_rank": 0.070136,
+            "popularity": 0.3700564971751412,
+            "entity_artist_affinity_rank": 0.070136,
+            "entity_artist_affinity": 0.2598870056497175
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.29895,
+            "geohash": "u336wx"
+          },
+          "query": {
+            "affinity": 0.2570621468926554,
+            "affinity_rank": 0.069767,
+            "popularity": 0.2514124293785311,
+            "entity_artist_affinity_rank": 0.069767,
+            "entity_artist_affinity": 0.2570621468926554
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.467957,
+            "longitude": 13.255005,
+            "geohash": "u336mx"
+          },
+          "query": {
+            "affinity": 0.2542372881355932,
+            "affinity_rank": 0.067818,
+            "popularity": 0.2966101694915254,
+            "entity_artist_affinity_rank": 0.067818,
+            "entity_artist_affinity": 0.2542372881355932
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.56134,
+            "longitude": 13.386841,
+            "geohash": "u33e08"
+          },
+          "query": {
+            "affinity": 0.2514124293785311,
+            "affinity_rank": 0.06717,
+            "popularity": 0.2711864406779661,
+            "entity_artist_affinity_rank": 0.06717,
+            "entity_artist_affinity": 0.2514124293785311
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.320923,
+            "geohash": "u336x5"
+          },
+          "query": {
+            "affinity": 0.24858757062146894,
+            "affinity_rank": 0.06705,
+            "popularity": 0.17796610169491525,
+            "entity_artist_affinity_rank": 0.06705,
+            "entity_artist_affinity": 0.24858757062146894
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.45697,
+            "longitude": 13.518677,
+            "geohash": "u33d7t"
+          },
+          "query": {
+            "affinity": 0.2457627118644068,
+            "affinity_rank": 0.066996,
+            "popularity": 0.3107344632768362,
+            "entity_artist_affinity_rank": 0.066996,
+            "entity_artist_affinity": 0.2457627118644068
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.265991,
+            "geohash": "u336ty"
+          },
+          "query": {
+            "affinity": 0.24293785310734464,
+            "affinity_rank": 0.065761,
+            "popularity": 0.2514124293785311,
+            "entity_artist_affinity_rank": 0.065761,
+            "entity_artist_affinity": 0.24293785310734464
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.451477,
+            "longitude": 13.62854,
+            "geohash": "u33dqh"
+          },
+          "query": {
+            "affinity": 0.2401129943502825,
+            "affinity_rank": 0.064935,
+            "popularity": 0.2711864406779661,
+            "entity_artist_affinity_rank": 0.064935,
+            "entity_artist_affinity": 0.2401129943502825
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.45697,
+            "longitude": 13.386841,
+            "geohash": "u33d2t"
+          },
+          "query": {
+            "affinity": 0.23728813559322035,
+            "affinity_rank": 0.064127,
+            "popularity": 0.2514124293785311,
+            "entity_artist_affinity_rank": 0.064127,
+            "entity_artist_affinity": 0.23728813559322035
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.255005,
+            "geohash": "u336tx"
+          },
+          "query": {
+            "affinity": 0.2344632768361582,
+            "affinity_rank": 0.062459,
+            "popularity": 0.23163841807909605,
+            "entity_artist_affinity_rank": 0.062459,
+            "entity_artist_affinity": 0.2344632768361582
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.45697,
+            "longitude": 13.529663,
+            "geohash": "u33d7v"
+          },
+          "query": {
+            "affinity": 0.23163841807909605,
+            "affinity_rank": 0.058491,
+            "popularity": 0.2514124293785311,
+            "entity_artist_affinity_rank": 0.058491,
+            "entity_artist_affinity": 0.23163841807909605
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.233032,
+            "geohash": "u336tp"
+          },
+          "query": {
+            "affinity": 0.2288135593220339,
+            "affinity_rank": 0.054237,
+            "popularity": 0.2711864406779661,
+            "entity_artist_affinity_rank": 0.054237,
+            "entity_artist_affinity": 0.2288135593220339
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.50641,
+            "longitude": 13.595581,
+            "geohash": "u33dtq"
+          },
+          "query": {
+            "affinity": 0.22598870056497175,
+            "affinity_rank": 0.053302,
+            "popularity": 0.13559322033898305,
+            "entity_artist_affinity_rank": 0.053302,
+            "entity_artist_affinity": 0.22598870056497175
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.413025,
+            "longitude": 13.309937,
+            "geohash": "u336nv"
+          },
+          "query": {
+            "affinity": 0.2231638418079096,
+            "affinity_rank": 0.049713,
+            "popularity": 0.17796610169491525,
+            "entity_artist_affinity_rank": 0.049713,
+            "entity_artist_affinity": 0.2231638418079096
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.57782,
+            "longitude": 13.287964,
+            "geohash": "u337n7"
+          },
+          "query": {
+            "affinity": 0.22033898305084745,
+            "affinity_rank": 0.046774,
+            "popularity": 0.20056497175141244,
+            "entity_artist_affinity_rank": 0.046774,
+            "entity_artist_affinity": 0.22033898305084745
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.478943,
+            "longitude": 13.309937,
+            "geohash": "u336wc"
+          },
+          "query": {
+            "affinity": 0.2175141242937853,
+            "affinity_rank": 0.04549,
+            "popularity": 0.1497175141242938,
+            "entity_artist_affinity_rank": 0.04549,
+            "entity_artist_affinity": 0.2175141242937853
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.550354,
+            "longitude": 13.430786,
+            "geohash": "u33dcw"
+          },
+          "query": {
+            "affinity": 0.21468926553672316,
+            "affinity_rank": 0.045383,
+            "popularity": 0.2966101694915254,
+            "entity_artist_affinity_rank": 0.045383,
+            "entity_artist_affinity": 0.21468926553672316
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.478943,
+            "longitude": 13.276978,
+            "geohash": "u336w1"
+          },
+          "query": {
+            "affinity": 0.211864406779661,
+            "affinity_rank": 0.045129,
+            "popularity": 0.20056497175141244,
+            "entity_artist_affinity_rank": 0.045129,
+            "entity_artist_affinity": 0.211864406779661
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.474731,
+            "geohash": "u33df8"
+          },
+          "query": {
+            "affinity": 0.20903954802259886,
+            "affinity_rank": 0.043922,
+            "popularity": 0.2711864406779661,
+            "entity_artist_affinity_rank": 0.043922,
+            "entity_artist_affinity": 0.20903954802259886
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.413025,
+            "longitude": 13.50769,
+            "geohash": "u33d5m"
+          },
+          "query": {
+            "affinity": 0.2062146892655367,
+            "affinity_rank": 0.043796,
+            "popularity": 0.1497175141242938,
+            "entity_artist_affinity_rank": 0.043796,
+            "entity_artist_affinity": 0.2062146892655367
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.45697,
+            "longitude": 13.287964,
+            "geohash": "u336qm"
+          },
+          "query": {
+            "affinity": 0.2033898305084746,
+            "affinity_rank": 0.042164,
+            "popularity": 0.17796610169491525,
+            "entity_artist_affinity_rank": 0.042164,
+            "entity_artist_affinity": 0.2033898305084746
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.56134,
+            "longitude": 13.21106,
+            "geohash": "u337h8"
+          },
+          "query": {
+            "affinity": 0.20056497175141244,
+            "affinity_rank": 0.04142,
+            "popularity": 0.10451977401129943,
+            "entity_artist_affinity_rank": 0.04142,
+            "entity_artist_affinity": 0.20056497175141244
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.555847,
+            "longitude": 13.452759,
+            "geohash": "u33dfp"
+          },
+          "query": {
+            "affinity": 0.1977401129943503,
+            "affinity_rank": 0.041029,
+            "popularity": 0.23163841807909605,
+            "entity_artist_affinity_rank": 0.041029,
+            "entity_artist_affinity": 0.1977401129943503
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.539368,
+            "longitude": 13.353882,
+            "geohash": "u336zu"
+          },
+          "query": {
+            "affinity": 0.19491525423728814,
+            "affinity_rank": 0.039811,
+            "popularity": 0.20056497175141244,
+            "entity_artist_affinity_rank": 0.039811,
+            "entity_artist_affinity": 0.19491525423728814
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.550354,
+            "longitude": 13.452759,
+            "geohash": "u33dfn"
+          },
+          "query": {
+            "affinity": 0.192090395480226,
+            "affinity_rank": 0.038869,
+            "popularity": 0.1497175141242938,
+            "entity_artist_affinity_rank": 0.038869,
+            "entity_artist_affinity": 0.192090395480226
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.462463,
+            "longitude": 13.518677,
+            "geohash": "u33d7w"
+          },
+          "query": {
+            "affinity": 0.18926553672316385,
+            "affinity_rank": 0.038427,
+            "popularity": 0.23163841807909605,
+            "entity_artist_affinity_rank": 0.038427,
+            "entity_artist_affinity": 0.18926553672316385
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.331909,
+            "geohash": "u336x7"
+          },
+          "query": {
+            "affinity": 0.1864406779661017,
+            "affinity_rank": 0.038386,
+            "popularity": 0.1497175141242938,
+            "entity_artist_affinity_rank": 0.038386,
+            "entity_artist_affinity": 0.1864406779661017
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.64923,
+            "longitude": 13.496704,
+            "geohash": "u33ee0"
+          },
+          "query": {
+            "affinity": 0.18361581920903955,
+            "affinity_rank": 0.038272,
+            "popularity": 0.1497175141242938,
+            "entity_artist_affinity_rank": 0.038272,
+            "entity_artist_affinity": 0.18361581920903955
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.45697,
+            "longitude": 13.29895,
+            "geohash": "u336qt"
+          },
+          "query": {
+            "affinity": 0.1807909604519774,
+            "affinity_rank": 0.037057,
+            "popularity": 0.20056497175141244,
+            "entity_artist_affinity_rank": 0.037057,
+            "entity_artist_affinity": 0.1807909604519774
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.478943,
+            "longitude": 13.474731,
+            "geohash": "u33dd9"
+          },
+          "query": {
+            "affinity": 0.17796610169491525,
+            "affinity_rank": 0.03652,
+            "popularity": 0.2514124293785311,
+            "entity_artist_affinity_rank": 0.03652,
+            "entity_artist_affinity": 0.17796610169491525
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.566833,
+            "longitude": 13.408813,
+            "geohash": "u33e11"
+          },
+          "query": {
+            "affinity": 0.17231638418079095,
+            "affinity_rank": 0.036145,
+            "popularity": 0.1497175141242938,
+            "entity_artist_affinity_rank": 0.036145,
+            "entity_artist_affinity": 0.17231638418079095
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.418518,
+            "longitude": 13.408813,
+            "geohash": "u33d1n"
+          },
+          "query": {
+            "affinity": 0.17231638418079095,
+            "affinity_rank": 0.036145,
+            "popularity": 0.10451977401129943,
+            "entity_artist_affinity_rank": 0.036145,
+            "entity_artist_affinity": 0.17231638418079095
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.451477,
+            "longitude": 13.145142,
+            "geohash": "u3367h"
+          },
+          "query": {
+            "affinity": 0.1694915254237288,
+            "affinity_rank": 0.032895,
+            "popularity": 0.17796610169491525,
+            "entity_artist_affinity_rank": 0.032895,
+            "entity_artist_affinity": 0.1694915254237288
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.413025,
+            "longitude": 13.573608,
+            "geohash": "u33dhv"
+          },
+          "query": {
+            "affinity": 0.16666666666666666,
+            "affinity_rank": 0.032174,
+            "popularity": 0.10451977401129943,
+            "entity_artist_affinity_rank": 0.032174,
+            "entity_artist_affinity": 0.16666666666666666
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.451477,
+            "longitude": 13.233032,
+            "geohash": "u336mh"
+          },
+          "query": {
+            "affinity": 0.1638418079096045,
+            "affinity_rank": 0.031013,
+            "popularity": 0.17796610169491525,
+            "entity_artist_affinity_rank": 0.031013,
+            "entity_artist_affinity": 0.1638418079096045
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.54486,
+            "longitude": 13.540649,
+            "geohash": "u33duj"
+          },
+          "query": {
+            "affinity": 0.16101694915254236,
+            "affinity_rank": 0.030075,
+            "popularity": 0.1497175141242938,
+            "entity_artist_affinity_rank": 0.030075,
+            "entity_artist_affinity": 0.16101694915254236
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.54486,
+            "longitude": 13.441772,
+            "geohash": "u33dcv"
+          },
+          "query": {
+            "affinity": 0.15819209039548024,
+            "affinity_rank": 0.029517,
+            "popularity": 0.20056497175141244,
+            "entity_artist_affinity_rank": 0.029517,
+            "entity_artist_affinity": 0.15819209039548024
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.583313,
+            "longitude": 13.265991,
+            "geohash": "u337ju"
+          },
+          "query": {
+            "affinity": 0.1553672316384181,
+            "affinity_rank": 0.028162,
+            "popularity": 0.17796610169491525,
+            "entity_artist_affinity_rank": 0.028162,
+            "entity_artist_affinity": 0.1553672316384181
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.555847,
+            "longitude": 13.408813,
+            "geohash": "u33dcp"
+          },
+          "query": {
+            "affinity": 0.15254237288135594,
+            "affinity_rank": 0.027753,
+            "popularity": 0.17796610169491525,
+            "entity_artist_affinity_rank": 0.027753,
+            "entity_artist_affinity": 0.15254237288135594
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.485718,
+            "geohash": "u33ddz"
+          },
+          "query": {
+            "affinity": 0.1497175141242938,
+            "affinity_rank": 0.026007,
+            "popularity": 0.17796610169491525,
+            "entity_artist_affinity_rank": 0.026007,
+            "entity_artist_affinity": 0.1497175141242938
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.45697,
+            "longitude": 13.573608,
+            "geohash": "u33dkv"
+          },
+          "query": {
+            "affinity": 0.14689265536723164,
+            "affinity_rank": 0.025842,
+            "popularity": 0.20056497175141244,
+            "entity_artist_affinity_rank": 0.025842,
+            "entity_artist_affinity": 0.14689265536723164
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.418518,
+            "longitude": 13.222046,
+            "geohash": "u336hy"
+          },
+          "query": {
+            "affinity": 0.1440677966101695,
+            "affinity_rank": 0.025701,
+            "popularity": 0.1497175141242938,
+            "entity_artist_affinity_rank": 0.025701,
+            "entity_artist_affinity": 0.1440677966101695
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.484436,
+            "longitude": 13.529663,
+            "geohash": "u33def"
+          },
+          "query": {
+            "affinity": 0.14124293785310735,
+            "affinity_rank": 0.023681,
+            "popularity": 0.13559322033898305,
+            "entity_artist_affinity_rank": 0.023681,
+            "entity_artist_affinity": 0.14124293785310735
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.40204,
+            "longitude": 13.397827,
+            "geohash": "u33d0g"
+          },
+          "query": {
+            "affinity": 0.1384180790960452,
+            "affinity_rank": 0.02354,
+            "popularity": 0.13559322033898305,
+            "entity_artist_affinity_rank": 0.02354,
+            "entity_artist_affinity": 0.1384180790960452
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.56134,
+            "longitude": 13.408813,
+            "geohash": "u33e10"
+          },
+          "query": {
+            "affinity": 0.13559322033898305,
+            "affinity_rank": 0.022572,
+            "popularity": 0.13559322033898305,
+            "entity_artist_affinity_rank": 0.022572,
+            "entity_artist_affinity": 0.13559322033898305
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.451477,
+            "longitude": 13.430786,
+            "geohash": "u33d3s"
+          },
+          "query": {
+            "affinity": 0.1327683615819209,
+            "affinity_rank": 0.021784,
+            "popularity": 0.10451977401129943,
+            "entity_artist_affinity_rank": 0.021784,
+            "entity_artist_affinity": 0.1327683615819209
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.517395,
+            "longitude": 13.244019,
+            "geohash": "u336v2"
+          },
+          "query": {
+            "affinity": 0.12994350282485875,
+            "affinity_rank": 0.020708,
+            "popularity": 0.10451977401129943,
+            "entity_artist_affinity_rank": 0.020708,
+            "entity_artist_affinity": 0.12994350282485875
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.467957,
+            "longitude": 13.265991,
+            "geohash": "u336mz"
+          },
+          "query": {
+            "affinity": 0.1271186440677966,
+            "affinity_rank": 0.020683,
+            "popularity": 0.13559322033898305,
+            "entity_artist_affinity_rank": 0.020683,
+            "entity_artist_affinity": 0.1271186440677966
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.539368,
+            "longitude": 13.441772,
+            "geohash": "u33dcu"
+          },
+          "query": {
+            "affinity": 0.12429378531073447,
+            "affinity_rank": 0.020598,
+            "popularity": 0.1497175141242938,
+            "entity_artist_affinity_rank": 0.020598,
+            "entity_artist_affinity": 0.12429378531073447
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.550354,
+            "longitude": 13.3758545,
+            "geohash": "u33dbq"
+          },
+          "query": {
+            "affinity": 0.12146892655367232,
+            "affinity_rank": 0.020439,
+            "popularity": 0.1497175141242938,
+            "entity_artist_affinity_rank": 0.020439,
+            "entity_artist_affinity": 0.12146892655367232
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.495422,
+            "longitude": 13.287964,
+            "geohash": "u336wk"
+          },
+          "query": {
+            "affinity": 0.11864406779661017,
+            "affinity_rank": 0.020408,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.020408,
+            "entity_artist_affinity": 0.11864406779661017
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.533875,
+            "longitude": 13.29895,
+            "geohash": "u336ye"
+          },
+          "query": {
+            "affinity": 0.11581920903954802,
+            "affinity_rank": 0.018282,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.018282,
+            "entity_artist_affinity": 0.11581920903954802
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.54486,
+            "longitude": 13.331909,
+            "geohash": "u336zm"
+          },
+          "query": {
+            "affinity": 0.11299435028248588,
+            "affinity_rank": 0.017967,
+            "popularity": 0.10451977401129943,
+            "entity_artist_affinity_rank": 0.017967,
+            "entity_artist_affinity": 0.11299435028248588
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.56134,
+            "longitude": 13.331909,
+            "geohash": "u337p2"
+          },
+          "query": {
+            "affinity": 0.11016949152542373,
+            "affinity_rank": 0.016129,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.016129,
+            "entity_artist_affinity": 0.11016949152542373
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.478943,
+            "longitude": 13.408813,
+            "geohash": "u33d91"
+          },
+          "query": {
+            "affinity": 0.10734463276836158,
+            "affinity_rank": 0.016,
+            "popularity": 0.10451977401129943,
+            "entity_artist_affinity_rank": 0.016,
+            "entity_artist_affinity": 0.10734463276836158
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.3428955,
+            "geohash": "u336xe"
+          },
+          "query": {
+            "affinity": 0.10451977401129943,
+            "affinity_rank": 0.015604,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.015604,
+            "entity_artist_affinity": 0.10451977401129943
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.353882,
+            "geohash": "u336zf"
+          },
+          "query": {
+            "affinity": 0.1016949152542373,
+            "affinity_rank": 0.015517,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.015517,
+            "entity_artist_affinity": 0.1016949152542373
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.539368,
+            "longitude": 13.386841,
+            "geohash": "u33dbs"
+          },
+          "query": {
+            "affinity": 0.09887005649717515,
+            "affinity_rank": 0.014243,
+            "popularity": 0.10451977401129943,
+            "entity_artist_affinity_rank": 0.014243,
+            "entity_artist_affinity": 0.09887005649717515
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.462463,
+            "longitude": 13.430786,
+            "geohash": "u33d3w"
+          },
+          "query": {
+            "affinity": 0.096045197740113,
+            "affinity_rank": 0.013699,
+            "popularity": 0.10451977401129943,
+            "entity_artist_affinity_rank": 0.013699,
+            "entity_artist_affinity": 0.096045197740113
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.550354,
+            "longitude": 13.441772,
+            "geohash": "u33dcy"
+          },
+          "query": {
+            "affinity": 0.09322033898305085,
+            "affinity_rank": 0.01359,
+            "popularity": 0.10451977401129943,
+            "entity_artist_affinity_rank": 0.01359,
+            "entity_artist_affinity": 0.09322033898305085
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.529663,
+            "geohash": "u33dev"
+          },
+          "query": {
+            "affinity": 0.0903954802259887,
+            "affinity_rank": 0.011551,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.011551,
+            "entity_artist_affinity": 0.0903954802259887
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.584595,
+            "geohash": "u33dtj"
+          },
+          "query": {
+            "affinity": 0.08757062146892655,
+            "affinity_rank": 0.011331,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.011331,
+            "entity_artist_affinity": 0.08757062146892655
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.5119,
+            "longitude": 13.287964,
+            "geohash": "u336wr"
+          },
+          "query": {
+            "affinity": 0.0847457627118644,
+            "affinity_rank": 0.010889,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.010889,
+            "entity_artist_affinity": 0.0847457627118644
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.566833,
+            "longitude": 13.364868,
+            "geohash": "u33e01"
+          },
+          "query": {
+            "affinity": 0.08192090395480225,
+            "affinity_rank": 0.010496,
+            "popularity": 0.10451977401129943,
+            "entity_artist_affinity_rank": 0.010496,
+            "entity_artist_affinity": 0.08192090395480225
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.54486,
+            "longitude": 13.3428955,
+            "geohash": "u336zt"
+          },
+          "query": {
+            "affinity": 0.07909604519774012,
+            "affinity_rank": 0.010355,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.010355,
+            "entity_artist_affinity": 0.07909604519774012
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.478943,
+            "longitude": 13.320923,
+            "geohash": "u336x1"
+          },
+          "query": {
+            "affinity": 0.07627118644067797,
+            "affinity_rank": 0.009715,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.009715,
+            "entity_artist_affinity": 0.07627118644067797
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.445984,
+            "longitude": 13.233032,
+            "geohash": "u336m5"
+          },
+          "query": {
+            "affinity": 0.07344632768361582,
+            "affinity_rank": 0.009077,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.009077,
+            "entity_artist_affinity": 0.07344632768361582
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.47345,
+            "longitude": 13.3428955,
+            "geohash": "u336x8"
+          },
+          "query": {
+            "affinity": 0.07062146892655367,
+            "affinity_rank": 0.008378,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.008378,
+            "entity_artist_affinity": 0.07062146892655367
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.539368,
+            "longitude": 13.222046,
+            "geohash": "u336uu"
+          },
+          "query": {
+            "affinity": 0.06779661016949153,
+            "affinity_rank": 0.007944,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.007944,
+            "entity_artist_affinity": 0.06779661016949153
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.539368,
+            "longitude": 13.496704,
+            "geohash": "u33dgh"
+          },
+          "query": {
+            "affinity": 0.06497175141242938,
+            "affinity_rank": 0.0079,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.0079,
+            "entity_artist_affinity": 0.06497175141242938
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.467957,
+            "longitude": 13.485718,
+            "geohash": "u33d6z"
+          },
+          "query": {
+            "affinity": 0.062146892655367235,
+            "affinity_rank": 0.006969,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.006969,
+            "entity_artist_affinity": 0.062146892655367235
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.500916,
+            "longitude": 13.518677,
+            "geohash": "u33det"
+          },
+          "query": {
+            "affinity": 0.059322033898305086,
+            "affinity_rank": 0.006809,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.006809,
+            "entity_artist_affinity": 0.059322033898305086
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.52838,
+            "longitude": 13.29895,
+            "geohash": "u336yd"
+          },
+          "query": {
+            "affinity": 0.05649717514124294,
+            "affinity_rank": 0.006739,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.006739,
+            "entity_artist_affinity": 0.05649717514124294
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.445984,
+            "longitude": 13.50769,
+            "geohash": "u33d77"
+          },
+          "query": {
+            "affinity": 0.05367231638418079,
+            "affinity_rank": 0.006726,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.006726,
+            "entity_artist_affinity": 0.05367231638418079
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.566833,
+            "longitude": 13.50769,
+            "geohash": "u33e53"
+          },
+          "query": {
+            "affinity": 0.05084745762711865,
+            "affinity_rank": 0.006678,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.006678,
+            "entity_artist_affinity": 0.05084745762711865
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.588806,
+            "longitude": 13.287964,
+            "geohash": "u337nm"
+          },
+          "query": {
+            "affinity": 0.0480225988700565,
+            "affinity_rank": 0.006295,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.006295,
+            "entity_artist_affinity": 0.0480225988700565
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.555847,
+            "longitude": 13.397827,
+            "geohash": "u33dbz"
+          },
+          "query": {
+            "affinity": 0.04519774011299435,
+            "affinity_rank": 0.006286,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.006286,
+            "entity_artist_affinity": 0.04519774011299435
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.533875,
+            "longitude": 13.353882,
+            "geohash": "u336zg"
+          },
+          "query": {
+            "affinity": 0.0423728813559322,
+            "affinity_rank": 0.006254,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.006254,
+            "entity_artist_affinity": 0.0423728813559322
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.47345,
+            "longitude": 13.331909,
+            "geohash": "u336x2"
+          },
+          "query": {
+            "affinity": 0.03954802259887006,
+            "affinity_rank": 0.00616,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.00616,
+            "entity_artist_affinity": 0.03954802259887006
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.42401,
+            "longitude": 13.441772,
+            "geohash": "u33d1z"
+          },
+          "query": {
+            "affinity": 0.03672316384180791,
+            "affinity_rank": 0.006042,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.006042,
+            "entity_artist_affinity": 0.03672316384180791
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.48993,
+            "longitude": 13.441772,
+            "geohash": "u33d9g"
+          },
+          "query": {
+            "affinity": 0.03389830508474576,
+            "affinity_rank": 0.005845,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.005845,
+            "entity_artist_affinity": 0.03389830508474576
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.56134,
+            "longitude": 13.3758545,
+            "geohash": "u33e02"
+          },
+          "query": {
+            "affinity": 0.031073446327683617,
+            "affinity_rank": 0.005722,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.005722,
+            "entity_artist_affinity": 0.031073446327683617
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.555847,
+            "longitude": 13.4198,
+            "geohash": "u33dcr"
+          },
+          "query": {
+            "affinity": 0.02824858757062147,
+            "affinity_rank": 0.005015,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.005015,
+            "entity_artist_affinity": 0.02824858757062147
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.550354,
+            "longitude": 13.496704,
+            "geohash": "u33dgn"
+          },
+          "query": {
+            "affinity": 0.025423728813559324,
+            "affinity_rank": 0.004706,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.004706,
+            "entity_artist_affinity": 0.025423728813559324
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.539368,
+            "longitude": 13.3428955,
+            "geohash": "u336zs"
+          },
+          "query": {
+            "affinity": 0.022598870056497175,
+            "affinity_rank": 0.004502,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.004502,
+            "entity_artist_affinity": 0.022598870056497175
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.45697,
+            "longitude": 13.50769,
+            "geohash": "u33d7m"
+          },
+          "query": {
+            "affinity": 0.01977401129943503,
+            "affinity_rank": 0.004425,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.004425,
+            "entity_artist_affinity": 0.01977401129943503
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.555847,
+            "longitude": 13.353882,
+            "geohash": "u336zz"
+          },
+          "query": {
+            "affinity": 0.01694915254237288,
+            "affinity_rank": 0.003941,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.003941,
+            "entity_artist_affinity": 0.01694915254237288
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.478943,
+            "longitude": 13.529663,
+            "geohash": "u33dec"
+          },
+          "query": {
+            "affinity": 0.014124293785310734,
+            "affinity_rank": 0.003861,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.003861,
+            "entity_artist_affinity": 0.014124293785310734
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.467957,
+            "longitude": 13.562622,
+            "geohash": "u33dkx"
+          },
+          "query": {
+            "affinity": 0.011299435028248588,
+            "affinity_rank": 0.003163,
+            "popularity": 0.04519774011299435,
+            "entity_artist_affinity_rank": 0.003163,
+            "entity_artist_affinity": 0.011299435028248588
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.451477,
+            "longitude": 13.3758545,
+            "geohash": "u33d2k"
+          },
+          "query": {
+            "affinity": 0.00847457627118644,
+            "affinity_rank": 0.002747,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.002747,
+            "entity_artist_affinity": 0.00847457627118644
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.57782,
+            "longitude": 13.408813,
+            "geohash": "u33e15"
+          },
+          "query": {
+            "affinity": 0.005649717514124294,
+            "affinity_rank": 0.002415,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.002415,
+            "entity_artist_affinity": 0.005649717514124294
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.413025,
+            "longitude": 13.364868,
+            "geohash": "u33d0j"
+          },
+          "query": {
+            "affinity": 0.002824858757062147,
+            "affinity_rank": 0.002092,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.002092,
+            "entity_artist_affinity": 0.002824858757062147
+          }
+        },
+        {
+          "location": {
+            "latitude": 52.42401,
+            "longitude": 13.189087,
+            "geohash": "u336hp"
+          },
+          "query": {
+            "affinity": 0,
+            "affinity_rank": 0,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0,
+            "entity_artist_affinity": 0
+          }
+        }
+      ]
+    },
+    "query": {
+      "localities": {
+        "filter": [
+          {
+            "entity_id": "302C82B3-3EB5-43A8-9A74-6AE11368E716",
+            "name": "Berlin",
+            "subtype": "urn:entity:locality",
+            "location": {
+              "lat": 52.501493996022454,
+              "lon": 13.402316124298212
+            },
+            "popularity": 0.9997469,
+            "disambiguation": "Berlin, Germany"
+          }
+        ]
+      }
+    }
+  }
+}

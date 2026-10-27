@@ -14,6 +14,7 @@
     "lint": "eslint .",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "test": "vitest run",
+    "proof": "tsx evals/proof/run.ts",
     "check": "npm run lint && npm run typecheck && npm run test && npm run build"
   },
   "devDependencies": {
