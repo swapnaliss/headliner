@@ -6,18 +6,6 @@ import { fakeTransport, fixtureTransport, ROOM, runtimeWith } from "./helpers";
 
 const isCompare = (endpoint: string): boolean => endpoint === "/v2/insights/compare";
 
-function searchBody(entities: { id: string; name: string; popularity: number; disambiguation?: string }[]): unknown {
-  return {
-    results: entities.map((e) => ({
-      entity_id: e.id,
-      name: e.name,
-      popularity: e.popularity,
-      types: ["urn:entity:artist"],
-      ...(e.disambiguation ? { disambiguation: e.disambiguation } : {}),
-    })),
-  };
-}
-
 describe("createSlate on the recorded room (fixtures)", () => {
   it("ranks the recorded candidates, then the act with no recorded compare, using only fixtures", async () => {
     const transport = fixtureTransport();
@@ -71,105 +59,40 @@ describe("createSlate on the recorded room (fixtures)", () => {
     expect(out.status).toBe("done");
   });
 
-  it("returns an honest no-data result for an act with no fixture and still ranks the rest", async () => {
-    const rt = runtimeWith(fixtureTransport());
-    const out = await createSlate({ ...ROOM, candidateActs: ["Khruangbin", "Totally Unrecorded Band", "Radiohead"] }, rt);
-    if (out.status !== "done") throw new Error("expected done");
-    expect(out.slate.results.map((r) => [r.act.name, r.rank, r.status])).toEqual([
-      ["Radiohead", 1, "scored"],
-      ["Khruangbin", 2, "scored"],
-      ["Totally Unrecorded Band", null, "no-data"],
-    ]);
-    const missing = out.slate.results[2];
-    expect(missing?.fit).toBeNull();
-    expect(missing?.caveats[0]?.type).toBe("no-data");
-    expect(missing?.evidence).toEqual([]);
+  it("holds a name with no recording for confirmation instead of guessing, and makes no compare call", async () => {
+    const transport = fixtureTransport();
+    const out = await createSlate({ ...ROOM, candidateActs: ["Khruangbin", "Totally Unrecorded Band", "Radiohead"] }, runtimeWith(transport));
+    expect(out.status).toBe("awaiting_confirmation");
+    if (out.status !== "awaiting_confirmation") return;
+    const missing = out.matches.find((m) => m.actInput === "Totally Unrecorded Band");
+    expect(missing).toMatchObject({ role: "candidate", state: "not-in-recordings", candidates: [] });
+    expect(out.matches.filter((m) => m.state === "exact")).toHaveLength(8);
+    expect(transport.calls.filter((c) => isCompare(c.endpoint))).toHaveLength(0);
   });
 
-  it("treats a name Qloo does not know (empty search) as no-data too", async () => {
-    const rt = runtimeWith(fixtureTransport());
-    const out = await createSlate({ ...ROOM, candidateActs: ["Zzqxv Nonexistentact 9731", "Radiohead"] }, rt);
-    if (out.status !== "done") throw new Error("expected done");
-    expect(out.slate.results.map((r) => r.status)).toEqual(["scored", "no-data"]);
-    expect(out.slate.results[1]?.caveats[0]?.message).toMatch(/not matched/);
+  it("holds a name Qloo does not know (empty search) as no match", async () => {
+    const out = await createSlate({ ...ROOM, candidateActs: ["Zzqxv Nonexistentact 9731", "Radiohead", "Khruangbin"] }, runtimeWith(fixtureTransport()));
+    expect(out.status).toBe("awaiting_confirmation");
+    if (out.status === "awaiting_confirmation") expect(out.matches.find((m) => m.state !== "exact")).toMatchObject({ actInput: "Zzqxv Nonexistentact 9731", state: "none" });
   });
 
   it("keeps a repeated act once (case, spacing and accents ignored)", async () => {
     const transport = fixtureTransport();
     const rt = runtimeWith(transport);
-    const out = await createSlate({ ...ROOM, candidateActs: ["Khruangbin", " khruangbin ", "KHRUANGBIN", "Radiohead"] }, rt);
+    const out = await createSlate({ ...ROOM, candidateActs: ["Khruangbin", " khruangbin ", "KHRUANGBIN", "Radiohead", "Reality Club"] }, rt);
     if (out.status !== "done") throw new Error("expected done");
-    expect(out.slate.results.map((r) => r.act.name)).toEqual(["Radiohead", "Khruangbin"]);
-    expect(transport.calls.filter((c) => isCompare(c.endpoint))).toHaveLength(2);
+    expect(out.slate.results.map((r) => r.act.name)).toEqual(["Reality Club", "Radiohead", "Khruangbin"]);
+    expect(transport.calls.filter((c) => isCompare(c.endpoint))).toHaveLength(3);
   });
 
-  it("does not compare a candidate that is already in the regular crowd", async () => {
+  it("excludes a candidate that is already in the regular crowd, with a note, and never compares it", async () => {
     const transport = fixtureTransport();
     const rt = runtimeWith(transport);
-    const out = await createSlate({ ...ROOM, candidateActs: ["Moderat", "Radiohead"] }, rt);
+    const out = await createSlate({ ...ROOM, candidateActs: ["Moderat", "Radiohead", "Khruangbin"] }, rt);
     if (out.status !== "done") throw new Error("expected done");
-    const moderat = out.slate.results.find((r) => r.act.name === "Moderat");
-    expect(moderat?.status).toBe("no-data");
-    expect(moderat?.caveats[0]?.message).toMatch(/already one of the regular-crowd acts/);
-    expect(transport.calls.filter((c) => isCompare(c.endpoint))).toHaveLength(1);
-  });
-});
-
-describe("ambiguity and unresolved crowd (fake transport)", () => {
-  const phoenix = (): unknown =>
-    searchBody([
-      { id: "AAAAAAAA-0000-4000-8000-000000000001", name: "Phoenix", popularity: 0.99, disambiguation: "French band" },
-      { id: "AAAAAAAA-0000-4000-8000-000000000002", name: "Phoenix", popularity: 0.7, disambiguation: "Australian singer" },
-    ]);
-
-  it("reports an ambiguous candidate as awaiting_confirmation and makes no compare call", async () => {
-    const real = fixtureTransport();
-    const transport = fakeTransport(async (req) => {
-      if (req.endpoint === "/search" && req.params.get("query") === "Phoenix") return { status: 200, body: phoenix() };
-      return real.get(req);
-    });
-    const rt = runtimeWith(transport);
-    const out = await createSlate({ ...ROOM, candidateActs: ["Phoenix", "Radiohead"] }, rt);
-    expect(out.status).toBe("awaiting_confirmation");
-    if (out.status !== "awaiting_confirmation") return;
-    expect(out.ambiguous).toHaveLength(1);
-    expect(out.ambiguous[0]).toMatchObject({ role: "candidate", input: "Phoenix" });
-    expect(out.ambiguous[0]?.options.map((o) => o.disambiguation)).toEqual(["French band", "Australian singer"]);
-    expect(transport.calls.filter((c) => isCompare(c.endpoint))).toHaveLength(0);
-    expect(await rt.store.get("x")).toBeNull();
-  });
-
-  it("reports an ambiguous crowd act the same way", async () => {
-    const real = fixtureTransport();
-    const transport = fakeTransport(async (req) => {
-      if (req.endpoint === "/search" && req.params.get("query") === "Hundreds") return { status: 200, body: phoenix() };
-      return real.get(req);
-    });
-    const out = await createSlate(ROOM, runtimeWith(transport));
-    expect(out.status).toBe("awaiting_confirmation");
-    if (out.status === "awaiting_confirmation") expect(out.ambiguous[0]).toMatchObject({ role: "crowd", input: "Hundreds" });
-  });
-
-  it("treats a search whose top hit is not the typed name as ambiguous", async () => {
-    const real = fixtureTransport();
-    const transport = fakeTransport(async (req) => {
-      if (req.endpoint === "/search" && req.params.get("query") === "Radiohed") {
-        return { status: 200, body: searchBody([{ id: "AAAAAAAA-0000-4000-8000-000000000009", name: "Radiohead", popularity: 0.9 }]) };
-      }
-      return real.get(req);
-    });
-    const out = await createSlate({ ...ROOM, candidateActs: ["Radiohed"] }, runtimeWith(transport));
-    expect(out.status).toBe("awaiting_confirmation");
-  });
-
-  it("drops an unmatched crowd act, reports it, and scores against the rest", async () => {
-    const rt = runtimeWith(fixtureTransport());
-    const out = await createSlate({ ...ROOM, crowdActs: [...ROOM.crowdActs.slice(0, 5), "Not A Recorded Crowd Act"] }, rt);
-    if (out.status !== "done") throw new Error("expected done");
-    expect(out.unresolvedCrowdActs).toEqual(["Not A Recorded Crowd Act"]);
-    expect(out.slate.room.crowdActs).toHaveLength(5);
-    // No recording exists for a five-act crowd compare, so every candidate is honestly no-data.
-    expect(out.slate.results.every((r) => r.status === "no-data")).toBe(true);
+    expect(out.slate.results.map((r) => r.act.name)).toEqual(["Radiohead", "Khruangbin"]);
+    expect(out.slate.notes).toEqual([{ type: "already-in-crowd", message: "Already in your crowd, so it is not scored against itself.", subject: "Moderat" }]);
+    expect(transport.calls.filter((c) => isCompare(c.endpoint))).toHaveLength(2);
   });
 });
 

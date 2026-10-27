@@ -764,7 +764,104 @@ table {
   font-size: var(--text-sm);
 }
 .card-links a,
-.back-link {
+/* Match confirmation (M2-01) */
+.match-row {
+  display: grid;
+  gap: var(--space-3);
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-2);
+  padding: var(--space-5);
+}
+.match-role {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.match-picker {
+  display: grid;
+  gap: var(--space-3);
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-inline-size: 0;
+}
+.match-picker legend {
+  font-weight: 600;
+  padding: 0;
+  overflow-wrap: anywhere;
+}
+.match-options {
+  display: grid;
+  gap: var(--space-3);
+}
+@media (min-width: 1024px) {
+  .match-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.match-option {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+  min-block-size: var(--target);
+  padding: var(--space-4);
+  border: 1px solid var(--border-control);
+  border-radius: var(--radius-2);
+  background: var(--surface);
+  cursor: pointer;
+}
+.match-option:hover {
+  background: var(--sunken);
+}
+.match-option[data-selected="true"] {
+  background: var(--accent-tint);
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.match-option:focus-within {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.match-option input[type="radio"] {
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+  margin-block-start: 0.125rem;
+  flex: none;
+  accent-color: var(--accent);
+}
+.match-option-body {
+  display: grid;
+  gap: var(--space-1);
+  min-inline-size: 0;
+  flex: 1;
+}
+.match-option-name {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.match-meta {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
+.match-selected {
+  display: inline-flex;
+  gap: var(--space-2);
+  align-items: center;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--accent);
+  flex: none;
+}
+.match-chosen {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  font-size: var(--text-sm);
+}
+.back-link,
+.confirm-back {
   display: inline-flex;
   align-items: center;
   min-block-size: var(--target);
@@ -793,6 +890,13 @@ table {
 .on-page ul {
   display: flex;
   gap: var(--space-5);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.summary-list {
+  display: grid;
+  gap: var(--space-2);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1022,4 +1126,54 @@ table {
 .city-ev-fields dd {
   margin: 0;
   white-space: pre-wrap;
+}
+.confirmed-list {
+  display: grid;
+  gap: var(--space-3);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.confirmed-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-2);
+  background: var(--surface);
+}
+.confirmed-main {
+  display: grid;
+  gap: var(--space-2);
+  min-inline-size: 0;
+  flex: 1 1 14rem;
+}
+.back-note {
+  display: block;
+}
+.confirmed-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+}
+.confirmed-main .match-role,
+.confirmed-main .entity {
+  display: block;
+}
+.confirmed-row .match-selected .icon,
+.confirmed-main .match-chosen .icon {
+  flex: none;
+}
+.back-wrap {
+  display: grid;
+  gap: var(--space-2);
+}
+.match-none {
+  grid-column: 1 / -1;
+  min-block-size: var(--target);
+  align-items: center;
 }

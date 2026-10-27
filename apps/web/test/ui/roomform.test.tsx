@@ -110,8 +110,8 @@ describe("RoomForm", () => {
     expect(busy.getAttribute("aria-busy")).toBe("true");
     expect(screen.getAllByRole("status").some((s) => s.textContent?.includes("Ranking 3 acts"))).toBe(true);
     await act(async () => {
-      release(Response.json({ status: "awaiting_confirmation", ambiguous: [{}] }));
+      release(Response.json({ status: "awaiting_confirmation", runId: "AbCdEfGhIjKlMnOpQrStU", matches: [] }));
     });
-    expect(await screen.findByText("Some matches need confirmation")).toBeTruthy();
+    await waitFor(() => expect(push).toHaveBeenCalledWith("/run/AbCdEfGhIjKlMnOpQrStU/confirm"));
   });
 });

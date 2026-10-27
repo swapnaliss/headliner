@@ -95,7 +95,7 @@ describe("migrations", () => {
       sql`select table_name from information_schema.tables where table_schema = 'public' order by table_name`,
     );
     const names = (res.rows as { table_name: string }[]).map((r) => r.table_name);
-    expect(names).toEqual(["budgets", "qloo_cache", "slates"]);
+    expect(names).toEqual(["budgets", "qloo_cache", "runs", "slates"]);
     await client.close();
   });
 });

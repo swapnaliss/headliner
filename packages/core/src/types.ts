@@ -118,10 +118,21 @@ export const ActResultSchema = z.object({
 });
 export type ActResult = z.infer<typeof ActResultSchema>;
 
+/** A visible note about how the run's inputs were reconciled (duplicates merged, crowd acts excluded). */
+export const SlateNoteSchema = z.object({
+  type: z.enum(["merged-duplicate", "already-in-crowd", "skipped"]),
+  message: z.string().min(1),
+  /** The untrusted act name the note is about (render as plain text). */
+  subject: z.string().min(1).optional(),
+});
+export type SlateNote = z.infer<typeof SlateNoteSchema>;
+
 export const SlateSchema = z.object({
   id: z.string().min(1),
   room: RoomSchema,
   results: z.array(ActResultSchema),
+  /** Reconciliation notes (M2-01). Absent on slates saved before M2-01. */
+  notes: z.array(SlateNoteSchema).default([]),
   /** ISO 8601 timestamp supplied by the caller. */
   createdAt: z.string().min(1),
 });
