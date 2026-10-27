@@ -10,7 +10,7 @@ export function loadSlate(id: "sample-leipzig-indie" | "sample-berlin-electronic
 }
 
 /** The raw model text of a recorded stub reply. */
-export function loadReply(name: "grounded" | "ungrounded"): string {
+export function loadReply(name: "live-slate" | "live-act" | "ungrounded"): string {
   const parsed: unknown = JSON.parse(readFileSync(`${DIR}model-reply--${name}.json`, "utf8"));
   if (typeof parsed !== "object" || parsed === null || typeof (parsed as { text?: unknown }).text !== "string") throw new Error("bad reply fixture");
   return (parsed as { text: string }).text;

@@ -7,6 +7,7 @@ import type { GuardDecision } from "@headliner/budgets";
 import { GET } from "../app/api/slates/[id]/route";
 import RootLayout from "../app/layout";
 import { llmBudgetFrom } from "../src/budget";
+import { explainModelFrom } from "../src/explainModel";
 import { buildRuntime, setRuntimeForTests, type Runtime } from "../src/config";
 import { Explanation } from "../src/ui/Explanation";
 import { SlateView } from "../src/ui/SlateView";
@@ -18,7 +19,7 @@ afterEach(() => {
 });
 
 const REPLIES = resolve(__dirname, "../../../fixtures/agent/explain");
-function reply(name: "grounded" | "ungrounded"): string {
+function reply(name: "live-slate" | "live-act" | "ungrounded"): string {
   return (JSON.parse(readFileSync(resolve(REPLIES, `model-reply--${name}.json`), "utf8")) as { text: string }).text;
 }
 
@@ -93,7 +94,7 @@ describe("GET /api/slates/:id", () => {
   });
 
   it("uses the model text when it is grounded", async () => {
-    const generate = vi.fn(async () => ({ text: reply("grounded"), usage: { inputTokens: 100, outputTokens: 50 } }));
+    const generate = vi.fn(async () => ({ text: reply("live-slate"), usage: { inputTokens: 100, outputTokens: 50 } }));
     const settle = vi.fn(async () => undefined);
     setRuntimeForTests(fixturesRuntime({ explainModel: { generate }, explainBudget: () => async () => ({ settle }) }));
     const body = (await (await call("sample-leipzig-indie")).json()) as { explanation: { source: string } };
@@ -105,7 +106,7 @@ describe("GET /api/slates/:id", () => {
   it("falls back to the template for an ungrounded reply, a thrown error and a spent budget", async () => {
     const ungrounded: ExplainModel = { generate: vi.fn(async () => ({ text: reply("ungrounded") })) };
     const throwing: ExplainModel = { generate: vi.fn(async () => Promise.reject(new Error("down"))) };
-    const spent: ExplainModel = { generate: vi.fn(async () => ({ text: reply("grounded") })) };
+    const spent: ExplainModel = { generate: vi.fn(async () => ({ text: reply("live-slate") })) };
     for (const [model, budget] of [
       [ungrounded, async () => ({ settle: async () => undefined })],
       [throwing, async () => ({ settle: async () => undefined })],
@@ -116,6 +117,48 @@ describe("GET /api/slates/:id", () => {
       expect(body.explanation.source).toBe("template");
     }
     expect(spent.generate).not.toHaveBeenCalled();
+  });
+});
+
+describe("explainModelFrom (adapter over the M3-01 provider)", () => {
+  const turn = (content: string | null) => ({
+    content,
+    toolCalls: [],
+    usage: { inputTokens: 500, outputTokens: 200, reasoningTokens: 0, cachedInputTokens: 0, totalTokens: 700 },
+    costUsd: 0.0001,
+    model: "gpt-5-nano",
+    finishReason: "stop",
+  });
+  const req = { system: "S", user: "U", maxOutputTokens: 1500, json: true as const, signal: new AbortController().signal };
+
+  it("makes one structured-output turn with the system and user messages and the token cap, and returns usage", async () => {
+    const complete = vi.fn(async () => turn('{"sentences":["a"]}'));
+    const out = await explainModelFrom({ model: "gpt-5-nano", complete }).generate(req);
+    expect(complete).toHaveBeenCalledTimes(1);
+    const arg = (complete.mock.calls[0] as unknown as [{ messages: unknown; maxCompletionTokens: number; jsonSchema: { name: string } }])[0];
+    expect(arg.messages).toEqual([
+      { role: "system", content: "S" },
+      { role: "user", content: "U" },
+    ]);
+    expect(arg.maxCompletionTokens).toBe(1500);
+    expect(arg.jsonSchema.name).toBe("explanation");
+    expect(out).toEqual({ text: '{"sentences":["a"]}', usage: { inputTokens: 500, outputTokens: 200 } });
+  });
+
+  it("hands unusable content back as text, so explainSlate falls back to the template", async () => {
+    const out = await explainModelFrom({ model: "m", complete: async () => turn("not json") }).generate(req);
+    expect(out.text).toBe("not json");
+  });
+
+  it("a provider error propagates and the explanation uses the template", async () => {
+    setRuntimeForTests(
+      fixturesRuntime({
+        explainModel: explainModelFrom({ model: "m", complete: async () => Promise.reject(new Error("llm_timeout")) }),
+        explainBudget: () => async () => ({ settle: async () => undefined }),
+      }),
+    );
+    const body = (await (await call("sample-leipzig-indie")).json()) as { explanation: { source: string } };
+    expect(body.explanation.source).toBe("template");
   });
 });
 

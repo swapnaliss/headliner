@@ -41,15 +41,24 @@ describe("explainSlate", () => {
   });
 
   it("returns the model's sentences when they are valid and grounded", async () => {
-    const model = stub({ text: loadReply("grounded"), usage: { inputTokens: 700, outputTokens: 300 } });
+    const model = stub({ text: loadReply("live-slate"), usage: { inputTokens: 700, outputTokens: 300 } });
     const b = budget(true);
     const events: ExplainEvent[] = [];
     const out = await explainSlate(slate, { model, budget: b.budget, onEvent: (e) => void events.push(e) });
     expect(out.source).toBe("llm");
-    expect(out.text).toContain("Moderat ranks 1 with an audience-taste fit of 63.8");
+    expect(out.text).toContain("Moderat's fit is 63.8");
     expect(model.calls).toBe(1);
     expect(b.settled).toEqual([1000]); // the real usage replaces the reservation
     expect(events).toEqual([{ event: "explain_llm", inputTokens: 700, outputTokens: 300 }]);
+  });
+
+  it("accepts the live recorded replies for the slate and for one act (both pass the grounding check)", async () => {
+    const slateOut = await explainSlate(slate, { model: stub({ text: loadReply("live-slate") }) });
+    expect(slateOut).toMatchObject({ source: "llm" });
+    const second = slate.results[1]!;
+    const actOut = await explainSlate(slate, { model: stub({ text: loadReply("live-act") }) }, { actId: second.act.qlooEntityId });
+    expect(actOut).toMatchObject({ source: "llm" });
+    expect(actOut.text).toContain("60.6");
   });
 
   it("falls back to the template when the model returns an ungrounded number", async () => {
@@ -100,7 +109,7 @@ describe("explainSlate", () => {
   });
 
   it("makes no model call when the budget ceiling is reached", async () => {
-    const model = stub({ text: loadReply("grounded") });
+    const model = stub({ text: loadReply("live-slate") });
     const b = budget(false);
     const out = await explainSlate(slate, { model, budget: b.budget });
     expect(out).toMatchObject({ text: template, source: "template", fallback: "budget" });
@@ -109,7 +118,7 @@ describe("explainSlate", () => {
   });
 
   it("makes no model call when the budget check itself fails", async () => {
-    const model = stub({ text: loadReply("grounded") });
+    const model = stub({ text: loadReply("live-slate") });
     const out = await explainSlate(slate, {
       model,
       budget: () => Promise.reject(new Error("store down")),
@@ -123,7 +132,7 @@ describe("explainSlate", () => {
     const model: ExplainModel = {
       generate: async () => {
         order.push("model");
-        return { text: loadReply("grounded") };
+        return { text: loadReply("live-slate") };
       },
     };
     await explainSlate(slate, {
@@ -137,7 +146,7 @@ describe("explainSlate", () => {
   });
 
   it("serves a repeat from the cache without a second model call or budget charge", async () => {
-    const model = stub({ text: loadReply("grounded") });
+    const model = stub({ text: loadReply("live-slate") });
     const b = budget(true);
     const cache = createExplainCache(5);
     const deps = { model, budget: b.budget, cache };
