@@ -121,3 +121,9 @@ ui-reviewer was not re-run on the deployed M2 pages (optional).
 ## Not verified
 
 A human first-run stopwatch; a real production 429; the live Qloo call count of the production journey; LLM ceiling through a route; behaviour behind Vercel's real `x-vercel-forwarded-for`; ui-reviewer on deployed M2 pages.
+
+## Addendum 2026-10-27: gate closed
+
+- **Step 9 re-walked after PR #72** (functions pinned to `sin1`, one read per page; details in `docs/evidence/m2-06-cold-start.md`). Production `/s/sample-berlin-electronic`, curl total time from one client in Mumbai: after more than 8 minutes idle **1.72 s**, then 0.22 s and 0.31 s; first request on the new deployment 1.37 s, then 0.54, 0.28, 0.48 s; Leipzig 0.21 s and 0.22 s after idle. Before the fix: 4.30 s and 4.00 s after idle. Two post-fix cold samples, one client location: a thin margin under the 2 s target. The keep-warm workflow is skipped while the repo is private; the owner's uptime monitor on `/api/health?deep=1` is the warm-up until then.
+- **Prerequisites:** `python3 scripts/check-prereqs.py` reports 18/18 ready (P-06, P-13, P-15, P-16 completed by the owner on 2026-10-27).
+- **Still unverified:** a real production 429, the LLM ceiling through a route (M3-01), behaviour behind Vercel's own forwarded-IP header, a human stopwatch run of the core journey.
