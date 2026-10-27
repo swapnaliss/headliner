@@ -20,10 +20,13 @@ export function CaveatChip({ caveat }: { caveat: Caveat }) {
     <li className="stack-sm">
       <span className="status" data-tone={meta.tone}>
         <Icon name={meta.icon} />
-        <span>{meta.label}</span>
+        <span>
+          {meta.label}
+          {caveat.subject ? ":" : null}
+        </span>
         {caveat.subject ? (
           <span>
-            : <bdi className="entity">{caveat.subject}</bdi>
+            <bdi className="entity">{caveat.subject}</bdi>
           </span>
         ) : null}
       </span>
