@@ -1,0 +1,5545 @@
+{
+  "endpoint": "/v2/insights/compare",
+  "params": {
+    "a.signal.interests.entities": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C,E7649B3E-6FFE-46A1-85F3-836D842B2AF0,6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1,D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+    "b.signal.interests.entities": "7274E19C-539B-449E-97C1-1C60B2218099",
+    "filter.type": "urn:entity:artist"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T06:59:05.847Z",
+  "latencyMs": 328,
+  "body": {
+    "duration": 28,
+    "results": {
+      "tags": [
+        {
+          "tag_id": "urn:tag:region:qloo:united_states",
+          "name": "United States",
+          "type": "urn:tag",
+          "subtype": "urn:tag:region:qloo",
+          "entity_id": "9231423C-49CD-4240-8227-78D285399E78",
+          "popularity": 0,
+          "query": {
+            "score": 0.8553777783249483,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:diverse",
+          "name": "Diverse",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "61EF19FB-D90E-48EC-A6F3-24357E1ADAAE",
+          "popularity": 0,
+          "query": {
+            "score": 0.7310188142577898,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:innovative",
+          "name": "Innovative",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "8D6D65FC-1D79-456D-81ED-34030102F87E",
+          "popularity": 0,
+          "query": {
+            "score": 0.7310188142577898,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:electronic",
+          "name": "Electronic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "D4132442-7F20-48E9-9F70-6BC806164A4F",
+          "popularity": 0.9997944738848622,
+          "query": {
+            "score": 0.7310181696529221,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:alternative_rock",
+          "name": "Alternative Rock",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "61E68939-BFDA-4842-AAFF-AC7FDD210523",
+          "popularity": 0.9996177045101141,
+          "query": {
+            "score": 0.7309834064244143,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:electronic",
+          "name": "Electronic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "D4132442-7F20-48E9-9F70-6BC806164A4F",
+          "popularity": 0.9997944738848622,
+          "query": {
+            "score": 0.7309834064244143,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:alternative_rock",
+          "name": "Alternative Rock",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "61E68939-BFDA-4842-AAFF-AC7FDD210523",
+          "popularity": 0.9996177045101141,
+          "query": {
+            "score": 0.7309812497448915,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:electronic",
+          "name": "Electronic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "D4132442-7F20-48E9-9F70-6BC806164A4F",
+          "popularity": 0.9997944738848622,
+          "query": {
+            "score": 0.7309812497448915,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:electronic",
+          "name": "Electronic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "D4132442-7F20-48E9-9F70-6BC806164A4F",
+          "popularity": 0.9997944738848622,
+          "query": {
+            "score": 0.7309515122399098,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:love",
+          "name": "Love",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "FE9F1B33-D668-4A8C-80FD-60B78D5F13FD",
+          "popularity": 0.9934362577424425,
+          "query": {
+            "score": 0.7297661168313316,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:energetic",
+          "name": "Energetic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "DDA96216-6F10-4D64-BA4B-3553DA45652B",
+          "popularity": 0.993239807710086,
+          "query": {
+            "score": 0.7297273723004448,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:dynamic",
+          "name": "Dynamic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "4900E325-E17B-482E-A421-A36C21F51569",
+          "popularity": 0.9926157899602478,
+          "query": {
+            "score": 0.7296042858489226,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:passionate",
+          "name": "Passionate",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "F5485D5E-6C8E-4CE8-951C-3B13AD76D935",
+          "popularity": 0.9920842192844597,
+          "query": {
+            "score": 0.7294993952774845,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:loyal",
+          "name": "Loyal",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "EDDB06AD-35FE-431E-A2A5-4F5589471FEE",
+          "popularity": 0.9920264398631783,
+          "query": {
+            "score": 0.7294879979555896,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:vocals",
+          "name": "Vocals",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "BC4B0E4D-F317-47A7-94A5-62BBD3D42042",
+          "popularity": 0.9906397337524268,
+          "query": {
+            "score": 0.7292142656792078,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:innovative",
+          "name": "Innovative",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "F468945C-6B6C-467D-8496-733087E03D56",
+          "popularity": 0.9902583895719701,
+          "query": {
+            "score": 0.729138957311338,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:open_minded",
+          "name": "Open-minded",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "243AD7BB-F6F0-4259-8837-27A1AA767F1B",
+          "popularity": 0.9863409448090968,
+          "query": {
+            "score": 0.7283645839586115,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:synthesizer",
+          "name": "Synthesizer",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "75F19A67-5889-4C7D-B8BE-88FA805DBD30",
+          "popularity": 0.9755593047980031,
+          "query": {
+            "score": 0.7262261951626375,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:expressive",
+          "name": "Expressive",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "241982E6-3CCA-42C2-81EC-A5DC7E99896A",
+          "popularity": 0.973490801516132,
+          "query": {
+            "score": 0.7258147361660902,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:experimental",
+          "name": "Experimental",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "29C806BD-D356-476A-977F-DA8915462690",
+          "popularity": 0.9507603771840621,
+          "query": {
+            "score": 0.7212680677601709,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:experimental",
+          "name": "Experimental",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "19B61203-887D-4E50-83F6-56611F34B49A",
+          "popularity": 0.9486456503651659,
+          "query": {
+            "score": 0.7208427260181901,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:eclectic",
+          "name": "Eclectic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "77694357-7B1B-4065-AB25-76B06D85545B",
+          "popularity": 0.9408685402607008,
+          "query": {
+            "score": 0.7192750683900987,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:subgenre:qloo:electronic",
+          "name": "Electronic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:subgenre:qloo",
+          "entity_id": "9B1EFCA2-1726-42DC-9E09-DE28E103AB9B",
+          "popularity": 0.5383424239622816,
+          "query": {
+            "score": 0.6314267373392287,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:guitar",
+          "name": "Guitar",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "119A15CC-2467-4453-B88B-813598ADFDDA",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621642581199403,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:keyboards",
+          "name": "Keyboards",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "1AEEA170-EC8F-4EED-A97C-0E034AC72700",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621642581199403,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:eclectic",
+          "name": "Eclectic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "2667058D-30B6-4A36-A841-7E410A616F4C",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621642581199403,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:energetic",
+          "name": "Energetic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "328AD8B3-040B-40A6-A067-0324977EBCF2",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621642581199403,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:ragtime",
+          "name": "Ragtime",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "57CCDA2A-987A-4F2D-9C0B-7B3B343D880E",
+          "popularity": 0.9829309715591609,
+          "query": {
+            "score": 0.5621642581199403,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:piano",
+          "name": "Piano",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "57F0BC79-0F07-41F2-B699-E1FA919F4EF1",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621642581199403,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:region:qloo:canada",
+          "name": "Canada",
+          "type": "urn:tag",
+          "subtype": "urn:tag:region:qloo",
+          "entity_id": "70162ECF-5F5F-443E-884F-43C88A4264D0",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621642581199403,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:work_songs",
+          "name": "Work Songs",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "7E4887D4-CEFF-4BE1-BC8B-394C1E35CFFA",
+          "popularity": 0.4118421948497524,
+          "query": {
+            "score": 0.5621642581199403,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:soul",
+          "name": "Soul",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "8E9EB3D9-0B36-440C-9462-F1804BE8DD6F",
+          "popularity": 0.9990366491969469,
+          "query": {
+            "score": 0.5621642581199403,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:gospel",
+          "name": "Gospel",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "ABE5AB8E-4FBC-483E-8861-632CDB2630B3",
+          "popularity": 0.9975140220826393,
+          "query": {
+            "score": 0.5621642581199403,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:spirituals",
+          "name": "Spirituals",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "BCB23F0B-E78B-42B7-BE58-05E1120A63BD",
+          "popularity": 0.8976283301256881,
+          "query": {
+            "score": 0.5621642581199403,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:folk",
+          "name": "Folk",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "D48DE672-3A1F-4FAE-87E6-9CC030619CE4",
+          "popularity": 0.9994502387866685,
+          "query": {
+            "score": 0.5621642581199403,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:region:qloo:united_kingdom",
+          "name": "United Kingdom",
+          "type": "urn:tag",
+          "subtype": "urn:tag:region:qloo",
+          "entity_id": "DFFAA712-681F-41B6-AEEC-146FAF0C82D3",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621642581199403,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:marches",
+          "name": "Marches",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "FFE07859-BF1A-40D3-9B78-4AD347675FD7",
+          "popularity": 0.8795185614186884,
+          "query": {
+            "score": 0.5621642581199403,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:electric_guitar",
+          "name": "Electric Guitar",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "258D385F-8543-49F0-8C15-670F1D7EE56A",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621638546722033,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:futurism",
+          "name": "Futurism",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "36104723-7DAA-48EC-A723-5AD1AB735921",
+          "popularity": 0.9091669722070334,
+          "query": {
+            "score": 0.5621638546722033,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:synthesizer",
+          "name": "Synthesizer",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "A54DD76B-1062-41F2-AD73-BBC9671C75EC",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621638546722033,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:experimental",
+          "name": "Experimental",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "B88AE3D7-3437-4BAF-B5D3-2FEDFC87A9CB",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621638546722033,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:modernism",
+          "name": "Modernism",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "FEB07493-3895-40E1-A0B6-BC3C979EB9B0",
+          "popularity": 0.6763896166176745,
+          "query": {
+            "score": 0.5621638546722033,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:post_punk",
+          "name": "Post Punk",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "114DC829-312C-4AAE-927A-9CBE777C69DC",
+          "popularity": 0.9989387494116497,
+          "query": {
+            "score": 0.5621529762231378,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:electric_guitar",
+          "name": "Electric Guitar",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "258D385F-8543-49F0-8C15-670F1D7EE56A",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621529762231378,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:diverse",
+          "name": "Diverse",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "61EF19FB-D90E-48EC-A6F3-24357E1ADAAE",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621529762231378,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:dub",
+          "name": "Dub",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "89264849-C5CD-4431-AEAB-DC5B2ABA2A18",
+          "popularity": 0.9989368463920651,
+          "query": {
+            "score": 0.5621529762231378,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:synthesizer",
+          "name": "Synthesizer",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "A54DD76B-1062-41F2-AD73-BBC9671C75EC",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621529762231378,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:punk_rock",
+          "name": "Punk Rock",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "BDAC6EC5-A1CA-4834-9CDB-9D74B5CE2063",
+          "popularity": 0.9994039319767763,
+          "query": {
+            "score": 0.5621529762231378,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:region:qloo:los_angeles",
+          "name": "Los Angeles",
+          "type": "urn:tag",
+          "subtype": "urn:tag:region:qloo",
+          "entity_id": "BDE17EAD-5802-40C1-B975-2F60C53A1076",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621529762231378,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:region:qloo:united_kingdom",
+          "name": "United Kingdom",
+          "type": "urn:tag",
+          "subtype": "urn:tag:region:qloo",
+          "entity_id": "DFFAA712-681F-41B6-AEEC-146FAF0C82D3",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621529762231378,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:post_punk",
+          "name": "Post Punk",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "114DC829-312C-4AAE-927A-9CBE777C69DC",
+          "popularity": 0.9989387494116497,
+          "query": {
+            "score": 0.5621523013612134,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:guitar",
+          "name": "Guitar",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "119A15CC-2467-4453-B88B-813598ADFDDA",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621523013612134,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:energetic",
+          "name": "Energetic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "328AD8B3-040B-40A6-A067-0324977EBCF2",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621523013612134,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:emotional",
+          "name": "Emotional",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "403B2D4B-18F1-483F-B57B-C63573480EBA",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621523013612134,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:diverse",
+          "name": "Diverse",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "61EF19FB-D90E-48EC-A6F3-24357E1ADAAE",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621523013612134,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:dub",
+          "name": "Dub",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "89264849-C5CD-4431-AEAB-DC5B2ABA2A18",
+          "popularity": 0.9989368463920651,
+          "query": {
+            "score": 0.5621523013612134,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:experimental",
+          "name": "Experimental",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "B88AE3D7-3437-4BAF-B5D3-2FEDFC87A9CB",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621523013612134,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:punk_rock",
+          "name": "Punk Rock",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "BDAC6EC5-A1CA-4834-9CDB-9D74B5CE2063",
+          "popularity": 0.9994039319767763,
+          "query": {
+            "score": 0.5621523013612134,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:folk",
+          "name": "Folk",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "D48DE672-3A1F-4FAE-87E6-9CC030619CE4",
+          "popularity": 0.9994502387866685,
+          "query": {
+            "score": 0.5621523013612134,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:4_4_time",
+          "name": "4/4 Time",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "D98D9BD7-6557-4111-BC63-F930D7766FF0",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621523013612134,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:region:qloo:united_kingdom",
+          "name": "United Kingdom",
+          "type": "urn:tag",
+          "subtype": "urn:tag:region:qloo",
+          "entity_id": "DFFAA712-681F-41B6-AEEC-146FAF0C82D3",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621523013612134,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:keyboard",
+          "name": "Keyboard",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "F3A357EF-0D6F-46B6-8EF8-067E6E0E94D7",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621523013612134,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:futurism",
+          "name": "Futurism",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "36104723-7DAA-48EC-A723-5AD1AB735921",
+          "popularity": 0.9091669722070334,
+          "query": {
+            "score": 0.5621429963122094,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:piano",
+          "name": "Piano",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "57F0BC79-0F07-41F2-B699-E1FA919F4EF1",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621429963122094,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:atmospheric",
+          "name": "Atmospheric",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "603F42DB-7787-4374-BABF-9890CA561197",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621429963122094,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:slow",
+          "name": "Slow",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "70728B8A-7284-4A4D-AD9C-21905C82194E",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621429963122094,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:rocksteady",
+          "name": "Rocksteady",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "7A528B03-1FA3-46AA-AB2B-F276349C3C41",
+          "popularity": 0.9946478631415978,
+          "query": {
+            "score": 0.5621429963122094,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:ska",
+          "name": "Ska",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "87E20AB4-EBD8-4C9D-9957-77718568266A",
+          "popularity": 0.998382221906462,
+          "query": {
+            "score": 0.5621429963122094,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:dub",
+          "name": "Dub",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "89264849-C5CD-4431-AEAB-DC5B2ABA2A18",
+          "popularity": 0.9989368463920651,
+          "query": {
+            "score": 0.5621429963122094,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:synthesizer",
+          "name": "Synthesizer",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "A54DD76B-1062-41F2-AD73-BBC9671C75EC",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621429963122094,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:relaxed",
+          "name": "Relaxed",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "BAE37146-C15E-4882-ACEF-13180329C0BC",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621429963122094,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:region:qloo:united_kingdom",
+          "name": "United Kingdom",
+          "type": "urn:tag",
+          "subtype": "urn:tag:region:qloo",
+          "entity_id": "DFFAA712-681F-41B6-AEEC-146FAF0C82D3",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621429963122094,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:modernism",
+          "name": "Modernism",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "FEB07493-3895-40E1-A0B6-BC3C979EB9B0",
+          "popularity": 0.6763896166176745,
+          "query": {
+            "score": 0.5621429963122094,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:guitar",
+          "name": "Guitar",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "119A15CC-2467-4453-B88B-813598ADFDDA",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621132800135609,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:danceable",
+          "name": "Danceable",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "2F500B19-306D-48E0-A38F-06DE998D4FF2",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621132800135609,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:piano",
+          "name": "Piano",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "57F0BC79-0F07-41F2-B699-E1FA919F4EF1",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621132800135609,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:harmonious",
+          "name": "Harmonious",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "8DCE41EE-6633-4A56-A518-51F3A1A59439",
+          "popularity": 0,
+          "query": {
+            "score": 0.5621132800135609,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:folk",
+          "name": "Folk",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "D48DE672-3A1F-4FAE-87E6-9CC030619CE4",
+          "popularity": 0.9994502387866685,
+          "query": {
+            "score": 0.5621132800135609,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:lush",
+          "name": "Lush",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "364412A8-0230-4F89-8E5C-443C915D6C28",
+          "popularity": 0,
+          "query": {
+            "score": 0.5620163560099327,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:relaxed",
+          "name": "Relaxed",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "BAE37146-C15E-4882-ACEF-13180329C0BC",
+          "popularity": 0,
+          "query": {
+            "score": 0.5620163560099327,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:smooth",
+          "name": "Smooth",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "BC575BDD-5126-4A61-B649-667EE665E573",
+          "popularity": 0,
+          "query": {
+            "score": 0.5620163560099327,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:drums",
+          "name": "Drums",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "5C75A350-D588-436E-BD2E-2EB43493FA9D",
+          "popularity": 0,
+          "query": {
+            "score": 0.5553171372312103,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:expressive",
+          "name": "Expressive",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "C596FCF2-CA55-4AF9-995E-C39C61F8F2CA",
+          "popularity": 0,
+          "query": {
+            "score": 0.5553171372312103,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:funk",
+          "name": "Funk",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "47ED0FA8-991E-45F2-9074-D95153C98ED7",
+          "popularity": 0.9989218336820088,
+          "query": {
+            "score": 0.5553070761102774,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:region:qloo:united_states",
+          "name": "United States",
+          "type": "urn:tag",
+          "subtype": "urn:tag:region:qloo",
+          "entity_id": "9231423C-49CD-4240-8227-78D285399E78",
+          "popularity": 0,
+          "query": {
+            "score": 0.5553070761102774,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:disco",
+          "name": "Disco",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "C74AA932-C1BC-4332-8E7E-4CDA2CD03221",
+          "popularity": 0.9982234254944573,
+          "query": {
+            "score": 0.5553070761102774,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:funk",
+          "name": "Funk",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "47ED0FA8-991E-45F2-9074-D95153C98ED7",
+          "popularity": 0.9989218336820088,
+          "query": {
+            "score": 0.5553064742732575,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:drums",
+          "name": "Drums",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "5C75A350-D588-436E-BD2E-2EB43493FA9D",
+          "popularity": 0,
+          "query": {
+            "score": 0.5553064742732575,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:region:qloo:united_states",
+          "name": "United States",
+          "type": "urn:tag",
+          "subtype": "urn:tag:region:qloo",
+          "entity_id": "9231423C-49CD-4240-8227-78D285399E78",
+          "popularity": 0,
+          "query": {
+            "score": 0.5553064742732575,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:music:bass_guitar",
+          "name": "Bass Guitar",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:music",
+          "entity_id": "A20FB340-008F-43B2-B034-A366ED78C361",
+          "popularity": 0,
+          "query": {
+            "score": 0.5553064742732575,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:disco",
+          "name": "Disco",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "C74AA932-C1BC-4332-8E7E-4CDA2CD03221",
+          "popularity": 0.9982234254944573,
+          "query": {
+            "score": 0.5553064742732575,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:funk",
+          "name": "Funk",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "47ED0FA8-991E-45F2-9074-D95153C98ED7",
+          "popularity": 0.9989218336820088,
+          "query": {
+            "score": 0.5552981761017213,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:reggae",
+          "name": "Reggae",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "ADD96188-14AE-4F83-B2F9-EFAF677BA83A",
+          "popularity": 0.9992218764365155,
+          "query": {
+            "score": 0.5552981761017213,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:expressive",
+          "name": "Expressive",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "C596FCF2-CA55-4AF9-995E-C39C61F8F2CA",
+          "popularity": 0,
+          "query": {
+            "score": 0.5552716753884227,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:region:qloo:united_states",
+          "name": "United States",
+          "type": "urn:tag",
+          "subtype": "urn:tag:region:qloo",
+          "entity_id": "9231423C-49CD-4240-8227-78D285399E78",
+          "popularity": 0,
+          "query": {
+            "score": 0.5551852400583888,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:moderate",
+          "name": "Moderate",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "BEB98568-B4F7-4B0D-910E-742686DA4977",
+          "popularity": 0,
+          "query": {
+            "score": 0.5551852400583888,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:blues",
+          "name": "Blues",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "06662971-FBC7-4375-B789-0BF651ABEF2D",
+          "popularity": 0.9989683519385215,
+          "query": {
+            "score": 0.5467289071954466,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:jazz",
+          "name": "Jazz",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "5CD48936-B0B2-48D0-8216-ECDC35750F68",
+          "popularity": 0.9994605996710736,
+          "query": {
+            "score": 0.5467289071954466,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:syncopated",
+          "name": "Syncopated",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "CE4A04BE-9B0C-42BD-808D-C0F4A86988CF",
+          "popularity": 0,
+          "query": {
+            "score": 0.5467289071954466,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:melodic",
+          "name": "Melodic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "C346D0F8-37BD-496F-93F6-375C4E5DBEAA",
+          "popularity": 0,
+          "query": {
+            "score": 0.5467198784007994,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Sigur Rós"
+              },
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              },
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Radiohead"
+              },
+              {
+                "entity_id": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+                "name": "Sigur Rós",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              },
+              {
+                "entity_id": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+                "name": "Radiohead",
+                "subtype": "urn:entity:person",
+                "disambiguation": ""
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:melodic",
+          "name": "Melodic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "C346D0F8-37BD-496F-93F6-375C4E5DBEAA",
+          "popularity": 0,
+          "query": {
+            "score": 0.5466904127433587,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:syncopated",
+          "name": "Syncopated",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "CE4A04BE-9B0C-42BD-808D-C0F4A86988CF",
+          "popularity": 0,
+          "query": {
+            "score": 0.5466904127433587,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+                "name": "Phoenix",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Phoenix"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:blues",
+          "name": "Blues",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "06662971-FBC7-4375-B789-0BF651ABEF2D",
+          "popularity": 0.9989683519385215,
+          "query": {
+            "score": 0.5466172249388459,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:jazz",
+          "name": "Jazz",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "5CD48936-B0B2-48D0-8216-ECDC35750F68",
+          "popularity": 0.9994605996710736,
+          "query": {
+            "score": 0.5466172249388459,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        },
+        {
+          "tag_id": "urn:tag:characteristic:music:melodic",
+          "name": "Melodic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:characteristic:music",
+          "entity_id": "C346D0F8-37BD-496F-93F6-375C4E5DBEAA",
+          "popularity": 0,
+          "query": {
+            "score": 0.5466172249388459,
+            "a.signal.interests.entities": [
+              {
+                "entity_id": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+                "name": "Reality Club",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "Reality Club"
+              }
+            ],
+            "b.signal.interests.entities": [
+              {
+                "entity_id": "7274E19C-539B-449E-97C1-1C60B2218099",
+                "name": "amaarae",
+                "subtype": "urn:entity:artist",
+                "disambiguation": "amaarae"
+              }
+            ]
+          }
+        }
+      ],
+      "a": [
+        {
+          "tag_id": "urn:tag:instrument:qloo:guitar",
+          "name": "Guitar",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "48648868-95A5-4F0B-B517-71ECBB9F4EBD",
+          "popularity": 0.9918993,
+          "query": {
+            "count": "4"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:indie",
+          "name": "Indie",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "585E738B-3D23-4F9C-A30C-FB31A930D30B",
+          "popularity": 0.9996067,
+          "query": {
+            "count": "4"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:drums",
+          "name": "Drums",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "C75E4195-3F50-4BF1-B4FE-0B3DFB211923",
+          "popularity": 0.98776233,
+          "query": {
+            "count": "4"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:passionate",
+          "name": "Passionate",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "F5485D5E-6C8E-4CE8-951C-3B13AD76D935",
+          "popularity": 0.9920842,
+          "query": {
+            "count": "4"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:melodic",
+          "name": "Melodic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "AEDE7DAB-D607-41AD-AAB7-77048675DCAD",
+          "popularity": 0.9827355,
+          "query": {
+            "count": "3"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:bass",
+          "name": "Bass",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "636A2D28-36AD-4B67-9AC9-916B7A79B714",
+          "popularity": 0.98574007,
+          "query": {
+            "count": "3"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:melodic",
+          "name": "Melodic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "03F6ED3F-AFD6-4491-AC63-ACB2822E6506",
+          "popularity": 0.9168785,
+          "query": {
+            "count": "3"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:alternative_rock",
+          "name": "Alternative Rock",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "61E68939-BFDA-4842-AAFF-AC7FDD210523",
+          "popularity": 0.9996177,
+          "query": {
+            "count": "3"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:dedicated",
+          "name": "DedicateD",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "5A0F0ADE-6B19-49BB-9AB7-BD1505D4AF68",
+          "popularity": 0.9908824,
+          "query": {
+            "count": "3"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:atmospheric",
+          "name": "Atmospheric",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "2620F5B1-CD6D-4D1B-9E92-20620128E1A6",
+          "popularity": 0.97101784,
+          "query": {
+            "count": "3"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:loyal",
+          "name": "Loyal",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "EDDB06AD-35FE-431E-A2A5-4F5589471FEE",
+          "popularity": 0.99202645,
+          "query": {
+            "count": "3"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:atmospheric",
+          "name": "Atmospheric",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "E274EE59-07DB-4054-B98F-D9209C934412",
+          "popularity": 0.89887446,
+          "query": {
+            "count": "3"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:existentialism",
+          "name": "Existentialism",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "14E0AD82-2ACC-4B63-9246-C0C478A38122",
+          "popularity": 0.9749815,
+          "query": {
+            "count": "3"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:experimental",
+          "name": "Experimental",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "19B61203-887D-4E50-83F6-56611F34B49A",
+          "popularity": 0.94864565,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:relationships",
+          "name": "Relationships",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "09D46DB5-52A0-4537-B313-28E49753491C",
+          "popularity": 0.9684871,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:experimental",
+          "name": "Experimental",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "29C806BD-D356-476A-977F-DA8915462690",
+          "popularity": 0.95076036,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:introspective",
+          "name": "Introspective",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "37B3BB7B-51D4-43D1-BE6B-03C60CB4A1D1",
+          "popularity": 0.948403,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:engaging",
+          "name": "Engaging",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "3F4ACC42-080A-4FC3-85F1-BE70AA7B774A",
+          "popularity": 0.99495006,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:dynamic",
+          "name": "Dynamic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "4900E325-E17B-482E-A421-A36C21F51569",
+          "popularity": 0.9926158,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:keyboards",
+          "name": "Keyboards",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "682C4BDB-79BE-4FEF-BDE0-69A15FB8B647",
+          "popularity": 0.9659679,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:synthesizers",
+          "name": "Synthesizers",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "7BD25154-7A00-4DE9-8065-521B967D1575",
+          "popularity": 0.9446589,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:eclectic",
+          "name": "Eclectic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "85F59978-5A95-47E9-B1AE-1A54B54F5F95",
+          "popularity": 0.9584335,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:immersive",
+          "name": "Immersive",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "AA7BDA1B-4D27-4A80-B3C5-692799C77C9F",
+          "popularity": 0.9880397,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:rock",
+          "name": "Rock",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "B01B5563-0D1C-4DAE-8F3F-114964DA4714",
+          "popularity": 0.99980104,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:vocals",
+          "name": "Vocals",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "BC4B0E4D-F317-47A7-94A5-62BBD3D42042",
+          "popularity": 0.99063975,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:electronic",
+          "name": "Electronic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "D4132442-7F20-48E9-9F70-6BC806164A4F",
+          "popularity": 0.9997945,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:energetic",
+          "name": "Energetic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "DDA96216-6F10-4D64-BA4B-3553DA45652B",
+          "popularity": 0.9932398,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:emotions",
+          "name": "Emotions",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "E4DB6B19-257D-4D41-98B1-5CB2637E22B6",
+          "popularity": 0.8749307,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:atmospheric",
+          "name": "Atmospheric",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "F2FD0406-67ED-47A3-A715-F9B2C1671910",
+          "popularity": 0.99363273,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:innovative",
+          "name": "Innovative",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "F468945C-6B6C-467D-8496-733087E03D56",
+          "popularity": 0.9902584,
+          "query": {
+            "count": "2"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:expressive",
+          "name": "Expressive",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "241982E6-3CCA-42C2-81EC-A5DC7E99896A",
+          "popularity": 0.9734908,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:ethereal",
+          "name": "Ethereal",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "189E5089-01B4-4230-8FE3-EF69A36B9435",
+          "popularity": 0.9475247,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:emotive",
+          "name": "Emotive",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "F890FCE5-22E5-4CB3-8449-1FA6FE9FEFE0",
+          "popularity": 0.93350744,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:violin",
+          "name": "Violin",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "68F232AA-6DE1-44AE-9270-F43351A2C309",
+          "popularity": 0.91719055,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:minimalist",
+          "name": "Minimalist",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "6B0ADAF5-7705-42A6-B209-144B6A8FD2AB",
+          "popularity": 0.8263613,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:bass_guitar",
+          "name": "Bass Guitar",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "6E9F94F5-1C9B-4DE2-984E-91E96054D325",
+          "popularity": 0.94070673,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:synthesizer",
+          "name": "Synthesizer",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "75F19A67-5889-4C7D-B8BE-88FA805DBD30",
+          "popularity": 0.9755593,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:introspective",
+          "name": "Introspective",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "76E6FB2C-35A8-4283-BB87-9B0E94BAA8A7",
+          "popularity": 0.9888717,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:eclectic",
+          "name": "Eclectic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "77694357-7B1B-4065-AB25-76B06D85545B",
+          "popularity": 0.94086856,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:artistic",
+          "name": "Artistic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "EA765C9E-E047-4606-B5D7-CA83F1322ACF",
+          "popularity": 0.964743,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:experimental",
+          "name": "Experimental",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "801B4F9C-CC0E-47F1-A3E0-6A610A552CB4",
+          "popularity": 0.94283307,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:piano",
+          "name": "Piano",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "80C2C13B-39EB-4DAF-90EB-C43D84162858",
+          "popularity": 0.9774776,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:ethereal",
+          "name": "Ethereal",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "0C2A633F-563D-42CC-801D-B0C2BDE69800",
+          "popularity": 0.82065266,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:isolation",
+          "name": "Isolation",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "8771D20B-BD2F-457D-852B-82A4557D8928",
+          "popularity": 0.9517542,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:nature",
+          "name": "Nature",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "90B8E916-284A-46F1-B64A-4ABB180A7971",
+          "popularity": 0.9701858,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:technology",
+          "name": "Technology",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "9729AB72-21B8-4278-A046-81CC17D97020",
+          "popularity": 0.949651,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:subgenre:qloo:electronic",
+          "name": "Electronic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:subgenre:qloo",
+          "entity_id": "9B1EFCA2-1726-42DC-9E09-DE28E103AB9B",
+          "popularity": 0.5383424,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:ambient",
+          "name": "Ambient",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "FCB6D247-7075-4481-AD63-AC5881E8B4F0",
+          "popularity": 0.9994555,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:subgenre:qloo:experimental",
+          "name": "Experimental",
+          "type": "urn:tag",
+          "subtype": "urn:tag:subgenre:qloo",
+          "entity_id": "AA9387BE-1B0F-416D-BD13-149FA314BADC",
+          "popularity": 0.9178261,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:nostalgia",
+          "name": "Nostalgia",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "AAA219BE-CF50-4A2F-8229-D66149E84688",
+          "popularity": 0.9688569,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:introspection",
+          "name": "Introspection",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "AC8ED8FE-F04C-49A7-B692-662EA93CEB9C",
+          "popularity": 0.9703707,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:catchy",
+          "name": "Catchy",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "15656172-6715-4AAF-9B91-3DECE27650AF",
+          "popularity": 0.7609434,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:love",
+          "name": "Love",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "FE9F1B33-D668-4A8C-80FD-60B78D5F13FD",
+          "popularity": 0.9934363,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:youth",
+          "name": "Youth",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "B0F17700-99DA-43BE-AF0F-865180858F47",
+          "popularity": 0.95011324,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:emotional",
+          "name": "Emotional",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "B688ACDA-A475-4092-ADFE-DAF8FB9210ED",
+          "popularity": 0.97195387,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:subgenre:qloo:ambient",
+          "name": "Ambient",
+          "type": "urn:tag",
+          "subtype": "urn:tag:subgenre:qloo",
+          "entity_id": "09620EEA-9F39-49A5-8EEB-0BC037120E92",
+          "popularity": 0.04416659,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:visual",
+          "name": "Visual",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "10D5159D-D3C6-47D3-8A2A-2C1C00256FDB",
+          "popularity": 0.95770544,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:stylish",
+          "name": "Stylish",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "CDB19EB6-7AF2-4CF7-B98F-8A3C55E0B24B",
+          "popularity": 0.7510285,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:ambient",
+          "name": "Ambient",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "F66A4A93-334B-4465-BE18-646E62FCDE92",
+          "popularity": 0.8733591,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:complex",
+          "name": "Complex",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "D7FAED07-F2AB-4752-BD66-4F2B632FFB2F",
+          "popularity": 0.95799434,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:trendy",
+          "name": "Trendy",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "D9C36A50-1585-4DAE-8489-F10EAE243F36",
+          "popularity": 0.7247735,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:icelandic",
+          "name": "Icelandic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "D9E84E56-3846-4EE4-9364-492900FF9D33",
+          "popularity": 0.9955353,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:minimalist",
+          "name": "Minimalist",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "DAFB5B34-5BA1-4A83-AF76-68415F14E27E",
+          "popularity": 0.3068434,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:stylish",
+          "name": "Stylish",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "DCC89A51-87CB-4874-9E98-A19C8FBE989C",
+          "popularity": 0.9527711,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:indonesia",
+          "name": "Indonesia",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "DCE52D20-6405-4EB9-9746-B448D1683387",
+          "popularity": 0.996183,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:politics",
+          "name": "Politics",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "DD294EE1-3BCF-4DAF-827B-195A81F72E94",
+          "popularity": 0.95203155,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:cello",
+          "name": "Cello",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "3E3BF465-1706-4365-B218-3FC6B312EE88",
+          "popularity": 0.8057109,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:environmentalism",
+          "name": "Environmentalism",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "3E3C4E92-46D3-4E41-9D60-0F63A898F087",
+          "popularity": 0.7914163,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:polished",
+          "name": "Polished",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "F783F6BF-C362-46A6-A521-808DE89B2406",
+          "popularity": 0,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:catchy",
+          "name": "Catchy",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "3CA468CF-B702-4C37-A9B8-EA098F7A608E",
+          "popularity": 0.9790145,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:dreams",
+          "name": "Dreams",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "0D8D2C67-2836-4823-828D-8A6B10C4DAFE",
+          "popularity": 0.9048489,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:easy_listening",
+          "name": "Easy Listening",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "4AB430DE-087C-4258-89D7-AB480F3E8A52",
+          "popularity": 0.99739754,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:alienation",
+          "name": "Alienation",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "51AE46AC-A8F7-4593-B40D-AA6ED61F5A85",
+          "popularity": 0.86787003,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:intense",
+          "name": "Intense",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "5629A79E-4827-4EEE-9C51-AD840DE83985",
+          "popularity": 0.9834751,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:french",
+          "name": "French",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "572FE053-B304-454E-BFDC-F9CF6F1DD8AF",
+          "popularity": 0.9989726,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:urban_life",
+          "name": "Urban Life",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "2E124C95-AA10-4405-B607-68F315486507",
+          "popularity": 0.93431634,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:open_minded",
+          "name": "Open-minded",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "243AD7BB-F6F0-4259-8837-27A1AA767F1B",
+          "popularity": 0.98634094,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:melancholic",
+          "name": "Melancholic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "5E196B69-ED2E-4793-AD87-C2EB41DE2680",
+          "popularity": 0.94951236,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:intellectual",
+          "name": "Intellectual",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "60AFCC8D-C77C-4823-A440-C5CC260F7B9D",
+          "popularity": 0.9761718,
+          "query": {
+            "count": "1"
+          }
+        }
+      ],
+      "b": [
+        {
+          "tag_id": "urn:tag:theme:qloo:sexuality",
+          "name": "Sexuality",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "00906880-22B4-4EEA-978F-B04D87D20766",
+          "popularity": 0.871175,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:experimental",
+          "name": "Experimental",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "19B61203-887D-4E50-83F6-56611F34B49A",
+          "popularity": 0.94864565,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:expressive",
+          "name": "Expressive",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "241982E6-3CCA-42C2-81EC-A5DC7E99896A",
+          "popularity": 0.9734908,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:open_minded",
+          "name": "Open-minded",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "243AD7BB-F6F0-4259-8837-27A1AA767F1B",
+          "popularity": 0.98634094,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:rhythm_blues",
+          "name": "Rhythm & Blues",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "24C94652-CEE2-44B9-8C51-4D825518C92C",
+          "popularity": 0.9993824,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:expressive",
+          "name": "Expressive",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "24D3AFB3-48B9-46DB-8019-21DBB574DAD4",
+          "popularity": 0.9439193,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:experimental",
+          "name": "Experimental",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "29C806BD-D356-476A-977F-DA8915462690",
+          "popularity": 0.95076036,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:bold",
+          "name": "Bold",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "2C8A3B81-429C-44D3-882A-78E0FAE55E7C",
+          "popularity": 0.9474554,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:alternative_rnb",
+          "name": "Alternative Rnb",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "41681816-F54C-45F3-B1EB-8B88F6AA07FF",
+          "popularity": 0.9753229,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:dynamic",
+          "name": "Dynamic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "4900E325-E17B-482E-A421-A36C21F51569",
+          "popularity": 0.9926158,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:ghana",
+          "name": "Ghana",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "51964D55-4FD2-4BFC-9AB1-4548D54AC699",
+          "popularity": 0.9883457,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:genre:music:afrobeats",
+          "name": "Afrobeats",
+          "type": "urn:tag",
+          "subtype": "urn:tag:genre:music",
+          "entity_id": "5DB87A45-5087-4DE2-B6F3-D0728B943860",
+          "popularity": 0.97613865,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:genre_bending",
+          "name": "Genre-Bending",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "6490106A-1EF3-47E8-9F97-9D40D86828FD",
+          "popularity": 0.81977445,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:synthesizer",
+          "name": "Synthesizer",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "75F19A67-5889-4C7D-B8BE-88FA805DBD30",
+          "popularity": 0.9755593,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:eclectic",
+          "name": "Eclectic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "77694357-7B1B-4065-AB25-76B06D85545B",
+          "popularity": 0.94086856,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:freedom",
+          "name": "Freedom",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "785B7C8D-620E-4EAD-A4E3-9CEEC1785823",
+          "popularity": 0.9444624,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:bold",
+          "name": "Bold",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "7FEF13B2-47C0-4220-8BCD-543933A4E083",
+          "popularity": 0.8944023,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:empowerment",
+          "name": "Empowerment",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "89FDE209-CC09-42D4-8F95-FE1E0019FC87",
+          "popularity": 0.97342145,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:eclectic",
+          "name": "Eclectic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "968DEF8A-6070-46E9-ACE1-374CC19C25A7",
+          "popularity": 0.96655726,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:subgenre:qloo:electronic",
+          "name": "Electronic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:subgenre:qloo",
+          "entity_id": "9B1EFCA2-1726-42DC-9E09-DE28E103AB9B",
+          "popularity": 0.5383424,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:music:qloo:smooth",
+          "name": "Smooth",
+          "type": "urn:tag",
+          "subtype": "urn:tag:music:qloo",
+          "entity_id": "A183FC56-6750-4FE3-A515-81A20726A2EA",
+          "popularity": 0.94186234,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:diverse",
+          "name": "Diverse",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "AC97BEBA-2B50-444E-9CFE-AF91F03532AB",
+          "popularity": 0.961126,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:vocals",
+          "name": "Vocals",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "BC4B0E4D-F317-47A7-94A5-62BBD3D42042",
+          "popularity": 0.99063975,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:instrument:qloo:keyboard",
+          "name": "Keyboard",
+          "type": "urn:tag",
+          "subtype": "urn:tag:instrument:qloo",
+          "entity_id": "D876E436-2726-4F64-A9B6-D4F163EE994E",
+          "popularity": 0.9646506,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:style:qloo:energetic",
+          "name": "Energetic",
+          "type": "urn:tag",
+          "subtype": "urn:tag:style:qloo",
+          "entity_id": "DDA96216-6F10-4D64-BA4B-3553DA45652B",
+          "popularity": 0.9932398,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:loyal",
+          "name": "Loyal",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "EDDB06AD-35FE-431E-A2A5-4F5589471FEE",
+          "popularity": 0.99202645,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:artist:qloo:innovative",
+          "name": "Innovative",
+          "type": "urn:tag",
+          "subtype": "urn:tag:artist:qloo",
+          "entity_id": "F468945C-6B6C-467D-8496-733087E03D56",
+          "popularity": 0.9902584,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:audience:qloo:passionate",
+          "name": "Passionate",
+          "type": "urn:tag",
+          "subtype": "urn:tag:audience:qloo",
+          "entity_id": "F5485D5E-6C8E-4CE8-951C-3B13AD76D935",
+          "popularity": 0.9920842,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:identity",
+          "name": "Identity",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "FDB07737-F3E6-4ED6-AFE8-FB9248E6C066",
+          "popularity": 0.9851738,
+          "query": {
+            "count": "1"
+          }
+        },
+        {
+          "tag_id": "urn:tag:theme:qloo:love",
+          "name": "Love",
+          "type": "urn:tag",
+          "subtype": "urn:tag:theme:qloo",
+          "entity_id": "FE9F1B33-D668-4A8C-80FD-60B78D5F13FD",
+          "popularity": 0.9934363,
+          "query": {
+            "count": "1"
+          }
+        }
+      ],
+      "matchEntities": []
+    }
+  }
+}

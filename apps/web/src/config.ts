@@ -11,6 +11,7 @@ import {
 import { getDb } from "@headliner/slates";
 import { loadEnv } from "./env";
 import { MemoryRunStore, PostgresRunStore, type RunStore } from "./runStore";
+import { FixtureSampleStore } from "./samples";
 import { MemorySlateStore, PostgresSlateStore, type SlateStore } from "./slateStore";
 
 /**
@@ -49,10 +50,12 @@ export function findFixtureDir(source: Record<string, string | undefined> = proc
 export function buildRuntime(source: Record<string, string | undefined> = process.env): Runtime {
   const env = loadEnv(source);
   if (env.mode === "fixtures") {
+    const fixtureDir = findFixtureDir(source);
     return {
       mode: "fixtures",
-      client: createQlooClient({ transport: new FixtureTransport(findFixtureDir(source)), cache: new InMemoryCacheStore() }),
-      store: new MemorySlateStore(),
+      client: createQlooClient({ transport: new FixtureTransport(fixtureDir), cache: new InMemoryCacheStore() }),
+      // Sample rooms (M2-06) are rebuilt from the same recordings on first open.
+      store: new FixtureSampleStore(new MemorySlateStore(), fixtureDir),
       runs: new MemoryRunStore(),
       now: () => new Date(),
     };

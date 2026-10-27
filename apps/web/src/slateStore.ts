@@ -2,6 +2,7 @@ import { randomBytes } from "node:crypto";
 import type { Db } from "@headliner/slates";
 import { getSlateJson, slates, updateSlateJson } from "@headliner/slates";
 import { SlateSchema, type Slate } from "@headliner/core";
+import { isSampleId } from "./sampleId";
 
 /** Shareable slates live 30 days (ADR 0003). */
 export const SLATE_TTL_MS = 30 * 24 * 60 * 60 * 1000;
@@ -40,9 +41,13 @@ export class MemorySlateStore implements SlateStore {
   }
 }
 
-/** True for the 21-character nanoid-alphabet ids `newSlateId` produces. Checked before any lookup. */
+/**
+ * True for the 21-character nanoid-alphabet ids `newSlateId` produces, or for a pinned sample id
+ * (`sample-<slug>`, M2-06). Checked before any lookup. No request can create a sample id: only the
+ * prewarm script stores one.
+ */
 export function isSlateId(value: string): boolean {
-  return /^[A-Za-z0-9_-]{21}$/.test(value);
+  return /^[A-Za-z0-9_-]{21}$/.test(value) || isSampleId(value);
 }
 
 /** Live mode: the `slates` table (M0-05). The stored value is the Slate JSON, nothing else. */

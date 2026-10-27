@@ -1,4 +1,4 @@
-import { and, eq, gt } from "drizzle-orm";
+import { and, eq, gt, lte } from "drizzle-orm";
 import type { Db } from "./client";
 import { slates } from "./schema";
 
@@ -21,4 +21,29 @@ export async function updateSlateJson(db: Db, id: string, json: unknown, now: Da
     .where(and(eq(slates.id, id), gt(slates.expiresAt, now)))
     .returning({ id: slates.id });
   return rows.length > 0;
+}
+
+/**
+ * Pinned slates (M2-06, ADR 0002 addendum): a sample slate is stored with this expiry, so the one
+ * cleanup rule ("delete rows whose expires_at has passed") can never remove it. No extra column.
+ */
+export const PINNED_EXPIRES_AT = new Date("9999-12-31T23:59:59.000Z");
+
+/** True for a row that was stored pinned. */
+export function isPinnedExpiry(expiresAt: Date): boolean {
+  return expiresAt.getTime() >= PINNED_EXPIRES_AT.getTime();
+}
+
+/** Insert or replace a pinned slate. Used only by the sample pre-warm script, never by a request. */
+export async function putPinnedSlate(db: Db, id: string, json: unknown, now: Date = new Date()): Promise<void> {
+  await db
+    .insert(slates)
+    .values({ id, json, createdAt: now, expiresAt: PINNED_EXPIRES_AT })
+    .onConflictDoUpdate({ target: slates.id, set: { json, createdAt: now, expiresAt: PINNED_EXPIRES_AT } });
+}
+
+/** TTL cleanup: delete slates whose expiry has passed; returns how many went. Pinned rows never match. */
+export async function purgeExpiredSlates(db: Db, now: Date = new Date()): Promise<number> {
+  const deleted = await db.delete(slates).where(lte(slates.expiresAt, now)).returning({ id: slates.id });
+  return deleted.length;
 }

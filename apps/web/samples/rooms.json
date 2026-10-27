@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "berlin-electronic",
+    "venueName": "Berlin electronic club",
+    "city": "Berlin",
+    "crowdActs": ["Apparat", "Moderat", "Modeselektor", "Hundreds", "Brandt Brauer Frick", "Boys Noize"],
+    "candidateActs": ["Khruangbin", "Radiohead", "Reality Club", "Phoenix", "Sigur Rós"],
+    "confirmations": {},
+    "recordedOn": "2026-10-27"
+  },
+  {
+    "slug": "leipzig-indie",
+    "venueName": "Leipzig indie hall",
+    "city": "Leipzig",
+    "crowdActs": ["Radiohead", "Phoenix", "Sigur Rós", "Reality Club"],
+    "candidateActs": ["Khruangbin", "Apparat", "Moderat", "Hindia", "Amaarae"],
+    "confirmations": {},
+    "recordedOn": "2026-10-27"
+  }
+]
