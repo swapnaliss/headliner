@@ -1177,3 +1177,21 @@ table {
   min-block-size: var(--target);
   align-items: center;
 }
+
+/* Share link and shared page (M2-04) */
+.share-link {
+  display: grid;
+  gap: var(--space-3);
+}
+.share-link .input {
+  inline-size: 100%;
+  min-inline-size: 0;
+  text-overflow: ellipsis;
+}
+.share-status {
+  min-block-size: 1.5em;
+  margin: 0;
+}
+.shared-line {
+  margin: 0;
+}
