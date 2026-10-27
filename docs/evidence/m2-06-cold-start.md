@@ -20,7 +20,7 @@ So the database alone cost a cold request roughly 720 (connect) + 2 x 221 (reads
 
 1. `vercel.json` (repo root and `apps/web/`, same content) sets `"regions": ["sin1"]`: function next to the database. The root file is the one the CLI deploy honoured; the `apps/web` one alone was not applied to a CLI deploy, so both are kept, and the Git-integration preview of this branch listed its functions as `[sin1]`. No Vercel project setting or env var was changed.
 2. `React.cache` around the slate read in the four slate pages (`/s/[id]`, `/s/[id]/act/[actId]`, `/slates/[id]`, `/slates/[id]/act/[actId]`): one database read per request, not two.
-3. `.github/workflows/keepwarm.yml`: GET `/api/health?deep=1` (runs `select 1`, keeps Neon awake) and one sample room every 5 minutes, 10 s timeout, no secrets, no Qloo calls. GitHub's scheduler can run late, so this lowers the chance of a cold first request, it does not guarantee it.
+3. `.github/workflows/keepwarm.yml`: GET `/api/health?deep=1` (runs `select 1`, keeps Neon awake) and one sample room every 5 minutes, 10 s timeout, no secrets, no Qloo calls. GitHub's scheduler can run late, so this lowers the chance of a cold first request, it does not guarantee it. The job carries `if: github.event_name == 'workflow_dispatch' || github.event.repository.private == false`: a 5-minute schedule is about 8,640 minutes a month, over the 2,000 minute private allowance, so the scheduled run is skipped (and not billed) while the repo is private.
 
 The nonce CSP, noindex and no-store headers, and the contents of the pinned samples are untouched.
 
@@ -47,7 +47,7 @@ Measured on the preview deployments of this branch with the temporary probe (dat
 | Database share of a cold sample page | about 1.7 s | about 0.6 s (wake only), and about 0.07 s once the keep-warm holds Neon awake |
 | Database share of a warm sample page | 442 ms | under 10 ms |
 
-Expected on production after the merge: cold page about 4.0 to 4.3 s minus about 1.1 s (connect and round trips) = roughly 3 s from Mumbai with the Neon wake still included, and well under 2 s from the same client when Neon is kept awake. This is an estimate, not a measurement.
+Expected on production after the merge: cold page about 4.0 to 4.3 s minus about 1.1 s (connect and round trips) = roughly 3 s from Mumbai with the Neon wake still included. **The keep-warm workflow is skipped while the repo is private** (it runs only once the repo is public, or by a manual `workflow_dispatch`), so until then the production cold page is expected to stay near that roughly 3 s estimate, which does not meet the 2 s criterion. A figure under 2 s would depend on keep-warm holding Neon awake (removing about 0.53 s of wake and part of the function cold start); that figure is an unmeasured estimate and no claim of it is made. Both numbers here are estimates derived from the measurements above, not measurements of the fixed production page.
 
 ## Not verifiable until after the merge (production)
 
