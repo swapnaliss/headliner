@@ -11,7 +11,11 @@ import { fmt } from "./facts";
 export type Violation =
   | { readonly kind: "number"; readonly token: string }
   | { readonly kind: "banned"; readonly token: string }
-  | { readonly kind: "markup"; readonly token: string };
+  | { readonly kind: "markup"; readonly token: string }
+  | { readonly kind: "internal"; readonly token: string }
+  | { readonly kind: "name"; readonly token: string }
+  | { readonly kind: "claim"; readonly token: string }
+  | { readonly kind: "malformed"; readonly token: string };
 
 export type GroundingResult = { readonly ok: true } | { readonly ok: false; readonly violations: readonly Violation[] };
 
@@ -28,6 +32,50 @@ const BANNED: readonly { readonly label: string; readonly pattern: RegExp }[] = 
   { label: "rising", pattern: /\b(?:rising|surging|surges?|skyrocket\w*|growing|growth|breakout)\b/i },
   { label: "predict", pattern: /\b(?:predict\w*|projected|projection)\b/i },
 ];
+
+/**
+ * Internal names must never reach the reader: the Fact and ActResult field names, caveat codes, ids and
+ * JSON syntax. Listed from the schemas (facts.ts, core types.ts, caveats.ts), plus any camelCase or snake_case token.
+ */
+export const INTERNAL_FIELD_NAMES = [
+  "sharedTags", "thinData", "crowdActs", "crowdMedian", "crowdSample", "candidatePercentile", "crowdMedianPercentile", "meanAffinityRank",
+  "affinity_rank", "overlapTags", "cityStrengths", "evidenceRefs", "qlooEntityId", "matchConfidence", "tagId", "standingExplanation", "deltaPoints",
+  "coveredCrowdActs", "closeSpread", "no-data", "no_data", "thin_city_data", "low_match_confidence", "standing_not_capacity", "caveat", "statement", "statements", "sentences", "urn:",
+] as const;
+const INTERNAL = new RegExp(`(?:${INTERNAL_FIELD_NAMES.map((n) => n.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\$&")).join("|")})`, "i");
+/** camelCase or snake_case identifiers, UUIDs and JSON punctuation. */
+const CODE_LIKE = /\b[a-z]+[A-Z][A-Za-z]*\b|\b[a-z]+_[a-z_]+\b|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}|[{}]|":/;
+
+/**
+ * A number can be a Slate figure and still be attached to the wrong thing ("only 4 heatmap cells" when 4 is the
+ * crowd size). Cell counts must be a city's real cell count (or the 15-cell threshold), crowd counts the real crowd size.
+ */
+function misattributedCounts(text: string, slate: Slate): string[] {
+  const cells = new Set<string>([String(THIN_DATA_CELLS), ...slate.results.flatMap((r) => r.cityStrengths.map((c) => String(c.cellCount)))]);
+  const bad: string[] = [];
+  for (const m of text.matchAll(/(\d+)\s+(?:Qloo\s+)?(?:heatmap\s+)?cells?\b/gi)) if (!cells.has(String(Number(m[1])))) bad.push(m[0]);
+  for (const m of text.matchAll(/(\d+)\s+(?:regular[- ]?)?crowd\s+acts?\b/gi)) if (Number(m[1]) !== slate.room.crowdActs.length) bad.push(m[0]);
+  return bad;
+}
+
+/** Capitalised words allowed besides the Slate's own names: the product name. */
+const ALLOWED_CAPITALISED = new Set(["Qloo"]);
+
+/**
+ * Any capitalised word that is not the first word of a sentence and not a Slate name (names were stripped
+ * first) is a name the Slate does not contain: an invented act, tag or place ("Tokyo-like markets").
+ */
+function unknownNames(bare: string): string[] {
+  const found: string[] = [];
+  for (const sentence of bare.split(/[.!?:;]\s+|\n/)) {
+    const words = sentence.trim().split(/\s+/).slice(1);
+    for (const w of words) {
+      const m = /^[("'\u2018\u201C]*([A-Z][A-Za-z\u00C0-\u017F]*)/.exec(w);
+      if (m?.[1] && !ALLOWED_CAPITALISED.has(m[1])) found.push(m[1]);
+    }
+  }
+  return found;
+}
 
 /** HTML, markdown and links have no place in an explanation (it is rendered as plain text anyway). */
 const MARKUP = /<[^>]*>|[<>`]|\]\(|https?:|www\.|\*\*|^#+\s|^\s*[-*]\s/m;
@@ -182,6 +230,12 @@ export function groundingCheck(text: string, slate: Slate): GroundingResult {
     const m = b.pattern.exec(bare);
     if (m) violations.push({ kind: "banned", token: m[0] });
   }
+  const internal = INTERNAL.exec(bare) ?? CODE_LIKE.exec(bare);
+  if (internal) violations.push({ kind: "internal", token: internal[0] });
+  for (const token of unknownNames(bare)) violations.push({ kind: "name", token });
+  for (const token of misattributedCounts(text, slate)) violations.push({ kind: "claim", token });
+  const gap = /\S {2,}\S/.exec(text);
+  if (gap) violations.push({ kind: "malformed", token: "double space" });
   const markup = MARKUP.exec(text);
   if (markup) violations.push({ kind: "markup", token: markup[0] });
   return violations.length === 0 ? { ok: true } : { ok: false, violations };

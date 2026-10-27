@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { groundingCheck } from "./grounding";
+import { groundingCheck, INTERNAL_FIELD_NAMES } from "./grounding";
 import { loadReply, loadSlate, withActName } from "./testkit";
 
 const slate = loadSlate("sample-leipzig-indie");
@@ -39,6 +39,40 @@ describe("groundingCheck", () => {
     const found = violations(text);
     expect(found.length).toBeGreaterThan(0);
     expect(found.every((v) => v.startsWith("banned:"))).toBe(true);
+  });
+
+  it.each(INTERNAL_FIELD_NAMES)("fails on the internal name: %s", (name) => {
+    const found = violations(`Moderat has ${name} here.`);
+    expect(found.some((v) => v.startsWith("internal:"))).toBe(true);
+  });
+
+  it("fails on code-like text: camelCase, snake_case, ids and JSON", () => {
+    for (const text of ["It has fooBar values.", "It is a thin_data case.", "Entity 36254E3F-20E4-4151-AC61-D753CA41F34A.", 'See {"a": 1}.', 'It says "sharedTags": 67.']) {
+      expect(violations(text).some((v) => v.startsWith("internal:"))).toBe(true);
+    }
+  });
+
+  it("fails on the first live recording's echoed names (before the prompt fix)", () => {
+    const before = "Apparat's tastes show 93 sharedTags. London data for Moderat has thinData caveat.";
+    expect(violations(before).filter((v) => v.startsWith("internal:")).length).toBeGreaterThan(0);
+  });
+
+  it("fails on an act, tag or place the Slate does not contain (invented name)", () => {
+    expect(violations("Apparat also does well in Narnia-like markets.")).toEqual(["name:Narnia"]);
+    expect(violations("Moderat sounds a lot like Pavement.")).toEqual(["name:Pavement"]);
+    // Slate names, the product name and sentence starts are fine.
+    expect(groundingCheck("Moderat leads. Apparat and Hindia follow, and Qloo shows Japan as a shared taste.", slate)).toEqual({ ok: true });
+  });
+
+  it("fails on a Slate figure attached to the wrong thing, and on a dropped word", () => {
+    expect(violations("Only 4 Qloo heatmap cells back Leipzig, so its data is thin.")).toEqual(["claim:4 Qloo heatmap cells"]);
+    expect(violations("Compared with 9 crowd acts.")).toEqual(["number:9", "claim:9 crowd acts"]);
+    expect(violations("Moderat ranks  for fit.")).toEqual(["malformed:double space"]);
+    expect(groundingCheck("Only 10 Qloo heatmap cells back London, so its data is thin, and 4 crowd acts were compared.", slate)).toEqual({ ok: true });
+  });
+
+  it("does not trip on plain words a booker would read", () => {
+    expect(groundingCheck("Moderat has thin data in London, and a crowd median of 100.0 across 4 crowd acts.", slate)).toEqual({ ok: true });
   });
 
   it("fails on HTML, markdown and links", () => {

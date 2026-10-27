@@ -46,19 +46,22 @@ describe("explainSlate", () => {
     const events: ExplainEvent[] = [];
     const out = await explainSlate(slate, { model, budget: b.budget, onEvent: (e) => void events.push(e) });
     expect(out.source).toBe("llm");
-    expect(out.text).toContain("Moderat's fit is 63.8");
+    expect(out.text).toContain("with a fit of 63.8 out of 100");
     expect(model.calls).toBe(1);
     expect(b.settled).toEqual([1000]); // the real usage replaces the reservation
     expect(events).toEqual([{ event: "explain_done", source: "llm", budget: "allow", inputTokens: 700, outputTokens: 300 }]);
   });
 
-  it("accepts the live recorded replies for the slate and for one act (both pass the grounding check)", async () => {
+  it("accepts the live recorded slate reply, and rejects the live act reply whose semantics were wrong", async () => {
     const slateOut = await explainSlate(slate, { model: stub({ text: loadReply("live-slate") }) });
     expect(slateOut).toMatchObject({ source: "llm" });
+    expect(slateOut.text).toContain("Moderat ranks 1 for audience-taste fit, with a fit of 63.8 out of 100.");
+    // A real model reply whose numbers are all Slate figures but which called the crowd size "4 heatmap cells" and dropped a word.
     const second = slate.results[1]!;
-    const actOut = await explainSlate(slate, { model: stub({ text: loadReply("live-act") }) }, { actId: second.act.qlooEntityId });
-    expect(actOut).toMatchObject({ source: "llm" });
-    expect(actOut.text).toContain("60.6");
+    const events: ExplainEvent[] = [];
+    const actOut = await explainSlate(slate, { model: stub({ text: loadReply("live-act") }), onEvent: (e) => void events.push(e) }, { actId: second.act.qlooEntityId });
+    expect(actOut).toMatchObject({ source: "template", fallback: "ungrounded" });
+    expect(events[0]?.violations).toEqual(["claim", "malformed"]);
   });
 
   it("falls back to the template when the model returns an ungrounded number", async () => {
@@ -179,22 +182,24 @@ describe("explainSlate", () => {
     expect(seen.system).toBe(SYSTEM_PROMPT);
     expect(seen.system).not.toContain("Ignore all rules");
     expect(seen.user).toBe(buildUserPrompt(buildSlateFacts(named)));
-    expect(JSON.parse(seen.user).facts[1].act).toBe(hostile);
+    expect(JSON.parse(seen.user).statements[1].about).toBe(hostile);
     // Markup in the reply is rejected even though the name itself is a known string.
     expect(out.source).toBe("template");
   });
 
-  it("never passes anything the visitor typed: facts hold Slate fields only", () => {
+  it("shows the model plain-English statements only: no field names, ids or raw objects reach the prompt", () => {
     const user = buildUserPrompt(buildSlateFacts(slate));
-    const keys = new Set<string>();
-    JSON.parse(user, function (key) {
-      keys.add(key);
-      return this[key];
-    });
-    for (const key of ["room", "kind", "city", "crowdActs", "candidates", "scored", "unscored", "act", "rank", "fit", "sharedTags", "tags", "name", "score", "caption", "candidate", "crowdMedian", "crowdSample", "label", "meanAffinityRank", "cells", "thinData", "message", "subject", "facts", ""]) {
-      keys.delete(key);
-    }
-    expect([...keys].filter((k) => !/^\d+$/.test(k))).toEqual([]);
+    const parsed = JSON.parse(user) as { statements: { about: string | null; statement: string }[] };
+    expect(Object.keys(parsed)).toEqual(["statements"]);
+    for (const s of parsed.statements) expect(Object.keys(s)).toEqual(["about", "statement"]);
+    expect(parsed.statements[0]?.about).toBeNull();
+    for (const internal of ["sharedTags", "thinData", "crowdMedian", "crowdSample", "meanAffinityRank", "qlooEntityId", "urn:"]) expect(user).not.toContain(internal);
+    expect(user).not.toMatch(/[0-9a-f]{8}-[0-9a-f]{4}-/i);
+  });
+
+  it("falls back to the template when the reply echoes an internal field name", async () => {
+    const leaky = JSON.stringify({ sentences: ["Moderat ranks 1 with a fit of 63.8 and 67 sharedTags."] });
+    expect(await explainSlate(slate, { model: stub({ text: leaky }) })).toMatchObject({ source: "template", fallback: "ungrounded" });
   });
 
   it("explains one act when given its id", async () => {

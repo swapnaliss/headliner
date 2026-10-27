@@ -1,13 +1,13 @@
 {
-  "_note": "Live recording from the OpenAI API (key-free) of the structured reply for the sample-leipzig-indie slate; scope act. Unedited.",
+  "_note": "Live recording from the OpenAI API (key-free), unedited, scope act, second prompt. Kept as a real negative case: every number is a Slate figure, but it calls the 4 crowd acts 4 heatmap cells and drops a word, so groundingCheck rejects it and the page shows the template.",
   "recordedOn": "2026-10-27",
   "model": "gpt-5-nano",
   "scope": "act",
   "usage": {
-    "in": 429,
-    "out": 150,
+    "in": 739,
+    "out": 102,
     "reasoning": 0,
-    "costUsd": 0.00008145
+    "costUsd": 0.00007775
   },
-  "text": "{\"sentences\":[\"audience-taste fit for Apparat is 60.6 according to the fit fact, with rank 2 and 93 sharedTags indicating overlap with the venue’s crowd.\",\"the Qloo popularity rank for Apparat is 99.7, and the crowd median is 100.0 based on a sample of 4.\",\"Apparat’s tastes show scores of 0.86 for Japan, 0.82 for Innovative, and 0.73 for France, which describe audience alignment across tags.\",\"Leipzig is the room city, with 5 candidates and 4 crowdActs already in the data, and 0 unscored.\"]}"
+  "text": "{\"sentences\":[\"Audience-taste fit ranks Apparat  for audience-taste fit, with a fit of 60.6 out of 100.\",\"Apparat shares Japan, Innovative and France with your crowd.\",\"Apparat has a Qloo popularity rank of 99.7 out of 100 against a crowd median of 100.0.\",\"Only 4 Qloo heatmap cells back Leipzig, so its data is thin.\"]}"
 }

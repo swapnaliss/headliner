@@ -1,13 +1,13 @@
 {
-  "_note": "Live recording from the OpenAI API (key-free) of the structured reply for the sample-leipzig-indie slate; scope slate. Unedited.",
+  "_note": "Live recording from the OpenAI API (key-free) of the structured reply for the sample-leipzig-indie slate; scope slate; second prompt (plain-English statements). Unedited.",
   "recordedOn": "2026-10-27",
   "model": "gpt-5-nano",
   "scope": "slate",
   "usage": {
-    "in": 720,
-    "out": 304,
+    "in": 1040,
+    "out": 233,
     "reasoning": 0,
-    "costUsd": 0.00015760000000000004
+    "costUsd": 0.00014519999999999998
   },
-  "text": "{\"sentences\":[\"audience-taste fit for Moderat shows a high alignment with the venue's crowd, with a Qloo popularity rank of 99.7 and a crowd median of 100.0 (sampled 4).\",\"Moderat's fit is 63.8, and shared tags are 67, indicating strong alignment for audience taste.\",\"Apparat also has a high audience-taste fit, with a 60.6 fit and 93 shared tags, and the Qloo popularity rank of 99.7 (crowd median 100.0, sample 4).\",\"Apparat's tastes include Japan (0.86), Innovative (0.82), and France (0.73), suggesting diverse appeal that matches the venue's taste profile.\",\"amaarae shows a solid fit of 60.2 with 65 shared tags; tastes include Innovative (0.73), Alternative Rock (0.73), and Electronic (0.73), aligning with eclectic tastes.\",\"amaarae has a Qloo popularity rank of 96.0, with crowd median 100.0 and crowd sample 4, labeled similar.\",\"Moderat’s standing is described as Qloo popularity rank with candidate 99.7, suggesting strong overall popularity among similar crowds.\",\"London data for Moderat has thinData caveat: fewer than 15 Qloo heatmap cells back this city, so its strength is thin data.\"]}"
+  "text": "{\"sentences\":[\"Moderat ranks 1 for audience-taste fit, with a fit of 63.8 out of 100.\",\"Moderat shares Germany, Japan and Rock with your crowd.\",\"Moderat has a Qloo popularity rank of 99.7 out of 100 against a crowd median of 100.0.\",\"Only London data is thin here, with fewer than 15 Qloo heatmap cells back this city.\",\"Apparat ranks 2 for audience-taste fit, with a fit of 60.6 out of 100.\",\"Apparat shares Japan, Innovative and France with your crowd.\",\"Apparat has a Qloo popularity rank of 99.7 out of 100 against a crowd median of 100.0.\",\"amaarae ranks 3 for audience-taste fit, with a fit of 60.2 out of 100.\",\"amaarae shares Innovative, Alternative Rock and Electronic with your crowd.\",\"amaarae has a Qloo popularity rank of 96.0 out of 100 against a crowd median of 100.0.\"]}"
 }
