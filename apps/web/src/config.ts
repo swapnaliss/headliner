@@ -20,6 +20,7 @@ import {
 import { getDb } from "@headliner/slates";
 import { liveBudgetHook, liveLlmBudget } from "./budget";
 import { loadEnv } from "./env";
+import { logQlooEvent } from "./log";
 import { MemoryRunStore, PostgresRunStore, type RunStore } from "./runStore";
 import { FixtureSampleStore } from "./samples";
 import { MemorySlateStore, PostgresSlateStore, type SlateStore } from "./slateStore";
@@ -97,7 +98,7 @@ export function buildRuntime(source: Record<string, string | undefined> = proces
     const fixtureDir = findFixtureDir(source);
     return {
       mode: "fixtures",
-      client: createQlooClient({ transport: new FixtureTransport(fixtureDir), cache: new InMemoryCacheStore() }),
+      client: createQlooClient({ transport: new FixtureTransport(fixtureDir), cache: new InMemoryCacheStore(), onEvent: logQlooEvent }),
       // Sample rooms (M2-06) are rebuilt from the same recordings on first open.
       store: new FixtureSampleStore(new MemorySlateStore(), fixtureDir),
       runs: new MemoryRunStore(),
@@ -109,8 +110,8 @@ export function buildRuntime(source: Record<string, string | undefined> = proces
   const cache = new PostgresCacheStore(db);
   return {
     mode: "live",
-    client: createQlooClient({ transport: liveTransportFromEnv(source), cache }),
-    cacheOnlyClient: createQlooClient({ transport: new CacheOnlyTransport(), cache }),
+    client: createQlooClient({ transport: liveTransportFromEnv(source), cache, onEvent: logQlooEvent }),
+    cacheOnlyClient: createQlooClient({ transport: new CacheOnlyTransport(), cache, onEvent: logQlooEvent }),
     budget: liveBudgetHook(db, source),
     store: new PostgresSlateStore(db),
     runs: new PostgresRunStore(db),

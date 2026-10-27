@@ -3,6 +3,7 @@ import { getRuntime } from "../../../../../../../src/config";
 import { ApiError, errorResponse, logFailure } from "../../../../../../../src/errors";
 import { loadCityStrength } from "../../../../../../../src/pipeline/cityStrength";
 import { isSlateId } from "../../../../../../../src/slateStore";
+import { logged } from "../../../../../../../src/log";
 
 export const dynamic = "force-dynamic";
 /** Up to 5 heatmap calls at a concurrency of 3: a few seconds at most, well inside this. */
@@ -18,7 +19,7 @@ type Context = { params: Promise<{ id: string; actId: string }> };
  * asks when the act is opened. `{ cities: string[] }` (max 5, name length 80) in, per-city
  * aggregates and thin-data caveats out; one failing city is a `no_data` entry and the others return.
  */
-export async function POST(request: Request, context: Context): Promise<Response> {
+async function handlePOST(request: Request, context: Context): Promise<Response> {
   const { id, actId } = await context.params;
   if (!isSlateId(id) || actId.length === 0 || actId.length > MAX_ACT_ID_LENGTH) return errorResponse("not_found");
 
@@ -49,3 +50,5 @@ export async function POST(request: Request, context: Context): Promise<Response
     return e instanceof ApiError ? errorResponse(e.code, undefined, e.retryAfterSeconds) : errorResponse("internal_error");
   }
 }
+
+export const POST = logged("POST /api/slates/[id]/acts/[actId]/cities", handlePOST);

@@ -3,6 +3,7 @@ import { metered } from "../../../src/budget";
 import { getRuntime } from "../../../src/config";
 import { ApiError, errorResponse, logFailure } from "../../../src/errors";
 import { createSlate, normalizeName } from "../../../src/pipeline/createSlate";
+import { logged } from "../../../src/log";
 
 export const dynamic = "force-dynamic";
 /** ADR 0004: the whole run is one request; a cold 6x12 slate needs several seconds of Qloo time. */
@@ -16,7 +17,7 @@ function invalidDetail(paths: readonly (readonly PropertyKey[])[]): string {
   return `Check: ${fields.join(", ")}.`;
 }
 
-export async function POST(request: Request): Promise<Response> {
+async function handlePOST(request: Request): Promise<Response> {
   let raw: string;
   try {
     raw = await request.text();
@@ -46,3 +47,5 @@ export async function POST(request: Request): Promise<Response> {
     return e instanceof ApiError ? errorResponse(e.code, undefined, e.retryAfterSeconds) : errorResponse("internal_error");
   }
 }
+
+export const POST = logged("POST /api/slates", handlePOST);

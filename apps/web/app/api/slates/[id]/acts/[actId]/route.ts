@@ -2,6 +2,7 @@ import { buildActDetail, decodeActId } from "../../../../../../src/actDetail";
 import { getRuntime } from "../../../../../../src/config";
 import { errorResponse, logFailure } from "../../../../../../src/errors";
 import { isSlateId } from "../../../../../../src/slateStore";
+import { logged } from "../../../../../../src/log";
 
 export const dynamic = "force-dynamic";
 
@@ -12,7 +13,7 @@ type Params = Promise<{ id: string; actId: string }>;
  * Evidence is the redacted public form only. Any failure is a fixed generic error: stored or
  * upstream text never reaches the client.
  */
-export async function GET(_request: Request, { params }: { params: Params }): Promise<Response> {
+async function handleGET(_request: Request, { params }: { params: Params }): Promise<Response> {
   const { id, actId } = await params;
   if (!isSlateId(id)) return errorResponse("not_found");
   try {
@@ -25,3 +26,5 @@ export async function GET(_request: Request, { params }: { params: Params }): Pr
     return errorResponse("internal_error");
   }
 }
+
+export const GET = logged("GET /api/slates/[id]/acts/[actId]", handleGET);

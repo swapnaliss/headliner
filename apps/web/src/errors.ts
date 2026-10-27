@@ -1,3 +1,5 @@
+import { currentRunId } from "./log";
+
 /**
  * One error format for every API route: `{ error: { code, message } }`. The message is fixed per
  * code. Upstream detail (Qloo bodies, stack traces, request URLs, the credential) never reaches
@@ -44,8 +46,8 @@ export function errorResponse(code: ErrorCode, detail?: string, retryAfterSecond
   return Response.json({ error: { code, message } }, { status: STATUS[code], headers });
 }
 
-/** Operational log line: the error class and a code, never a message, stack or upstream text. */
+/** Operational log line: the error class and a code, never a message, stack or upstream text. Carries the request's run id. */
 export function logFailure(event: string, error: unknown): void {
   const kind = error instanceof ApiError ? error.code : error instanceof Error ? error.name : "unknown";
-  console.error(JSON.stringify({ level: "error", event, kind }));
+  console.error(JSON.stringify({ level: "error", event, kind, runId: currentRunId() ?? "none" }));
 }

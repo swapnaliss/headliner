@@ -70,12 +70,15 @@ export interface QlooClientStats {
   readonly staleServed: number;
 }
 
+/** `params` holds parameter NAMES only (never values), so an event is safe to log. */
 export type QlooEvent =
-  | { readonly type: "cache_hit"; readonly endpoint: string }
-  | { readonly type: "live_call"; readonly endpoint: string; readonly attempt: number; readonly status: number; readonly ms: number }
-  | { readonly type: "retry"; readonly endpoint: string; readonly kind: string }
-  | { readonly type: "stale"; readonly endpoint: string; readonly kind: string }
-  | { readonly type: "failure"; readonly endpoint: string; readonly kind: string };
+  | { readonly type: "cache_hit"; readonly endpoint: string; readonly params: readonly string[] }
+  | { readonly type: "live_call"; readonly endpoint: string; readonly params: readonly string[]; readonly attempt: number; readonly status: number; readonly ms: number }
+  | { readonly type: "retry"; readonly endpoint: string; readonly params: readonly string[]; readonly kind: string }
+  | { readonly type: "stale"; readonly endpoint: string; readonly params: readonly string[]; readonly kind: string }
+  | { readonly type: "failure"; readonly endpoint: string; readonly params: readonly string[]; readonly kind: string };
+
+const paramNames = (req: BuiltRequest): string[] => [...new Set(req.params.keys())];
 
 export interface QlooClientOptions {
   readonly transport: QlooTransport;
@@ -144,7 +147,7 @@ export function createQlooClient(options: QlooClientOptions): QlooClient {
         if (e instanceof QlooError) throw e;
         throw new QlooUnavailable("Qloo could not be reached");
       }
-      emit({ type: "live_call", endpoint: req.endpoint, attempt: attemptNo, status, ms: Date.now() - started });
+      emit({ type: "live_call", endpoint: req.endpoint, params: paramNames(req), attempt: attemptNo, status, ms: Date.now() - started });
       if (status >= 200 && status < 300) return body;
       if (status === 429) throw new QlooRateLimited();
       if (status >= 500) throw new QlooUnavailable("Qloo is unavailable", true);
@@ -159,7 +162,7 @@ export function createQlooClient(options: QlooClientOptions): QlooClient {
       return await attempt(req, 1);
     } catch (e) {
       if (!(e instanceof QlooError) || !e.retryable) throw e;
-      emit({ type: "retry", endpoint: req.endpoint, kind: e.kind });
+      emit({ type: "retry", endpoint: req.endpoint, params: paramNames(req), kind: e.kind });
       await sleep(jitterMs());
       return attempt(req, 2);
     }
@@ -177,7 +180,7 @@ export function createQlooClient(options: QlooClientOptions): QlooClient {
     const hit = await cache.get(key, now());
     if (hit) {
       cacheHits += 1;
-      emit({ type: "cache_hit", endpoint: req.endpoint });
+      emit({ type: "cache_hit", endpoint: req.endpoint, params: paramNames(req) });
       return { data: hit.data as T, evidence: hit.evidence, stale: false, cached: true };
     }
 
@@ -201,11 +204,11 @@ export function createQlooClient(options: QlooClientOptions): QlooClient {
           const stale = await cache.getStale(key);
           if (stale) {
             staleServed += 1;
-            emit({ type: "stale", endpoint: req.endpoint, kind: err.kind });
+            emit({ type: "stale", endpoint: req.endpoint, params: paramNames(req), kind: err.kind });
             return { data: stale.data as T, evidence: stale.evidence, stale: true, cached: true };
           }
         }
-        emit({ type: "failure", endpoint: req.endpoint, kind: err.kind });
+        emit({ type: "failure", endpoint: req.endpoint, params: paramNames(req), kind: err.kind });
         throw err;
       }
     })();
