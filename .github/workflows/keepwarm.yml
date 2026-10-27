@@ -1,0 +1,24 @@
+name: Keep warm
+
+# Keeps the demo's serverless function and the Neon compute (scales to zero after about 5 minutes idle)
+# awake, so the first visitor after a quiet spell does not pay for a cold start (docs/evidence/m2-06-cold-start.md).
+# GET only, no secrets, no Qloo calls: the sample page reads a stored slate and the deep health check runs `select 1`.
+# GitHub's scheduler can run late, so this lowers the chance of a cold first request; it does not guarantee it.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  warm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Request health (touches the database) and one sample room
+        run: |
+          base="https://headliner-ai.vercel.app"
+          curl --silent --show-error --output /dev/null --max-time 10 --write-out "health %{http_code} %{time_total}s\n" "$base/api/health?deep=1" || true
+          curl --silent --show-error --output /dev/null --max-time 10 --write-out "sample %{http_code} %{time_total}s\n" "$base/s/sample-berlin-electronic" || true
