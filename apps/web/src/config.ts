@@ -1,4 +1,12 @@
 import { existsSync } from "node:fs";
+import {
+  createIntakeReplay,
+  createOpenAiProvider,
+  DEFAULT_LLM_MODEL,
+  loadIntakeTraces,
+  type LlmBudget,
+  type LlmProvider,
+} from "@headliner/agent";
 import { dirname, join, resolve } from "node:path";
 import {
   createQlooClient,
@@ -10,7 +18,7 @@ import {
   type QlooTransport,
 } from "@headliner/qloo";
 import { getDb } from "@headliner/slates";
-import { liveBudgetHook } from "./budget";
+import { liveBudgetHook, liveLlmBudget } from "./budget";
 import { loadEnv } from "./env";
 import { MemoryRunStore, PostgresRunStore, type RunStore } from "./runStore";
 import { FixtureSampleStore } from "./samples";
@@ -32,6 +40,18 @@ export interface Runtime {
   readonly cacheOnlyClient?: QlooClient;
   /** Budget check (M2-05, live mode only). Absent means no check. It throws an `ApiError` to refuse. */
   readonly budget?: BudgetHook;
+  /** Intake model wiring (M3-01). Absent means no model: the intake route answers `deterministic`. */
+  readonly intake?: IntakeEnv;
+}
+
+/** What the intake route needs: a provider per sentence, and (live mode) the per-turn LLM budget. */
+export interface IntakeEnv {
+  /** `recorded` replays `fixtures/agent/intake` (DEMO_MODE=fixtures, no key); `model` calls OpenAI. */
+  readonly source: "model" | "recorded";
+  /** Undefined means no model is configured (for example no OPENAI_API_KEY). */
+  providerFor(text: string, clarified: boolean): LlmProvider | undefined;
+  /** App-side LLM budget for this request (live mode only). */
+  budgetFor?(request: Request): LlmBudget;
 }
 
 /** What a granted budget check returns. */
@@ -45,7 +65,7 @@ export interface BudgetGrant {
 
 /** Called before a route spends Qloo calls: `plannedCalls` is the most live calls the request may make. */
 export type BudgetHook = (spend: {
-  readonly route: "create" | "confirm" | "cities";
+  readonly route: "create" | "confirm" | "cities" | "intake";
   readonly plannedCalls: number;
   readonly request: Request;
 }) => void | BudgetGrant | Promise<void | BudgetGrant>;
@@ -82,6 +102,7 @@ export function buildRuntime(source: Record<string, string | undefined> = proces
       store: new FixtureSampleStore(new MemorySlateStore(), fixtureDir),
       runs: new MemoryRunStore(),
       now: () => new Date(),
+      intake: fixtureIntake(fixtureDir),
     };
   }
   const db = getDb(source);
@@ -94,7 +115,26 @@ export function buildRuntime(source: Record<string, string | undefined> = proces
     store: new PostgresSlateStore(db),
     runs: new PostgresRunStore(db),
     now: () => new Date(),
+    intake: liveIntake(env.openaiApiKey, source, liveLlmBudget(db, source)),
   };
+}
+
+/** Recorded traces next to the Qloo recordings: `fixtures/agent/intake`. A missing directory means no traces. */
+function fixtureIntake(qlooFixtureDir: string): IntakeEnv {
+  const dir = join(qlooFixtureDir, "..", "agent", "intake");
+  const replay = createIntakeReplay(existsSync(dir) ? loadIntakeTraces(dir) : []);
+  return { source: "recorded", providerFor: (text, clarified) => replay.providerFor(text, clarified) };
+}
+
+/** `LLM_MODEL` overrides the default model; anything that is not a plain model id is ignored. */
+export function llmModel(source: Record<string, string | undefined>): string {
+  const v = source["LLM_MODEL"]?.trim();
+  return v && /^[A-Za-z0-9._-]{1,64}$/.test(v) ? v : DEFAULT_LLM_MODEL;
+}
+
+function liveIntake(apiKey: string | undefined, source: Record<string, string | undefined>, budgetFor: (request: Request) => LlmBudget): IntakeEnv {
+  const provider = apiKey ? createOpenAiProvider({ apiKey, model: llmModel(source) }) : undefined;
+  return { source: "model", providerFor: () => provider, budgetFor };
 }
 
 /**

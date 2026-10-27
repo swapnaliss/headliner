@@ -1,0 +1,59 @@
+{
+  "input": "We are a 350-cap room in Berlin. Our crowd follows Apparat, Moderat, Modeselektor, Hundreds, Brandt Brauer Frick and Boys Noize. We are thinking of booking Khruangbin, Radiohead and Reality Club, and we also want to compare London and Tromso.",
+  "clarified": false,
+  "model": "gpt-5-nano",
+  "recordedAt": "2026-10-27T12:41:05.746Z",
+  "turns": [
+    {
+      "content": null,
+      "toolCalls": [
+        {
+          "id": "call_oDaQEFPyIev0PLVzoXR8IGta",
+          "name": "submit_room",
+          "arguments": "{\"city\":\"Berlin\",\"crowdActs\":[\"Apparat\",\"Moderat\",\"Modeselektor\",\"Hundreds\",\"Brandt Brauer Frick\",\"Boys Noize\"],\"candidateActs\":[\"Khruangbin\",\"Radiohead\",\"Reality Club\"],\"cities\":[\"London\",\"Tromso\"]}"
+        }
+      ],
+      "usage": {
+        "inputTokens": 788,
+        "outputTokens": 78,
+        "reasoningTokens": 0,
+        "cachedInputTokens": 0,
+        "totalTokens": 866
+      },
+      "costUsd": 0.00007060000000000001,
+      "model": "gpt-5-nano",
+      "finishReason": "tool_calls"
+    }
+  ],
+  "outcome": {
+    "status": "room",
+    "mode": "agent",
+    "source": "model",
+    "usage": {
+      "turns": 1,
+      "tokens": 866,
+      "costUsd": 0.00007060000000000001
+    },
+    "room": {
+      "city": "Berlin",
+      "crowdActs": [
+        "Apparat",
+        "Moderat",
+        "Modeselektor",
+        "Hundreds",
+        "Brandt Brauer Frick",
+        "Boys Noize"
+      ],
+      "candidateActs": [
+        "Khruangbin",
+        "Radiohead",
+        "Reality Club"
+      ]
+    },
+    "cities": [
+      "London",
+      "Tromso"
+    ],
+    "steps": 1
+  }
+}

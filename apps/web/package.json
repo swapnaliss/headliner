@@ -13,6 +13,7 @@
     "e2e": "playwright test"
   },
   "dependencies": {
+    "@headliner/agent": "*",
     "@headliner/budgets": "*",
     "@headliner/core": "*",
     "@headliner/qloo": "*",

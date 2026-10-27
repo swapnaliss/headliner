@@ -34,7 +34,7 @@ See [docs/architecture.md](docs/architecture.md).
 | TypeScript | 5.9.3 (2025-09-30), fallback taken from 7.0.2 | types; typescript-eslint 8.72.0 does not support 7.x, see `docs/evidence/versions.md` |
 | zod | 4.6.7 (2026-10-12) | shared schemas |
 | drizzle-orm | 0.45.4 (2026-10-08) | migrations and queries |
-| openai | 7.43.0 (published 2026-10-22; checked 2026-10-26 with `npm view openai version time --json`; not installed until M3-01) | intake and explanation, behind a thin provider interface; model chosen by the owner (`LLM_MODEL`) |
+| openai | 7.43.0 (published 2026-10-22; checked 2026-10-26 with `npm view openai version time --json`; installed in M3-01 at 7.43.0, exact pin; 7.45.0 was latest on 2026-10-27) | intake and explanation, behind a thin provider interface; default `gpt-5-nano` (owner delegated the choice 2026-10-27), override with `LLM_MODEL` |
 | vitest | 5.0.5 (2026-10-15) | tests |
 Exact versions are re-verified in M0-01 before the lockfile is committed.
 
