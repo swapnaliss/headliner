@@ -83,6 +83,11 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
 
   useEffect(() => () => abortRef.current?.abort(), []);
 
+  // The confirm screen links here with ?sample=1 to load the recorded sample room.
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get("sample") === "1") fillSample();
+  }, []);
+
   function add(kind: ListKind) {
     const raw = kind === "crowd" ? crowdInput : candidateInput;
     const list = kind === "crowd" ? crowd : candidates;
