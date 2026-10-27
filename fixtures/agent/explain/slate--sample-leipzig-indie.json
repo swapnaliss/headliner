@@ -1,0 +1,3880 @@
+{
+  "id": "sample-leipzig-indie",
+  "room": {
+    "city": "Leipzig",
+    "crowdActs": [
+      {
+        "qlooEntityId": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+        "name": "Radiohead",
+        "matchConfidence": 1
+      },
+      {
+        "qlooEntityId": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+        "name": "Phoenix",
+        "matchConfidence": 1
+      },
+      {
+        "qlooEntityId": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+        "name": "Sigur Rós",
+        "matchConfidence": 1
+      },
+      {
+        "qlooEntityId": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+        "name": "Reality Club",
+        "matchConfidence": 1
+      }
+    ]
+  },
+  "results": [
+    {
+      "act": {
+        "qlooEntityId": "36254E3F-20E4-4151-AC61-D753CA41F34A",
+        "name": "Moderat",
+        "matchConfidence": 1
+      },
+      "status": "scored",
+      "rank": 1,
+      "fit": {
+        "value": 63.8,
+        "sharedTags": 67,
+        "evidenceRefs": [
+          "ev-ad465702967e"
+        ]
+      },
+      "overlapTags": [
+        {
+          "tagId": "urn:tag:region:qloo:germany",
+          "name": "Germany",
+          "score": 0.8553777783249483,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:japan",
+          "name": "Japan",
+          "score": 0.8553777783249483,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:rock",
+          "name": "Rock",
+          "score": 0.7310194588616812,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:innovative",
+          "name": "Innovative",
+          "score": 0.7310188142577898,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:france",
+          "name": "France",
+          "score": 0.7310188142577898,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:electronic",
+          "name": "Electronic",
+          "score": 0.7309812497448915,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:ambient",
+          "name": "Ambient",
+          "score": 0.7309515122399098,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:easy_listening",
+          "name": "Easy Listening",
+          "score": 0.7309515122399098,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:style:qloo:engaging",
+          "name": "Engaging",
+          "score": 0.7300645416298027,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:style:qloo:energetic",
+          "name": "Energetic",
+          "score": 0.7297273723004448,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:style:qloo:dynamic",
+          "name": "Dynamic",
+          "score": 0.7296042858489226,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:passionate",
+          "name": "Passionate",
+          "score": 0.7294993952774845,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:dedicated",
+          "name": "DedicateD",
+          "score": 0.7292621769827521,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:innovative",
+          "name": "Innovative",
+          "score": 0.729138957311338,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:style:qloo:immersive",
+          "name": "Immersive",
+          "score": 0.7287005470971815,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:open_minded",
+          "name": "Open-minded",
+          "score": 0.7283645839586115,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:music:qloo:melodic",
+          "name": "Melodic",
+          "score": 0.7276506649002475,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:synthesizer",
+          "name": "Synthesizer",
+          "score": 0.7262261951626375,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:existentialism",
+          "name": "Existentialism",
+          "score": 0.7261112994874438,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:music:qloo:atmospheric",
+          "name": "Atmospheric",
+          "score": 0.725322327905514,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:eclectic",
+          "name": "Eclectic",
+          "score": 0.7228080579066528,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:style:qloo:visual",
+          "name": "Visual",
+          "score": 0.7226621604907328,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:isolation",
+          "name": "Isolation",
+          "score": 0.7214678274258481,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:music:qloo:experimental",
+          "name": "Experimental",
+          "score": 0.7212680677601709,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:technology",
+          "name": "Technology",
+          "score": 0.7210449864677335,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:experimental",
+          "name": "Experimental",
+          "score": 0.7208427260181901,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:urban_life",
+          "name": "Urban Life",
+          "score": 0.717950155630509,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:subgenre:qloo:experimental",
+          "name": "Experimental",
+          "score": 0.7145989548811168,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:melodic",
+          "name": "Melodic",
+          "score": 0.7144056562297311,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:atmospheric",
+          "name": "Atmospheric",
+          "score": 0.7107181492421121,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:syncopated",
+          "name": "Syncopated",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:jazz",
+          "name": "Jazz",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:soul",
+          "name": "Soul",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:synthetic",
+          "name": "Synthetic",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:technological",
+          "name": "Technological",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:classical",
+          "name": "Classical",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electric_piano",
+          "name": "Electric Piano",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electronic_oscillator",
+          "name": "Electronic Oscillator",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:hammond_organ",
+          "name": "Hammond Organ",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:theremin",
+          "name": "Theremin",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:berlin",
+          "name": "Berlin",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:paris",
+          "name": "Paris",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:tokyo",
+          "name": "Tokyo",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electric_guitar",
+          "name": "Electric Guitar",
+          "score": 0.5621529762231378,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:region:qloo:new_york_city",
+          "name": "New York City",
+          "score": 0.5621529762231378,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:diverse",
+          "name": "Diverse",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:varied",
+          "name": "Varied",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:disco",
+          "name": "Disco",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:funk",
+          "name": "Funk",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:punk_rock",
+          "name": "Punk Rock",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_kingdom",
+          "name": "United Kingdom",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_states",
+          "name": "United States",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:minimal",
+          "name": "Minimal",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:textural",
+          "name": "Textural",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:musique_concrete",
+          "name": "Musique Concrete",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:dynamic",
+          "name": "Dynamic",
+          "score": 0.5621132800135609,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:avant_garde",
+          "name": "Avant Garde",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:futurism",
+          "name": "Futurism",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:modernism",
+          "name": "Modernism",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:synthesizer",
+          "name": "Synthesizer",
+          "score": 0.5553070761102774,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:dub",
+          "name": "Dub",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:krautrock",
+          "name": "Krautrock",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:drone",
+          "name": "Drone",
+          "score": 0.5552981761017213,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:experimental",
+          "name": "Experimental",
+          "score": 0.5552981761017213,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:impressionist",
+          "name": "Impressionist",
+          "score": 0.5552981761017213,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:minimal",
+          "name": "Minimal",
+          "score": 0.5552981761017213,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:experimental",
+          "name": "Experimental",
+          "score": 0.5467198784007994,
+          "coveredCrowdActs": 4
+        }
+      ],
+      "standing": {
+        "caption": "Qloo popularity rank",
+        "candidatePercentile": 99.7,
+        "crowdMedianPercentile": 100,
+        "crowdSample": 4,
+        "deltaPoints": -0.3,
+        "label": "similar",
+        "evidenceRefs": [
+          "ev-0dbb0807eda2",
+          "ev-2a7b5dc88692",
+          "ev-13ee92ba003f",
+          "ev-4a03692baf4f",
+          "ev-d7e139a2ae9b"
+        ]
+      },
+      "standingExplanation": {
+        "candidatePercentile": 99.7,
+        "crowdMedianPercentile": 100,
+        "crowdSample": 4,
+        "candidateEvidenceRef": "ev-0dbb0807eda2",
+        "crowdEvidenceRefs": [
+          "ev-2a7b5dc88692",
+          "ev-13ee92ba003f",
+          "ev-4a03692baf4f",
+          "ev-d7e139a2ae9b"
+        ]
+      },
+      "cityStrengths": [
+        {
+          "city": "London",
+          "meanAffinityRank": 0.436,
+          "cellCount": 10,
+          "thinData": true,
+          "evidenceRefs": [
+            "ev-7bbad9423b7c"
+          ]
+        }
+      ],
+      "caveats": [
+        {
+          "type": "thin-data",
+          "message": "Fewer than 15 Qloo heatmap cells back this city, so its strength is thin data.",
+          "subject": "London"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-0dbb0807eda2",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Moderat",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "373c72b4b72768b0260b3b18f3214cc7691a2c7f85c4a0017886514bf4fdbde6",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-ad465702967e",
+          "endpoint": "/v2/insights/compare",
+          "redactedParams": {
+            "a.signal.interests.entities": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C,E7649B3E-6FFE-46A1-85F3-836D842B2AF0,6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1,D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+            "b.signal.interests.entities": "36254E3F-20E4-4151-AC61-D753CA41F34A",
+            "filter.type": "urn:entity:artist"
+          },
+          "responseDigest": "71f2960756512ac0e81b1c93d6dc6aa98066cfc31a035f9f36739f9c6e21c174",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-2a7b5dc88692",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Radiohead",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "caa233e302d47522847b5a57d31e5864356c56273b9fce7bb611ebd8293770c6",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-13ee92ba003f",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Phoenix",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "da8586468d4fa386c9c199c555f4372f0acd570deba64881a4a48dee6fee3e5e",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-4a03692baf4f",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Sigur Rós",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "643ee3b966a07b7288ddd3e878b00f5411fcd93f6561f55027ed42ca05421d6c",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-d7e139a2ae9b",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Reality Club",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "e8678d222b99b217eadfa8eb94b4c141adab5a984b20ba01202808ad3c4c36ff",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-7bbad9423b7c",
+          "endpoint": "/v2/insights",
+          "redactedParams": {
+            "filter.location.query": "London",
+            "filter.type": "urn:heatmap",
+            "signal.interests.entities": "36254E3F-20E4-4151-AC61-D753CA41F34A"
+          },
+          "responseDigest": "f8b6bcfbfb6f2db048100202fafd6c95559c3147131ddbe8c1fdfc9251813420",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "act": {
+        "qlooEntityId": "DB342083-22F9-4B2D-B6F4-414AAF35F217",
+        "name": "Apparat",
+        "matchConfidence": 1
+      },
+      "status": "scored",
+      "rank": 2,
+      "fit": {
+        "value": 60.6,
+        "sharedTags": 93,
+        "evidenceRefs": [
+          "ev-9dfa3368dacb"
+        ]
+      },
+      "overlapTags": [
+        {
+          "tagId": "urn:tag:region:qloo:japan",
+          "name": "Japan",
+          "score": 0.8553777783249483,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:innovative",
+          "name": "Innovative",
+          "score": 0.8175292270892687,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:france",
+          "name": "France",
+          "score": 0.7310188142577898,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:germany",
+          "name": "Germany",
+          "score": 0.7310188142577898,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:electronic",
+          "name": "Electronic",
+          "score": 0.7309812497448915,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:ambient",
+          "name": "Ambient",
+          "score": 0.7309515122399098,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:easy_listening",
+          "name": "Easy Listening",
+          "score": 0.7309515122399098,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:passionate",
+          "name": "Passionate",
+          "score": 0.7294993952774845,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:dedicated",
+          "name": "DedicateD",
+          "score": 0.7292621769827521,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:vocals",
+          "name": "Vocals",
+          "score": 0.7292142656792078,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:style:qloo:immersive",
+          "name": "Immersive",
+          "score": 0.7287005470971815,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:open_minded",
+          "name": "Open-minded",
+          "score": 0.7283645839586115,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:music:qloo:melodic",
+          "name": "Melodic",
+          "score": 0.7276506649002475,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:synthesizer",
+          "name": "Synthesizer",
+          "score": 0.7262261951626375,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:style:qloo:expressive",
+          "name": "Expressive",
+          "score": 0.7258147361660902,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:music:qloo:atmospheric",
+          "name": "Atmospheric",
+          "score": 0.725322327905514,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:eclectic",
+          "name": "Eclectic",
+          "score": 0.7228080579066528,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:isolation",
+          "name": "Isolation",
+          "score": 0.7214678274258481,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:music:qloo:experimental",
+          "name": "Experimental",
+          "score": 0.7212680677601709,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:technology",
+          "name": "Technology",
+          "score": 0.7210449864677335,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:experimental",
+          "name": "Experimental",
+          "score": 0.7208427260181901,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:emotive",
+          "name": "Emotive",
+          "score": 0.7177863274297716,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:subgenre:qloo:experimental",
+          "name": "Experimental",
+          "score": 0.7145989548811168,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:melodic",
+          "name": "Melodic",
+          "score": 0.7144056562297311,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:atmospheric",
+          "name": "Atmospheric",
+          "score": 0.7107181492421121,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:emotions",
+          "name": "Emotions",
+          "score": 0.7057706331169088,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:syncopated",
+          "name": "Syncopated",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:blues",
+          "name": "Blues",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:soul",
+          "name": "Soul",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:piano",
+          "name": "Piano",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:synthetic",
+          "name": "Synthetic",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:technological",
+          "name": "Technological",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electric_piano",
+          "name": "Electric Piano",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electronic_oscillator",
+          "name": "Electronic Oscillator",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:hammond_organ",
+          "name": "Hammond Organ",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:theremin",
+          "name": "Theremin",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:berlin",
+          "name": "Berlin",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:paris",
+          "name": "Paris",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:tokyo",
+          "name": "Tokyo",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electric_guitar",
+          "name": "Electric Guitar",
+          "score": 0.5621529762231378,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:experimental_rock",
+          "name": "Experimental Rock",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:free_jazz",
+          "name": "Free Jazz",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:glam_rock",
+          "name": "Glam Rock",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:new_wave",
+          "name": "New Wave",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:atmospheric",
+          "name": "Atmospheric",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:calm",
+          "name": "Calm",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:contemplative",
+          "name": "Contemplative",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:ethereal",
+          "name": "Ethereal",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:peaceful",
+          "name": "Peaceful",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:relaxed",
+          "name": "Relaxed",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:repeated",
+          "name": "Repeated",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:slow",
+          "name": "Slow",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:soft",
+          "name": "Soft",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:sustained",
+          "name": "Sustained",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:unobtrusive",
+          "name": "Unobtrusive",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:unstructured",
+          "name": "Unstructured",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:acid_rock",
+          "name": "Acid Rock",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:big_band",
+          "name": "Big Band",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:jazz_fusion",
+          "name": "Jazz Fusion",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:minimalism",
+          "name": "Minimalism",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:minimalist",
+          "name": "Minimalist",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:musique_concrete",
+          "name": "Musique Concrete",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:rocksteady",
+          "name": "Rocksteady",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:romantic",
+          "name": "Romantic",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:ska",
+          "name": "Ska",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:tape_music",
+          "name": "Tape Music",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:flute",
+          "name": "Flute",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:strings",
+          "name": "Strings",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:region:qloo:jamaica",
+          "name": "Jamaica",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:dynamic",
+          "name": "Dynamic",
+          "score": 0.5621132800135609,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:jazz",
+          "name": "Jazz",
+          "score": 0.5553171372312103,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:diverse",
+          "name": "Diverse",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:varied",
+          "name": "Varied",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:disco",
+          "name": "Disco",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:minimal",
+          "name": "Minimal",
+          "score": 0.5552981761017213,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:textural",
+          "name": "Textural",
+          "score": 0.5552981761017213,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:reggae",
+          "name": "Reggae",
+          "score": 0.5552981761017213,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:classical",
+          "name": "Classical",
+          "score": 0.5467286025433676,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:new_york_city",
+          "name": "New York City",
+          "score": 0.5467203880022974,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:experimental",
+          "name": "Experimental",
+          "score": 0.5467198784007994,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:dub",
+          "name": "Dub",
+          "score": 0.5467198784007994,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:funk",
+          "name": "Funk",
+          "score": 0.5467198784007994,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:krautrock",
+          "name": "Krautrock",
+          "score": 0.5467198784007994,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_states",
+          "name": "United States",
+          "score": 0.5467198784007994,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:drone",
+          "name": "Drone",
+          "score": 0.5467128519832063,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:impressionist",
+          "name": "Impressionist",
+          "score": 0.5467128519832063,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:minimal",
+          "name": "Minimal",
+          "score": 0.5467128519832063,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:avant_garde",
+          "name": "Avant Garde",
+          "score": 0.5399067162608749,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:futurism",
+          "name": "Futurism",
+          "score": 0.5399067162608749,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:modernism",
+          "name": "Modernism",
+          "score": 0.5399067162608749,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_kingdom",
+          "name": "United Kingdom",
+          "score": 0.5398992539079497,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:experimental",
+          "name": "Experimental",
+          "score": 0.5398932437395878,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:synthesizer",
+          "name": "Synthesizer",
+          "score": 0.5346533026891901,
+          "coveredCrowdActs": 3
+        }
+      ],
+      "standing": {
+        "caption": "Qloo popularity rank",
+        "candidatePercentile": 99.7,
+        "crowdMedianPercentile": 100,
+        "crowdSample": 4,
+        "deltaPoints": -0.3,
+        "label": "similar",
+        "evidenceRefs": [
+          "ev-8556cc500837",
+          "ev-2a7b5dc88692",
+          "ev-13ee92ba003f",
+          "ev-4a03692baf4f",
+          "ev-d7e139a2ae9b"
+        ]
+      },
+      "standingExplanation": {
+        "candidatePercentile": 99.7,
+        "crowdMedianPercentile": 100,
+        "crowdSample": 4,
+        "candidateEvidenceRef": "ev-8556cc500837",
+        "crowdEvidenceRefs": [
+          "ev-2a7b5dc88692",
+          "ev-13ee92ba003f",
+          "ev-4a03692baf4f",
+          "ev-d7e139a2ae9b"
+        ]
+      },
+      "cityStrengths": [],
+      "caveats": [],
+      "evidence": [
+        {
+          "id": "ev-8556cc500837",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Apparat",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "7454da69a1e8281c21cac624b2236971e562578d43d3c2c038bae2784d1955b8",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-9dfa3368dacb",
+          "endpoint": "/v2/insights/compare",
+          "redactedParams": {
+            "a.signal.interests.entities": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C,E7649B3E-6FFE-46A1-85F3-836D842B2AF0,6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1,D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+            "b.signal.interests.entities": "DB342083-22F9-4B2D-B6F4-414AAF35F217",
+            "filter.type": "urn:entity:artist"
+          },
+          "responseDigest": "b12db6c51a340ce0aaa443cc393d9babfd4d0aff5bbc1d718738e7aea85e89f1",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-2a7b5dc88692",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Radiohead",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "caa233e302d47522847b5a57d31e5864356c56273b9fce7bb611ebd8293770c6",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-13ee92ba003f",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Phoenix",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "da8586468d4fa386c9c199c555f4372f0acd570deba64881a4a48dee6fee3e5e",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-4a03692baf4f",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Sigur Rós",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "643ee3b966a07b7288ddd3e878b00f5411fcd93f6561f55027ed42ca05421d6c",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-d7e139a2ae9b",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Reality Club",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "e8678d222b99b217eadfa8eb94b4c141adab5a984b20ba01202808ad3c4c36ff",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "act": {
+        "qlooEntityId": "7274E19C-539B-449E-97C1-1C60B2218099",
+        "name": "amaarae",
+        "matchConfidence": 1
+      },
+      "status": "scored",
+      "rank": 3,
+      "fit": {
+        "value": 60.2,
+        "sharedTags": 65,
+        "evidenceRefs": [
+          "ev-495108108966"
+        ]
+      },
+      "overlapTags": [
+        {
+          "tagId": "urn:tag:characteristic:music:innovative",
+          "name": "Innovative",
+          "score": 0.7310188142577898,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:alternative_rock",
+          "name": "Alternative Rock",
+          "score": 0.7309812497448915,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:electronic",
+          "name": "Electronic",
+          "score": 0.7309812497448915,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:love",
+          "name": "Love",
+          "score": 0.7297661168313316,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:style:qloo:energetic",
+          "name": "Energetic",
+          "score": 0.7297273723004448,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:style:qloo:dynamic",
+          "name": "Dynamic",
+          "score": 0.7296042858489226,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:passionate",
+          "name": "Passionate",
+          "score": 0.7294993952774845,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:loyal",
+          "name": "Loyal",
+          "score": 0.7294879979555896,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:vocals",
+          "name": "Vocals",
+          "score": 0.7292142656792078,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:innovative",
+          "name": "Innovative",
+          "score": 0.729138957311338,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:open_minded",
+          "name": "Open-minded",
+          "score": 0.7283645839586115,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:synthesizer",
+          "name": "Synthesizer",
+          "score": 0.7262261951626375,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:style:qloo:expressive",
+          "name": "Expressive",
+          "score": 0.7258147361660902,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:music:qloo:experimental",
+          "name": "Experimental",
+          "score": 0.7212680677601709,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:experimental",
+          "name": "Experimental",
+          "score": 0.7208427260181901,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:eclectic",
+          "name": "Eclectic",
+          "score": 0.7192750683900987,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:subgenre:qloo:electronic",
+          "name": "Electronic",
+          "score": 0.6314267373392287,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:eclectic",
+          "name": "Eclectic",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:gospel",
+          "name": "Gospel",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:marches",
+          "name": "Marches",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:ragtime",
+          "name": "Ragtime",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:soul",
+          "name": "Soul",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:spirituals",
+          "name": "Spirituals",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:work_songs",
+          "name": "Work Songs",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:keyboards",
+          "name": "Keyboards",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:piano",
+          "name": "Piano",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:canada",
+          "name": "Canada",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:futurism",
+          "name": "Futurism",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:modernism",
+          "name": "Modernism",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electric_guitar",
+          "name": "Electric Guitar",
+          "score": 0.5621529762231378,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:instrument:music:synthesizer",
+          "name": "Synthesizer",
+          "score": 0.5621529762231378,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:region:qloo:los_angeles",
+          "name": "Los Angeles",
+          "score": 0.5621529762231378,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:4_4_time",
+          "name": "4/4 Time",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:diverse",
+          "name": "Diverse",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:emotional",
+          "name": "Emotional",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:energetic",
+          "name": "Energetic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:experimental",
+          "name": "Experimental",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:dub",
+          "name": "Dub",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:folk",
+          "name": "Folk",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:post_punk",
+          "name": "Post Punk",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:punk_rock",
+          "name": "Punk Rock",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:instrument:music:guitar",
+          "name": "Guitar",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:instrument:music:keyboard",
+          "name": "Keyboard",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_kingdom",
+          "name": "United Kingdom",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:atmospheric",
+          "name": "Atmospheric",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:relaxed",
+          "name": "Relaxed",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:slow",
+          "name": "Slow",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:rocksteady",
+          "name": "Rocksteady",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:ska",
+          "name": "Ska",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:danceable",
+          "name": "Danceable",
+          "score": 0.5621132800135609,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:harmonious",
+          "name": "Harmonious",
+          "score": 0.5621132800135609,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:lush",
+          "name": "Lush",
+          "score": 0.5620163560099327,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:smooth",
+          "name": "Smooth",
+          "score": 0.5620163560099327,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:expressive",
+          "name": "Expressive",
+          "score": 0.5553171372312103,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:disco",
+          "name": "Disco",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:funk",
+          "name": "Funk",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:instrument:music:bass_guitar",
+          "name": "Bass Guitar",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:instrument:music:drums",
+          "name": "Drums",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_states",
+          "name": "United States",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:reggae",
+          "name": "Reggae",
+          "score": 0.5552981761017213,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:moderate",
+          "name": "Moderate",
+          "score": 0.5551852400583888,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:syncopated",
+          "name": "Syncopated",
+          "score": 0.5467289071954466,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:blues",
+          "name": "Blues",
+          "score": 0.5467289071954466,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:jazz",
+          "name": "Jazz",
+          "score": 0.5467289071954466,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:melodic",
+          "name": "Melodic",
+          "score": 0.5467198784007994,
+          "coveredCrowdActs": 4
+        }
+      ],
+      "standing": {
+        "caption": "Qloo popularity rank",
+        "candidatePercentile": 96,
+        "crowdMedianPercentile": 100,
+        "crowdSample": 4,
+        "deltaPoints": -4,
+        "label": "similar",
+        "evidenceRefs": [
+          "ev-a98146bd9b61",
+          "ev-2a7b5dc88692",
+          "ev-13ee92ba003f",
+          "ev-4a03692baf4f",
+          "ev-d7e139a2ae9b"
+        ]
+      },
+      "standingExplanation": {
+        "candidatePercentile": 96,
+        "crowdMedianPercentile": 100,
+        "crowdSample": 4,
+        "candidateEvidenceRef": "ev-a98146bd9b61",
+        "crowdEvidenceRefs": [
+          "ev-2a7b5dc88692",
+          "ev-13ee92ba003f",
+          "ev-4a03692baf4f",
+          "ev-d7e139a2ae9b"
+        ]
+      },
+      "cityStrengths": [],
+      "caveats": [],
+      "evidence": [
+        {
+          "id": "ev-a98146bd9b61",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "amaarae",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "20fbc475db0a3c9d507c85eddfa8eb008250426dcc4293361d4f01c33657f822",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-495108108966",
+          "endpoint": "/v2/insights/compare",
+          "redactedParams": {
+            "a.signal.interests.entities": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C,E7649B3E-6FFE-46A1-85F3-836D842B2AF0,6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1,D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+            "b.signal.interests.entities": "7274E19C-539B-449E-97C1-1C60B2218099",
+            "filter.type": "urn:entity:artist"
+          },
+          "responseDigest": "fc629a7ff668c31ce8c4453a6aeba274141fcd9932196d895a2e96c612ab06e8",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-2a7b5dc88692",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Radiohead",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "caa233e302d47522847b5a57d31e5864356c56273b9fce7bb611ebd8293770c6",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-13ee92ba003f",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Phoenix",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "da8586468d4fa386c9c199c555f4372f0acd570deba64881a4a48dee6fee3e5e",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-4a03692baf4f",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Sigur Rós",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "643ee3b966a07b7288ddd3e878b00f5411fcd93f6561f55027ed42ca05421d6c",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-d7e139a2ae9b",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Reality Club",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "e8678d222b99b217eadfa8eb94b4c141adab5a984b20ba01202808ad3c4c36ff",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "act": {
+        "qlooEntityId": "C344B97A-CBBC-4297-967A-D8EA5A703492",
+        "name": "Hindia",
+        "matchConfidence": 1
+      },
+      "status": "scored",
+      "rank": 4,
+      "fit": {
+        "value": 58.1,
+        "sharedTags": 170,
+        "evidenceRefs": [
+          "ev-59d3dfc40cfb"
+        ]
+      },
+      "overlapTags": [
+        {
+          "tagId": "urn:tag:genre:music:rock",
+          "name": "Rock",
+          "score": 0.7310194588616812,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:innovative",
+          "name": "Innovative",
+          "score": 0.7310188142577898,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:france",
+          "name": "France",
+          "score": 0.7310188142577898,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:germany",
+          "name": "Germany",
+          "score": 0.7310188142577898,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:japan",
+          "name": "Japan",
+          "score": 0.7310188142577898,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:alternative_rock",
+          "name": "Alternative Rock",
+          "score": 0.7309812497448915,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:electronic",
+          "name": "Electronic",
+          "score": 0.7309812497448915,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:indie",
+          "name": "Indie",
+          "score": 0.7309812497448915,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:indonesia",
+          "name": "Indonesia",
+          "score": 0.7303074450309498,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:style:qloo:engaging",
+          "name": "Engaging",
+          "score": 0.7300645416298027,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:love",
+          "name": "Love",
+          "score": 0.7297661168313316,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:passionate",
+          "name": "Passionate",
+          "score": 0.7294993952774845,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:loyal",
+          "name": "Loyal",
+          "score": 0.7294879979555896,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:guitar",
+          "name": "Guitar",
+          "score": 0.7294629086685711,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:vocals",
+          "name": "Vocals",
+          "score": 0.7292142656792078,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:music:qloo:melodic",
+          "name": "Melodic",
+          "score": 0.7276506649002475,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:style:qloo:expressive",
+          "name": "Expressive",
+          "score": 0.7258147361660902,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:introspective",
+          "name": "Introspective",
+          "score": 0.7207938952061154,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:emotive",
+          "name": "Emotive",
+          "score": 0.7177863274297716,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:melodic",
+          "name": "Melodic",
+          "score": 0.7144056562297311,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:4_4_meter",
+          "name": "4/4 Meter",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:back_beat",
+          "name": "Back Beat",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:dissonant",
+          "name": "Dissonant",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:dorian",
+          "name": "Dorian",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:eclectic",
+          "name": "Eclectic",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:expressive",
+          "name": "Expressive",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:major",
+          "name": "Major",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:minor",
+          "name": "Minor",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:mixolydian",
+          "name": "Mixolydian",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:political",
+          "name": "Political",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:rebellious",
+          "name": "Rebellious",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:romantic",
+          "name": "Romantic",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:social",
+          "name": "Social",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:syncopated",
+          "name": "Syncopated",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:triad",
+          "name": "Triad",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:american_folk",
+          "name": "American Folk",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:appalachian",
+          "name": "Appalachian",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:bluegrass",
+          "name": "Bluegrass",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:blues",
+          "name": "Blues",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:cajun",
+          "name": "Cajun",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:country",
+          "name": "Country",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:electric_blues",
+          "name": "Electric Blues",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:gospel",
+          "name": "Gospel",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:hawaiian",
+          "name": "Hawaiian",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:jazz",
+          "name": "Jazz",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:marches",
+          "name": "Marches",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:new_mexico",
+          "name": "New Mexico",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:old_time",
+          "name": "Old Time",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:ragtime",
+          "name": "Ragtime",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:red_dirt",
+          "name": "Red Dirt",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:soul",
+          "name": "Soul",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:southern_gospel",
+          "name": "Southern Gospel",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:spirituals",
+          "name": "Spirituals",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:tejano",
+          "name": "Tejano",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:western",
+          "name": "Western",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:western_swing",
+          "name": "Western Swing",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:work_songs",
+          "name": "Work Songs",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:keyboards",
+          "name": "Keyboards",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:piano",
+          "name": "Piano",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:vocals",
+          "name": "Vocals",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:argentina",
+          "name": "Argentina",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:armenia",
+          "name": "Armenia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:australia",
+          "name": "Australia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:azerbaijan",
+          "name": "Azerbaijan",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:bangladesh",
+          "name": "Bangladesh",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:belarus",
+          "name": "Belarus",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:belgium",
+          "name": "Belgium",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:bosnia_and_herzegovina",
+          "name": "Bosnia And Herzegovina",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:brazil",
+          "name": "Brazil",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:canada",
+          "name": "Canada",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:chile",
+          "name": "Chile",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:china",
+          "name": "China",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:colombia",
+          "name": "Colombia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:croatia",
+          "name": "Croatia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:cuba",
+          "name": "Cuba",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:denmark",
+          "name": "Denmark",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:dominican_republic",
+          "name": "Dominican Republic",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:ecuador",
+          "name": "Ecuador",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:estonia",
+          "name": "Estonia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:finland",
+          "name": "Finland",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:greece",
+          "name": "Greece",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:guatemala",
+          "name": "Guatemala",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:haiti",
+          "name": "Haiti",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:hungary",
+          "name": "Hungary",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:iceland",
+          "name": "Iceland",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:india",
+          "name": "India",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:indonesia",
+          "name": "Indonesia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:iran",
+          "name": "Iran",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:israel",
+          "name": "Israel",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:italy",
+          "name": "Italy",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:latvia",
+          "name": "Latvia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:lithuania",
+          "name": "Lithuania",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:malaysia",
+          "name": "Malaysia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:mexico",
+          "name": "Mexico",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:nepal",
+          "name": "Nepal",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:new_zealand",
+          "name": "New Zealand",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:norway",
+          "name": "Norway",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:pakistan",
+          "name": "Pakistan",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:palm_desert",
+          "name": "Palm Desert",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:peru",
+          "name": "Peru",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:philippines",
+          "name": "Philippines",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:poland",
+          "name": "Poland",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:portugal",
+          "name": "Portugal",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:puerto_rico",
+          "name": "Puerto Rico",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:romania",
+          "name": "Romania",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:russia",
+          "name": "Russia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:sahara_desert_region",
+          "name": "Sahara Desert Region",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:san_francisco",
+          "name": "San Francisco",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:seattle",
+          "name": "Seattle",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:serbia",
+          "name": "Serbia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:slovenia",
+          "name": "Slovenia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:south_korea",
+          "name": "South Korea",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:southern",
+          "name": "Southern",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:spain",
+          "name": "Spain",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:spanish_speaking_world",
+          "name": "Spanish-Speaking World",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:sri_lanka",
+          "name": "Sri Lanka",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:sweden",
+          "name": "Sweden",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:switzerland",
+          "name": "Switzerland",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:taiwan",
+          "name": "Taiwan",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:tatar",
+          "name": "Tatar",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:thailand",
+          "name": "Thailand",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:trndelag",
+          "name": "Trøndelag",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:turkey",
+          "name": "Turkey",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:ukraine",
+          "name": "Ukraine",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:uruguay",
+          "name": "Uruguay",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:venezuela",
+          "name": "Venezuela",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:yugoslavia",
+          "name": "Yugoslavia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:zambia",
+          "name": "Zambia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:rockabilly",
+          "name": "Rockabilly",
+          "score": 0.5621529762231378,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:instrument:music:synthesizer",
+          "name": "Synthesizer",
+          "score": 0.5621529762231378,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:region:qloo:ireland",
+          "name": "Ireland",
+          "score": 0.5621529762231378,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:4_4_time",
+          "name": "4/4 Time",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:artistic",
+          "name": "Artistic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:authentic",
+          "name": "Authentic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:catchy_melodies",
+          "name": "Catchy Melodies",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:diy",
+          "name": "DIY",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:emotional",
+          "name": "Emotional",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:experimental",
+          "name": "Experimental",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:melodic",
+          "name": "Melodic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:non_mainstream",
+          "name": "Non-mainstream",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:raw",
+          "name": "Raw",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:simple_chord_progressions",
+          "name": "Simple Chord Progressions",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:storytelling",
+          "name": "Storytelling",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:straightforward",
+          "name": "Straightforward",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:varied",
+          "name": "Varied",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:art_rock",
+          "name": "Art Rock",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:disco",
+          "name": "Disco",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:dub",
+          "name": "Dub",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:experimental_rock",
+          "name": "Experimental Rock",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:free_jazz",
+          "name": "Free Jazz",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:funk",
+          "name": "Funk",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:glam_rock",
+          "name": "Glam Rock",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:jangle_pop",
+          "name": "Jangle Pop",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:krautrock",
+          "name": "Krautrock",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:new_wave",
+          "name": "New Wave",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:post_punk",
+          "name": "Post Punk",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:power_pop",
+          "name": "Power Pop",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:punk_rock",
+          "name": "Punk Rock",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:instrument:music:bass_guitar",
+          "name": "Bass Guitar",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:instrument:music:keyboard",
+          "name": "Keyboard",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:region:qloo:brooklyn",
+          "name": "Brooklyn",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:instrument:music:bass",
+          "name": "Bass",
+          "score": 0.5553171372312103,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:diverse",
+          "name": "Diverse",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:energetic",
+          "name": "Energetic",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:folk",
+          "name": "Folk",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:region:qloo:manchester",
+          "name": "Manchester",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:instrument:music:drums",
+          "name": "Drums",
+          "score": 0.5467198784007994,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:instrument:music:guitar",
+          "name": "Guitar",
+          "score": 0.5467198784007994,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_kingdom",
+          "name": "United Kingdom",
+          "score": 0.5467198784007994,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_states",
+          "name": "United States",
+          "score": 0.5467198784007994,
+          "coveredCrowdActs": 4
+        }
+      ],
+      "standing": {
+        "caption": "Qloo popularity rank",
+        "candidatePercentile": 87.1,
+        "crowdMedianPercentile": 100,
+        "crowdSample": 4,
+        "deltaPoints": -12.9,
+        "label": "below",
+        "evidenceRefs": [
+          "ev-bd7ca2f7d684",
+          "ev-2a7b5dc88692",
+          "ev-13ee92ba003f",
+          "ev-4a03692baf4f",
+          "ev-d7e139a2ae9b"
+        ]
+      },
+      "standingExplanation": {
+        "candidatePercentile": 87.1,
+        "crowdMedianPercentile": 100,
+        "crowdSample": 4,
+        "candidateEvidenceRef": "ev-bd7ca2f7d684",
+        "crowdEvidenceRefs": [
+          "ev-2a7b5dc88692",
+          "ev-13ee92ba003f",
+          "ev-4a03692baf4f",
+          "ev-d7e139a2ae9b"
+        ]
+      },
+      "cityStrengths": [],
+      "caveats": [],
+      "evidence": [
+        {
+          "id": "ev-bd7ca2f7d684",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Hindia",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "fea415778d8f3cd17c703f8ba2a10bb5026bdfd4bdd8b516f4b6617ee0d468d0",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-59d3dfc40cfb",
+          "endpoint": "/v2/insights/compare",
+          "redactedParams": {
+            "a.signal.interests.entities": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C,E7649B3E-6FFE-46A1-85F3-836D842B2AF0,6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1,D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+            "b.signal.interests.entities": "C344B97A-CBBC-4297-967A-D8EA5A703492",
+            "filter.type": "urn:entity:artist"
+          },
+          "responseDigest": "75e8fa470cb6ac1eb9e8ecfd26537d0c342d22e76081ef3bcdeb868429a4cfe4",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-2a7b5dc88692",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Radiohead",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "caa233e302d47522847b5a57d31e5864356c56273b9fce7bb611ebd8293770c6",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-13ee92ba003f",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Phoenix",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "da8586468d4fa386c9c199c555f4372f0acd570deba64881a4a48dee6fee3e5e",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-4a03692baf4f",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Sigur Rós",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "643ee3b966a07b7288ddd3e878b00f5411fcd93f6561f55027ed42ca05421d6c",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-d7e139a2ae9b",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Reality Club",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "e8678d222b99b217eadfa8eb94b4c141adab5a984b20ba01202808ad3c4c36ff",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "act": {
+        "qlooEntityId": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+        "name": "Khruangbin",
+        "matchConfidence": 1
+      },
+      "status": "scored",
+      "rank": 5,
+      "fit": {
+        "value": 57.4,
+        "sharedTags": 146,
+        "evidenceRefs": [
+          "ev-2edc41a608f7"
+        ]
+      },
+      "overlapTags": [
+        {
+          "tagId": "urn:tag:characteristic:music:innovative",
+          "name": "Innovative",
+          "score": 0.8175292270892687,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:rock",
+          "name": "Rock",
+          "score": 0.7310194588616812,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:france",
+          "name": "France",
+          "score": 0.7310188142577898,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:germany",
+          "name": "Germany",
+          "score": 0.7310188142577898,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:japan",
+          "name": "Japan",
+          "score": 0.7310188142577898,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:electronic",
+          "name": "Electronic",
+          "score": 0.7309812497448915,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:style:qloo:atmospheric",
+          "name": "Atmospheric",
+          "score": 0.7298048578645866,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:drums",
+          "name": "Drums",
+          "score": 0.7286457145129254,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:open_minded",
+          "name": "Open-minded",
+          "score": 0.7283645839586115,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:eclectic",
+          "name": "Eclectic",
+          "score": 0.7228080579066528,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:eclectic",
+          "name": "Eclectic",
+          "score": 0.7192750683900987,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:bass_guitar",
+          "name": "Bass Guitar",
+          "score": 0.7192423914531789,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:4_4_meter",
+          "name": "4/4 Meter",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:back_beat",
+          "name": "Back Beat",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:dissonant",
+          "name": "Dissonant",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:dorian",
+          "name": "Dorian",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:expressive",
+          "name": "Expressive",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:major",
+          "name": "Major",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:minor",
+          "name": "Minor",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:mixolydian",
+          "name": "Mixolydian",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:political",
+          "name": "Political",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:rebellious",
+          "name": "Rebellious",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:romantic",
+          "name": "Romantic",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:social",
+          "name": "Social",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:triad",
+          "name": "Triad",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:american_folk",
+          "name": "American Folk",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:appalachian",
+          "name": "Appalachian",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:bluegrass",
+          "name": "Bluegrass",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:cajun",
+          "name": "Cajun",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:hawaiian",
+          "name": "Hawaiian",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:new_mexico",
+          "name": "New Mexico",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:old_time",
+          "name": "Old Time",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:red_dirt",
+          "name": "Red Dirt",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:southern_gospel",
+          "name": "Southern Gospel",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:tejano",
+          "name": "Tejano",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:western",
+          "name": "Western",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:western_swing",
+          "name": "Western Swing",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:bass",
+          "name": "Bass",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:piano",
+          "name": "Piano",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:vocals",
+          "name": "Vocals",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:argentina",
+          "name": "Argentina",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:armenia",
+          "name": "Armenia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:azerbaijan",
+          "name": "Azerbaijan",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:bangladesh",
+          "name": "Bangladesh",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:belarus",
+          "name": "Belarus",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:belgium",
+          "name": "Belgium",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:bosnia_and_herzegovina",
+          "name": "Bosnia And Herzegovina",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:brazil",
+          "name": "Brazil",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:canada",
+          "name": "Canada",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:chile",
+          "name": "Chile",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:china",
+          "name": "China",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:colombia",
+          "name": "Colombia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:croatia",
+          "name": "Croatia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:cuba",
+          "name": "Cuba",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:denmark",
+          "name": "Denmark",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:dominican_republic",
+          "name": "Dominican Republic",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:ecuador",
+          "name": "Ecuador",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:estonia",
+          "name": "Estonia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:finland",
+          "name": "Finland",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:greece",
+          "name": "Greece",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:guatemala",
+          "name": "Guatemala",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:haiti",
+          "name": "Haiti",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:hungary",
+          "name": "Hungary",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:iceland",
+          "name": "Iceland",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:india",
+          "name": "India",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:indonesia",
+          "name": "Indonesia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:iran",
+          "name": "Iran",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:israel",
+          "name": "Israel",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:italy",
+          "name": "Italy",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:latvia",
+          "name": "Latvia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:lithuania",
+          "name": "Lithuania",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:malaysia",
+          "name": "Malaysia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:mexico",
+          "name": "Mexico",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:nepal",
+          "name": "Nepal",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:norway",
+          "name": "Norway",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:pakistan",
+          "name": "Pakistan",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:palm_desert",
+          "name": "Palm Desert",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:peru",
+          "name": "Peru",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:philippines",
+          "name": "Philippines",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:poland",
+          "name": "Poland",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:portugal",
+          "name": "Portugal",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:puerto_rico",
+          "name": "Puerto Rico",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:romania",
+          "name": "Romania",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:russia",
+          "name": "Russia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:sahara_desert_region",
+          "name": "Sahara Desert Region",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:seattle",
+          "name": "Seattle",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:serbia",
+          "name": "Serbia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:slovenia",
+          "name": "Slovenia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:south_korea",
+          "name": "South Korea",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:southern",
+          "name": "Southern",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:spain",
+          "name": "Spain",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:spanish_speaking_world",
+          "name": "Spanish-Speaking World",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:sri_lanka",
+          "name": "Sri Lanka",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:sweden",
+          "name": "Sweden",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:switzerland",
+          "name": "Switzerland",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:taiwan",
+          "name": "Taiwan",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:tatar",
+          "name": "Tatar",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:thailand",
+          "name": "Thailand",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:trndelag",
+          "name": "Trøndelag",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:ukraine",
+          "name": "Ukraine",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:uruguay",
+          "name": "Uruguay",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:venezuela",
+          "name": "Venezuela",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:yugoslavia",
+          "name": "Yugoslavia",
+          "score": 0.5621642581199403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:futurism",
+          "name": "Futurism",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:modernism",
+          "name": "Modernism",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:beat",
+          "name": "Beat",
+          "score": 0.5621529762231378,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:garage_rock",
+          "name": "Garage - Rock",
+          "score": 0.5621529762231378,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:region:qloo:ireland",
+          "name": "Ireland",
+          "score": 0.5621529762231378,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:region:qloo:los_angeles",
+          "name": "Los Angeles",
+          "score": 0.5621529762231378,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:diverse",
+          "name": "Diverse",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:funk",
+          "name": "Funk",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:instrument:music:guitar",
+          "name": "Guitar",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:region:qloo:manchester",
+          "name": "Manchester",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:ethereal",
+          "name": "Ethereal",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:danceable",
+          "name": "Danceable",
+          "score": 0.5621132800135609,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:moderate",
+          "name": "Moderate",
+          "score": 0.5620163560099327,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:eclectic",
+          "name": "Eclectic",
+          "score": 0.5553171372312103,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:gospel",
+          "name": "Gospel",
+          "score": 0.5553171372312103,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:keyboards",
+          "name": "Keyboards",
+          "score": 0.5553171372312103,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:australia",
+          "name": "Australia",
+          "score": 0.5553171372312103,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:new_zealand",
+          "name": "New Zealand",
+          "score": 0.5553171372312103,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:turkey",
+          "name": "Turkey",
+          "score": 0.5553171372312103,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:zambia",
+          "name": "Zambia",
+          "score": 0.5553171372312103,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:synthesizer",
+          "name": "Synthesizer",
+          "score": 0.5553070761102774,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:energetic",
+          "name": "Energetic",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:experimental",
+          "name": "Experimental",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:varied",
+          "name": "Varied",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:instrument:music:bass_guitar",
+          "name": "Bass Guitar",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:instrument:music:keyboard",
+          "name": "Keyboard",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:syncopated",
+          "name": "Syncopated",
+          "score": 0.5467289071954466,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:country",
+          "name": "Country",
+          "score": 0.5467289071954466,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:electric_blues",
+          "name": "Electric Blues",
+          "score": 0.5467289071954466,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:work_songs",
+          "name": "Work Songs",
+          "score": 0.5467289071954466,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:san_francisco",
+          "name": "San Francisco",
+          "score": 0.5467289071954466,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:rockabilly",
+          "name": "Rockabilly",
+          "score": 0.5467203880022974,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electric_guitar",
+          "name": "Electric Guitar",
+          "score": 0.5467203880022974,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_kingdom",
+          "name": "United Kingdom",
+          "score": 0.5467198784007994,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:genre:music:blues",
+          "name": "Blues",
+          "score": 0.5399069768506538,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:jazz",
+          "name": "Jazz",
+          "score": 0.5399069768506538,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:marches",
+          "name": "Marches",
+          "score": 0.5399069768506538,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:ragtime",
+          "name": "Ragtime",
+          "score": 0.5399069768506538,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:soul",
+          "name": "Soul",
+          "score": 0.5399069768506538,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:spirituals",
+          "name": "Spirituals",
+          "score": 0.5399069768506538,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:folk",
+          "name": "Folk",
+          "score": 0.5398992539079497,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:instrument:music:drums",
+          "name": "Drums",
+          "score": 0.5398992539079497,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_states",
+          "name": "United States",
+          "score": 0.5398992539079497,
+          "coveredCrowdActs": 4
+        }
+      ],
+      "standing": {
+        "caption": "Qloo popularity rank",
+        "candidatePercentile": 99.2,
+        "crowdMedianPercentile": 100,
+        "crowdSample": 4,
+        "deltaPoints": -0.8,
+        "label": "similar",
+        "evidenceRefs": [
+          "ev-8117668aabbf",
+          "ev-2a7b5dc88692",
+          "ev-13ee92ba003f",
+          "ev-4a03692baf4f",
+          "ev-d7e139a2ae9b"
+        ]
+      },
+      "standingExplanation": {
+        "candidatePercentile": 99.2,
+        "crowdMedianPercentile": 100,
+        "crowdSample": 4,
+        "candidateEvidenceRef": "ev-8117668aabbf",
+        "crowdEvidenceRefs": [
+          "ev-2a7b5dc88692",
+          "ev-13ee92ba003f",
+          "ev-4a03692baf4f",
+          "ev-d7e139a2ae9b"
+        ]
+      },
+      "cityStrengths": [],
+      "caveats": [],
+      "evidence": [
+        {
+          "id": "ev-8117668aabbf",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Khruangbin",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "0ffd9a3894be0a0b1a93b93652aa7b77f697dded8162a2947e2718df09f2b7da",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-2edc41a608f7",
+          "endpoint": "/v2/insights/compare",
+          "redactedParams": {
+            "a.signal.interests.entities": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C,E7649B3E-6FFE-46A1-85F3-836D842B2AF0,6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1,D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+            "b.signal.interests.entities": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+            "filter.type": "urn:entity:artist"
+          },
+          "responseDigest": "009eec2f4a095e3a1e48aca9684d3e77f04731728362ac835c5afcd9327814e4",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-2a7b5dc88692",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Radiohead",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "caa233e302d47522847b5a57d31e5864356c56273b9fce7bb611ebd8293770c6",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-13ee92ba003f",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Phoenix",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "da8586468d4fa386c9c199c555f4372f0acd570deba64881a4a48dee6fee3e5e",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-4a03692baf4f",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Sigur Rós",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "643ee3b966a07b7288ddd3e878b00f5411fcd93f6561f55027ed42ca05421d6c",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-d7e139a2ae9b",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Reality Club",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "e8678d222b99b217eadfa8eb94b4c141adab5a984b20ba01202808ad3c4c36ff",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "createdAt": "2026-10-27T12:00:00.000Z"
+}

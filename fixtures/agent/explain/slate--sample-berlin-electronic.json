@@ -1,0 +1,3185 @@
+{
+  "id": "sample-berlin-electronic",
+  "room": {
+    "city": "Berlin",
+    "crowdActs": [
+      {
+        "qlooEntityId": "DB342083-22F9-4B2D-B6F4-414AAF35F217",
+        "name": "Apparat",
+        "matchConfidence": 1
+      },
+      {
+        "qlooEntityId": "36254E3F-20E4-4151-AC61-D753CA41F34A",
+        "name": "Moderat",
+        "matchConfidence": 1
+      },
+      {
+        "qlooEntityId": "2E869AD9-26C3-42BC-BEDF-8C20FA178765",
+        "name": "Modeselektor",
+        "matchConfidence": 1
+      },
+      {
+        "qlooEntityId": "CF0367C1-A537-47E7-9F4D-170AE1D1D6BB",
+        "name": "Hundreds",
+        "matchConfidence": 1
+      },
+      {
+        "qlooEntityId": "EC8C92D0-0FDC-4F08-848E-2CCAA4B73149",
+        "name": "Brandt Brauer Frick",
+        "matchConfidence": 1
+      },
+      {
+        "qlooEntityId": "20C1F23D-907B-42AA-B13C-F714142282CF",
+        "name": "Boys Noize",
+        "matchConfidence": 1
+      }
+    ]
+  },
+  "results": [
+    {
+      "act": {
+        "qlooEntityId": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+        "name": "Reality Club",
+        "matchConfidence": 1
+      },
+      "status": "scored",
+      "rank": 1,
+      "fit": {
+        "value": 60.6,
+        "sharedTags": 71,
+        "evidenceRefs": [
+          "ev-64d3455ec459"
+        ]
+      },
+      "overlapTags": [
+        {
+          "tagId": "urn:tag:genre:music:electronic",
+          "name": "Electronic",
+          "score": 0.7310181696529221,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:indie",
+          "name": "Indie",
+          "score": 0.7309812497448915,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:simple",
+          "name": "Simple",
+          "score": 0.7308593327062248,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:style:qloo:engaging",
+          "name": "Engaging",
+          "score": 0.7300645416298027,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:style:qloo:energetic",
+          "name": "Energetic",
+          "score": 0.7297273723004448,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:passionate",
+          "name": "Passionate",
+          "score": 0.7294993952774845,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:loyal",
+          "name": "Loyal",
+          "score": 0.7294879979555896,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:dedicated",
+          "name": "DedicateD",
+          "score": 0.7292621769827521,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:introspective",
+          "name": "Introspective",
+          "score": 0.7288650031144674,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:drums",
+          "name": "Drums",
+          "score": 0.7286457145129254,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:music:qloo:melodic",
+          "name": "Melodic",
+          "score": 0.7276506649002475,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:synthesizer",
+          "name": "Synthesizer",
+          "score": 0.7262261951626375,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:existentialism",
+          "name": "Existentialism",
+          "score": 0.7261112994874438,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:style:qloo:expressive",
+          "name": "Expressive",
+          "score": 0.7258147361660902,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:music:qloo:atmospheric",
+          "name": "Atmospheric",
+          "score": 0.725322327905514,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:introspection",
+          "name": "Introspection",
+          "score": 0.7251933819687276,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:emotive",
+          "name": "Emotive",
+          "score": 0.7177863274297716,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:melodic",
+          "name": "Melodic",
+          "score": 0.7144056562297311,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:atmospheric",
+          "name": "Atmospheric",
+          "score": 0.7107181492421121,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:emotions",
+          "name": "Emotions",
+          "score": 0.7057706331169088,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:experimental",
+          "name": "Experimental",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:classical",
+          "name": "Classical",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electric_guitar",
+          "name": "Electric Guitar",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:synthesizer",
+          "name": "Synthesizer",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:new_york_city",
+          "name": "New York City",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:4_4_time",
+          "name": "4/4 Time",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:artistic",
+          "name": "Artistic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:authentic",
+          "name": "Authentic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:catchy_melodies",
+          "name": "Catchy Melodies",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:diy",
+          "name": "DIY",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:emotional",
+          "name": "Emotional",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:energetic",
+          "name": "Energetic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:raw",
+          "name": "Raw",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:simple_chord_progressions",
+          "name": "Simple Chord Progressions",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:storytelling",
+          "name": "Storytelling",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:folk",
+          "name": "Folk",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:bass_guitar",
+          "name": "Bass Guitar",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:drums",
+          "name": "Drums",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:guitar",
+          "name": "Guitar",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:keyboard",
+          "name": "Keyboard",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:region:qloo:brooklyn",
+          "name": "Brooklyn",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:relaxed",
+          "name": "Relaxed",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:unobtrusive",
+          "name": "Unobtrusive",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:big_band",
+          "name": "Big Band",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:varied",
+          "name": "Varied",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:blues",
+          "name": "Blues",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:easy_listening",
+          "name": "Easy Listening",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:jazz",
+          "name": "Jazz",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:clear",
+          "name": "Clear",
+          "score": 0.5620925898416235,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:moderate",
+          "name": "Moderate",
+          "score": 0.5620925898416235,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:diverse",
+          "name": "Diverse",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:melodic",
+          "name": "Melodic",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:non_mainstream",
+          "name": "Non-mainstream",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:straightforward",
+          "name": "Straightforward",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:alternative_rock",
+          "name": "Alternative Rock",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:art_rock",
+          "name": "Art Rock",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:jangle_pop",
+          "name": "Jangle Pop",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:post_punk",
+          "name": "Post Punk",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:power_pop",
+          "name": "Power Pop",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:punk_rock",
+          "name": "Punk Rock",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:region:qloo:manchester",
+          "name": "Manchester",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:experimental_rock",
+          "name": "Experimental Rock",
+          "score": 0.5552981761017213,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:free_jazz",
+          "name": "Free Jazz",
+          "score": 0.5552981761017213,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:disco",
+          "name": "Disco",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:dub",
+          "name": "Dub",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:funk",
+          "name": "Funk",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:glam_rock",
+          "name": "Glam Rock",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:krautrock",
+          "name": "Krautrock",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:new_wave",
+          "name": "New Wave",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_kingdom",
+          "name": "United Kingdom",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_states",
+          "name": "United States",
+          "score": 0.5467286025433676,
+          "coveredCrowdActs": 6
+        }
+      ],
+      "standing": {
+        "caption": "Qloo popularity rank",
+        "candidatePercentile": 86.4,
+        "crowdMedianPercentile": 99.5,
+        "crowdSample": 6,
+        "deltaPoints": -13.1,
+        "label": "below",
+        "evidenceRefs": [
+          "ev-d7e139a2ae9b",
+          "ev-8556cc500837",
+          "ev-0dbb0807eda2",
+          "ev-5a9f5cfd0e20",
+          "ev-f7a47edb6876",
+          "ev-1e54bd5f9a51",
+          "ev-c016aca6368d"
+        ]
+      },
+      "standingExplanation": {
+        "candidatePercentile": 86.4,
+        "crowdMedianPercentile": 99.5,
+        "crowdSample": 6,
+        "candidateEvidenceRef": "ev-d7e139a2ae9b",
+        "crowdEvidenceRefs": [
+          "ev-8556cc500837",
+          "ev-0dbb0807eda2",
+          "ev-5a9f5cfd0e20",
+          "ev-f7a47edb6876",
+          "ev-1e54bd5f9a51",
+          "ev-c016aca6368d"
+        ]
+      },
+      "cityStrengths": [
+        {
+          "city": "Berlin",
+          "meanAffinityRank": 0.086,
+          "cellCount": 6,
+          "thinData": true,
+          "evidenceRefs": [
+            "ev-7cdd3f621ee3"
+          ]
+        },
+        {
+          "city": "Jakarta",
+          "meanAffinityRank": 0.78,
+          "cellCount": 686,
+          "thinData": false,
+          "evidenceRefs": [
+            "ev-86007bf903b2"
+          ]
+        },
+        {
+          "city": "Leipzig",
+          "meanAffinityRank": 0.07,
+          "cellCount": 1,
+          "thinData": true,
+          "evidenceRefs": [
+            "ev-434a5d7a2c43"
+          ]
+        },
+        {
+          "city": "London",
+          "meanAffinityRank": 0.108,
+          "cellCount": 44,
+          "thinData": false,
+          "evidenceRefs": [
+            "ev-674fce447bc5"
+          ]
+        }
+      ],
+      "caveats": [
+        {
+          "type": "thin-data",
+          "message": "Fewer than 15 Qloo heatmap cells back this city, so its strength is thin data.",
+          "subject": "Berlin"
+        },
+        {
+          "type": "thin-data",
+          "message": "Fewer than 15 Qloo heatmap cells back this city, so its strength is thin data.",
+          "subject": "Leipzig"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-d7e139a2ae9b",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Reality Club",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "e8678d222b99b217eadfa8eb94b4c141adab5a984b20ba01202808ad3c4c36ff",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-64d3455ec459",
+          "endpoint": "/v2/insights/compare",
+          "redactedParams": {
+            "a.signal.interests.entities": "DB342083-22F9-4B2D-B6F4-414AAF35F217,36254E3F-20E4-4151-AC61-D753CA41F34A,2E869AD9-26C3-42BC-BEDF-8C20FA178765,CF0367C1-A537-47E7-9F4D-170AE1D1D6BB,EC8C92D0-0FDC-4F08-848E-2CCAA4B73149,20C1F23D-907B-42AA-B13C-F714142282CF",
+            "b.signal.interests.entities": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992",
+            "filter.type": "urn:entity:artist"
+          },
+          "responseDigest": "130dba694985f93e3165e2da85cc7f3d94fa6c2347046f7814cb05497797f5ca",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-8556cc500837",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Apparat",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "7454da69a1e8281c21cac624b2236971e562578d43d3c2c038bae2784d1955b8",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-0dbb0807eda2",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Moderat",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "373c72b4b72768b0260b3b18f3214cc7691a2c7f85c4a0017886514bf4fdbde6",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-5a9f5cfd0e20",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Modeselektor",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "6906c5519225972424565fd9ac087407799971fb0911074dcc6565231f6ec2b9",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-f7a47edb6876",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Hundreds",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "86abe48c5fb1b00492e21c070aedf649b5e7bc65269e45c6576e06800f6ba6c3",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-1e54bd5f9a51",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Brandt Brauer Frick",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "cce1b0cdb37dceb936d2fa06eb2be54c13f63d76d3a2eaed466199a1558fcc79",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-c016aca6368d",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Boys Noize",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "21be31c280471811b652878e11e814dc97e05ff85e30968e7225e4a543ec164c",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-7cdd3f621ee3",
+          "endpoint": "/v2/insights",
+          "redactedParams": {
+            "filter.location.query": "Berlin",
+            "filter.type": "urn:heatmap",
+            "signal.interests.entities": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992"
+          },
+          "responseDigest": "f7a8875ffa6dd3b4f8e08872644cb0514aed2cb57fd64319e616265f66a248ee",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-674fce447bc5",
+          "endpoint": "/v2/insights",
+          "redactedParams": {
+            "filter.location.query": "London",
+            "filter.type": "urn:heatmap",
+            "signal.interests.entities": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992"
+          },
+          "responseDigest": "50df0df36c9b2dd471efe83a855378d3bcbd699e31fe433ca1872ffdd243d3a3",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-434a5d7a2c43",
+          "endpoint": "/v2/insights",
+          "redactedParams": {
+            "filter.location.query": "Leipzig",
+            "filter.type": "urn:heatmap",
+            "signal.interests.entities": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992"
+          },
+          "responseDigest": "a28839726e0fd7dfdc9722201301ce495cd691f2d8d4e83af5e022d8d0e31838",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-86007bf903b2",
+          "endpoint": "/v2/insights",
+          "redactedParams": {
+            "filter.location.query": "Jakarta",
+            "filter.type": "urn:heatmap",
+            "signal.interests.entities": "D717D5F9-262C-4CB0-82EE-BBCEB4B3C992"
+          },
+          "responseDigest": "2f26a6ac975b8aada6bdc8b60bb077ac864fe9075b44a1d96addf739ed74ba6f",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "act": {
+        "qlooEntityId": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+        "name": "Sigur Rós",
+        "matchConfidence": 1
+      },
+      "status": "scored",
+      "rank": 2,
+      "fit": {
+        "value": 60,
+        "sharedTags": 105,
+        "evidenceRefs": [
+          "ev-b10d6d1c4300"
+        ]
+      },
+      "overlapTags": [
+        {
+          "tagId": "urn:tag:genre:music:electronic",
+          "name": "Electronic",
+          "score": 0.7310181696529221,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:indie",
+          "name": "Indie",
+          "score": 0.7309812497448915,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:ambient",
+          "name": "Ambient",
+          "score": 0.7309048094984294,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:experimental",
+          "name": "Experimental",
+          "score": 0.7309048094984294,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:minimal",
+          "name": "Minimal",
+          "score": 0.7309048094984294,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:style:qloo:dynamic",
+          "name": "Dynamic",
+          "score": 0.7296042858489226,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:passionate",
+          "name": "Passionate",
+          "score": 0.7294993952774845,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:loyal",
+          "name": "Loyal",
+          "score": 0.7294879979555896,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:dedicated",
+          "name": "DedicateD",
+          "score": 0.7292621769827521,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:style:qloo:immersive",
+          "name": "Immersive",
+          "score": 0.7287005470971815,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:drums",
+          "name": "Drums",
+          "score": 0.7286457145129254,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:open_minded",
+          "name": "Open-minded",
+          "score": 0.7283645839586115,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:music:qloo:melodic",
+          "name": "Melodic",
+          "score": 0.7276506649002475,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:piano",
+          "name": "Piano",
+          "score": 0.7266074324413454,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:existentialism",
+          "name": "Existentialism",
+          "score": 0.7261112994874438,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:music:qloo:atmospheric",
+          "name": "Atmospheric",
+          "score": 0.725322327905514,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:nature",
+          "name": "Nature",
+          "score": 0.7251565333681654,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:style:qloo:visual",
+          "name": "Visual",
+          "score": 0.7226621604907328,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:isolation",
+          "name": "Isolation",
+          "score": 0.7214678274258481,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:music:qloo:experimental",
+          "name": "Experimental",
+          "score": 0.7212680677601709,
+          "coveredCrowdActs": 5
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:experimental",
+          "name": "Experimental",
+          "score": 0.7208427260181901,
+          "coveredCrowdActs": 5
+        },
+        {
+          "tagId": "urn:tag:style:qloo:experimental",
+          "name": "Experimental",
+          "score": 0.7196715681628065,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:melodic",
+          "name": "Melodic",
+          "score": 0.7144056562297311,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:atmospheric",
+          "name": "Atmospheric",
+          "score": 0.7107181492421121,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:emotions",
+          "name": "Emotions",
+          "score": 0.7057706331169088,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:style:qloo:ambient",
+          "name": "Ambient",
+          "score": 0.7054441724953975,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:experimental",
+          "name": "Experimental",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:avant_garde",
+          "name": "Avant Garde",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:classical",
+          "name": "Classical",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:futurism",
+          "name": "Futurism",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:modernism",
+          "name": "Modernism",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electric_guitar",
+          "name": "Electric Guitar",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:japan",
+          "name": "Japan",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:new_york_city",
+          "name": "New York City",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:4_4_time",
+          "name": "4/4 Time",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:artistic",
+          "name": "Artistic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:authentic",
+          "name": "Authentic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:catchy_melodies",
+          "name": "Catchy Melodies",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:diy",
+          "name": "DIY",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:emotional",
+          "name": "Emotional",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:energetic",
+          "name": "Energetic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:melodic",
+          "name": "Melodic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:raw",
+          "name": "Raw",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:simple_chord_progressions",
+          "name": "Simple Chord Progressions",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:storytelling",
+          "name": "Storytelling",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:straightforward",
+          "name": "Straightforward",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:folk",
+          "name": "Folk",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:bass_guitar",
+          "name": "Bass Guitar",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:drums",
+          "name": "Drums",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:guitar",
+          "name": "Guitar",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:keyboard",
+          "name": "Keyboard",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:region:qloo:brooklyn",
+          "name": "Brooklyn",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:atmospheric",
+          "name": "Atmospheric",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:calm",
+          "name": "Calm",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:contemplative",
+          "name": "Contemplative",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:ethereal",
+          "name": "Ethereal",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:peaceful",
+          "name": "Peaceful",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:relaxed",
+          "name": "Relaxed",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:repeated",
+          "name": "Repeated",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:slow",
+          "name": "Slow",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:soft",
+          "name": "Soft",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:sustained",
+          "name": "Sustained",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:unobtrusive",
+          "name": "Unobtrusive",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:unstructured",
+          "name": "Unstructured",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:acid_rock",
+          "name": "Acid Rock",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:big_band",
+          "name": "Big Band",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:jazz_fusion",
+          "name": "Jazz Fusion",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:minimalism",
+          "name": "Minimalism",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:minimalist",
+          "name": "Minimalist",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:musique_concrete",
+          "name": "Musique Concrete",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:rocksteady",
+          "name": "Rocksteady",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:romantic",
+          "name": "Romantic",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:ska",
+          "name": "Ska",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:tape_music",
+          "name": "Tape Music",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:flute",
+          "name": "Flute",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:piano",
+          "name": "Piano",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:strings",
+          "name": "Strings",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:jamaica",
+          "name": "Jamaica",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:varied",
+          "name": "Varied",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:drone",
+          "name": "Drone",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:easy_listening",
+          "name": "Easy Listening",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:impressionist",
+          "name": "Impressionist",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:reggae",
+          "name": "Reggae",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:minimal",
+          "name": "Minimal",
+          "score": 0.5620889219992051,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:textural",
+          "name": "Textural",
+          "score": 0.5620889219992051,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:diverse",
+          "name": "Diverse",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:synthesizer",
+          "name": "Synthesizer",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_states",
+          "name": "United States",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:non_mainstream",
+          "name": "Non-mainstream",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:alternative_rock",
+          "name": "Alternative Rock",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:art_rock",
+          "name": "Art Rock",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:jangle_pop",
+          "name": "Jangle Pop",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:post_punk",
+          "name": "Post Punk",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:power_pop",
+          "name": "Power Pop",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:punk_rock",
+          "name": "Punk Rock",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:region:qloo:manchester",
+          "name": "Manchester",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:disco",
+          "name": "Disco",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:glam_rock",
+          "name": "Glam Rock",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:new_wave",
+          "name": "New Wave",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:experimental_rock",
+          "name": "Experimental Rock",
+          "score": 0.5467128519832063,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:free_jazz",
+          "name": "Free Jazz",
+          "score": 0.5467128519832063,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:dub",
+          "name": "Dub",
+          "score": 0.5467018179497073,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:funk",
+          "name": "Funk",
+          "score": 0.5467018179497073,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:krautrock",
+          "name": "Krautrock",
+          "score": 0.5467018179497073,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_kingdom",
+          "name": "United Kingdom",
+          "score": 0.5467018179497073,
+          "coveredCrowdActs": 3
+        }
+      ],
+      "standing": {
+        "caption": "Qloo popularity rank",
+        "candidatePercentile": 100,
+        "crowdMedianPercentile": 99.5,
+        "crowdSample": 6,
+        "deltaPoints": 0.5,
+        "label": "similar",
+        "evidenceRefs": [
+          "ev-4a03692baf4f",
+          "ev-8556cc500837",
+          "ev-0dbb0807eda2",
+          "ev-5a9f5cfd0e20",
+          "ev-f7a47edb6876",
+          "ev-1e54bd5f9a51",
+          "ev-c016aca6368d"
+        ]
+      },
+      "standingExplanation": {
+        "candidatePercentile": 100,
+        "crowdMedianPercentile": 99.5,
+        "crowdSample": 6,
+        "candidateEvidenceRef": "ev-4a03692baf4f",
+        "crowdEvidenceRefs": [
+          "ev-8556cc500837",
+          "ev-0dbb0807eda2",
+          "ev-5a9f5cfd0e20",
+          "ev-f7a47edb6876",
+          "ev-1e54bd5f9a51",
+          "ev-c016aca6368d"
+        ]
+      },
+      "cityStrengths": [],
+      "caveats": [],
+      "evidence": [
+        {
+          "id": "ev-4a03692baf4f",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Sigur Rós",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "643ee3b966a07b7288ddd3e878b00f5411fcd93f6561f55027ed42ca05421d6c",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-b10d6d1c4300",
+          "endpoint": "/v2/insights/compare",
+          "redactedParams": {
+            "a.signal.interests.entities": "DB342083-22F9-4B2D-B6F4-414AAF35F217,36254E3F-20E4-4151-AC61-D753CA41F34A,2E869AD9-26C3-42BC-BEDF-8C20FA178765,CF0367C1-A537-47E7-9F4D-170AE1D1D6BB,EC8C92D0-0FDC-4F08-848E-2CCAA4B73149,20C1F23D-907B-42AA-B13C-F714142282CF",
+            "b.signal.interests.entities": "6F2C4E85-CE79-4645-BAB3-3DF7EB4F4AC1",
+            "filter.type": "urn:entity:artist"
+          },
+          "responseDigest": "e78868b19758f92fa911a2fb4c3cc42c6ecc78ba8b539ad248bdab61a27985cf",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-8556cc500837",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Apparat",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "7454da69a1e8281c21cac624b2236971e562578d43d3c2c038bae2784d1955b8",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-0dbb0807eda2",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Moderat",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "373c72b4b72768b0260b3b18f3214cc7691a2c7f85c4a0017886514bf4fdbde6",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-5a9f5cfd0e20",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Modeselektor",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "6906c5519225972424565fd9ac087407799971fb0911074dcc6565231f6ec2b9",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-f7a47edb6876",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Hundreds",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "86abe48c5fb1b00492e21c070aedf649b5e7bc65269e45c6576e06800f6ba6c3",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-1e54bd5f9a51",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Brandt Brauer Frick",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "cce1b0cdb37dceb936d2fa06eb2be54c13f63d76d3a2eaed466199a1558fcc79",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-c016aca6368d",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Boys Noize",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "21be31c280471811b652878e11e814dc97e05ff85e30968e7225e4a543ec164c",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "act": {
+        "qlooEntityId": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+        "name": "Radiohead",
+        "matchConfidence": 1
+      },
+      "status": "scored",
+      "rank": 3,
+      "fit": {
+        "value": 59.5,
+        "sharedTags": 86,
+        "evidenceRefs": [
+          "ev-70071b9e2c7d"
+        ]
+      },
+      "overlapTags": [
+        {
+          "tagId": "urn:tag:genre:music:electronic",
+          "name": "Electronic",
+          "score": 0.7310181696529221,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:indie",
+          "name": "Indie",
+          "score": 0.7309812497448915,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:style:qloo:dynamic",
+          "name": "Dynamic",
+          "score": 0.7296042858489226,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:passionate",
+          "name": "Passionate",
+          "score": 0.7294993952774845,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:loyal",
+          "name": "Loyal",
+          "score": 0.7294879979555896,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:vocals",
+          "name": "Vocals",
+          "score": 0.7292142656792078,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:innovative",
+          "name": "Innovative",
+          "score": 0.729138957311338,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:style:qloo:immersive",
+          "name": "Immersive",
+          "score": 0.7287005470971815,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:drums",
+          "name": "Drums",
+          "score": 0.7286457145129254,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:existentialism",
+          "name": "Existentialism",
+          "score": 0.7261112994874438,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:music:qloo:atmospheric",
+          "name": "Atmospheric",
+          "score": 0.725322327905514,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:eclectic",
+          "name": "Eclectic",
+          "score": 0.7228080579066528,
+          "coveredCrowdActs": 5
+        },
+        {
+          "tagId": "urn:tag:music:qloo:experimental",
+          "name": "Experimental",
+          "score": 0.7212680677601709,
+          "coveredCrowdActs": 5
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:technology",
+          "name": "Technology",
+          "score": 0.7210449864677335,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:experimental",
+          "name": "Experimental",
+          "score": 0.7208427260181901,
+          "coveredCrowdActs": 5
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:synthesizers",
+          "name": "Synthesizers",
+          "score": 0.7200397672255345,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:eclectic",
+          "name": "Eclectic",
+          "score": 0.7192750683900987,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:subgenre:qloo:experimental",
+          "name": "Experimental",
+          "score": 0.7145989548811168,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:atmospheric",
+          "name": "Atmospheric",
+          "score": 0.7107181492421121,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:synthetic",
+          "name": "Synthetic",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:technological",
+          "name": "Technological",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:avant_garde",
+          "name": "Avant Garde",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:classical",
+          "name": "Classical",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:futurism",
+          "name": "Futurism",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:modernism",
+          "name": "Modernism",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electric_piano",
+          "name": "Electric Piano",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electronic_oscillator",
+          "name": "Electronic Oscillator",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:hammond_organ",
+          "name": "Hammond Organ",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:theremin",
+          "name": "Theremin",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:berlin",
+          "name": "Berlin",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:paris",
+          "name": "Paris",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:tokyo",
+          "name": "Tokyo",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:4_4_time",
+          "name": "4/4 Time",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:artistic",
+          "name": "Artistic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:authentic",
+          "name": "Authentic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:catchy_melodies",
+          "name": "Catchy Melodies",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:diy",
+          "name": "DIY",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:emotional",
+          "name": "Emotional",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:melodic",
+          "name": "Melodic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:raw",
+          "name": "Raw",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:simple_chord_progressions",
+          "name": "Simple Chord Progressions",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:storytelling",
+          "name": "Storytelling",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:straightforward",
+          "name": "Straightforward",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:bass_guitar",
+          "name": "Bass Guitar",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:keyboard",
+          "name": "Keyboard",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:region:qloo:brooklyn",
+          "name": "Brooklyn",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:piano",
+          "name": "Piano",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:gospel",
+          "name": "Gospel",
+          "score": 0.5621357231591124,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:varied",
+          "name": "Varied",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:blues",
+          "name": "Blues",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:jazz",
+          "name": "Jazz",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:instrument:music:vocals",
+          "name": "Vocals",
+          "score": 0.5621127078365642,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:syncopated",
+          "name": "Syncopated",
+          "score": 0.5620889219992051,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:soul",
+          "name": "Soul",
+          "score": 0.5620889219992051,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:rock",
+          "name": "Rock",
+          "score": 0.562036001613614,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:experimental",
+          "name": "Experimental",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:innovative",
+          "name": "Innovative",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electric_guitar",
+          "name": "Electric Guitar",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:synthesizer",
+          "name": "Synthesizer",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:france",
+          "name": "France",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:germany",
+          "name": "Germany",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:japan",
+          "name": "Japan",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:new_york_city",
+          "name": "New York City",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:energetic",
+          "name": "Energetic",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:non_mainstream",
+          "name": "Non-mainstream",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:alternative_rock",
+          "name": "Alternative Rock",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:art_rock",
+          "name": "Art Rock",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:folk",
+          "name": "Folk",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:jangle_pop",
+          "name": "Jangle Pop",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:post_punk",
+          "name": "Post Punk",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:power_pop",
+          "name": "Power Pop",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:punk_rock",
+          "name": "Punk Rock",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:drums",
+          "name": "Drums",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:guitar",
+          "name": "Guitar",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:experimental_rock",
+          "name": "Experimental Rock",
+          "score": 0.5552981761017213,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:free_jazz",
+          "name": "Free Jazz",
+          "score": 0.5552981761017213,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:disco",
+          "name": "Disco",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:dub",
+          "name": "Dub",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:funk",
+          "name": "Funk",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:glam_rock",
+          "name": "Glam Rock",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:krautrock",
+          "name": "Krautrock",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:new_wave",
+          "name": "New Wave",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:region:qloo:manchester",
+          "name": "Manchester",
+          "score": 0.5467198784007994,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_kingdom",
+          "name": "United Kingdom",
+          "score": 0.5467018179497073,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:diverse",
+          "name": "Diverse",
+          "score": 0.5399067162608749,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_states",
+          "name": "United States",
+          "score": 0.5399067162608749,
+          "coveredCrowdActs": 6
+        }
+      ],
+      "standing": {
+        "caption": "Qloo popularity rank",
+        "candidatePercentile": 100,
+        "crowdMedianPercentile": 99.5,
+        "crowdSample": 6,
+        "deltaPoints": 0.5,
+        "label": "similar",
+        "evidenceRefs": [
+          "ev-2a7b5dc88692",
+          "ev-8556cc500837",
+          "ev-0dbb0807eda2",
+          "ev-5a9f5cfd0e20",
+          "ev-f7a47edb6876",
+          "ev-1e54bd5f9a51",
+          "ev-c016aca6368d"
+        ]
+      },
+      "standingExplanation": {
+        "candidatePercentile": 100,
+        "crowdMedianPercentile": 99.5,
+        "crowdSample": 6,
+        "candidateEvidenceRef": "ev-2a7b5dc88692",
+        "crowdEvidenceRefs": [
+          "ev-8556cc500837",
+          "ev-0dbb0807eda2",
+          "ev-5a9f5cfd0e20",
+          "ev-f7a47edb6876",
+          "ev-1e54bd5f9a51",
+          "ev-c016aca6368d"
+        ]
+      },
+      "cityStrengths": [],
+      "caveats": [],
+      "evidence": [
+        {
+          "id": "ev-2a7b5dc88692",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Radiohead",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "caa233e302d47522847b5a57d31e5864356c56273b9fce7bb611ebd8293770c6",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-70071b9e2c7d",
+          "endpoint": "/v2/insights/compare",
+          "redactedParams": {
+            "a.signal.interests.entities": "DB342083-22F9-4B2D-B6F4-414AAF35F217,36254E3F-20E4-4151-AC61-D753CA41F34A,2E869AD9-26C3-42BC-BEDF-8C20FA178765,CF0367C1-A537-47E7-9F4D-170AE1D1D6BB,EC8C92D0-0FDC-4F08-848E-2CCAA4B73149,20C1F23D-907B-42AA-B13C-F714142282CF",
+            "b.signal.interests.entities": "70CAE5BF-2F4C-445C-A3E5-4EDACFC3591C",
+            "filter.type": "urn:entity:artist"
+          },
+          "responseDigest": "652d2d3842c9906464006fe921f10a0d0a11e27f2e2410e8fa88aea51feb9d3d",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-8556cc500837",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Apparat",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "7454da69a1e8281c21cac624b2236971e562578d43d3c2c038bae2784d1955b8",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-0dbb0807eda2",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Moderat",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "373c72b4b72768b0260b3b18f3214cc7691a2c7f85c4a0017886514bf4fdbde6",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-5a9f5cfd0e20",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Modeselektor",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "6906c5519225972424565fd9ac087407799971fb0911074dcc6565231f6ec2b9",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-f7a47edb6876",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Hundreds",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "86abe48c5fb1b00492e21c070aedf649b5e7bc65269e45c6576e06800f6ba6c3",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-1e54bd5f9a51",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Brandt Brauer Frick",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "cce1b0cdb37dceb936d2fa06eb2be54c13f63d76d3a2eaed466199a1558fcc79",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-c016aca6368d",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Boys Noize",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "21be31c280471811b652878e11e814dc97e05ff85e30968e7225e4a543ec164c",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "act": {
+        "qlooEntityId": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+        "name": "Phoenix",
+        "matchConfidence": 1
+      },
+      "status": "scored",
+      "rank": 4,
+      "fit": {
+        "value": 58.8,
+        "sharedTags": 83,
+        "evidenceRefs": [
+          "ev-8ffcec8ce582"
+        ]
+      },
+      "overlapTags": [
+        {
+          "tagId": "urn:tag:genre:music:electronic",
+          "name": "Electronic",
+          "score": 0.7310181696529221,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:indie",
+          "name": "Indie",
+          "score": 0.7309812497448915,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:style:qloo:engaging",
+          "name": "Engaging",
+          "score": 0.7300645416298027,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:style:qloo:energetic",
+          "name": "Energetic",
+          "score": 0.7297273723004448,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:passionate",
+          "name": "Passionate",
+          "score": 0.7294993952774845,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:dedicated",
+          "name": "DedicateD",
+          "score": 0.7292621769827521,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:vocals",
+          "name": "Vocals",
+          "score": 0.7292142656792078,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:innovative",
+          "name": "Innovative",
+          "score": 0.729138957311338,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:drums",
+          "name": "Drums",
+          "score": 0.7286457145129254,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:music:qloo:melodic",
+          "name": "Melodic",
+          "score": 0.7276506649002475,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:eclectic",
+          "name": "Eclectic",
+          "score": 0.7228080579066528,
+          "coveredCrowdActs": 5
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:synthesizers",
+          "name": "Synthesizers",
+          "score": 0.7200397672255345,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:theme:qloo:urban_life",
+          "name": "Urban Life",
+          "score": 0.717950155630509,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:melodic",
+          "name": "Melodic",
+          "score": 0.7144056562297311,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:synthetic",
+          "name": "Synthetic",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:technological",
+          "name": "Technological",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:avant_garde",
+          "name": "Avant Garde",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:futurism",
+          "name": "Futurism",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:modernism",
+          "name": "Modernism",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electric_guitar",
+          "name": "Electric Guitar",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electric_piano",
+          "name": "Electric Piano",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electronic_oscillator",
+          "name": "Electronic Oscillator",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:hammond_organ",
+          "name": "Hammond Organ",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:synthesizer",
+          "name": "Synthesizer",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:theremin",
+          "name": "Theremin",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:berlin",
+          "name": "Berlin",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:new_york_city",
+          "name": "New York City",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:tokyo",
+          "name": "Tokyo",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:4_4_time",
+          "name": "4/4 Time",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:artistic",
+          "name": "Artistic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:authentic",
+          "name": "Authentic",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:catchy_melodies",
+          "name": "Catchy Melodies",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:diy",
+          "name": "DIY",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:emotional",
+          "name": "Emotional",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:non_mainstream",
+          "name": "Non-mainstream",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:raw",
+          "name": "Raw",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:simple_chord_progressions",
+          "name": "Simple Chord Progressions",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:storytelling",
+          "name": "Storytelling",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:straightforward",
+          "name": "Straightforward",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:alternative_rock",
+          "name": "Alternative Rock",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:art_rock",
+          "name": "Art Rock",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:jangle_pop",
+          "name": "Jangle Pop",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:post_punk",
+          "name": "Post Punk",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:power_pop",
+          "name": "Power Pop",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:punk_rock",
+          "name": "Punk Rock",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:bass_guitar",
+          "name": "Bass Guitar",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:keyboard",
+          "name": "Keyboard",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:region:qloo:brooklyn",
+          "name": "Brooklyn",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:experimental_rock",
+          "name": "Experimental Rock",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:genre:music:free_jazz",
+          "name": "Free Jazz",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:danceable",
+          "name": "Danceable",
+          "score": 0.5621357231591124,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:gospel",
+          "name": "Gospel",
+          "score": 0.5621357231591124,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:blues",
+          "name": "Blues",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:disco",
+          "name": "Disco",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:dub",
+          "name": "Dub",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:funk",
+          "name": "Funk",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:glam_rock",
+          "name": "Glam Rock",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:jazz",
+          "name": "Jazz",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:krautrock",
+          "name": "Krautrock",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:new_wave",
+          "name": "New Wave",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:instrument:music:vocals",
+          "name": "Vocals",
+          "score": 0.5621127078365642,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:dynamic",
+          "name": "Dynamic",
+          "score": 0.5620889219992051,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:soul",
+          "name": "Soul",
+          "score": 0.5620889219992051,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:rock",
+          "name": "Rock",
+          "score": 0.562036001613614,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:experimental",
+          "name": "Experimental",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:innovative",
+          "name": "Innovative",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:classical",
+          "name": "Classical",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:germany",
+          "name": "Germany",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:japan",
+          "name": "Japan",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:paris",
+          "name": "Paris",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:energetic",
+          "name": "Energetic",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:melodic",
+          "name": "Melodic",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:drums",
+          "name": "Drums",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:region:qloo:manchester",
+          "name": "Manchester",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:piano",
+          "name": "Piano",
+          "score": 0.5552981761017213,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:varied",
+          "name": "Varied",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_kingdom",
+          "name": "United Kingdom",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:syncopated",
+          "name": "Syncopated",
+          "score": 0.5552499532041948,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:diverse",
+          "name": "Diverse",
+          "score": 0.5467286025433676,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:france",
+          "name": "France",
+          "score": 0.5467286025433676,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_states",
+          "name": "United States",
+          "score": 0.5467286025433676,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:folk",
+          "name": "Folk",
+          "score": 0.5467198784007994,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:guitar",
+          "name": "Guitar",
+          "score": 0.5467198784007994,
+          "coveredCrowdActs": 1
+        }
+      ],
+      "standing": {
+        "caption": "Qloo popularity rank",
+        "candidatePercentile": 100,
+        "crowdMedianPercentile": 99.5,
+        "crowdSample": 6,
+        "deltaPoints": 0.5,
+        "label": "similar",
+        "evidenceRefs": [
+          "ev-13ee92ba003f",
+          "ev-8556cc500837",
+          "ev-0dbb0807eda2",
+          "ev-5a9f5cfd0e20",
+          "ev-f7a47edb6876",
+          "ev-1e54bd5f9a51",
+          "ev-c016aca6368d"
+        ]
+      },
+      "standingExplanation": {
+        "candidatePercentile": 100,
+        "crowdMedianPercentile": 99.5,
+        "crowdSample": 6,
+        "candidateEvidenceRef": "ev-13ee92ba003f",
+        "crowdEvidenceRefs": [
+          "ev-8556cc500837",
+          "ev-0dbb0807eda2",
+          "ev-5a9f5cfd0e20",
+          "ev-f7a47edb6876",
+          "ev-1e54bd5f9a51",
+          "ev-c016aca6368d"
+        ]
+      },
+      "cityStrengths": [],
+      "caveats": [],
+      "evidence": [
+        {
+          "id": "ev-13ee92ba003f",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Phoenix",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "da8586468d4fa386c9c199c555f4372f0acd570deba64881a4a48dee6fee3e5e",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-8ffcec8ce582",
+          "endpoint": "/v2/insights/compare",
+          "redactedParams": {
+            "a.signal.interests.entities": "DB342083-22F9-4B2D-B6F4-414AAF35F217,36254E3F-20E4-4151-AC61-D753CA41F34A,2E869AD9-26C3-42BC-BEDF-8C20FA178765,CF0367C1-A537-47E7-9F4D-170AE1D1D6BB,EC8C92D0-0FDC-4F08-848E-2CCAA4B73149,20C1F23D-907B-42AA-B13C-F714142282CF",
+            "b.signal.interests.entities": "E7649B3E-6FFE-46A1-85F3-836D842B2AF0",
+            "filter.type": "urn:entity:artist"
+          },
+          "responseDigest": "ea4ef2622bbced6c68fa386530b387a847d17e90cb2f2152f8d587fc76a764d6",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-8556cc500837",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Apparat",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "7454da69a1e8281c21cac624b2236971e562578d43d3c2c038bae2784d1955b8",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-0dbb0807eda2",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Moderat",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "373c72b4b72768b0260b3b18f3214cc7691a2c7f85c4a0017886514bf4fdbde6",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-5a9f5cfd0e20",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Modeselektor",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "6906c5519225972424565fd9ac087407799971fb0911074dcc6565231f6ec2b9",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-f7a47edb6876",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Hundreds",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "86abe48c5fb1b00492e21c070aedf649b5e7bc65269e45c6576e06800f6ba6c3",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-1e54bd5f9a51",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Brandt Brauer Frick",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "cce1b0cdb37dceb936d2fa06eb2be54c13f63d76d3a2eaed466199a1558fcc79",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-c016aca6368d",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Boys Noize",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "21be31c280471811b652878e11e814dc97e05ff85e30968e7225e4a543ec164c",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "act": {
+        "qlooEntityId": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+        "name": "Khruangbin",
+        "matchConfidence": 1
+      },
+      "status": "scored",
+      "rank": 5,
+      "fit": {
+        "value": 58.1,
+        "sharedTags": 46,
+        "evidenceRefs": [
+          "ev-61bcda716d94"
+        ]
+      },
+      "overlapTags": [
+        {
+          "tagId": "urn:tag:genre:music:electronic",
+          "name": "Electronic",
+          "score": 0.7310181696529221,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:adventurous",
+          "name": "Adventurous",
+          "score": 0.7288946854719067,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:qloo:drums",
+          "name": "Drums",
+          "score": 0.7286457145129254,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:open_minded",
+          "name": "Open-minded",
+          "score": 0.7283645839586115,
+          "coveredCrowdActs": 4
+        },
+        {
+          "tagId": "urn:tag:music:qloo:eclectic",
+          "name": "Eclectic",
+          "score": 0.7244327559789688,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:audience:qloo:eclectic",
+          "name": "Eclectic",
+          "score": 0.7228080579066528,
+          "coveredCrowdActs": 5
+        },
+        {
+          "tagId": "urn:tag:artist:qloo:eclectic",
+          "name": "Eclectic",
+          "score": 0.7192750683900987,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:diverse",
+          "name": "Diverse",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:futurism",
+          "name": "Futurism",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:modernism",
+          "name": "Modernism",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:france",
+          "name": "France",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:germany",
+          "name": "Germany",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:japan",
+          "name": "Japan",
+          "score": 0.5621638546722033,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:guitar",
+          "name": "Guitar",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:region:qloo:manchester",
+          "name": "Manchester",
+          "score": 0.5621523013612134,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:unconventional",
+          "name": "Unconventional",
+          "score": 0.5621462642709403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:london",
+          "name": "London",
+          "score": 0.5621462642709403,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:ethereal",
+          "name": "Ethereal",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:instrument:music:piano",
+          "name": "Piano",
+          "score": 0.5621429963122094,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:danceable",
+          "name": "Danceable",
+          "score": 0.5621357231591124,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:soulful",
+          "name": "Soulful",
+          "score": 0.5621357231591124,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:groovy",
+          "name": "Groovy",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:funk",
+          "name": "Funk",
+          "score": 0.5621283839593989,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:instrument:music:vocals",
+          "name": "Vocals",
+          "score": 0.5621127078365642,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:region:qloo:detroit",
+          "name": "Detroit",
+          "score": 0.5621127078365642,
+          "coveredCrowdActs": 2
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:moderate",
+          "name": "Moderate",
+          "score": 0.5620925898416235,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:complex",
+          "name": "Complex",
+          "score": 0.5620889219992051,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:experimental",
+          "name": "Experimental",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:synthesizer",
+          "name": "Synthesizer",
+          "score": 0.555316777438981,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:energetic",
+          "name": "Energetic",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:bass_guitar",
+          "name": "Bass Guitar",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:keyboard",
+          "name": "Keyboard",
+          "score": 0.5553064742732575,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:gospel",
+          "name": "Gospel",
+          "score": 0.5552916899650894,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:abstract",
+          "name": "Abstract",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:varied",
+          "name": "Varied",
+          "score": 0.5552851449336877,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:innovative",
+          "name": "Innovative",
+          "score": 0.5467286025433676,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:instrument:music:electric_guitar",
+          "name": "Electric Guitar",
+          "score": 0.5467286025433676,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_kingdom",
+          "name": "United Kingdom",
+          "score": 0.5467018179497073,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:characteristic:music:syncopated",
+          "name": "Syncopated",
+          "score": 0.5466720197369077,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:rock",
+          "name": "Rock",
+          "score": 0.5466320593073034,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:region:qloo:united_states",
+          "name": "United States",
+          "score": 0.5399067162608749,
+          "coveredCrowdActs": 6
+        },
+        {
+          "tagId": "urn:tag:genre:music:folk",
+          "name": "Folk",
+          "score": 0.5398992539079497,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:instrument:music:drums",
+          "name": "Drums",
+          "score": 0.5398992539079497,
+          "coveredCrowdActs": 1
+        },
+        {
+          "tagId": "urn:tag:genre:music:blues",
+          "name": "Blues",
+          "score": 0.5398838055960495,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:jazz",
+          "name": "Jazz",
+          "score": 0.5398838055960495,
+          "coveredCrowdActs": 3
+        },
+        {
+          "tagId": "urn:tag:genre:music:soul",
+          "name": "Soul",
+          "score": 0.5398583172537592,
+          "coveredCrowdActs": 3
+        }
+      ],
+      "standing": {
+        "caption": "Qloo popularity rank",
+        "candidatePercentile": 99.2,
+        "crowdMedianPercentile": 99.5,
+        "crowdSample": 6,
+        "deltaPoints": -0.3,
+        "label": "similar",
+        "evidenceRefs": [
+          "ev-8117668aabbf",
+          "ev-8556cc500837",
+          "ev-0dbb0807eda2",
+          "ev-5a9f5cfd0e20",
+          "ev-f7a47edb6876",
+          "ev-1e54bd5f9a51",
+          "ev-c016aca6368d"
+        ]
+      },
+      "standingExplanation": {
+        "candidatePercentile": 99.2,
+        "crowdMedianPercentile": 99.5,
+        "crowdSample": 6,
+        "candidateEvidenceRef": "ev-8117668aabbf",
+        "crowdEvidenceRefs": [
+          "ev-8556cc500837",
+          "ev-0dbb0807eda2",
+          "ev-5a9f5cfd0e20",
+          "ev-f7a47edb6876",
+          "ev-1e54bd5f9a51",
+          "ev-c016aca6368d"
+        ]
+      },
+      "cityStrengths": [],
+      "caveats": [],
+      "evidence": [
+        {
+          "id": "ev-8117668aabbf",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Khruangbin",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "0ffd9a3894be0a0b1a93b93652aa7b77f697dded8162a2947e2718df09f2b7da",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-61bcda716d94",
+          "endpoint": "/v2/insights/compare",
+          "redactedParams": {
+            "a.signal.interests.entities": "DB342083-22F9-4B2D-B6F4-414AAF35F217,36254E3F-20E4-4151-AC61-D753CA41F34A,2E869AD9-26C3-42BC-BEDF-8C20FA178765,CF0367C1-A537-47E7-9F4D-170AE1D1D6BB,EC8C92D0-0FDC-4F08-848E-2CCAA4B73149,20C1F23D-907B-42AA-B13C-F714142282CF",
+            "b.signal.interests.entities": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+            "filter.type": "urn:entity:artist"
+          },
+          "responseDigest": "54bc6ed0336c6fd1a7373cf0476cc1b6c9392a0fd7f6afc3defcdcb5fab3de69",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-8556cc500837",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Apparat",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "7454da69a1e8281c21cac624b2236971e562578d43d3c2c038bae2784d1955b8",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-0dbb0807eda2",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Moderat",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "373c72b4b72768b0260b3b18f3214cc7691a2c7f85c4a0017886514bf4fdbde6",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-5a9f5cfd0e20",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Modeselektor",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "6906c5519225972424565fd9ac087407799971fb0911074dcc6565231f6ec2b9",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-f7a47edb6876",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Hundreds",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "86abe48c5fb1b00492e21c070aedf649b5e7bc65269e45c6576e06800f6ba6c3",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-1e54bd5f9a51",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Brandt Brauer Frick",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "cce1b0cdb37dceb936d2fa06eb2be54c13f63d76d3a2eaed466199a1558fcc79",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "id": "ev-c016aca6368d",
+          "endpoint": "/search",
+          "redactedParams": {
+            "query": "Boys Noize",
+            "take": "5",
+            "types": "urn:entity:artist"
+          },
+          "responseDigest": "21be31c280471811b652878e11e814dc97e05ff85e30968e7225e4a543ec164c",
+          "fetchedAt": "2026-10-27T12:00:00.000Z"
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "createdAt": "2026-10-27T12:00:00.000Z"
+}

@@ -19,3 +19,4 @@ export type { IntakeResult, SubmitRoom } from "./intake/schema";
 export { createIntakeReplay, loadIntakeTraces, TraceSchema } from "./intake/replay";
 export type { IntakeReplay, IntakeTrace } from "./intake/replay";
 export { MAX_PROPOSE_CALLS } from "./intake/tools";
+export * from "./explain/index";
