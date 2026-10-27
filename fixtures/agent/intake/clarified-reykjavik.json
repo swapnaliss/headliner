@@ -1,0 +1,51 @@
+{
+  "input": "We run a small venue and want to book some bands. Answer: it is in Reykjavik, our crowd likes Sigur Ros and Bjork, we are considering Radiohead and Phoenix.",
+  "clarified": true,
+  "model": "gpt-5-nano",
+  "recordedAt": "2026-10-27T12:41:07.926Z",
+  "turns": [
+    {
+      "content": null,
+      "toolCalls": [
+        {
+          "id": "call_AoEEGgLlIMBqLBBi601QSGVo",
+          "name": "submit_room",
+          "arguments": "{\"city\":\"Reykjavik\",\"crowdActs\":[\"Sigur Ros\",\"Bjork\"],\"candidateActs\":[\"Radiohead\",\"Phoenix\"],\"cities\":[]}"
+        }
+      ],
+      "usage": {
+        "inputTokens": 735,
+        "outputTokens": 50,
+        "reasoningTokens": 0,
+        "cachedInputTokens": 0,
+        "totalTokens": 785
+      },
+      "costUsd": 0.00005675,
+      "model": "gpt-5-nano",
+      "finishReason": "tool_calls"
+    }
+  ],
+  "outcome": {
+    "status": "room",
+    "mode": "agent",
+    "source": "model",
+    "usage": {
+      "turns": 1,
+      "tokens": 785,
+      "costUsd": 0.00005675
+    },
+    "room": {
+      "city": "Reykjavik",
+      "crowdActs": [
+        "Sigur Ros",
+        "Bjork"
+      ],
+      "candidateActs": [
+        "Radiohead",
+        "Phoenix"
+      ]
+    },
+    "cities": [],
+    "steps": 1
+  }
+}

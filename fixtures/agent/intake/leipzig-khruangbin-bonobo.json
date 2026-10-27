@@ -1,0 +1,48 @@
+{
+  "input": "200-cap venue in Leipzig, our regulars love Khruangbin and Bonobo",
+  "clarified": false,
+  "model": "gpt-5-nano",
+  "recordedAt": "2026-10-27T12:41:04.239Z",
+  "turns": [
+    {
+      "content": null,
+      "toolCalls": [
+        {
+          "id": "call_x8i9OqjB7zKDDknkBwTV3nh7",
+          "name": "submit_room",
+          "arguments": "{\"city\":\"Leipzig\",\"crowdActs\":[\"Khruangbin\",\"Bonobo\"],\"candidateActs\":[],\"cities\":[]}"
+        }
+      ],
+      "usage": {
+        "inputTokens": 742,
+        "outputTokens": 45,
+        "reasoningTokens": 0,
+        "cachedInputTokens": 0,
+        "totalTokens": 787
+      },
+      "costUsd": 0.000055100000000000004,
+      "model": "gpt-5-nano",
+      "finishReason": "tool_calls"
+    }
+  ],
+  "outcome": {
+    "status": "room",
+    "mode": "agent",
+    "source": "model",
+    "usage": {
+      "turns": 1,
+      "tokens": 787,
+      "costUsd": 0.000055100000000000004
+    },
+    "room": {
+      "city": "Leipzig",
+      "crowdActs": [
+        "Khruangbin",
+        "Bonobo"
+      ],
+      "candidateActs": []
+    },
+    "cities": [],
+    "steps": 1
+  }
+}
