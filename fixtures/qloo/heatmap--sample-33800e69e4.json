@@ -1,0 +1,175 @@
+{
+  "endpoint": "/v2/insights",
+  "params": {
+    "filter.location.query": "London",
+    "filter.type": "urn:heatmap",
+    "signal.interests.entities": "36254E3F-20E4-4151-AC61-D753CA41F34A"
+  },
+  "status": 200,
+  "recordedAt": "2026-10-27T06:59:08.118Z",
+  "latencyMs": 607,
+  "body": {
+    "success": true,
+    "results": {
+      "heatmap": [
+        {
+          "location": {
+            "latitude": 51.523132,
+            "longitude": -0.07141113,
+            "geohash": "gcpvn7"
+          },
+          "query": {
+            "affinity": 1,
+            "affinity_rank": 0.570034,
+            "popularity": 1,
+            "entity_artist_affinity_rank": 0.570034,
+            "entity_artist_affinity": 1
+          }
+        },
+        {
+          "location": {
+            "latitude": 51.512146,
+            "longitude": -0.115356445,
+            "geohash": "gcpvj3"
+          },
+          "query": {
+            "affinity": 0.8888888888888888,
+            "affinity_rank": 0.545593,
+            "popularity": 0.4444444444444444,
+            "entity_artist_affinity_rank": 0.545593,
+            "entity_artist_affinity": 0.8888888888888888
+          }
+        },
+        {
+          "location": {
+            "latitude": 51.506653,
+            "longitude": -0.115356445,
+            "geohash": "gcpvj2"
+          },
+          "query": {
+            "affinity": 0.7777777777777778,
+            "affinity_rank": 0.493304,
+            "popularity": 0.3333333333333333,
+            "entity_artist_affinity_rank": 0.493304,
+            "entity_artist_affinity": 0.7777777777777778
+          }
+        },
+        {
+          "location": {
+            "latitude": 51.528625,
+            "longitude": -0.08239746,
+            "geohash": "gcpvnh"
+          },
+          "query": {
+            "affinity": 0.6666666666666666,
+            "affinity_rank": 0.483868,
+            "popularity": 0.4444444444444444,
+            "entity_artist_affinity_rank": 0.483868,
+            "entity_artist_affinity": 0.6666666666666666
+          }
+        },
+        {
+          "location": {
+            "latitude": 51.51764,
+            "longitude": -0.12634277,
+            "geohash": "gcpvj4"
+          },
+          "query": {
+            "affinity": 0.5555555555555556,
+            "affinity_rank": 0.431864,
+            "popularity": 0.1111111111111111,
+            "entity_artist_affinity_rank": 0.431864,
+            "entity_artist_affinity": 0.5555555555555556
+          }
+        },
+        {
+          "location": {
+            "latitude": 51.512146,
+            "longitude": -0.1373291,
+            "geohash": "gcpvhc"
+          },
+          "query": {
+            "affinity": 0.4444444444444444,
+            "affinity_rank": 0.423986,
+            "popularity": 0.7777777777777778,
+            "entity_artist_affinity_rank": 0.423986,
+            "entity_artist_affinity": 0.4444444444444444
+          }
+        },
+        {
+          "location": {
+            "latitude": 51.512146,
+            "longitude": -0.12634277,
+            "geohash": "gcpvj1"
+          },
+          "query": {
+            "affinity": 0.3333333333333333,
+            "affinity_rank": 0.413802,
+            "popularity": 0.7777777777777778,
+            "entity_artist_affinity_rank": 0.413802,
+            "entity_artist_affinity": 0.3333333333333333
+          }
+        },
+        {
+          "location": {
+            "latitude": 51.53961,
+            "longitude": -0.14831543,
+            "geohash": "gcpvhw"
+          },
+          "query": {
+            "affinity": 0.2222222222222222,
+            "affinity_rank": 0.381497,
+            "popularity": 0.1111111111111111,
+            "entity_artist_affinity_rank": 0.381497,
+            "entity_artist_affinity": 0.2222222222222222
+          }
+        },
+        {
+          "location": {
+            "latitude": 51.506653,
+            "longitude": -0.12634277,
+            "geohash": "gcpvj0"
+          },
+          "query": {
+            "affinity": 0.1111111111111111,
+            "affinity_rank": 0.31054,
+            "popularity": 0.4444444444444444,
+            "entity_artist_affinity_rank": 0.31054,
+            "entity_artist_affinity": 0.1111111111111111
+          }
+        },
+        {
+          "location": {
+            "latitude": 51.50116,
+            "longitude": -0.115356445,
+            "geohash": "gcpuvr"
+          },
+          "query": {
+            "affinity": 0,
+            "affinity_rank": 0.310413,
+            "popularity": 0,
+            "entity_artist_affinity_rank": 0.310413,
+            "entity_artist_affinity": 0
+          }
+        }
+      ]
+    },
+    "query": {
+      "localities": {
+        "filter": [
+          {
+            "entity_id": "4F18635D-75D6-43EC-B8B9-8DFAEB8C5A29",
+            "name": "London",
+            "subtype": "urn:entity:locality",
+            "location": {
+              "lat": 51.50049650582372,
+              "lon": -0.10941546935661342
+            },
+            "popularity": 0.99987906,
+            "disambiguation": "London, London Borough of Lambeth, Inner London - East, Surrey, Greater London, England, United Kingdom"
+          }
+        ]
+      }
+    }
+  }
+}

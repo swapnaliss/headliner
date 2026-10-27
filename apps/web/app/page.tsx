@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { demoMode } from "../src/env";
+import { sampleLinks } from "../src/samples";
 import { RoomForm } from "../src/ui/RoomForm";
+import { SampleRooms } from "../src/ui/SampleRooms";
 
 export const metadata: Metadata = { title: "Room setup" };
 
@@ -15,6 +17,7 @@ export default function Home() {
               Headliner compares each act&apos;s audience with the artists your regulars already follow, using Qloo taste data, and shows the evidence behind every number.
             </p>
           </div>
+          <SampleRooms samples={sampleLinks()} />
           <RoomForm demoMode={demoMode() === "fixtures"} />
         </div>
         <div className="stack">

@@ -115,6 +115,7 @@ The wireframes use act names recorded in the project's sample fixtures (see ADR 
 | State | What the user sees | Behaviour |
 |---|---|---|
 | Empty (first visit) | Form empty, "Check matches" is `aria-disabled` with the reason "Add a city, at least 3 crowd acts and at least 3 candidate acts to continue." | Focus starts at the top of the page (skip link first). No auto-focus on a field, so screen readers read the h1 first. |
+| Sample rooms (M2-06) | Section "Try a sample room" between the lead and the form: one secondary-button link per pre-warmed room ("{venue}, {city}") and, under each, "Recorded real Qloo run, fetched {date}." | A link opens the stored slate at `/s/sample-{slug}` with zero Qloo calls and no budget spent. Plain anchors (no prefetch). Tab order: after the lead, before "Fill in the sample room". Hidden when the server has no sample rooms. |
 | Sample filled | Form fields and chips are filled with the recorded sample room | Focus moves to "Check matches"; status message "Sample room filled in: Berlin, 6 crowd acts, 3 candidate acts. Check the entries, then press Check matches." |
 | Typing / partially valid | Counters update ("4 of 6 added"). Reason line under the primary button updates to the first unmet requirement. | Counter text is not a live region (it would chatter); the reason line is `aria-describedby` on the button. |
 | Adding an act | New chip appended; add field cleared and keeps focus | Live region (polite): "{name} added to crowd acts. 4 of 6." |
@@ -143,6 +144,10 @@ Exact strings. Voice: plain, specific, no marketing. Wording rule: "audience-tas
 | h1 | "Rank the acts you are considering by audience-taste fit" |
 | Lead | "Headliner compares each act's audience with the artists your regulars already follow, using Qloo taste data, and shows the evidence behind every number." |
 | Sample button | "Fill in the sample room" |
+| Sample rooms heading | "Try a sample room" |
+| Sample rooms hint | "Open a finished slate straight away. These are saved runs: opening one makes no Qloo calls." |
+| Sample room link | "{venue name}, {city}" (for example "Berlin electronic club, Berlin") |
+| Sample room recorded line | "Recorded real Qloo run, fetched {d Mon yyyy}." |
 | Sample hint | "A Berlin room with six crowd acts and three candidates, using recorded Qloo responses." |
 | Section 1 heading | "Your room" |
 | City label / hint | "City (required)" / "The city your regular crowd lives in." |
