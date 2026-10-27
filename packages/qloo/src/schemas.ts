@@ -15,7 +15,8 @@ const searchTag = z.object({ tag_id: z.string(), name: z.string(), type: z.strin
 const searchEntity = z.object({
   entity_id: z.string().min(1),
   name: z.string(),
-  popularity: unit,
+  // Recorded fact (M3-04): some results omit `popularity` (e.g. result 2 for "Rich Brian"). Absent stays absent: it is never defaulted to a number.
+  popularity: unit.optional(),
   types: z.array(z.string()),
   disambiguation: z.string().optional(),
   // Recorded fact (M1-01): lower-ranked results omit `tags`; an absent list means "no tags", not a bad shape.
@@ -27,8 +28,8 @@ export const searchResponse = z.object({ results: z.array(searchEntity) });
 export interface SearchEntity {
   readonly entityId: string;
   readonly name: string;
-  /** Qloo popularity, 0..1 (the basis of "Qloo popularity rank" standing). */
-  readonly popularity: number;
+  /** Qloo popularity, 0..1 (the basis of "Qloo popularity rank" standing). Null when Qloo gave none for this result. */
+  readonly popularity: number | null;
   readonly types: readonly string[];
   readonly disambiguation: string | null;
   readonly description: string | null;
@@ -38,7 +39,7 @@ export function reduceSearch(raw: z.output<typeof searchResponse>): SearchEntity
   return raw.results.map((e) => ({
     entityId: e.entity_id,
     name: e.name,
-    popularity: e.popularity,
+    popularity: e.popularity ?? null,
     types: e.types,
     disambiguation: e.disambiguation ?? null,
     description: e.properties?.short_description ?? null,

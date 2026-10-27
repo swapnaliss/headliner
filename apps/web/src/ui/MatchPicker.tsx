@@ -15,7 +15,8 @@ export interface MatchPickerProps {
 }
 
 /** "Qloo popularity rank 83.1 of 100": the popularity score x 100, one decimal. */
-export function popularityText(popularity: number): string {
+export function popularityText(popularity: number | null): string {
+  if (popularity === null) return "Qloo popularity rank unavailable for this match";
   return `Qloo popularity rank ${(popularity * 100).toFixed(1)} of 100 (higher is better known on Qloo)`;
 }
 

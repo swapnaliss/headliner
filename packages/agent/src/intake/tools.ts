@@ -40,7 +40,8 @@ export function toolDefs(clarificationAllowed: boolean, submitOnly = false): Llm
 export interface ProposedMatch {
   readonly entity_id: string;
   readonly name: string;
-  readonly popularity: number;
+  /** Null when Qloo gave no popularity for the result: unavailable, never a number made up. */
+  readonly popularity: number | null;
 }
 
 export type ProposeOutcome =
