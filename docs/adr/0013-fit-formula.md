@@ -104,3 +104,8 @@ Measured result, reported honestly:
 
 ## Consequences / cost to reverse
 Low until the UI is built on it. Changing the per-tag rule or the scale changes every Fit number, so a change after M1-02 needs the fixtures' expected values and the sample table above updated together.
+
+## Update 2026-10-27 (M3-04): measured results on a same-genre recording
+Decision text above is unchanged. The missing same-genre recording noted under "Sanity check on recorded data" now exists: `fixtures/qloo/proof/` (130 live calls, no 429), reports in `docs/evidence/fit-sanity.md` and `docs/evidence/home-city-check.md`, replay with `npm run proof`. Sets were pre-registered in a commit that precedes the results.
+- Fit sanity: 11 of 12 same-genre candidates scored a higher Fit than their crowd's off-genre control (electronic crowd 4 of 4, hip-hop 4 of 4, jazz 3 of 4). The miss is Brad Mehldau against Metallica for the jazz crowd (58.1 against 58.3). Margins are small (jazz +0.1 to +0.8 among the candidates that outrank; the electronic crowd +1.3 to +4.0), consistent with the compressed score band described above. No formula change was made or proposed from this; whether to add a rescaling or a breadth term remains an owner decision.
+- Home-city check: 11 of 14 resolved acts (15 listed, 1 unresolved) have their documented home city as the city with the highest mean `affinity_rank` among 5 cities; the three misses are the three Seoul acts, whose strongest city in the set is Jakarta.
