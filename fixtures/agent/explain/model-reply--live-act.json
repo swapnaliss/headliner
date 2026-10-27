@@ -1,13 +1,13 @@
 {
-  "_note": "Live recording from the OpenAI API (key-free), unedited, scope act, second prompt. Kept as a real negative case: every number is a Slate figure, but it calls the 4 crowd acts 4 heatmap cells and drops a word, so groundingCheck rejects it and the page shows the template.",
+  "_note": "Live recording from the OpenAI API (key-free) of the structured reply for the sample-leipzig-indie slate; scope act; third prompt (plain-English statements, checked). Unedited. The page shows the template for this scope: the reply claims thin or limited data when no fact states a limit, so groundingCheck rejects it.",
   "recordedOn": "2026-10-27",
   "model": "gpt-5-nano",
   "scope": "act",
   "usage": {
-    "in": 739,
-    "out": 102,
+    "in": 758,
+    "out": 103,
     "reasoning": 0,
-    "costUsd": 0.00007775
+    "costUsd": 0.0000791
   },
-  "text": "{\"sentences\":[\"Audience-taste fit ranks Apparat  for audience-taste fit, with a fit of 60.6 out of 100.\",\"Apparat shares Japan, Innovative and France with your crowd.\",\"Apparat has a Qloo popularity rank of 99.7 out of 100 against a crowd median of 100.0.\",\"Only 4 Qloo heatmap cells back Leipzig, so its data is thin.\"]}"
+  "text": "{\"sentences\":[\"Audience-taste fit ranks Apparat 2, with a fit of 60.6 out of 100. \",\"Apparat shares Japan, Innovative, and France with your crowd. \",\"Apparat has a Qloo popularity rank of 99.7 out of 100 against a crowd median of 100.0. \",\"Note: data is drawn from 4 crowd acts; some data is thin or limited.\"]}"
 }

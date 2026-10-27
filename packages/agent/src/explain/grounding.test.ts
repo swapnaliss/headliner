@@ -71,6 +71,13 @@ describe("groundingCheck", () => {
     expect(groundingCheck("Only 10 Qloo heatmap cells back London, so its data is thin, and 4 crowd acts were compared.", slate)).toEqual({ ok: true });
   });
 
+  it("fails on a thin or limited data claim when no fact in scope states a limit", () => {
+    const text = "Apparat shares Japan with your crowd. Some data is thin or limited.";
+    expect(groundingCheck(text, slate, { dataLimitsStated: false })).toEqual({ ok: false, violations: [{ kind: "claim", token: "thin" }] });
+    expect(groundingCheck(text, slate, { dataLimitsStated: true })).toEqual({ ok: true });
+    expect(groundingCheck(text, slate)).toEqual({ ok: true });
+  });
+
   it("does not trip on plain words a booker would read", () => {
     expect(groundingCheck("Moderat has thin data in London, and a crowd median of 100.0 across 4 crowd acts.", slate)).toEqual({ ok: true });
   });

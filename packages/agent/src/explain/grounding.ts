@@ -213,7 +213,7 @@ function wordNumbers(text: string): { token: string; canon: string | null }[] {
 }
 
 /** Checks `text` against `slate`. Returns every violation found, so tests and evals can see why. */
-export function groundingCheck(text: string, slate: Slate): GroundingResult {
+export function groundingCheck(text: string, slate: Slate, options: { readonly dataLimitsStated?: boolean } = {}): GroundingResult {
   const violations: Violation[] = [];
   const bare = stripNames(text, namesIn(slate));
   const allowed = allowedNumbers(slate);
@@ -234,6 +234,11 @@ export function groundingCheck(text: string, slate: Slate): GroundingResult {
   if (internal) violations.push({ kind: "internal", token: internal[0] });
   for (const token of unknownNames(bare)) violations.push({ kind: "name", token });
   for (const token of misattributedCounts(text, slate)) violations.push({ kind: "claim", token });
+  // Thin, limited or missing data may be claimed only when the facts in scope state a limit (the caller says so; default: any).
+  if (options.dataLimitsStated === false) {
+    const limit = /\b(?:thin|limited|missing|sparse|incomplete|unreliable)\b/i.exec(bare);
+    if (limit) violations.push({ kind: "claim", token: limit[0] });
+  }
   const gap = /\S {2,}\S/.exec(text);
   if (gap) violations.push({ kind: "malformed", token: "double space" });
   const markup = MARKUP.exec(text);

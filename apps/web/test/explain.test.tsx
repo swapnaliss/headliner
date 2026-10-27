@@ -19,7 +19,7 @@ afterEach(() => {
 });
 
 const REPLIES = resolve(__dirname, "../../../fixtures/agent/explain");
-function reply(name: "live-slate" | "live-act" | "ungrounded"): string {
+function reply(name: "live-slate" | "live-act" | "live-act-rejected" | "ungrounded"): string {
   return (JSON.parse(readFileSync(resolve(REPLIES, `model-reply--${name}.json`), "utf8")) as { text: string }).text;
 }
 

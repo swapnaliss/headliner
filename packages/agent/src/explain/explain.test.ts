@@ -59,9 +59,14 @@ describe("explainSlate", () => {
     // A real model reply whose numbers are all Slate figures but which called the crowd size "4 heatmap cells" and dropped a word.
     const second = slate.results[1]!;
     const events: ExplainEvent[] = [];
-    const actOut = await explainSlate(slate, { model: stub({ text: loadReply("live-act") }), onEvent: (e) => void events.push(e) }, { actId: second.act.qlooEntityId });
+    const actOut = await explainSlate(slate, { model: stub({ text: loadReply("live-act-rejected") }), onEvent: (e) => void events.push(e) }, { actId: second.act.qlooEntityId });
     expect(actOut).toMatchObject({ source: "template", fallback: "ungrounded" });
-    expect(events[0]?.violations).toEqual(["claim", "malformed"]);
+    expect(events[0]?.violations).toEqual(["claim", "claim", "malformed"]); // wrong cell count, an unstated thin-data claim, a dropped word
+    // The final live act reply (third prompt): numbers fine, but it says "some data is thin or limited" when no fact in scope states a limit.
+    const finalEvents: ExplainEvent[] = [];
+    const finalOut = await explainSlate(slate, { model: stub({ text: loadReply("live-act") }), onEvent: (e) => void finalEvents.push(e) }, { actId: second.act.qlooEntityId });
+    expect(finalOut).toMatchObject({ source: "template", fallback: "ungrounded" });
+    expect(finalEvents[0]?.violations).toEqual(["claim"]);
   });
 
   it("falls back to the template when the model returns an ungrounded number", async () => {

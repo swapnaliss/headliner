@@ -123,7 +123,7 @@ async function explainWith(slate: Slate, deps: ExplainDeps, scope: FactScope, me
     const sentences = parseReply(reply.text);
     if (!sentences || sentences.length === 0) return fallback("invalid_json");
     const text = sentences.join("\n");
-    const checked = groundingCheck(text, slate);
+    const checked = groundingCheck(text, slate, { dataLimitsStated: facts.some((f) => f.kind === "caveat" || f.kind === "no-data" || (f.kind === "city" && f.thinData)) });
     if (!checked.ok) return fallback("ungrounded", checked.violations.map((v) => v.kind));
     deps.cache?.set(cacheKey, text);
     return { text, source: "llm" };
