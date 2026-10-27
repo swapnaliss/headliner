@@ -1,0 +1,13 @@
+{
+  "_note": "Live recording from the OpenAI API (key-free) of the structured reply for the sample-leipzig-indie slate; scope act. Unedited.",
+  "recordedOn": "2026-10-27",
+  "model": "gpt-5-nano",
+  "scope": "act",
+  "usage": {
+    "in": 429,
+    "out": 150,
+    "reasoning": 0,
+    "costUsd": 0.00008145
+  },
+  "text": "{\"sentences\":[\"audience-taste fit for Apparat is 60.6 according to the fit fact, with rank 2 and 93 sharedTags indicating overlap with the venue’s crowd.\",\"the Qloo popularity rank for Apparat is 99.7, and the crowd median is 100.0 based on a sample of 4.\",\"Apparat’s tastes show scores of 0.86 for Japan, 0.82 for Innovative, and 0.73 for France, which describe audience alignment across tags.\",\"Leipzig is the room city, with 5 candidates and 4 crowdActs already in the data, and 0 unscored.\"]}"
+}

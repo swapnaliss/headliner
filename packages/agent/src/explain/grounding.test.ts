@@ -53,7 +53,7 @@ describe("groundingCheck", () => {
   });
 
   it("passes on the recorded grounded reply and fails on the recorded ungrounded one", () => {
-    const grounded = (JSON.parse(loadReply("grounded")) as { sentences: string[] }).sentences.join("\n");
+    const grounded = (JSON.parse(loadReply("live-slate")) as { sentences: string[] }).sentences.join("\n");
     const ungrounded = (JSON.parse(loadReply("ungrounded")) as { sentences: string[] }).sentences.join("\n");
     expect(groundingCheck(grounded, slate)).toEqual({ ok: true });
     expect(violations(ungrounded)).toEqual(["number:91", "number:95"]);
