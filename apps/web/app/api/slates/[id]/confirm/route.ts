@@ -16,8 +16,8 @@ function invalidDetail(paths: readonly (readonly PropertyKey[])[]): string {
   return `Check: ${fields.join(", ")}.`;
 }
 
-export async function POST(request: Request, context: { params: Promise<{ runId: string }> }): Promise<Response> {
-  const { runId } = await context.params;
+export async function POST(request: Request, context: { params: Promise<{ id: string }> }): Promise<Response> {
+  const { id: runId } = await context.params;
   if (!isSlateId(runId)) return errorResponse("not_found");
 
   let raw: string;
