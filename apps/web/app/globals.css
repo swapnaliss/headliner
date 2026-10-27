@@ -860,7 +860,7 @@ table {
   align-items: center;
   font-size: var(--text-sm);
 }
-.back-link {
+.confirm-back {
   display: inline-flex;
   align-items: center;
   min-block-size: var(--target);

@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
 import { setRuntimeForTests } from "../src/config";
-import { POST as confirmPost } from "../app/api/slates/[runId]/confirm/route";
+import { POST as confirmPost } from "../app/api/slates/[id]/confirm/route";
 import { POST as createPost } from "../app/api/slates/route";
 import { fakeTransport, FIXTURE_DIR, fixtureTransport, post, ROOM, runtimeWith } from "./helpers";
 
@@ -49,7 +49,7 @@ function confirm(runId: string, body: unknown): Promise<Response> {
     headers: { "content-type": "application/json" },
     body: typeof body === "string" ? body : JSON.stringify(body),
   });
-  return confirmPost(request, { params: Promise.resolve({ runId }) });
+  return confirmPost(request, { params: Promise.resolve({ id: runId }) });
 }
 
 afterEach(() => setRuntimeForTests(undefined));
@@ -92,7 +92,7 @@ describe("ambiguous match blocks ranking until confirmed", () => {
     expect((await confirm(waiting.runId, body)).status).toBe(200);
     const again = await confirm(waiting.runId, body);
     expect(again.status).toBe(404);
-    expect(await again.json()).toEqual({ error: { code: "not_found", message: "This run is no longer available." } });
+    expect(await again.json()).toEqual({ error: { code: "not_found", message: "This slate or act was not found." } });
   });
 
   it("an all-exact request is not held", async () => {

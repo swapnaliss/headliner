@@ -163,7 +163,7 @@ export function ConfirmView({ runId, locationDisplay, rows, demoMode }: ConfirmV
       <div className="two-col">
         <main id="main" tabIndex={-1} className="stack">
           <p>
-            <a href="/" className="back-link">
+            <a href="/" className="confirm-back">
               Back to edit the room
             </a>
             <span className="field-hint back-note">Your confirmations are kept for names you do not change.</span>
