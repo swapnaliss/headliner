@@ -1,6 +1,6 @@
 import { EmptyState } from "../src/ui/EmptyState";
 
-export const metadata = { title: "Not found" };
+export const metadata = { title: { absolute: "Not found: Headliner" } };
 
 export default function NotFound() {
   return (
