@@ -397,6 +397,18 @@ a {
 .input::placeholder {
   color: var(--text-muted);
 }
+textarea.input {
+  resize: vertical;
+  line-height: 1.5;
+}
+.intake {
+  display: grid;
+  gap: var(--space-4);
+  padding-block-start: var(--space-3);
+}
+.intake-note {
+  scroll-margin-block: var(--space-6);
+}
 .input-row {
   display: flex;
   gap: var(--space-3);
