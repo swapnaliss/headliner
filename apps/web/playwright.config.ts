@@ -28,10 +28,16 @@ function pickerFixtures(): string {
   return target;
 }
 
+/** A fresh clone has no production build yet; build once (fixtures mode, no keys) before the first server starts. */
+const BUILD_IF_MISSING = "test -f .next/BUILD_ID || npx next build && ";
+
 const env = { DEMO_MODE: "fixtures", QLOO_API_KEY: "", OPENAI_API_KEY: "", DATABASE_URL: "" };
 
 export default defineConfig({
-  testDir: "./e2e",
+  // Absolute, so the same config also works when loaded through the repository root `playwright.config.ts`
+  // (the M3-06 gate runs `npx playwright test apps/web/tests/...` from the root).
+  testDir: __dirname,
+  testMatch: ["e2e/**/*.spec.ts", "tests/**/*.spec.ts"],
   fullyParallel: false,
   workers: 1,
   retries: 0,
@@ -42,14 +48,16 @@ export default defineConfig({
   },
   webServer: [
     {
-      command: `npx next start -p ${PORT} -H 127.0.0.1`,
+      command: `${BUILD_IF_MISSING}npx next start -p ${PORT} -H 127.0.0.1`,
+      cwd: __dirname,
       url: `http://127.0.0.1:${PORT}/api/health`,
       reuseExistingServer: false,
-      timeout: 60_000,
+      timeout: 240_000,
       env,
     },
     {
       command: `npx next start -p ${PICKER_PORT} -H 127.0.0.1`,
+      cwd: __dirname,
       url: `http://127.0.0.1:${PICKER_PORT}/api/health`,
       reuseExistingServer: false,
       timeout: 60_000,

@@ -35,11 +35,27 @@ export function CaveatChip({ caveat }: { caveat: Caveat }) {
   );
 }
 
+/** One "Thin data: A, B" chip for several cities instead of one chip per city; every sentence is kept. */
+export function mergeThinData(caveats: readonly Caveat[]): Caveat[] {
+  const thin = caveats.filter((c) => c.type === "thin-data" && c.subject);
+  if (thin.length < 2) return [...caveats];
+  const merged: Caveat = { type: "thin-data", subject: thin.map((c) => c.subject).join(", "), message: thin.map((c) => c.message).join(" ") };
+  const out: Caveat[] = [];
+  let placed = false;
+  for (const c of caveats) {
+    if (thin.includes(c)) {
+      if (!placed) out.push(merged);
+      placed = true;
+    } else out.push(c);
+  }
+  return out;
+}
+
 export function CaveatList({ caveats }: { caveats: readonly Caveat[] }) {
   if (caveats.length === 0) return null;
   return (
     <ul className="stack-sm" aria-label="Caveats">
-      {caveats.map((caveat, i) => (
+      {mergeThinData(caveats).map((caveat, i) => (
         <CaveatChip key={`${caveat.type}-${caveat.subject ?? ""}-${i}`} caveat={caveat} />
       ))}
     </ul>

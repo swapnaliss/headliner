@@ -397,6 +397,18 @@ a {
 .input::placeholder {
   color: var(--text-muted);
 }
+textarea.input {
+  resize: vertical;
+  line-height: 1.5;
+}
+.intake {
+  display: grid;
+  gap: var(--space-4);
+  padding-block-start: var(--space-3);
+}
+.intake-note {
+  scroll-margin-block: var(--space-6);
+}
 .input-row {
   display: flex;
   gap: var(--space-3);
@@ -514,8 +526,9 @@ a {
 }
 .rank {
   flex: none;
-  min-inline-size: 32px;
-  block-size: 32px;
+  min-inline-size: 40px;
+  block-size: 40px;
+  font-size: var(--text-md);
   padding-inline: var(--space-2);
   display: inline-grid;
   place-items: center;
@@ -550,7 +563,8 @@ a {
   color: var(--text-muted);
 }
 .fit-value {
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
+  line-height: 1.1;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
 }
@@ -935,6 +949,9 @@ table {
   padding: 0;
   overflow-wrap: anywhere;
 }
+.ev-row > [data-flat] {
+  margin-block-start: var(--space-2);
+}
 .ev-row > [data-label]::before {
   content: attr(data-label) ": ";
   font-weight: 600;
@@ -1007,7 +1024,10 @@ table {
     padding: var(--space-3);
     border-block-end: 1px solid var(--border-subtle);
   }
-  .ev-row > [data-label]::before {
+  .ev-row > [data-flat] {
+  margin-block-start: var(--space-2);
+}
+.ev-row > [data-label]::before {
     content: none;
   }
 }
@@ -1200,7 +1220,9 @@ table {
 .share-link .input {
   inline-size: 100%;
   min-inline-size: 0;
-  text-overflow: ellipsis;
+  /* The whole address stays readable at 375px: it wraps instead of being cut off (BL-01 M2-04 item 5). */
+  overflow-wrap: anywhere;
+  resize: none;
 }
 .share-status {
   min-block-size: 1.5em;

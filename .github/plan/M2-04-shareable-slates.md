@@ -41,7 +41,7 @@ The journey ends with "shareable slate link" and a buyer shares a slate with a c
 
 - `packages/slates/src/{store,id}.ts` and tests
 - `apps/web/app/s/[id]/page.tsx`, `not-found` state
-- `apps/web/middleware.ts` or header config, `apps/web/tests/security-headers.test.ts`
+- `apps/web/middleware.ts` or header config, `apps/web/test/security-headers.test.ts`
 - Copy-link component
 
 ## Validation Gate
@@ -49,7 +49,7 @@ The journey ends with "shareable slate link" and a buyer shares a slate with a c
 ```bash
 export DEMO_MODE=fixtures
 npm ci && npm run lint && npm run typecheck
-npx vitest run packages/slates apps/web/tests/security-headers.test.ts
+npx vitest run packages/slates apps/web/test/security-headers.test.ts
 npm run build
 npm run start -- -p 3108 & PID=$!; sleep 6
 ID=$(curl -s -X POST localhost:3108/api/slates -H 'content-type: application/json' -d @fixtures/requests/sample-room.json | jq -r '.id')

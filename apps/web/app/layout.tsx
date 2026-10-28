@@ -8,7 +8,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: { default: "Headliner", template: "%s: Headliner" },
-  description: "Audience-taste fit for independent venues. Aggregate affinity, not a ticket forecast.",
+  description: "Audience-taste fit for independent venues: aggregate affinity, not a ticket forecast.",
 };
 
 // Zoom is never disabled (no maximum-scale, no user-scalable=no).

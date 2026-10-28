@@ -93,7 +93,7 @@ test.describe("act detail", () => {
       for (const result of [results.find((r) => r.rank === 1), results.find((r) => r.rank === null)]) {
         await page.goto(`/slates/${id}/act/${encodeURIComponent(result?.act.qlooEntityId ?? "")}`);
         await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-        await page.locator("summary", { hasText: "Show parameters and digest" }).first().click().catch(() => undefined);
+        await page.locator("summary", { hasText: "Show parameters" }).first().click().catch(() => undefined);
         const axe = await new AxeBuilder({ page }).analyze();
         const bad = axe.violations.filter((v) => v.impact === "serious" || v.impact === "critical");
         expect(bad.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(" ")).join(", ")}`)).toEqual([]);

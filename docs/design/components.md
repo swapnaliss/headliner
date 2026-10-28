@@ -275,7 +275,7 @@ The lazy "other cities compared" list on act detail. Each city is a row (list), 
 | | |
 |---|---|
 | Element and role | `<section aria-labelledby>` with `<h2>`; rows in `<ul aria-label="Cities compared">`. The loading region is `role="status"`. |
-| Selection | The cities shown are the venue's city plus up to 4 others, taken from the slate's city list (ADR 0004: up to 5 heatmap calls per act, loaded lazily). They are not necessarily geographically near the venue; the section says so. |
+| Selection | The cities shown are the venue's city plus up to 4 others, made of fixed defaults (London, Leipzig, Jakarta, Tromsø) plus cities the reader adds, 5 in all (ADR 0004: up to 5 heatmap calls per act, loaded lazily; owner decision 2026-10-27, the slate has no city list). They are not necessarily geographically near the venue; the section says so. |
 | Props | `cities: { city: string; meanAffinityRank: number \| null; cellCount: number; thinData: boolean; isVenueCity: boolean; unavailable?: "zero-cells" }[]` (city is plain text), `status: "idle" \| "loading" \| "ready" \| "partial" \| "error"`, `progress: { done: number; total: number }`, `onRetry` |
 | Row content | city name; mean affinity rank bar with the value printed ("0.847"); "{n} cells"; ThinDataBadge when `thinData`; a "Your venue's city" label on the venue city. |
 | Order | cities with enough data sorted by mean affinity rank, highest first; then a sub-list headed "Thin data: read with caution" (cities under 15 cells), sorted by cell count then name. A single-cell city never sits among the ranked cities, even with a high mean. |

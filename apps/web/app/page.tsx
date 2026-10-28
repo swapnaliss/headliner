@@ -6,7 +6,8 @@ import { DemoLimits } from "../src/ui/DemoLimits";
 import { RoomForm } from "../src/ui/RoomForm";
 import { SampleRooms } from "../src/ui/SampleRooms";
 
-export const metadata: Metadata = { title: "Room setup" };
+// The root segment shares the layout, so its title template does not apply here: the full title is written out (A-04).
+export const metadata: Metadata = { title: { absolute: "Room setup: Headliner" } };
 
 export default function Home() {
   return (

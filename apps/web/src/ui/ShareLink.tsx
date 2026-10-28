@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Button } from "./Button";
-import { TextField } from "./TextField";
+import { TextArea } from "./TextArea";
 
 /**
  * The share link and its Copy link control (docs/design/screen-slate.md). `path` is built by the app
@@ -12,7 +12,7 @@ import { TextField } from "./TextField";
 export function ShareLink({ path }: { path: string }) {
   const [url, setUrl] = useState(path);
   const [message, setMessage] = useState("");
-  const input = useRef<HTMLInputElement>(null);
+  const input = useRef<HTMLTextAreaElement>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export function ShareLink({ path }: { path: string }) {
 
   return (
     <div className="share-link">
-      <TextField id="share-url" label="Link to this slate" value={url} readOnly inputRef={input} />
+      <TextArea id="share-url" label="Link to this slate" value={url} readOnly rows={2} inputRef={input} />
       <Button variant="secondary" onClick={() => void copy()}>
         Copy link
       </Button>

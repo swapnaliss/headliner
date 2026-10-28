@@ -95,7 +95,8 @@ describe("CityStrengthSection", () => {
     expect(rankedText[0]).not.toContain("Thin data");
     expect(rankedText[1]).toContain("London");
     expect(rankedText[1]).toContain("44 cells");
-    expect(rankedText[2]).toContain("Tromsø");
+    // The zero-cell city is last, in its own labelled group (BL-01 M2-03 item 4), not between ranked and thin cities.
+    expect(rankedText).toHaveLength(2);
 
     expect(screen.getByRole("heading", { level: 3, name: "Thin data: read with caution" })).toBeTruthy();
     const thin = within(screen.getByRole("list", { name: "Cities with thin data" })).getAllByRole("listitem");
@@ -105,7 +106,8 @@ describe("CityStrengthSection", () => {
     expect(thin[1]?.textContent).toContain("only 1 Qloo heatmap cell for this city");
     expect(thin[0]?.textContent).toContain("Your venue's city");
 
-    expect(screen.getByText(/No heatmap cells for/).textContent).toContain("Tromsø");
+    expect(screen.getByRole("heading", { level: 3, name: "No heatmap data" })).toBeTruthy();
+    expect(within(screen.getByRole("list", { name: "Cities with no heatmap data" })).getByText(/No heatmap cells for/).textContent).toContain("Tromsø");
     expect(screen.getByText("Qloo returned no usable audience data there.")).toBeTruthy();
   });
 

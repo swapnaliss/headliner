@@ -2,14 +2,15 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState, type ClipboardEvent, type FormEvent, type KeyboardEvent } from "react";
+import { applyProposal, type ProposedRoom } from "../intakeFlow";
 import { addNames, disabledReason, LIMITS, validateDraft, type FieldProblem, type ListKind } from "../roomRules";
 import { SAMPLE_ROOM } from "../sampleRoom";
 import { ActChip } from "./ActChip";
 import { Button } from "./Button";
 import { DEMO_LIMIT_CODE, errorCode } from "./errorCode";
 import { ErrorState } from "./ErrorState";
-import { ProgressStatus } from "./ProgressStatus";
-import { SkeletonList } from "./SkeletonCard";
+import { IntakeAssist } from "./IntakeAssist";
+import { Loading } from "./Loading";
 import { TextField } from "./TextField";
 import { isolate } from "./text";
 
@@ -44,6 +45,8 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
   const [problems, setProblems] = useState<FieldProblem[]>([]);
   const [phase, setPhase] = useState<Phase>("idle");
   const [failure, setFailure] = useState<string>("");
+  /** The daily limit cannot be retried before midnight UTC, so that error offers no "Try again" (M2-05 polish). */
+  const [limitReached, setLimitReached] = useState(false);
   const [message, setMessage] = useState("");
   const [seconds, setSeconds] = useState(0);
 
@@ -162,6 +165,18 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
     document.getElementById("rank-button")?.focus();
   }
 
+  /** The one-sentence description fills the same fields; the names still go through match confirmation. */
+  function fillFromDescription(room: ProposedRoom): string {
+    const applied = applyProposal({ city, crowd, candidates }, room);
+    setCity(applied.city);
+    setCrowd(applied.crowd);
+    setCandidates(applied.candidates);
+    setCrowdError(undefined);
+    setCandidateError(undefined);
+    setProblems([]);
+    return applied.note;
+  }
+
   async function submit(event?: FormEvent) {
     event?.preventDefault();
     if (busy) return;
@@ -172,6 +187,7 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
       return;
     }
     setPhase("submitting");
+    setLimitReached(false);
     setMessage(`Ranking ${candidates.length} ${candidates.length === 1 ? "act" : "acts"} for ${isolate(city.trim())}. The first run can take up to a minute.`);
     const controller = new AbortController();
     abortRef.current = controller;
@@ -185,7 +201,9 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
       });
       const body: unknown = await response.json().catch(() => null);
       if (!response.ok || typeof body !== "object" || body === null) {
-        setFailure(failureMessage(response.status, errorCode(body)));
+        const code = errorCode(body);
+        setLimitReached(response.status === 429 && code === DEMO_LIMIT_CODE);
+        setFailure(failureMessage(response.status, code));
         setPhase("error");
         return;
       }
@@ -310,37 +328,36 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
 
       {phase === "error" ? (
         <ErrorState
-          title="Could not rank these acts"
+          title={limitReached ? "Daily demo limit reached" : "Could not rank these acts"}
           message={failure}
           headingRef={errorHeadingRef}
           actions={
-            <Button variant="secondary" onClick={() => void submit()}>
-              Try again
-            </Button>
+            limitReached ? (
+              <a className="btn" data-variant="secondary" href="#sample-rooms">
+                Open a sample room
+              </a>
+            ) : (
+              <Button variant="secondary" onClick={() => void submit()}>
+                Try again
+              </Button>
+            )
           }
         />
       ) : null}
 
       {busy ? (
-        <section className="stack" aria-labelledby="progress-heading">
-          <h2 id="progress-heading">Ranking in progress</h2>
-          <ProgressStatus
-            message={`Ranking ${candidates.length} ${candidates.length === 1 ? "act" : "acts"}. Checking names with Qloo, then comparing audiences.`}
-            slowNotice={
-              seconds >= SLOW_AFTER_MS / 1000
-                ? `Still working. ${seconds} seconds so far. Qloo requests that are not saved yet take longer.`
-                : undefined
-            }
-          />
-          <SkeletonList count={Math.min(candidates.length, 3)} label="Acts being ranked" />
-        </section>
+        <Loading
+          id="progress-heading"
+          title="Ranking in progress"
+          message={`Ranking ${candidates.length} ${candidates.length === 1 ? "act" : "acts"}. Checking names with Qloo, then comparing audiences.`}
+          slowNotice={seconds >= SLOW_AFTER_MS / 1000 ? `Still working. ${seconds} seconds so far. Qloo requests that are not saved yet take longer.` : undefined}
+          skeletons={Math.min(candidates.length, 3)}
+          skeletonLabel="Acts being ranked"
+        />
       ) : null}
 
       <div className="stack-sm">
-        <details className="disclosure">
-          <summary>Describe it in one sentence</summary>
-          <p className="field-hint">Coming soon. The form above works on its own.</p>
-        </details>
+        <IntakeAssist demoMode={demoMode} onProposal={fillFromDescription} announce={setMessage} />
       </div>
 
       <div className="stack-sm">

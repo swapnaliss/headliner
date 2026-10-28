@@ -15,7 +15,7 @@ export function formatRecordedOn(day: string): string {
 export function SampleRooms({ samples }: { samples: readonly SampleLink[] }): ReactNode {
   if (samples.length === 0) return null;
   return (
-    <section className="stack-sm samples" aria-labelledby="samples-heading">
+    <section id="sample-rooms" className="stack-sm samples" aria-labelledby="samples-heading">
       <h2 id="samples-heading">Try a sample room</h2>
       <p className="field-hint">Open a finished slate straight away. These are saved runs: opening one makes no Qloo calls.</p>
       <ul className="samples-list">
@@ -28,6 +28,7 @@ export function SampleRooms({ samples }: { samples: readonly SampleLink[] }): Re
           </li>
         ))}
       </ul>
+      <p className="field-hint samples-or">Or enter your own room below.</p>
     </section>
   );
 }
