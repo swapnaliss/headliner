@@ -1,0 +1,21 @@
+{
+  "recordedAt": "2026-10-28T07:19:23.938Z",
+  "adapterVersion": "0.1.0",
+  "maxConcurrent": 3,
+  "liveCalls": 5,
+  "retries": 0,
+  "statusCounts": {
+    "200": 5
+  },
+  "rateLimited429": 0,
+  "wallSeconds": 6,
+  "byEndpoint": [
+    {
+      "endpoint": "/v2/insights",
+      "calls": 5,
+      "medianMs": 720,
+      "p95Ms": 3020,
+      "maxMs": 3020
+    }
+  ]
+}
