@@ -7,6 +7,8 @@
 import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { dirname, join, normalize } from "node:path";
+import console from "node:console";
+import process from "node:process";
 
 const FILES = ["README.md", "docs/architecture.md"];
 const tracked = new Set(execFileSync("git", ["ls-files"], { encoding: "utf8" }).split("\n").filter(Boolean));
