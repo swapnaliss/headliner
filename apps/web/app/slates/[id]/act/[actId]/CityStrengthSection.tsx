@@ -308,6 +308,32 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
                 <span className="skeleton-line" />
               </li>
             ))}
+            {groups.failed.map((r) => (
+              <li key={key(r.city)} className="city-row">
+                <div className="city-name">
+                  <span className="status" data-tone="error">
+                    <Icon name="error" />
+                    <span>
+                      Could not load <bdi className="entity">{r.city}</bdi>
+                    </span>
+                  </span>
+                </div>
+                <Button variant="secondary" onClick={() => retry(r.city)}>Try again</Button>
+              </li>
+            ))}
+          </ul>
+          {groups.thin.length > 0 ? (
+            <div className="stack-sm">
+              <h3>Thin data: read with caution</h3>
+              <ul className="city-list" aria-label="Cities with thin data">
+                {groups.thin.map(rowFor)}
+              </ul>
+            </div>
+          ) : null}
+          {groups.zero.length > 0 ? (
+            <div className="stack-sm">
+              <h3>No heatmap data</h3>
+              <ul className="city-list" aria-label="Cities with no heatmap data">
             {groups.zero.map((r) => (
               <li key={key(r.city)} className="city-row">
                 <div className="city-name">
@@ -328,25 +354,6 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
                 {evidenceLink(r.evidenceRefs)}
               </li>
             ))}
-            {groups.failed.map((r) => (
-              <li key={key(r.city)} className="city-row">
-                <div className="city-name">
-                  <span className="status" data-tone="error">
-                    <Icon name="error" />
-                    <span>
-                      Could not load <bdi className="entity">{r.city}</bdi>
-                    </span>
-                  </span>
-                </div>
-                <Button variant="secondary" onClick={() => retry(r.city)}>Try again</Button>
-              </li>
-            ))}
-          </ul>
-          {groups.thin.length > 0 ? (
-            <div className="stack-sm">
-              <h3>Thin data: read with caution</h3>
-              <ul className="city-list" aria-label="Cities with thin data">
-                {groups.thin.map(rowFor)}
               </ul>
             </div>
           ) : null}

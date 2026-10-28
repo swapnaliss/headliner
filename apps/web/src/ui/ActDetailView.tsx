@@ -62,7 +62,7 @@ function FitTile({ detail }: { detail: ActDetail }) {
               <span>Fit unavailable</span>
             </span>
           </p>
-          <p>{detail.fitUnavailableReason}</p>
+          {detail.status === "no-data" ? null : <p>{detail.fitUnavailableReason}</p>}
         </>
       )}
     </div>
@@ -99,9 +99,7 @@ function StandingTile({ detail }: { detail: ActDetail }) {
             </span>
           </p>
           <p>
-            {detail.status === "no-data"
-              ? "No Qloo popularity rank is shown because Qloo returned nothing usable for this act."
-              : "Qloo gave no popularity value for this act or for your crowd acts."}
+            {detail.status === "no-data" ? "See the note at the top of the page." : "Qloo gave no popularity value for this act or for your crowd acts."}
           </p>
         </>
       )}
@@ -109,17 +107,37 @@ function StandingTile({ detail }: { detail: ActDetail }) {
   );
 }
 
+type DetailCaveat = ActDetail["caveats"][number];
+
+/** One "Thin data: A, B" entry for several cities (screen-act-detail.md); every sentence is kept. */
+function mergeThinCities(caveats: readonly DetailCaveat[]): DetailCaveat[] {
+  const thin = caveats.filter((c) => c.code === "thin_city_data" && c.subject);
+  if (thin.length < 2) return [...caveats];
+  const merged = { ...(thin[0] as DetailCaveat), subject: thin.map((c) => c.subject).join(", "), message: thin.map((c) => c.message).join(" ") };
+  const out: DetailCaveat[] = [];
+  let placed = false;
+  for (const c of caveats) {
+    if (thin.includes(c)) {
+      if (!placed) out.push(merged);
+      placed = true;
+    } else out.push(c);
+  }
+  return out;
+}
+
 function CaveatsTile({ detail }: { detail: ActDetail }) {
+  // The no-data sentence is already the note at the top of the page; do not say it a third time here.
+  const shown = mergeThinCities(detail.caveats).filter((c) => !(detail.status === "no-data" && c.code === "no_data"));
   return (
     <div className="panel">
       <h2 id="caveats-tile" className="tile-title">
         Caveats
       </h2>
-      {detail.caveats.length === 0 ? (
-        <p>No caveats recorded for this act.</p>
+      {shown.length === 0 ? (
+        <p>{detail.status === "no-data" ? "No other caveats." : "No caveats recorded for this act."}</p>
       ) : (
         <ul className="stack-sm" aria-label="Caveats">
-          {detail.caveats.map((c, i) => (
+          {shown.map((c, i) => (
             <li key={`${c.code}-${c.subject ?? ""}-${i}`} className="stack-sm" data-caveat={c.code}>
               <span className="status" data-tone={c.code === "thin_city_data" ? "caution" : c.code === "low_match_confidence" ? "info" : "neutral"}>
                 <Icon name={c.code === "thin_city_data" ? "thin" : c.code === "low_match_confidence" ? "info" : "unavailable"} />
@@ -149,6 +167,7 @@ const CAVEAT_LABEL = {
 function WhyFit({ detail }: { detail: ActDetail }) {
   const { whyFit } = detail;
   const name = detail.act.name;
+  if (!whyFit && detail.status === "no-data") return null;
   if (!whyFit) {
     return (
       <section className="stack-sm" aria-labelledby="why-heading">
@@ -233,8 +252,8 @@ function EvidenceRow({ ev }: { ev: DetailEvidence }) {
         {ev.status === "ok" ? null : <span> (Failed)</span>}
       </td>
       <td data-label="Supports">{ev.supports.length > 0 ? ev.supports.join(", ") : "Context only"}</td>
-      <td data-label="Parameters (redacted) and response digest">
-        <EvidenceDetails summary="Show parameters and digest">
+      <td data-flat="true">
+        <EvidenceDetails summary="Show parameters (redacted) and response digest">
           <div className="stack-sm">
             <pre className="mono ev-text" tabIndex={0} aria-label={`Evidence ${ev.index} request, redacted`}>
               {text}
@@ -327,7 +346,7 @@ export function ActDetailView({
         {noData ? (
           <EmptyState
             title={`No data for ${act.name}`}
-            reason={`No Qloo data for this act. ${NO_DATA_REASON}`}
+            reason={`No Qloo data for this act. ${NO_DATA_REASON} Check the spelling on the room screen, or replace the act.`}
           />
         ) : null}
 

@@ -161,7 +161,8 @@ export function ActCard({ result, rankedCount, tiedWithPrevious = false, detailH
           </div>
         )}
 
-        <CaveatList caveats={result.caveats} />
+        {/* The empty state above already says "no data" with its reason; the core caveat sentence would repeat it a third time. */}
+        <CaveatList caveats={noData ? result.caveats.filter((c) => c.type !== "no-data") : result.caveats} />
         {detailHref ? (
           <p className="card-links">
             <a href={detailHref} aria-label={`Open details for ${isolate(act.name)}`}>
