@@ -30,7 +30,8 @@ set -a; . "${M3_GATE_ENV_FILE:-./.env}"; set +a
 : "${TEST_DATABASE_URL:?TEST_DATABASE_URL (P-14) is required}"
 [ "${DATABASE_URL:-}" != "$TEST_DATABASE_URL" ] || { echo "refusing: TEST_DATABASE_URL equals DATABASE_URL" >&2; exit 1; }
 export DATABASE_URL="$TEST_DATABASE_URL"
-export DEMO_MODE=live BUDGET_SALT="m3-gate-test-salt" OPENAI_API_KEY="sk-invalid-m3-gate-dummy"
+DUMMY_MODEL_KEY="sk-invalid-m3-gate-$(date +%s)"   # built at run time: not a credential, and no key-shaped literal in the repo
+export DEMO_MODE=live BUDGET_SALT="m3-gate-test-salt" OPENAI_API_KEY="$DUMMY_MODEL_KEY"
 echo "database in use: throwaway test branch (TEST_DATABASE_URL); production DATABASE_URL not used; model key: dummy"
 (cd packages/slates && npm run db:migrate >/dev/null 2>&1) && echo "test database migrated"
 
@@ -70,6 +71,6 @@ phase "Phase 2: control, default budgets, same dummy key (the call must be attem
 echo; echo "== key / header checks on both server logs and responses"
 cat "$OUT"/*.log "$OUT"/*.txt "$OUT"/*.json >"$OUT/all.txt"
 echo "x-api-key (case-insensitive): $(grep -ciE 'x-api-key' "$OUT/all.txt")"
-echo "dummy model key value: $(grep -cF 'sk-invalid-m3-gate-dummy' "$OUT/all.txt")"
+echo "dummy model key value: $(grep -cF -- "$DUMMY_MODEL_KEY" "$OUT/all.txt")"
 echo "raw test address: $(grep -cF '203.0.113.77' "$OUT/all.txt")"
 echo; echo "m3-gate-fallback: done (logs in $OUT)"

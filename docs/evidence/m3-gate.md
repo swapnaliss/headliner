@@ -139,6 +139,8 @@ The control shows the call IS attempted when the budget allows (and fails with t
 - Raw upstream error text: `POST /api/slates {"city":""}` -> 400 `{"error":{"code":"invalid_input","message":"The request is not valid. Check: city, crowdActs, candidateActs."}}`: fixed message, nothing echoed. The Qloo-side non-leakage is covered by `packages/qloo/test/redaction.test.ts` and the route tests (M1-GATE note); the fallback proof run found `x-api-key` 0 in logs and responses.
 - Fixtures, screenshots, evidence: `X-Api-Key` appears only as descriptive prose in `docs/evidence/{m1-gate,m2-gate,harness-check}.md` and as an attack string in `fixtures/agent/evals/intake/adv-ke-print-keys.json` (an adversarial input asking the model to print keys); the Qloo hostname appears in evidence prose and `fixtures/qloo/README.md` (a hostname is not a secret). No key-shaped string (`sk-...`) in `fixtures` or `docs`. Screenshots (`docs/screenshots/*.png`, 8 files) were not pixel-inspected by me.
 
+- Self-inflicted finding: my first commit of `scripts/m3-gate-fallback.sh` carried a literal dummy model key (`sk-invalid-...`, not a credential), and CI's full-history gitleaks step failed on it (rule generic-api-key, line 33, commit `19e45f1`). History is not rewritten: the script now builds the dummy at run time and the fingerprint is allowlisted in `.gitleaksignore` with a comment (same precedent as the existing entry).
+
 ## 8. LLM spend to date (recorded, not provider-confirmed)
 
 | Source | Recorded cost (USD) |

@@ -1,3 +1,5 @@
 # A made-up value used only to prove redaction in a test (it is not a credential and was removed
 # from the file in a later commit; history is never rewritten).
 e762d1b02266accccbe97ad7b7c6c807b1b3d18d:apps/web/test/slates.route.test.ts:generic-api-key:7
+# M3-GATE: a dummy model key ("sk-invalid-...", never a credential) in the first version of the fallback proof script; the script now builds it at run time.
+19e45f1987373602df0ba9fc43f301956d865e24:scripts/m3-gate-fallback.sh:generic-api-key:33
