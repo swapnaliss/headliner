@@ -202,6 +202,14 @@ describe("explainSlate", () => {
     expect(user).not.toMatch(/[0-9a-f]{8}-[0-9a-f]{4}-/i);
   });
 
+  it("gives the model one plain thin-data statement per thin city, while the template wording is unchanged", () => {
+    const parsed = JSON.parse(buildUserPrompt(buildSlateFacts(slate))) as { statements: { about: string | null; statement: string }[] };
+    const thin = parsed.statements.filter((s) => s.statement.includes("thin data"));
+    expect(thin.map((s) => s.statement)).toEqual(["London has thin data: fewer than 15 Qloo heatmap cells back this city."]);
+    expect(parsed.statements.some((s) => /\bOnly\b/.test(s.statement))).toBe(false);
+    expect(template).toContain("London: Fewer than 15 Qloo heatmap cells back this city, so its strength is thin data.");
+  });
+
   it("falls back to the template when the reply echoes an internal field name", async () => {
     const leaky = JSON.stringify({ sentences: ["Moderat ranks 1 with a fit of 63.8 and 67 sharedTags."] });
     expect(await explainSlate(slate, { model: stub({ text: leaky }) })).toMatchObject({ source: "template", fallback: "ungrounded" });
