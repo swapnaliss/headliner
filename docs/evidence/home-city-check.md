@@ -10,12 +10,14 @@ For an act with a documented home city, is that city the one where Qloo's heatma
 
 ## Result
 
-- Acts listed: 15; resolved to a Qloo entity: 15; unresolved: 0; resolved but no heatmap recorded (not measured, neither hit nor miss): 1. Cities in the set: 5 (London, Berlin, Lagos, Jakarta, Seoul); home cities: 5; continents: 3.
-- Home city has the highest mean `affinity_rank` among all cities in the set (thin cities included, flagged): **11 of 14** resolved acts.
-- Stricter reading (home city has at least 15 cells and is highest among cities with at least 15 cells): **11 of 14** resolved acts.
-- Resolved acts whose own home-city heatmap is thin (under 15 cells): 0 of 14. Resolved acts with at least one thin city in the set: 5 of 14.
+- Acts listed: 15; resolved to a Qloo entity: 15; unresolved: 0. Cities in the set: 5 (London, Berlin, Lagos, Jakarta, Seoul); home cities: 5; continents: 3.
+- Home city has the highest mean `affinity_rank` among all cities in the set (thin cities included, flagged): **12 of 15** resolved acts.
+- Stricter reading (home city has at least 15 cells and is highest among cities with at least 15 cells): **12 of 15** resolved acts.
+- Resolved acts whose own home-city heatmap is thin (under 15 cells): 0 of 15. Resolved acts with at least one thin city in the set: 5 of 15.
 
-Regenerated after the search-schema fix: the hit counts stay 11 of 14 because the one resolved act with no recorded heatmap is not counted. Its recorded search lacked a `popularity` key, which the adapter rejected when the proof was recorded, so its heatmaps were never requested. The fix makes it resolvable; recording its heatmaps needs a live run that was not made.
+Regenerated after the search-schema fix: the hit counts stayed 11 of 14 because the one resolved act with no recorded heatmap was not counted. Its recorded search lacked a `popularity` key, which the adapter rejected when the proof was recorded, so its heatmaps were never requested. The fix made it resolvable; recording its heatmaps needed a live run that was not made at that time.
+
+Rich Brian's heatmaps recorded 2026-10-28; sample is now 15 acts.
 
 No pass or fail line is applied to these counts. The sample is small and was chosen by hand; read the counts with every row below.
 
@@ -34,7 +36,7 @@ No pass or fail line is applied to these counts. The sample is small and was cho
 | Odunsi (The Engine) | Lagos | Africa | Lagos | 1 of 5 | yes | yes |
 | Hindia | Jakarta | Asia | Jakarta | 1 of 5 | yes | yes |
 | Reality Club | Jakarta | Asia | Jakarta | 1 of 5 | yes | yes |
-| Rich Brian | Jakarta | Asia | resolved, no heatmap recorded (not measured) | n/a | n/a | n/a |
+| Rich Brian | Jakarta | Asia | Jakarta | 1 of 5 | yes | yes |
 | BTS | Seoul | Asia | Jakarta | 2 of 5 | no | no |
 | BLACKPINK | Seoul | Asia | Jakarta | 2 of 5 | no | no |
 | IU | Seoul | Asia | Jakarta | 2 of 5 | no | no |
@@ -56,6 +58,7 @@ The home city is marked with an asterisk. `thin` = fewer than 15 cells.
 | Odunsi (The Engine) | 0.269 (1927) | 0.105 (354) | 0.816 (1337) * | 0.057 (390) | 0.033 (516) |
 | Hindia | 0.107 (91) | 0.057 (17) | 0.180 (1) thin | 0.840 (848) * | 0.271 (72) |
 | Reality Club | 0.108 (44) | 0.086 (6) thin | 0.082 (1) thin | 0.780 (686) * | 0.387 (32) |
+| Rich Brian | 0.378 (1097) | 0.386 (318) | 0.159 (141) | 0.895 (954) * | 0.335 (2853) |
 | BTS | 0.331 (1192) | 0.318 (364) | 0.172 (238) | 0.802 (906) | 0.390 (6620) * |
 | BLACKPINK | 0.312 (1180) | 0.291 (355) | 0.146 (223) | 0.867 (931) | 0.398 (7238) * |
 | IU | 0.297 (1110) | 0.285 (340) | 0.149 (286) | 0.839 (928) | 0.828 (13756) * |
@@ -108,3 +111,14 @@ Recorded 2026-10-27 (one workstation, one network path) through the adapter (`@h
 | `/v2/insights/compare` | 15 | 390 | 466 | 466 |
 
 Quota notes and the earlier latency measurements are in `docs/evidence/qloo-latency.md` (the daily quota is not observable from responses).
+
+### Supplementary recording 2026-10-28
+
+Heatmaps for one act (Rich Brian) recorded later through the same adapter and recorder at a concurrency cap of 3; his search was already recorded and was replayed, not re-requested. No earlier fixture was changed.
+
+- Live calls: 5 (status codes: 200 x 5); adapter retries: 0; HTTP 429 responses: 0.
+- Wall time: 6 s.
+
+| Endpoint | Calls | Median ms | p95 ms | Max ms |
+|---|---|---|---|---|
+| `/v2/insights` | 5 | 720 | 3020 | 3020 |
