@@ -10,6 +10,7 @@ import { scan, SCHEMES } from "../support";
  *   docs/screenshots/ (tracked): slate and act detail at 360 / 390 / 768 / 1280 (M3-06 AC, README and Devpost use them).
  */
 const CAPTURE = process.env["CAPTURE"] === "1";
+const CAPTURE_README = process.env["CAPTURE"] === "readme";
 const REVIEW_DIR = resolve(__dirname, "../../../../.review/M3-06");
 const DOCS_DIR = resolve(__dirname, "../../../../docs/screenshots");
 const REVIEW_WIDTHS = [375, 768, 1440] as const;
@@ -17,10 +18,10 @@ const DOC_WIDTHS = [360, 390, 768, 1280] as const;
 const DOC_NAMES: Record<string, string> = { "slate-ranked": "slate", "act-ranked": "act-detail" };
 
 test.describe("capture", () => {
-  test.skip(!CAPTURE, "set CAPTURE=1 to capture screenshots");
   test.setTimeout(900_000);
 
   test("review set and documentation set", async ({ browser, baseURL }) => {
+    test.skip(!CAPTURE, "set CAPTURE=1 to capture screenshots");
     mkdirSync(REVIEW_DIR, { recursive: true });
     mkdirSync(DOCS_DIR, { recursive: true });
     const axe: Record<string, { blocking: string[]; moderateOrMinor: string[] }> = {};
@@ -47,6 +48,34 @@ test.describe("capture", () => {
           const page = await context.newPage();
           await scene.open({ page, request: context.request });
           await page.screenshot({ path: join(DOCS_DIR, `${DOC_NAMES[scene.name]}-${width}.png`), fullPage: true });
+        } finally {
+          await context.close();
+        }
+      }
+    }
+  });
+
+  // README screens (M4-01): room setup, match confirmation, no-data act, thin-data cities. CAPTURE=readme.
+  test("readme screens", async ({ browser, baseURL }) => {
+    test.skip(!CAPTURE_README, "set CAPTURE=readme to capture the README screens");
+    mkdirSync(DOCS_DIR, { recursive: true });
+    const README_SCREENS: Record<string, { file: string; selector?: string }> = {
+      "room-empty": { file: "room-setup" },
+      "confirm-picker": { file: "match-confirmation" },
+      "act-no-data": { file: "empty-state" },
+      "act-ranked": { file: "thin-data", selector: "#cities" },
+    };
+    for (const scene of SCENES.filter((s) => README_SCREENS[s.name])) {
+      const target = README_SCREENS[scene.name];
+      if (!target) continue;
+      for (const width of [390, 1280] as const) {
+        const context = await browser.newContext({ baseURL: scene.origin ?? baseURL ?? "", viewport: { width, height: width < 600 ? 780 : 900 }, colorScheme: "light" });
+        try {
+          const page = await context.newPage();
+          await scene.open({ page, request: context.request });
+          const path = join(DOCS_DIR, `${target.file}-${width}.png`);
+          if (target.selector) await page.locator(target.selector).screenshot({ path });
+          else await page.screenshot({ path, fullPage: true });
         } finally {
           await context.close();
         }
