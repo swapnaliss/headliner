@@ -9,6 +9,7 @@ import { EmptyState } from "./EmptyState";
 import { DEMO_LIMIT_CODE, errorCode } from "./errorCode";
 import { ErrorState } from "./ErrorState";
 import { Icon } from "./Icon";
+import { Loading } from "./Loading";
 import { MatchPicker } from "./MatchPicker";
 import { isolate } from "./text";
 
@@ -31,6 +32,8 @@ const REQUEST_TIMEOUT_MS = 65_000;
 const ROLE_LABEL = { crowd: "Crowd act", candidate: "Candidate act" } as const;
 
 type Phase = "idle" | "submitting" | "error" | "gone";
+
+const SLOW_AFTER_S = 20;
 
 /** Fixed messages only; upstream text is never shown. */
 function failureMessage(status: number | null, code: string | null = null): string {
@@ -62,6 +65,9 @@ export function ConfirmView({ runId, locationDisplay, rows, demoMode }: ConfirmV
   const [decisions, setDecisions] = useState<Decisions>({});
   const [phase, setPhase] = useState<Phase>("idle");
   const [failure, setFailure] = useState("");
+  const [limitReached, setLimitReached] = useState(false);
+  const [offline, setOffline] = useState(false);
+  const [seconds, setSeconds] = useState(0);
   const [announcement, setAnnouncement] = useState("");
   const errorRef = useRef<HTMLHeadingElement>(null);
   const abortRef = useRef<AbortController | null>(null);
@@ -81,6 +87,27 @@ export function ConfirmView({ runId, locationDisplay, rows, demoMode }: ConfirmV
     if (phase === "error") errorRef.current?.focus();
   }, [phase]);
   useEffect(() => () => abortRef.current?.abort(), []);
+
+  // Offline notice (screen-match-confirmation.md): choices stay on the page; Rank explains why it cannot run.
+  useEffect(() => {
+    setOffline(typeof navigator !== "undefined" && navigator.onLine === false);
+    const on = (): void => setOffline(false);
+    const off = (): void => setOffline(true);
+    window.addEventListener("online", on);
+    window.addEventListener("offline", off);
+    return () => {
+      window.removeEventListener("online", on);
+      window.removeEventListener("offline", off);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!busy) return;
+    const started = Date.now();
+    setSeconds(0);
+    const timer = setInterval(() => setSeconds(Math.floor((Date.now() - started) / 1000)), 1000);
+    return () => clearInterval(timer);
+  }, [busy]);
 
   // A row moves between sections when decided: keep focus on that row's next control.
   useEffect(() => {
@@ -118,7 +145,12 @@ export function ConfirmView({ runId, locationDisplay, rows, demoMode }: ConfirmV
       setAnnouncement(`${reason?.text ?? ""}${reason && reason.names.length > 0 ? `: ${reason.names.map(isolate).join(", ")}` : ""}.`);
       return;
     }
+    if (offline) {
+      setAnnouncement("You appear to be offline. Choices are kept on this page.");
+      return;
+    }
     setPhase("submitting");
+    setLimitReached(false);
     setAnnouncement("Ranking the acts. The first run can take up to a minute.");
     const controller = new AbortController();
     abortRef.current = controller;
@@ -141,7 +173,9 @@ export function ConfirmView({ runId, locationDisplay, rows, demoMode }: ConfirmV
         router.push(`/slates/${encodeURIComponent(result.id)}`);
         return;
       }
-      setFailure(failureMessage(response.ok ? null : response.status, errorCode(body)));
+      const code = errorCode(body);
+      setLimitReached(response.status === 429 && code === DEMO_LIMIT_CODE);
+      setFailure(failureMessage(response.ok ? null : response.status, code));
       setPhase("error");
     } catch {
       setFailure(failureMessage(null));
@@ -192,17 +226,40 @@ export function ConfirmView({ runId, locationDisplay, rows, demoMode }: ConfirmV
 
           {phase === "error" ? (
             <ErrorState
-              title="Could not rank these acts"
+              title={limitReached ? "Daily demo limit reached" : "Could not rank these acts"}
               message={failure}
               headingRef={errorRef}
               actions={
                 <>
-                  <Button onClick={() => void rank()}>Try again</Button>
+                  {limitReached ? (
+                    <a className="btn" data-variant="primary" href="/#sample-rooms">
+                      Open a sample room
+                    </a>
+                  ) : (
+                    <Button onClick={() => void rank()}>Try again</Button>
+                  )}
                   <a className="btn" data-variant="secondary" href="/">
                     Back to edit the room
                   </a>
                 </>
               }
+            />
+          ) : null}
+
+          {offline ? (
+            <p className="note" data-tone="caution" role="note" data-testid="offline-note">
+              <Icon name="caution" />
+              <span>You appear to be offline. Choices are kept on this page.</span>
+            </p>
+          ) : null}
+
+          {busy ? (
+            <Loading
+              title="Ranking in progress"
+              message={`Ranking ${summary.confirmed} confirmed names. Comparing audiences with Qloo.`}
+              slowNotice={seconds >= SLOW_AFTER_S ? `Still working. ${seconds} seconds so far. Qloo requests that are not saved yet take longer.` : undefined}
+              skeletons={2}
+              skeletonLabel="Acts being ranked"
             />
           ) : null}
 

@@ -75,9 +75,9 @@ One column. The wireframe shows the top-ranked act of the recorded sample slate 
 | Mean affinity rank, with the number  |
 | of cells behind it. ...              |
 | Cities compared: your venue's city   |
-| and up to 4 others from this         |
-| slate's city list; not necessarily   |
-| near your venue.                     |
+| and up to 4 others (defaults plus    |
+| your own); not necessarily near      |
+| your venue.                          |
 | Berlin (your venue's city)           |
 | [#########---] 0.847   295 cells     |
 | Leipzig                              |
@@ -191,7 +191,7 @@ Hatch pattern `/` in a bar marks thin data; it is a second cue next to the word 
 | Standing unavailable reasons | candidate: "Qloo gave no popularity value for this act." ; crowd: "Qloo gave no popularity value for your crowd acts." |
 | Cities heading | "Other cities compared" |
 | Cities caption | "Mean affinity rank is the average of Qloo's affinity rank (0 to 1) across a city's heatmap cells, shown with the number of cells behind it. It is a different scale from Fit and from Qloo popularity rank. Qloo rescales raw affinity and popularity inside each city, so cities are compared only by these two numbers." |
-| Cities selection | "Cities compared: your venue's city and up to 4 others from this slate's city list. They are not necessarily close to your venue." |
+| Cities selection | "Cities compared: your venue's city and up to 4 others: fixed defaults plus cities you add. They are not necessarily close to your venue." |
 | Thin caveat chip | "Thin data: {cities}" (city names plain text, joined with commas) |
 | Show all announcement | "Showing all {n} shared tastes." ; "Showing the first 10 shared tastes." |
 | Evidence count growth | "Evidence trail now lists {n} calls." |
@@ -243,7 +243,7 @@ Logical names; the M1-02 zod schema is the source of truth.
 | Shared tastes table | `ActResult.overlapTags[]` (`label`, `score` 0..1, `coveredCrowdActs` out of `Slate.room.crowdActs.length`) |
 | Standing tile and section | `ActResult.standing` (`label`, `candidatePercentile`, `crowdMedian`, `crowdSample`) or `.unavailable` reason |
 | Caveats tile and sentences | `ActResult.caveats[]` (`code`, `label`, `detail`) |
-| Other cities compared | `ActResult.cityStrengths[]` (`city`, `meanAffinityRank` to 3 decimals, `cellCount`, `thinData` where `cellCount < 15`, or `unavailable: zero-cells`), filled lazily by the city-strength request (up to 5 heatmap calls, ADR 0004); `isVenueCity` derived by comparing with `Slate.room.city`; the city list itself comes from the slate (ADR 0004: up to 5 per act), not from geography |
+| Other cities compared | `ActResult.cityStrengths[]` (`city`, `meanAffinityRank` to 3 decimals, `cellCount`, `thinData` where `cellCount < 15`, or `unavailable: zero-cells`), filled lazily by the city-strength request (up to 5 heatmap calls, ADR 0004); `isVenueCity` derived by comparing with `Slate.room.city`; the cities are the room city, the fixed defaults and the reader-chosen additions (ADR 0004: up to 5 per act; owner decision 2026-10-27), not geography |
 | Cities progress | per-request progress of the lazy loader |
 | Close-values note | `Slate.fitSpread` against the proposed core constant `FIT_CLOSE_SPREAD_POINTS` (5; to be added to core and ADR 0013) |
 | Evidence trail | `ActResult.evidence[]` (`endpoint`, `redactedParams`, `responseDigest`, `fetchedAt`), plus a `supports` list and `cached` flag per item; no headers exist in the model |

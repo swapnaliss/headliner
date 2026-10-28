@@ -180,15 +180,16 @@ Logical field names; the zod schema from M1-02 and M2-01 is the source of truth.
 | Demo and budget states | server flags: recorded-response mode, and the per-IP or global budget status |
 | Banner, Demo chip | static copy; server config flag |
 
-## Deferred to M3-06
+## Deferred to M3-06 (status after M3-06)
 
-Not built in M2-01 (owner decision 2026-10-27); tracked on BL-01 with owner M3-06. These keep their specified behaviour until then.
+Built in M3-06: the ranking loading state (titled `aria-busy` region, "Ranking N confirmed names" status, "Still working" after 20 s), the offline notice ("You appear to be offline. Choices are kept on this page.", Rank explains instead of sending), and the budget-reached state (heading "Daily demo limit reached", "Open a sample room", no "Try again" because it cannot succeed before midnight UTC).
 
-- Inline "Try another spelling" field with "Search again" on a No-match row (today: "Remove act", or go back and respell in the room).
-- Matching progress: skeleton rows and the "Matching names with Qloo: {done} of {total}." status (today the room form shows ranking progress while the whole run is one request).
-- Per-row search error and whole-run matching failure states (today a failed live search is a "Could not search" row with "Remove act"; a total failure is the room form error).
-- Budget-reached notice and offline notice.
-- "Show {n} more" disclosure for more than 5 hits (the server returns at most 5).
+Not built, with the reason:
+
+- Matching progress ("Matching names with Qloo: 4 of 9."): matching and ranking run in one request (`POST /api/slates`), so the run has no progress to report. The loading state is on the room setup screen ("Ranking in progress"). A real per-name progress needs a streaming or polling route; recommended only if the cold first run proves too slow to wait on.
+- Inline "Try another spelling" with "Search again": needs a new read-only search route with its own budget and abuse limits. Today: "Remove act", or go back and respell in the room.
+- "Show {n} more": the server returns at most 5 hits, so the control never has anything to show.
+- Per-row retry: a failed search is a "Could not search" row with "Remove act"; a total failure is the room form error.
 
 Specified rows for these states:
 

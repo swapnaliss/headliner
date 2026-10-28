@@ -3,6 +3,7 @@ import { evidenceRequestText } from "@headliner/qloo";
 import type { ActDetail, DetailEvidence } from "../actDetail";
 import { CopyButton } from "./CopyButton";
 import { EmptyState } from "./EmptyState";
+import { EvidenceDetails } from "./EvidenceDetails";
 import { Icon } from "./Icon";
 import { SharedTastes } from "./SharedTastes";
 import { COPY, isolate, plural } from "./text";
@@ -233,15 +234,14 @@ function EvidenceRow({ ev }: { ev: DetailEvidence }) {
       </td>
       <td data-label="Supports">{ev.supports.length > 0 ? ev.supports.join(", ") : "Context only"}</td>
       <td data-label="Parameters (redacted) and response digest">
-        <details className="evidence">
-          <summary>Show parameters and digest</summary>
+        <EvidenceDetails summary="Show parameters and digest">
           <div className="stack-sm">
             <pre className="mono ev-text" tabIndex={0} aria-label={`Evidence ${ev.index} request, redacted`}>
               {text}
             </pre>
             <CopyButton text={text} label={`Copy request ${ev.index}`} />
           </div>
-        </details>
+        </EvidenceDetails>
       </td>
     </tr>
   );

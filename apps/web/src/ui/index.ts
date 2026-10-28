@@ -6,6 +6,7 @@ export { CaveatChip, CaveatList } from "./CaveatChip";
 export { EmptyState } from "./EmptyState";
 export { ErrorState } from "./ErrorState";
 export { Icon } from "./Icon";
+export { Loading } from "./Loading";
 export { ProgressStatus } from "./ProgressStatus";
 export { SkeletonCard, SkeletonList } from "./SkeletonCard";
 export { TextField } from "./TextField";

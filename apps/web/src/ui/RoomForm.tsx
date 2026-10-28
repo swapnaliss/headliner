@@ -10,8 +10,7 @@ import { Button } from "./Button";
 import { DEMO_LIMIT_CODE, errorCode } from "./errorCode";
 import { ErrorState } from "./ErrorState";
 import { IntakeAssist } from "./IntakeAssist";
-import { ProgressStatus } from "./ProgressStatus";
-import { SkeletonList } from "./SkeletonCard";
+import { Loading } from "./Loading";
 import { TextField } from "./TextField";
 import { isolate } from "./text";
 
@@ -347,18 +346,14 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
       ) : null}
 
       {busy ? (
-        <section className="stack" aria-labelledby="progress-heading">
-          <h2 id="progress-heading">Ranking in progress</h2>
-          <ProgressStatus
-            message={`Ranking ${candidates.length} ${candidates.length === 1 ? "act" : "acts"}. Checking names with Qloo, then comparing audiences.`}
-            slowNotice={
-              seconds >= SLOW_AFTER_MS / 1000
-                ? `Still working. ${seconds} seconds so far. Qloo requests that are not saved yet take longer.`
-                : undefined
-            }
-          />
-          <SkeletonList count={Math.min(candidates.length, 3)} label="Acts being ranked" />
-        </section>
+        <Loading
+          id="progress-heading"
+          title="Ranking in progress"
+          message={`Ranking ${candidates.length} ${candidates.length === 1 ? "act" : "acts"}. Checking names with Qloo, then comparing audiences.`}
+          slowNotice={seconds >= SLOW_AFTER_MS / 1000 ? `Still working. ${seconds} seconds so far. Qloo requests that are not saved yet take longer.` : undefined}
+          skeletons={Math.min(candidates.length, 3)}
+          skeletonLabel="Acts being ranked"
+        />
       ) : null}
 
       <div className="stack-sm">

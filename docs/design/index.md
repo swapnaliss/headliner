@@ -71,5 +71,5 @@ From ADR 0013 and `docs/evidence/` (recorded 2026-10-26; sample: a crowd of 6 ac
 - Standing is the Qloo popularity percentile compared with the crowd median: a rank, not momentum.
 - Heatmap values are rescaled per city, so cities are compared by mean affinity rank plus cell count. Under 15 cells is thin data: Jakarta (13), Mumbai (10), Lagos (1) and Tromso (1) are thin; London (406), Berlin (295), Leipzig (39) and Reykjavik (23) are not.
 - Three scales are never mixed: Fit 0 to 100, Qloo popularity rank 0 to 100 ("higher is better known on Qloo"), mean affinity rank 0 to 1. Similar to the crowd median means within 5 percentile points.
-- The other-cities strip shows the venue's city plus up to 4 cities from the slate's city list (ADR 0004); they are not necessarily geographically near.
+- The other-cities strip shows the venue's city plus fixed defaults (London, Leipzig, Jakarta, Tromsø) and any city the reader adds, up to 5 in all (ADR 0004; owner decision 2026-10-27: defaults plus reader-chosen, no city list on the slate); they are not necessarily geographically near.
 - Fit can be unavailable for four reasons, and standing for two; every one has designed copy.

@@ -47,7 +47,77 @@ async function openConfirm(page: Page, extra: string): Promise<void> {
   await expect(page.getByRole("heading", { level: 1, name: "Confirm the matches" })).toBeVisible();
 }
 
+export const BERLIN_SENTENCE =
+  "We are a 350-cap room in Berlin. Our crowd follows Apparat, Moderat, Modeselektor, Hundreds, Brandt Brauer Frick and Boys Noize. We are thinking of booking Khruangbin, Radiohead and Reality Club, and we also want to compare London and Tromso.";
+
+async function openIntake(page: Page, sentence: string): Promise<void> {
+  await page.goto("/");
+  await page.getByText("Describe it in one sentence").click();
+  await page.getByLabel("Describe your room").fill(sentence);
+}
+
 export const SCENES: Scene[] = [
+  {
+    name: "intake-open",
+    screen: "room",
+    state: "empty",
+    open: async ({ page }) => {
+      await page.goto("/");
+      await page.getByText("Describe it in one sentence").click();
+      await expect(page.getByLabel("Describe your room")).toBeVisible();
+    },
+  },
+  {
+    name: "intake-reading",
+    screen: "room",
+    state: "loading",
+    open: async ({ page }) => {
+      await hang(page, "**/api/intake");
+      await openIntake(page, BERLIN_SENTENCE);
+      await page.getByRole("button", { name: "Read my description" }).click();
+      await expect(page.getByRole("button", { name: "Reading…" })).toBeVisible();
+    },
+  },
+  {
+    name: "intake-success",
+    screen: "room",
+    state: "success",
+    open: async ({ page }) => {
+      await openIntake(page, BERLIN_SENTENCE);
+      await page.getByRole("button", { name: "Read my description" }).click();
+      await expect(page.getByTestId("intake-note")).toContainText("We filled in the form");
+    },
+  },
+  {
+    name: "intake-partial",
+    screen: "room",
+    state: "partial",
+    open: async ({ page }) => {
+      await openIntake(page, "200-cap venue in Leipzig, our regulars love Khruangbin and Bonobo");
+      await page.getByRole("button", { name: "Read my description" }).click();
+      await expect(page.getByTestId("intake-note")).toContainText("We found a city");
+    },
+  },
+  {
+    name: "intake-clarification",
+    screen: "room",
+    state: "partial",
+    open: async ({ page }) => {
+      await openIntake(page, "We run a small venue and want to book some bands.");
+      await page.getByRole("button", { name: "Read my description" }).click();
+      await expect(page.getByLabel("Your answer")).toBeFocused();
+    },
+  },
+  {
+    name: "intake-failed",
+    screen: "room",
+    state: "error",
+    open: async ({ page }) => {
+      await openIntake(page, "A sentence that was never recorded.");
+      await page.getByRole("button", { name: "Read my description" }).click();
+      await expect(page.getByRole("heading", { name: "Could not read the description" })).toBeVisible();
+    },
+  },
   // Room setup
   { name: "room-empty", screen: "room", state: "empty", screenshots: true, open: async ({ page }) => void (await page.goto("/")) },
   { name: "room-sample-filled", screen: "room", state: "default", open: async ({ page }) => fillSample(page) },
