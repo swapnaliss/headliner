@@ -53,6 +53,13 @@ describe("Explanation component", () => {
     expect(l).toContain('data-source="llm"');
   });
 
+  it("marks the Suspense fallback pending and the final block settled (#28)", () => {
+    const pending = renderToStaticMarkup(<Explanation text="a" source="template" pending />);
+    const settled = renderToStaticMarkup(<Explanation text="a" source="template" />);
+    expect(pending).toContain('data-state="pending"');
+    expect(settled).toContain('data-state="settled"');
+  });
+
   it("one line is one paragraph, and the block has a named heading", () => {
     const html = renderToStaticMarkup(<Explanation text={"one\n\ntwo"} source="template" />);
     expect(html.match(/<p dir="auto">/g)).toHaveLength(2);

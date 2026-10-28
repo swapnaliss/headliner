@@ -61,7 +61,8 @@ export async function expectPageBasics(page: Page): Promise<void> {
   await expect(page.locator("header")).toHaveCount(1);
   await expect(page.locator("footer")).toHaveCount(1);
   await expect(page.locator("h1")).toHaveCount(1);
-  expect(await page.title()).toMatch(/Headliner/);
+  // Retried: after a client-side navigation the tab title is empty until Next applies the streamed metadata (#28).
+  await expect(page).toHaveTitle(/Headliner/);
   expect(await page.locator("html").getAttribute("lang")).toBe("en");
 }
 
