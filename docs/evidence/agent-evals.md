@@ -20,8 +20,8 @@ The mutation check (`evals/agent/mutation.test.ts`, run by `npm test`) removes t
 ## Recordings
 
 - 39 intake traces (`fixtures/agent/intake/`, `fixtures/agent/evals/intake/`) and 3 explanation replies (`fixtures/agent/evals/explain/`), all recorded live from gpt-5-nano.
-- Recorded between 2026-10-27T12:41:04.239Z and 2026-10-27T16:15:07.737Z. The 4 traces in `fixtures/agent/intake/` were recorded in M3-01 (PR #76); the rest ran on top of commit `ea9ee73` (`fixtures/agent/evals/recordings.json`).
-- Measured from the recordings: 48,950 tokens, 0.0037 USD in total. Outcomes of the intake traces: 3 clarification, 6 intake_failed, 30 room.
+- Recorded between 2026-10-27T12:41:04.239Z and 2026-10-28T09:08:20.800Z. The 4 traces in `fixtures/agent/intake/` were recorded in M3-01 (PR #76); the rest ran on top of commits `0332c62`, `ea9ee73` (`fixtures/agent/evals/recordings.json`).
+- Measured from the recordings: 48,667 tokens, 0.0036 USD in total. Outcomes of the intake traces: 3 clarification, 6 intake_failed, 30 room.
 - The recorded model called the optional lookup tool `propose_matches` 0 times in 39 traces, so the tool-result path is exercised by the scripted stand-in models and the failure cases, not by the live traces.
 - Re-record (manual, live, needs `OPENAI_API_KEY`, never run in CI): `npm run eval:agent:record -- --force`.
 
