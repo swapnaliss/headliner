@@ -6,15 +6,15 @@ Headliner is an agent that ranks the acts an independent venue is considering an
 
 | # | Requirement | Number | Status |
 |---|---|---|---|
-| R1 | Slate for up to 12 acts: latency | p95 <= 12 s cold, <= 2 s warm cache | assumed, measured in M0-02 |
-| R2 | Load | about 50 judge sessions in the judging week; 100x = 5,000 slates/week | assumed |
-| R3 | Qloo calls per slate | up to 30 (6 crowd + 12 candidate resolves + 12 compares); city detail up to 5 heatmap calls per act opened | derived, validated in M0-02; quota unknown |
-| R4 | Availability | demo up through 2026-11-05; RTO <= 30 min | assumed |
+| R1 | Slate for up to 12 acts: latency | p95 <= 12 s cold, <= 2 s warm cache | partly measured: the Qloo side of a cold 6 x 12 slate took 4,988 ms and 5,555 ms (2 runs, `docs/evidence/qloo-cold-slate.md`); a stored sample page answered in 1.72 s after more than 8 minutes idle (one client, `docs/evidence/m2-gate.md`). No p95 is claimed. |
+| R2 | Load | about 50 judge sessions in the judging week; 100x = 5,000 slates/week | assumed, not measured |
+| R3 | Qloo calls per slate | 30 (18 resolves + 12 compares); city detail up to 5 heatmap calls per act opened | measured: 30 calls by the list-compare plan, 39 live calls on a cold run because 9 were HTTP 429 and retried once (`docs/evidence/qloo-latency.md`, `docs/evidence/qloo-cold-slate.md`); the daily quota is not observable from responses |
+| R4 | Availability | demo up through 2026-11-05; RTO <= 30 min | target; `/api/health` and an external monitor (ADR 0010); RTO not exercised |
 | R5 | Data | no personal data collected; resolved entity names only; < 100 MB | derived |
 | R6 | Security | key server-side; per-IP budgets; spend cap; free unrestricted judge access, no login | known (rules) |
 | R7 | Global | any city string, UTF-8 names, WCAG 2.2 AA, mobile-first | known/assumed |
-| R8 | Budget | <= $20 total | assumed |
-| R9 | Feedback loops | local check <= 2 min, PR CI <= 5 min, reset <= 2 min | assumed |
+| R8 | Budget | small fixed ceiling; LLM spend capped provider-side and in code | LLM spend recorded about 0.0077 USD in total by the M3 gate (`docs/evidence/m3-gate.md`) |
+| R9 | Feedback loops | local check <= 2 min, PR CI <= 5 min, reset <= 2 min | CI run 149 s on one main commit (`docs/evidence/m2-gate.md`, n=1); the others not measured |
 | R10 | Licence | MIT, visible in repo About | known (rules) |
 
 ## 2. Domain model
@@ -40,7 +40,7 @@ Headliner is an agent that ranks the acts an independent venue is considering an
 | Observability | JSON logs and an uptime check | [0010](adr/0010-observability.md) |
 | Delivery | Fixture-replay tests, zero-key DEMO_MODE | [0011](adr/0011-delivery-testing-demo-mode.md) |
 | Qloo access | REST adapter | [0012](adr/0012-qloo-access-via-rest.md) |
-| Fit | Defined by M0-03 | [0013](adr/0013-fit-formula.md) |
+| Fit | Fit = 100 x the mean Qloo tag score shared between a candidate's audience and the whole crowd, from one list compare per candidate (tags de-duplicated, at least 3 shared tags); standing is the Qloo popularity percentile against the crowd median; city strength is mean `affinity_rank` plus cell count, thin under 15 cells; ranking by Fit, then name | [0013](adr/0013-fit-formula.md) |
 
 ## 4. System diagram
 
@@ -50,7 +50,11 @@ Browser ──HTTPS──► Next.js app (serverless)
                      ├─ agent: intake (<=3 steps) + templated explanation ──► OpenAI API     [untrusted text in, schema-validated out]
                      ├─ qloo adapter (timeout, 1 retry, shape assertions) ──► hackathon.api.qloo.com  [X-Api-Key stays server-side]
                      └─ Postgres: qloo_cache, slates (30-day TTL), budgets
+
+DEMO_MODE=fixtures: the adapter reads fixtures/qloo, no database, no model call, no outbound request.
 ```
+
+Routes (`apps/web/app/`): `POST /api/intake`, `POST /api/slates`, `GET /api/slates/[id]`, `POST /api/slates/[id]/confirm`, `GET /api/slates/[id]/acts/[actId]`, `POST /api/slates/[id]/acts/[actId]/cities`, `GET /api/health`; pages `/`, `/run/[runId]/confirm`, `/slates/[id]`, `/s/[id]` (shared, read-only; `/s/sample-<slug>` for the pinned sample rooms).
 
 ## 5. Data model
 
@@ -83,4 +87,17 @@ The model sees the sentence in a delimited data block, never in the system promp
 
 ## 8. Scaling story and cost at 100x
 
-5,000 slates a week at up to 30 calls is 150k uncached Qloo calls; at a 70% cache hit about 45k. The app tier is stateless. Hosting and database stay on free tiers; the LLM is the only metered cost and is capped.
+5,000 slates a week at 30 calls is 150k uncached Qloo calls; at an assumed 70% cache hit about 45k (the cache hit rate is not measured; a cold run also spends retries on HTTP 429, 39 calls instead of 30 in the recorded runs). The app tier is stateless. Hosting and database stay on free tiers; the LLM is the only metered cost and is capped.
+
+## 9. One-line checks per principle
+
+| Principle | Where it is checked |
+|---|---|
+| Scores are computed by code; the LLM never computes a number | `packages/core/test/`; grounding and injection evals, 106 cases, 1,391 assertions, 0 failed (`docs/evidence/agent-evals.md`) |
+| Every number has Evidence; the key header is never stored or shown | `packages/qloo/test/redaction.test.ts`, `apps/web/test/log.test.ts`, `apps/web/test/slates.route.test.ts` |
+| Invalid Qloo parameters are ignored silently, so shape is asserted | `packages/qloo/test/shape.test.ts`, `packages/qloo/test/params.test.ts` |
+| Thin city data always carries a caveat | `packages/core/test/rank-caveats-invariants.test.ts` |
+| Zero-key mode needs no key, database or model | `scripts/demo-mode-smoke.sh`, `packages/qloo/test/fixtures-replay.test.ts` |
+| Limits and budgets are enforced server-side, failing closed | `apps/web/test/budget.route.test.ts` |
+| Shared pages are hardened | `apps/web/test/security-headers.test.ts`, `apps/web/test/shared.test.tsx` |
+| Claims are measured on recorded data | `docs/evidence/home-city-check.md` (12 of 15), `docs/evidence/fit-sanity.md` (11 of 12), both re-computed by `npm run proof` |
