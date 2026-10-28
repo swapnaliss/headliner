@@ -73,7 +73,7 @@ export interface Recorder {
 }
 
 /** A live adapter client over a recording transport. Call finish() once, after the run, to write index and log. */
-export function createRecorder(): Recorder {
+export function createRecorder(logPath: string = RUN_LOG_PATH): Recorder {
   mkdirSync(FIXTURE_DIR, { recursive: true });
   const transport = new RecordingTransport(liveTransportFromEnv());
   const calls: { endpoint: string; status: number; ms: number }[] = [];
@@ -109,7 +109,7 @@ export function createRecorder(): Recorder {
         wallSeconds: Math.round((Date.now() - started) / 1000),
         byEndpoint,
       };
-      writeFileSync(RUN_LOG_PATH, JSON.stringify(log, null, 2) + "\n");
+      writeFileSync(logPath, JSON.stringify(log, null, 2) + "\n");
       return log;
     },
   };

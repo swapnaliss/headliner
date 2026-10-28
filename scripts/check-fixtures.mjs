@@ -15,7 +15,7 @@ const fail = (m) => {
 // fixtures/qloo (M0-02, M2) and fixtures/qloo/proof (M3-04, with its own index.json and a run-log.json that is not a fixture).
 let total = 0;
 for (const dir of [DIR, join(DIR, "proof")]) {
-  const files = readdirSync(dir).filter((f) => f.endsWith(".json") && f !== "index.json" && f !== "run-log.json");
+  const files = readdirSync(dir).filter((f) => f.endsWith(".json") && f !== "index.json" && !f.startsWith("run-log"));
   total += files.length;
   for (const f of files) {
     const text = readFileSync(join(dir, f), "utf8");
