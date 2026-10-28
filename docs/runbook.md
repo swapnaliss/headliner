@@ -16,7 +16,7 @@ Demo URL: `https://headliner-ai.vercel.app`. Nothing here needs a key; no token 
 | Item | Value |
 |---|---|
 | Service | UptimeRobot, free plan |
-| Monitor name | `headliner-health` (**confirm with the owner**: the exact name was not passed on; correct it here once checked) |
+| Monitor name | `headliner-health` (confirmed by the owner 2026-10-28: UptimeRobot shows it Up) |
 | Type | HTTP(s) |
 | URL | `https://headliner-ai.vercel.app/api/health?deep=1` |
 | Interval | 5 minutes |
