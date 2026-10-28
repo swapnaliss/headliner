@@ -1,7 +1,7 @@
 // Shared pieces of the M3-04 proof: set files (zod-checked), digests, name matching, entity resolution,
 // the run log, and the client factory for replay (the default mode).
 import { createHash } from "node:crypto";
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { z } from "zod";
@@ -111,6 +111,14 @@ export interface RunLog {
 
 export function loadRunLog(): RunLog {
   return JSON.parse(readFileSync(RUN_LOG_PATH, "utf8")) as RunLog;
+}
+
+/** Later one-act recordings (run-log-<date>.json beside run-log.json), oldest first. */
+export function loadSupplementLogs(): RunLog[] {
+  return readdirSync(FIXTURE_DIR)
+    .filter((f) => /^run-log-.+\.json$/.test(f))
+    .sort()
+    .map((f) => JSON.parse(readFileSync(join(FIXTURE_DIR, f), "utf8")) as RunLog);
 }
 
 export function replayClient(): QlooClient {

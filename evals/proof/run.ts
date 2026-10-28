@@ -5,7 +5,7 @@
 //                                  (needs QLOO_API_KEY in the environment; the key is never printed or stored)
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { EVIDENCE_DIR, loadRunLog, loadSets, replayClient, type LoadedSets, type RunLog } from "./common";
+import { EVIDENCE_DIR, loadRunLog, loadSupplementLogs, loadSets, replayClient, type LoadedSets, type RunLog } from "./common";
 import { runFitSanity, type FitSanityResult } from "./fit-sanity";
 import { runHomeCity, type HomeCityResult } from "./home-city";
 import { renderFit, renderHomeCity } from "./report";
@@ -27,7 +27,7 @@ export async function runProof(client: QlooClient, sets: LoadedSets, runLog: Run
     fitSanity,
     digests: { homeCitySet: sets.homeCityDigest, fitSet: sets.fitDigest },
     runLog,
-    markdown: { homeCity: renderHomeCity(homeCity, sets, runLog), fitSanity: renderFit(fitSanity, sets, runLog) },
+    markdown: { homeCity: renderHomeCity(homeCity, sets, runLog, loadSupplementLogs()), fitSanity: renderFit(fitSanity, sets, runLog) },
   };
 }
 

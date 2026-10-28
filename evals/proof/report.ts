@@ -31,13 +31,33 @@ function runLogSection(log: RunLog): string {
   ].join("\n");
 }
 
+function supplementSection(log: RunLog): string {
+  const status = Object.entries(log.statusCounts)
+    .sort(([a], [b]) => (a < b ? -1 : 1))
+    .map(([k, n]) => `${k} x ${n}`)
+    .join(", ");
+  const rows = log.byEndpoint.map((e) => `| \`${e.endpoint}\` | ${e.calls} | ${e.medianMs} | ${e.p95Ms} | ${e.maxMs} |`).join("\n");
+  return [
+    `### Supplementary recording ${log.recordedAt.slice(0, 10)}`,
+    "",
+    `Heatmaps for one act (Rich Brian) recorded later through the same adapter and recorder at a concurrency cap of ${log.maxConcurrent}; his search was already recorded and was replayed, not re-requested. No earlier fixture was changed.`,
+    "",
+    `- Live calls: ${log.liveCalls} (status codes: ${status}); adapter retries: ${log.retries}; HTTP 429 responses: ${log.rateLimited429}.`,
+    `- Wall time: ${log.wallSeconds} s.`,
+    "",
+    "| Endpoint | Calls | Median ms | p95 ms | Max ms |",
+    "|---|---|---|---|---|",
+    rows,
+  ].join("\n");
+}
+
 function cityCell(c: CityRow | undefined): string {
   if (!c) return "n/a";
   if (c.status === "no_data") return `no data (${c.reason ?? "error"})`;
   return c.meanAffinityRank === null ? `no cells` : `${f3(c.meanAffinityRank)} (${c.cellCount})${c.thin ? " thin" : ""}`;
 }
 
-export function renderHomeCity(r: HomeCityResult, sets: LoadedSets, log: RunLog): string {
+export function renderHomeCity(r: HomeCityResult, sets: LoadedSets, log: RunLog, supplements: readonly RunLog[] = []): string {
   const s = r.summary;
   const set = sets.homeCity;
   const resolved = r.acts.filter((a) => a.resolution.status === "resolved" && a.cities.some((c) => c.status === "ok"));
@@ -59,12 +79,10 @@ export function renderHomeCity(r: HomeCityResult, sets: LoadedSets, log: RunLog)
     `- Stricter reading (home city has at least 15 cells and is highest among cities with at least 15 cells): **${s.hitsEnoughData} of ${s.measured}** resolved acts.`,
     `- Resolved acts whose own home-city heatmap is thin (under 15 cells): ${s.homeCityThin} of ${s.measured}. Resolved acts with at least one thin city in the set: ${s.actsWithAnyThinCity} of ${s.measured}.`,
     "",
-    ...(s.notMeasured > 0
-      ? [
-          "Regenerated after the search-schema fix: the hit counts stay 11 of 14 because the one resolved act with no recorded heatmap is not counted. Its recorded search lacked a `popularity` key, which the adapter rejected when the proof was recorded, so its heatmaps were never requested. The fix makes it resolvable; recording its heatmaps needs a live run that was not made.",
-          "",
-        ]
-      : []),
+    "Regenerated after the search-schema fix: the hit counts stayed 11 of 14 because the one resolved act with no recorded heatmap was not counted. Its recorded search lacked a `popularity` key, which the adapter rejected when the proof was recorded, so its heatmaps were never requested. The fix made it resolvable; recording its heatmaps needed a live run that was not made at that time.",
+    "",
+    "Rich Brian's heatmaps recorded 2026-10-28; sample is now 15 acts.",
+    "",
     "No pass or fail line is applied to these counts. The sample is small and was chosen by hand; read the counts with every row below.",
     "",
     "## Every act",
@@ -111,6 +129,7 @@ export function renderHomeCity(r: HomeCityResult, sets: LoadedSets, log: RunLog)
     "",
     runLogSection(log),
     "",
+    ...supplements.flatMap((x) => [supplementSection(x), ""]),
   ];
   return out.join("\n");
 }
