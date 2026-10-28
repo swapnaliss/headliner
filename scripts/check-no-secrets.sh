@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Fails if a secret-shaped literal or a forbidden file is tracked, staged, or in .dev-refs.md.
-# First link in the landing-checks chain (/start Phase 6, /start-milestone § 3d).
+# First link in the landing-checks chain.
 # Never prints a matched value: only the file and line number.
 set -euo pipefail
 cd "$(git rev-parse --show-toplevel)"

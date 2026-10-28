@@ -98,4 +98,4 @@ How to use it: each item has an ID, a check, how to test it, and the screens it 
 - Keyboard-only run of the demo storyboard: room setup, matches, slate, act detail, share link.
 - Screen reader pass: NVDA with Firefox or Chrome on Windows, VoiceOver with Safari on iOS. Record which was used.
 - Contrast: C-01 output attached.
-- Result file: `docs/evidence/a11y-audit.md` with one row per item, the date, the build tested, and any waiver with a reason. Findings are fixed or logged to the backlog before the gate.
+- Results are recorded under `docs/evidence/` with one row per item, the date, the build tested, and any waiver with a reason. Findings are fixed or logged to the backlog before the gate.

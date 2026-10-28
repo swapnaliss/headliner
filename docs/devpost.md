@@ -16,7 +16,7 @@ Rank an independent venue's candidate acts by how well each act's audience taste
 
 ## Inspiration
 
-An independent venue's talent buyer usually judges fit by instinct, and a miss is an empty room. That pain is an inference from vendor writing on booking, not something we measured (`PROJECT.md` section 2, marked unverified there). Qloo's taste data describes audiences in aggregate, which is the right grain for a decision about a room rather than a person. We wanted a decision tool for the buyer, not a consumer recommender: show the ranking, show why, and say plainly where the data is thin or missing.
+An independent venue's talent buyer usually judges fit by instinct, and a miss is an empty room. That pain is an inference from vendor writing on booking, not something we measured (marked unverified in the project spec). Qloo's taste data describes audiences in aggregate, which is the right grain for a decision about a room rather than a person. We wanted a decision tool for the buyer, not a consumer recommender: show the ranking, show why, and say plainly where the data is thin or missing.
 
 ## What it does
 
@@ -37,7 +37,7 @@ Every screen carries the banner "aggregate affinity, not a ticket forecast". The
 - **Fit formula** (ADR 0013): computed in a framework-free core package from the compare response. The LLM never computes or invents a number.
 - **Agent at the edges** (ADR 0009): an LLM (OpenAI, behind a thin provider interface) turns one sentence into a room, in at most 3 steps, and phrases an explanation from fields of the computed slate. A grounding check compares the prose with the slate, and a deterministic template is the fallback. Slate-scope prose was accepted from one recorded reply (n=1); act-scope prose currently falls back to the template unless a later change says otherwise. At a daily budget ceiling the app falls back to the template and to deterministic intake instead of calling the model.
 - **Fixtures**: tests and `DEMO_MODE=fixtures` replay recorded real Qloo responses. There is no synthetic data in the product path.
-- **Stack**: TypeScript, Next.js, zod, Drizzle on Neon Postgres, Vitest, Playwright, deployed on Vercel. Total planned spend ceiling 6 USD (`docs/budget.md`); recorded LLM spend at the M3 gate was about 0.0077 USD (`docs/evidence/m3-gate.md`).
+- **Stack**: TypeScript, Next.js, zod, Drizzle on Neon Postgres, Vitest, Playwright, deployed on Vercel. Total planned spend ceiling 6 USD (set by the owner); recorded LLM spend at the M3 gate was about 0.0077 USD (`docs/evidence/m3-gate.md`).
 - **Safety**: no personal data is collected or sent to Qloo; the hackathon key is used only server-side against `hackathon.api.qloo.com`; entity names from Qloo and from the model are untrusted and rendered as plain text; per-visitor and global daily limits are enforced server-side.
 
 ## Challenges
@@ -68,7 +68,7 @@ Measured results, each with its sample and evidence file. None is a pass or fail
 
 ## What's next
 
-From the product spec (`PROJECT.md` section 11), not built: season-long programming plans, multi-venue circuits, a shared view for artists and agents choosing tour cities, and other live categories such as comedy and sports. Near-term gaps we know of: act-scope prose currently falls back to the deterministic template (the model's act-level wording was rejected by the grounding check in the final recorded round, `docs/evidence/m3-gate.md`); a cold production slate and a real production rate-limit response are not measured; a screen reader pass is not done.
+From the product spec, not built: season-long programming plans, multi-venue circuits, a shared view for artists and agents choosing tour cities, and other live categories such as comedy and sports. Near-term gaps we know of: act-scope prose currently falls back to the deterministic template (the model's act-level wording was rejected by the grounding check in the final recorded round, `docs/evidence/m3-gate.md`); a cold production slate and a real production rate-limit response are not measured; a screen reader pass is not done.
 
 ## Built with
 

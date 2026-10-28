@@ -5,7 +5,7 @@ Measured 2026-10-27 (UTC), after `scripts/prewarm-samples.ts --record-fixtures -
 ## What was measured, and what was not
 
 - **Measured:** `GET /s/sample-<slug>` on a production build of this branch (`next start`, `DEMO_MODE=live`) running on the developer machine and reading the **production Neon database** (`/api/health?deep=1` returned `db: ok`). Wall time per request from `curl -w %{time_total}`. The client is the same machine, so the figure includes the real database round trip to Neon but not a visitor's network or Vercel's edge.
-- **Not yet measured:** the deployed production URL. The `/s/sample-<slug>` rewrite ships with this PR, so it cannot answer on production until the PR is merged and deployed. The manager should re-run the same loop against the deployed host after the merge (command at the end) and append the numbers here.
+- **Not yet measured:** the deployed production URL. The `/s/sample-<slug>` rewrite ships with this PR, so it cannot answer on production until the PR is merged and deployed. The owner should re-run the same loop against the deployed host after the merge (command at the end) and append the numbers here.
 
 ## Results (5 samples per room, seconds)
 

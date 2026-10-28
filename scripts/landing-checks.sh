@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
-# The landing checks: ONE chain shared by /start Phase 6 and /start-milestone § 3d, so a manager's
-# merge and a worker's merge are held to the same bar. The first failure stops the rest, and the
+# The landing checks: ONE chain shared by local runs, batch gates and CI, so every merge is held to
+# the same bar. The first failure stops the rest, and the
 # secret scan runs first so a leak blocks landing exactly like a failed test.
 # Edit per project (add its own checks at the bottom), never per run.
 #
 # Two levels:
 #   ./scripts/landing-checks.sh          full: every workspace plus the slow project checks.
-#                                        Standalone /start, the /start-milestone batch gate, CI.
+#                                        Standalone runs, batch gates, CI.
 #   ./scripts/landing-checks.sh --fast   only the npm workspaces this branch changed against
-#                                        origin/main. /start-milestone workers, and re-runs after a
+#                                        origin/main. Per-ticket runs, and re-runs after a
 #                                        rebase or backlog fix. A root config change runs everything.
 set -euo pipefail
 cd "$(git rev-parse --show-toplevel)"
@@ -16,7 +16,7 @@ FAST=0
 [ "${1:-}" = "--fast" ] && FAST=1
 
 # Private-from-day-one paths (research, outreach, recon notes, review screenshots, local state) are
-# gitignored by /kickoff and must never be tracked. Workflow files are untracked later, by M<n>-CLEANUP.
+# gitignored from the start and must never be tracked. The internal build-workflow files are untracked too.
 if git ls-files | grep -E '^(docs/(research|outreach|recon)/|\.review/|\.prp/|\.dev-refs\.md$|\.kickoff-state\.md$)'; then
   echo "landing-checks: the private paths above are tracked; run 'git rm -r --cached' on them" >&2
   exit 1

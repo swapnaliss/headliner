@@ -117,14 +117,15 @@ git clone https://github.com/swapnaliss/headliner.git && cd headliner
 npm ci
 export DEMO_MODE=fixtures
 npm run build -w apps/web
+ROOM_DIR=apps/web/test/fixtures                # the recorded room lives here
 PORT=3000 npm run start -w apps/web &            # or: npm run dev
 curl -s localhost:3000/api/health                # {"ok":true,"mode":"fixtures",...}
 curl -s -X POST localhost:3000/api/slates \
   -H 'content-type: application/json' \
-  --data @apps/web/test/fixtures/room.json       # ranked acts, each number with its Evidence
+  --data @"$ROOM_DIR/room.json"                  # ranked acts, each number with its Evidence
 ```
 
-Open <http://localhost:3000> for the UI. `apps/web/test/fixtures/room.json` is a recorded room (Berlin, six regular-crowd acts, four candidates). An act with no recording comes back as an honest `no-data` result, never an invented one. `scripts/demo-mode-smoke.sh` runs this sequence and fails on any error. Hackathon Qloo keys deactivate after judging, so this is the path that keeps working.
+Open <http://localhost:3000> for the UI. `room.json` in `apps/web/test/fixtures` is a recorded room (Berlin, six regular-crowd acts, four candidates). An act with no recording comes back as an honest `no-data` result, never an invented one. `scripts/demo-mode-smoke.sh` runs this sequence and fails on any error. Hackathon Qloo keys deactivate after judging, so this is the path that keeps working.
 
 ### Live mode
 

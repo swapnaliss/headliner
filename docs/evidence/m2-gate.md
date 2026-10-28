@@ -19,8 +19,8 @@ No key, connection string or raw address appears below. Test addresses used loca
 ## Prerequisites and blockers
 
 - Blockers #15 to #20 (M2-01 to M2-06) are closed; PRs #63, #65, #66, #67, #69, #70 merged.
-- `python3 scripts/check-prereqs.py --ticket M2-GATE`: `ok P-12 ... 1/1 ready`.
-- `python3 scripts/check-prereqs.py` (full form): `13/18 ready, 5 required missing`: P-05 (OpenAI key), P-06 (Devpost), P-13 (Vercel `OPENAI_API_KEY`), P-15 (uptime monitor), P-16 (repo public approval). All belong to later milestones. **AC "no missing required item" therefore FAILS in the full form** (owner decision needed). Note: from a fresh worktree that has no `.env` and no `.vercel` link the full form also reports P-02, P-04, P-12 and P-14 missing; with the repo's environment file and Vercel link reachable they are `ok`.
+- `check-prereqs --ticket M2-GATE` (run from the owner's local tooling; not part of the public tree): `ok P-12 ... 1/1 ready`.
+- `check-prereqs` (full form): `13/18 ready, 5 required missing`: P-05 (OpenAI key), P-06 (Devpost), P-13 (Vercel `OPENAI_API_KEY`), P-15 (uptime monitor), P-16 (repo public approval). All belong to later milestones. **AC "no missing required item" therefore FAILS in the full form** (owner decision needed). Note: from a fresh worktree that has no `.env` and no `.vercel` link the full form also reports P-02, P-04, P-12 and P-14 missing; with the repo's environment file and Vercel link reachable they are `ok`.
 - CI on main at `1a6c16b`: run 40476039783, success; job `check` 146 s (08:48:03 to 08:50:29), run 149 s. Target 300 s.
 
 ## Storyboard
@@ -93,7 +93,7 @@ Clone of main @ `1a6c16b`, `env -i`, `DEMO_MODE=fixtures`:
 
 ## Other gate commands
 
-- Validation Gate block run piecewise (the worktree guard refuses a computed shell containing `git`): items 1 to 7 on production as above (`/` 200, banner 1, sample loop, `/s/not-a-real-id` 404 and its headers); the clean-clone line via `scripts/m1-gate.sh`; `check-prereqs` above; `./scripts/check-no-secrets.sh` -> `check-no-secrets: ok`; `python3 scripts/waves.py 3` prints M3-01, M3-02, M3-04 ... held only by the open M2-GATE (plus pre-flight warnings about my dirty branch). Note: the ticket's `$(jq ... rooms.json)` path `apps/web/samples/rooms.json` is correct.
+- Validation Gate block run piecewise (the worktree guard refuses a computed shell containing `git`): items 1 to 7 on production as above (`/` 200, banner 1, sample loop, `/s/not-a-real-id` 404 and its headers); the clean-clone line via `scripts/m1-gate.sh`; `check-prereqs` above; `./scripts/check-no-secrets.sh` -> `check-no-secrets: ok`; the owner's local milestone-planning tool for milestone 3 (not part of the public tree) prints M3-01, M3-02, M3-04 ... held only by the open M2-GATE (plus pre-flight warnings about my dirty branch). Note: the ticket's `$(jq ... rooms.json)` path `apps/web/samples/rooms.json` is correct.
 - Client bundle on production: 13 chunks (749,511 bytes) fetched from `/`, both sample pages and a sample act page: `X-Api-Key` 0, `hackathon.api.qloo.com` 0, `QLOO_API_KEY` 0.
 - gitleaks on the working tree of this branch flags only `apps/web/.next/**` preview keys (gitignored build output); the clean clone has none.
 
@@ -125,5 +125,5 @@ A human first-run stopwatch; a real production 429; the live Qloo call count of 
 ## Addendum 2026-10-27: gate closed
 
 - **Step 9 re-walked after PR #72** (functions pinned to `sin1`, one read per page; details in `docs/evidence/m2-06-cold-start.md`). Production `/s/sample-berlin-electronic`, curl total time from one client in Mumbai: after more than 8 minutes idle **1.72 s**, then 0.22 s and 0.31 s; first request on the new deployment 1.37 s, then 0.54, 0.28, 0.48 s; Leipzig 0.21 s and 0.22 s after idle. Before the fix: 4.30 s and 4.00 s after idle. Two post-fix cold samples, one client location: a thin margin under the 2 s target. The keep-warm workflow is skipped while the repo is private; the owner's uptime monitor on `/api/health?deep=1` is the warm-up until then.
-- **Prerequisites:** `python3 scripts/check-prereqs.py` reports 18/18 ready (P-06, P-13, P-15, P-16 completed by the owner on 2026-10-27).
+- **Prerequisites:** `check-prereqs` reports 18/18 ready (P-06, P-13, P-15, P-16 completed by the owner on 2026-10-27).
 - **Still unverified:** a real production 429, the LLM ceiling through a route (M3-01), behaviour behind Vercel's own forwarded-IP header, a human stopwatch run of the core journey.

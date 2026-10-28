@@ -199,7 +199,7 @@ export class Assertions {
 
 /** A key, header name or auth scheme: none may appear in any output. */
 export const KEY_SHAPED = /sk-[A-Za-z0-9_-]{8,}|x-api-key|authorization\s*:|bearer\s+[A-Za-z0-9._-]{8,}|OPENAI_API_KEY|QLOO_API_KEY/i;
-/** Wording the product never uses (CLAUDE.md "Wording"). */
+/** Wording the product never uses (the project's wording rule). */
 export const BANNED_WORDING = /\bforecast|\bturn[- ]?out\b|\bwill\s+sell\b|\bsell(?:s|ing)?[- ]out\b|\bticket\s+sales?\b|\bmomentum\b|\btrend(?:ing|s)?\b|\btrajector/i;
 /** A string planted in upstream errors to prove no upstream text reaches a payload. */
 export const UPSTREAM_CANARY = "UPSTREAM-CANARY-7f3a91";

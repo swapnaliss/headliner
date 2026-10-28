@@ -1,5 +1,5 @@
 // Cold-slate timing over the Qloo adapter (M1-01). Usage:
-//   node --env-file=<env file holding the hackathon key> node_modules/tsx/dist/cli.mjs scripts/cold-slate.ts
+//   node --env-file=<env file holding the hackathon key> node_modules/tsx/dist/cli.mjs scripts/cold-slate.mts
 // Resolves a 6-act crowd and 12 candidates (18 searches) and runs one list compare per candidate
 // (12 compares): 30 live calls through createQlooClient with an empty in-memory cache, concurrency 6.
 // This is the Qloo-side wall time of a 6x12 slate. It excludes scoring (microseconds), the HTTP route

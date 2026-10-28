@@ -1,6 +1,6 @@
 # Headliner design: index
 
-Design direction, system, components and the four hero-screen specs. Written for ticket M1-04; the build tickets below build to these files and the `ui-reviewer` agent reviews against them.
+Design direction, system, components and the four hero-screen specs. Written for ticket M1-04; the build tickets below build to these files and the design review checks against them.
 
 ## Direction
 
@@ -48,7 +48,7 @@ The `frontend-design` skill is not installed in this environment (it was not in 
 
 Plain-text rule for untrusted strings (components.md, "Conventions for every component"): built to by M1-05 and M2-04 and checked by accessibility item N-01.
 
-Tickets beyond those named in the M1-04 handoff (M2-06, M3-01, M3-02) are listed by title match; the milestone plan in `.github/plan/` is the source of truth for ticket scope.
+Tickets beyond those named in the M1-04 handoff (M2-06, M3-01, M3-02) are listed by title match; the project's GitHub issues are the source of truth for ticket scope.
 
 ## Logical data shape the specs refer to
 

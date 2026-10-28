@@ -66,9 +66,10 @@ done
 [ "$up" = 1 ] || { tail -30 "$WORK/server.log"; echo "m1-gate: FAIL server did not start" >&2; exit 1; }
 echo "health: $(curl -sf "localhost:$PORT/api/health")"
 
+ROOM_DIR=apps/web/test/fixtures
 step "POST /api/slates with the recorded room"
 curl -sf -X POST "localhost:$PORT/api/slates" -H 'content-type: application/json' \
-  --data @apps/web/test/fixtures/room.json >"$WORK/slate.json"
+  --data "@$ROOM_DIR/room.json" >"$WORK/slate.json"
 grep -q '"evidence"' "$WORK/slate.json"
 grep -q '"status":"done"' "$WORK/slate.json"
 echo "slate bytes: $(wc -c <"$WORK/slate.json"); evidence entries: $(grep -o '"evidence"' "$WORK/slate.json" | wc -l)"

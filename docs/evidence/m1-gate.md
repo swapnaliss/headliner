@@ -16,7 +16,7 @@ M1-01 (#9), M1-02 (#10), M1-03 (#11), M1-04 (#12), M1-05 (#13) and M0-GATE (#8) 
 | AC | Result | Evidence |
 |---|---|---|
 | Fresh clone, no keys: install, test, build, serve in fixtures; `POST /api/slates` returns a ranked Slate with Evidence | PASS | `scripts/m1-gate.sh` exit 0 (below): `npm ci`, typecheck, lint clean; 27 test files passed, 1 skipped; 290 tests passed, 1 skipped; build ok; health `{"ok":true,"mode":"fixtures","version":"0.1.0"}`; slate 30181 bytes, `"status":"done"`, 4 `"evidence"` fields |
-| Production `/` and `/api/health` 200, Banner shown, production run returns ranked Slate | PASS | health 200 (`{"ok":true,"mode":"live","version":"0.1.0"}`), `/` 200 with "aggregate affinity, not a ticket forecast"; one POST of `apps/web/test/fixtures/room.json` returned 200 `status:"done"`, 4 scored acts ranked 1 to 4, 32 Evidence entries |
+| Production `/` and `/api/health` 200, Banner shown, production run returns ranked Slate | PASS | health 200 (`{"ok":true,"mode":"live","version":"0.1.0"}`), `/` 200 with "aggregate affinity, not a ticket forecast"; one POST of the recorded room (`room.json` in `apps/web/test/fixtures`) returned 200 `status:"done"`, 4 scored acts ranked 1 to 4, 32 Evidence entries |
 | CI green on main within 5 minutes | PASS | run 40311351236 on `91887ae`: success, job `check` 90 s (10:57:10 to 10:58:40), run 99 s |
 | gitleaks no findings; no client chunk has `X-Api-Key` or the Qloo host | PASS | tree and 15-commit history: no leaks; fresh-clone `.next/static`: no match; 10 deployed production chunks fetched: no match |
 | `LICENSE` is MIT | PASS | first line "MIT License", "Copyright (c) 2026 swapnaliss" |

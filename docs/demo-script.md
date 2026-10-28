@@ -2,7 +2,7 @@
 
 > Aggregate affinity, not a ticket forecast.
 
-A video is not required by the hackathon rules. This is the storyboard from `PROJECT.md` section 2 as a timed shot list with narration. The owner records and uploads it; the link goes on the M4-02 issue only, never in the repo. Target: **160 seconds** (limit 180).
+A video is not required by the hackathon rules. This is the product storyboard as a timed shot list with narration. The owner records and uploads it; the link goes on the M4-02 issue only, never in the repo. Target: **160 seconds** (limit 180).
 
 Use the production site https://headliner-ai.vercel.app. Warm the sample rooms 5 minutes before recording (open both once) so the first request is not a cold one. Narration quotes no number that is not in `docs/evidence/`.
 
