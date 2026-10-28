@@ -78,7 +78,7 @@ Live: <https://headliner-ai.vercel.app>. Two pre-warmed sample rooms open straig
 - <https://headliner-ai.vercel.app/s/sample-berlin-electronic> (Berlin, 6 crowd acts, 5 candidates)
 - <https://headliner-ai.vercel.app/s/sample-leipzig-indie> (Leipzig, 4 crowd acts, 5 candidates)
 
-Or type your own room, or describe it in one sentence. Screenshots below are from `DEMO_MODE=fixtures` (recorded Qloo responses); the Berlin room is the recorded one.
+Or type your own room, or describe it in one sentence. Screenshots below were captured on 28 Oct 2026 from the production site (live mode, light mode): the room setup page, the match confirmation (the sample Berlin room plus the typed name "Bjork"), and the stored sample Berlin slate with its Reality Club act detail and cities section. The empty-state screenshots are the exception: they come from a `DEMO_MODE=fixtures` build (they show the "Demo mode: recorded Qloo responses" badge) because no no-data act is stored on production.
 
 **Room setup** ([1280 px](docs/screenshots/room-setup-1280.png), [390 px](docs/screenshots/room-setup-390.png))
 
@@ -90,17 +90,17 @@ Or type your own room, or describe it in one sentence. Screenshots below are fro
 
 **Slate.** Ranked acts with Fit, shared tastes, Qloo popularity rank and caveats, beside the Qloo popularity order ([768 px](docs/screenshots/slate-768.png), [390 px](docs/screenshots/slate-390.png), [360 px](docs/screenshots/slate-360.png)).
 
-![Slate for Berlin: three ranked acts, one not ranked, the explanation, the comparison with Qloo popularity rank order and the share link](docs/screenshots/slate-1280.png)
+![Slate for the sample Berlin room: five ranked acts, the explanation, and the comparison with Qloo popularity rank order](docs/screenshots/slate-1280.png)
 
 **Act detail with the evidence trail** ([768 px](docs/screenshots/act-detail-768.png), [390 px](docs/screenshots/act-detail-390.png), [360 px](docs/screenshots/act-detail-360.png)).
 
 ![Act detail for Reality Club: Fit, shared tastes, caveats, cities compared and the Qloo evidence rows](docs/screenshots/act-detail-1280.png)
 
-**Thin-data flag.** Cities with fewer than 15 heatmap cells are flagged and grouped apart; a city with none gets its own state ([390 px](docs/screenshots/thin-data-390.png)).
+**Thin-data flag.** Cities with fewer than 15 heatmap cells are flagged and grouped apart; the act detail shows it for each city ([390 px](docs/screenshots/thin-data-390.png)).
 
-![Cities compared: Jakarta and London ranked by mean affinity rank with cell counts, Berlin and Leipzig flagged as thin data, Tromso with no heatmap data](docs/screenshots/thin-data-1280.png)
+![Cities compared for the sample Berlin room: Jakarta and London ranked by mean affinity rank with cell counts, Berlin and Leipzig flagged as thin data](docs/screenshots/thin-data-1280.png)
 
-**Empty state.** An act Qloo has no usable data for says so and shows no number ([390 px](docs/screenshots/empty-state-390.png)).
+**Empty state** (fixtures build, not production). An act Qloo has no usable data for says so and shows no number ([390 px](docs/screenshots/empty-state-390.png)).
 
 ![Act detail for Hindia: no Qloo data for this act, so no Fit or Qloo popularity rank is shown](docs/screenshots/empty-state-1280.png)
 
