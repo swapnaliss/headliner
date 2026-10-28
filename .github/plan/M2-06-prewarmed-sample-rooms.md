@@ -48,7 +48,7 @@ export DEMO_MODE=fixtures
 npm ci && npm run lint && npm run typecheck
 npx vitest run packages/slates apps/web scripts
 npm run build
-npm run start -- -p 3109 & PID=$!; sleep 6
+PORT=3109 npm run start & PID=$!; sleep 6
 for s in $(jq -r '.[].slug' apps/web/samples/rooms.json); do
   curl -s -o /dev/null -w "$s %{http_code} %{time_total}\n" "localhost:3109/s/sample-$s"
 done
