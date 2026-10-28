@@ -59,7 +59,7 @@ afterEach(() => {
 
 describe("forced upstream failures give a sanitized client body", () => {
   it.each(CASES)("$name", async ({ fetchFn, status, code, timeoutMs }) => {
-    setRuntimeForTests(runtimeOver(fetchFn, { timeoutMs }));
+    setRuntimeForTests(runtimeOver(fetchFn, timeoutMs === undefined ? {} : { timeoutMs }));
     const res = await POST(post(ROOM));
     const text = await res.text();
 

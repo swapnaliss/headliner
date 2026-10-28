@@ -43,7 +43,7 @@ export function runtimeOver(fetchFn: typeof fetch, opts: { timeoutMs?: number; c
       cache: opts.cache ?? new InMemoryCacheStore(),
       sleep: async () => undefined,
       jitterMs: () => 0,
-      timeoutMs: opts.timeoutMs,
+      ...(opts.timeoutMs === undefined ? {} : { timeoutMs: opts.timeoutMs }),
       onEvent: (e) => {
         logQlooEvent(e);
         opts.onEvent?.(e);
