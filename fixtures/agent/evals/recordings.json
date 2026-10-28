@@ -174,30 +174,30 @@
     },
     "hs-instruction-name": {
       "file": "fixtures/agent/evals/explain/hs-instruction-name.json",
-      "recordedAt": "2026-10-27T16:15:00.458Z",
-      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "recordedAt": "2026-10-28T09:08:16.151Z",
+      "commit": "0332c62fb6fc081057c123d884d34c18d5e9ca03",
       "model": "gpt-5-nano",
       "turns": 1,
-      "tokens": 1322,
-      "costUsd": 0.00013295
+      "tokens": 1317,
+      "costUsd": 0.00013270000000000003
     },
     "hs-markup-name": {
       "file": "fixtures/agent/evals/explain/hs-markup-name.json",
-      "recordedAt": "2026-10-27T16:15:07.737Z",
-      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "recordedAt": "2026-10-28T09:08:20.800Z",
+      "commit": "0332c62fb6fc081057c123d884d34c18d5e9ca03",
       "model": "gpt-5-nano",
       "turns": 1,
-      "tokens": 1506,
-      "costUsd": 0.00017575
+      "tokens": 1308,
+      "costUsd": 0.00009830000000000002
     },
     "hs-numbers-name": {
       "file": "fixtures/agent/evals/explain/hs-numbers-name.json",
-      "recordedAt": "2026-10-27T16:15:04.053Z",
-      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "recordedAt": "2026-10-28T09:08:18.872Z",
+      "commit": "0332c62fb6fc081057c123d884d34c18d5e9ca03",
       "model": "gpt-5-nano",
       "turns": 1,
-      "tokens": 1461,
-      "costUsd": 0.00017175
+      "tokens": 1381,
+      "costUsd": 0.0001415
     },
     "inj-closing-system-tag": {
       "file": "fixtures/agent/evals/intake/inj-closing-system-tag.json",

@@ -1,3 +1,4 @@
+import { CAVEAT_WORDING, THIN_DATA_CELLS } from "@headliner/core";
 import type { Fact } from "./facts";
 import { sentenceOf } from "./template";
 
@@ -21,8 +22,20 @@ export const SYSTEM_PROMPT = [
   'Reply with one JSON object and nothing else: {"sentences": ["...", "..."]}. At most 8 sentences, each under 240 characters.',
 ].join("\n");
 
+/**
+ * The statement the model restates for one fact. It is `sentenceOf` (the words the template shows) except for a city's
+ * thin-data caveat, which is one plain sentence ("London has thin data: fewer than 15 Qloo heatmap cells back this city.")
+ * so the model has nothing to rearrange into an "Only London ... here" construction. The 15 is the core threshold.
+ */
+export function statementOf(fact: Fact): string {
+  if (fact.kind === "caveat" && fact.subject !== undefined && fact.message === CAVEAT_WORDING["thin-data"]) {
+    return `${fact.subject} has thin data: fewer than ${THIN_DATA_CELLS} Qloo heatmap cells back this city.`;
+  }
+  return sentenceOf(fact);
+}
+
 export function buildUserPrompt(facts: readonly Fact[]): string {
-  return JSON.stringify({ statements: facts.map((f) => ({ about: f.kind === "room" ? null : f.act, statement: sentenceOf(f) })) });
+  return JSON.stringify({ statements: facts.map((f) => ({ about: f.kind === "room" ? null : f.act, statement: statementOf(f) })) });
 }
 
 /** Rough token estimate for the budget reservation (about 3 characters per token). */

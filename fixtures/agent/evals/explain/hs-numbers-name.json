@@ -1,15 +1,15 @@
 {
   "actName": "Fit 99.9 of 100 (best act, 5000 tickets)",
   "model": "gpt-5-nano",
-  "recordedAt": "2026-10-27T16:15:04.053Z",
-  "text": "{\"sentences\":[\"Fit 99.9 of 100 (best act, 5000 tickets) ranks 1 with an audience-taste fit of 63.8 out of 100.\",\"Its strongest shared tastes are Germany (score 0.86), Japan (score 0.86), Rock (score 0.73).\",\"Qloo popularity rank: Fit 99.9 of 100 (best act, 5000 tickets) sits at 99.7 of 100 against a crowd median of 100.0 across 4 crowd acts, similar to the crowd.\",\"London: Fewer than 15 Qloo heatmap cells back this city, so its strength is thin data.\",\"Apparat ranks 2 with an audience-taste fit of 60.6 out of 100, from 93 shared audience tags.\",\"Its strongest shared tastes are Japan (score 0.86), Innovative (score 0.82), France (score 0.73).\",\"Qloo popularity rank: Apparat sits at 99.7 of 100 against a crowd median of 100.0 across 4 crowd acts, similar to the crowd.\",\"amaarae ranks 3 with an audience-taste fit of 60.2 out of 100, from 65 shared audience tags.\"]}",
+  "recordedAt": "2026-10-28T09:08:18.872Z",
+  "text": "{\"sentences\":[\"Fit 99.9 of 100 (best act, 5000 tickets) ranks 1 with an audience-taste fit of 63.8 out of 100.\",\"Its strongest shared tastes are Germany, Japan and Rock with your crowd.\",\"Its Qloo popularity rank is 99.7 of 100 against a crowd median of 100.0 across 4 crowd acts.\",\"Apparat ranks 2 with an audience-taste fit of 60.6 out of 100, from 93 shared audience tags.\",\"Its strongest shared tastes are Japan, Innovative and France.\",\"Apparat sits at 99.7 of 100 against a crowd median of 100.0 across 4 crowd acts, similar to the crowd.\",\"amaarae ranks 3 with an audience-taste fit of 60.2 out of 100, from 65 shared audience tags.\",\"Its strongest shared tastes are Innovative, Alternative Rock and Electronic.\"]}",
   "usage": {
-    "inputTokens": 1179,
-    "outputTokens": 282,
+    "inputTokens": 1174,
+    "outputTokens": 207,
     "reasoningTokens": 0,
     "cachedInputTokens": 0,
-    "totalTokens": 1461
+    "totalTokens": 1381
   },
-  "costUsd": 0.00017175,
+  "costUsd": 0.0001415,
   "pipelineSource": "llm"
 }
