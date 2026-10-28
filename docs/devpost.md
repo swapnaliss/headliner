@@ -35,7 +35,7 @@ Every screen carries the banner "aggregate affinity, not a ticket forecast". The
 
 - **Qloo REST adapter** (`packages/qloo`, ADR 0012). Endpoints used in the product: search (resolve names to entities), insights compare (shared tags between the crowd and each candidate, and popularity), and the heatmap (city strength). Parameters are built from typed objects, the response shape is asserted on every call (Qloo returns 200 for invalid parameters, so a 200 proves nothing), every call has a timeout, and responses are cached in Postgres. The trending endpoint is wired in the adapter but is flat in the hackathon environment, so no part of the product claims momentum.
 - **Fit formula** (ADR 0013): computed in a framework-free core package from the compare response. The LLM never computes or invents a number.
-- **Agent at the edges** (ADR 0009): an LLM (OpenAI, behind a thin provider interface) turns one sentence into a room, in at most 3 steps, and phrases an explanation from fields of the computed slate. A grounding check compares the prose with the slate, and a deterministic template is the fallback. At a daily budget ceiling the app falls back to the template and to deterministic intake instead of calling the model.
+- **Agent at the edges** (ADR 0009): an LLM (OpenAI, behind a thin provider interface) turns one sentence into a room, in at most 3 steps, and phrases an explanation from fields of the computed slate. A grounding check compares the prose with the slate, and a deterministic template is the fallback. Slate-scope prose was accepted from one recorded reply (n=1); act-scope prose currently falls back to the template unless a later change says otherwise. At a daily budget ceiling the app falls back to the template and to deterministic intake instead of calling the model.
 - **Fixtures**: tests and `DEMO_MODE=fixtures` replay recorded real Qloo responses. There is no synthetic data in the product path.
 - **Stack**: TypeScript, Next.js, zod, Drizzle on Neon Postgres, Vitest, Playwright, deployed on Vercel. Total planned spend ceiling 6 USD (`docs/budget.md`); recorded LLM spend at the M3 gate was about 0.0077 USD (`docs/evidence/m3-gate.md`).
 - **Safety**: no personal data is collected or sent to Qloo; the hackathon key is used only server-side against `hackathon.api.qloo.com`; entity names from Qloo and from the model are untrusted and rendered as plain text; per-visitor and global daily limits are enforced server-side.
@@ -64,6 +64,7 @@ Measured results, each with its sample and evidence file. None is a pass or fail
 - Compressed scores need honest presentation: lead with rank, say when values are close, and show the popularity order next to the Fit order rather than hiding the difference.
 - Letting code own every number and the model only phrase checked fields makes the agent testable offline, and the checks' gaps measurable.
 - Reporting small samples as small, with the misses listed, was more useful to us than a headline percentage.
+- An accepted engineering limitation: a slate viewed through both the API and the page can trigger a second explanation model call, because the explanation cache is per process. In the M3 gate production run this was a second call of about 0.000126 USD (`docs/evidence/m3-gate.md`, n=1). We note it as a cost observation, not a claim about typical use.
 
 ## What's next
 
@@ -106,7 +107,8 @@ Suggested captions: "Slate: Fit, shared tastes, Qloo popularity rank and caveats
 
 ## Limits and honesty notes
 
-- Scores are computed by code. The model only phrases fields of the Slate, and the prose is checked by a grounding check with a deterministic template fallback.
+- Scores are computed by code. The model only phrases fields of the Slate, and the prose is checked by a grounding check with a deterministic template fallback. This text quotes no model-written sentence.
+- A slate viewed through both the API and the page can trigger a second explanation model call (about 0.000126 USD, per-process cache); accepted limitation.
 - Qloo trending data is flat in the hackathon environment: no momentum claims. Audience standing is a Qloo popularity rank.
 - No personal data is sent to Qloo or collected.
 - The measured samples above are small and hand-picked, and no accuracy claim is made from them.
