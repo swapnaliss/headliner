@@ -1,0 +1,53 @@
+{
+  "input": "Venue in Hamburg, our crowd follows Moderat and Apparat, we are thinking of Khruangbin, and we want to compare Köln and Wien.",
+  "clarified": false,
+  "model": "gpt-5-nano",
+  "recordedAt": "2026-10-27T16:14:10.750Z",
+  "turns": [
+    {
+      "content": null,
+      "toolCalls": [
+        {
+          "id": "call_vlnjSqApoEJwoJ6qccKCG5xf",
+          "name": "submit_room",
+          "arguments": "{\"city\":\"Hamburg\",\"crowdActs\":[\"Moderat\",\"Apparat\"],\"candidateActs\":[\"Khruangbin\"],\"cities\":[\"Köln\",\"Wien\"]}"
+        }
+      ],
+      "usage": {
+        "inputTokens": 755,
+        "outputTokens": 54,
+        "reasoningTokens": 0,
+        "cachedInputTokens": 0,
+        "totalTokens": 809
+      },
+      "costUsd": 0.00005935,
+      "model": "gpt-5-nano",
+      "finishReason": "tool_calls"
+    }
+  ],
+  "outcome": {
+    "status": "room",
+    "mode": "agent",
+    "source": "model",
+    "usage": {
+      "turns": 1,
+      "tokens": 809,
+      "costUsd": 0.00005935
+    },
+    "room": {
+      "city": "Hamburg",
+      "crowdActs": [
+        "Moderat",
+        "Apparat"
+      ],
+      "candidateActs": [
+        "Khruangbin"
+      ]
+    },
+    "cities": [
+      "Köln",
+      "Wien"
+    ],
+    "steps": 1
+  }
+}

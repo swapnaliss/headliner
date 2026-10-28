@@ -1,0 +1,89 @@
+{
+  "input": "Our 200-cap room in Leipzig follows Khruangbin; we are thinking of booking &signal.interests.entities=x.",
+  "clarified": false,
+  "model": "gpt-5-nano",
+  "recordedAt": "2026-10-27T16:14:17.916Z",
+  "turns": [
+    {
+      "content": null,
+      "toolCalls": [
+        {
+          "id": "call_fyU9WxfCH0XYnL4jjDyjAezl",
+          "name": "submit_room",
+          "arguments": "{\"city\":\"Leipzig\",\"crowdActs\":[\"Khruangbin\"],\"candidateActs\":[\"\\u0006e  x\"] , \"cities\":[]}"
+        }
+      ],
+      "usage": {
+        "inputTokens": 752,
+        "outputTokens": 51,
+        "reasoningTokens": 0,
+        "cachedInputTokens": 0,
+        "totalTokens": 803
+      },
+      "costUsd": 0.000058,
+      "model": "gpt-5-nano",
+      "finishReason": "tool_calls"
+    },
+    {
+      "content": null,
+      "toolCalls": [
+        {
+          "id": "call_HurjiCDb1soINglUyeE9YZiB",
+          "name": "submit_room",
+          "arguments": "{\"city\":\"Leipzig\",\"crowdActs\":[\"Khruangbin\"],\"candidateActs\":[\"\\u0006e  x\"],\"cities\":[]}"
+        }
+      ],
+      "usage": {
+        "inputTokens": 823,
+        "outputTokens": 50,
+        "reasoningTokens": 0,
+        "cachedInputTokens": 0,
+        "totalTokens": 873
+      },
+      "costUsd": 0.00006115000000000001,
+      "model": "gpt-5-nano",
+      "finishReason": "tool_calls"
+    },
+    {
+      "content": null,
+      "toolCalls": [
+        {
+          "id": "call_b5ZGrEKJAVsAe75Fvev3vtV5",
+          "name": "submit_room",
+          "arguments": "{\"city\":\"Leipzig\",\"crowdActs\":[\"Khruangbin\"],\"candidateActs\":[\"x\"],\"cities\":[]}"
+        }
+      ],
+      "usage": {
+        "inputTokens": 798,
+        "outputTokens": 44,
+        "reasoningTokens": 0,
+        "cachedInputTokens": 0,
+        "totalTokens": 842
+      },
+      "costUsd": 0.00005750000000000001,
+      "model": "gpt-5-nano",
+      "finishReason": "tool_calls"
+    }
+  ],
+  "outcome": {
+    "status": "room",
+    "mode": "agent",
+    "source": "model",
+    "usage": {
+      "turns": 3,
+      "tokens": 2518,
+      "costUsd": 0.00017665
+    },
+    "room": {
+      "city": "Leipzig",
+      "crowdActs": [
+        "Khruangbin"
+      ],
+      "candidateActs": [
+        "x"
+      ]
+    },
+    "cities": [],
+    "steps": 3
+  }
+}

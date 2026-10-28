@@ -1,0 +1,49 @@
+{
+  "input": "Our venue is in Leipzig, our crowd follows Khruangbinn and we want to book Bonobo.",
+  "clarified": false,
+  "model": "gpt-5-nano",
+  "recordedAt": "2026-10-27T16:14:56.859Z",
+  "turns": [
+    {
+      "content": null,
+      "toolCalls": [
+        {
+          "id": "call_qJjcXTKwE5YwL5JNXulnoVCt",
+          "name": "submit_room",
+          "arguments": "{\"city\":\"Leipzig\",\"crowdActs\":[\"Khruangbin\"],\"candidateActs\":[\"Bonobo\"],\"cities\":[]}"
+        }
+      ],
+      "usage": {
+        "inputTokens": 746,
+        "outputTokens": 45,
+        "reasoningTokens": 0,
+        "cachedInputTokens": 0,
+        "totalTokens": 791
+      },
+      "costUsd": 0.0000553,
+      "model": "gpt-5-nano",
+      "finishReason": "tool_calls"
+    }
+  ],
+  "outcome": {
+    "status": "room",
+    "mode": "agent",
+    "source": "model",
+    "usage": {
+      "turns": 1,
+      "tokens": 791,
+      "costUsd": 0.0000553
+    },
+    "room": {
+      "city": "Leipzig",
+      "crowdActs": [
+        "Khruangbin"
+      ],
+      "candidateActs": [
+        "Bonobo"
+      ]
+    },
+    "cities": [],
+    "steps": 1
+  }
+}

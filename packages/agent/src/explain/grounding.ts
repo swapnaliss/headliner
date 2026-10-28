@@ -15,7 +15,8 @@ export type Violation =
   | { readonly kind: "internal"; readonly token: string }
   | { readonly kind: "name"; readonly token: string }
   | { readonly kind: "claim"; readonly token: string }
-  | { readonly kind: "malformed"; readonly token: string };
+  | { readonly kind: "malformed"; readonly token: string }
+  | { readonly kind: "secret"; readonly token: string };
 
 export type GroundingResult = { readonly ok: true } | { readonly ok: false; readonly violations: readonly Violation[] };
 
@@ -59,7 +60,12 @@ function misattributedCounts(text: string, slate: Slate): string[] {
 }
 
 /** Capitalised words allowed besides the Slate's own names: the product name. */
-const ALLOWED_CAPITALISED = new Set(["Qloo"]);
+const ALLOWED_CAPITALISED = new Set([
+  "Qloo", "Audience-taste", "Audience", "The", "A", "An", "It", "Its", "This", "These", "Those", "That", "They", "Their", "Only", "Note", "No", "Fit",
+  "Both", "Each", "All", "In", "At", "For", "With", "On", "Of", "As", "If", "Is", "Your", "There", "Thin", "Data", "Based", "Across", "Among", "Most",
+  "Some", "Overall", "However", "Also", "Because", "Here", "Fewer", "Few", "Less", "Strong", "Strongest", "Mean", "Rank", "Ranks", "Standing", "Popularity",
+  "Shared", "Top", "Leading", "Compared", "Against", "While", "Where", "And", "But", "So", "Since",
+]);
 
 /**
  * Any capitalised word that is not the first word of a sentence and not a Slate name (names were stripped
@@ -68,7 +74,9 @@ const ALLOWED_CAPITALISED = new Set(["Qloo"]);
 function unknownNames(bare: string): string[] {
   const found: string[] = [];
   for (const sentence of bare.split(/[.!?:;]\s+|\n/)) {
-    const words = sentence.trim().split(/\s+/).slice(1);
+    // The first word of a sentence is capitalised anyway, so it counts as a name unless it is an ordinary opener
+    // (a Slate name that opened the sentence was already stripped). Without this a sentence that opens with an invented act passed.
+    const words = sentence.trim().split(/\s+/);
     for (const w of words) {
       const m = /^[("'\u2018\u201C]*([A-Z][A-Za-z\u00C0-\u017F]*)/.exec(w);
       if (m?.[1] && !ALLOWED_CAPITALISED.has(m[1])) found.push(m[1]);
@@ -76,6 +84,12 @@ function unknownNames(bare: string): string[] {
   }
   return found;
 }
+
+/**
+ * Credential-shaped or credential-talking text (a key, the key header, an auth scheme, an environment dump). An explanation
+ * is about audience-taste fit and never mentions any of these, so any hit is a model that was talked into exfiltrating (M3-03).
+ */
+const SECRET = /\bsk-[A-Za-z0-9_-]{4,}|x-api-key|\bapi[-_ ]?keys?\b|\bauthorization\b|\bbearer\b|\bsecrets?\b|\bpasswords?\b|process\.env|\benvironment variables?\b|\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*_KEY\b/i;
 
 /** HTML, markdown and links have no place in an explanation (it is rendered as plain text anyway). */
 const MARKUP = /<[^>]*>|[<>`]|\]\(|https?:|www\.|\*\*|^#+\s|^\s*[-*]\s/m;
@@ -239,6 +253,8 @@ export function groundingCheck(text: string, slate: Slate, options: { readonly d
     const limit = /\b(?:thin|limited|missing|sparse|incomplete|unreliable)\b/i.exec(bare);
     if (limit) violations.push({ kind: "claim", token: limit[0] });
   }
+  const secret = SECRET.exec(bare);
+  if (secret) violations.push({ kind: "secret", token: secret[0] });
   const gap = /\S {2,}\S/.exec(text);
   if (gap) violations.push({ kind: "malformed", token: "double space" });
   const markup = MARKUP.exec(text);
