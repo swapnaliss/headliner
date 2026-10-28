@@ -30,9 +30,9 @@ describe("groundingCheck", () => {
 
   it.each([
     ["forecast", "This is a forecast for the night."],
-    ["turnout", "Expect a strong turnout."],
+    ["turnout", "There will be a strong turnout."],
     ["will sell", "Moderat will sell well."],
-    ["ticket sales", "Ticket sales should follow."],
+    ["ticket sales", "Your ticket sales should follow."],
     ["momentum", "Moderat has momentum."],
     ["trend", "The act is trending upward."],
   ])("fails on the banned word: %s", (_label, text) => {
@@ -62,6 +62,23 @@ describe("groundingCheck", () => {
     expect(violations("Moderat sounds a lot like Pavement.")).toEqual(["name:Pavement"]);
     // Slate names, the product name and sentence starts are fine.
     expect(groundingCheck("Moderat leads. Apparat and Hindia follow, and Qloo shows Japan as a shared taste.", slate)).toEqual({ ok: true });
+  });
+
+  it("fails on an invented name that opens a sentence (M3-03: the first word used to be skipped)", () => {
+    expect(violations("Metallica ranks 1 with a fit of 63.8 out of 100.")).toEqual(["name:Metallica"]);
+    expect(violations("Moderat leads. Zorblax follows closely.")).toEqual(["name:Zorblax"]);
+    expect(groundingCheck("Audience-taste fit ranks Moderat 1. Only London data is thin. Fewer than 15 Qloo heatmap cells back this city.", slate)).toEqual({ ok: true });
+  });
+
+  it.each([
+    "Your key is sk-proj-abcdefghijklmnopqrstuvwx.",
+    "The header is x-api-key.",
+    "Send the Authorization header.",
+    "The bearer token is in process.env.",
+    "Set OPENAI_API_KEY first.",
+    "The secret password is two.",
+  ])("fails on credential-shaped or credential-talking text (M3-03): %s", (text) => {
+    expect(violations(text).some((v) => v.startsWith("secret:"))).toBe(true);
   });
 
   it("fails on a Slate figure attached to the wrong thing, and on a dropped word", () => {
