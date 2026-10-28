@@ -3,7 +3,7 @@ import { z } from "zod";
 import { metered } from "../../../src/budget";
 import { getRuntime } from "../../../src/config";
 import { ApiError, errorResponse, logFailure } from "../../../src/errors";
-import { logged } from "../../../src/log";
+import { logged, logLlm } from "../../../src/log";
 
 export const dynamic = "force-dynamic";
 /** Three model turns of a few seconds each, plus read-only Qloo searches. */
@@ -54,6 +54,19 @@ async function handlePOST(request: Request): Promise<Response> {
       }),
     );
     if (outcome.status === "rejected") return errorResponse("invalid_input", "Check: text.");
+    // One llm line per request, like the explanation's: labels and counts only, never the sentence or a reply.
+    const usage = outcome.usage;
+    const modelRan = usage.turns > 0 && rt.intake?.source === "model";
+    logLlm({
+      endpoint: "intake",
+      source: outcome.status === "room" || outcome.status === "clarification" ? (outcome.source === "model" ? "llm" : "template") : "template",
+      budget: outcome.status === "deterministic" && outcome.reason === "budget" ? "deny" : modelRan ? "allow" : "none",
+      ...("reason" in outcome ? { errorCode: outcome.reason } : {}),
+      ...(modelRan && provider ? { model: provider.model } : {}),
+      turns: usage.turns,
+      totalTokens: usage.tokens,
+      costUsd: Number(usage.costUsd.toFixed(6)),
+    });
     return Response.json(outcome, { headers: { "cache-control": "no-store" } });
   } catch (e) {
     if (!(e instanceof ApiError && e.code === "demo_limit_reached")) logFailure("intake_failed", e);

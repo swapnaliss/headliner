@@ -119,6 +119,9 @@ export interface LlmLogFields {
   readonly model?: string;
   readonly inputTokens?: number;
   readonly outputTokens?: number;
+  /** Intake only: the model turns' total tokens (the input/output split is not kept per run). */
+  readonly totalTokens?: number;
+  readonly turns?: number;
   readonly costUsd?: number;
   /** Grounding violation kinds (`number`, `banned`, `markup`), never the offending text. */
   readonly violations?: readonly string[];

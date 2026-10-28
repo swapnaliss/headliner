@@ -3,6 +3,7 @@ import { resolve } from "node:path";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { POST as intake } from "../app/api/intake/route";
 import { GET } from "../app/api/slates/[id]/route";
+import { createIntakeReplay, loadIntakeTraces } from "@headliner/agent";
 import { buildRuntime, setRuntimeForTests, type Runtime } from "../src/config";
 
 // M3-05 style logs for the explanation and intake. The canary stands in for OPENAI_API_KEY.
@@ -64,7 +65,25 @@ describe("structured logs for the explanation and intake", () => {
     );
     expect(res.status).toBeLessThan(500);
     expect(json().find((l) => l["kind"] === "route")).toMatchObject({ endpoint: "POST /api/intake" });
+    // BL-01 (sweep M3): the intake route writes the same kind of llm line as the explanation, tied to the route line by run id.
+    const llm = json().find((l) => l["kind"] === "llm");
+    expect(llm).toMatchObject({ endpoint: "intake", source: "template", budget: "none", turns: 0, totalTokens: 0, costUsd: 0 });
+    expect(llm?.["runId"]).toBe(json().find((l) => l["kind"] === "route")?.["runId"]);
     const all = lines.join("\n");
     for (const forbidden of [CANARY, "203.0.113.77", "Unique-sentence-xyz"]) expect(all).not.toContain(forbidden);
+  });
+
+  it("a recorded intake run writes an llm line with its turns and tokens, tied to the route line", async () => {
+    const replay = createIntakeReplay(loadIntakeTraces(resolve(__dirname, "../../../fixtures/agent/intake")));
+    setRuntimeForTests(fixturesRuntime({ intake: { source: "recorded", providerFor: (t, c) => replay.providerFor(t, c) } }));
+    const sentence = "200-cap venue in Leipzig, our regulars love Khruangbin and Bonobo";
+    const res = await intake(new Request("http://localhost/api/intake", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ text: sentence }) }));
+    expect(res.status).toBe(200);
+    const llm = json().find((l) => l["kind"] === "llm");
+    expect(llm).toMatchObject({ endpoint: "intake", source: "template" });
+    expect(llm).not.toHaveProperty("errorCode");
+    expect(llm?.["turns"]).toBeGreaterThan(0);
+    expect(llm?.["runId"]).toBe(json().find((l) => l["kind"] === "route")?.["runId"]);
+    expect(lines.join("\n")).not.toContain("Khruangbin");
   });
 });
