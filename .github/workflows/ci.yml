@@ -10,6 +10,23 @@ permissions:
   pull-requests: read
 
 jobs:
+  # Agent evals (M3-03): replay of recorded traces, no keys, no network. Required status name: "Agent evals".
+  eval-agent:
+    name: Agent evals
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Replay agent evals (no keys)
+        run: env -u QLOO_API_KEY -u OPENAI_API_KEY DEMO_MODE=fixtures npm run --silent eval:agent
+      - name: Report is current
+        run: git diff --exit-code docs/evidence/agent-evals.md
+
   check:
     runs-on: ubuntu-latest
     timeout-minutes: 10

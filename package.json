@@ -12,9 +12,11 @@
     "db:generate": "npm run db:generate -w @headliner/slates",
     "db:migrate": "npm run db:migrate -w @headliner/slates",
     "lint": "eslint .",
-    "typecheck": "npm run typecheck --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present && tsc -p evals/tsconfig.json",
     "test": "vitest run",
     "proof": "tsx evals/proof/run.ts",
+    "eval:agent": "tsx evals/agent/run.ts",
+    "eval:agent:record": "node --env-file-if-exists=.env --import tsx evals/agent/record.ts",
     "check": "npm run lint && npm run typecheck && npm run test && npm run build"
   },
   "devDependencies": {
