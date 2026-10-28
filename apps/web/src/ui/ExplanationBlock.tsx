@@ -20,7 +20,7 @@ async function Resolved({ slate, scope, id }: { slate: Slate; scope: ExplainScop
 export function ExplanationBlock({ slate, actId, id = "explanation-heading" }: { slate: Slate; actId?: string; id?: string }) {
   const scope: ExplainScope = actId === undefined ? {} : { actId };
   return (
-    <Suspense fallback={<Explanation {...templateExplanation(slate, scope)} id={id} />}>
+    <Suspense fallback={<Explanation {...templateExplanation(slate, scope)} id={id} pending />}>
       <Resolved slate={slate} scope={scope} id={id} />
     </Suspense>
   );
