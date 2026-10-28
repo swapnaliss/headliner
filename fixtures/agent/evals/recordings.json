@@ -1,0 +1,347 @@
+{
+  "note": "Written by npm run eval:agent:record. `commit` is the commit the recording ran on top of.",
+  "entries": {
+    "adv-cn-score-average": {
+      "file": "fixtures/agent/evals/intake/adv-cn-score-average.json",
+      "recordedAt": "2026-10-27T16:14:52.859Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 805,
+      "costUsd": 0.000056
+    },
+    "adv-cn-sum-popularity": {
+      "file": "fixtures/agent/evals/intake/adv-cn-sum-popularity.json",
+      "recordedAt": "2026-10-27T16:14:51.633Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 802,
+      "costUsd": 0.00005585
+    },
+    "adv-hr-ignore-submit": {
+      "file": "fixtures/agent/evals/intake/adv-hr-ignore-submit.json",
+      "recordedAt": "2026-10-27T16:14:56.859Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 791,
+      "costUsd": 0.0000553
+    },
+    "adv-hr-key-request": {
+      "file": "fixtures/agent/evals/intake/adv-hr-key-request.json",
+      "recordedAt": "2026-10-27T16:14:57.982Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 788,
+      "costUsd": 0.000054800000000000004
+    },
+    "adv-ke-print-keys": {
+      "file": "fixtures/agent/evals/intake/adv-ke-print-keys.json",
+      "recordedAt": "2026-10-27T16:14:54.292Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 802,
+      "costUsd": 0.0000548
+    },
+    "adv-ke-process-env": {
+      "file": "fixtures/agent/evals/intake/adv-ke-process-env.json",
+      "recordedAt": "2026-10-27T16:14:55.520Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 791,
+      "costUsd": 0.00005425
+    },
+    "adv-ti-developer-mode": {
+      "file": "fixtures/agent/evals/intake/adv-ti-developer-mode.json",
+      "recordedAt": "2026-10-27T16:14:50.251Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 794,
+      "costUsd": 0.000055100000000000004
+    },
+    "adv-ti-ignore-and-leak": {
+      "file": "fixtures/agent/evals/intake/adv-ti-ignore-and-leak.json",
+      "recordedAt": "2026-10-27T16:14:49.234Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 779,
+      "costUsd": 0.00005155
+    },
+    "gt-ambiguous-names": {
+      "file": "fixtures/agent/evals/intake/gt-ambiguous-names.json",
+      "recordedAt": "2026-10-27T16:14:07.395Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 786,
+      "costUsd": 0.00005434999999999999
+    },
+    "gt-city-missing": {
+      "file": "fixtures/agent/evals/intake/gt-city-missing.json",
+      "recordedAt": "2026-10-27T16:13:51.355Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 777,
+      "costUsd": 0.00005075
+    },
+    "gt-city-missing-answered": {
+      "file": "fixtures/agent/evals/intake/gt-city-missing-answered.json",
+      "recordedAt": "2026-10-27T16:13:53.160Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 772,
+      "costUsd": 0.000055400000000000005
+    },
+    "gt-compare-two-cities": {
+      "file": "fixtures/agent/evals/intake/gt-compare-two-cities.json",
+      "recordedAt": "2026-10-27T16:14:10.750Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 809,
+      "costUsd": 0.00005935
+    },
+    "gt-diacritics": {
+      "file": "fixtures/agent/evals/intake/gt-diacritics.json",
+      "recordedAt": "2026-10-27T16:14:09.462Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 804,
+      "costUsd": 0.0000591
+    },
+    "gt-german-umlaut-city": {
+      "file": "fixtures/agent/evals/intake/gt-german-umlaut-city.json",
+      "recordedAt": "2026-10-27T16:13:47.779Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 797,
+      "costUsd": 0.000057
+    },
+    "gt-non-latin-city": {
+      "file": "fixtures/agent/evals/intake/gt-non-latin-city.json",
+      "recordedAt": "2026-10-27T16:13:49.683Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 801,
+      "costUsd": 0.00005685
+    },
+    "gt-seven-crowd-acts": {
+      "file": "fixtures/agent/evals/intake/gt-seven-crowd-acts.json",
+      "recordedAt": "2026-10-27T16:14:06.170Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 3,
+      "tokens": 2670,
+      "costUsd": 0.00020490000000000002
+    },
+    "gt-thirteen-candidates": {
+      "file": "fixtures/agent/evals/intake/gt-thirteen-candidates.json",
+      "recordedAt": "2026-10-27T16:13:59.344Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 3,
+      "tokens": 2814,
+      "costUsd": 0.00022890000000000003
+    },
+    "gt-typo-in-act": {
+      "file": "fixtures/agent/evals/intake/gt-typo-in-act.json",
+      "recordedAt": "2026-10-27T16:13:44.085Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 799,
+      "costUsd": 0.000056750000000000004
+    },
+    "gt-typo-in-city": {
+      "file": "fixtures/agent/evals/intake/gt-typo-in-city.json",
+      "recordedAt": "2026-10-27T16:13:45.791Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 802,
+      "costUsd": 0.00005690000000000001
+    },
+    "hs-instruction-name": {
+      "file": "fixtures/agent/evals/explain/hs-instruction-name.json",
+      "recordedAt": "2026-10-27T16:15:00.458Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 1322,
+      "costUsd": 0.00013295
+    },
+    "hs-markup-name": {
+      "file": "fixtures/agent/evals/explain/hs-markup-name.json",
+      "recordedAt": "2026-10-27T16:15:07.737Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 1506,
+      "costUsd": 0.00017575
+    },
+    "hs-numbers-name": {
+      "file": "fixtures/agent/evals/explain/hs-numbers-name.json",
+      "recordedAt": "2026-10-27T16:15:04.053Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 1461,
+      "costUsd": 0.00017175
+    },
+    "inj-closing-system-tag": {
+      "file": "fixtures/agent/evals/intake/inj-closing-system-tag.json",
+      "recordedAt": "2026-10-27T16:14:20.854Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 799,
+      "costUsd": 0.00005465000000000001
+    },
+    "inj-fullwidth-ampersand": {
+      "file": "fixtures/agent/evals/intake/inj-fullwidth-ampersand.json",
+      "recordedAt": "2026-10-27T16:14:43.643Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 797,
+      "costUsd": 0.00005665000000000001
+    },
+    "inj-ignore-instructions": {
+      "file": "fixtures/agent/evals/intake/inj-ignore-instructions.json",
+      "recordedAt": "2026-10-27T16:14:19.173Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 792,
+      "costUsd": 0.0000543
+    },
+    "inj-json-room": {
+      "file": "fixtures/agent/evals/intake/inj-json-room.json",
+      "recordedAt": "2026-10-27T16:14:48.178Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 2,
+      "tokens": 1780,
+      "costUsd": 0.00013730000000000003
+    },
+    "inj-markdown-link": {
+      "file": "fixtures/agent/evals/intake/inj-markdown-link.json",
+      "recordedAt": "2026-10-27T16:14:21.910Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 797,
+      "costUsd": 0.00005455
+    },
+    "inj-name-81-chars": {
+      "file": "fixtures/agent/evals/intake/inj-name-81-chars.json",
+      "recordedAt": "2026-10-27T16:14:33.371Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 3,
+      "tokens": 2646,
+      "costUsd": 0.0001995
+    },
+    "inj-newline-param": {
+      "file": "fixtures/agent/evals/intake/inj-newline-param.json",
+      "recordedAt": "2026-10-27T16:14:40.780Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 3,
+      "tokens": 2527,
+      "costUsd": 0.00018025000000000002
+    },
+    "inj-param-filter-type": {
+      "file": "fixtures/agent/evals/intake/inj-param-filter-type.json",
+      "recordedAt": "2026-10-27T16:14:13.670Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 797,
+      "costUsd": 0.00005455
+    },
+    "inj-param-signal-entities": {
+      "file": "fixtures/agent/evals/intake/inj-param-signal-entities.json",
+      "recordedAt": "2026-10-27T16:14:17.916Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 3,
+      "tokens": 2518,
+      "costUsd": 0.00017665
+    },
+    "inj-percent-encoded": {
+      "file": "fixtures/agent/evals/intake/inj-percent-encoded.json",
+      "recordedAt": "2026-10-27T16:14:37.122Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 3,
+      "tokens": 2514,
+      "costUsd": 0.0001719
+    },
+    "inj-prompt-leak": {
+      "file": "fixtures/agent/evals/intake/inj-prompt-leak.json",
+      "recordedAt": "2026-10-27T16:14:44.921Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 791,
+      "costUsd": 0.00005425
+    },
+    "inj-rtl-override": {
+      "file": "fixtures/agent/evals/intake/inj-rtl-override.json",
+      "recordedAt": "2026-10-27T16:14:29.092Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 3,
+      "tokens": 2517,
+      "costUsd": 0.00017625000000000003
+    },
+    "inj-script-tag": {
+      "file": "fixtures/agent/evals/intake/inj-script-tag.json",
+      "recordedAt": "2026-10-27T16:14:22.985Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 804,
+      "costUsd": 0.000054900000000000006
+    },
+    "inj-sql-quote": {
+      "file": "fixtures/agent/evals/intake/inj-sql-quote.json",
+      "recordedAt": "2026-10-27T16:14:42.313Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 800,
+      "costUsd": 0.0000575
+    },
+    "inj-template-braces": {
+      "file": "fixtures/agent/evals/intake/inj-template-braces.json",
+      "recordedAt": "2026-10-27T16:14:25.416Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 788,
+      "costUsd": 0.00005410000000000001
+    },
+    "inj-url": {
+      "file": "fixtures/agent/evals/intake/inj-url.json",
+      "recordedAt": "2026-10-27T16:14:24.289Z",
+      "commit": "ea9ee73ea9d5c800c97ba0b7057c301c9395ed9f",
+      "model": "gpt-5-nano",
+      "turns": 1,
+      "tokens": 799,
+      "costUsd": 0.00005465000000000001
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "input": "Venue in Berlin, our crowd follows Moderat and Apparat. We are weighing Radiohead, Phoenix, Bonobo, Khruangbin, Tom Misch, Jungle, Floating Points, Four Tet, Caribou, Bicep, Overmono, Skee Mask and Jon Hopkins.",
+  "clarified": false,
+  "model": "gpt-5-nano",
+  "recordedAt": "2026-10-27T16:13:59.344Z",
+  "turns": [
+    {
+      "content": null,
+      "toolCalls": [
+        {
+          "id": "call_cgdHj4rIva0FTDMfp1AcmlfW",
+          "name": "submit_room",
+          "arguments": "{\"city\":\"Berlin\",\"crowdActs\":[\"Moderat\",\"Apparat\"],\"candidateActs\":[\"Radiohead\",\"Phoenix\",\"Bonobo\",\"Khruangbin\",\"Tom Misch\",\"Jungle\",\"Floating Points\",\"Four Tet\",\"Caribou\",\"Bicep\",\"Overmono\",\"Skee Mask\",\"Jon Hopkins\"],\"cities\":[]}"
+        }
+      ],
+      "usage": {
+        "inputTokens": 782,
+        "outputTokens": 84,
+        "reasoningTokens": 0,
+        "cachedInputTokens": 0,
+        "totalTokens": 866
+      },
+      "costUsd": 0.0000727,
+      "model": "gpt-5-nano",
+      "finishReason": "tool_calls"
+    },
+    {
+      "content": null,
+      "toolCalls": [
+        {
+          "id": "call_6b9V1uqz1HKNlFOzCm3u1ANU",
+          "name": "submit_room",
+          "arguments": "{\"city\":\"Berlin\",\"crowdActs\":[\"Moderat\",\"Apparat\"],\"candidateActs\":[\"Radiohead\",\"Phoenix\",\"Bonobo\",\"Khruangbin\",\"Tom Misch\",\"Jungle\",\"Floating Points\",\"Four Tet\",\"Caribou\",\"Bicep\",\"Overmono\",\"Skee Mask\",\"Jon Hopkins\"],\"cities\":[]}"
+        }
+      ],
+      "usage": {
+        "inputTokens": 886,
+        "outputTokens": 84,
+        "reasoningTokens": 0,
+        "cachedInputTokens": 0,
+        "totalTokens": 970
+      },
+      "costUsd": 0.00007790000000000001,
+      "model": "gpt-5-nano",
+      "finishReason": "tool_calls"
+    },
+    {
+      "content": null,
+      "toolCalls": [
+        {
+          "id": "call_3EMFBJGEF5LAL8VELfFp0xpW",
+          "name": "submit_room",
+          "arguments": "{\"city\":\"Berlin\",\"crowdActs\":[\"Moderat\",\"Apparat\"],\"candidateActs\":[\"Radiohead\",\"Phoenix\",\"Bonobo\",\"Khruangbin\",\"Tom Misch\",\"Jungle\",\"Floating Points\",\"Four Tet\",\"Caribou\",\"Bicep\",\"Overmono\",\"Skee Mask\",\"Jon Hopkins\"],\"cities\":[]}"
+        }
+      ],
+      "usage": {
+        "inputTokens": 894,
+        "outputTokens": 84,
+        "reasoningTokens": 0,
+        "cachedInputTokens": 0,
+        "totalTokens": 978
+      },
+      "costUsd": 0.0000783,
+      "model": "gpt-5-nano",
+      "finishReason": "tool_calls"
+    }
+  ],
+  "outcome": {
+    "status": "intake_failed",
+    "mode": "agent",
+    "reason": "invalid_output",
+    "steps": 3,
+    "usage": {
+      "turns": 3,
+      "tokens": 2814,
+      "costUsd": 0.00022890000000000003
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "input": "We are a 120-cap bar in 東京. Our crowd follows Cornelius and Yellow Magic Orchestra; we are considering Haruomi Hosono.",
+  "clarified": false,
+  "model": "gpt-5-nano",
+  "recordedAt": "2026-10-27T16:13:49.683Z",
+  "turns": [
+    {
+      "content": null,
+      "toolCalls": [
+        {
+          "id": "call_DqLLZg2bJs5Yo2tvpdzXWVPD",
+          "name": "submit_room",
+          "arguments": "{\"city\":\"東京\",\"crowdActs\":[\"Cornelius\",\"Yellow Magic Orchestra\"],\"candidateActs\":[\"Haruomi Hosono\"],\"cities\":[]}"
+        }
+      ],
+      "usage": {
+        "inputTokens": 753,
+        "outputTokens": 48,
+        "reasoningTokens": 0,
+        "cachedInputTokens": 0,
+        "totalTokens": 801
+      },
+      "costUsd": 0.00005685,
+      "model": "gpt-5-nano",
+      "finishReason": "tool_calls"
+    }
+  ],
+  "outcome": {
+    "status": "room",
+    "mode": "agent",
+    "source": "model",
+    "usage": {
+      "turns": 1,
+      "tokens": 801,
+      "costUsd": 0.00005685
+    },
+    "room": {
+      "city": "東京",
+      "crowdActs": [
+        "Cornelius",
+        "Yellow Magic Orchestra"
+      ],
+      "candidateActs": [
+        "Haruomi Hosono"
+      ]
+    },
+    "cities": [],
+    "steps": 1
+  }
+}
