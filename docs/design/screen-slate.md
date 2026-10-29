@@ -80,7 +80,7 @@ One page column, 24px gutters. Cards use two columns under the head row (tags an
 
 12-column grid. Main column in columns 1 to 8: h1, summary, notes, ranked list, not-ranked, Explanation disclosure. `aside` in columns 9 to 12: the comparison table, share block and room summary. The aside is sticky only at 1280px and above, only when it is shorter than the viewport and the viewport is at least 700px tall; at 1024px it sits beside the list without sticking. At 1440px the layout stays 1280px wide and centred. The aside starts level with the h1, so the comparison is visible next to the first cards without pushing the ranking down.
 
-Each ActCard is a grid `4.5rem 1fr 11rem`: the rank numeral in the left column, so a buyer scans ranks down the left edge; name, tags and the shared-taste count in the middle; Fit above the standing block at the right. The caveat chip and its sentence, then the footer row (primary link left, quiet Evidence link right), span the full card.
+Each ActCard is a grid `4.5rem 1fr auto` (components.md, ActCard): the rank numeral in the left column, so a buyer scans ranks down the left edge; the name with Fit at the top right; under the name one row for the tags and the shared-taste count and one wrapping row for the standing block (caption, chip, value, scale note), so nothing is squeezed into a narrow column. The caveat chip and its sentence, then the footer row (primary link left, quiet Evidence link right), span the full card. The "Fit" label is 13px in `--text`; Fit is weight 600 so the indigo display-face rank stays the hero.
 
 ```
 +--------------------------------------------------------------------------------------+
@@ -107,7 +107,7 @@ Each ActCard is a grid `4.5rem 1fr 11rem`: the rank numeral in the left column, 
 ### Card content rules
 
 - **Rank**: an integer position by Fit descending (ties: name, then entity id; ADR 0013). Two acts with the same displayed Fit show "Same Fit as the act above; ordered by name" under the lower one.
-- **Fit**: one decimal, label "Fit". No bar, gauge, star or percent sign.
+- **Fit**: one decimal, label "Fit" (13px, `--text`), number in the system stack at weight 600. No bar, gauge, star or percent sign. Rank numerals are the only numbers in the display face.
 - **Overlap tags**: the three highest-scoring shared tags as plain-text chips, then the text line "{n} shared tastes with your crowd". The separate link "See all {n} shared tastes for {name}" is removed from the card (the detail page lists them all and the card opens it). Tag labels are plain text.
 - **Standing**: caption "Qloo popularity rank", label (Above, Similar to, Below crowd median), "{candidate} of 100 vs crowd median {median}" and the scale note "Higher is better known on Qloo." Similar means within 5 percentile points of the crowd median (exactly 5 is similar); Above is more than 5 points higher, Below more than 5 points lower (ADR 0013). Example: 100.0 against a median of 99.5 is Similar. Neutral colours; no arrows.
 - **Caveats**: Caveat chips under the standing line, icon plus text. As built, a thin-data chip does show on the card when the run recorded it. When two or more cities are thin there is **one** chip naming them ("Thin data: Berlin, Leipzig") and the explanatory sentence ("Fewer than 15 Qloo heatmap cells back this city, so its strength is thin data.") is shown **once**. Fix: `mergeThinData` must de-duplicate the sentences instead of joining one per city. The sentence says "this city" even when two are named; wording is left as is and flagged for the owner.
@@ -241,7 +241,7 @@ The shared slate (`/s/{slateId}`) is this screen in read-only form. It differs a
 
 ## Explanation block (M3-02, reskin)
 
-A `section` placed **below** "Ranked acts" and "Not ranked", collapsed by default behind a disclosure (components.md, ExplanationBlock). Before the reskin it sat above the ranked list and read as ten near-identical sentences; it is now supporting material. It also appears, for one act, on the act detail screen between the Fit, standing and caveats tiles and "Why this Fit" (caveats are read first); the detail page is unchanged.
+A `section` placed **below** "Ranked acts" and "Not ranked", collapsed by default behind a disclosure drawn as a quiet bordered row with a leading chevron (components.md, ExplanationBlock). Before the reskin it sat above the ranked list and read as ten near-identical sentences; it is now supporting material. It also appears, for one act, on the act detail screen between the Fit, standing and caveats tiles and "Why this Fit" (caveats are read first); the detail page is unchanged.
 
 - Summary text "Explanation". The source line stays visible next to the summary in both states, `field-hint` text: "Written from checked facts. Every figure in this text was checked against this slate before it was shown." or "Template. Built from this slate's values by a fixed template; no figure is added." Both are plain text; the source is also in `data-source`.
 - Body (inside the closed `<details>`): one paragraph per line of text, `dir="auto"`, max width 70ch. React text nodes only: no HTML, no markdown, no links, so a name containing markup shows as typed. Content and wording are unchanged.

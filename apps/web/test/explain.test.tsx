@@ -78,7 +78,8 @@ describe("Explanation component", () => {
     );
     expect(html).toContain("aggregate affinity, not a ticket forecast");
     expect(html).toContain('data-testid="explanation"');
-    expect(html.indexOf("explanation-heading")).toBeLessThan(html.indexOf("ranked-heading"));
+    // Reskin (screen-slate.md): the ranked list comes first and the explanation follows it.
+    expect(html.indexOf("ranked-heading")).toBeLessThan(html.indexOf("explanation-heading"));
   });
 });
 

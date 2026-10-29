@@ -25,7 +25,7 @@ Type: h1 and h2 in the display face, wordmark display, everything else system sa
 
 ### Mobile 390px (works from 320px)
 
-Single column, 16px gutters, 44px targets, 16px field text. Order: header, Banner, h1, lede, sample cards (stacked), "Or enter your own room below." and "Fill in the sample room" (secondary), form, How it works strip, What you get, Demo limits (closed). The ActionBar is a sticky bar at the bottom of the viewport when the viewport is at least 700px tall; otherwise it follows the form in the flow.
+Single column, 16px gutters, 44px targets, 16px field text. Order: header, Banner, h1, lede, sample cards (stacked), "Or enter your own room below." and "Fill in the sample room" (secondary), form, How it works strip, What you get, Demo limits (closed). The ActionBar follows the form in the flow while the form is empty (so the first screen shows the sample cards, not a disabled button); once anything is entered it is a sticky bar at the bottom of the viewport when the viewport is at least 700px tall, otherwise it stays in the flow. The Demo-mode chip sits on the wordmark row (smaller type, wrapping to two lines if needed).
 
 ```
 +--------------------------------------+
@@ -68,7 +68,7 @@ Single column, 16px gutters, 44px targets, 16px field text. Order: header, Banne
 
 ### Tablet 768px
 
-One page column, 24px gutters. Sample cards side by side (two equal columns). The form sections stay stacked and full width. How it works becomes a three-column strip. The ActionBar is still a sticky bottom bar (below 1024px).
+One page column, 24px gutters. Sample cards side by side (two equal columns). The form sections stay stacked and full width. How it works becomes a three-column strip. The ActionBar follows the same rule (in the flow while empty, sticky once the form has content, below 1024px).
 
 ### Desktop 1280px
 
@@ -76,9 +76,9 @@ Content width 1280px including 32px gutters; 12 columns. Rows:
 
 1. h1 and lede, columns 1 to 8.
 2. "Try a sample room": heading and hint, then the two feature cards side by side across columns 1 to 8 (each 4 columns). They sit above the form so the first obvious thing to press is a card button.
-3. Below, a two-column area: form in columns 1 to 8 ("Or enter your own room below.", "Fill in the sample room", "Your room", "Acts you are considering", the sentence disclosure); aside in columns 9 to 12 (sticky only at 1280px and above, when it is shorter than the viewport and the viewport is at least 700px tall; static at 1024px) holding, in order: the ActionBar card (button and reason), How it works (compact), What you get (muted), Demo limits (closed).
+3. Below, the form in columns 1 to 8 ("Or enter your own room below.", then "Fill in the sample room" and its hint stacked and left-aligned, then "Your room", "Acts you are considering", the sentence disclosure). The aside occupies columns 9 to 12 from the first row, level with the h1, so the right column is never empty beside the intro (sticky only at 1280px and above, when the viewport is at least 700px tall and no disclosure in it is open; static at 1024px). It holds, in order: the ActionBar card (button and reason), How it works (compact), What you get (muted), Demo limits (closed).
 
-Because the ActionBar card is first in the aside and the aside is sticky, "Rank these acts" is on screen at the top of the right column as soon as the form begins, without scrolling a 1500px page. At 1024px (not sticky) the card is the first item of the aside beside the form and still in the first screenful of the form area. At 1440px the layout stays 1280px wide and centred.
+Because the ActionBar card is first in the aside, which starts level with the h1 and is sticky, "Rank these acts" is on screen at the top of the right column from the first screenful, without scrolling a 1500px page. At 1024px (not sticky) the card is the first item of the aside beside the form and still in the first screenful of the form area. At 1440px the layout stays 1280px wide and centred.
 
 ```
 +--------------------------------------------------------------------------------------+
@@ -131,7 +131,7 @@ The wireframes use act names recorded in the project's sample fixtures (see ADR 
 | Budget reached | ErrorState above the primary button (API code `demo_limit_reached`, HTTP 429): "This demo has reached its daily limit for live Qloo lookups. Your entries are kept. The sample rooms above still work, and the limit resets at midnight UTC." | Honest, no CAPTCHA, no login. The sample rooms (saved runs) are on the same page and cost nothing. |
 | Demo limits note (M2-05) | A closed disclosure "Demo limits" in the aside under "What you get" (below the form at 768px and under; it opens in place, content unchanged): the per-visitor daily limit, that the sample rooms are always available, no login and no CAPTCHA | Always shown. In recorded-responses mode it says the limits are off in this demo and names the live limit |
 | Offline | Notice: "You appear to be offline. Your entries stay on this page; reconnect to check matches." | Primary action keeps aria-disabled with this reason |
-| Demo mode (recorded responses) | Chip at the right of the header row on every screen (drawn in every wireframe): "Demo mode: recorded Qloo responses" with info icon, plus the Demo-mode note under the lead | Shown whenever the server runs with recorded data. Names not in the recordings are reported on match confirmation with the dedicated message (not as an ordinary "no match") |
+| Demo mode (recorded responses) | Chip at the right of the header row on every screen (drawn in every wireframe): "Demo mode: recorded Qloo responses" with info icon, plus the Demo-mode note directly under the sample cards (not under the lead: on a 390 by 667 screen the first sample card and its button must be visible without scrolling) | Shown whenever the server runs with recorded data. Names not in the recordings are reported on match confirmation with the dedicated message (not as an ordinary "no match") |
 | Dark mode, 200% zoom, 320px | Same content, reflowed. The ActionBar is static (not sticky) at 200% zoom and at heights under 700px | See accessibility.md |
 
 ## Copy

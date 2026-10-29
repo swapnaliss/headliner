@@ -5,6 +5,7 @@ import { CopyButton } from "./CopyButton";
 import { EmptyState } from "./EmptyState";
 import { EvidenceDetails } from "./EvidenceDetails";
 import { Icon } from "./Icon";
+import { mergeThinMessages } from "../thinData";
 import { SharedTastes } from "./SharedTastes";
 import { COPY, isolate, plural } from "./text";
 
@@ -20,11 +21,10 @@ const NO_DATA_REASON = "Qloo returned nothing usable for it, so no Fit or Qloo p
 
 function EvidenceLinks({ indexes }: { indexes: readonly number[] }) {
   return (
-    <p className="field-hint">
+    <p className="field-hint evidence-links">
       See evidence:{" "}
-      {indexes.map((n, i) => (
+      {indexes.map((n) => (
         <span key={n}>
-          {i > 0 ? ", " : ""}
           <a href={`#ev-${n}`} aria-label={`Evidence ${n}`}>
             {n}
           </a>
@@ -113,7 +113,7 @@ type DetailCaveat = ActDetail["caveats"][number];
 function mergeThinCities(caveats: readonly DetailCaveat[]): DetailCaveat[] {
   const thin = caveats.filter((c) => c.code === "thin_city_data" && c.subject);
   if (thin.length < 2) return [...caveats];
-  const merged = { ...(thin[0] as DetailCaveat), subject: thin.map((c) => c.subject).join(", "), message: thin.map((c) => c.message).join(" ") };
+  const merged = { ...(thin[0] as DetailCaveat), subject: thin.map((c) => c.subject).join(", "), message: mergeThinMessages(thin.map((c) => c.message)) };
   const out: DetailCaveat[] = [];
   let placed = false;
   for (const c of caveats) {
@@ -141,10 +141,13 @@ function CaveatsTile({ detail }: { detail: ActDetail }) {
             <li key={`${c.code}-${c.subject ?? ""}-${i}`} className="stack-sm" data-caveat={c.code}>
               <span className="status" data-tone={c.code === "thin_city_data" ? "caution" : c.code === "low_match_confidence" ? "info" : "neutral"}>
                 <Icon name={c.code === "thin_city_data" ? "thin" : c.code === "low_match_confidence" ? "info" : "unavailable"} />
-                <span>{CAVEAT_LABEL[c.code]}</span>
+                <span>
+                  {CAVEAT_LABEL[c.code]}
+                  {c.subject ? ": " : null}
+                </span>
                 {c.subject ? (
                   <span>
-                    : <bdi className="entity">{c.subject}</bdi>
+                    <bdi className="entity">{c.subject}</bdi>
                   </span>
                 ) : null}
               </span>
@@ -350,7 +353,7 @@ export function ActDetailView({
           />
         ) : null}
 
-        <div className="tiles">
+        <div className="tiles" data-nodata={noData ? "true" : undefined}>
           <FitTile detail={detail} />
           <StandingTile detail={detail} />
           <CaveatsTile detail={detail} />
@@ -361,7 +364,7 @@ export function ActDetailView({
         <WhyFit detail={detail} />
 
         {detail.sharedTastes.length > 0 ? (
-          <section className="stack-sm wide-7" aria-labelledby="tastes-heading">
+          <section className="stack-sm" aria-labelledby="tastes-heading">
             <h2 id="tastes-heading">Shared tastes ({detail.sharedTastes.length})</h2>
             <SharedTastes rows={detail.sharedTastes} crowdTotal={detail.crowdCount} />
             {detail.fit ? <EvidenceLinks indexes={detail.fit.evidenceIndexes} /> : null}
@@ -380,7 +383,17 @@ export function ActDetailView({
 
         <StandingSection detail={detail} />
 
-        {citiesSlot ?? null}
+        {noData ? (
+          <section className="stack-sm" aria-labelledby="cities-heading">
+            <h2 id="cities-heading">Other cities compared</h2>
+            <p className="note" data-tone="neutral">
+              <Icon name="unavailable" />
+              <span>No city comparison without data.</span>
+            </p>
+          </section>
+        ) : (
+          (citiesSlot ?? null)
+        )}
 
         <EvidenceTrail evidence={detail.evidence} />
 

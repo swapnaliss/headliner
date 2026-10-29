@@ -48,6 +48,8 @@ for (const scheme of ["light", "dark"] as const) {
       await page.goto(await actPath(request));
       await page.locator("#cities").scrollIntoViewIfNeeded();
       await expect(page.getByText(/City strength loaded/)).toBeVisible();
+      // The page re-reads its server part once after the cities load (router.refresh); scan only after that has landed, so axe never sees a half-replaced tree.
+      await expect(page.getByRole("heading", { name: /Evidence trail \(12 calls\)/ })).toBeVisible();
       const results = await new AxeBuilder({ page }).analyze();
       const bad = results.violations.filter((v) => v.impact === "serious" || v.impact === "critical");
       expect(bad.map((v) => `${v.id}: ${v.help}`)).toEqual([]);

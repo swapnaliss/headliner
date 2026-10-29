@@ -262,17 +262,6 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
 
       {readOnly && cities.length === 0 ? <p className="note" data-tone="neutral">City strength was not loaded for this act on this slate.</p> : null}
 
-      {thinCities.length > 0 && (status === "ready" || status === "partial") ? (
-        <div className="stack-sm">
-          <p className="status" data-tone="caution">
-            <Icon name="thin" />
-            <span>
-              Thin data: <bdi className="entity">{thinCities.join(", ")}</bdi>
-            </span>
-          </p>
-        </div>
-      ) : null}
-
       <div role="status" aria-live="polite" className="city-status">
         {message ? <p>{message}</p> : null}
         {offline ? <p>You appear to be offline. The page is shown as last loaded; city strength cannot load.</p> : null}

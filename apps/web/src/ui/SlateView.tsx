@@ -23,7 +23,7 @@ export interface SlateViewProps {
   shared?: boolean;
   /** Fixtures mode keeps slates in memory only; the share note says so. */
   ephemeral?: boolean;
-  /** The Explanation block (M3-02), placed after the notes and before the ranked list. */
+  /** The Explanation block (M3-02), a closed disclosure placed after the ranked and not-ranked lists. */
   explanation?: ReactNode;
 }
 
@@ -107,8 +107,6 @@ export function SlateView({ slate, shared = false, ephemeral = false, explanatio
             </ul>
           ) : null}
 
-          {explanation ?? null}
-
           {rankedCount > 0 ? (
             <section className="stack" aria-labelledby="ranked-heading">
               <h2 id="ranked-heading">Ranked acts ({rankedCount})</h2>
@@ -140,6 +138,8 @@ export function SlateView({ slate, shared = false, ephemeral = false, explanatio
               </ul>
             </section>
           ) : null}
+
+          {explanation ?? null}
         </main>
 
         <aside className="stack" aria-label="Compare orders and room">

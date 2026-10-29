@@ -11,7 +11,8 @@ test.describe("sample rooms on the intake screen", () => {
     await expect(section.getByText(/Recorded real Qloo run, fetched \d{1,2} \w{3} \d{4}/).first()).toBeVisible();
     const links = section.getByRole("link");
     await expect(links).toHaveCount(2);
-    await expect(links.nth(0)).toHaveText("Berlin electronic club, Berlin");
+    await expect(links.nth(0)).toHaveText("Open sample slate");
+    await expect(links.nth(0)).toHaveAccessibleName("Open sample slate: Berlin electronic club, Berlin");
 
     await links.nth(0).click();
     await page.waitForURL(/\/s\/sample-berlin-electronic$/);

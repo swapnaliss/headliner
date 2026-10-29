@@ -1,12 +1,13 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useEffect, useRef, useState, type ClipboardEvent, type FormEvent, type KeyboardEvent } from "react";
+import { useEffect, useRef, useState, type ClipboardEvent, type FormEvent, type KeyboardEvent, type ReactNode } from "react";
 import { applyProposal, type ProposedRoom } from "../intakeFlow";
 import { addNames, disabledReason, LIMITS, validateDraft, type FieldProblem, type ListKind } from "../roomRules";
 import { SAMPLE_ROOM } from "../sampleRoom";
 import { ActChip } from "./ActChip";
-import { Button } from "./Button";
+import { ActionBar } from "./ActionBar";
+import { Button, ButtonLink } from "./Button";
 import { DEMO_LIMIT_CODE, errorCode } from "./errorCode";
 import { ErrorState } from "./ErrorState";
 import { IntakeAssist } from "./IntakeAssist";
@@ -33,7 +34,11 @@ function failureMessage(status: number | null, code: string | null = null): stri
   return GENERIC_FAILURE;
 }
 
-export function RoomForm({ demoMode }: { demoMode: boolean }) {
+/**
+ * `hasSamples`: the sample rooms are listed above, so the form opens with "Or enter your own room below.".
+ * `children`: the quiet side blocks (How it works, What you get, Demo limits) rendered after the ActionBar in the aside.
+ */
+export function RoomForm({ demoMode, hasSamples = false, children }: { demoMode: boolean; hasSamples?: boolean; children?: ReactNode }) {
   const router = useRouter();
   const [city, setCity] = useState("");
   const [crowd, setCrowd] = useState<string[]>([]);
@@ -237,12 +242,14 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
   const candidateProblem = candidateError ?? problems.find((p) => p.field === "candidate-input")?.message;
 
   return (
-    <form className="stack" onSubmit={submit} noValidate aria-label="Room setup">
-      <div className="stack-sm sample">
+    <>
+    <form id="room-form" className="room-form stack" onSubmit={submit} noValidate aria-label="Room setup">
+      <div className="sample-row">
+        {hasSamples ? <p className="sample-or">Or enter your own room below.</p> : null}
         <Button variant="secondary" onClick={fillSample}>
           Fill in the sample room
         </Button>
-        <p className="field-hint">A Berlin room with six crowd acts and three candidates, using recorded Qloo responses.</p>
+        <p className="field-hint sample-hint">A Berlin room with six crowd acts and three candidates, using recorded Qloo responses.</p>
       </div>
 
       <div role="status" aria-live="polite" className="sr-only" data-testid="live-region">
@@ -272,6 +279,9 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
 
       <section className="panel" aria-labelledby="room-heading">
         <h2 id="room-heading">Your room</h2>
+        <p className="field-hint" id="room-privacy">
+          Enter artist names and a city only. Do not enter personal details.
+        </p>
         <TextField
           id="city-field"
           label="City (required)"
@@ -333,9 +343,9 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
           headingRef={errorHeadingRef}
           actions={
             limitReached ? (
-              <a className="btn" data-variant="secondary" href="#sample-rooms">
+              <ButtonLink variant="secondary" href="#sample-rooms">
                 Open a sample room
-              </a>
+              </ButtonLink>
             ) : (
               <Button variant="secondary" onClick={() => void submit()}>
                 Try again
@@ -360,35 +370,19 @@ export function RoomForm({ demoMode }: { demoMode: boolean }) {
         <IntakeAssist demoMode={demoMode} onProposal={fillFromDescription} announce={setMessage} />
       </div>
 
-      <div className="stack-sm">
-        <Button
-          id="rank-button"
-          type="submit"
-          loading={busy}
-          loadingLabel="Ranking…"
-          disabled={reason !== null}
-          describedBy={reason ? "rank-reason" : "rank-privacy"}
-          onClick={() => {
-            if (reason !== null) void submit();
-          }}
-        >
-          Rank these acts
-        </Button>
-        {reason ? (
-          <p className="field-hint" id="rank-reason">
-            {reason}
-          </p>
-        ) : null}
-        <p className="field-hint" id="rank-privacy">
-          Enter artist names and a city only. Do not enter personal details.
-        </p>
-        {demoMode ? (
-          <p className="field-hint">
-            This demo runs on recorded Qloo responses, so only artists in those recordings can be matched. The sample room always works.
-          </p>
-        ) : null}
-      </div>
     </form>
+    <div className="aside">
+      <ActionBar
+        busy={busy}
+        started={city.trim() !== "" || crowd.length > 0 || candidates.length > 0 || crowdInput !== "" || candidateInput !== ""}
+        reason={reason}
+        onBlockedPress={() => {
+          void submit();
+        }}
+      />
+      {children}
+    </div>
+    </>
   );
 }
 

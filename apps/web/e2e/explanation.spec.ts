@@ -16,8 +16,12 @@ test.describe("Explanation block (recorded mode, no LLM key)", () => {
     const block = settledExplanation(page);
     await expect(block).toBeVisible();
     await expect(block).toHaveAttribute("data-source", "template");
-    await expect(block.getByRole("heading", { level: 2, name: "Explanation" })).toBeVisible();
+    // Reskin: a closed disclosure whose summary stands in for the h2; the source line is visible while it is closed.
+    await expect(block.locator("summary", { hasText: "Explanation" })).toBeVisible();
+    await expect(block.getByTestId("explanation-source")).toBeVisible();
     await expect(block.getByTestId("explanation-source")).toContainText("Template.");
+    await expect(block.locator("details")).not.toHaveAttribute("open", "");
+    await block.locator("summary").click();
     await expect(block).toContainText("Moderat ranks 1 with an audience-taste fit of 63.8");
     await expect(page.getByText(BANNER).first()).toBeVisible();
     await expect(block).not.toContainText(/forecast|turnout|will sell/i);
