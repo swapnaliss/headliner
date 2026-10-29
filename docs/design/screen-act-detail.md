@@ -251,3 +251,12 @@ Logical names; the M1-02 zod schema is the source of truth.
 | Banner | static copy |
 
 Every number on this page has at least one evidence index; a number without one must not be rendered (invariant from the architecture), and the build test for this screen asserts it.
+
+## Reskin notes (editorial booking desk)
+
+Only tokens and button levels change here; no wording changes.
+
+- h1 (the full act name) is third-party text: it stays in `--font-sans`, weight 700, `--text-xl` on mobile and `--text-2xl` from 1024px. The h2 headings ("Why this Fit", "Shared tastes", ...) use the display face. The Fit number on the tile stays a printed number in `--font-sans` at `--text-2xl`, one decimal, no bar, ring or percent sign.
+- Buttons follow the hierarchy in components.md: "Show all {n}" and "Load city strength" are secondary; "Try again" is secondary; "See evidence", the back link and previous and next are tertiary (accent, underlined). There is no primary button on this page, because the page's job is reading.
+- Links and the selected or linked-from-above outline use `--accent` / `--focus` from the new tokens; the Evidence row outline stays the 3px `--focus` ring plus the text note.
+- The slate card now opens this page from a stretched "Open details" link and no longer links to "#tastes"; the "Shared tastes" section is reached by scrolling or the "On this page" list.

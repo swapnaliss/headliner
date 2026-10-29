@@ -4,13 +4,15 @@ Design direction, system, components and the four hero-screen specs. Written for
 
 ## Direction
 
+Reskin (2026-10-29, owner decision): the direction is an "editorial booking desk": a serious, confident tool for a venue talent buyer. See design-system.md for the palette, type and rules; components.md for the new Header and wordmark, Button hierarchy, ActCard (rank hero, one affordance), SampleRooms feature cards, ActionBar, ExplanationBlock disclosure and quiet side cards. The slate shows the ranked acts first and the explanation collapsed below them.
+
 Headliner is a decision tool for independent venue talent buyers, not a consumer recommender. The interface is a calm, evidence-first working document: rank first, Fit second, the Qloo evidence one click away from every number, and an honest "unavailable" or "thin data" instead of a smoothed-over gap.
 
 Principles every screen follows:
 
 1. **Evidence over decoration.** Every number links to the Qloo calls behind it. No hero image, gradient, emoji or decorative chart.
 2. **Status is never colour alone.** Icon, label and colour together, in a colour-blind-safe palette.
-3. **Calm density.** Flat bordered surfaces, tabular figures, one accent colour.
+3. **Calm density.** Flat hairline surfaces, tabular figures, one accent colour (indigo), one serif display face for h1, h2, the wordmark and rank numerals only; everything else, including every entity name, on the system stack.
 4. **Honest copy.** The wording rule is "audience-taste fit". The Banner string "aggregate affinity, not a ticket forecast" is on every screen. No momentum or growth claims (the hackathon trending data is flat). Fit is compressed, so rank leads and close values are called close. Cities are compared only by mean affinity rank and cell count, with a thin-data flag under 15 cells.
 5. **Live, not refresh.** Progress is text plus a live region, never a bare spinner.
 6. **Every state designed:** empty, loading, partial, error, no data, thin data, stale, offline.

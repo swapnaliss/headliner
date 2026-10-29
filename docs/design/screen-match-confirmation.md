@@ -203,3 +203,10 @@ Specified rows for these states:
 | Offline | Notice "You appear to be offline. Choices are kept on this page." | Rank button aria-disabled with the reason |
 | Budget reached | "The demo has reached its live-data limit for now. Your entries are kept. Open the sample room, which uses recorded Qloo responses." |
 | Offline | "You appear to be offline. Choices are kept on this page." |
+
+## Reskin notes (editorial booking desk)
+
+- The summary card on the right keeps its content. "Rank these acts" is the primary button (filled accent) with its reason below, using the same `aria-disabled` pattern as the ActionBar (components.md). Below 1024px the card is the sticky bottom bar under the same rule as room setup (sticky only when the viewport is at least 700px tall; static at 200% zoom; `scroll-padding-block-end` equals its height).
+- "Back to edit the room", "Go to the first one", "Remove act", "Change" and "Put back" are tertiary (accent, underlined) or secondary where a boxed button is needed for the 44px target; none is both boxed and underlined. "Confirm" (where it still appears) is secondary.
+- The selected MatchPicker row uses `--accent-tint`, a 1px `--accent` border plus inset ring, a check icon and the word "Selected" (unchanged rule, new token values).
+- h1 and h2 use the display face; act names, typed names and descriptors stay in `--font-sans`.
