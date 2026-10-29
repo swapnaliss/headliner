@@ -4,7 +4,7 @@ import { z } from "zod";
  * Budget limits (ADR 0008). Every value is overridable by an environment variable and validated
  * by zod; a malformed override is an error, never a silent fallback to "unlimited".
  *
- * Defaults and why (docs/budget.md has the arithmetic):
+ * Defaults and why:
  * - Per IP, Qloo calls per UTC day: 150. A cold 6 crowd x 12 candidate slate costs about 39 live
  *   calls (18 searches, 12 compares and 9 retried 429s, BL-01 6413231989, n=2), so 150 allows three
  *   full cold rooms or about nine of the recorded 6 x 4 size, plus lazy city loads. Calls made
@@ -12,7 +12,7 @@ import { z } from "zod";
  * - Per IP, LLM tokens per day: 20,000 (intake plus phrasing, at most 3 intake steps, ADR 0009).
  * - Global Qloo calls per day: 2,000. The hackathon quota is unpublished; this is a conservative
  *   ceiling of about 50 cold full rooms a day, to be raised by the owner if Qloo confirms more.
- * - Global LLM tokens per day: 100,000. The provider-side cap is 5 USD (docs/budget.md); the
+ * - Global LLM tokens per day: 100,000. The provider-side cap is 5 USD (set in the provider console); the
  *   owner re-checks this number against the chosen model's price before M3-01 ships.
  */
 export const DEFAULT_LIMITS = {

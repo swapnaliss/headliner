@@ -1,6 +1,6 @@
 /**
  * Records the intake traces in fixtures/agent/intake/ with a LIVE OpenAI key (M3-01). Run once:
- *   node --env-file=.env --import tsx scripts/record-intake-traces.ts
+ *   node --env-file=.env --import tsx scripts/record-intake-traces.mts
  * Qloo is NOT called: `propose_matches` runs against the recorded fixtures (FixtureTransport).
  * The files hold the sentence, the model turns as returned and the outcome. No key or header is written.
  * Prints tokens and USD per call and in total (from the API `usage`).

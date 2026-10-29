@@ -31,3 +31,18 @@ coverage/
 data/raw/
 test-results/
 playwright-report/
+
+# internal build workflow: kept locally, not part of the public tree
+/.github/plan/
+/PROJECT.md
+/WORKFLOW.md
+/CLAUDE.md
+/.claude/commands/
+/.claude/agents/
+/scripts/waves.p[y]
+/scripts/bootstrap_github.p[y]
+/scripts/check-prereqs.p[y]
+/scripts/check-plan.p[y]
+/docs/engineering-standards.m[d]
+/docs/PREREQS.m[d]
+/docs/budget.m[d]

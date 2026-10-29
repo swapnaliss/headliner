@@ -25,7 +25,7 @@ Run 2026-10-28 (UTC) on branch `feat/m4-03-security-pass-28-10-2026`, base `6ed4
 | same, excluding the single known false positive (`grep -v canary-value-456`) | 0 |
 | `git log -p --all \| grep -cE 'sk-[A-Za-z0-9_-]{32,}'` | 2: the two sides of one commit pair (e762d1b added, 99c92e4 removed) holding the made-up test value that `.gitleaksignore` names |
 | `OPENAI_API_KEY *[:=] *<16+ chars>` over history | 0 |
-| `QLOO_API_KEY *[:=] *<16+ chars>` over history | 1: `CANARY_KEY=... QLOO_API_KEY=... npm test` in `.github/plan/M3-05-observability-baseline.md` (commit 25ef648), a placeholder in a plan document, not a key (gitleaks agrees) |
+| `QLOO_API_KEY *[:=] *<16+ chars>` over history | 1: `CANARY_KEY=... QLOO_API_KEY=... npm test` in a ticket source document of the build plan (commit 25ef648; no longer in the tree), a placeholder, not a key (gitleaks agrees) |
 | `postgres://user:password@` over history | 8 lines, every one with host `localhost`/`127.0.0.1`/placeholder in tests (M2-05, M2-06); 0 hosts matching `*.neon.tech` anywhere in history |
 
 ### `.gitleaksignore` entries
@@ -153,7 +153,7 @@ Each case asserts: exactly the keys `error.code` and `error.message`; the messag
 
 ## 9. Gate-command defects (logged to BL-01, owner M4-GATE)
 
-1. Gate line 3 (`git log -p --all | grep -ciE 'x-api-key *[:=] *[A-Za-z0-9_-]{16,}' | grep -qx 0`) returns **1**, not 0, and cannot be made to return 0 without rewriting history (forbidden). The one match is `-H 'x-api-key: canary-value-456'` in `.github/plan/M3-05-observability-baseline.md` (commit 25ef648), a made-up canary header value in a plan document (16 characters, just over the `{16,}` threshold), not a credential. Use `... | grep -v 'canary-value-456' | grep -c . | grep -qx 0`-style exclusion (verified: 0 remaining).
+1. Gate line 3 (`git log -p --all | grep -ciE 'x-api-key *[:=] *[A-Za-z0-9_-]{16,}' | grep -qx 0`) returns **1**, not 0, and cannot be made to return 0 without rewriting history (forbidden). The one match is `-H 'x-api-key: canary-value-456'` in a ticket source document of the build plan (commit 25ef648; no longer in the tree), a made-up canary header value (16 characters, just over the `{16,}` threshold), not a credential. Use `... | grep -v 'canary-value-456' | grep -c . | grep -qx 0`-style exclusion (verified: 0 remaining).
 2. Gate line `! grep -rIl 'X-Api-Key' .next/static` runs from the repo root where no `.next` exists, so it passes vacuously. The build lives in `apps/web/.next`; use `apps/web/.next/static` (verified clean above).
 
 ## Validation Gate run (2026-10-28)

@@ -1,7 +1,7 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, type APIRequestContext, type Page } from "@playwright/test";
 
-/** The banner every screen carries (CLAUDE.md, N-03). */
+/** The banner every screen carries (project domain rules, N-03). */
 export const BANNER = "aggregate affinity, not a ticket forecast";
 
 export const CROWD = ["Apparat", "Moderat", "Modeselektor", "Hundreds", "Brandt Brauer Frick", "Boys Noize"];

@@ -15,7 +15,7 @@ import { MemorySlateStore } from "../src/slateStore";
 
 export const FIXTURE_DIR = resolve(__dirname, "../../../fixtures/qloo");
 
-export const ROOM = JSON.parse(readFileSync(resolve(__dirname, "fixtures/room.json"), "utf8")) as {
+export const ROOM = JSON.parse(readFileSync(resolve(__dirname, "fixtures", "room.json"), "utf8")) as {
   city: string;
   crowdActs: string[];
   candidateActs: string[];

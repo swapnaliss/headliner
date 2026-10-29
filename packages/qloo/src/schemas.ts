@@ -2,7 +2,7 @@ import { z } from "zod";
 import { QlooShapeError } from "./errors";
 
 /**
- * One zod schema per endpoint (CLAUDE.md: Qloo silently ignores invalid parameters and returns 200,
+ * One zod schema per endpoint (project domain rules: Qloo silently ignores invalid parameters and returns 200,
  * so every response shape is asserted). zod objects drop unknown keys, so the parsed value is
  * already the reduced form that is cached and digested: bulky fields (biographies, links, images,
  * raw heatmap coordinates) never reach the cache.

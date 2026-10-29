@@ -26,9 +26,10 @@ for _ in $(seq 1 30); do
 done
 [ "$up" = 1 ] || { tail -30 "$LOG"; echo "demo-mode-smoke: server did not start" >&2; exit 1; }
 
+ROOM_DIR=apps/web/test/fixtures
 curl -sf "localhost:$PORT/api/health" | grep -q '"mode":"fixtures"'
 curl -sf -X POST "localhost:$PORT/api/slates" -H 'content-type: application/json' \
-  --data @apps/web/test/fixtures/room.json >"$OUT"
+  --data "@$ROOM_DIR/room.json" >"$OUT"
 grep -q '"evidence"' "$OUT"
 grep -q '"status":"done"' "$OUT"
 code="$(curl -s -o /dev/null -w '%{http_code}' -X POST "localhost:$PORT/api/slates" -H 'content-type: application/json' -d '{"city":""}')"

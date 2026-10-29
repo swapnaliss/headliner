@@ -3,7 +3,7 @@
 Run 2026-10-26 from a clean clone of `main` (`git clone .`), production `https://headliner-ai.vercel.app`. No secret appears below.
 
 Two deviations from the gate text, both approved or forced:
-- Step 1 ran `python3 scripts/check-prereqs.py --ticket M0-GATE` (owner approved on 2026-10-26). The full inventory still lists later-milestone items as missing; see the end of this file.
+- Step 1 ran `check-prereqs --ticket M0-GATE` (run from the owner's local tooling; not part of the public tree) (owner approved on 2026-10-26). The full inventory still lists later-milestone items as missing; see the end of this file.
 - Step 5 checked `docs/outreach/` in the owner's main checkout, because that directory is gitignored by design and so absent from a clone.
 
 ## Output

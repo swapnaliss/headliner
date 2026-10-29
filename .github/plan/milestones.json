@@ -1,7 +1,0 @@
-[
-  {"title": "M0 · Recon & Bootstrap", "due": "2026-10-25", "description": "Prerequisites, repo, hello deploy, Qloo fixtures and latency table, Fit formula, database."},
-  {"title": "M1 · Walking Skeleton", "due": "2026-10-26", "description": "Thin slice through every layer, deployed: room in, ranked slate out."},
-  {"title": "M2 · Core Loop", "due": "2026-10-28", "description": "Match confirmation, evidence trail, city strength, shareable slates, abuse protection, sample rooms. The demo storyboard runs for real."},
-  {"title": "M3 · Agent Layer & Proof", "due": "2026-10-29", "description": "Agent intake and grounded explanation, evals, measured home-city check, observability, UI polish and accessibility."},
-  {"title": "M4 · Submission", "due": "2026-10-30", "description": "README, Devpost text, security pass, public tree cleanup, gate, submit before the Oct 31 09:15 IST deadline."}
-]

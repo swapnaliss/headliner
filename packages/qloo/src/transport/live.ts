@@ -1,7 +1,7 @@
 import { QlooTimeout, QlooUnavailable } from "../errors";
 import type { QlooTransport, TransportRequest, TransportResponse } from "./types";
 
-/** The hackathon key works only against this host (CLAUDE.md). It is fixed, not configurable. */
+/** The hackathon key works only against this host (project domain rules). It is fixed, not configurable. */
 export const QLOO_BASE_URL = "https://hackathon.api.qloo.com";
 
 export interface LiveTransportOptions {

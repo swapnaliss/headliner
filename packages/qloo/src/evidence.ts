@@ -1,7 +1,7 @@
 import { createHash } from "node:crypto";
 
 /**
- * The checkable record behind every number (CLAUDE.md domain rules). It holds the endpoint, the
+ * The checkable record behind every number (project domain rules). It holds the endpoint, the
  * redacted request parameters (entity ids and typed query values; no credential is ever a parameter),
  * the digest of the shape-validated response and when it was fetched. The credential header is
  * never stored, logged or returned.
