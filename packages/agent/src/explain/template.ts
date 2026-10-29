@@ -1,3 +1,4 @@
+import { CAVEAT_WORDING, THIN_DATA_WORDING_PLURAL, joinCityNames } from "@headliner/core";
 import type { Fact } from "./facts";
 
 function acts(n: string): string {
@@ -9,6 +10,29 @@ const STANDING_PHRASE = {
   similar: "similar to",
   below: "below",
 } as const;
+
+/**
+ * Says the thin-data caveat once per act. Two or more thin cities of one act become a single caveat fact whose subject is
+ * the cities ("Berlin and Leipzig") and whose message is core's plural sentence; one thin city is left exactly as it is.
+ * The merged fact sits where the first thin-city caveat was. Only Slate fields (city names, the 15-cell threshold) are used.
+ */
+export function mergeThinCaveats(facts: readonly Fact[]): Fact[] {
+  const isThin = (f: Fact): f is Extract<Fact, { kind: "caveat" }> => f.kind === "caveat" && f.subject !== undefined && f.message === CAVEAT_WORDING["thin-data"];
+  const out: Fact[] = [];
+  for (const fact of facts) {
+    if (!isThin(fact)) {
+      out.push(fact);
+      continue;
+    }
+    const same = facts.filter((f) => isThin(f) && f.act === fact.act);
+    if (same.length < 2) {
+      out.push(fact);
+    } else if (same[0] === fact) {
+      out.push({ kind: "caveat", act: fact.act, message: THIN_DATA_WORDING_PLURAL, subject: joinCityNames(same.map((f) => (f as { subject: string }).subject)) });
+    }
+  }
+  return out;
+}
 
 /** One deterministic sentence per fact. Pure: the same facts always give the same text. */
 export function sentenceOf(fact: Fact): string {
@@ -48,7 +72,7 @@ export function renderTemplate(facts: readonly Fact[]): string {
     if (current.length > 0) lines.push(current.join(" "));
     current = [];
   };
-  for (const fact of facts) {
+  for (const fact of mergeThinCaveats(facts)) {
     const act = fact.kind === "room" ? null : fact.act;
     if (fact.kind === "room" || act !== currentAct) flush();
     currentAct = act;

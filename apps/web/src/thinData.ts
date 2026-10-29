@@ -1,8 +1,8 @@
-import { CAVEAT_WORDING, THIN_DATA_CELLS } from "@headliner/core";
+import { CAVEAT_WORDING, THIN_DATA_WORDING_PLURAL } from "@headliner/core";
 
 /** The sentence core writes for one thin city, and its plural form for two or more cities (owner-approved wording, 2026-10-29). */
 const SINGULAR = CAVEAT_WORDING["thin-data"];
-const PLURAL = `Fewer than ${THIN_DATA_CELLS} Qloo heatmap cells back these cities, so their strength is thin data.`;
+const PLURAL = THIN_DATA_WORDING_PLURAL;
 
 /**
  * The one sentence shown for a merged caveat (design-system.md section 10: say a caveat sentence once per card). Identical

@@ -202,12 +202,21 @@ describe("explainSlate", () => {
     expect(user).not.toMatch(/[0-9a-f]{8}-[0-9a-f]{4}-/i);
   });
 
-  it("gives the model one plain thin-data statement per thin city, while the template wording is unchanged", () => {
+  it("gives the model one plain thin-data statement for one thin city, while the template wording is unchanged", () => {
     const parsed = JSON.parse(buildUserPrompt(buildSlateFacts(slate))) as { statements: { about: string | null; statement: string }[] };
     const thin = parsed.statements.filter((s) => s.statement.includes("thin data"));
     expect(thin.map((s) => s.statement)).toEqual(["London has thin data: fewer than 15 Qloo heatmap cells back this city."]);
     expect(parsed.statements.some((s) => /\bOnly\b/.test(s.statement))).toBe(false);
     expect(template).toContain("London: Fewer than 15 Qloo heatmap cells back this city, so its strength is thin data.");
+  });
+
+  it("accepts the recorded replies for a slate with two thin cities (Berlin, Leipzig), at slate and act scope", async () => {
+    const berlin = loadSlate("sample-berlin-electronic");
+    const slateOut = await explainSlate(berlin, { model: stub({ text: loadReply("berlin-slate") }) });
+    expect(slateOut).toMatchObject({ source: "llm" });
+    expect(slateOut.text).toContain("Berlin and Leipzig");
+    const actOut = await explainSlate(berlin, { model: stub({ text: loadReply("berlin-act") }) }, { actId: berlin.results[0]!.act.qlooEntityId });
+    expect(actOut).toMatchObject({ source: "llm" });
   });
 
   it("falls back to the template when the reply echoes an internal field name", async () => {

@@ -102,8 +102,10 @@ describe("CityStrengthSection", () => {
     const thin = within(screen.getByRole("list", { name: "Cities with thin data" })).getAllByRole("listitem");
     expect(thin.map((li) => li.textContent?.match(/Berlin|Leipzig/)?.[0])).toEqual(["Berlin", "Leipzig"]);
     expect(thin[0]?.textContent).toContain("Thin data");
-    expect(thin[0]?.textContent).toContain("only 6 Qloo heatmap cells");
-    expect(thin[1]?.textContent).toContain("only 1 Qloo heatmap cell for this city");
+    // The per-row sentence is gone (the Caveats card says it once); the row keeps the cell count with the threshold and the chip.
+    expect(thin[0]?.textContent).toContain("6 cells, fewer than 15");
+    expect(thin[1]?.textContent).toContain("1 cell, fewer than 15");
+    for (const li of thin) expect(li.textContent).not.toContain("may not be representative");
     expect(thin[0]?.textContent).toContain("Your venue's city");
 
     expect(screen.getByRole("heading", { level: 3, name: "No heatmap data" })).toBeTruthy();
