@@ -94,10 +94,10 @@ No login, account, CAPTCHA or API key is needed.
 
 ## Gallery images (`docs/screenshots/`)
 
-Captured on 28 Oct 2026 from the production site, https://headliner-ai.vercel.app (live mode, light mode): `/s/sample-berlin-electronic` for the slate, its Reality Club act page for the act detail, plus the room setup page and the match confirmation. No demo badge is shown. Only `empty-state-390.png` and `empty-state-1280.png` come from a `DEMO_MODE=fixtures` build (no no-data act is stored on production).
+Captured on 29 Oct 2026 from the production site, https://headliner-ai.vercel.app (live mode, light mode): `/s/sample-berlin-electronic` for the slate, its Reality Club act page for the act detail, plus the room setup page and the match confirmation. No demo badge is shown. Only `empty-state-390.png` and `empty-state-1280.png` come from a `DEMO_MODE=fixtures` build (no no-data act is stored on production).
 
-1. `docs/screenshots/slate-1280.png`: the ranked slate with the popularity-order comparison and thin-data flags (desktop).
-2. `docs/screenshots/act-detail-1280.png`: act detail with shared tastes and the evidence trail (desktop).
+1. `docs/screenshots/slate-1280.png`: the ranked act cards (rank numeral, Fit, shared tastes, popularity standing, thin-data caveat) with the popularity-order comparison and a collapsed Explanation (desktop).
+2. `docs/screenshots/act-detail-1280.png`: act detail with Fit, shared tastes, cities compared and the evidence trail (desktop).
 3. `docs/screenshots/slate-390.png`: the slate on a phone.
 4. `docs/screenshots/act-detail-390.png`: act detail on a phone.
 5. `docs/screenshots/slate-768.png` and `docs/screenshots/act-detail-768.png`: tablet width, optional.
