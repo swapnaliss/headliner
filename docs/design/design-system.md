@@ -188,6 +188,8 @@ Two voices, one narrow exception.
 
 **Why the exception is safe.** Headings, the wordmark and rank digits are our own copy, so the face only needs Latin letters and digits and we choose exactly what it must cover. Entity names (acts, tags, cities, anything from Qloo, the user or the model) are third-party text in any script and stay on `--font-sans`. Where a heading contains an entity (h1 "Slate for {city}"), the entity is wrapped in `<bdi class="entity">`, which resets `font-family` to `--font-sans`, so a CJK, Arabic or Devanagari city is never drawn in, or fallen back from, the display face. If the font file fails or is slow the heading falls back to a metrics-tuned system serif and nothing moves more than a fraction of a line; no information depends on the face.
 
+**Act pages.** On an act page the `h1` is the act's name, an entity, so it stays on `--font-sans` (`#act-heading`, letter-spacing 0). Screen titles that are our own copy (the `h1` on the slate, home and confirm screens) use the display face. The reason is the rule above: an act name is third-party text in any script and must never be drawn in, or fallen back from, a Latin-only display face. The `h2` sections on the act page remain display face.
+
 **Choice: Source Serif 4** (Adobe, SIL Open Font License 1.1; variable, roman only). Why: a sturdy transitional serif designed for screens with an optical-size axis, so it holds up at 56px rank numerals and at 22px h2 without separate files; it has real lining and tabular figures (`lnum`, `tnum`) so the numerals sit square beside Fit; and its tone is newspaper-desk, not fashion or tech, which is the editorial booking desk. It is not a variable-fonts novelty face and not a default stack.
 
 | Item | Value |
@@ -219,7 +221,7 @@ Two voices, one narrow exception.
 Rules:
 
 - Numbers (Fit, ranks, popularity, mean affinity rank, cell counts) use `font-variant-numeric: tabular-nums`. Digests and entity ids use `--font-mono` at `--text-sm`.
-- Max line length 70ch for prose; evidence and tables may be wider.
+- Max line length 75ch for prose (the lead paragraphs and the Explanation text; widened from 70ch on 2026-10-29 so the prose column sits closer to the full-width tiles and tables at 1280, still inside the 45 to 75 character range for comfortable reading); evidence and tables may be wider.
 - Entity names and tag labels are set with `dir="auto"` and `unicode-bidi: plaintext`, wrapped in `<bdi>` where inline next to other text, so a right-to-left name does not reorder the surrounding sentence.
 - Use logical properties (`margin-inline`, `padding-block`, `text-align: start`, `inset-inline-start`) everywhere so the chrome mirrors if a right-to-left locale is added.
 - Interface text respects user font-size changes: all sizes are `rem`; nothing is clipped at 200% text zoom (see accessibility.md).

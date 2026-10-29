@@ -1,6 +1,6 @@
 "use client";
 
-import type { Evidence } from "@headliner/core";
+import { THIN_DATA_CELLS, type Evidence } from "@headliner/core";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import {
@@ -247,10 +247,11 @@ export function CityStrengthSection({ slateId, actId, actName, roomCity, persist
         <span className="num">Mean affinity rank {r.meanAffinityRank.toFixed(3)}</span>
         <span className="num">
           {r.cellCount} {plural(r.cellCount, "cell", "cells")}
+          {r.thin ? `, fewer than ${THIN_DATA_CELLS}` : ""}
         </span>
         {evidenceLink(r.evidenceRefs)}
       </div>
-      {r.thin ? <ThinDataBadge cellCount={r.cellCount} variant="block" /> : null}
+      {r.thin ? <ThinDataBadge cellCount={r.cellCount} /> : null}
     </li>
   );
 

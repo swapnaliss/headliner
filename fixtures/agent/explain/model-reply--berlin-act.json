@@ -1,0 +1,14 @@
+{
+  "_note": "Live recording from the OpenAI API (key-free) of the structured reply for the sample-berlin-electronic slate; scope act (Reality Club); two thin cities (Berlin, Leipzig) are given to the model as one merged statement. Unedited. Pipeline outcome: llm.",
+  "recordedOn": "2026-10-29",
+  "model": "gpt-5-nano",
+  "scope": "act",
+  "usage": {
+    "in": 920,
+    "out": 107,
+    "reasoning": 0,
+    "costUsd": 0.00008880000000000002
+  },
+  "pipelineSource": "llm",
+  "text": "{\"sentences\":[\"Reality Club ranks 1 for audience-taste fit, with a fit of 60.6 out of 100.\",\"Reality Club shares Electronic, Indie and Simple with your crowd.\",\"Reality Club has a Qloo popularity rank of 86.4 out of 100 against a crowd median of 99.5.\",\"Reality Club’s data is thin in Berlin and Leipzig, with fewer than 15 Qloo heatmap cells backing these cities.\"]}"
+}

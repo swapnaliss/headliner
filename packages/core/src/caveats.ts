@@ -27,6 +27,15 @@ export const CAVEAT_WORDING = {
   "city-no-data": "Qloo returned no usable heatmap cells for this city, so no city strength is shown.",
 } as const;
 
+/** The thin-data sentence for two or more cities, said once (owner-approved wording, 2026-10-29). One source for the card, the chip and the explanation. */
+export const THIN_DATA_WORDING_PLURAL = `Fewer than ${THIN_DATA_CELLS} Qloo heatmap cells back these cities, so their strength is thin data.`;
+
+/** "Berlin", "Berlin and Leipzig", "Berlin, Leipzig and London": city names (untrusted text, plain) joined for a sentence. */
+export function joinCityNames(names: readonly string[]): string {
+  if (names.length <= 1) return names.join("");
+  return `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`;
+}
+
 export interface CaveatInput {
   readonly fit: FitResult;
   readonly standing: StandingResult;

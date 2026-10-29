@@ -1,6 +1,6 @@
-import { CAVEAT_WORDING, THIN_DATA_CELLS } from "@headliner/core";
+import { CAVEAT_WORDING, THIN_DATA_CELLS, THIN_DATA_WORDING_PLURAL } from "@headliner/core";
 import type { Fact } from "./facts";
-import { sentenceOf } from "./template";
+import { mergeThinCaveats, sentenceOf } from "./template";
 
 /**
  * The explanation prompt. The model receives plain-English statements written by code from the
@@ -31,11 +31,14 @@ export function statementOf(fact: Fact): string {
   if (fact.kind === "caveat" && fact.subject !== undefined && fact.message === CAVEAT_WORDING["thin-data"]) {
     return `${fact.subject} has thin data: fewer than ${THIN_DATA_CELLS} Qloo heatmap cells back this city.`;
   }
+  if (fact.kind === "caveat" && fact.subject !== undefined && fact.message === THIN_DATA_WORDING_PLURAL) {
+    return `${fact.subject} have thin data: fewer than ${THIN_DATA_CELLS} Qloo heatmap cells back these cities.`;
+  }
   return sentenceOf(fact);
 }
 
 export function buildUserPrompt(facts: readonly Fact[]): string {
-  return JSON.stringify({ statements: facts.map((f) => ({ about: f.kind === "room" ? null : f.act, statement: statementOf(f) })) });
+  return JSON.stringify({ statements: mergeThinCaveats(facts).map((f) => ({ about: f.kind === "room" ? null : f.act, statement: statementOf(f) })) });
 }
 
 /** Rough token estimate for the budget reservation (about 3 characters per token). */

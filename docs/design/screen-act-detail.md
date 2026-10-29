@@ -125,7 +125,7 @@ Hatch pattern `/` in a bar marks thin data; it is a second cue next to the word 
 | 0 to 100        | 86.4 of 100 vs crowd median 99.5 |                                        |
 | See evidence: 1 | See evidence: 2           |                                        |
 +--------------------------------------------------------------------------------------+
-| Why this Fit  (sentence, 70ch)                                                       |
+| Why this Fit  (sentence, 75ch)                                                       |
 +--------------------------------------------------------------------------------------+
 | Shared tastes (71)                              | Other cities compared                      |
 | Tag        Score   Crowd acts covered           | Berlin  [#########] 0.847  295 cells|
@@ -158,7 +158,7 @@ Hatch pattern `/` in a bar marks thin data; it is a second cue next to the word 
 | Other cities compared: idle | The section heading and caption render; below, a skeleton line and (only if the observer is unavailable) Button "Load city strength" | Loading starts when the section is within one screen of the viewport, so the Qloo calls (up to 5) are not spent unless the user scrolls near |
 | Other cities compared: loading | Status "Loading city strength: {done} of {total} cities." rows appear as cities complete; remaining rows are skeleton lines | Polite `role="status"`, updated at most every 2 seconds and on completion |
 | Other cities compared: ready | Rows ordered as in CityStrip: enough-data cities by mean affinity rank, then "Thin data: read with caution" group | Announced once: "City strength loaded for {n} cities. {t} have thin data." |
-| Other cities compared: thin data | Rows with fewer than 15 cells show the ThinDataBadge (block variant) and a hatched bar; they never sit among the ranked cities, even with a high mean (a one-cell city can have a high mean) | A "Thin data: {cities}" caveat chip is added to the Caveats tile once the cities have loaded (before that the tile has no city caveat). The section itself carries no second summary chip: thin data is stated in the Caveats tile (once, with one sentence) and in the "Thin data: read with caution" group, never three times. The chip reads "Thin data: A, B" with one space after the colon |
+| Other cities compared: thin data | Rows with fewer than 15 cells show the inline ThinDataBadge, a hatched bar and "{n} cells, fewer than 15" (no per-row sentence; the Caveats card says it once); they never sit among the ranked cities, even with a high mean (a one-cell city can have a high mean) | A "Thin data: {cities}" caveat chip is added to the Caveats tile once the cities have loaded (before that the tile has no city caveat). The section itself carries no second summary chip: thin data is stated in the Caveats tile (once, with one sentence) and in the "Thin data: read with caution" group, never three times. The chip reads "Thin data: A, B" with one space after the colon |
 | Other cities compared: zero cells | Row shows city name and EmptyState compact: "No heatmap cells for {city}: Qloo returned no usable audience data there." | No bar, no number |
 | Other cities compared: partial | Cities that loaded are shown; each failed city has an inline error row "Could not load {city}" with "Try again" | Others unaffected |
 | Other cities compared: failed | ErrorState compact: "Could not load city strength. The rest of this page is unaffected." with "Try again" | Focus stays where it was; alert announced |
@@ -197,7 +197,7 @@ Hatch pattern `/` in a bar marks thin data; it is a second cue next to the word 
 | Evidence count growth | "Evidence trail now lists {n} calls." |
 | City row | "{city}" ; "Your venue's city" ; "Mean affinity rank {value}" ; "{n} cells" (singular "1 cell") |
 | Thin group heading | "Thin data: read with caution" |
-| ThinDataBadge block | "Thin data: only {n} Qloo heatmap cells for this city (fewer than 15). The mean affinity rank may not be representative." |
+| ThinDataBadge block | Not used on the city rows (the sentence is said once on the Caveats card). A thin row shows the inline chip and the figure "{n} cells, fewer than 15". |
 | Zero cells | "No heatmap cells for {city}: Qloo returned no usable audience data there." |
 | Cities loading | "Loading city strength: {done} of {total} cities." |
 | Cities done | "City strength loaded for {n} cities. {t} have thin data." (zero thin: omit second sentence) |

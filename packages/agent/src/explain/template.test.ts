@@ -1,7 +1,9 @@
+import { CAVEAT_WORDING } from "@headliner/core";
 import { describe, expect, it } from "vitest";
-import { buildFacts, buildSlateFacts } from "./facts";
+import { buildFacts, buildSlateFacts, type Fact } from "./facts";
 import { allowedNumbers, groundingCheck } from "./grounding";
 import { renderTemplate } from "./template";
+import { buildUserPrompt } from "./prompt";
 import { loadSlate } from "./testkit";
 
 const leipzig = loadSlate("sample-leipzig-indie");
@@ -67,5 +69,39 @@ describe("renderTemplate", () => {
     const one = { ...leipzig, room: { ...leipzig.room, crowdActs: leipzig.room.crowdActs.slice(0, 1) }, results: leipzig.results.slice(0, 1) };
     const line = renderTemplate(buildSlateFacts(one)).split("\n")[0];
     expect(line).toBe("Audience-taste fit compares 1 of 1 candidate act with the 1 regular-crowd act for Leipzig.");
+  });
+});
+
+describe("thin data is said once per act", () => {
+  const thin = (act: string, subject: string): Fact => ({ kind: "caveat", act, message: CAVEAT_WORDING["thin-data"], subject });
+  const MANY = "Fewer than 15 Qloo heatmap cells back these cities, so their strength is thin data.";
+
+  it("keeps the singular sentence for one thin city, exactly as before", () => {
+    expect(renderTemplate([thin("Moderat", "London")])).toBe("London: Fewer than 15 Qloo heatmap cells back this city, so its strength is thin data.");
+  });
+
+  it("says it once, naming both cities, for two thin cities", () => {
+    const text = renderTemplate([thin("Moderat", "Berlin"), thin("Moderat", "Leipzig")]);
+    expect(text).toBe(`Berlin and Leipzig: ${MANY}`);
+    expect(text.match(/Fewer than/g)).toHaveLength(1);
+  });
+
+  it("says it once, naming all three cities, for three thin cities", () => {
+    const text = renderTemplate([thin("Moderat", "Berlin"), thin("Moderat", "Leipzig"), thin("Moderat", "London")]);
+    expect(text).toBe(`Berlin, Leipzig and London: ${MANY}`);
+  });
+
+  it("merges per act, never across acts", () => {
+    const text = renderTemplate([thin("A", "Berlin"), thin("A", "Leipzig"), thin("B", "Berlin")]);
+    expect(text).toBe(`Berlin and Leipzig: ${MANY}\nBerlin: Fewer than 15 Qloo heatmap cells back this city, so its strength is thin data.`);
+  });
+
+  it("gives the model one merged statement and no per-city repeats, and the merged text is grounded", () => {
+    const act = berlin.results[0]!;
+    const facts = buildSlateFacts(berlin, { actId: act.act.qlooEntityId });
+    const statements = (JSON.parse(buildUserPrompt(facts)) as { statements: { statement: string }[] }).statements.map((s) => s.statement);
+    expect(statements.filter((t) => t.includes("thin data"))).toEqual(["Berlin and Leipzig have thin data: fewer than 15 Qloo heatmap cells back these cities."]);
+    expect(groundingCheck(statements.join(" "), berlin)).toEqual({ ok: true });
+    expect(groundingCheck(renderTemplate(facts), berlin)).toEqual({ ok: true });
   });
 });

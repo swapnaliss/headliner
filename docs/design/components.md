@@ -334,7 +334,7 @@ The lazy "other cities compared" list on act detail. Each city is a row (list), 
 |---|---|
 | Element and role | `<span>` containing icon + text. Optionally a disclosure button when a full explanation is allowed. |
 | Props | `cellCount: number`, `threshold: 15` (fixed from ADR 0013), `variant: "inline" \| "block"` |
-| Look | caution status pair, three-bars icon with a dotted last bar, text "Thin data" in `--text-sm` weight 600. Block variant adds the sentence below. |
+| Look | caution status pair, three-bars icon with a dotted last bar, text "Thin data" in `--text-sm` weight 600. Block variant adds the sentence below (kept for other uses; the city rows use the inline variant and print "{n} cells, fewer than 15" instead). |
 | Copy | inline: "Thin data". Block: "Thin data: only {n} Qloo heatmap cells for this city (fewer than 15). The mean affinity rank may not be representative." |
 | Accessible name | "Thin data, {n} cells" |
 
