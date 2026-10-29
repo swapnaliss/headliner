@@ -36,5 +36,5 @@ export default async function SharedSlatePage({ params }: { params: Params }) {
   const { id } = await params;
   const slate = await load(id);
   if (!slate) notFound();
-  return <SlateView slate={slate} shared explanation={<ExplanationBlock slate={slate} />} />;
+  return <SlateView slate={slate} shared explanation={<ExplanationBlock slate={slate} disclosure />} />;
 }

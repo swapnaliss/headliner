@@ -19,122 +19,100 @@ Users: the independent venue talent buyer (phone between calls, or desk), promot
 
 ## Layout
 
-Landmarks: `header` (name + Banner), `main` (h1, notes, ranked list), `aside` "Compare orders and share" (complementary), `footer`. Headings: h1 "Slate for {city}"; h2 "Ranked acts", "Not ranked", "Compare with Qloo popularity rank order", "Share this slate", "Room used"; h3 per act name.
+Landmarks: `header` (wordmark + Banner), `main` (h1, room summary, notes, ranked list, not-ranked, explanation disclosure), `aside` "Compare orders and share" (complementary), `footer`. Headings: h1 "Slate for {city}" (display face; the city is wrapped in `<bdi class="entity">` so it renders in the system stack); h2 "Ranked acts", "Not ranked", "Compare with Qloo popularity rank order", "Share this slate", "Room used"; h3 per act name. The explanation is a disclosure whose summary "Explanation" stands in for its h2 (components.md, ExplanationBlock).
 
-The h1 is followed by a subtitle paragraph "Ranked by audience-taste fit with your crowd". Content hierarchy: (1) which room and run, (2) slate-level notes, (3) ranked ActCards, (4) not-ranked acts with reasons, (5) comparison with popularity order, (6) share, (7) room details.
+Content hierarchy, most important first (changed in the reskin): (1) which room and run: h1, subtitle, room summary; (2) slate-level notes (close values); (3) **ranked ActCards, directly under the summary**; (4) not-ranked acts with reasons; (5) the Explanation disclosure, closed; (6) comparison with popularity order, share, room used (aside at 1024px and up, below the main column otherwise).
 
-### Mobile 360px
+The h1 is followed by the subtitle "Ranked by audience-taste fit with your crowd" and the room summary: "Compared with {n} crowd acts" with its disclosure, the shared-slate line, and the one-sentence "How to read Fit" caption. Nothing else sits between the title block and the first card except the close-values note.
 
-One column. Cards are stacked and full width. The comparison and share blocks follow the cards. The crowd list is a collapsed disclosure.
+### Mobile 390px (works from 320px)
 
-The wireframe shows the three acts recorded for the sample room (ADR 0013); tag chips are shown as `[tag]` because tag labels come from Qloo at run time.
+One column, 16px gutters. Cards are stacked and full width; the rank numeral is 40px in a 3rem column. The comparison and share blocks follow the main column, after the closed Explanation.
 
 ```
 +--------------------------------------+
-| Headliner        [Demo mode chip]    |
+| [H] Headliner       [Demo mode chip] |
 | (i) Audience-taste fit is aggregate  |
 |     affinity, not a ticket forecast. |
 +--------------------------------------+
-| Slate for Berlin                     |  h1
-| Ranked by audience-taste fit with    |  subtitle
+| Slate for Berlin                     |  h1 display
+| Ranked by audience-taste fit with    |
 | your crowd                           |
-| Compared with 6 crowd acts  > Show   |  details
-| Fit is the mean Qloo tag score       |  caption
-| shared with your crowd (0 to 100).   |
-| Read rank first: values are close.   |
-+--------------------------------------+
-| (i) Fit values span 2.5 points.      |  slate note
+| Compared with 6 crowd acts  > Show   |
+| Fit is the mean Qloo tag score ...   |
+| (i) Fit values span 2.5 points.      |
 |     Treat neighbouring ranks as      |
 |     close.                           |
 +--------------------------------------+
-| Ranked acts (3)                      |  h2
+| Ranked acts (5)                      |  h2 display
 | +----------------------------------+ |
-| | [1]  Reality Club                | |  rank, h3
-| | Fit 60.6                         | |
-| | [tag] [tag] [tag]                | |
-| | See all 71 shared tastes for     | |
-| | Reality Club                     | |
+| | 1  Reality Club            Fit   | |  rank hero (display, accent)
+| |                            60.6  | |
+| | [Electronic][Indie][Simple]      | |
+| | 71 shared tastes with your crowd | |
+| |                                  | |
 | | Qloo popularity rank             | |
 | | (o-) Below crowd median          | |
 | | 86.4 of 100 vs crowd median 99.5 | |
-| | Higher is better known on Qloo. | |
-| | Open details  Evidence (3 calls) | |
+| | Higher is better known on Qloo.  | |
+| |                                  | |
+| | (!) Thin data: Berlin, Leipzig   | |  one chip, one sentence
+| | Fewer than 15 Qloo heatmap ...   | |
+| | Open details >    Evidence (12)  | |  primary + one quiet link
 | +----------------------------------+ |
-| | [2]  Radiohead                   | |
-| | Fit 59.5                         | |
-| | [tag] [tag] [tag]                | |
-| | See all 86 shared tastes ...     | |
-| | Qloo popularity rank             | |
-| | (-o-) Similar to crowd median    | |
-| | 100.0 of 100 vs median 99.5      | |
-| | Open details  Evidence (3 calls) | |
-| +----------------------------------+ |
-| | [3]  Khruangbin ... Fit 58.1 ... | |
-| +----------------------------------+ |
+| | 2  Sigur Ros ...                 | |
 +--------------------------------------+
-| Compare with Qloo popularity rank    |  h2
-| order                                |
-| The orders differ.                   |
-| Act        Fit pos.  Popularity pos. |  table
-| Reality Club   1          3          |
-| Radiohead      2          1          |
-| Khruangbin     3          2          |
-| Derived from the Fit and Qloo        |
-| popularity rank values above.        |
-| Qloo popularity rank shows how well  |
-| known an act is on Qloo. Fit shows   |
-| how close its audience is to your    |
-| crowd. They answer different         |
-| questions.                           |
+| Explanation                      >   |  closed disclosure
+| Written from checked facts. ...      |  provenance line stays visible
 +--------------------------------------+
-| Share this slate                     |  h2
-| [ https://.../s/...        ][Copy]   |
-| Anyone with the link can see ...     |
-+--------------------------------------+
-| Room used                            |  h2
-| Berlin; crowd: 6 acts [Change room]  |
-+--------------------------------------+
-| About and licence | Source on GitHub |
+| Compare with Qloo popularity rank .. |
+| Share / Room used                    |
 +--------------------------------------+
 ```
 
 Standing glyph in the wireframe `(o-)`, `(-o-)`: a short horizontal median line with a dot above, on or below it (drawn as an SVG, never an arrow).
 
+### Tablet 768px
+
+One page column, 24px gutters. Cards use two columns under the head row (tags and count left, standing right); rank numeral 56px in a 4.5rem column. The aside content drops below the Explanation, as on mobile.
+
 ### Desktop 1280px
 
-12-column grid. Main list in columns 1 to 8; `aside` in columns 9 to 12 holding the comparison table, share block and room summary. The aside is sticky only at 1280px and above, only when it is shorter than the viewport and the viewport is at least 700px tall; at 1024px it sits beside the list without sticking. At 1440px the layout stays 1280px wide and centred. Each ActCard becomes a three-part row so a buyer can scan ranks down the left edge.
+12-column grid. Main column in columns 1 to 8: h1, summary, notes, ranked list, not-ranked, Explanation disclosure. `aside` in columns 9 to 12: the comparison table, share block and room summary. The aside is sticky only at 1280px and above, only when it is shorter than the viewport and the viewport is at least 700px tall; at 1024px it sits beside the list without sticking. At 1440px the layout stays 1280px wide and centred. The aside starts level with the h1, so the comparison is visible next to the first cards without pushing the ranking down.
+
+Each ActCard is a grid `4.5rem 1fr auto` (components.md, ActCard): the rank numeral in the left column, so a buyer scans ranks down the left edge; the name with Fit at the top right; under the name one row for the tags and the shared-taste count and one wrapping row for the standing block (caption, chip, value, scale note), so nothing is squeezed into a narrow column. The caveat chip and its sentence, then the footer row (primary link left, quiet Evidence link right), span the full card. The "Fit" label is 13px in `--text`; Fit is weight 600 so the indigo display-face rank stays the hero.
 
 ```
 +--------------------------------------------------------------------------------------+
-| Headliner                                                        [Demo mode chip]    |
+| [H] Headliner                                                    [Demo mode chip]    |
 | (i) Audience-taste fit is aggregate affinity, not a ticket forecast. It compares ... |
 +--------------------------------------------------------------------------------------+
 | Slate for Berlin                                       | Compare with Qloo popularity|
-| Fit is the mean Qloo tag score shared with your crowd. | rank order                  |
-| (i) Fit values span 2.5 points. Treat neighbouring ... | The orders differ.          |
-| Ranked acts (3)                                        | Act     Fit   Popularity    |
-| +----------------------------------------------------+ | Reality   1       3         |
-| | [1] Reality Club         | Qloo popularity rank    | | Radiohead 2       1         |
-| |     Fit 60.6             | (o-) Below crowd median | | Khruangbin 3      2         |
-| |     [tag][tag][tag]      | 86.4 of 100 vs median   | |                             |
-| |     Open details  Evidence (3 calls)  See all 71   | | Share this slate            |
-| +----------------------------------------------------+ | [ link          ] [Copy]    |
-| | [2] Radiohead ...                                  | |                             |
-| +----------------------------------------------------+ | Room used                   |
-| | [3] Khruangbin ...                                 | | Berlin; 6 crowd acts        |
+| Ranked by audience-taste fit with your crowd           | rank order                  |
+| Compared with 6 crowd acts   (i) Fit values span 2.5.. | The orders differ ...       |
+|                                                        | Act   Fit pos.  Pop. pos.   |
+| Ranked acts (5)                                        | ...                         |
+| +----------------------------------------------------+ |                             |
+| | 1   Reality Club                      Fit    60.6  | | Room used                   |
+| |     [Electronic][Indie][Simple]       Qloo pop. .. | | Berlin; crowd: 6 acts       |
+| |     71 shared tastes with your crowd  (o-) Below.. | | [Make your own slate]       |
+| |     (!) Thin data: Berlin, Leipzig ...             | |                             |
+| |     Open details >                  Evidence (12)  | |                             |
+| +----------------------------------------------------+ |                             |
+| | 2   Sigur Ros ...                                  | |                             |
+| > Explanation   Written from checked facts. ...        |                             |
 +--------------------------------------------------------------------------------------+
 ```
-
-At 768px (tablet) the aside drops below the list, as on mobile, and cards show tags and standing in two columns. Below 1024px there is a single page column.
 
 ### Card content rules
 
 - **Rank**: an integer position by Fit descending (ties: name, then entity id; ADR 0013). Two acts with the same displayed Fit show "Same Fit as the act above; ordered by name" under the lower one.
-- **Fit**: one decimal, label "Fit". No bar, gauge, star or percent sign.
-- **Overlap tags**: the three highest-scoring shared tags as plain-text chips, followed by a separate link "See all {n} shared tastes for {name}" to the shared tastes section of the detail page. Tag labels are plain text.
+- **Fit**: one decimal, label "Fit" (13px, `--text`), number in the system stack at weight 600. No bar, gauge, star or percent sign. Rank numerals are the only numbers in the display face.
+- **Overlap tags**: the three highest-scoring shared tags as plain-text chips, then the text line "{n} shared tastes with your crowd". The separate link "See all {n} shared tastes for {name}" is removed from the card (the detail page lists them all and the card opens it). Tag labels are plain text.
 - **Standing**: caption "Qloo popularity rank", label (Above, Similar to, Below crowd median), "{candidate} of 100 vs crowd median {median}" and the scale note "Higher is better known on Qloo." Similar means within 5 percentile points of the crowd median (exactly 5 is similar); Above is more than 5 points higher, Below more than 5 points lower (ADR 0013). Example: 100.0 against a median of 99.5 is Similar. Neutral colours; no arrows.
-- **Caveats**: Caveat chips under the standing line, icon plus text. A thin-data chip is not shown on slate cards: city strength is loaded lazily on the act detail page, so the card cannot know it. The thin-data caveat lives on the detail page.
-- **Evidence link**: "Evidence ({n} calls)" goes to the detail page Evidence trail anchored at that act.
+- **Caveats**: Caveat chips under the standing line, icon plus text. As built, a thin-data chip does show on the card when the run recorded it. When two or more cities are thin there is **one** chip naming them ("Thin data: Berlin, Leipzig") and the explanatory sentence ("Fewer than 15 Qloo heatmap cells back this city, so its strength is thin data.") is shown **once**. Fix: `mergeThinData` must de-duplicate the sentences instead of joining one per city. The sentence says "this city" even when two are named; wording is left as is and flagged for the owner.
+- **Affordances**: one primary, "Open details" as a stretched link making the whole card the target, and one quiet secondary, "Evidence ({n} calls)" to the detail page Evidence trail anchored at that act. No boxed-and-underlined links, no third link.
+- **Rank**: the hero of the card, display face, accent colour (components.md, ActCard). **Fit** is a printed number with one decimal and the label "Fit", smaller than the rank.
 - **Unranked acts** appear under h2 "Not ranked ({n})" below the ranked list, in the order the run received them, each as a compact card with the reason (see States). A card with no Fit never shows a rank number.
 
 ## States
@@ -185,8 +163,8 @@ At 768px (tablet) the aside drops below the list, as on mobile, and cards show t
 | Standing accessible | "Qloo popularity rank: {above/similar to/below} the crowd median, {candidate} out of 100 compared with a median of {median}. Higher means better known on Qloo." |
 | Standing unavailable: candidate | "Qloo popularity rank unavailable: Qloo gave no popularity value for this act." |
 | Standing unavailable: crowd | "Qloo popularity rank unavailable: Qloo gave no popularity value for your crowd acts." |
-| Tags overflow | link "See all {total} shared tastes for {name}" |
-| Card links | "Open details" (accessible "Open details for {name}") ; "Evidence ({n} calls)" (accessible "Evidence for {name}, {n} calls") |
+| Shared-taste count | "{total} shared tastes with your crowd" (text, no link) |
+| Card links | "Open details" (accessible "Open details for {name}", stretched over the card) ; "Evidence ({n} calls)" (accessible "Evidence for {name}, {n} calls") |
 | Caveat labels | "Thin data" ; "Fit unavailable" ; "Popularity rank unavailable" ; "Match chosen by you" ; "No data" ; "Saved result" ; "Run incomplete" |
 | No data title / reason | "No data for {name}" / "Qloo returned nothing usable for this act, so no Fit or Qloo popularity rank is shown." |
 | Retry act | "Try this act again" ; loading "Trying again…" |
@@ -213,7 +191,7 @@ At 768px (tablet) the aside drops below the list, as on mobile, and cards show t
 
 ## Keyboard and a11y
 
-- Tab order: skip link, header link, Banner disclosure, crowd disclosure, then each card in rank order (its "Open details", then "Evidence"; "See all n shared tastes" is part of the details link group), then Not ranked cards, then the aside (comparison table has no stops, then Copy link, then Change room), footer. On desktop the aside comes after the main list in both DOM order and tab order even though it sits to the right.
+- Tab order: skip link, wordmark link, Banner disclosure, crowd disclosure, then each card in rank order (its "Open details", then "Evidence"), then Not ranked cards, then the Explanation disclosure, then the aside (comparison table has no stops, then Copy link, then Change room), footer. On desktop the aside comes after the main list in both DOM order and tab order even though it sits to the right.
 - Ranked acts are an ordered list (`<ol>`); the number a screen reader hears comes from the accessible rank text, not only the list position.
 - The comparison is a real `<table>` with `<caption>` and `<th scope>` cells; the verdict sentence above it states the result in words.
 - Live regions: exactly one polite `role="status"` for progress and the ready message; errors use `role="alert"`. No region announces per-act progress each time; per-act words are in the visible list for reading.
@@ -261,12 +239,12 @@ The shared slate (`/s/{slateId}`) is this screen in read-only form. It differs a
 - The id is a random, unguessable 21-character id; it is validated against the id format before any lookup and encoded when placed in a URL.
 - Unknown or expired id: the same EmptyState as above ("This slate is no longer available."), with a 404 status and no hint whether the id ever existed.
 
-## Explanation block (M3-02)
+## Explanation block (M3-02, reskin)
 
-A `section` headed "Explanation" (h2), placed after the notes and before "Ranked acts". It also appears, for one act, on the act detail screen between the Fit, standing and caveats tiles and "Why this Fit" (caveats are read first).
+A `section` placed **below** "Ranked acts" and "Not ranked", collapsed by default behind a disclosure drawn as a quiet bordered row with a leading chevron (components.md, ExplanationBlock). Before the reskin it sat above the ranked list and read as ten near-identical sentences; it is now supporting material. It also appears, for one act, on the act detail screen between the Fit, standing and caveats tiles and "Why this Fit" (caveats are read first); the detail page is unchanged.
 
-- Source line under the heading, `field-hint` text: "Written from checked facts. Every figure in this text was checked against this slate before it was shown." or "Template. Built from this slate's values by a fixed template; no figure is added." Both are plain text; the source is also in `data-source`.
-- Body: one paragraph per line of text, `dir="auto"`, max width 70ch. React text nodes only: no HTML, no markdown, no links, so a name containing markup shows as typed.
+- Summary text "Explanation". The source line stays visible next to the summary in both states, `field-hint` text: "Written from checked facts. Every figure in this text was checked against this slate before it was shown." or "Template. Built from this slate's values by a fixed template; no figure is added." Both are plain text; the source is also in `data-source`.
+- Body (inside the closed `<details>`): one paragraph per line of text, `dir="auto"`, max width 70ch. React text nodes only: no HTML, no markdown, no links, so a name containing markup shows as typed. Content and wording are unchanged.
 - The slate summary covers the room line and the top 3 ranked acts; the act detail covers that one act, including its saved city strengths and caveats.
-- The Banner is unchanged. The template shows first (it is the loading state) and is replaced only by model text whose every figure is in the slate.
+- The Banner is unchanged. The template shows first (it is the loading state) and is replaced only by model text whose every figure is in the slate. The disclosure stays closed when the text is replaced.
 - Wording: "audience-taste fit" and "Qloo popularity rank"; never forecast, turnout, "will sell" or any trend or momentum claim.

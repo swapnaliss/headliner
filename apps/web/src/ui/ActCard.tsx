@@ -95,36 +95,36 @@ export function ActCard({ result, rankedCount, tiedWithPrevious = false, detailH
   const shown = result.overlapTags.slice(0, 3);
   return (
     <li>
-      <article className="act-card" aria-labelledby={headingId}>
-        <div className="card-head">
-          {result.rank !== null ? (
-            <span className="rank" aria-label={`Rank ${result.rank} of ${rankedCount}`}>
-              {result.rank}
-            </span>
-          ) : (
-            <span className="rank" data-unranked="true">
-              Not ranked
-            </span>
-          )}
-          <h3 id={headingId} className="act-name" dir="auto">
-            <bdi>{act.name}</bdi>
-          </h3>
-        </div>
+      <article className="act-card" aria-labelledby={headingId} data-linked={detailHref ? "true" : undefined} data-nodata={noData ? "true" : undefined}>
+        {result.rank !== null ? (
+          <span className="rank" aria-label={`Rank ${result.rank} of ${rankedCount}`}>
+            {result.rank}
+          </span>
+        ) : (
+          <span className="rank" data-unranked="true">
+            Not ranked
+          </span>
+        )}
+        <h3 id={headingId} className="act-name" dir="auto">
+          <bdi>{act.name}</bdi>
+        </h3>
 
         {noData ? (
-          <EmptyState compact title={`No data for ${act.name}`} reason={reason} />
+          <div className="card-empty">
+            <EmptyState compact title={`No data for ${act.name}`} reason={reason} />
+          </div>
         ) : (
-          <div className="card-body">
-            <div className="stack-sm">
-              <div className="fit">
-                <span className="sr-only">{`Audience-taste fit ${fmt(result.fit?.value ?? 0, 1)} out of 100`}</span>
-                <span className="fit-label" aria-hidden="true">
-                  Fit
-                </span>
-                <span className="fit-value" aria-hidden="true">
-                  {fmt(result.fit?.value ?? 0, 1)}
-                </span>
-              </div>
+          <>
+            <div className="fit">
+              <span className="sr-only">{`Audience-taste fit ${fmt(result.fit?.value ?? 0, 1)} out of 100`}</span>
+              <span className="fit-label" aria-hidden="true">
+                Fit
+              </span>
+              <span className="fit-value" aria-hidden="true">
+                {fmt(result.fit?.value ?? 0, 1)}
+              </span>
+            </div>
+            <div className="card-tags stack-sm">
               {tiedWithPrevious ? <p className="field-hint">Same Fit as the act above; ordered by name.</p> : null}
               {shown.length > 0 ? (
                 <ul className="chip-row" aria-label="Top shared tastes">
@@ -143,7 +143,7 @@ export function ActCard({ result, rankedCount, tiedWithPrevious = false, detailH
                 </p>
               ) : null}
             </div>
-            <div className="stack-sm">
+            <div className="card-standing">
               {result.standing ? (
                 <StandingLine standing={result.standing} />
               ) : (
@@ -158,29 +158,29 @@ export function ActCard({ result, rankedCount, tiedWithPrevious = false, detailH
                 </div>
               )}
             </div>
-          </div>
+          </>
         )}
 
         {/* The empty state above already says "no data" with its reason; the core caveat sentence would repeat it a third time. */}
-        <CaveatList caveats={noData ? result.caveats.filter((c) => c.type !== "no-data") : result.caveats} />
+        <div className="card-caveats">
+          <CaveatList caveats={noData ? result.caveats.filter((c) => c.type !== "no-data") : result.caveats} />
+        </div>
         {detailHref ? (
           <p className="card-links">
-            <a href={detailHref} aria-label={`Open details for ${isolate(act.name)}`}>
+            <a className="card-open" href={detailHref} aria-label={`Open details for ${isolate(act.name)}`}>
               Open details
+              <Icon name="chevron" />
             </a>
-            {result.overlapTags.length > shown.length ? (
-              <a href={`${detailHref}#tastes`} aria-label={`See all ${result.overlapTags.length} shared tastes for ${isolate(act.name)}`}>
-                See all {result.overlapTags.length} shared tastes
-              </a>
-            ) : null}
             {result.evidence.length > 0 ? (
-              <a href={`${detailHref}#evidence`} aria-label={`Evidence for ${isolate(act.name)}, ${result.evidence.length} ${plural(result.evidence.length, "call", "calls")}`}>
+              <a className="card-evidence" href={`${detailHref}#evidence`} aria-label={`Evidence for ${isolate(act.name)}, ${result.evidence.length} ${plural(result.evidence.length, "call", "calls")}`}>
                 Evidence ({result.evidence.length} {plural(result.evidence.length, "call", "calls")})
               </a>
             ) : null}
           </p>
         ) : result.evidence.length > 0 ? (
-          <EvidenceDisclosure name={act.name} evidence={result.evidence} />
+          <div className="card-links">
+            <EvidenceDisclosure name={act.name} evidence={result.evidence} />
+          </div>
         ) : null}
       </article>
     </li>

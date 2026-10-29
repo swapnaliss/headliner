@@ -39,21 +39,50 @@ The reading note shown on every screen, first thing under the header. Not dismis
 
 ---
 
+## Header and wordmark
+
+First element of every screen, above the Banner. Replaces the plain text "Headliner".
+
+| | |
+|---|---|
+| Element and role | `<header>` containing a row: `<a href="/" class="brand">` and, on the right, the Demo-mode chip (info status) when the server runs recorded data. The Banner follows inside the same `<header>`. |
+| Wordmark | The word "Headliner" in `--font-display` weight 700, `--text-lg` on mobile and `--text-xl` from 768px, `--text` colour, `letter-spacing: -0.01em`. Preceded by the mark. |
+| Mark | Inline SVG, 24px square, `aria-hidden="true"`, `fill: var(--accent)` (a rounded 4px square) with a lettershape "H" cut out in `--canvas`, the crossbar sitting above the middle so the shape reads as "top of the bill". Flat, no gradient, no raster, no animation. Decorative: the link's accessible name is the text "Headliner". Mark on canvas 3:1 is in the contrast tables. |
+| Rule | The header row has a 1px `--border-subtle` rule under it (decorative). Nothing else in the header: no navigation, no search, no account. |
+| Targets | Link hit area at least `--target` tall; 8px from the Demo-mode chip. |
+
+| State | Behaviour |
+|---|---|
+| default | as above |
+| hover | wordmark underline (2px, `--accent`) |
+| focus | 3px ring around mark and wordmark together |
+| disabled, loading, error | n/a |
+
+---
+
 ## Button
+
+One hierarchy, defined here and used everywhere. A control is never both boxed and underlined.
+
+| Level | Look | Use | Code value |
+|---|---|---|---|
+| Primary | filled `--accent`, `--on-accent` text, no border, `--radius-1`, weight 600 | the one action the region exists for: "Rank these acts", "Open sample slate". At most one per region; a screen may have a primary per region (the sample cards and the action bar are different regions) | `variant="primary"` |
+| Secondary | `--surface` fill, 1px `--accent` border, `--accent` text, weight 600 | a real alternative or a supporting action: "Fill in the sample room", "Add to crowd acts", "Copy link", "Try again" | `variant="secondary"` |
+| Tertiary | no fill, no border, `--accent` text, always underlined (2px offset), weight 600, same hit area as other buttons | navigation-like or low-stakes actions and every link inside a card or sentence: "Evidence (12 calls)", "Use the example sentence", "Change room" | `variant="quiet"` (code name kept; the spec calls it tertiary) |
 
 | | |
 |---|---|
 | Element and role | `<button>` for actions, `<a>` styled as a button for navigation. Role is implicit. |
 | Props | `variant: "primary" \| "secondary" \| "quiet"`, `children: string`, `loading?: boolean`, `loadingLabel?: string`, `disabledReason?: string`, `type`, `onClick`, `icon?: IconName` (decorative) |
-| Size | minimum height and width `--target` (44px on small screens). Padding inline 16px. Label `--text-base`, weight 600. Labels are verbs: "Rank these acts", not "Submit". |
-| Accessible name | its visible text (plus `aria-label` only when the visible text is an icon; avoid). |
+| Size | minimum height and width `--target` (44px on small screens). Padding inline 20px. Label `--text-base`, weight 600. Labels are verbs: "Rank these acts", not "Submit". |
+| Accessible name | its visible text (plus `aria-label` only when the visible text is not enough to tell two buttons apart, and then the label must start with the visible text, WCAG 2.5.3). |
 
 | State | Behaviour |
 |---|---|
-| default | primary: `--accent` fill, `--on-accent` text. secondary: `--surface` fill, `--accent` text and 1px `--accent` border. quiet: text in `--link`, underlined, no border. |
-| hover | primary uses `--accent-hover`; secondary and quiet add an underline. Not the only cue to being clickable (the border and fill already are). |
-| focus | 3px focus ring, 2px offset. |
-| disabled | A control that is unavailable because of missing input uses `aria-disabled="true"` (not the `disabled` attribute) so it stays focusable and can be explained; activating it does nothing except move focus to the first thing that needs fixing and announce the reason. The reason sits visibly under or beside the button and is linked with `aria-describedby`. Look: `--sunken` fill, `--text-muted` text and a solid 1px `--border-control` border (never dashed). Text 6.70:1 (light) and 8.49:1 (dark) on `--sunken` meets AA 4.5:1, the border 4.85:1 and 5.29:1 meets 3:1 (design-system.md contrast tables), so the button stays legible even though disabled controls are exempt from WCAG contrast. The native `disabled` attribute is not used at all, so focus is never lost. |
+| default | as the table above |
+| hover | primary: `--accent-hover` fill. secondary: `--accent-tint` fill. tertiary: text becomes `--accent-hover`. The border, fill or underline already says "clickable"; hover is never the only cue. |
+| focus | 3px focus ring, 2px offset, on every level. |
+| disabled | A control that is unavailable because of missing input uses `aria-disabled="true"` (not the `disabled` attribute) so it stays focusable and can be explained; activating it does nothing except move focus to the first thing that needs fixing and announce the reason. The reason sits visibly under or beside the button and is linked with `aria-describedby`. Look: `--sunken` fill, `--text-muted` text and a solid 1px `--border-control` border (never dashed). The disabled look is the same for primary and secondary, and it is plainly not the accent, so a disabled primary does not look available. Text 6.7:1 (light) and 8.5:1 (dark) and border 4.8:1 and 5.3:1 meet AA (design-system.md contrast tables), so the button stays legible even though disabled controls are exempt from WCAG contrast. The native `disabled` attribute is not used at all, so focus is never lost. |
 | loading | label changes to `loadingLabel` (for example "Ranking…"), a 16px spinner icon (static dot ring under reduced motion) precedes it, `aria-busy="true"` and `aria-disabled="true"`, the button keeps its width and its focus, repeat activation is ignored. Progress detail is in a separate live region on the page, not inside the button. |
 | error | n/a on the button. The failure appears in an ErrorState or TextField message, and the button returns to default so the user can retry. |
 
@@ -108,30 +137,35 @@ A removable or selectable pill showing one act name (typed crowd and candidate a
 
 ## ActCard
 
-One candidate act on the slate. Rendered as `<li>` inside `<ol aria-label="Ranked acts">` (order matters, so an ordered list). Cards are flat, bordered, never nested.
+One candidate act on the slate. Rendered as `<li>` inside `<ol aria-label="Ranked acts">` (order matters, so an ordered list). The card is one flat bordered unit with one primary affordance. Cards are never nested.
 
 | | |
 |---|---|
-| Element and role | `<li><article aria-labelledby="{id}-name">`. The act name is an `<h3>`. |
+| Element and role | `<li><article aria-labelledby="{id}-name">`. The act name is an `<h3>` (plain text, `--font-sans`). |
 | Props | `rank: number \| null`, `name: string` (plain text), `fit: { value: number } \| { unavailable: FitReason }`, `overlapTags: { label: string; score: number }[]` (first 3 shown), `standing: { label: "above"\|"similar"\|"below"; candidatePercentile: number; crowdMedian: number } \| { unavailable: StandingReason }`, `caveats: Caveat[]`, `evidenceHref: string`, `detailHref: string`, `tiedWithPrevious?: boolean`, `state: "ready" \| "no-data" \| "loading"` |
-| Content order (top to bottom) | rank, name; Fit (or "Fit unavailable" with reason); overlap tag chips; standing line (caption "Qloo popularity rank", glyph and label, "{n} of 100 vs crowd median {m}", "Higher is better known on Qloo."); caveat chips; links "Open details", "See all {n} shared tastes for {name}" and "Evidence (n calls)". |
-| Rank | A numeral in a 32px square (text, not an image). Accessible: "Rank 2 of 3". Unranked acts show "Not ranked" text in the same slot (no number, no dash alone). |
-| Fit | `--text-lg` bold number with one decimal and the label "Fit" above in `--text-sm`. Accessible text: "Audience-taste fit 60.6 out of 100". If `tiedWithPrevious`, a neutral note "Same Fit as the act above; ordered by name". |
-| Overlap tags | up to 3 chips (plain-text labels); a separate text link "See all {n} shared tastes for {name}" follows the chips and goes to the shared tastes section of the detail page. The chips themselves are plain text, not links or buttons. |
-| Standing | `Qloo popularity rank` caption (always the exact caption), then glyph plus label ("Below crowd median"), then "86.4 of 100 vs crowd median 99.5" and the scale note "Higher is better known on Qloo." Similar means within 5 percentile points of the median (exactly 5 is similar; 100.0 vs 99.5 is Similar). Never arrows or colour-coded good or bad. If unavailable: neutral chip "Unavailable" with the reason text. |
-| Evidence link | "Evidence (3 calls)" (singular "Evidence (1 call)") goes to `{detailHref}#evidence`. Accessible name: "Evidence for {name}, 3 calls". |
-| Accessible name | the heading: "{name}". Each section is announced in reading order; Fit and standing are plain text, not decorative. |
+| Grid | One flat CSS grid per card, so the rank numeral is the left-hand hero at every width. Below 768px: columns `3rem 1fr auto`; row 1 rank, name, Fit; then tags and count, standing, caveats and the footer, each full width, 16px apart. From 768px: columns `4.5rem 1fr auto`; rank spans the tags and standing rows; rows are `rank name fit`, `rank tags tags`, `rank standing standing`, then caveats and footer across the full card. The standing block is one wrapping row (caption, glyph chip, "{n} of 100 vs crowd median {m}", scale note), so no column is squeezed; the tags and the shared-taste count share one wrapping row. A no-data card is `rank name`, then the compact empty state (no border of its own inside the card), caveats, footer. |
+| Content order (top to bottom) | head row: rank numeral, act name, Fit (right edge). Body: overlap tag chips and the count line "{n} shared tastes with your crowd"; standing block (caption "Qloo popularity rank", glyph and label, "{n} of 100 vs crowd median {m}", "Higher is better known on Qloo."). Caveat chip, then its sentence once. Footer: the primary link "Open details" and the one quiet secondary link "Evidence (n calls)". |
+| Rank (the hero) | A numeral in `--font-display` 700, `--accent` colour, `--text-2xl` (40px) below 768px and `--text-3xl` (56px) from 768px, lining and tabular figures, in a column of fixed width (3rem / 4.5rem) so the numerals align down the left edge. Plain text, no box, no circle. Accessible: `aria-label="Rank 2 of 5"` on the numeral. Unranked acts show "Not ranked" in `--text-sm` weight 600, `--text-muted`, in the same column (no number, no dash alone). |
+| Fit | Label "Fit" at `--text-xs` (13px), weight 600, in `--text` (full contrast), right-aligned above the number; the number in `--font-sans` weight 600, `--text-xl`, tabular, one decimal, `--text` colour. It is lighter and smaller than the rank on purpose: rank leads, and the rank numeral is the only number set in the display face. No bar, ring, gauge, star, sparkline or percent sign (design-system.md section 8). Accessible text: "Audience-taste fit 60.6 out of 100". If `tiedWithPrevious`, the neutral note "Same Fit as the act above; ordered by name." |
+| Overlap tags | up to 3 chips (plain-text labels, `--font-sans`, not links). The card no longer carries a "See all {n} shared tastes" link: the full list is on the detail page, which the card opens, and the count stays in the line "{n} shared tastes with your crowd". |
+| Standing | as before: caption always "Qloo popularity rank"; glyph plus label; "86.4 of 100 vs crowd median 99.5"; "Higher is better known on Qloo." Similar means within 5 percentile points of the median. Neutral colours, no arrows. If unavailable: neutral chip "Unavailable" with the reason. |
+| Caveats | one Caveat chip per kind (see Caveat chip). The chip names the cities ("Thin data: Berlin, Leipzig"); the sentence under it appears once. |
+| Primary affordance | The text link "Open details" (tertiary style, trailing chevron icon, accessible name "Open details for {name}") is a stretched link: its `::after` covers the whole card (`position: absolute; inset: 0`, card is `position: relative`), so the whole card is the click and tap target. Right-to-left: the chevron mirrors. |
+| Secondary affordance | At most one: "Evidence (12 calls)" (singular "Evidence (1 call)"), tertiary style, `position: relative; z-index: 1` so it sits above the stretched link, going to `{detailHref}#evidence`. Accessible name "Evidence for {name}, 12 calls". Hit area `--target`; at least 8px from the primary link. |
+| Accessible name | the heading "{name}". Each section is announced in reading order; Fit and standing are plain text. |
 
 | State | Behaviour |
 |---|---|
-| default | as above |
-| hover | the card does not change (it is not itself interactive); links inside it underline. Nothing is revealed only on hover. |
-| focus | ring on each link; the card itself is not focusable |
+| default | as above; 1px `--border-subtle` border on `--surface`, `--radius-2`, padding 20px (24px from 768px) |
+| hover | border becomes `--accent` (1px) plus an inset 1px `--accent` ring (2px look, no layout shift); the "Open details" underline thickens. Nothing is revealed only on hover. |
+| focus | when "Open details" is focused, its `::after` draws the 3px focus ring around the whole card (2px offset); "Evidence" has its own ring. Both visible without hover. |
 | disabled | n/a |
 | loading | replaced by SkeletonCard (the slate shows progress, not partial ranks) |
-| error / no data | The card keeps its place in the "Not ranked" group and shows an EmptyState (compact) in place of Fit and tags: "No data" with the reason, and a button "Try this act again". Caveat chip "No data" is present. |
+| error / no data | The card keeps its place in the "Not ranked" group and shows an EmptyState (compact) in place of Fit and tags: "No data" with the reason, and a button "Try this act again". Caveat chip "No data" is present. No stretched link when there is no detail page. |
 
-Layout: at 360px everything stacks in one column with 16px padding; at 1280px rank + name + Fit sit in a row on the left, tags and standing in the middle column, links on the right (see screen-slate.md).
+Text inside a stretched card cannot be selected by dragging from the link area; this is accepted (names and numbers are also on the detail page and in the Evidence).
+
+Layout: below 768px, one column: head row `[rank | name | Fit]`, then tags, standing, caveat, footer, all full width with 16px between. From 768px: two columns inside the card under the head row (tags and count left, standing right). At 1280px the card is `grid-template-columns: 4.5rem 1fr 11rem`: rank, then name with tags and count underneath, then Fit over standing at the right; the caveat and footer span the full width below. See screen-slate.md.
 
 ---
 
@@ -144,7 +178,8 @@ A short flag attached to a card or a section explaining a limit on the number ne
 | Element and role | `<li>` in a `<ul aria-label="Caveats">`, or a `<span>` when single. Plain text; no role override. |
 | Props | `code: CaveatCode`, `label: string` (fixed per code), `detail?: string` (full sentence, shown on the detail page and in a disclosure on cards), `severity: "caution" \| "unavailable" \| "info"` |
 | Look | `--radius-pill`; icon (triangle for caution, dash circle for unavailable, i circle for info) + label in `--text-sm` weight 600; colour pair from the status table. |
-| Codes and labels | `thin-city-data` "Thin data" (appears only on the act detail page, after city strength has loaded; the slate cards do not show it because city strength is loaded lazily and may not exist yet); `fit-unavailable` "Fit unavailable"; `standing-unavailable` "Popularity rank unavailable"; `low-match-confidence` "Match chosen by you"; `no-data` "No data"; `stale-cache` "Saved result"; `partial-run` "Run incomplete" |
+| Codes and labels | `thin-data` "Thin data" (as built, slate cards also show it with the city names; the earlier rule that only the detail page shows it is superseded); `fit-unavailable` "Fit unavailable"; `standing-unavailable` "Popularity rank unavailable"; `low-match-confidence` "Match chosen by you"; `no-data` "No data"; `stale-cache` "Saved result"; `partial-run` "Run incomplete" |
+| Several cities | When the same caveat applies to more than one city (thin data for Berlin and Leipzig) there is **one chip** whose label names them, "Thin data: Berlin, Leipzig", and the sentence is shown **once**: the merged caveat message is the de-duplicated list of the individual messages (identical sentences collapse to one), never the messages joined. City names inside the chip are plain text in `<bdi>`. |
 | Accessible name | "Caveat: {label}" (the word "Caveat" is visually hidden when the chip is inside a list that is already labelled "Caveats"). |
 
 | State | Behaviour |
@@ -308,6 +343,66 @@ The lazy "other cities compared" list on act detail. Each city is a row (list), 
 | default | as above |
 | hover, disabled, loading, error | n/a: static label. It is shown whenever `cellCount < 15` (14 is thin, 15 is not), and never hidden to improve the look of a result. |
 | focus | n/a (not focusable); the explanation is in text, not in a tooltip |
+
+---
+
+## SampleRooms (feature cards)
+
+"Try a sample room" on room setup. The recommended first step, so it is a "start here" row of cards, not a list of small links.
+
+| | |
+|---|---|
+| Element and role | `<section aria-labelledby="samples-heading">` with an `<h2>`; the hint paragraph; `<ul>` of two cards, each `<li><article>` with an `<h3>`. Hidden when the server has no sample rooms. Plain anchors, no prefetch. |
+| Card content | `<h3>` "{venue name}, {city}" in `--font-display` 600, `--text-lg` (the venue name is our recorded fixture copy and stays in the display face; the city is an entity, so it is wrapped in `<bdi class="entity">` and set on its own line below the venue name in the system stack, `--text-sm` weight 600 `--text-muted`, with a visually hidden ", " between them so the heading still reads "{venue name}, {city}"); one line "Recorded real Qloo run, fetched {d Mon yyyy}." in `--text-sm` `--text-muted`; a primary button-link "Open sample slate", full width of the card and at least 44px tall, aligned to the foot of the card, accessible name "Open sample slate: {venue name}, {city}". The card is not itself a link, so there is exactly one affordance. |
+| Look | `--surface`, 1px `--border-subtle`, `--radius-2`, padding 24px, a 4px `--accent` rule on the block-start edge. No image, no illustration. |
+| Layout | two equal columns from 768px, stacked below; each card at least 8px apart. |
+
+| State | Behaviour |
+|---|---|
+| default | as above |
+| hover | the button hovers; the card does not change |
+| focus | ring on the button |
+| disabled, loading | n/a (navigation; the next page owns loading) |
+| error | n/a; when no samples exist the section is absent and the form is the first block |
+
+---
+
+## ActionBar (room setup primary action)
+
+The "Rank these acts" button with its reason, kept in view. Replaces the full-width button at the end of the form.
+
+| | |
+|---|---|
+| Element and role | A `<section aria-label="Rank these acts">` holding the Button (type submit, `form="room-form"` so it lives outside the form element), the reason paragraph (linked with `aria-describedby`, `id="rank-reason"`) and nothing else. It sits in the aside at 1024px and above (a card, sticky from 1280px under the existing sticky-aside rule) and is a bar at the bottom of the viewport below 1024px. |
+| Bar (below 1024px) | `--surface` fill, 1px `--border-subtle` top rule, padding 12px by the gutter, safe-area inset added. Button full width, then the reason in `--text-sm` under it. **While the form is empty** (no city, no act and nothing typed in an add field) the bar is an ordinary block after the form: a sticky bar over a still-empty first screen would cover the sample-room cards, which are the first thing to press, and a disabled button needs no persistence. **Once anything has been entered** (`data-started="true"`) and the viewport is at least 700px tall (`@media (min-height: 700px)`) it becomes `position: sticky; inset-block-end: 0` with `--shadow-1`, so Rank is always reachable while the form is being filled. It is static at 200% zoom and 320px by the same height rule, and the page sets `scroll-padding-block-end` to the bar height (9rem, an upper bound) only while it sticks, so a focused field is never covered (WCAG 2.4.11). It is a direct sibling of the form wrapper in the page flow (the aside wrapper is `display: contents` below 1024px and carries no landmark role) so it can stick against the whole page. |
+| Card (1024px and up) | `--surface`, 1px `--border-subtle`, `--radius-2`, padding 24px; the button full width of the card. First item of the right column, so the action is on screen with the form at 1280px. |
+| Behaviour | `aria-disabled` pattern unchanged: activating it while blocked moves focus to the first thing that needs fixing, announces the reason, and the reason text stays visible next to the button. States and strings are those in screen-room-setup.md. |
+| Never | a second "Rank these acts" button elsewhere on the page. |
+
+---
+
+## ExplanationBlock (disclosure)
+
+The generated explanation on the slate, now secondary content.
+
+| | |
+|---|---|
+| Element and role | `<section aria-labelledby="explanation-heading">` placed after "Ranked acts" and "Not ranked", before the footer. The section is a quiet bordered row (`--surface`, 1px `--border-subtle`, `--radius-2`, padding 16px) so it reads as a section, not an inline link. Inside: a `<details>` (closed by default, also when the model text replaces the template) whose `<summary id="explanation-heading">` is a leading chevron icon (accent) plus "Explanation", `--text-md` weight 600 in `--text` (underlined on hover), the chevron rotating 90 degrees when open (only when reduced motion is not requested), hit area `--target`. The provenance line "Written from checked facts. Every figure in this text was checked against this slate before it was shown." (or "Template. Built from this slate's values by a fixed template; no figure is added.") stays visible beside the summary in both states, so the honesty cue never hides with the prose. The paragraphs sit inside the `<details>` unchanged: same sentences, same order, `dir="auto"`, max 70ch. |
+| Behaviour | Native disclosure, works without scripts. Keyboard: Enter and Space on the summary. The act detail page keeps its own Explanation block unchanged in this reskin (one act, short). |
+| State | default closed. Open: content shown, `open` attribute. Pending (template while the model text loads): provenance line says "Template." and nothing is announced. |
+
+---
+
+## Quiet side cards (room setup)
+
+The three right-hand blocks, now clearly secondary to the form and the action card.
+
+| Block | Treatment |
+|---|---|
+| How it works | A compact three-step strip, not a card: `<ol>` with the three existing sentences, each step led by a small numeral in `--font-display` `--accent`. Below 768px stacked; from 768px a three-column strip; in the aside it is a single column of three short rows. `--text-sm`, no border, no background. h2 "How it works" in `--text-md` sans weight 600 (a quiet heading, an exception to the display h2 rule noted here: it is a label, and the page already has an h1 and display h2s). |
+| What you get | Plain paragraph under a `--text-md` label, `--text-sm`, `--text-muted`, no border. |
+| Demo limits | `<details>` closed by default; summary "Demo limits" (`--text-md` sans 600, tertiary-underlined). Content unchanged. A closed `<details>` keeps the section findable but never competes with the action. |
+| Common | no `--surface` fill, no shadow; separated by a 1px `--border-subtle` rule on the block-start edge. |
 
 ---
 

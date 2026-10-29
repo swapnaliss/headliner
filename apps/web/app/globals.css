@@ -1,4 +1,15 @@
 /* Base and component styles. Tokens come from tokens.css; every colour here is a token. */
+
+/* The display face (design-system.md section 2): h1, h2, the wordmark and rank numerals only. app/layout.tsx loads the self-hosted
+   Source Serif 4 variable file with next/font/local (one same-origin URL, preloaded) and exposes its generated family through
+   --font-source-serif on <html>. tokens.css names the family "Source Serif 4", which that loader does not declare, so the
+   first entry is replaced here with the loaded family; the rest of the stack is exactly the spec's. "Source Serif 4 Fallback"
+   (a size-adjusted local Georgia) is not declared: its size-adjust and metric overrides have not been measured, and this file
+   does not state numbers it has not measured, so the fallback is the plain Georgia, Times New Roman, serif stack. */
+:root {
+  --font-display: var(--font-source-serif, "Source Serif 4"), Georgia, "Times New Roman", serif;
+}
+
 *,
 *::before,
 *::after {
@@ -28,15 +39,22 @@ h3 {
   margin: 0;
   scroll-margin-block: 24px;
 }
+h1,
+h2 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+  font-optical-sizing: auto;
+}
 h1 {
   font-size: var(--text-xl);
-  line-height: 1.25;
+  line-height: 1.2;
   font-weight: 700;
 }
 h2 {
   font-size: var(--text-lg);
   line-height: 1.3;
-  font-weight: 700;
+  font-weight: 600;
 }
 h3 {
   font-size: var(--text-md);
@@ -57,6 +75,10 @@ a {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+a:hover {
+  color: var(--accent-hover);
+  text-decoration-thickness: 2px;
+}
 :target,
 [tabindex="-1"]:focus {
   scroll-margin-block: 24px;
@@ -67,9 +89,15 @@ a {
 }
 
 @media (min-width: 768px) {
+  h2 {
+    font-size: var(--text-xl);
+    line-height: 1.2;
+  }
+}
+@media (min-width: 1024px) {
   h1 {
     font-size: var(--text-2xl);
-    line-height: 1.2;
+    line-height: 1.1;
   }
 }
 
@@ -95,7 +123,9 @@ a {
   inline-size: 16px;
   block-size: 16px;
 }
+/* Entity names (acts, tags, cities) are third-party text in any script: always the system stack, even inside a heading. */
 .entity {
+  font-family: var(--font-sans);
   unicode-bidi: plaintext;
   overflow-wrap: anywhere;
 }
@@ -124,28 +154,74 @@ a {
 }
 
 .site-header {
-  padding-block: var(--space-4) var(--space-5);
+  padding-block: var(--space-3) var(--space-5);
   display: grid;
-  gap: var(--space-4);
+  gap: var(--space-5);
 }
 .header-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   gap: var(--space-3);
+  padding-block-end: var(--space-3);
+  border-block-end: 1px solid var(--border-subtle);
 }
 .brand {
+  flex: none;
+  font-family: var(--font-display);
   font-weight: 700;
-  font-size: var(--text-md);
+  font-size: var(--text-lg);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
   color: var(--text);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  gap: var(--space-3);
   min-block-size: var(--target);
 }
 .brand:hover {
+  color: var(--text);
   text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.header-row .status {
+  flex: 0 1 auto;
+  min-inline-size: 0;
+  font-size: var(--text-xs);
+  padding: var(--space-2) var(--space-4);
+  line-height: 1.3;
+  border-radius: var(--radius-2);
+}
+@media (min-width: 768px) {
+  .header-row .status {
+    font-size: var(--text-sm);
+    border-radius: var(--radius-pill);
+  }
+}
+@media (max-width: 359.98px) {
+  .header-row .status {
+    flex-basis: 100%;
+  }
+}
+.brand-mark rect {
+  fill: var(--accent);
+}
+.brand-mark path {
+  fill: var(--canvas);
+}
+.brand-mark {
+  flex: none;
+  inline-size: 24px;
+  block-size: 24px;
+}
+@media (min-width: 768px) {
+  .brand {
+    font-size: var(--text-xl);
+  }
 }
 
 .main {
@@ -158,8 +234,9 @@ a {
 
 .site-footer {
   border-block-start: 1px solid var(--border-subtle);
-  padding-block: var(--space-5);
+  padding-block: var(--space-4);
   font-size: var(--text-sm);
+  color: var(--text-muted);
 }
 .site-footer ul {
   display: flex;
@@ -299,7 +376,8 @@ a {
   background: var(--sunken);
 }
 
-/* Buttons */
+/* Buttons: one hierarchy (components.md, Button). Primary = filled accent, secondary = outlined, tertiary ("quiet") = underlined text.
+   A control is never both boxed and underlined. */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -307,13 +385,17 @@ a {
   gap: var(--space-3);
   min-block-size: var(--target);
   min-inline-size: var(--target);
-  padding-inline: var(--space-5);
+  padding-inline: 20px;
   border-radius: var(--radius-1);
   border: 1px solid transparent;
   font: inherit;
   font-weight: 600;
+  line-height: 1.3;
   cursor: pointer;
   text-decoration: none;
+  transition:
+    background-color var(--motion-fast) var(--ease),
+    color var(--motion-fast) var(--ease);
 }
 .btn[data-variant="primary"] {
   background: var(--accent);
@@ -321,25 +403,35 @@ a {
 }
 .btn[data-variant="primary"]:hover {
   background: var(--accent-hover);
+  color: var(--on-accent);
 }
 .btn[data-variant="secondary"] {
   background: var(--surface);
   color: var(--accent);
   border-color: var(--accent);
 }
-.btn[data-variant="secondary"]:hover,
-.btn[data-variant="quiet"]:hover {
-  text-decoration: underline;
+.btn[data-variant="secondary"]:hover {
+  background: var(--accent-tint);
+  color: var(--accent);
 }
 .btn[data-variant="quiet"] {
   background: transparent;
-  color: var(--link);
+  color: var(--accent);
   text-decoration: underline;
+  text-underline-offset: 2px;
+  padding-inline: var(--space-3);
 }
-.btn[aria-disabled="true"] {
+.btn[data-variant="quiet"]:hover {
+  color: var(--accent-hover);
+  text-decoration-thickness: 2px;
+}
+/* Unavailable: sunken fill, muted text, solid border; the same for every level, and plainly not the accent. */
+.btn[aria-disabled="true"],
+.btn[aria-disabled="true"]:hover {
   background: var(--sunken);
   color: var(--text-muted);
   border: 1px solid var(--border-control);
+  box-shadow: inset 0 0 0 1px var(--border-control);
   cursor: not-allowed;
   text-decoration: none;
 }
@@ -428,6 +520,11 @@ textarea.input {
   display: grid;
   gap: var(--space-5);
 }
+@media (min-width: 768px) {
+  .panel {
+    padding: var(--space-6);
+  }
+}
 .stack {
   display: grid;
   gap: var(--space-5);
@@ -496,6 +593,12 @@ textarea.input {
   gap: var(--space-3);
   list-style: decimal;
   padding-inline-start: var(--space-6);
+  font-size: var(--text-sm);
+}
+.steps li::marker {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--accent);
 }
 .disclosure summary {
   cursor: pointer;
@@ -503,48 +606,184 @@ textarea.input {
   display: flex;
   align-items: center;
   font-weight: 600;
+  color: var(--accent);
   text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.disclosure summary:hover {
+  color: var(--accent-hover);
 }
 
-/* Act card */
+/* Act card (components.md, ActCard): a flat grid on the slate. Rank is the hero (display face, accent), Fit a smaller printed number. */
 .card-list {
   display: grid;
   gap: var(--space-5);
 }
 .act-card {
+  position: relative;
   background: var(--surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-2);
   padding: var(--space-5);
   display: grid;
-  gap: var(--space-4);
+  grid-template-columns: 3rem minmax(0, 1fr) auto;
+  grid-template-areas:
+    "rank name fit"
+    "tags tags tags"
+    "standing standing standing"
+    "caveats caveats caveats"
+    "links links links";
+  column-gap: var(--space-4);
+  row-gap: var(--space-4);
+  align-items: start;
 }
-.card-head {
+.act-card[data-nodata="true"] {
+  grid-template-areas:
+    "rank name name"
+    "empty empty empty"
+    "caveats caveats caveats"
+    "links links links";
+}
+.act-card .rank {
+  grid-area: rank;
+}
+.act-card .act-name {
+  grid-area: name;
+}
+.act-card .fit {
+  grid-area: fit;
+  text-align: end;
+}
+.card-tags {
+  grid-area: tags;
+}
+.card-standing {
+  grid-area: standing;
+}
+.card-empty {
+  grid-area: empty;
+}
+.card-caveats {
+  grid-area: caveats;
+}
+.card-caveats:empty {
+  display: none;
+}
+.card-links {
+  grid-area: links;
   display: flex;
-  gap: var(--space-4);
-  align-items: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3) var(--space-6);
+  font-size: var(--text-base);
+}
+@media (min-width: 768px) {
+  .act-card {
+    padding: var(--space-6);
+    grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+    grid-template-areas:
+      "rank name fit"
+      "rank tags tags"
+      "rank standing standing"
+      "caveats caveats caveats"
+      "links links links";
+    row-gap: var(--space-3);
+  }
+  .act-card[data-nodata="true"] {
+    grid-template-areas:
+      "rank name name"
+      "rank empty empty"
+      "caveats caveats caveats"
+      "links links links";
+  }
+  /* The standing block is one wrapping row (caption, chip, value, scale note) under the tags, so no column is squeezed. */
+  .card-standing .standing {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-5);
+  }
+  .card-standing .standing p {
+    margin: 0;
+  }
+  /* Tags and the shared-taste count share one wrapping row. */
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-5);
+  }
+}
+.card-empty .state {
+  border: 0;
+  padding-inline: 0;
+  padding-block: 0;
+}
+.act-card[data-linked="true"]:hover,
+.act-card[data-linked="true"]:has(.card-open:focus-visible) {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.card-open,
+.card-evidence {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-block-size: var(--target);
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.card-open:hover,
+.card-evidence:hover {
+  color: var(--accent-hover);
+  text-decoration-thickness: 2px;
+}
+.card-evidence {
+  position: relative;
+  z-index: 1;
+}
+/* Stretched link: the whole card is the target of "Open details"; the ring is drawn around the card. */
+.card-open::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-2);
+}
+.card-open:focus-visible {
+  outline: none;
+}
+.card-open:focus-visible::after {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.icon-chevron:dir(rtl) {
+  transform: scaleX(-1);
 }
 .rank {
   flex: none;
-  min-inline-size: 40px;
-  block-size: 40px;
-  font-size: var(--text-md);
-  padding-inline: var(--space-2);
-  display: inline-grid;
-  place-items: center;
-  border-radius: var(--radius-1);
-  background: var(--accent-tint);
-  color: var(--text);
-  border: 1px solid var(--accent);
+  font-family: var(--font-display);
   font-weight: 700;
-  font-variant-numeric: tabular-nums;
+  font-size: var(--text-2xl);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--accent);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+@media (min-width: 768px) {
+  .rank {
+    font-size: var(--text-3xl);
+  }
 }
 .rank[data-unranked="true"] {
-  background: var(--neutral-bg);
-  border-color: var(--border-control);
-  font-weight: 600;
+  font-family: var(--font-sans);
   font-size: var(--text-sm);
-  padding-inline: var(--space-3);
+  line-height: 1.3;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0;
 }
 .act-name {
   display: -webkit-box;
@@ -553,19 +792,22 @@ textarea.input {
   overflow: hidden;
   overflow-wrap: anywhere;
   min-inline-size: 0;
+  font-size: var(--text-md);
 }
 .fit {
   display: grid;
   gap: 0;
 }
 .fit-label {
-  font-size: var(--text-sm);
-  color: var(--text-muted);
+  font-size: var(--text-xs);
+  line-height: 1.3;
+  font-weight: 600;
+  color: var(--text);
 }
 .fit-value {
   font-size: var(--text-xl);
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
 .standing {
@@ -579,16 +821,6 @@ textarea.input {
 .standing-note {
   color: var(--text-muted);
 }
-.card-body {
-  display: grid;
-  gap: var(--space-4);
-}
-@media (min-width: 768px) {
-  .card-body {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    align-items: start;
-  }
-}
 .evidence {
   font-size: var(--text-sm);
 }
@@ -599,6 +831,9 @@ textarea.input {
   align-items: center;
   text-decoration: underline;
   color: var(--link);
+}
+.evidence summary:hover {
+  color: var(--accent-hover);
 }
 .evidence ol {
   display: grid;
@@ -760,9 +995,6 @@ th.num {
 .act-chip[data-locked="true"] {
   padding-inline: var(--space-4);
 }
-.sample .btn {
-  justify-self: start;
-}
 .table-wrap th[scope="row"] .entity {
   overflow-wrap: normal;
 }
@@ -770,15 +1002,7 @@ table {
   min-inline-size: 17rem;
 }
 
-/* Act detail (M2-02) */
-.card-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3) var(--space-6);
-  font-size: var(--text-sm);
-}
-.card-links a,
-/* Match confirmation (M2-01) */
+/* Act detail (M2-02) and match confirmation (M2-01) */
 .match-row {
   display: grid;
   gap: var(--space-3);
@@ -889,6 +1113,21 @@ table {
   display: grid;
   gap: var(--space-5);
 }
+.tiles > .panel {
+  align-content: start;
+}
+#act-heading {
+  font-family: var(--font-sans);
+  letter-spacing: 0;
+}
+/* A no-data act: the three tiles shrink to one compact row. */
+.tiles[data-nodata="true"] > .panel {
+  padding: var(--space-4) var(--space-5);
+  gap: var(--space-2);
+}
+.tiles[data-nodata="true"] .tile-title {
+  font-size: var(--text-base);
+}
 .tile-title {
   font-size: var(--text-md);
 }
@@ -987,7 +1226,7 @@ table {
 @media (min-width: 768px) {
   .tiles {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-items: start;
+    align-items: stretch;
   }
   .on-page {
     display: flex;
@@ -995,9 +1234,6 @@ table {
   }
 }
 @media (min-width: 1024px) {
-  .wide-7 {
-    max-inline-size: calc(100% * 7 / 12);
-  }
   .ev-table {
     display: table;
   }
@@ -1111,8 +1347,13 @@ table {
   }
 }
 
-.city-evidence-link {
-  min-block-size: 24px;
+.city-evidence-link,
+.evidence-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-block-size: var(--target);
+  min-inline-size: var(--target);
 }
 .city-ev-row {
   scroll-margin-block: 24px;
@@ -1160,7 +1401,7 @@ table {
   gap: var(--space-3);
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-4);
+  padding: var(--space-5);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-2);
   background: var(--surface);
@@ -1198,18 +1439,176 @@ table {
   align-items: center;
 }
 
-/* Sample rooms (M2-06) */
+/* Room setup (docs/design/screen-room-setup.md): intro, sample feature cards, form column, aside with the ActionBar. */
+.room {
+  row-gap: var(--space-7);
+}
+.room-intro {
+  gap: var(--space-7);
+}
+@media (min-width: 1024px) {
+  .room {
+    grid-template-columns: minmax(0, 8fr) minmax(0, 4fr);
+    column-gap: var(--gutter);
+    align-items: start;
+  }
+  .room-intro,
+  .room-form {
+    grid-column: 1;
+  }
+  .room-intro {
+    grid-row: 1;
+  }
+  .room-form {
+    grid-row: 2;
+  }
+  .room > .aside {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: grid;
+    gap: var(--space-6);
+    align-self: start;
+  }
+}
+/* Below 1024px the aside wrapper has no box and no role: the ActionBar is a sibling of the form in the page flow. */
+@media (max-width: 1023.98px) {
+  .room > .aside {
+    display: contents;
+  }
+}
+/* Sticky only at 1280px and up, only when the viewport is tall enough, and not while a disclosure is open (the column could then
+   be taller than the viewport and its lower part unreachable). */
+@media (min-width: 1280px) and (min-height: 700px) {
+  .room > .aside:not(:has(details[open])) {
+    position: sticky;
+    inset-block-start: var(--space-6);
+  }
+}
+
+.sample-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-block-start: 4px solid var(--accent);
+  border-radius: var(--radius-2);
+  padding: var(--space-6);
+  display: grid;
+  gap: var(--space-4);
+  justify-items: stretch;
+  grid-template-rows: auto auto 1fr;
+}
+.sample-venue,
+.sample-city {
+  display: block;
+}
+.sample-city {
+  margin-block-start: var(--space-2);
+  font-size: var(--text-sm);
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--text-muted);
+}
+.sample-card .btn {
+  inline-size: 100%;
+  min-block-size: 44px;
+  align-self: end;
+}
+.sample-card h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-lg);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
 .samples-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  gap: var(--space-4);
+  gap: var(--space-5);
 }
-.samples-list li {
+@media (min-width: 768px) {
+  .samples-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .samples-list > li {
+    display: grid;
+  }
+}
+.sample-row {
   display: grid;
-  gap: var(--space-2);
   justify-items: start;
+  gap: var(--space-3);
+}
+.sample-or {
+  font-weight: 600;
+}
+.sample-hint {
+  margin: 0;
+}
+
+/* Action bar: a bar at the bottom of the viewport below 1024px (sticky only when the viewport is tall enough), a card in the aside above. */
+.action-bar {
+  display: grid;
+  gap: var(--space-3);
+  background: var(--surface);
+  border-block-start: 1px solid var(--border-subtle);
+  padding: var(--space-4) var(--gutter) calc(var(--space-4) + env(safe-area-inset-bottom, 0px));
+  margin-inline: calc(var(--gutter) * -1);
+}
+.action-bar .btn {
+  inline-size: 100%;
+}
+.action-bar .field-hint {
+  margin: 0;
+}
+@media (max-width: 1023.98px) and (min-height: 700px) {
+  .action-bar[data-started="true"] {
+    position: sticky;
+    inset-block-end: 0;
+    z-index: 5;
+    box-shadow: var(--shadow-1);
+  }
+  /* The bar is at most about 9rem tall at 320px; a focused field is never left under it. */
+  html:has(.action-bar[data-started="true"]) {
+    scroll-padding-block-end: 9rem;
+  }
+}
+@media (min-width: 1024px) {
+  .action-bar {
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-2);
+    padding: var(--space-6);
+    margin-inline: 0;
+  }
+}
+
+/* Quiet side cards: How it works, What you get, Demo limits. Hairline on the block-start edge, no fill, no shadow. */
+.quiet {
+  border-block-start: 1px solid var(--border-subtle);
+  padding-block-start: var(--space-5);
+  display: grid;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+}
+.quiet h2,
+.quiet-details > summary {
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.quiet-details > summary {
+  min-block-size: var(--target);
+}
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .quiet .steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-5);
+  }
 }
 
 /* Share link and shared page (M2-04) */
@@ -1242,4 +1641,83 @@ table {
 .explanation-label {
   font-weight: 600;
   color: var(--text);
+}
+
+/* Explanation disclosure on the slate (components.md, ExplanationBlock): a quiet bordered row, closed by default, provenance line always visible. */
+.explanation-disclosure {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-2);
+  padding: var(--space-2) var(--space-5) var(--space-4);
+  display: grid;
+  gap: var(--space-1);
+}
+.explanation-disclosure .quiet-details > summary {
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  gap: var(--space-3);
+}
+.explanation-disclosure .quiet-details > summary::before {
+  content: none;
+}
+.explanation-disclosure .quiet-details > summary:hover {
+  text-decoration: underline;
+  color: var(--text);
+}
+.explanation-disclosure .quiet-details > summary .icon {
+  color: var(--accent);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .explanation-disclosure details > summary .icon {
+    transition: transform var(--motion-fast) var(--ease);
+  }
+  .explanation-disclosure details[open] > summary .icon {
+    transform: rotate(90deg);
+  }
+}
+.explanation-disclosure .explanation-text {
+  padding-block: var(--space-3);
+}
+.explanation-disclosure .explanation-source {
+  margin: 0;
+}
+
+/* Caveat chips hug their text instead of stretching across the card. */
+.card-caveats .status {
+  justify-self: start;
+}
+
+/* Small screens: the first screen must show a sample card and its button, so the intro is tightened (screen-room-setup.md). */
+@media (max-width: 767.98px) {
+  .site-header {
+    padding-block: 0 var(--space-4);
+    gap: var(--space-4);
+  }
+  .banner {
+    padding: var(--space-3) var(--space-4);
+  }
+  .main.room {
+    padding-block-start: 0;
+    row-gap: var(--space-6);
+  }
+  .room-intro {
+    gap: var(--space-5);
+  }
+  .samples {
+    gap: var(--space-2);
+  }
+  .sample-card {
+    padding: var(--space-4);
+    gap: var(--space-3);
+  }
+}
+
+/* "See evidence: 1, 3, 4": the comma is drawn after the number inside its 44px box, so it hugs the digit. */
+.evidence-links span:not(:last-child) > a::after {
+  content: ",";
+  display: inline-block;
+  text-decoration: none;
 }

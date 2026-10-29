@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-export type IconName = "info" | "check" | "caution" | "unavailable" | "error" | "thin" | "spinner" | "remove" | "above" | "similar" | "below";
+export type IconName = "info" | "check" | "caution" | "unavailable" | "error" | "thin" | "spinner" | "remove" | "above" | "similar" | "below" | "chevron";
 
 const common = {
   className: "icon",
@@ -54,6 +54,7 @@ const shapes: Record<IconName, ReactNode> = {
   ),
   spinner: <path d="M8 1.75a6.25 6.25 0 1 0 6.25 6.25" />,
   remove: <path d="M4 4l8 8M12 4l-8 8" />,
+  chevron: <path d="M6 3l5 5-5 5" />,
   // Standing glyphs: a median line with a dot above, on, or below it (never an arrow).
   above: (
     <>
@@ -78,7 +79,7 @@ const shapes: Record<IconName, ReactNode> = {
 /** Decorative inline SVG. Always `aria-hidden`; the adjacent text carries the meaning. */
 export function Icon({ name }: { name: IconName }) {
   return (
-    <svg {...common} className={name === "spinner" ? "icon spinner" : "icon"}>
+    <svg {...common} className={name === "spinner" ? "icon spinner" : name === "chevron" ? "icon icon-chevron" : "icon"}>
       {shapes[name]}
     </svg>
   );

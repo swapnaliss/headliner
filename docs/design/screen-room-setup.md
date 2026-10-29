@@ -19,90 +19,90 @@ Users and the job they came to do:
 
 ## Layout
 
-Reading order and landmarks: skip link, `<header>` (product name + Banner), `<main>` with one `<h1>`, `<footer>`. Content hierarchy, most important first: (1) what this is, (2) the sample button, (3) the form, (4) the primary action, (5) how it works, (6) limits and privacy note.
+Reading order and landmarks: skip link, `<header>` (wordmark + Demo-mode chip + Banner), `<main>` with one `<h1>`, `<footer>`. Content hierarchy, most important first: (1) what this is, (2) the two sample rooms ("start here"), (3) the form, (4) the primary action (always in view), (5) how it works, what you get, demo limits (quiet).
 
-### Mobile 360px
+Type: h1 and h2 in the display face, wordmark display, everything else system sans (design-system.md section 2). Accent only on the wordmark mark, primary buttons, links and the selected state.
 
-Single column, 16px gutters, 44px targets, 16px field text. The form is above the "How it works" list so the action is reachable without scrolling past an explanation, but the one-line explanation stays above the form.
+### Mobile 390px (works from 320px)
+
+Single column, 16px gutters, 44px targets, 16px field text. Order: header, Banner, h1, lede, sample cards (stacked), "Or enter your own room below." and "Fill in the sample room" (secondary), form, How it works strip, What you get, Demo limits (closed). The ActionBar follows the form in the flow while the form is empty (so the first screen shows the sample cards, not a disabled button); once anything is entered it is a sticky bar at the bottom of the viewport when the viewport is at least 700px tall, otherwise it stays in the flow. The Demo-mode chip sits on the wordmark row (smaller type, wrapping to two lines if needed).
 
 ```
 +--------------------------------------+
-| Headliner        [Demo mode chip]    |  header
+| [H] Headliner       [Demo mode chip] |  header, rule below
 +--------------------------------------+
-| (i) Audience-taste fit is aggregate  |  Banner (2 lines)
+| (i) Audience-taste fit is aggregate  |  Banner (2 lines + What this means)
 |     affinity, not a ticket forecast. |
-|     > What this means                |
 +--------------------------------------+
-| Rank the acts you are considering    |  h1
+| Rank the acts you are considering    |  h1, display
 | by audience-taste fit                |
-| Headliner compares each act's        |  lead, text-base
-| audience with the artists your       |
-| regulars already follow, using Qloo  |
-| taste data, and shows the evidence   |
-| behind every number.                 |
-| [ Fill in the sample room ]          |  secondary button
-| A Berlin room, recorded responses.   |  sample hint
+| Headliner compares each act's ...    |  lede
++--------------------------------------+
+| Try a sample room                    |  h2, display
+| Open a finished slate straight ...   |
+| +----------------------------------+ |
+| | Berlin electronic club, Berlin   | |  h3, 4px accent rule on top
+| | Recorded real Qloo run, fetched  | |
+| | 27 Oct 2026.                     | |
+| | [ Open sample slate ]            | |  primary
+| +----------------------------------+ |
+| | Leipzig indie hall, Leipzig ...  | |
+| +----------------------------------+ |
+| Or enter your own room below.        |
+| [ Fill in the sample room ]          |  secondary
 +--------------------------------------+
 | Your room                            |  h2
-| City (required)                      |
-| [ Berlin                           ] |
-| Hint: the city your regulars live in |
-|                                      |
-| Crowd acts: 3 to 6 (required)        |
-| Artists your regulars already follow |
-| ( Apparat x ) ( Moderat x ) ...      |  ActChips
-| [ Add an act                  ][Add] |
-| 6 of 6 added                         |
+| Enter artist names and a city only.  |  privacy note
+| ... City, crowd acts, chips, add ... |
+| Acts you are considering ...         |
+| > Describe it in one sentence        |
 +--------------------------------------+
-| Acts you are considering             |  h2
-| Candidate acts: 3 to 12 (required)   |
-| ( Khruangbin x ) ( Radiohead x ) ... |
-| [ Add an act                  ][Add] |
-| 3 of 12 added                        |
+| How it works  1 Describe  2 Rank  3  |  compact strip
+| What you get (muted paragraph)       |
+| > Demo limits                        |  closed details
 +--------------------------------------+
-| > Describe it in one sentence        |  details
-+--------------------------------------+
-| [ Rank these acts ]                    |  primary, full width
-| Enter artist names and a city only.  |
-+--------------------------------------+
-| How it works                         |  h2
-| 1. Describe the room                 |
-| 2. Rank the acts                     |
-| 3. Read the ranked slate and its     |
-|   evidence                           |
-+--------------------------------------+
-| About and licence | Source on GitHub |  footer
+| [ Rank these acts ]                  |  ActionBar, sticky bottom
+| Add a city, at least 3 crowd acts... |  reason
 +--------------------------------------+
 ```
 
-The sentence disclosure, when open, shows a labelled multi-line field (3 rows) and the Button "Read my description" above the form fields' primary action.
+### Tablet 768px
+
+One page column, 24px gutters. Sample cards side by side (two equal columns). The form sections stay stacked and full width. How it works becomes a three-column strip. The ActionBar follows the same rule (in the flow while empty, sticky once the form has content, below 1024px).
 
 ### Desktop 1280px
 
-Content width 1280px including 32px gutters; 12 columns. Two columns: the form takes columns 1 to 7; an aside on columns 9 to 12 (sticky only at 1280px and above, when it is shorter than the viewport and the viewport is at least 700px tall; static at 1024px; below the form at 768px; at 1440px the layout stays 1280px wide and centred) holds "How it works" and "What you will get". The h1 and lead span columns 1 to 8. Sample button sits beside the lead. The two act lists are stacked in the form column, with the add fields at 100% of the column.
+Content width 1280px including 32px gutters; 12 columns. Rows:
+
+1. h1 and lede, columns 1 to 8.
+2. "Try a sample room": heading and hint, then the two feature cards side by side across columns 1 to 8 (each 4 columns). They sit above the form so the first obvious thing to press is a card button.
+3. Below, the form in columns 1 to 8 ("Or enter your own room below.", then "Fill in the sample room" and its hint stacked and left-aligned, then "Your room", "Acts you are considering", the sentence disclosure). The aside occupies columns 9 to 12 from the first row, level with the h1, so the right column is never empty beside the intro (sticky only at 1280px and above, when the viewport is at least 700px tall and no disclosure in it is open; static at 1024px). It holds, in order: the ActionBar card (button and reason), How it works (compact), What you get (muted), Demo limits (closed).
+
+Because the ActionBar card is first in the aside, which starts level with the h1 and is sticky, "Rank these acts" is on screen at the top of the right column from the first screenful, without scrolling a 1500px page. At 1024px (not sticky) the card is the first item of the aside beside the form and still in the first screenful of the form area. At 1440px the layout stays 1280px wide and centred.
 
 ```
 +--------------------------------------------------------------------------------------+
-| Headliner                                                    [Demo mode chip]        |
-+--------------------------------------------------------------------------------------+
+| [H] Headliner                                                    [Demo mode chip]    |
 | (i) Audience-taste fit is aggregate affinity, not a ticket forecast. It compares ... |
 +--------------------------------------------------------------------------------------+
-| Rank the acts you are considering by audience-taste fit          | How it works      |
-| Headliner compares each act's audience with the artists your     | 1. Describe       |
-| regulars already follow, using Qloo taste data, and shows the    | 2. Confirm matches|
-| evidence behind every number.   [ Fill in the sample room ]      | 3. Read the slate |
-| A Berlin room with six crowd acts and three candidates, recorded |                   |
-|                                                                  |                   |
-| Your room                                                        | What you get      |
-|   City (required)  [ Berlin                          ]           | A ranked slate.   |
-|   Crowd acts: 3 to 6 (required)                                  | Each act shows    |
-|   ( Apparat x ) ( Moderat x ) ( Modeselektor x ) ...             | Fit, shared       |
-|   [ Add an act                              ] [ Add ]            | tastes, Qloo      |
-| Acts you are considering                                         | popularity rank,  |
-|   ( Khruangbin x ) ( Radiohead x ) ( Reality Club x )            | caveats and the   |
-|   [ Add an act                              ] [ Add ]            | Qloo calls behind |
-| > Describe it in one sentence                                    | every number.     |
-| [ Rank these acts ]                                                |                   |
+| Rank the acts you are considering by audience-taste fit                              |
+| Headliner compares each act's audience with the artists your regulars follow, ...    |
+|                                                                                      |
+| Try a sample room                                                                    |
+| +-----------------------------------+ +-----------------------------------+          |
+| | Berlin electronic club, Berlin    | | Leipzig indie hall, Leipzig       |          |
+| | Recorded real Qloo run, ...       | | Recorded real Qloo run, ...       |          |
+| | [ Open sample slate ]             | | [ Open sample slate ]             |          |
+| +-----------------------------------+ +-----------------------------------+          |
+| Or enter your own room below.  [ Fill in the sample room ]                           |
+|                                                           +------------------------+ |
+| Your room                                                 | [ Rank these acts ]    | |
+|  Enter artist names and a city only. ...                  | Add a city, at least 3 | |
+|  City (required) [                          ]             | crowd acts and ...     | |
+|  Crowd acts: 3 to 6 (required) ...                        +------------------------+ |
+|                                                           | How it works  1 2 3    | |
+| Acts you are considering ...                              | What you get ...       | |
+| > Describe it in one sentence                             | > Demo limits          | |
 +--------------------------------------------------------------------------------------+
 | About and licence | Source on GitHub                                                 |
 +--------------------------------------------------------------------------------------+
@@ -115,7 +115,7 @@ The wireframes use act names recorded in the project's sample fixtures (see ADR 
 | State | What the user sees | Behaviour |
 |---|---|---|
 | Empty (first visit) | Form empty, "Rank these acts" is `aria-disabled` with the reason "Add a city, at least 3 crowd acts and at least 3 candidate acts to continue." | Focus starts at the top of the page (skip link first). No auto-focus on a field, so screen readers read the h1 first. |
-| Sample rooms (M2-06) | Section "Try a sample room" between the lead and the form: one secondary-button link per pre-warmed room ("{venue}, {city}") and, under each, "Recorded real Qloo run, fetched {date}." | A link opens the stored slate at `/s/sample-{slug}` with zero Qloo calls and no budget spent. Plain anchors (no prefetch). Tab order: after the lead, before "Fill in the sample room". Hidden when the server has no sample rooms. |
+| Sample rooms (M2-06) | Section "Try a sample room" between the lead and the form: one feature card per pre-warmed room (see components.md, SampleRooms): h3 "{venue}, {city}", "Recorded real Qloo run, fetched {date}." and a primary button-link "Open sample slate" | A link opens the stored slate at `/s/sample-{slug}` with zero Qloo calls and no budget spent. Plain anchors (no prefetch). Tab order: after the lead, each card's button in order, then "Fill in the sample room". Hidden when the server has no sample rooms. |
 | Sample filled | Form fields and chips are filled with the recorded sample room | Focus moves to "Rank these acts"; status message "Sample room filled in: Berlin, 6 crowd acts, 3 candidate acts. Check the entries, then press Rank these acts." |
 | Typing / partially valid | Counters update ("4 of 6 added"). Reason line under the primary button updates to the first unmet requirement. | Counter text is not a live region (it would chatter); the reason line is `aria-describedby` on the button. |
 | Adding an act | New chip appended; add field cleared and keeps focus | Live region (polite): "{name} added to crowd acts. 4 of 6." |
@@ -129,10 +129,10 @@ The wireframes use act names recorded in the project's sample fixtures (see ADR 
 | Submitting (matching) | "Rank these acts" shows "Ranking…" (`aria-busy`, `aria-disabled`, never native `disabled`), fields read-only | Status region: "Checking {n} names with Qloo" then navigates to match confirmation. Navigation moves focus to that screen's h1. |
 | Qloo or network error | ErrorState above the primary button: "Could not reach Qloo. Your entries are kept. Try again." with Button "Try again" | Entries stay; focus to the ErrorState heading |
 | Budget reached | ErrorState above the primary button (API code `demo_limit_reached`, HTTP 429): "This demo has reached its daily limit for live Qloo lookups. Your entries are kept. The sample rooms above still work, and the limit resets at midnight UTC." | Honest, no CAPTCHA, no login. The sample rooms (saved runs) are on the same page and cost nothing. |
-| Demo limits note (M2-05) | A panel "Demo limits" in the aside under "What you get" (below the form at 768px and under): the per-visitor daily limit, that the sample rooms are always available, no login and no CAPTCHA | Always shown. In recorded-responses mode it says the limits are off in this demo and names the live limit |
+| Demo limits note (M2-05) | A closed disclosure "Demo limits" in the aside under "What you get" (below the form at 768px and under; it opens in place, content unchanged): the per-visitor daily limit, that the sample rooms are always available, no login and no CAPTCHA | Always shown. In recorded-responses mode it says the limits are off in this demo and names the live limit |
 | Offline | Notice: "You appear to be offline. Your entries stay on this page; reconnect to check matches." | Primary action keeps aria-disabled with this reason |
-| Demo mode (recorded responses) | Chip at the right of the header row on every screen (drawn in every wireframe): "Demo mode: recorded Qloo responses" with info icon, plus the Demo-mode note under the lead | Shown whenever the server runs with recorded data. Names not in the recordings are reported on match confirmation with the dedicated message (not as an ordinary "no match") |
-| Dark mode, 200% zoom, 320px | Same content, reflowed | See accessibility.md |
+| Demo mode (recorded responses) | Chip at the right of the header row on every screen (drawn in every wireframe): "Demo mode: recorded Qloo responses" with info icon, plus the Demo-mode note directly under the sample cards (not under the lead: on a 390 by 667 screen the first sample card and its button must be visible without scrolling) | Shown whenever the server runs with recorded data. Names not in the recordings are reported on match confirmation with the dedicated message (not as an ordinary "no match") |
+| Dark mode, 200% zoom, 320px | Same content, reflowed. The ActionBar is static (not sticky) at 200% zoom and at heights under 700px | See accessibility.md |
 
 ## Copy
 
@@ -144,7 +144,8 @@ Exact strings. Voice: plain, specific, no marketing. Wording rule: "audience-tas
 | Banner | "Audience-taste fit is aggregate affinity, not a ticket forecast. It compares the tastes of each act's audience with your regular crowd, using Qloo data. It says nothing about sales, attendance or any individual." (short form at 360px: first sentence + disclosure "What this means") |
 | h1 | "Rank the acts you are considering by audience-taste fit" |
 | Lead | "Headliner compares each act's audience with the artists your regulars already follow, using Qloo taste data, and shows the evidence behind every number." |
-| Sample button | "Fill in the sample room" |
+| Sample button | "Fill in the sample room" (secondary button) |
+| Sample card button (new in the reskin; needs owner OK) | "Open sample slate" (accessible name "Open sample slate: {venue name}, {city}") |
 | Sample rooms heading | "Try a sample room" |
 | Sample rooms hint | "Open a finished slate straight away. These are saved runs: opening one makes no Qloo calls." |
 | Sample room link | "{venue name}, {city}" (for example "Berlin electronic club, Berlin") |
@@ -174,9 +175,9 @@ Exact strings. Voice: plain, specific, no marketing. Wording rule: "audience-tas
 | Sentence daily limit | "The daily limit for reading descriptions has been reached. The form above works without it, and the limit resets at midnight UTC." |
 | Daily demo limit (ranking) | Heading "Daily demo limit reached"; the message names midnight UTC; the action is "Open a sample room" (no "Try again", which cannot succeed before the reset). |
 | Sentence failure | "We could not read that description. The form above works without it." |
-| Primary button | "Rank these acts" / loading "Ranking…" |
+| Primary button | "Rank these acts" / loading "Ranking…" (in the ActionBar, always in view) |
 | Disabled reason | "Add a city, at least 3 crowd acts and at least 3 candidate acts to continue." (the sentence names only what is still missing, for example "Add 2 more candidate acts to continue.") |
-| Privacy note | "Enter artist names and a city only. Do not enter personal details." |
+| Privacy note | "Enter artist names and a city only. Do not enter personal details." (now the first line of the "Your room" section, above the City field, so it is read before typing; the ActionBar holds only the button and the reason) |
 | How it works heading | "How it works" |
 | Steps | "1. Describe the room." "2. Rank the acts." "3. Read the ranked slate and the evidence behind each number." |
 | What you get | "A ranked slate. Each act shows Fit, shared tastes, Qloo popularity rank, caveats and the Qloo calls behind every number." |
@@ -202,9 +203,9 @@ Numeric limits (80 characters, 400 characters, 3 to 6, 3 to 12) are the design p
 
 ## Keyboard and a11y
 
-- Tab order: skip link, product name link, Banner disclosure, sample button, city field, crowd add field, crowd Add button, each crowd chip's remove button, candidate add field, Add button, candidate chip removes, sentence disclosure (and its field and button when open), Rank these acts, footer links.
+- Tab order: skip link, wordmark link, Banner disclosure, sample card buttons, "Fill in the sample room", city field, crowd add field, crowd Add button, each crowd chip's remove button, candidate add field, Add button, candidate chip removes, sentence disclosure (and its field and button when open), Rank these acts (the ActionBar; at 1024px and up it is earlier in DOM order, in the aside after the form, and in tab order after the form), How it works, Demo limits disclosure, footer links.
 - Enter in an add field adds the act (it does not submit the form). Enter in the city field moves nothing. "Rank these acts" is the only submit.
-- Landmarks: `header`, `main`, `footer`. Headings: h1 once; h2 for "Your room", "Acts you are considering", "How it works". The two act lists are `<ul>` with accessible names "Crowd acts" and "Candidate acts".
+- Landmarks: `header`, `main`, `footer`. Headings: h1 once; h2 for "Your room", "Acts you are considering", "How it works". The two act lists are `<ul>` with accessible names "Crowd acts" and "Candidate acts". The sample cards use h3 under the h2 "Try a sample room". The ActionBar is a named section "Rank these acts".
 - Every field has a visible `<label>`; hints and errors are linked with `aria-describedby`; invalid fields set `aria-invalid`. On a failed submit, focus goes to the error summary, whose links move focus to the field.
 - Live regions: one polite `role="status"` region for add/remove/sample/parse messages (messages queued, not stacked); errors use `role="alert"` only for the error summary and ErrorState.
 - Names the user types, including right-to-left and non-Latin names, are shown in chips with `dir="auto"` and are never interpreted as HTML or markdown. Names over 24 characters are truncated visually; the full name is in the accessible name and in the edit field when the chip is activated.

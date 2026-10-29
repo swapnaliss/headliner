@@ -1,4 +1,5 @@
 import type { Caveat } from "@headliner/core";
+import { mergeThinMessages } from "../thinData";
 import { Icon, type IconName } from "./Icon";
 
 const LABELS: Record<Caveat["type"], { label: string; icon: IconName; tone: "caution" | "neutral" | "info" }> = {
@@ -35,11 +36,11 @@ export function CaveatChip({ caveat }: { caveat: Caveat }) {
   );
 }
 
-/** One "Thin data: A, B" chip for several cities instead of one chip per city; every sentence is kept. */
+/** One "Thin data: A, B" chip for several cities instead of one chip per city; the sentence is shown once (identical sentences collapse). */
 export function mergeThinData(caveats: readonly Caveat[]): Caveat[] {
   const thin = caveats.filter((c) => c.type === "thin-data" && c.subject);
   if (thin.length < 2) return [...caveats];
-  const merged: Caveat = { type: "thin-data", subject: thin.map((c) => c.subject).join(", "), message: thin.map((c) => c.message).join(" ") };
+  const merged: Caveat = { type: "thin-data", subject: thin.map((c) => c.subject).join(", "), message: mergeThinMessages(thin.map((c) => c.message)) };
   const out: Caveat[] = [];
   let placed = false;
   for (const c of caveats) {
