@@ -78,27 +78,27 @@ Live: <https://headliner-ai.vercel.app>. Two pre-warmed sample rooms open straig
 - <https://headliner-ai.vercel.app/s/sample-berlin-electronic> (Berlin, 6 crowd acts, 5 candidates)
 - <https://headliner-ai.vercel.app/s/sample-leipzig-indie> (Leipzig, 4 crowd acts, 5 candidates)
 
-Or type your own room, or describe it in one sentence. Screenshots below were captured on 28 Oct 2026 from the production site (live mode, light mode): the room setup page, the match confirmation (the sample Berlin room plus the typed name "Bjork"), and the stored sample Berlin slate with its Reality Club act detail and cities section. The empty-state screenshots are the exception: they come from a `DEMO_MODE=fixtures` build (they show the "Demo mode: recorded Qloo responses" badge) because no no-data act is stored on production.
+Or type your own room, or describe it in one sentence. Screenshots below were captured on 29 Oct 2026 from the production site (live mode, light mode): the room setup page, the match confirmation (the sample Berlin room plus the typed name "Bjork"), and the stored sample Berlin slate with its Reality Club act detail and cities section. The empty-state screenshots are the exception: they come from a `DEMO_MODE=fixtures` build (they show the "Demo mode: recorded Qloo responses" badge) because no no-data act is stored on production.
 
 **Room setup** ([1280 px](docs/screenshots/room-setup-1280.png), [390 px](docs/screenshots/room-setup-390.png))
 
-![Room setup: city, regular-crowd acts and candidate acts, with the aggregate-affinity banner at the top](docs/screenshots/room-setup-1280.png)
+![Room setup: the aggregate-affinity banner, two sample-room cards (Berlin electronic club, Leipzig indie hall) each with an Open sample slate button, and the empty form for city, crowd acts and candidate acts](docs/screenshots/room-setup-1280.png)
 
 **Match confirmation.** An ambiguous name ("Bjork") blocks ranking until the booker picks the Qloo match or leaves the act out ([390 px](docs/screenshots/match-confirmation-390.png)).
 
 ![Match confirmation: five Qloo artist matches for the typed name Bjork, each with its Qloo popularity rank, and a Summary card with the Rank button disabled](docs/screenshots/match-confirmation-1280.png)
 
-**Slate.** Ranked acts with Fit, shared tastes, Qloo popularity rank and caveats, beside the Qloo popularity order ([768 px](docs/screenshots/slate-768.png), [390 px](docs/screenshots/slate-390.png), [360 px](docs/screenshots/slate-360.png)).
+**Slate.** Ranked acts, each with a rank numeral, Fit, shared tastes count, Qloo popularity rank and the thin-data caveat, with the Qloo popularity order comparison and a collapsed Explanation section ([768 px](docs/screenshots/slate-768.png), [390 px](docs/screenshots/slate-390.png), [360 px](docs/screenshots/slate-360.png)).
 
-![Slate for the sample Berlin room: five ranked acts, the explanation, and the comparison with Qloo popularity rank order](docs/screenshots/slate-1280.png)
+![Slate for the sample Berlin room: five ranked act cards numbered 1 to 5 with Fit, shared tastes and Qloo popularity rank, a collapsed Explanation section below them, and the comparison with Qloo popularity rank order beside](docs/screenshots/slate-1280.png)
 
 **Act detail with the evidence trail** ([768 px](docs/screenshots/act-detail-768.png), [390 px](docs/screenshots/act-detail-390.png), [360 px](docs/screenshots/act-detail-360.png)).
 
-![Act detail for Reality Club: Fit, shared tastes, caveats, cities compared and the Qloo evidence rows](docs/screenshots/act-detail-1280.png)
+![Act detail for Reality Club: Fit, Qloo popularity rank and caveats cards, the explanation, shared tastes, other cities compared and the Qloo evidence trail](docs/screenshots/act-detail-1280.png)
 
 **Thin-data flag.** Cities with fewer than 15 heatmap cells are flagged and grouped apart; the act detail shows it for each city ([390 px](docs/screenshots/thin-data-390.png)).
 
-![Cities compared for the sample Berlin room: Jakarta and London ranked by mean affinity rank with cell counts, Berlin and Leipzig flagged as thin data](docs/screenshots/thin-data-1280.png)
+![Other cities compared for the sample Berlin room: Jakarta and London with mean affinity rank and cell counts, Berlin and Leipzig listed under Thin data: read with caution](docs/screenshots/thin-data-1280.png)
 
 **Empty state** (fixtures build, not production). An act Qloo has no usable data for says so and shows no number ([390 px](docs/screenshots/empty-state-390.png)).
 
