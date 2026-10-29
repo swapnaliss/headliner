@@ -178,7 +178,6 @@ Production, single observations (n=1, 2026-10-28, not percentiles): one sentence
 - **Keys and recordings.** Qloo hackathon keys deactivate after judging, so the hosted demo's live mode ends then and `DEMO_MODE=fixtures` remains. Redistribution of the recorded Qloo responses in `fixtures/` is not confirmed by the organiser ([fixtures/qloo/README.md](fixtures/qloo/README.md)); they are real recorded responses, kept to what the tests and demo need.
 - **Limits in the product.** 12 candidate acts, 6 crowd acts, 5 cities, names up to 80 characters. Per-IP daily demo limits (150 Qloo calls and 20,000 model tokens per UTC day; global 2,000 and 100,000) are defaults in `packages/budgets/src/config.ts`; past a limit stored slates still open and the app serves cached data only.
 - **Not measured.** No human stopwatch run of the core journey, no real production HTTP 429, and the cold production slate's retry counts.
-- **Evals as a required check.** The agent-eval job runs on every pull request, but branch protection is unavailable on a private repository on the free plan, so it is not yet a required status check.
 
 ## Future vision
 
