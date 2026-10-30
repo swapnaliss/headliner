@@ -46,3 +46,6 @@ playwright-report/
 /docs/engineering-standards.m[d]
 /docs/PREREQS.m[d]
 /docs/budget.m[d]
+
+# demo video: the whole folder (scripts, script text, captions, media) stays local
+demo-video/
