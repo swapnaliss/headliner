@@ -9,10 +9,11 @@ const nextConfig = {
   outputFileTracingIncludes: {
     "/api/slates": ["../../fixtures/qloo/**"],
     "/api/intake": ["../../fixtures/qloo/**", "../../fixtures/agent/intake/**"],
-    "/slates/[id]": ["../../fixtures/qloo/**"],
-    "/slates/[id]/act/[actId]": ["../../fixtures/qloo/**"],
-    "/s/[id]": ["../../fixtures/qloo/**"],
-    "/s/[id]/act/[actId]": ["../../fixtures/qloo/**"],
+    // Brackets are glob character classes in these keys, so the page routes use `*` instead of `[id]`.
+    "/slates/*": ["../../fixtures/qloo/**"],
+    "/slates/*/act/*": ["../../fixtures/qloo/**"],
+    "/s/*": ["../../fixtures/qloo/**"],
+    "/s/*/act/*": ["../../fixtures/qloo/**"],
     "/api/slates/[id]": ["../../fixtures/qloo/**"],
     "/api/slates/[id]/acts/[actId]": ["../../fixtures/qloo/**"],
     "/api/slates/[id]/acts/[actId]/cities": ["../../fixtures/qloo/**"],
