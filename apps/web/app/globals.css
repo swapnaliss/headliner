@@ -1002,6 +1002,9 @@ th.num {
 .act-chip[data-locked="true"] {
   padding-inline: var(--space-4);
 }
+.table-wrap th[scope="row"] {
+  white-space: nowrap;
+}
 .table-wrap th[scope="row"] .entity {
   overflow-wrap: normal;
 }
